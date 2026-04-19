@@ -1,0 +1,52 @@
+stshock
+{
+	playerModel	stshock
+	weapon		WP_REPEATER
+	rank		crewman
+	reactions	3
+	aim			3
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		75
+	yawSpeed	70
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			st1
+	sndcombat	st1
+	sndextra	st1
+	sndjedi		st1
+}
+
+stshock2
+{
+	playerModel	stshock
+	customSkin	commander
+	weapon		WP_FLECHETTE
+	rank		crewman
+	reactions	3
+	aim			3
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		110
+	yawSpeed	70
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			st2
+	sndcombat	st2
+	sndextra	st2
+	sndjedi		st2
+}

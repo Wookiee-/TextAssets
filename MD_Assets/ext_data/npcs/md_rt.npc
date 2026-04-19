@@ -1,0 +1,555 @@
+md_clo1_rt
+{
+	fullName	"501st Legion"
+	playerModel	clonetrooper_p2
+	customSkin	501
+	weapon		WP_CLONECARBINE
+	rank		lt
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	4
+	move		2
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	80
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+}
+
+md_clo2_rt
+{
+	fullName	"501st Assassin"
+	playerModel	clonetrooper_p2
+	customSkin	shadow
+	weapon		WP_SABER
+	saber		cyberninja
+	saber2		cyberninja
+	saberStyle	6
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	2
+	rank		ltcomm
+	aggression	4
+	aim			5
+	evasion		5
+	intelligence	5
+	move		4
+	reactions	4
+	vigilance       	1
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_GUARD
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo3_rt
+{
+	fullName	"501st Assassin"
+	playerModel	clonetrooper_p2
+	customSkin	shadow
+	weapon		WP_SABER
+	saber		cyberninja
+	saberStyle	5
+	FP_SABER_DEFENSE	2
+	FP_SABER_OFFENSE	2
+	rank		ltcomm
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	3
+	move		4
+	reactions	4
+	vigilance   1
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_GUARD
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo4_rt
+{
+	fullName	"501st Sniper"
+	playerModel	clonetrooper_p2
+	customSkin	airborne_rgb
+	customRGBA	52 72 120
+	weapon		WP_DISRUPTOR
+	rank		ltcomm
+	aggression	3
+	aim			5
+	evasion		3
+	intelligence	4
+	move		2
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	80
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+}
+
+md_clo5_rt
+{
+	fullName	"501st Assassin"
+	playerModel	clonetrooper_p2
+	customSkin	assassin
+	weapon		WP_SABER
+	saber		arc_shiv
+	saber2		arc_shiv_dual
+	saberStyle	6
+	FP_LEVITATION	1
+	FP_SPEED		3
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	rank		captain
+	aggression	5
+	aim			5
+	evasion		5
+	intelligence	5
+	move		5
+	reactions	5
+	vigilance       	1
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SHADOWTROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		300
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo6_rt
+{
+	fullName	"501st Rocketeer"
+	playerModel	clonetrooper_p2
+	customSkin	327_deviss
+	weapon		WP_ROCKET_LAUNCHER
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	3
+	move		3
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		100
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	80
+	gunBash		1
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+}
+
+//Mission to the Jedi Temple NPCs
+darthphobos
+{
+	fullName	"Darth Phobos"
+	playerModel	darthphobos
+	weapon		WP_SABER
+	saber		phobos
+	saberColor	red
+	saberStyle	7
+	FP_HEAL			2
+	FP_LEVITATION	3
+	FP_SPEED		2
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			3
+	FP_LIGHTNING	0
+	FP_RAGE			3
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	3
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		commander
+	aggression	5
+	aim			5
+	evasion		3
+	intelligence	4
+	move		4
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_TAVION
+	friendlyfaction	FACTION_DARK
+	health		300
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		97
+	sex			female
+	snd			darthphobos
+	sndcombat	darthphobos
+	sndjedi		darthphobos
+}
+
+sabertraining_droid
+{
+	fullName	"Lightsaber Training Droid"
+	playerModel	sabertraining_droid
+	weapon		WP_SABER
+	saber		training
+	saberColor	blue
+	saberStyle	2
+	FP_HEAL			0
+	FP_LEVITATION	2
+	FP_SPEED		0
+	FP_PUSH			0
+	FP_PULL			0
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			0
+	FP_SABER_DEFENSE 2
+	FP_SABER_OFFENSE 2
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		0
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	rank		ltcomm
+	aggression	4
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_REBORN
+	friendlyfaction	FACTION_NEUTRAL
+	health		80
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	sex			male
+	snd			proxy
+	sndcombat	proxy
+	sndjedi		proxy
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+combattraining_droid
+{
+	fullName	"Combat Training Droid"
+	playerModel	sabertraining_droid
+	weapon		WP_MELEE
+	FP_HEAL			0
+	FP_LEVITATION	2
+	FP_SPEED		0
+	FP_PUSH			2
+	FP_PULL			0
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	2
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			0
+	FP_SABER_DEFENSE 0
+	FP_SABER_OFFENSE 0
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		0
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	rank		ltcomm
+	aggression	4
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_REBORN
+	friendlyfaction	FACTION_NEUTRAL
+	health		80
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	sex			male
+	snd			proxy
+	sndcombat	proxy
+	sndjedi		proxy
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+501st_st
+{
+	playerModel	501st_stormie
+	customSkin	stcommando
+	crouchheight	38
+	headPitchRangeDown	30
+	weapon		WP_BLASTER
+	rank		crewman
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	4
+	move		2
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		75
+	yawSpeed	70
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			nt1
+	sndcombat	nt1
+	sndextra	nt1
+}
+
+501st_stofficer
+{
+	playerModel	501st_stormie
+	customSkin	officer
+	crouchheight	38
+	weapon		WP_REPEATER
+	rank		lt
+	aggression	4
+	aim			4
+	evasion		3
+	intelligence	4
+	move		3
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		110
+	yawSpeed	80
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			nt2
+	sndcombat	nt2
+	sndextra	nt2
+}
+
+scouttrooper
+{
+	fullName	"Scout Trooper Sniper"
+	playerModel	scouttrooper
+	weapon		WP_DISRUPTOR
+	rank		ltcomm
+	aggression	3
+	aim			5
+	evasion		2
+	intelligence	4
+	move		4
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_RODIAN
+	friendlyfaction	FACTION_NEUTRAL
+	health		75
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	80
+	sex			male
+	snd			biker_scout
+	sndcombat	biker_scout
+	sndextra	biker_scout
+}
+
+shadowst
+{
+	fullName	"Shadow Stormtrooper"
+	playerModel	shadow_stormtrooper
+	weapon		WP_CLONECARBINE
+	rank		ltjg
+	aggression	4
+	aim			4
+	evasion		5
+	intelligence	4
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SABOTEUR
+	friendlyfaction	FACTION_NEUTRAL
+	health		125
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	80
+	sex			male
+	snd			nt1
+	sndcombat	nt1
+	sndextra	nt1
+}
+
+evotrooper
+{
+	fullName	"EVO Trooper"
+	playerModel	evotrooper
+	weapon		WP_FLECHETTE
+	FP_ABSORB	3
+	rank		ltjg
+	aggression	4
+	aim			4
+	evasion		5
+	intelligence	4
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	sex			male
+	snd			nt2
+	sndcombat	nt2
+	sndextra	nt2
+}
+
+evoshadow
+{
+	fullName	"EVO Shadowtrooper"
+	playerModel	evotrooper
+	customSkin	shadow
+	weapon		WP_CONCUSSION
+	FP_ABSORB	3
+	rank		lt
+	aggression	4
+	aim			4
+	evasion		5
+	intelligence	4
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SABOTEUR
+	friendlyfaction	FACTION_NEUTRAL
+	health		175
+	walkSpeed	55
+	runSpeed	200
+	gunBash		1
+	sex			male
+	snd			stofficer1
+	sndcombat	stofficer1
+	sndextra	stofficer1
+}
+
+jumptrooper
+{
+	fullName	"Jump Trooper"
+	playerModel jumptrooper_tfu
+	weapon		WP_ROCKET_LAUNCHER
+	health		125
+	headPitchRangeDown 30
+	reactions	3
+	aim			2
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	rank		ensign
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_MANDALORIAN
+	friendlyfaction	FACTION_NEUTRAL
+	height		72
+	crouchheight 48
+	sex			male
+	snd			rockettrooper1
+	sndcombat	rockettrooper1
+	sndextra	rockettrooper1
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	50
+	visrange	2048
+	earshot		2048
+}

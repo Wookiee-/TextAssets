@@ -1,0 +1,43 @@
+md_emperor_hologram
+{
+	fullName	"Emperor Palpatine (Hologram)"
+	playerModel	palpatine_holo
+	customSkin	emp_holo
+	weapon		WP_MELEE
+	FP_LEVITATION	3
+	FP_PULL			3
+	FP_PUSH			3
+	FP_SPEED		2
+	FP_GRIP			3
+	FP_LIGHTNING	3
+	FP_HEAL			2
+	FP_SEE			3
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	forcePowerMax	100
+	forceRegenAmount 1.5
+	rank		captain
+	aggression	1
+	aim			5
+	evasion		2
+	intelligence	5
+	move		3
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SITHLORD
+	friendlyfaction	FACTION_DARK
+	health		600
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		1200
+	sex			male
+	snd			palpatine_emperor
+	sndextra	palpatine_emperor
+	sndcombat	palpatine_emperor
+	sndjedi		palpatine_emperor
+}

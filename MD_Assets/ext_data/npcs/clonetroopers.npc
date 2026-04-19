@@ -1,0 +1,762 @@
+//Clone Troopers (Films)
+
+md_clo_ep2
+{
+	fullName	"Clone Trooper P1"
+	playerModel	clonetrooper_p1
+	weapon		WP_CLONERIFLE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	3
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p1
+	sndcombat	clonetrooper_p1
+	sndextra	clonetrooper_p1
+	sndjedi		clonetrooper_p1
+}
+
+clone_shiny_p1
+{
+	fullName	"Clone Trooper P1"
+	playerModel	clonetrooper_p1
+	customSkin	shiny
+	weapon		WP_CLONERIFLE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p1
+	sndcombat	clonetrooper_p1
+	sndextra	clonetrooper_p1
+	sndjedi		clonetrooper_p1
+}
+
+clone_commander_p1
+{
+	fullName	"Clone Commander P1"
+	playerModel	clonetrooper_p1
+	customSkin	rgb
+	customRGBA	200 175 0
+	weapon		WP_CLONERIFLE
+	rank		ltcomm
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex			male
+	snd			clonetrooper_p1
+	sndcombat	clonetrooper_p1
+	sndextra	clonetrooper_p1
+	sndjedi		clonetrooper_p1
+}
+
+clone_sniper_p1
+{
+	fullName	"Clone Sniper P1"
+	playerModel	clonetrooper_p1
+	customSkin	shiny_rgb
+	customRGBA	255 0 0
+	weapon		WP_DISRUPTOR
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p1
+	sndcombat	clonetrooper_p1
+	sndextra	clonetrooper_p1
+	sndjedi		clonetrooper_p1
+}
+
+md_clo_212th
+{
+	fullName	"212th Legion"
+	playerModel	clonetrooper_p2
+	customSkin	212
+	weapon		WP_CLONECARBINE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_212_airborne
+{
+	fullName	"Clone Trooper 212th Airborne"
+	playerModel	clonetrooper_p2
+	customSkin	212_airborne
+	weapon		WP_CLONERIFLE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_327
+{
+	fullName	"Clone Trooper 327th"
+	playerModel	clonetrooper_p2
+	customSkin	327
+	weapon		WP_CLONERIFLE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_appo
+{
+	fullName	"Commander Appo"
+	playerModel	clonetrooper_p2
+	customSkin	deviss_rgb
+	customRGBA	52 72 120
+	weapon		WP_CLONERIFLE
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		100
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex		male
+	snd			clonetrooper_p2
+	sndextra	new_clones
+	sndcombat	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_red
+{
+	fullName	"Clone Trooper (Coruscant Guard)"
+	playerModel	clonetrooper_p2
+	customSkin	shock
+	weapon		WP_CLONECARBINE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_red2
+{
+	fullName	"Clone Trooper (Coruscant Guard Commander)"
+	playerModel	clonetrooper_p2
+	customSkin	327_deviss
+	weapon		WP_CLONERIFLE
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		100
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex		male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_red2_player
+{
+	fullName	"Clone Shock Commander"
+	playerModel	clonetrooper_p2
+	customSkin	327_deviss
+	weapon		WP_CLONERIFLE
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		100
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_red_player
+{
+	fullName	"Clone Shock Trooper"
+	playerModel	clonetrooper_p2
+	customSkin	shock
+	weapon		WP_CLONECARBINE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		80
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo6_rt_player
+{
+	fullName	"501st Rocketeer"
+	playerModel	clonetrooper_p2
+	customSkin	327_deviss
+	weapon		WP_ROCKET_LAUNCHER
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		125
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_cody
+{
+	fullName	"Commander Cody"
+	playerModel	clonetrooper_p2
+	customSkin	212_cody
+	weapon		WP_MELEE
+	weapon		WP_CLONEPISTOL
+	weapon		WP_THERMAL
+	weapon		WP_CLONECARBINE
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex		male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_neyo
+{
+	fullName	"Commander Neyo"
+	playerModel	clonetrooper_p2
+	customSkin	91_neyo
+	weapon		WP_MELEE
+	weapon		WP_CLONECARBINE
+	weapon		WP_THERMAL
+	weapon		WP_CLONEPISTOL
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex		male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+//Clone Troopers (TCW - Legends)
+
+md_clo4
+{
+	fullName	"501st Sniper"
+	playerModel	clonetrooper_p2
+	customSkin	airborne_rgb
+	customRGBA	52 72 120
+	weapon		WP_DISRUPTOR
+	rank		lt
+	aggression	3
+	aim			5
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_13th
+{
+	fullName	"13th Legion"
+	playerModel	clonetrooper_p2
+	customSkin	13
+	weapon		WP_CLONECARBINE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_332
+{
+	fullName	"Clone Trooper 332nd"
+	playerModel	clonetrooper_p2
+	customSkin	332
+	weapon		WP_CLONECARBINE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		80
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_rex
+{
+	fullName	"Captain Rex"
+	playerModel	clonetrooper_p2
+	customSkin	501_rex
+	weapon		WP_MELEE
+	weapon		WP_CLONECARBINE
+	weapon		WP_THERMAL
+	weapon		WP_DUAL_CLONEPISTOL
+	dualPistols	1
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		4
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex		male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_fives
+{
+	fullName	"Fives"
+	playerModel	clonetrooper_p2
+	customSkin	fives
+	weapon		WP_MELEE
+	weapon		WP_CLONECARBINE
+	weapon		WP_THERMAL
+	weapon		WP_CLONEPISTOL
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		4
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex		male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_fox
+{
+	fullName	"Commander Fox"
+	playerModel	clonetrooper_p2
+	customSkin	fox
+	weapon		WP_MELEE
+	weapon		WP_CLONECARBINE
+	weapon		WP_THERMAL
+	weapon		WP_DUAL_CLONEPISTOL
+	dualPistols	1
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		4
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_vaughn
+{
+	fullName	"Captain Vaughn"
+	playerModel	clonetrooper_p2
+	customSkin	332_vaughn
+	weapon		WP_MELEE
+	weapon		WP_THERMAL
+	weapon		WP_CLONECARBINE
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	gunBash		1
+	sex		male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_shadow
+{
+	fullName	"Clone Shadow Trooper"
+	playerModel	clonetrooper_p2
+	customSkin	shadow
+	weapon		WP_CLONECARBINE
+	rank		ltcomm
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clonemarine
+{
+	fullName	"Galactic Marine"
+	playerModel	clonemarine
+	weapon		WP_CLONERIFLE
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+
+md_clo_minigun
+{
+	fullName	"Clone Trooper P1"
+	playerModel	clonetrooper_p1
+	customSkin	rgb
+	customRGBA	200 175 0
+	weapon		WP_Z6_ROTARY_CANNON
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	3
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		100
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	scale		101
+	sex			male
+	snd			clonetrooper_p1
+	sndcombat	clonetrooper_p1
+	sndextra	clonetrooper_p1
+	sndjedi		clonetrooper_p1
+}

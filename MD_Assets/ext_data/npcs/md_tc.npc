@@ -1,0 +1,179 @@
+md_sky_tc
+{
+	fullName	"Shmi Skywalker"
+	playerModel	shmi
+	weapon		WP_NONE
+	rank		crewman
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JAN
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	70
+	sex			female
+}
+
+md_tus1_tc
+{
+	fullName	"Tusken Raider"
+	playerModel	tusken_ep1n2
+	weapon		WP_TUSKEN_STAFF
+	rank		crewman
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	vigilance	1
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	class		CLASS_TUSKEN
+	sex			male
+	snd			tusken
+	sndcombat	tusken
+	sndextra	tusken
+	sndjedi		tusken
+}
+
+md_tus2_tc
+{
+	fullName	"Tusken Sniper"
+	playerModel	tusken_ep1n2
+	weapon		WP_TUSKEN_RIFLE
+	rank		crewman
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	class		CLASS_TUSKEN
+	sex			male
+	snd			tusken
+	sndcombat	tusken
+	sndextra	tusken
+	sndjedi		tusken
+}
+
+md_tus3_tc
+{
+	fullName	"Tusken Female"
+	playerModel	mc_tusken_fem_jk3
+	weapon		WP_TUSKEN_STAFF
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	movetype	walk
+	class		CLASS_TUSKEN
+	sex			female
+	snd			tusken_fem
+	sndcombat	tusken_fem
+	sndextra	tusken_fem
+}
+
+md_tus4_tc
+{
+	fullName	"Tusken Female"
+	playerModel	mc_tusken_fem_jk3
+	weapon		WP_TUSKEN_STAFF
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	movetype	walk
+	class		CLASS_TUSKEN
+	sex			female
+	snd			tusken_fem
+	sndcombat	tusken_fem
+	sndextra	tusken_fem
+}
+
+md_tus5_tc
+{
+	fullName	"Tusken Chieftain"
+	playerModel	tusken_quarak
+	customSkin	ep2
+	weapon		WP_SABER
+	saber		tusken_chieftain_gaffi
+	saberStyle	7
+	FP_HEAL			0
+	FP_LEVITATION	0
+	FP_SPEED		0
+	FP_PUSH			0
+	FP_PULL			0
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			0
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		0
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	rank		commander
+	reactions	3
+	aim			4
+	move		3
+	aggression	5
+	evasion		3
+	intelligence	5
+	vigilance   1
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	friendlyfaction	FACTION_NEUTRAL
+	health		400
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	movetype	walk
+	class		CLASS_GUARD
+	sex			male
+	snd			tusken
+	sndjedi		tusken
+	sndcombat	tusken
+	sndextra	tusken
+}

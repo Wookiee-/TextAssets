@@ -1,0 +1,45 @@
+md_snoke_cut_lower
+{
+	fullName	"Snoke Dead"
+	playerModel	snoke
+	customSkin	loweronly
+	weapon      WP_NONE
+	playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}
+
+md_snoke_cut_upper
+{
+	fullName	"Snoke Dead"
+	playerModel	snoke
+	customSkin	upperonly
+	weapon      WP_NONE
+	playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}
+
+md_snoke_invisible_saber
+{
+	fullName	"Snoke Saber"
+	playerModel	snoke
+	customSkin	invisible
+	weapon      WP_SABER
+	saber		rey_ep8
+	playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}
+
+md_snoke_invisible_saber_handonly
+{
+	fullName	"Snoke Saber"
+	playerModel	snoke
+	customSkin	invisible_handonly
+	weapon      WP_SABER
+	saber		rey_ep8
+	playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}

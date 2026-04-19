@@ -1,0 +1,37 @@
+// DO NOT REMOVE THIS OR BUGS WILL HAPPEN WHEN USING FP_PROJECTION
+
+projection_far
+{
+	playerModel	player
+	health		100
+	BlockPointRegenRate	150
+	BlockPointRegenAmount	50
+	BlockPointsMax  	200
+	class			CLASS_PROJECTION
+	friendlyfaction	FACTION_NEUTRAL
+	playerTeam		TEAM_SOLO
+}
+
+projection_near
+{
+	playerModel	player
+	health		75
+	BlockPointRegenRate	150
+	BlockPointRegenAmount	50
+	BlockPointsMax  	200
+	class			CLASS_PROJECTION
+	friendlyfaction	FACTION_NEUTRAL
+	playerTeam		TEAM_SOLO
+}
+
+projection_close
+{
+	playerModel	player
+	health		50
+	BlockPointRegenRate	150
+	BlockPointRegenAmount	50
+	BlockPointsMax  	200
+	class			CLASS_PROJECTION
+	friendlyfaction	FACTION_NEUTRAL
+	playerTeam		TEAM_SOLO
+}

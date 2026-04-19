@@ -1,0 +1,7 @@
+                                //JaceSolaris@ NPC FILE//
+reset
+{
+	playerModel	player
+	class		CLASS_PLAYER
+	scale		100
+}

@@ -1,0 +1,65 @@
+boba_fett_tgpoc
+{
+	playerModel		bobafett
+	altFire			1
+	weapon			WP_MELEE
+	weapon			WP_WRIST_BLASTER
+	weapon			WP_BOBA
+	health			400
+	headPitchRangeDown 30
+	reactions		5
+	aim				5
+	move			3
+	aggression		5
+	evasion			3
+	intelligence	5
+	earshot			2048
+	visrange		4096
+	hfov			120
+	vfov			100
+	scale			101
+	rank			captain
+	playerTeam		TEAM_ENEMY
+	enemyTeam		TEAM_PLAYER
+	class			CLASS_LANDO
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed		80
+	runSpeed		250
+	sex				male
+	snd				boba
+	sndcombat		boba
+	sndextra		boba
+	sndjedi			boba
+	yawspeed		180
+}
+
+Vizam_tgpoc
+{
+	playerModel	vizam
+	weapon      WP_MELEE
+	weapon		WP_SABER
+	saber		tusken_chieftain_gaffi
+	saberStyle	7
+	FP_SABER_DEFENSE 1
+	FP_SABER_OFFENSE 1
+	reactions		3
+	aim				4
+	move			3
+	aggression		3
+	evasion			2
+	intelligence	5
+	health			80
+	rank			crewman
+	playerTeam		TEAM_ENEMY
+	enemyTeam		TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	class			CLASS_GUARD
+	sex				male
+	snd				weequay
+	sndcombat		weequay
+	sndextra		weequay
+	sndjedi			weequay
+	yawspeed		90
+	walkSpeed		55
+	runSpeed		200
+}

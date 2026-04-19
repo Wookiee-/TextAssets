@@ -1,0 +1,26 @@
+md_rebel_pilot
+{
+	playerModel rebel_pilot_tfu
+	weapon		WP_BLASTER_PISTOL
+	reactions	4
+	aim			4
+	move		4
+	aggression	4
+	evasion		3
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+//	race		human
+	class		CLASS_REBEL
+//	snd			rebel1
+//	sndcombat	rebel1
+//	sndextra	rebel1
+	snd		militiaelite
+	sndcombat	militiaelite
+	sndextra	militiaelite
+	sndjedi		militiaelite
+	yawspeed	120
+	walkSpeed	55
+	runSpeed	200
+}

@@ -1,0 +1,83 @@
+md_ani_eitd
+{
+	fullName	"Anakin Skywalker (Young)"
+	playerModel	youngling
+	weapon		WP_MELEE
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	sex		male
+	runSpeed	175
+	walkSpeed	65
+	scale		50
+	height		35
+	width		10
+}
+
+md_tusken_eitd
+{
+	fullName	"Tusken Raider"
+	playerModel	tusken_ep1n2
+	customSkin	ep1
+	weapon		WP_TUSKEN_STAFF
+	rank		crewman
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	yawSpeed	90
+	walkSpeed	55
+	runSpeed	200
+	sex		male
+	snd			tusken
+	sndcombat	tusken
+	sndextra	tusken
+}
+
+md_tuskens_eitd
+{
+	fullName	"Tusken Sniper"
+	playerModel	tusken_ep1n2
+	customSkin	ep1
+	weapon		WP_TUSKEN_RIFLE
+	altFire		1
+	rank		crewman
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	yawSpeed	90
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			tusken
+	sndcombat	tusken
+	sndextra	tusken
+}
+
+Bantha
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	class		CLASS_VEHICLE
+	snd			tauntaun
+}

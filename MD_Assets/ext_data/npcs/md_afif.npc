@@ -1,0 +1,411 @@
+md_ani_mus
+{
+	fullName	"Anakin Skywalker EP3 (Robed)"
+	playerModel	anakin
+	customSkin	mrobed
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		anakin_ep3_m
+	saberStyle	1
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			3
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			3
+	FP_LIGHTNING	0
+	FP_RAGE			3
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		commander
+	aggression	5
+	aim			5
+	evasion		5
+	intelligence	4
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_DESANN
+	friendlyfaction	FACTION_DARK
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		104
+	height		67
+	sex			male
+	snd			anakin_sith_notaunt
+	sndcombat	anakin_sith_notaunt
+	sndjedi		anakin_sith_notaunt
+}
+
+md_obi_mus
+{
+	fullName	"Obi-Wan Kenobi EP3 (Robed)"
+	playerModel	obiwan_ep3
+	customSkin	robed
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		obiwan_ep3_m
+	saberStyle	1
+	saberStyle	5
+	saberStyle	2
+	FP_HEAL			3
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		captain
+	aggression	3
+	aim			5
+	evasion		4
+	intelligence	5
+	move		5
+	reactions		5	
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_LUKE
+	friendlyfaction	FACTION_LIGHT
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	sex			male
+	snd			obiwan_ep3
+	sndcombat	none
+	sndjedi		none
+}
+
+md_pad_mus
+{
+	fullName	"Padme Amidala"
+	playerModel	Padme_Mus
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_JAN
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	scale		92
+	sex			female
+	snd			padme
+	sndcombat	padme
+	sndjedi		padme
+	sndextra	padme
+}
+
+md_ani2_mus
+{
+	fullName	"Anakin Skywalker (Mustafar)"
+	playerModel	anakin
+	customSkin	mus
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		anakin_ep3_m
+	saberStyle	1
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			3
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			3
+	FP_LIGHTNING	0
+	FP_RAGE			3
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		commander
+	aggression	5
+	aim			5
+	evasion		5
+	intelligence	4
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_DESANN
+	friendlyfaction	FACTION_DARK
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		104
+	height		67
+	sex			male
+	snd			anakin_sith
+	sndcombat	none
+	sndjedi		none
+}
+
+md_obi2_mus
+{
+	fullName	"Obi-Wan Kenobi EP3"
+	playerModel	obiwan_ep3
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		obiwan_ep3_m
+	saberStyle	1
+	saberStyle	5
+	saberStyle	2
+	FP_HEAL			3
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		commander
+	aggression	3
+	aim			5
+	evasion		4
+	intelligence	5
+	move		5
+	reactions	5	
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_LUKE
+	friendlyfaction	FACTION_LIGHT
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	sex			male
+	snd			obiwan_ep3
+	sndcombat	none
+	sndjedi		none
+}
+
+md_3po_mus
+{
+	fullName	"C-3PO"
+	playerModel	protocol
+	customSkin	ep3
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_PROTOCOL
+	friendlyfaction	FACTION_NEUTRAL
+	yawSpeed	60
+	walkSpeed	50
+	runSpeed	150
+	scale		95
+}
+
+md_r2d2_mus
+{	
+	fullName	"R2-D2"
+	playerModel	r2d2
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_R2D2
+	yawSpeed	120
+	walkSpeed	50
+	runSpeed	150
+}
+
+md_obi3_mus
+{
+	fullName	"Obi-Wan Kenobi (Mustafar)"
+	playerModel	obiwan_ep3
+	customSkin	bw
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		obiwan_ep3_m
+	saberStyle	1
+	saberStyle	5
+	saberStyle	2
+	FP_HEAL			3
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		commander
+	aggression	3
+	aim			5
+	evasion		4
+	intelligence	5
+	move		5
+	reactions	5	
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_LUKE
+	friendlyfaction	FACTION_LIGHT
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	sex			male
+	snd			obiwan_ep3
+	sndcombat	none
+	sndjedi		none
+}
+
+md_ani3_mus
+{
+	fullName	"Anakin Skywalker (Mustafar)"
+	playerModel	anakin
+	customSkin	smus
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		anakin_ep3_m
+	saberStyle	1
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			3
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			3
+	FP_LIGHTNING	0
+	FP_RAGE			3
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		commander
+	aggression	5
+	aim			5
+	evasion		5
+	intelligence	4
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_DESANN
+	friendlyfaction	FACTION_DARK
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		104
+	height		67
+	sex			male
+	snd			anakin_sith
+	sndcombat	none
+	sndjedi		none
+}

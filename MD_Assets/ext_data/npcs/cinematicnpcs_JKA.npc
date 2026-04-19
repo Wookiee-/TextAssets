@@ -1,0 +1,23 @@
+RebelJKA
+{
+	playerModel rebelJKA
+	weapon		WP_REBELBLASTER
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+//	race		human
+	class		CLASS_REBEL
+	snd		rebel1
+	sndcombat	rebel1
+	sndextra	rebel1
+	sndjedi		rebel1
+	yawspeed	120
+	walkSpeed	55
+	runSpeed	200
+}

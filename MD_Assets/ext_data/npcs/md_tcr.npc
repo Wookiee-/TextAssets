@@ -1,0 +1,136 @@
+md_obi_gd
+{
+	fullName	"Obi-Wan Kenobi EP2"
+	playerModel	obiwan_ep2
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		obiwan_ep2b_m
+	saberStyle	1
+	saberStyle	2
+	FP_HEAL			2
+	FP_LEVITATION	3
+	FP_SPEED		2
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	150
+	forceRegenAmount 1.5
+	rank		commander
+	aggression	3
+	aim			5
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	friendlyfaction	FACTION_LIGHT
+	health		300
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	sex			male
+	snd			obiwan_ep2
+	sndcombat	obiwan_ep2
+	sndjedi		obiwan_ep2
+}
+
+md_ani_gd
+{
+	fullName	"Anakin Skywalker EP2"
+	playerModel	anakin
+	customSkin	ep2
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		anakin_ep2b_m
+	saberColor	green
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			1
+	FP_LEVITATION	2
+	FP_SPEED		2
+	FP_PUSH			2
+	FP_PULL			2
+	FP_TELEPATHY	0
+	FP_GRIP			1
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			1
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 2
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	125
+	forceRegenAmount 1.25
+	rank		ltcomm
+	aggression	5
+	aim			5
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_LIGHT
+	health		300
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		104
+	height		67
+	sex			male
+	snd			anakin_ep2
+	sndcombat	anakin_ep2
+	sndjedi		anakin_ep2
+}
+
+md_pro_gd
+{
+	fullName	"Protocol"
+	playerModel	protocol
+	customSkin	imp
+	sex			male
+	weapon		WP_NONE
+	rank		ensign
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_PROTOCOL
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	scale		95
+	snd			protocol
+}

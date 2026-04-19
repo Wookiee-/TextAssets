@@ -1,0 +1,215 @@
+md_clo_rc
+{
+	fullName	"Republic Commando"
+	playerModel	clonerc2
+	weapon		WP_CLONEPISTOL
+	weapon		WP_CLONECOMMANDO
+	rank		ltcomm
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	scale		101
+	sex			male
+	snd			clone_rc
+	sndcombat	clone_rc
+	sndextra	clone_rc
+	sndjedi		clone_rc
+}
+
+md_clo_rc2
+{
+	fullName	"Republic Commando (Night Ops Armor)"
+	playerModel	clonerc2
+	customSkin	commando
+	weapon		WP_CLONEPISTOL
+	weapon		WP_CLONECOMMANDO
+	rank		ltcomm
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	scale		101
+	sex			male
+	snd			clone_rc
+	sndcombat	clone_rc
+	sndextra	clone_rc
+	sndjedi		clone_rc
+}
+
+md_clo_boss
+{
+	fullName	"Boss"
+	playerModel	clonerc2
+	customSkin	boss
+	weapon		WP_CLONEPISTOL
+	weapon		WP_CLONECOMMANDO
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		300
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	scale		101
+	sex			male
+	snd			deltas
+	sndcombat	deltas
+	sndextra	deltas
+	sndjedi		deltas
+}
+
+md_clo_fixer
+{
+	fullName	"Fixer"
+	playerModel	clonerc2
+	customSkin	fixer
+	weapon		WP_CLONEPISTOL
+	weapon		WP_CLONECOMMANDO
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		300
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	scale		101
+	sex			male
+	snd			fixer
+	sndcombat	fixer
+	sndextra	fixer
+	sndjedi		fixer
+}
+
+md_clo_gregor
+{
+	fullName	"Gregor"
+	playerModel	clonerc2
+	customSkin	gregor
+	weapon		WP_CLONEPISTOL
+	weapon		WP_CLONECOMMANDO
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		300
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+	sndjedi		clonetrooper_p2
+}
+
+md_clo_scorch
+{
+	fullName	"Scorch"
+	playerModel	clonerc2
+	customSkin	scorch
+	weapon		WP_CLONEPISTOL
+	weapon		WP_CLONECOMMANDO
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		300
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	scale		101
+	sex			male
+	snd			scorch
+	sndcombat	scorch
+	sndextra	scorch
+	sndjedi		scorch
+}
+
+md_clo_sev
+{
+	fullName	"Sev"
+	playerModel	clonerc2
+	customSkin	sev
+	weapon		WP_CLONEPISTOL
+	weapon		WP_CLONECOMMANDO
+	rank		captain
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		300
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	90
+	gunBash		1
+	scale		101
+	sex			male
+	snd			sev
+	sndcombat	sev
+	sndextra	sev
+	sndjedi		sev
+}

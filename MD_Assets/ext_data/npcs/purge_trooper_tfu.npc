@@ -1,0 +1,27 @@
+md_tfu_purge_trooper
+{
+	fullName		"Purge Trooper (TFU)"
+	playerModel		purgetrooper_tfu
+	weapon			WP_ROCKET_LAUNCHER
+	scale			150
+	height			88
+	width			18
+	crouchheight	88
+	rank			ltcomm
+	aim				5
+	evasion			1
+	intelligence	5
+	move			2
+	playerTeam		TEAM_ENEMY
+	enemyTeam		TEAM_PLAYER
+	class			CLASS_HAZARD_TROOPER
+	friendlyfaction		FACTION_NEUTRAL
+	health			800
+	walkSpeed		45
+	runSpeed		50
+	movetype		walk
+	snd			purgetrooper_tfu
+	sndcombat	purgetrooper_tfu
+	sndextra	purgetrooper_tfu
+}
+

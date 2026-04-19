@@ -1,0 +1,559 @@
+md_obi_ga
+{
+	fullName	"Obi-Wan Kenobi EP2"
+	playerModel	obiwan_ep2
+	weapon		WP_SABER
+	saber		obiwan_ep2b_m
+	saberStyle	2
+	FP_LEVITATION	3
+	FP_PUSH			1
+	FP_SPEED		2
+	FP_HEAL			2
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	FP_SABERTHROW	0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		commander
+	aggression	3
+	aim			5
+	evasion		3
+	intelligence	4
+	move		3
+	reactions	4	
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_LUKE
+	friendlyfaction	FACTION_LIGHT
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	sex			male
+	snd			obiwan_ep2
+	sndcombat	obiwan_ep2
+	sndjedi		obiwan_ep2
+}
+
+md_ani_ga
+{
+	fullName	"Anakin Skywalker EP2"
+	playerModel	anakin
+	customSkin	ep2
+	weapon		WP_SABER
+	saber		anakin_ep2b_m
+	saberColor	green
+	saberStyle	3
+	FP_LEVITATION	2
+	FP_PUSH			1
+	FP_SPEED		2
+	FP_HEAL			1
+	FP_GRIP			1
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	2
+	FP_SABERTHROW	0
+	rank		ltcomm
+	aggression	4
+	aim			5
+	evasion		3
+	intelligence	3
+	move		3
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_LUKE
+	friendlyfaction	FACTION_LIGHT
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		104
+	height		67
+	sex			male
+	snd			anakin_ep2
+	sndcombat	anakin_ep2
+	sndjedi		anakin_ep2
+}
+
+md_eet_ga
+{
+	fullName	"Eeth Koth"
+	playerModel	eeth_koth
+	weapon		WP_SABER
+	saber		saesee
+	saberColor	green
+	saberStyle	2
+	FP_LEVITATION	3
+	FP_PUSH			1
+	FP_SPEED		2
+	FP_HEAL			3
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	2
+	FP_SABERTHROW	0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	4
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	friendlyfaction	FACTION_LIGHT
+	health		200
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		95
+	sex		male
+	snd			eeth_koth
+	sndcombat	eeth_koth	
+	sndjedi		eeth_koth
+}
+
+md_fet_ga
+{
+	fullName	"Jango Fett (Helmetless)"
+	playerModel	jangofett
+	customSkin	helmetless
+	weapon		WP_JANGO
+	FP_LEVITATION	1
+	FP_PULL			0
+	FP_PUSH			0
+	FP_SPEED		0
+	FP_HEAL			0
+	FP_SEE			0
+	FP_GRIP			0
+	FP_LIGHTNING	3
+	FP_TELEPATHY	0
+	FP_RAGE			0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SABER_DEFENSE	0
+	FP_SABER_OFFENSE	0
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	4
+	aim			4
+	evasion		4
+	intelligence	4
+	move		4
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_JANGO
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	beskar		1
+	sex		male
+	snd			jango_bf2
+	sndcombat	jango_bf2
+	sndextra	jango_bf2
+}
+
+md_sbd_ga
+{
+	fullName	"Super Battle Droid"
+	playerModel	SBD
+	weapon		WP_SBD_BLASTER
+	health  	150
+	rank		lt
+	aggression	4
+	aim			5
+	evasion		4
+	intelligence	4
+	move		4
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SBD
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	scale		110
+	height		71
+	width		17
+	crouchheight	50
+	sex			male
+	snd			SBD
+	sndcombat	SBD
+	sndextra	SBD
+	dismemberProbArms	50
+	dismemberProbHands	50
+	dismemberProbHead	50
+	dismemberProbLegs	50
+	dismemberProbWaist	50
+}
+
+md_jed1_ga
+{
+	playerModel	jedi_spanki
+	customSkin	head_a1|torso_c1|lower_d1
+	weapon		WP_SABER
+	saber		shaak
+	saberColor	green
+	saberStyle	2
+	FP_SABER_OFFENSE	3
+	FP_SABER_DEFENSE	1
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	2
+	aim			2
+	evasion		2
+	intelligence	2
+	move		2
+	reactions	2
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_LIGHT
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			jedi1
+	sndcombat	jedi1
+	sndjedi		jedi1
+}
+
+md_jed2_ga
+{
+	playerModel	jedi_spanki
+	customSkin	head_f4|torso_f4|lower_a1
+	weapon		WP_SABER
+	saber		shaak
+	saberStyle	2
+	FP_SABER_OFFENSE	3
+	FP_SABER_DEFENSE	1
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	2
+	aim			2
+	evasion		2
+	intelligence	2
+	move		2
+	reactions	2
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_LIGHT
+	health		75
+	walkSpeed	55
+	runSpeed	200
+	sex		male
+	snd			jedi2
+	sndcombat	jedi2
+	sndjedi		jedi2
+}
+
+md_jed3_ga
+{
+	playerModel		jedi_rm
+	customSkin		head_c1|torso_d1|lower_c1
+	weapon			WP_SABER
+	saber			shaak
+	saberStyle		3
+	FP_LEVITATION	1
+	FP_SABER_OFFENSE	3
+	FP_SABER_DEFENSE	1
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	2
+	aim			2
+	evasion		4
+	intelligence	4
+	move		2
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_LIGHT
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	sex		male
+	snd			jedi2
+	sndcombat	jedi2
+	sndjedi		jedi2
+}
+
+md_jed4_ga
+{
+	playerModel	jedi_kdm
+	customSkin	head_c1|torso_a1|lower_d1
+	weapon		WP_SABER
+	saber		shaak
+	saberColor	green
+	saberStyle	2
+	FP_SABER_OFFENSE	3
+	FP_SABER_DEFENSE	1
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	2
+	aim			2
+	evasion		2
+	intelligence	2
+	move		2
+	reactions	2
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_LIGHT
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	sex		male
+	snd			jedi2
+	sndcombat	jedi2
+	sndjedi		jedi2
+}
+
+md_jed5_ga
+{
+	playerModel	jedi_spanki
+	customSkin	head_e5|torso_f1|lower_f1
+	weapon		WP_SABER
+	saber		shaak
+	saberStyle	1
+	FP_LEVITATION	1
+	FP_SABER_OFFENSE	3
+	FP_SABER_DEFENSE	1
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	2
+	aim			2
+	evasion		2
+	intelligence	2
+	move		2
+	reactions	1
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_LIGHT
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	scale		90
+	sex		male
+	snd			jedi1
+	sndcombat	jedi1
+	sndjedi		jedi1
+}
+
+md_3po_ga
+{
+	fullName	"C-3PO"
+	playerModel	protocol
+	customSkin	ep2
+	weapon		WP_BATTLEDROID
+	rank		crewman
+	evasion		2
+	intelligence	2
+	reactions	2
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_PROTOCOL
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	walkSpeed	55
+	runSpeed	200
+	scale		95
+	snd			protocol
+	sndcombat	protocol
+	sndextra	protocol
+	sndjedi		protocol
+}
+
+md_pad_ga
+{
+	fullName	"Padme Amidala"
+	playerModel	padme_ep2
+	customSkin	default_bw
+	weapon		WP_BATTLEDROID
+	rank		ltcomm
+	aggression	4
+	aim			5
+	evasion		3
+	intelligence	5
+	move		5
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JAN
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	scale		92
+	sex			female
+	snd			padme
+	sndcombat	padme
+	sndextra	padme
+	sndjedi		padme
+}
+
+md_mag_ga
+{
+	fullName	"Magnaguard"
+	playerModel	magnaguard
+	weapon		WP_SABER
+	saber		magnaguard_staff
+	saberStyle	7
+	FP_LEVITATION	1
+	FP_SABER_DEFENSE	2
+	FP_SABER_OFFENSE	2
+	FP_SABERTHROW	0
+	FP_LEVITATION	0
+	rank		commander
+	aggression	5
+	aim			4
+	evasion		3
+	intelligence	4
+	move		3
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_GUARD
+	friendlyfaction	FACTION_NEUTRAL
+	health		300
+	walkSpeed	55
+	runSpeed	200
+	scale		108
+	sex		male
+	snd			magnaguard
+	sndjedi		magnaguard
+	sndcombat	magnaguard
+	sndextra	magnaguard
+}
+
+md_fet2_ga
+{
+	fullName	"Jango Fett (Newpack)"
+	playerModel	jangofett
+	customSkin	jetpack2
+	headPitchRangeDown	30
+	weapon		WP_DUAL_PISTOL
+	weapon		WP_JANGO
+	weapon		WP_DISRUPTOR
+	weapon		WP_MELEE
+	weapon		WP_ROCKET_LAUNCHER
+	dualPistols		1
+	altFire			1
+	FP_HEAL			0
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			0
+	FP_PULL			0
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	3
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			0
+	FP_SABER_DEFENSE 0
+	FP_SABER_OFFENSE 0
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		0
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	rank		captain
+	aggression	5
+	aim			5
+	evasion		5
+	intelligence	5
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_JANGO
+	friendlyfaction	FACTION_NEUTRAL
+	health		400
+	earshot		2048
+	visrange	4096
+	yawSpeed	180
+	walkSpeed	80
+	runSpeed	250
+	scale		101
+	sex		male
+	snd			jango_bf2
+	sndcombat	jango_bf2
+	sndextra	jango_bf2
+}
+
+md_fet3_ga
+{
+	fullName	"Jango Fett (Newpack)"
+	playerModel	jangofett
+	customSkin	jetpack2
+	weapon		WP_JANGO
+	rank		commander
+	aggression	4
+	aim			4
+	evasion		4
+	intelligence	4
+	move		5
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_REBORN
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	sex		male
+	snd			jango_bf2
+	sndcombat	jango_bf2
+	sndextra	jango_bf2
+	dismemberProbHead	100
+}
+
+md_cloc2_ga
+{
+	fullName	"Clonetrooper"
+	playerModel	clonetrooper_p1
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	weapon		WP_CLONEPISTOL
+	weapon		WP_CLONERIFLE
+	weapon		WP_ROCKET_LAUNCHER
+	weapon		WP_THERMAL
+	saber		cyberninja
+	saberStyle	2
+	FP_SABER_OFFENSE	1
+	FP_SABER_DEFENSE	1
+	rank		ensign
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	3
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		80
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	sex			male
+	snd			clonetrooper_p1
+	sndcombat	clonetrooper_p1
+	sndextra	clonetrooper_p1
+}

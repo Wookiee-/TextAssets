@@ -1,0 +1,115 @@
+swoop_mp
+{
+name			swoop_mp
+type			VH_SPEEDER
+numHands		2
+lookYaw			45
+lookPitch		20
+length			128
+width			32
+height			32
+centerOfGravity	"-0.222 0 0"
+speedMax		700
+speedMin		-200
+turboSpeed		1400
+turboDuration	4000
+turboRecharge	8000
+acceleration	20
+decelIdle		10
+strafePerc		0.5
+bankingSpeed	0.5
+rollLimit		45
+pitchLimit		80
+braking			10
+mouseYaw		0.0038
+turningSpeed	5
+turnWhenStopped	0
+traction		12
+friction		1.5
+maxSlope		0.65
+mass			200
+armor 			80
+toughness 		80.0
+malfunctionArmorLevel	20
+model			swoop
+radarIcon		"gfx/menus/radar/swoop"
+
+riderAnim		BOTH_VS_IDLE
+
+soundOn		"sound/vehicles/swoop/sb_on.mp3"
+soundOff		"sound/vehicles/swoop/sb_off.mp3"
+
+soundLoop		"sound/vehicles/swoop/sb_engine_loop.wav"
+
+soundSpin		"sound/vehicles/swoop/loop.wav"
+
+soundTurbo		"sound/vehicles/swoop/sb_revup_boost1.wav"
+soundTurbo2		"sound/vehicles/swoop/sb_revup_boost2.wav"
+soundTurbo3		"sound/vehicles/swoop/sb_revup_boost3.wav"
+soundTurbo4		"sound/vehicles/swoop/sb_revup_boost4.wav"
+
+soundBraking	"sound/vehicles/swoop/sb_brake.mp3"
+soundAccelerate	"sound/vehicles/swoop/sb_accelerate.mp3"
+
+soundFlyBy		"sound/vehicles/swoop/flyby1.mp3"
+soundFlyBy2		"sound/vehicles/swoop/flyby2.mp3"
+soundFlyBy3		"sound/vehicles/swoop/flyby3.mp3"
+soundFlyBy4		"sound/vehicles/swoop/flyby4.mp3"
+soundFlyBy5		"sound/vehicles/swoop/flyby5.mp3"
+soundFlyBy6		"sound/vehicles/swoop/flyby6.mp3"
+soundFlyBy7		"sound/vehicles/swoop/flyby7.mp3"
+soundFlyBy8		"sound/vehicles/swoop/flyby8.mp3"
+soundFlyBy9		"sound/vehicles/swoop/flyby9.mp3"
+soundFlyBy10	"sound/vehicles/swoop/flyby10.mp3"
+soundFlyBy11	"sound/vehicles/swoop/flyby11.mp3"
+soundFlyBy12	"sound/vehicles/swoop/flyby12.mp3"
+soundFlyBy13	"sound/vehicles/swoop/flyby13.mp3"
+soundFlyBy14	"sound/vehicles/swoop/flyby14.mp3"
+
+soundShift1		"sound/vehicles/swoop/sb_shift1.mp3"
+soundShift2		"sound/vehicles/swoop/sb_shift2.mp3"
+soundShift3		"sound/vehicles/swoop/sb_shift3.mp3"
+soundShift4		"sound/vehicles/swoop/sb_shift4.mp3"
+soundShift5		"sound/vehicles/swoop/sb_shift5.mp3"
+soundShift6		"sound/vehicles/swoop/sb_shift6.mp3"
+soundShift7		"sound/vehicles/swoop/sb_shift7.mp3"
+soundShift8		"sound/vehicles/swoop/sb_shift8.mp3"
+soundShift9		"sound/vehicles/swoop/sb_shift9.mp3"
+soundShift10	"sound/vehicles/swoop/sb_shift10.mp3"
+
+// Posible cinematic sounds not used by player
+soundEngineStart	"sound/vehicles/swoop/on.mp3"
+soundTakeOff	"sound/vehicles/swoop/on.mp3"
+
+exhaustFX		"ships/burner"
+impactFX		"ships/scrape_sparks"
+turboFX			"ships/jet"
+turboStartFX		"ships/swoop_turbo_start"
+flammable		1
+explosionRadius 200
+explosionDamage 500
+explodeFX		"ships/swoop_explosion"
+explosionDelay	4500
+wakeFX			"ships/vehicle_wake"
+gravity			800
+waterProof		1
+bouyancy		1
+hoverHeight		30
+hoverStrength	35
+
+cameraOverride		1
+cameraRange			125
+cameraVertOffset	0
+cameraPitchOffset	0
+cameraFOV			100
+cameraAlpha			0
+
+weap1			swoop_laser
+
+weap1Delay		100
+
+weap1AmmoMax	2000
+weap1AmmoRechargeMS	200
+
+weapMuzzle1		swoop_laser
+}

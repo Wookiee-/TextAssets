@@ -1,0 +1,23 @@
+md_padme_mus
+{
+	fullName	"Padme Amidala"
+	playerModel	Padme_Mus
+	weapon		WP_JANGO
+	rank		ltcomm
+	aim			5
+	evasion		5
+	move		5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_JAN
+	walkSpeed	55
+	runSpeed	200
+	scale		92
+	gunBash		1
+	sex		female
+	snd		padme
+	sndcombat	padme
+	sndextra	padme
+	sndjedi		padme
+}

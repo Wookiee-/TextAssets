@@ -1,0 +1,103 @@
+md_gun_sn
+{
+	fullName	"Nute Gunray"
+	playerModel	gunray
+	weapon		WP_NONE
+	forcePowerMax	150
+	rank		commander
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	sex		male
+	health		200
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	70
+	scale		106
+}
+
+md_run_sn
+{
+	fullName	"Rune Haako"
+	playerModel	rune
+	weapon		WP_NONE
+	forcePowerMax	150
+	rank		commander
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	sex		male
+	health		200
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	70
+	scale		109
+}
+
+md_pro_sn
+{
+	fullName	"TC-14"
+	playerModel	protocol
+	customSkin	tc14
+	sex			female
+	weapon		WP_NONE
+	forcePowerMax	150
+	rank		commander
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_PROTOCOL
+	friendlyfaction	FACTION_NEUTRAL
+	health		200
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	70
+	scale		95
+}
+
+md_dro_sn
+{
+	fullName	"Droideka"
+	playerModel	droideka
+	weapon		WP_DROIDEKA
+	altFire		1
+	rank		captain
+	aim			5
+	evasion		5
+	intelligence	5
+	move		5
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_DROIDEKA
+	friendlyfaction	FACTION_NEUTRAL
+	health		100
+	runSpeed	200
+	walkSpeed	75
+	yawSpeed	80
+	height		60
+	width		20
+	scale 		80
+	noKnockback	1
+	sex			male
+	snd			droideka
+	sndcombat	droideka
+	sndextra	droideka
+}
+
+md_pal_sn
+{
+	fullName	"Darth Sidious (Hologram)"
+	playerModel	palpatine_holo
+	customSkin	hologram
+	weapon		WP_NONE
+	rank		captain
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	health		200
+	sex			male
+	walkSpeed	55
+	runSpeed	200
+	yawSpeed	70
+	scale		106
+}

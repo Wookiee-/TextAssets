@@ -1,0 +1,208 @@
+abyssin_merc
+{
+	playerModel human_merc
+	customSkin	abyssin
+	weapon		WP_BLASTER_PISTOL
+	surfOff		"l_arm_pocket l_arm_key"
+	health		100
+	headPitchRangeDown 30
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 48
+	walkSpeed	51
+	runSpeed	200
+	snd			abyssin
+	sndcombat	abyssin
+	sndextra	abyssin
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	200
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}
+
+advozse_merc
+{
+	playerModel human_merc
+	customSkin	advozse
+	surfOff		"l_arm_pocket l_arm_key"
+	weapon		WP_BOWCASTER
+	health		100
+	headPitchRangeDown 30
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 48
+	walkSpeed	51
+	runSpeed	200
+	snd			advozse
+	sndcombat	advozse
+	sndextra	advozse
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	200
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}
+
+arcona_merc
+{
+	playerModel human_merc
+	customSkin	arcona
+	surfOff		"l_arm_pocket l_arm_key"
+	weapon		WP_REPEATER
+	health		100
+	headPitchRangeDown 30
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 48
+	walkSpeed	51
+	runSpeed	200
+	snd			arcona
+	sndcombat	arcona
+	sndextra	arcona
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	200
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}
+
+devaronian_merc
+{
+	playerModel human_merc
+	customSkin	devaronian
+	surfOff		"l_arm_pocket l_arm_key"
+	weapon		WP_FLECHETTE
+	health		100
+	headPitchRangeDown 30
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 48
+	walkSpeed	51
+	runSpeed	200
+	snd			devaronian
+	sndcombat	devaronian
+	sndextra	devaronian
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	200
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}
+
+nikto_merc
+{
+	playerModel weequay
+	customSkin	nikto_nohelm
+	weapon		WP_BLASTER
+	health		100
+	headPitchRangeDown 30
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 48
+	walkSpeed	51
+	runSpeed	200
+	snd			nikto
+	sndcombat	nikto
+	sndextra	nikto
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	200
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}
+
+nikto2_merc
+{
+	playerModel weequay
+	customSkin	nikto
+	customRGBA	0 88 105
+	weapon		WP_REPEATER
+	health		100
+	headPitchRangeDown 30
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 48
+	walkSpeed	51
+	runSpeed	200
+	snd			nikto2
+	sndcombat	nikto2
+	sndextra	nikto2
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	200
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}

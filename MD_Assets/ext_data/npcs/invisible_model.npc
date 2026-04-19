@@ -1,0 +1,10 @@
+md_invisible_kyle
+{
+	fullName	"Kyle Invisible"
+	playerModel	kyle
+	customSkin	invisible
+	weapon      WP_MELEE
+	playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}

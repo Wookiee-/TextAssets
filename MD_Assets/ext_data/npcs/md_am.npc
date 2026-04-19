@@ -1,0 +1,387 @@
+md_gua_am
+{
+	fullName	"Neimoidian Guard"
+	playerModel	NeimoidianSecurity
+	weapon		WP_SABER
+	saber		magnaguard_staff
+	saberStyle	7
+	FP_SABER_DEFENSE 2
+	FP_SABER_OFFENSE 2
+	FP_SABERTHROW	0
+	rank		ltcomm
+	aggression	4
+	aim			5
+	evasion		2
+	intelligence	3
+	move		2
+	reactions	4
+	vigilance      	1
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_GUARD
+	friendlyfaction	FACTION_NEUTRAL
+	health		200
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	80
+	scale		105
+	sex			male
+	snd			neimoidian_guard
+	sndjedi		neimoidian_guard
+	sndcombat	neimoidian_guard
+	sndextra	neimoidian_guard
+}
+
+md_gua2_am
+{
+	fullName	"Neimoidian Brute Guard"
+	playerModel	neimoidian_guard
+	weapon		WP_SABER
+	saber		gammobaxe2
+	saberStyle	7
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_LEVITATION	0
+	rank		commander
+	aggression	4
+	aim			5
+	evasion		3
+	intelligence	3
+	move		3
+	reactions	4
+	vigilance     1
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SHADOWTROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		400
+	hfov		120
+	vfov		100
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	80
+	scale		115
+	sex			male
+	snd			neimoidian_guard
+	sndjedi		neimoidian_guard
+	sndcombat	neimoidian_guard
+	sndextra	neimoidian_guard
+}
+
+md_gun_am
+{
+	fullName	"Nute Gunray"
+	playerModel	gunray_ep3
+	weapon		WP_NONE
+	rank		commander
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	health		60
+	walkSpeed	55
+	runSpeed	60
+	yawspeed	70
+	scale		106
+	sex			male
+}
+
+md_run_am
+{
+	fullName	"Rune Haako"
+	playerModel	rune
+	customSkin	ep3
+	weapon		WP_NONE
+	rank		commander
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	health		30
+	walkSpeed	55
+	runSpeed	60
+	yawspeed	70
+	scale		109
+	sex			male
+}
+
+md_nemo_am
+{
+	fullName	"Nemoidian Seperatist"
+	playerModel	neimoidian_aide
+	weapon		WP_NONE
+	rank		commander
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	health		30
+	walkSpeed	55
+	runSpeed	60
+	yawspeed	70
+	scale		106
+	sex			male
+}
+
+md_pog_am
+{
+	fullName	"Poggle the Lesser"
+	playerModel	Poggle
+	weapon		WP_NONE
+	rank		commander
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	health		30
+	walkSpeed	55
+	runSpeed	60
+	yawspeed	70
+	scale		106
+	sex			male
+}
+
+md_shu_am
+{
+	fullName	"Shu Mai"
+	playerModel	shu_mai
+	weapon		WP_NONE
+	rank		commander
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	health		30
+	walkSpeed	55
+	runSpeed	60
+	yawspeed	70
+	scale		106
+	sex			female
+}
+
+md_tik_am
+{
+	fullName	"Senator Tikkes"
+	playerModel	senatortikkes
+	weapon		WP_NONE
+	rank		commander
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	health		30
+	walkSpeed	55
+	runSpeed	60
+	yawspeed	70
+	scale		106
+	sex			male
+}
+
+md_wat_am
+{
+	fullName	"Wat Tambor"
+	playerModel	wat_tambor
+	headPitchRangeDown	30
+	weapon		WP_NONE
+	rank		captain
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	health		30
+	earshot		2048
+	visrange	4096
+	hfov		120
+	vfov		100
+	walkSpeed	55
+	runSpeed	60
+	yawspeed	70
+	scale	110
+	sex		male
+	snd		wat_tambor
+	sndcombat	wat_tambor
+	sndextra	wat_tambor
+}
+
+md_sbd_am
+{
+	fullName	"Super Battle Droid"
+	playerModel	SBD
+	weapon		WP_SBD_BLASTER
+	rank		ltcomm
+	aggression	4
+	aim			5
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SBD
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		110
+	height		71
+	width		17
+	crouchheight	50
+	health		100
+	sex			male
+	snd			SBD
+	sndcombat	SBD
+	sndextra	SBD
+	dismemberProbArms	50
+	dismemberProbHands	50
+	dismemberProbHead	50
+	dismemberProbLegs	50
+	dismemberProbWaist	50
+}
+
+sbd_cortosis
+{
+	fullName	"Super Battle Droid [Cortosis]"
+	playerModel	SBD
+	customSkin	cortosis
+	weapon		WP_SBD_BLASTER
+	rank		ltcomm
+	aggression	4
+	aim			5
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SBD
+	friendlyfaction	FACTION_NEUTRAL
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		110
+	height		71
+	width		17
+	crouchheight	50
+	health		200
+	sex			male
+	snd			SBD
+	sndcombat	SBD
+	sndextra	SBD
+	dismemberProbArms	50
+	dismemberProbHands	50
+	dismemberProbHead	50
+	dismemberProbLegs	50
+	dismemberProbWaist	50
+}
+
+md_mag_am
+{
+	fullName	"Magnaguard"
+	playerModel	magnaguard
+	customSkin	headless
+	headPitchRangeDown	30
+	weapon		WP_SABER
+	saber		electrostaff
+	saberStyle	7
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	rank		ltcomm
+	aggression	5
+	aim			5
+	evasion		5
+	intelligence	5
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_GUARD
+	friendlyfaction	FACTION_NEUTRAL
+	health		200
+	earshot		2048
+	visrange	4096
+	hfov		120
+	vfov		100
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	80
+	scale		108
+	sex			male
+	snd			magnaguard
+	sndjedi		magnaguard
+	sndcombat	magnaguard
+	sndextra	magnaguard
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+md_mag2_am
+{
+	fullName	"Magnaguard"
+	playerModel	magnaguard
+	headPitchRangeDown	30
+	weapon		WP_SABER
+	saber		electrostaff
+	saberStyle	7
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	FP_SABERTHROW	0
+	rank		ltcomm
+	aggression	5
+	aim			5
+	evasion		5
+	intelligence	5
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_GUARD
+	friendlyfaction	FACTION_NEUTRAL
+	health		200
+	earshot		2048
+	visrange	4096
+	hfov		120
+	vfov		100
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	80
+	scale		108
+	sex			male
+	snd			magnaguard
+	sndjedi		magnaguard
+	sndcombat	magnaguard
+	sndextra	magnaguard
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+md_dro_am
+{
+	fullName	"Droideka"
+	playerModel	droideka
+	weapon		WP_DROIDEKA
+	FP_PROTECT	0
+	rank		captain
+	aggression	1
+	aim			5
+	evasion		5
+	intelligence	5
+	move		5
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_DROIDEKA
+	friendlyfaction	FACTION_NEUTRAL
+	health		100
+	runSpeed	200
+	walkSpeed	200
+	yawspeed	70
+	height		60
+	width		25
+	scale		80
+	noKnockback	1
+	sex			male
+	snd			droideka
+	sndcombat	droideka
+	sndextra	droideka
+}

@@ -1,0 +1,270 @@
+battledroid
+{
+	fullName	"Battledroid"
+	playerModel	battledroid
+	weapon		WP_BATTLEDROID
+	rank		crewman
+	aggression	3
+	aim			5
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	2
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_BATTLEDROID
+	friendlyfaction	FACTION_NEUTRAL
+	health		25
+	earshot		512
+	visrange	1024
+	hfov		160
+	vfov		90
+	vigilance	1
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		107
+	height		69
+	width		13
+	sex			male
+	snd			BD_BF2_1
+	sndcombat	BD_BF2_1
+	sndextra	BD_BF2_1
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+battledroid_comm
+{
+	fullName	"Battledroid"
+	playerModel	battledroid
+	customSkin	comm
+	weapon		WP_BATTLEDROID
+	rank		crewman
+	aggression	4
+	aim			5
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	2
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_BATTLEDROID
+	friendlyfaction	FACTION_NEUTRAL
+	health		25
+	earshot		512
+	visrange	1024
+	hfov		160
+	vfov		90
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		107
+	height		69
+	width		13
+	sex			male
+	snd			BD_BF2_1
+	sndcombat	BD_BF2_1
+	sndextra	BD_BF2_1
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+battledroid_security
+{
+	fullName	"Battledroid"
+	playerModel	battledroid
+	customSkin	security
+	weapon		WP_BATTLEDROID
+	rank		crewman
+	aggression	3
+	aim			5
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	2
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_BATTLEDROID
+	friendlyfaction	FACTION_NEUTRAL
+	health		25
+	earshot		512
+	visrange	1024
+	hfov		160
+	vfov		90
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		107
+	height		69
+	width		13
+	sex			male
+	snd			BD_BF2_1
+	sndcombat	BD_BF2_1
+	sndextra	BD_BF2_1
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+battledroid_pilot
+{
+	fullName	"Battledroid"
+	playerModel	battledroid
+	customSkin	pilot
+	weapon		WP_BATTLEDROID
+	rank		crewman
+	aggression	3
+	aim			5
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	2
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_BATTLEDROID
+	friendlyfaction	FACTION_NEUTRAL
+	health		25
+	earshot		512
+	visrange	1024
+	hfov		160
+	vfov		90
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		107
+	height		69
+	width		13
+	sex			male
+	snd			BD_BF2_1
+	sndcombat	BD_BF2_1
+	sndextra	BD_BF2_1
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+battledroid_sniper
+{
+	fullName	"Battledroid"
+	playerModel	battledroid
+	customSkin	sniper
+	weapon		WP_DISRUPTOR
+	rank		crewman
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	2
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_BATTLEDROID
+	friendlyfaction	FACTION_NEUTRAL
+	health		25
+	earshot		512
+	visrange	1024
+	hfov		160
+	vfov		90
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		107
+	height		69
+	width		13
+	sex			male
+	snd			BD_EP3
+	sndcombat	BD_EP3
+	sndextra	BD_EP3
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+battledroid_geonosis
+{
+	fullName	"Battledroid"
+	playerModel	battledroid
+	customSkin	geonosis
+	weapon		WP_BATTLEDROID
+	rank		crewman
+	aggression	3
+	aim			5
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	2
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_BATTLEDROID
+	friendlyfaction	FACTION_NEUTRAL
+	health		25
+	earshot		512
+	visrange	1024
+	hfov		160
+	vfov		90
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		107
+	height		69
+	width		13
+	sex			male
+	snd			BD_BF1
+	sndcombat	BD_BF1
+	sndextra	BD_BF1
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}
+
+battledroid_gsniper
+{
+	fullName	"Battledroid"
+	playerModel	battledroid
+	customSkin	geonosis_comm
+	weapon		WP_DISRUPTOR
+	rank		crewman
+	reactions	2
+	aim			4
+	move		2
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_BATTLEDROID
+	friendlyfaction	FACTION_NEUTRAL
+	health		50
+	earshot		512
+	visrange	1024
+	walkSpeed	55
+	runSpeed	200
+	yawspeed	70
+	scale		107
+	height		69
+	width		13
+	sex			male
+	snd			BD_BF1
+	sndcombat	BD_BF1
+	sndextra	BD_BF1
+	dismemberProbArms	100
+	dismemberProbHands	100
+	dismemberProbHead	100
+	dismemberProbLegs	100
+	dismemberProbWaist	100
+}

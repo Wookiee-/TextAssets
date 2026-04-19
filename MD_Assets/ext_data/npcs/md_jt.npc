@@ -1,0 +1,1065 @@
+md_pal_jt
+{
+	fullName	"Darth Sidious"
+	playerModel	palpatine
+	customSkin	sith_robed
+	weapon		WP_SABER
+	saber		sidious_m
+	saberStyle	2
+	FP_HEAL			2
+	FP_LEVITATION	3
+	FP_SPEED		2
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			3
+	FP_LIGHTNING	3
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			0
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	300
+	forceRegenAmount 2.5
+	rank		captain
+	aggression	5
+	aim			5
+	evasion		5
+	intelligence	5
+	move		5
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SITHLORD
+	friendlyfaction	FACTION_DARK
+	health		400
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		96
+	width		15
+	sex			male
+	snd			palpatine_sith
+	sndcombat	palpatine_sith
+	sndjedi		palpatine_sith
+}
+
+md_ani_jt
+{
+	fullName	"Anakin Skywalker (Hooded)"
+	playerModel	anakin
+	customSkin	hood
+	weapon		WP_MELEE
+	weapon		WP_SABER
+	saber		anakin_ep3_jt_m
+	saberstyle	1
+	saberStyle	4
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			2
+	FP_LEVITATION	2
+	FP_SPEED		2
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			2
+	FP_LIGHTNING	0
+	FP_RAGE			2
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		3
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	250
+	forceRegenAmount 2.25
+	rank		ltcomm
+	aggression	5
+	aim			5
+	evasion		3
+	intelligence	4
+	move		3
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_DESANN
+	friendlyfaction	FACTION_DARK
+	health		400
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		104
+	height		67
+	sex			male
+	snd			anakin_sith_jt
+	sndcombat	anakin_sith_jt
+	sndextra	anakin_sith_jt
+	sndjedi		anakin_sith_jt
+}
+
+md_clo1_jt
+{
+	fullName	"501st Legion"
+	playerModel	clonetrooper_p2
+	customSkin	501
+	weapon		WP_CLONECARBINE
+	rank		lt
+	aggression	4
+	aim			4
+	evasion		2
+	intelligence	4
+	move		2
+	reactions	3
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	friendlyfaction	FACTION_NEUTRAL
+	class		CLASS_CLONETROOPER
+	health		50
+	walkSpeed	65
+	runSpeed	200
+	yawSpeed	80
+	scale		101
+	sex			male
+	snd			clonetrooper_p2
+	sndcombat	clonetrooper_p2
+	sndextra	clonetrooper_p2
+}
+
+md_clo2_jt
+{
+	fullName	"Commander Appo"
+	playerModel	clonetrooper_p2
+	customSkin	deviss_rgb
+	customRGBA	52 72 120
+	weapon		WP_CLONERIFLE
+	rank		commander
+	aggression	4
+	aim			4
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_CLONETROOPER
+	friendlyfaction	FACTION_NEUTRAL
+	health		100
+	walkSpeed	70
+	runSpeed	200
+	yawSpeed	80
+	scale		101
+	gunBash		1
+	sex			male
+	snd			clonetrooper_p2
+	sndextra	new_clones
+	sndjedi		clonetrooper_p2
+}
+
+md_jed1_jt
+{
+	fullName	"Jedi Master"
+	playerModel	jedi_spanki
+	customSkin	head_b4|torso_a4|lower_f1
+	weapon		WP_SABER
+	saber		quinlan
+	saberColor	green
+	saberStyle	2
+	FP_HEAL		2
+	FP_LEVITATION	0
+	FP_SPEED		1
+	FP_PUSH			3
+	FP_PULL			2
+	FP_TELEPATHY	1
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			2
+	FP_SABERTHROW	0
+	FP_SABER_DEFENSE 	3
+	FP_SABER_OFFENSE 	3
+	rank		commander
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	4
+	move		3
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			prisoner2
+	sndcombat	jedi1
+	sndjedi		jedi1
+}
+
+md_jed2_jt
+{
+	fullName	"Jedi Padawan"
+	playerModel	jedi_spanki
+	customSkin	head_e5|torso_c1|lower_d1
+	weapon		WP_SABER
+	saber		shaak
+	saberStyle	2
+	FP_LEVITATION	1
+	FP_SABER_DEFENSE	2
+	FP_SABER_OFFENSE	1
+	FP_SABERTHROW	0
+	aggression	2
+	aim			3
+	evasion		4
+	intelligence	3
+	move		3
+	reactions	3
+	rank		crewman
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	health		40
+	walkSpeed	55
+	runSpeed	200
+	scale		90
+	sex			male
+	snd			jedi2
+	sndcombat	jedi2
+	sndjedi		jedi2
+}
+
+md_jed3_jt
+{
+	fullName	"Jedi Padawan"
+	playerModel	jedi_spanki
+	customSkin	head_d5|torso_f1|lower_g1
+	weapon		WP_SABER
+	saber		shaak
+	saberColor	green
+	saberStyle	2
+	FP_LEVITATION	1
+	FP_SABER_DEFENSE	2
+	FP_SABER_OFFENSE	1
+	FP_SABERTHROW	0
+	rank		crewman
+	aggression	2
+	aim			4
+	evasion		4
+	intelligence	3
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	health		40
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			jedi2
+	sndcombat	jedi2
+	sndjedi		jedi2
+}
+
+md_jed4_jt
+{
+	fullName	"Jedi Knight"
+	playerModel	jedi_spanki
+	customSkin	head_f1|torso_f2|lower_g1
+	weapon		WP_SABER
+	saber		shaak
+	saberStyle	3
+	FP_LEVITATION	2
+	FP_PULL			1
+	FP_PUSH			2
+	FP_SABER_DEFENSE	2
+	FP_SABER_OFFENSE	2
+	FP_SABERTHROW	0
+	rank		lt
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	4
+	move		4
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			jedi1
+	sndcombat	jedi1
+	sndjedi		jedi1
+}
+
+md_jed5_jt
+{
+	fullName	"Jedi Padawan (Female)"
+	playerModel	jedi_female1
+	customSkin	head_d3|torso_f1|lower_e1
+	weapon		WP_SABER
+	saber		shaak
+	saberColor	green
+	saberStyle	2
+	FP_LEVITATION	1
+	FP_SABER_DEFENSE	2
+	FP_SABER_OFFENSE	2
+	FP_SABERTHROW	0
+	rank		crewman
+	aggression	2
+	aim			4
+	evasion		4
+	intelligence	3
+	move		3
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	health		80
+	walkSpeed	55
+	runSpeed	200
+	sex			female
+	snd			female_jedi2
+	sndcombat	female_jedi2
+	sndjedi		female_jedi2
+}
+
+md_jed6_jt
+{
+	fullName	"Jedi Knight (Female)"
+	playerModel	jedi_female1
+	customSkin	head_c2|torso_d2|lower_f1
+	weapon		WP_SABER
+	saber		shaak
+	saber2		shaak
+	sabercolor 	blue
+	saber2Color	blue
+	saberStyle	6
+	FP_LEVITATION	1
+	FP_SABER_DEFENSE	2
+	FP_SABER_OFFENSE	2
+	FP_SABERTHROW	0
+	rank		ltjg
+	aggression	3
+	aim			4
+	evasion		3
+	intelligence	4
+	move		3
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	walkSpeed	55
+	runSpeed	200
+	sex			female
+	snd			female_jedi1
+	sndcombat	female_jedi1
+	sndjedi		female_jedi1
+}
+
+md_jed7_jt
+{
+	fullName	"Jedi Battlemaster"
+	playerModel	jedi_spanki
+	customSkin	head_b3|torso_e4|lower_e1
+	weapon		WP_SABER
+	saber		dual_1
+	saberColor	green
+	saberStyle	7
+	FP_LEVITATION	2
+	FP_PUSH			2
+	FP_SPEED		2
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	rank		commander
+	aggression	4
+	aim			4
+	evasion		2
+	intelligence	4
+	move		3
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	snd			jedi_spanki
+	sndcombat	jedi_spanki
+	sndextra	jedi_spanki
+	sndjedi		jedi_spanki
+}
+
+md_jed8_jt
+{
+	fullName	"Jedi Knight (Zabrak)"
+	playerModel	zabrak_rots
+	weapon		WP_SABER
+	saber		quigon
+	saberColor	blue
+	saberStyle	2
+	saberStyle	3
+	FP_LEVITATION	2
+	FP_PULL			2
+	FP_SABER_DEFENSE	2
+	FP_SABER_OFFENSE	2
+	FP_SABERTHROW	0
+	rank		ltcomm
+	aggression	3
+	aim			4
+	evasion		2
+	intelligence	3
+	move		4
+	reactions	3
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			jedi1
+	sndcombat	jedi1
+	sndjedi		jedi1
+}
+
+md_jed9_jt
+{
+	fullName	"Jedi Knight"
+	playerModel	jedi_spanki
+	customSkin	head_d1|torso_g1|lower_d1
+	weapon		WP_SABER
+	saber		quinlan
+	saberColor	blue
+	saberStyle	3
+	FP_LEVITATION	2
+	FP_PUSH			2
+	FP_SPEED		1
+	FP_HEAL			2
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	FP_SABERTHROW	0
+	rank		ltcomm
+	aggression	3
+	aim			5
+	evasion		2
+	intelligence	3
+	move		4
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			jedi1
+	sndcombat	jedi1
+	sndjedi		jedi1
+}
+
+md_jed10_jt
+{
+	fullName	"Jedi Master"
+	playerModel	jedi_spanki
+	customSkin	head_b2|torso_a3|lower_a1
+	weapon		WP_SABER
+	saber		shaak
+	saberColor	blue
+	saberStyle	3
+	FP_LEVITATION	2
+	FP_PUSH			3
+	FP_SPEED		1
+	FP_HEAL			2
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	2
+	aim			5
+	evasion		2
+	intelligence	3
+	move		4
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			jedi2
+	sndcombat	jedi2
+	sndjedi		jedi2
+}
+
+md_jed11_jt
+{
+	fullName	"Jedi Veteran"
+	playerModel	jedi_spanki
+	customSkin	head_d4|torso_b2|lower_b1
+	weapon		WP_SABER
+	saber		quinlan
+	saber2		shaak
+	saberColor	blue
+	saber2Color	green
+	saberStyle	6
+	FP_LEVITATION	2
+	FP_PUSH			3
+	FP_SEE			2
+	FP_SPEED		2
+	FP_HEAL			2
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	3
+	aim			5
+	evasion		3
+	intelligence	4
+	move		4
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			jedi2
+	sndcombat	jedi2
+	sndjedi		jedi2
+}
+
+md_jed12_jt
+{
+	fullName	"Jedi Battlemaster"
+	playerModel	jedi_spanki6
+	customSkin	head_d1|torso_a1|lower_a1
+	weapon		WP_SABER
+	saber		dual_1
+	saberColor	blue
+	saberStyle	7
+	FP_LEVITATION	2
+	FP_SPEED		3
+	FP_HEAL			2
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	rank		commander
+	aggression	2
+	aim			5
+	evasion		2
+	intelligence	2
+	move		4
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	snd			jedi2
+	sndcombat	jedi2
+	sndextra	jedi2
+	sndjedi		jedi2
+}
+
+md_jed13_jt
+{
+	fullName	"Jedi Veteran"
+	playerModel	jedi_spanki
+	customSkin	head_f1|torso_b4|lower_c1
+	weapon		WP_SABER
+	saber		shaak
+	saber2		quigon
+	saberColor	green
+	saber2Color	blue
+	saberStyle	6
+	FP_LEVITATION	2
+	FP_PUSH			2
+	FP_SEE			2
+	FP_SPEED		2
+	FP_HEAL			1
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	4
+	aim			5
+	evasion		3
+	intelligence	2
+	move		4
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	sex			male
+	snd			jedi2
+	sndcombat	jedi2
+	sndjedi		jedi2
+}
+
+md_jed14_jt
+{
+	fullName	"Jedi Brute"
+	playerModel	jedibrute
+	weapon		WP_SABER
+	saber		dual_4
+	saberColor	green
+	saberStyle	7
+	FP_LEVITATION	2
+	FP_PUSH			2
+	FP_SPEED		2
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	FP_SABERTHROW	3
+	rank		commander
+	aggression	5
+	aim			5
+	evasion		2
+	intelligence	5
+	move		3
+	reactions	4
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	health		350
+	walkSpeed	55
+	runSpeed	200
+	scale		115
+	sex			male
+	snd			jedibrute
+	sndcombat	jedibrute
+	sndjedi		jedibrute
+}
+
+md_jed15_jt
+{
+	fullName	"Jedi Knight (Twilek)"
+	playerModel	jedi_tf
+	customSkin	head_b4|torso_b1|lower_a1
+	weapon		WP_SABER
+	saber		saesee
+	saberColor	blue
+	saberStyle	1
+	FP_LEVITATION	2
+	FP_PUSH			2
+	FP_SPEED		1
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	3
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	4
+	aim			5
+	evasion		4
+	intelligence	3
+	move		4
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	sex			female
+	snd			female_jedi2
+	sndcombat	female_jedi2
+	sndjedi		female_jedi2
+}
+
+md_jed16_jt
+{
+	fullName	"Jedi Knight (Female Zabrak)"
+	playerModel	jedi_zf
+	customSkin	head_c1|torso_b1|lower_a1
+	weapon		WP_SABER
+	saber		shaak
+	saberColor	blue
+	saberStyle	3
+	FP_LEVITATION	2
+	FP_PUSH			2
+	FP_SPEED		1
+	FP_SABER_DEFENSE	3
+	FP_SABER_OFFENSE	1
+	FP_SABERTHROW	0
+	rank		commander
+	aggression	4
+	aim			5
+	evasion		4
+	intelligence	3
+	move		4
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	health		150
+	walkSpeed	55
+	runSpeed	200
+	sex			female
+	snd			female_jedi1
+	sndcombat	female_jedi1
+	sndjedi		female_jedi1
+}
+
+md_cin_jt
+{
+	fullName	"Cin Drallig"
+	playerModel	cin_drallig
+	weapon		WP_SABER
+	saber		drallig
+	saberColor	green
+	saberStyle	1
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			3
+	FP_LEVITATION	3
+	FP_SPEED		2
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		3
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	rank		captain
+	aggression	5
+	aim			5
+	evasion		3
+	intelligence	5
+	move		5
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	health		500
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		97
+	sex			male
+	snd			cin_drallig
+	sndcombat	cin_drallig
+	sndjedi		cin_drallig
+}
+
+md_ket_jt
+{
+	fullName	"Serra Keto"
+	playerModel	serraketo
+	sex			female
+	weapon		WP_SABER
+	saber		shaak
+	saberColor	green
+	saber2		shaak
+	saber2Color	green
+	saberStyle	6
+	FP_HEAL			2
+	FP_LEVITATION	3
+	FP_SPEED		2
+	FP_PUSH			2
+	FP_PULL			2
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			0
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	rank		commander
+	aggression	4
+	aim			5
+	evasion		4
+	intelligence	3
+	move		5
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_ALORA
+	health		300
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		95
+	sex			female
+	snd			serraketo
+	sndcombat	serraketo
+	sndjedi		serraketo
+}
+
+md_adi_jt
+{
+	fullName	"Coleman Kcaj"
+	playerModel	ongree
+	customSkin	robed
+	weapon		WP_SABER
+	saber		shaak
+	saberColor	green
+	saberStyle	1
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			2
+	FP_LEVITATION	2
+	FP_SPEED		2
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			0
+	FP_LIGHTNING		0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW		0
+	FP_DESTRUCTION		0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR		0
+	FP_DEADLYSIGHT		0
+	FP_PROJECTION		0
+	FP_BLAST	0
+	rank		commander
+	aggression	4
+	aim			5
+	evasion		3
+	intelligence	4
+	move		4
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDIMASTER
+	health		300
+	walkSpeed	55
+	runSpeed	200
+	scale		105
+	sex			male
+	snd			ongree
+	sndcombat	ongree
+	sndjedi		ongree
+}
+
+md_you1_jt
+{
+	fullName	"Youngling"
+	playerModel	youngling
+	weapon		WP_SABER
+	saber		youngling
+	saberColor	green
+	saberStyle	1
+	FP_SABER_DEFENSE	1
+	FP_SABER_OFFENSE	1
+	FP_SABERTHROW	0
+	aggression	1
+	aim			1
+	evasion		1
+	intelligence	1
+	move		1
+	reactions	1
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_NEUTRAL
+	health		25
+	walkSpeed	55
+	runSpeed	200
+	scale		50
+	height		35
+	width		10
+	rank		civilian
+	sex			male
+	snd			serraketo
+	sndcombat	none
+	sndjedi		none
+}
+
+md_you2_jt
+{
+	fullName	"Youngling"
+	playerModel	youngling
+	customSkin	azekid
+	weapon		WP_SABER
+	saber		youngling2
+	saberColor	green
+	saberStyle	1
+	FP_SABER_DEFENSE	1
+	FP_SABER_OFFENSE	1
+	FP_SABERTHROW	0
+	aggression	1
+	aim			1
+	evasion		1
+	intelligence	1
+	move		1
+	reactions	1
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	friendlyfaction	FACTION_NEUTRAL
+	health		10
+	walkSpeed	55
+	runSpeed	200
+	scale		50
+	height		35
+	width		10
+	sex			male
+	snd			serraketo
+	sndcombat	none
+	sndjedi		none
+}
+
+md_you3_jt
+{
+	fullName	"Youngling"
+	playerModel	youngling
+	customSkin	macekid
+	weapon		WP_SABER
+	saber		youngling
+	saberColor	blue
+	saberStyle	1
+	FP_SABER_DEFENSE	1
+	FP_SABER_OFFENSE	1
+	FP_SABERTHROW	0
+	aggression	1
+	aim			1
+	evasion		1
+	intelligence	1
+	move		1
+	reactions	1
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_NEUTRAL
+	health		10
+	walkSpeed	55
+	runSpeed	200
+	scale		50
+	height		35
+	width		10
+	sex			male
+	snd			serraketo
+	sndcombat	none
+	sndjedi		none
+}
+
+md_you4_jt
+{
+	fullName	"Youngling"
+	playerModel	youngshak
+	weapon		WP_SABER
+	saber		youngling
+	saberColor	blue
+	saberStyle	1
+	FP_SABER_DEFENSE	1
+	FP_SABER_OFFENSE	1
+	FP_SABERTHROW	0
+	aggression	1
+	aim			1
+	evasion		1
+	intelligence	1
+	move		1
+	reactions	1
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_NEUTRAL
+	health		10
+	walkSpeed	55
+	runSpeed	200
+	scale		50
+	height		35
+	width		10
+	sex			female
+	snd			youngling
+	sndcombat	none
+	sndjedi		none
+}
+
+md_you5_jt
+{
+	fullName	"Youngling"
+	playerModel	youngfem
+	weapon		WP_SABER
+	saber		youngling2
+	saberColor	green
+	saberStyle	1
+	FP_SABER_DEFENSE	1
+	FP_SABER_OFFENSE	1
+	FP_SABERTHROW	0
+	aggression	1
+	aim			1
+	evasion		1
+	intelligence	1
+	move		1
+	reactions	1
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_JEDI
+	friendlyfaction	FACTION_NEUTRAL
+	health		10
+	walkSpeed	55
+	runSpeed	200
+	scale		50
+	height		35
+	width		10
+	sex			male
+	snd			youngling
+	sndcombat	none
+	sndjedi		none
+}

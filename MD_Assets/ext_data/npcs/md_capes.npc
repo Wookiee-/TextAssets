@@ -1,0 +1,56 @@
+//Ep1 Capes
+md_robe_kenobi
+{
+	fullName	"Obi-Wan Kenobi (Robe only)"
+	playerModel	obiwan_ep1
+	customSkin	robeonly
+	weapon      WP_NONE
+    playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}
+
+md_robe_jinn
+{
+	fullName	"Qui-Gon Jinn (Robe only)"
+	playerModel	quigon
+	customSkin	robeonly
+	weapon      WP_NONE
+    playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}
+
+md_robe_maul
+{
+	fullName	"Darth Maul (Robe only)"
+	playerModel	darthmaul
+	customSkin	robeonly
+	weapon      WP_NONE
+    playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}
+
+//Ep8 Capes
+md_cape_kylo_tlj
+{
+	fullName	"Kylo Ren TLJ (Cape only)"
+	playerModel	kylo_ren
+	customSkin	tlj_cape
+	weapon      WP_NONE
+    playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}
+
+md_cape_luke_tfa
+{
+	fullName	"Luke Skywalker TFA (Cape only)"
+	playerModel	luke_tfa
+	customSkin	tfa_cape
+	weapon      WP_NONE
+    playerTeam  TEAM_NEUTRAL
+    enemyTeam   TEAM_NEUTRAL
+    class       CLASS_OBJECT
+}

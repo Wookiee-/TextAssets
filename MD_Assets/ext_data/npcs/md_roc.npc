@@ -1,0 +1,257 @@
+md_obi_roc
+{
+	fullName	"Obi-Wan Kenobi EP3"
+	playerModel	obiwan_ep3
+	weapon		WP_SABER
+	saber		obiwan_ep3_m
+	saberStyle	1
+	saberStyle	5
+	saberStyle	2
+	FP_HEAL			2
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	3
+	FP_GRIP			0
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		captain
+	aggression	3
+	aim			5
+	evasion		3
+	intelligence	5
+	move		3
+	reactions	5	
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_LUKE
+	friendlyfaction	FACTION_LIGHT
+	health		300
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		101
+	sex			male
+	snd			obiwan_ep3
+	sndcombat	obiwan_ep3
+	sndjedi		obiwan_ep3
+}
+
+md_ani_roc
+{
+	fullName	"Anakin Skywalker EP3"
+	playerModel	anakin
+	weapon		WP_SABER
+	saber		anakin_ep3_m
+	saberStyle	1
+	saberStyle	4
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			2
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			2
+	FP_LIGHTNING	0
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		captain
+	aggression	4
+	aim			5
+	evasion		4
+	intelligence	5
+	move		4
+	reactions	5
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_LUKE
+	friendlyfaction	FACTION_LIGHT
+	health		300
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		104
+	height		67s
+	sex			male
+	snd			anakin_ep3	
+	sndcombat	anakin_ep3
+	sndjedi		anakin_ep3
+}
+
+md_dok_roc
+{
+	fullName	"Count Dooku EP3"
+	playerModel	dooku
+	weapon		WP_SABER
+	saber		dooku
+	saberStyle	4
+	saberStyle	5
+	FP_HEAL			2
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			3
+	FP_LIGHTNING	2
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	200
+	forceRegenAmount 2
+	rank		captain
+	aggression	4
+	aim			5
+	evasion		2
+	intelligence	5
+	move		2
+	reactions	4
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_TAVION
+	friendlyfaction	FACTION_DARK
+	health		400
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		107
+	sex			male
+	snd			dooku
+	sndcombat	dooku
+	sndjedi		dooku
+}
+
+md_pal_roc
+{
+	fullName	"Chancellor Palpatine"
+	playerModel	palpatine_boc
+	weapon		WP_SABER
+	saber		sidious_m
+	saberStyle	1
+	saberStyle	3
+	saberStyle	2
+	FP_HEAL			2
+	FP_LEVITATION	3
+	FP_SPEED		0
+	FP_PUSH			3
+	FP_PULL			3
+	FP_TELEPATHY	0
+	FP_GRIP			3
+	FP_LIGHTNING	3
+	FP_RAGE			0
+	FP_PROTECT		0
+	FP_ABSORB		0
+	FP_DRAIN		0
+	FP_SEE			3
+	FP_SABER_DEFENSE 3
+	FP_SABER_OFFENSE 3
+	FP_SABERTHROW	0
+	FP_DESTRUCTION	0
+	FP_STASIS		0
+	FP_GRASP		2
+	FP_REPULSE		0
+	FP_LIGHTNING_STRIKE	0
+	FP_FEAR			0
+	FP_DEADLYSIGHT	0
+	FP_PROJECTION	0
+	FP_BLAST		0
+	forcePowerMax	300
+	forceRegenAmount	2.5
+	rank		captain
+	aggression	5
+	aim			5
+	evasion		4
+	intelligence	5
+	move		4
+	reactions	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_SITHLORD
+	friendlyfaction	FACTION_DARK
+	health		400
+	yawSpeed	140
+	walkSpeed	55
+	runSpeed	200
+	scale		96
+	sex			male
+	snd			palpatine
+	sndcombat	palpatine
+	sndjedi		palpatine
+}
+
+md_obi2_roc
+{
+	fullName	"Obi-Wan Kenobi EP3"
+	playerModel	obiwan_ep3
+	weapon		WP_SABER
+	saber		obiwan_ep3_m
+	saberStyle	2
+	rank		commander
+	aggression	1
+	aim			1
+	evasion		1
+	intelligence	1
+	move		1
+	reactions	1
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	friendlyfaction	FACTION_LIGHT
+	health		500
+	walkSpeed	0
+	runSpeed	0
+	scale		101
+	sex			male
+	snd			none
+}

@@ -1,0 +1,40 @@
+glider
+{
+	playerModel		glider
+	scale			75
+	weapon			WP_MELEE
+	altFire			1
+	FP_LEVITATION		3
+	FP_SPEED		3
+	height			58
+	width			14
+	crouchheight		26
+	rank			commander
+	aggression		3
+	aim			5
+	evasion			3
+	intelligence		5
+	move			3
+	reactions		5
+	playerTeam		TEAM_FREE
+	enemyTeam		TEAM_PLAYER
+	class			CLASS_GLIDER
+	health			1000
+	vigilance		10
+	yawSpeed		75
+	walkSpeed		100
+	runSpeed		240
+	acceleration		50
+	movetype		flyswim
+	visrange		2048
+//vigilance		3
+//yawSpeed		110
+//walkSpeed		50
+//runSpeed		200
+//acceleration		50
+//movetype		flyswim
+snd			glider
+sndcombat		mine
+sndextra		howler
+sndjedi			howler
+}
