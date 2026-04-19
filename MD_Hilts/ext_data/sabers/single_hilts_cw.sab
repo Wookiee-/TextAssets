@@ -1,0 +1,180 @@
+ahsoka
+{
+	name		"Ahsoka Tano"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_ahsoka.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff3.wav"
+	saberColor	green
+	saberLength	36
+	saberRadius 2.7
+}
+
+ahsoka_short
+{
+	name		"Ahsoka Tano (Shoto)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_ahsoka2.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff3.wav"
+	saberColor	green
+	saberLength	25
+	saberRadius 2.7
+}
+
+ahsoka_alt
+{
+	name		"Ahsoka Tano"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_ahsoka.glm"
+	soundOn		"sound/weapons/saber/ahsoka_saber_on.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoffquick.wav"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+
+ahsoka_short_alt
+{
+	name		"Ahsoka Tano (Shoto)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_ahsoka2.glm"
+	soundOn		"sound/weapons/saber/ahsoka_saber_on.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoffquick.wav"
+	saberColor	blue
+	saberLength	25
+	saberRadius 2.7
+}
+
+ventress_cw
+{
+	name		"Asajj Ventress [CW]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_asajj.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhummaul.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberLength	36
+	saberColor	red
+	saberRadius 2.7
+}
+
+ventress_tcw
+{
+	name		"Asajj Ventress [TCW]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_asajj2.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhummaul.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberLength	36
+	saberColor	red
+	saberRadius 2.7
+}
+
+ventress2_tcw
+{
+	name		"Asajj Ventress [TCW]"
+	saberType 	SABER_SINGLE
+	saberModel 	"models/weapons2/saber_plasma/saber_asajj3.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhummaul.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberLength	36
+	saberColor	red
+	saberRadius 2.7
+}
+
+dooku_jedi
+{
+	name		"Count Dooku [TOTJ]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_dooku.glm"
+	soundOn		"sound/weapons/saber/dooku_saber_on2.wav"
+	soundLoop	"sound/weapons/saber/saberhumvader.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.wav"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+	saberStyleForbidden medium
+	saberStyleForbidden strong
+	saberStyleForbidden fast
+	saberStyleForbidden staff
+    holsterPlace    lhip    // left hip
+}
+
+darksaber_tcw
+{
+	name		"Darksaber [TCW]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_darksaber2.glm"
+	soundOn		"sound/weapons/saber/darksaberon.wav"
+	soundLoop	"sound/weapons/saber/darksaberhum.wav"
+	soundOff	"sound/weapons/saber/darksaberoff.wav"
+	swingSound1	"sound/weapons/saber/darksaberhup1.mp3"
+	swingSound2	"sound/weapons/saber/darksaberhup2.mp3"
+	swingSound3	"sound/weapons/saber/darksaberhup3.mp3"
+	blockSound1	"sound/weapons/saber/darksaberblock1.mp3"
+	blockSound2	"sound/weapons/saber/darksaberblock1.mp3"
+	blockSound3	"sound/weapons/saber/darksaberblock1.mp3"
+	saberColor	black
+	saberLength	32
+	saberRadius 2.7
+}
+
+kanan_tbb
+{
+	name		"Kanan Jarrus [The Bad Batch]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_kanan.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+	throwable 	1
+}
+
+oppo
+{
+	name		"Oppo Rancisis"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_oppo.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberColor	green
+	saberLength	36
+	saberRadius 2.7
+}
+
+rig
+{
+	name		"Rig Nema"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_rig.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum1.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberColor	green
+	saberLength	36
+	saberRadius 2.7
+}
+
+sinube
+{
+	name		"Tera Sinube"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_terasinube/saber_terasinube.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberColor	x517FCC
+	saberLength	36
+	saberRadius 2.7
+}

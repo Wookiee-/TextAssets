@@ -1,0 +1,1177 @@
+arc_shiv
+{
+	name		"Arc-Shiv"
+	saberType	SABER_DAGGER
+	saberModel	"models/weapons2/arc_shiv/saber_w.glm"
+	soundOn		"sound/weapons/clawshield/draw1.mp3"
+	soundLoop	none
+	soundOff		none
+	numblades	2
+	saberLength	12
+	saberLength2	12
+	noDlight		1
+	noBlade		1
+	noIdleEffect	1
+	onInWater	1
+	noWallMarks	1
+	trailStyle		1
+	bounceOnWalls	1
+	boltToWrist	1
+	disarmable	0
+	alwaysBlock	1
+	throwable	0
+	noManualDeactivate 1
+	damageScale	0.4
+	saberColor	random
+	singleBladeStyle	fast
+	saberStyle	dual
+	kataMove       	LS_STAFF_SOULCAL
+	spinsound	"sound/weapons/clawshield/spin.mp3"
+	swingSound1	"sound/weapons/clawshield/swing1.mp3"
+	swingSound2	"sound/weapons/clawshield/swing2.mp3"
+	swingSound3	"sound/weapons/clawshield/swing3.mp3"
+	hitSound1	"sound/weapons/clawshield/slash1.mp3"
+	hitSound2	"sound/weapons/clawshield/slash2.mp3"
+	hitSound3	"sound/weapons/clawshield/slash3.mp3"
+	blockSound1	"sound/weapons/clawshield/block1.mp3"
+	blockSound2	"sound/weapons/clawshield/block2.mp3"
+	blockSound3	"sound/weapons/clawshield/block3.mp3"
+	bounceSound1	"sound/weapons/clawshield/bounce1.mp3"
+	bounceSound2	"sound/weapons/clawshield/bounce2.mp3"
+	bounceSound3	"sound/weapons/clawshield/bounce3.mp3"
+
+	blockEffect	"sparks/blueysparks_w_sound.efx"
+	hitOtherEffect	"sparks/blueysparks_w_sound.efx"
+}
+
+arc_shiv_dual
+{
+	name		"Arc-Shiv (Left Arm)"
+	saberType	SABER_DAGGER
+	saberModel	"models/weapons2/arc_shiv_dual/saber_w.glm"
+	soundOn		"sound/weapons/clawshield/draw1.mp3"
+	soundLoop	none
+	soundOff		none
+	numblades	2
+	saberLength	12
+	saberLength2	12
+	noDlight		1
+	noBlade		1
+	noIdleEffect	1
+	onInWater	1
+	noWallMarks	1
+	trailStyle		1
+	bounceOnWalls	1
+	boltToWrist	1
+	disarmable	0
+	alwaysBlock	1
+	throwable	0
+	noManualDeactivate 1
+	damageScale	0.4
+	saberColor	random
+	singleBladeStyle	fast
+	saberStyle	dual
+	kataMove       	LS_STAFF_SOULCAL
+	spinsound	"sound/weapons/clawshield/spin.mp3"
+	swingSound1	"sound/weapons/clawshield/swing1.mp3"
+	swingSound2	"sound/weapons/clawshield/swing2.mp3"
+	swingSound3	"sound/weapons/clawshield/swing3.mp3"
+	hitSound1	"sound/weapons/clawshield/slash1.mp3"
+	hitSound2	"sound/weapons/clawshield/slash2.mp3"
+	hitSound3	"sound/weapons/clawshield/slash3.mp3"
+	blockSound1	"sound/weapons/clawshield/block1.mp3"
+	blockSound2	"sound/weapons/clawshield/block2.mp3"
+	blockSound3	"sound/weapons/clawshield/block3.mp3"
+	bounceSound1	"sound/weapons/clawshield/bounce1.mp3"
+	bounceSound2	"sound/weapons/clawshield/bounce2.mp3"
+	bounceSound3	"sound/weapons/clawshield/bounce3.mp3"
+
+	blockEffect	"sparks/blueysparks_w_sound.efx"
+	hitOtherEffect	"sparks/blueysparks_w_sound.efx"
+}
+
+cyberninja
+{
+	name		"Cyber-Ninja"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_CyberNinja/saber_w.glm"
+	soundOn		"sound/weapons/sword/draw1.mp3"
+	soundLoop	"sound/effects/null.wav"
+	soundOff		"sound/weapons/sword/catch.mp3"
+	saberLength 	36
+	noDlight		1
+  	noBlade		1
+	trailStyle		1
+	blocking		0
+	bounceOnWalls	1
+	damageScale	0.5
+	onInWater	1
+	spinSound	"sound/weapons/swordss/swing---.mp3"	
+	swingSound1	"sound/weapons/swordss/swing-.mp3"
+	swingSound2	"sound/weapons/swordss/swing--.mp3"
+	swingSound3	"sound/weapons/swordss/swing---.mp3"
+    fallSound1  	"sound/weapons/swordss/fall4.mp3"
+    fallSound2  	"sound/weapons/swordss/fall5.mp3"
+   	fallSound3 	"sound/weapons/swordss/fall6.mp3"
+	hitSound1	"sound/weapons/swordss/stab4.mp3"
+	hitSound2	"sound/weapons/swordss/stab3.mp3"
+	hitSound3	"sound/weapons/swordss/stab2.mp3"
+	blockSound1	"sound/weapons/swordss/Cblock1.mp3"
+	blockSound2	"sound/weapons/swordss/Cblock2.mp3"
+	blockSound3	"sound/weapons/swordss/Cblock3.mp3"
+	bounceSound1	"sound/weapons/swordss/Cbounce1.mp3"
+	bounceSound2	"sound/weapons/swordss/Cbounce2.mp3"
+	bounceSound3	"sound/weapons/swordss/Cbounce3.mp3"
+	blockEffect	"sparks/blueysparks_w_sound.efx"
+	hitOtherEffect	"sparks/blueysparks_w_sound.efx"
+}
+
+desolous_shield
+{
+	name		"Darth Desolous' Shield"
+	saberType 	SABER_SINGLE
+	saberModel 	"models/weapons2/desolous_shield/saber_w.glm"
+	soundLoop  	none
+	saberLength 40
+	saberColor 	random
+	noDlight	1
+	noBlade		1
+	noIdleEffect	1
+	onInWater	1
+	noWallMarks	1
+	trailStyle	1
+	bounceOnWalls	0
+	boltToWrist	1
+	disarmable	0
+	alwaysBlock	1
+	throwable	0
+	noManualDeactivate 1
+	knockbackScale	1.5
+	noDismemberment 1
+}
+
+droid_vibrosword
+{
+	name "Droid Vibrosword"
+	saberType SABER_SINGLE
+	saberModel "models/weapons2/plasma_ldr/droid_vibrosword.glm"
+	soundOn		"sound/weapons/clawshield/draw1.mp3"
+	soundLoop	none
+	soundOff	"sound/weapons/clawshield/draw1.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound	"sound/weapons/clawshield/spin.mp3"
+	swingSound1	"sound/weapons/clawshield/swing1.mp3"
+	swingSound2	"sound/weapons/clawshield/swing2.mp3"
+	swingSound3	"sound/weapons/clawshield/swing3.mp3"
+	hitSound1	"sound/weapons/clawshield/slash1.mp3"
+	hitSound2	"sound/weapons/clawshield/slash2.mp3"
+	hitSound3	"sound/weapons/clawshield/slash3.mp3"
+	blockSound1	"sound/weapons/clawshield/block1.mp3"
+	blockSound2	"sound/weapons/clawshield/block2.mp3"
+	blockSound3	"sound/weapons/clawshield/block3.mp3"
+	bounceSound1	"sound/weapons/clawshield/bounce1.mp3"
+	bounceSound2	"sound/weapons/clawshield/bounce2.mp3"
+	bounceSound3	"sound/weapons/clawshield/bounce3.mp3"
+	saberLength 22
+	saberColor purple
+	throwable 0
+	noDlight 0
+	noBlade 0
+	noIdleEffect 1
+	noWallMarks 0
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	holsterPlace    back
+}
+
+electro_baton
+{
+	name "Electro Baton"
+	saberType SABER_SINGLE
+	saberModel "models/weapons2/plasma_ldr/electro_baton.glm"
+	soundOn "sound/weapons/electro_baton/draw.mp3"
+	soundLoop "sound/weapons/electro_baton/idle.mp3"
+	soundOff "sound/weapons/electro_baton/draw.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/electro_baton/swing1.mp3"
+	swingSound1 "sound/weapons/electro_baton/swing2.mp3"
+	swingSound2 "sound/weapons/electro_baton/swing3.mp3"
+	swingSound3 "sound/weapons/electro_baton/swing3.mp3"
+	blockSound1	"sound/weapons/electrostaff/block1.mp3"
+	blockSound2	"sound/weapons/electrostaff/block2.mp3"
+	blockSound3	"sound/weapons/electrostaff/block3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3" 
+	bounceSound1	"sound/weapons/electrostaff/bounce1.mp3"
+	bounceSound2	"sound/weapons/electrostaff/bounce2.mp3"
+	bounceSound3	"sound/weapons/electrostaff/bounce3.mp3"
+	hitSound1	"sound/weapons/electrostaff/hit.mp3"
+	hitSound2	"sound/weapons/electrostaff/hit.mp3"
+	hitSound3	"sound/weapons/electrostaff/hit.mp3"
+	saberLength 15
+	saberColor blue
+	throwable 0
+	noDlight 0
+	noBlade 0
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	hitPersonEffect 	"electrostaff/hit.efx"
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect		"electrostaff/block.efx"
+	hitOtherEffect	"electrostaff/other.efx"
+
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    rhip    //right hip
+}
+
+electrostaff
+{
+	name		"Electrostaff"
+	saberType	SABER_STAFF
+	saberModel	"models/weapons2/electrostaff/electrostaff.glm"
+	customSkin 	"models/weapons2/electrostaff/electrostaff.skin"
+	soundOn		"sound/weapons/electrostaff/spin.mp3"
+	soundLoop	"sound/weapons/electrostaff/hum.mp3"
+	soundOff	"sound/weapons/electrostaff/spin.mp3"
+	saberColor	purple
+	throwable	0
+	blocking	1
+	numBlades	2
+	saberLength	15
+	disarmable 	0
+	twohanded	1
+	damageScale	0.7
+	trailStyle		1
+	saberStyle	staff
+	onInWater	1
+	animSpeedScale  1.1
+	bounceonwalls 	1
+	noWallMarks	1
+	alwaysBlock	1
+	animSpeedScale    1.1
+	moveSpeedScale	1.0
+	bladeEffect	"electrostaff/energyblade.efx"
+	hitPersonEffect 	"electrostaff/hit.efx"
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect		"electrostaff/block.efx"
+	hitOtherEffect	"electrostaff/other.efx"
+
+	spinsound	"sound/weapons/electrostaff/spin.mp3"
+	swingSound1	"sound/weapons/electrostaff/swing1.mp3"
+	swingSound2	"sound/weapons/electrostaff/swing2.mp3"
+	swingSound3	"sound/weapons/electrostaff/swing3.mp3"
+	blockSound1	"sound/weapons/electrostaff/block1.mp3"
+	blockSound2	"sound/weapons/electrostaff/block2.mp3"
+	blockSound3	"sound/weapons/electrostaff/block3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3" 
+	bounceSound1	"sound/weapons/electrostaff/bounce1.mp3"
+	bounceSound2	"sound/weapons/electrostaff/bounce2.mp3"
+	bounceSound3	"sound/weapons/electrostaff/bounce3.mp3"
+	hitSound1	"sound/weapons/electrostaff/hit.mp3"
+	hitSound2	"sound/weapons/electrostaff/hit.mp3"
+	hitSound3	"sound/weapons/electrostaff/hit.mp3"
+	
+	noManualDeactivate 1
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    back    //back center
+}
+
+forcepike
+{
+	name		"Force Pike"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/forcepike/saber_w.glm"
+	soundOn		"sound/weapons/sword/draw1.mp3"
+	soundLoop	none
+	soundOff	"sound/weapons/sword/catch.mp3"
+	fallSound1	"sound/weapons/sword/fall4.mp3"
+	fallSound2	"sound/weapons/sword/fall5.mp3"
+	fallSound3	"sound/weapons/sword/fall6.mp3"
+	spinsound	"sound/weapons/sword/swing4.mp3"
+	spinSound	"sound/weapons/sword/swing4.mp3"
+	swingSound1	"sound/weapons/sword/swing1.mp3"
+	swingSound2	"sound/weapons/sword/swing2.mp3"
+	swingSound3	"sound/weapons/sword/swing3.mp3"
+	blockSound1	"sound/weapons/clawshield/block1.mp3"
+	blockSound2	"sound/weapons/clawshield/block2.mp3"
+	blockSound3	"sound/weapons/clawshield/block3.mp3"
+	bounceSound1	"sound/weapons/clawshield/bounce1.mp3"
+	bounceSound2	"sound/weapons/clawshield/bounce2.mp3"
+	bounceSound3	"sound/weapons/clawshield/bounce3.mp3"
+	saberLength	50
+	saberColor	random
+	noDlight	1
+	noBlade	1
+	noIdleEffect	1
+	noWallMarks	1
+	trailStyle	1
+	bounceOnWalls	1
+	onInWater	1
+	noManualDeactivate	1
+	damageScale	0.75
+	knockbackScale	1.5
+	parryBonus	1.25
+	lockBonus	1.25
+	disarmBonus	1.25
+	throwable	0
+	noDismemberment 1
+	holsterPlace    back    //back center
+}
+
+gammobaxe
+{
+	name "Gammorean Battle-axe"
+	saberType SABER_SINGLE
+	saberModel "models/weapons2/plasma_ldr/gam_axe.glm"
+	soundOn		"sound/weapons/sword/draw1.mp3"
+	soundLoop	none
+	soundOff	"sound/weapons/sword/catch.mp3"
+	fallSound1	"sound/weapons/sword/fall4.mp3"
+	fallSound2	"sound/weapons/sword/fall5.mp3"
+	fallSound3	"sound/weapons/sword/fall6.mp3"
+	spinsound	"sound/weapons/sword/swing4.mp3"
+	swingSound1	"sound/weapons/sword/swing1.mp3"
+	swingSound2	"sound/weapons/sword/swing2.mp3"
+	swingSound3	"sound/weapons/sword/swing3.mp3"
+	blockSound1	"sound/weapons/clawshield/block1.mp3"
+	blockSound2	"sound/weapons/clawshield/block2.mp3"
+	blockSound3	"sound/weapons/clawshield/block3.mp3"
+	bounceSound1	"sound/weapons/clawshield/bounce1.mp3"
+	bounceSound2	"sound/weapons/clawshield/bounce2.mp3"
+	bounceSound3	"sound/weapons/clawshield/bounce3.mp3"
+	saberLength 14
+	saberRadius 24
+	saberColor random
+	noDlight	1
+	noBlade	1
+	noIdleEffect	1
+	noWallMarks	1
+	trailStyle	1
+	bounceOnWalls	1
+	damageScale		1.3
+	onInWater	1
+	noManualDeactivate	1
+	throwable 	0
+    holsterPlace    back    //back center
+}
+
+gammobaxe2
+{
+	name		"Gammorean Battle-axe (KotOR)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/gammoba/axe_w.glm"
+	soundOn		"sound/weapons/sword/draw1.mp3"
+	soundLoop	none
+	soundOff	"sound/weapons/sword/catch.mp3"
+	fallSound1	"sound/weapons/sword/fall4.mp3"
+	fallSound2	"sound/weapons/sword/fall5.mp3"
+	fallSound3	"sound/weapons/sword/fall6.mp3"
+	spinsound	"sound/weapons/sword/swing4.mp3"
+	swingSound1	"sound/weapons/sword/swing1.mp3"
+	swingSound2	"sound/weapons/sword/swing2.mp3"
+	swingSound3	"sound/weapons/sword/swing3.mp3"
+	blockSound1	"sound/weapons/clawshield/block1.mp3"
+	blockSound2	"sound/weapons/clawshield/block2.mp3"
+	blockSound3	"sound/weapons/clawshield/block3.mp3"
+	bounceSound1	"sound/weapons/clawshield/bounce1.mp3"
+	bounceSound2	"sound/weapons/clawshield/bounce2.mp3"
+	bounceSound3	"sound/weapons/clawshield/bounce3.mp3"
+	saberLength	16
+	saberColor	random
+	noDlight	1
+	noBlade	1
+	noIdleEffect	1
+	noWallMarks	1
+	trailStyle	1
+	bounceOnWalls	1
+	damageScale		1.3
+	onInWater	1
+	noManualDeactivate	1
+	throwable 	0
+    holsterPlace    back    //back center
+}
+
+greeveeb4
+{
+	name		"Grievous 4-Armed (Right Hands)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/grievous4_sword_r/grievous4_sword_r.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumgrievous.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	spinSound	"sound/weapons/saber/grievousspin.wav"
+	saberColor	green
+	saberRadius 2.7
+	numBlades	2
+	saberLength	36
+	saberColor2	blue
+	saberRadius 2.7
+	saberStyle	dual
+	maxChain 	-1
+	lockBonus	1
+	parryBonus	1
+	disarmBonus	1
+	damageScale	0.75
+	throwable 	0
+	noManualDeactivate	1
+	kataMove   LS_SPINATTACK_ALORA
+}
+
+greeveeg4
+{
+	name		"Grievous 4-Armed (Left Hands)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/grievous4_sword_l/grievous4_sword_l.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumgrievous.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	spinSound	"sound/weapons/saber/grievousspin.wav"
+	saberColor	blue
+	saberRadius 2.7
+	numBlades	2
+	saberLength	36
+	saberColor2	green
+	saberRadius 2.7
+	saberStyle	dual
+	maxChain 	-1
+	lockBonus	1
+	parryBonus	1
+	disarmBonus	1
+	damageScale	0.75
+	throwable 	0
+	noManualDeactivate	1
+	kataMove   LS_SPINATTACK_ALORA
+}
+
+gungan_battle_staff
+{
+	name "Gungan Battle Staff"
+	saberType SABER_STAFF
+	saberModel "models/weapons2/plasma_ldr/gungan_battle_staff.glm"
+	soundOn "sound/weapons/sword/draw1.mp3"
+	soundLoop none
+	soundOff "sound/weapons/sword/draw1.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinSound	"sound/weapons/sword/swing4.mp3"
+	swingSound1 "sound/weapons/sword/swing1.mp3"
+	swingSound2 "sound/weapons/sword/swing2.mp3"
+	swingSound3 "sound/weapons/sword/swing2.mp3"
+	saberLength 22
+	saberLength2 10
+	numBlades 2
+	saberColor random
+	saberStyle staff
+	throwable 0
+	singleBladeStyle medium
+	singleBladeThrowable 0
+	twoHanded 1
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    back    //back center
+}
+
+gungan_shield
+{
+	name		"Gungan Shield"
+	sabertype	SABER_SINGLE
+	sabermodel	"models/weapons2/gungan/saber_w.glm"
+    soundOn        	"sound/weapons/gungan/on.mp3"
+    soundLoop    	"sound/weapons/gungan/loop.mp3"
+    soundOff    	"sound/weapons/gungan/on.mp3"
+    swingSound1    	"sound/weapons/gungan/swing.mp3"
+    swingSound2    	"sound/weapons/gungan/swing.mp3"
+    swingSound3    	"sound/weapons/gungan/swing.mp3"
+    spinSound    	"sound/weapons/gungan/swing.mp3"
+    bounceSound1    "sound/weapons/gungan/1.mp3"
+    bounceSound2    "sound/weapons/gungan/2.mp3"
+    bounceSound3    "sound/weapons/gungan/3.mp3"
+    hitSound1    	"sound/weapons/gungan/1.mp3"
+    hitSound2    	"sound/weapons/gungan/2.mp3"
+    hitSound3    	"sound/weapons/gungan/3.mp3"
+	blockSound1		"sound/weapons/gungan/3.mp3"
+    blockSound2  	"sound/weapons/gungan/4.mp3"
+	blockSound3		"sound/weapons/gungan/5.mp3"
+	numblades	1
+    throwable       0
+	saberlength	28
+	saberradius	5
+    damageScale 0.5
+	trailStyle  1
+	noWallMarks	1
+    kataMove        LS_KICK_F
+    lungeAtkMove    LS_HILT_BASH
+    bounceOnWalls   1
+	onInWater	1
+    boltToWrist     1
+	noblade        	1
+	noDlight	1
+    parryBonus      100
+    alwaysBlock     1
+    noIdleEffect 1
+	blockEffect	"sparks/bluesparks_w_sound.efx"
+    hitPersonEffect "sparks/bluesparks_w_sound.efx"
+    hitPersonEffect "sparks/sparks.efx"
+    noDismemberment 1
+    knockbackScale 1.5
+    g2MarksShader2 none
+    //holsterPlace    lchestl    // left chest lower
+}
+
+mando_arm
+{
+	name		"Mandalorian Armorer (Tong)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/mando_arm/sword_w.glm"
+	saberLength	28
+	noWallMarks	1
+	singleBladeThrowable 0
+	noDlight	1
+	noBlade	1
+	noIdleEffect	1
+	noWallMarks	1
+	trailStyle	1
+	bounceOnWalls	1
+	damageScale		1
+	onInWater	1
+	noManualDeactivate	1
+	throwable 	0
+	soundOn		sound/weapons/sword/draw1.mp3
+	soundOff	sound/weapons/sword/draw1.mp3
+	soundLoop	none
+	swingSound1	sound/weapons/sword/swing1.mp3
+	swingSound2	sound/weapons/sword/swing2.mp3
+	swingSound3	sound/weapons/sword/swing3.mp3
+	spinSound	sound/weapons/sword/swing2.mp3
+	fallSound1	sound/weapons/sword/fall3.mp3
+	fallSound2	sound/weapons/sword/fall6.mp3
+	fallSound3	sound/weapons/sword/fall4.mp3
+	hitSound1	sound/weapons/sword/slash.wav
+	hitSound2	sound/weapons/sword/stab1.mp3
+	hitSound3	sound/weapons/sword/stab2.mp3
+	blockSound1	sound/weapons/sword/fall1.wav
+	blockSound2	sound/weapons/saber/fall6.wav
+	blockSound3	sound/weapons/saber/fall2.wav
+    kataMove                        LS_ROLL_STAB
+}
+
+mando_arm2
+{
+	name		"Mandalorian Armorer (Hammer)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/mando_arm/doublesword_w.glm"
+	saberLength	27
+	singleBladeThrowable 0
+	noDlight	1
+	noBlade	1
+	noIdleEffect	1
+	noWallMarks	1
+	trailStyle	1
+	bounceOnWalls	1
+	damageScale		1
+	onInWater	1
+	noManualDeactivate	1
+	throwable 	0
+	soundOn		sound/weapons/sword/draw1.mp3
+	soundOff	sound/weapons/sword/draw1.mp3
+	soundLoop	none
+	swingSound1	sound/weapons/sword/swing1.mp3
+	swingSound2	sound/weapons/sword/swing2.mp3
+	swingSound3	sound/weapons/sword/swing3.mp3
+	spinSound	sound/weapons/sword/swing2.mp3
+	fallSound1	sound/weapons/sword/fall3.mp3
+	fallSound2	sound/weapons/sword/fall6.mp3
+	fallSound3	sound/weapons/sword/fall4.mp3
+	hitSound1	sound/weapons/sword/slash.wav
+	hitSound2	sound/weapons/sword/stab1.mp3
+	hitSound3	sound/weapons/sword/stab2.mp3
+	blockSound1	sound/weapons/sword/fall1.wav
+	blockSound2	sound/weapons/saber/fall6.wav
+	blockSound3	sound/weapons/saber/fall2.wav
+    kataMove                        LS_ROLL_STAB
+}
+
+magnaguard_staff
+{
+	name "Magnaguard Staff"
+	saberType SABER_STAFF
+	saberModel "models/weapons2/plasma_ldr/magnaguard_staff.glm"
+	soundOn "sound/weapons/electro_baton/draw.mp3"
+	soundLoop "sound/weapons/electro_baton/idle.mp3"
+	soundOff "sound/weapons/electro_baton/draw.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/electrostaff/spin.mp3"
+	swingSound1 "sound/weapons/purge_staff/swing1.mp3"
+	swingSound2 "sound/weapons/purge_staff/swing2.mp3"
+	swingSound3 "sound/weapons/purge_staff/swing3.mp3"
+	blockSound1	"sound/weapons/electrostaff/block1.mp3"
+	blockSound2	"sound/weapons/electrostaff/block2.mp3"
+	blockSound3	"sound/weapons/electrostaff/block3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3" 
+	bounceSound1	"sound/weapons/electrostaff/bounce1.mp3"
+	bounceSound2	"sound/weapons/electrostaff/bounce2.mp3"
+	bounceSound3	"sound/weapons/electrostaff/bounce3.mp3"
+	hitSound1	"sound/weapons/electrostaff/hit.mp3"
+	hitSound2	"sound/weapons/electrostaff/hit.mp3"
+	hitSound3	"sound/weapons/electrostaff/hit.mp3"
+	saberLength 18
+	saberLength2 18
+	numBlades 2
+	saberColor purple
+	saberStyle staff
+	throwable 0
+	singleBladeStyle medium
+	singleBladeThrowable 0
+	twoHanded 1
+	noDlight 0
+	noBlade 0
+	noIdleEffect 0
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	damagescale2 0.5
+	bladeEffect	"electrostaff/energyblade.efx"
+	hitPersonEffect 	"electrostaff/hit.efx"
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect		"electrostaff/block.efx"
+	hitOtherEffect	"electrostaff/other.efx"
+
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    back    //back center
+}
+
+magnaguard_staff2
+{
+	name "Magnaguard Staff - Yellow"
+	saberType SABER_STAFF
+	saberModel "models/weapons2/plasma_ldr/magnaguard_staffy.glm"
+	soundOn "sound/weapons/electro_baton/draw.mp3"
+	soundLoop "sound/weapons/electro_baton/idle.mp3"
+	soundOff "sound/weapons/electro_baton/draw.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/electrostaff/spin.mp3"
+	swingSound1 "sound/weapons/purge_staff/swing1.mp3"
+	swingSound2 "sound/weapons/purge_staff/swing2.mp3"
+	swingSound3 "sound/weapons/purge_staff/swing3.mp3"
+	blockSound1	"sound/weapons/electrostaff/block1.mp3"
+	blockSound2	"sound/weapons/electrostaff/block2.mp3"
+	blockSound3	"sound/weapons/electrostaff/block3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3" 
+	bounceSound1	"sound/weapons/electrostaff/bounce1.mp3"
+	bounceSound2	"sound/weapons/electrostaff/bounce2.mp3"
+	bounceSound3	"sound/weapons/electrostaff/bounce3.mp3"
+	hitSound1	"sound/weapons/electrostaff/hit.mp3"
+	hitSound2	"sound/weapons/electrostaff/hit.mp3"
+	hitSound3	"sound/weapons/electrostaff/hit.mp3"
+	saberLength 18
+	saberLength2 18
+	numBlades 2
+	saberColor yellow
+	saberStyle staff
+	throwable 0
+	singleBladeStyle medium
+	singleBladeThrowable 0
+	twoHanded 1
+	noDlight 0
+	noBlade 0
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	damagescale2 0.5
+	bladeEffect	"electrostaff/energyblade_yellow.efx"
+	hitPersonEffect 	"electrostaff/hit.efx"
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect		"electrostaff/block.efx"
+	hitOtherEffect	"electrostaff/other.efx"
+
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    back    //back center
+}
+
+militia_baton
+{
+	name		"Militia Stun Baton"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/shockstick/shockstick_w.glm"
+	soundOn		"sound/weapons/militia_baton/select.mp3"
+	soundLoop	"sound/weapons/militia_baton/pike_idle.wav"
+	soundOff	"sound/weapons/militia_baton/select.mp3"
+	saberLength	27
+	saberRadius	8
+	twohanded	1
+	throwable	0
+	noWallMarks	1
+	noDlight	1
+	noBlade		1
+	noClashFlare	1
+	trailStyle	1
+	noManualDeactivate	1
+	damageScale 	0.6
+	blocking	0
+
+	spinsound	"sound/weapons/militia_baton/pike_spin1.wav"
+
+	swingSound1	"sound/weapons/militia_baton/pike_swing1.mp3"
+	swingSound2	"sound/weapons/militia_baton/pike_swing2.mp3"
+	swingSound3	"sound/weapons/militia_baton/pike_swing3.mp3"
+
+	hitSound1	"sound/weapons/militia_baton/pike_hit1.mp3"
+	hitSound2	"sound/weapons/militia_baton/pike_hit2.mp3"
+	hitSound3	"sound/weapons/militia_baton/pike_hit3.mp3"
+
+	blockSound1	"sound/weapons/militia_baton/pike_block1.mp3"
+	blockSound2	"sound/weapons/militia_baton/pike_block2.mp3"
+	blockSound3	"sound/weapons/militia_baton/pike_block3.mp3"
+
+	bounceSound1	"sound/weapons/militia_baton/pike_bounce1.mp3"	
+	bounceSound2	"sound/weapons/militia_baton/pike_bounce2.mp3"
+	bounceSound3	"sound/weapons/militia_baton/pike_bounce3.mp3"
+	g2MarksShader	"gfx/damage/burnmark4"
+	blockEffect		"sparks/spark.efx"
+	hitPersonEffect "melee_weap/attack.efx"
+	hitOtherEffect	"melee_weap/block.efx"
+	noIdleEffect		1
+	bounceOnWalls		1
+	noClashFlare 		1
+	
+	noDismemberment 1
+	noDismemberment2 1
+}
+
+phasma_baton
+{
+	name "Phasma's Quicksilver Baton"
+	saberType SABER_STAFF
+	saberModel "models/weapons2/plasma_ldr/phasma_baton.glm"
+	soundOn "sound/weapons/sword/draw1.mp3"
+	soundLoop none
+	soundOff "sound/weapons/sword/draw1.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/sword/swing4.mp3"
+	swingSound1 "sound/weapons/sword/swing1.mp3"
+	swingSound2 "sound/weapons/sword/swing2.mp3"
+	swingSound3 "sound/weapons/sword/swing2.mp3"
+	saberLength 36
+	numBlades 2
+	saberColor random
+	saberStyle staff
+	throwable 0
+	singleBladeStyle medium
+	singleBladeThrowable 0
+	twoHanded 1
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    rhipb    //back center
+}
+
+purge_dagger
+{
+	name "Purge Trooper Dagger"
+	saberType SABER_SINGLE
+	saberModel "models/weapons2/plasma_ldr/purge_dagger.glm"
+	soundOn "sound/weapons/electro_baton/draw.mp3"
+	soundLoop "sound/weapons/electro_baton/idle.mp3"
+	soundOff "sound/weapons/electro_baton/draw.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/electro_baton/swing1.mp3"
+	swingSound1 "sound/weapons/electro_baton/swing1.mp3"
+	swingSound2 "sound/weapons/electro_baton/swing2.mp3"
+	swingSound3 "sound/weapons/electro_baton/swing3.mp3"
+	blockSound1	"sound/weapons/electrostaff/block1.mp3"
+	blockSound2	"sound/weapons/electrostaff/block2.mp3"
+	blockSound3	"sound/weapons/electrostaff/block3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3" 
+	bounceSound1	"sound/weapons/electrostaff/bounce1.mp3"
+	bounceSound2	"sound/weapons/electrostaff/bounce2.mp3"
+	bounceSound3	"sound/weapons/electrostaff/bounce3.mp3"
+	hitSound1	"sound/weapons/electrostaff/hit.mp3"
+	hitSound2	"sound/weapons/electrostaff/hit.mp3"
+	hitSound3	"sound/weapons/electrostaff/hit.mp3"
+	saberLength 18
+	saberColor purple
+	kataMove       	LS_STAFF_SOULCAL
+	throwable 0
+	noDlight 0
+	noBlade 0
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	bladeEffect	"electrostaff/energyblade.efx"
+	hitPersonEffect 	"electrostaff/hit.efx"
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect		"electrostaff/block.efx"
+	hitOtherEffect	"electrostaff/other.efx"
+
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    rhip    //right hip
+}
+
+purge_hammer
+{
+	name "Purge Trooper Hammer"
+	saberType SABER_SINGLE
+	saberModel "models/weapons2/plasma_ldr/purge_hammer.glm"
+	soundOn "sound/weapons/purge_hammer/on.mp3"
+	soundLoop "sound/weapons/electro_baton/idle.mp3"
+	soundOff "sound/weapons/purge_hammer/off.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/purge_hammer/swing1.mp3"
+	swingSound1 "sound/weapons/purge_hammer/swing1.mp3"
+	swingSound2 "sound/weapons/purge_hammer/swing2.mp3"
+	swingSound3 "sound/weapons/purge_hammer/swing3.mp3"
+	blockSound1	"sound/weapons/electrostaff/block1.mp3"
+	blockSound2	"sound/weapons/electrostaff/block2.mp3"
+	blockSound3	"sound/weapons/electrostaff/block3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3" 
+	bounceSound1	"sound/weapons/electrostaff/bounce1.mp3"
+	bounceSound2	"sound/weapons/electrostaff/bounce2.mp3"
+	bounceSound3	"sound/weapons/electrostaff/bounce3.mp3"
+	hitSound1	"sound/weapons/electrostaff/hit.mp3"
+	hitSound2	"sound/weapons/electrostaff/hit.mp3"
+	hitSound3	"sound/weapons/electrostaff/hit.mp3"
+	saberLength 18
+	saberColor purple
+	throwable 1
+	noDlight 0
+	noBlade 0
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	knockbackScale 2
+	bladeEffect	"electrostaff/energyblade.efx"
+	hitPersonEffect 	"electrostaff/hit.efx"
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect		"electrostaff/block.efx"
+	hitOtherEffect	"electrostaff/other.efx"
+
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    back    //back center
+}
+
+purge_staff
+{
+	name "Purge Trooper Staff"
+	saberType SABER_STAFF
+	saberModel "models/weapons2/plasma_ldr/purge_staff.glm"
+	soundOn "sound/weapons/electro_baton/draw.mp3"
+	soundLoop "sound/weapons/electro_baton/idle.mp3"
+	soundOff "sound/weapons/electro_baton/draw.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/electrostaff/spin.mp3"
+	swingSound1 "sound/weapons/purge_staff/swing1.mp3"
+	swingSound2 "sound/weapons/purge_staff/swing2.mp3"
+	swingSound3 "sound/weapons/purge_staff/swing3.mp3"
+	blockSound1	"sound/weapons/electrostaff/block1.mp3"
+	blockSound2	"sound/weapons/electrostaff/block2.mp3"
+	blockSound3	"sound/weapons/electrostaff/block3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3" 
+	bounceSound1	"sound/weapons/electrostaff/bounce1.mp3"
+	bounceSound2	"sound/weapons/electrostaff/bounce2.mp3"
+	bounceSound3	"sound/weapons/electrostaff/bounce3.mp3"
+	hitSound1	"sound/weapons/electrostaff/hit.mp3"
+	hitSound2	"sound/weapons/electrostaff/hit.mp3"
+	hitSound3	"sound/weapons/electrostaff/hit.mp3"
+	saberLength 14
+	saberLength2 14
+	numBlades 2
+	saberColor purple
+	saberStyle staff
+	throwable 0
+	singleBladeStyle medium
+	singleBladeThrowable 0
+	twoHanded 1
+	noDlight 0
+	noBlade 0
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+	damagescale2 0.5
+	bladeEffect	"electrostaff/energyblade.efx"
+	hitPersonEffect 	"electrostaff/hit.efx"
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect		"electrostaff/block.efx"
+	hitOtherEffect	"electrostaff/other.efx"
+
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    back    //back center
+}
+
+rey_qs
+{
+	name "Rey's Quarterstaff"
+	saberType SABER_STAFF
+	saberModel "models/weapons2/reys_quarterstaff/model.glm"
+	soundOn "sound/weapons/sword/draw1.mp3"
+	soundLoop none
+	soundOff "sound/weapons/sword/draw1.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/sword/swing4.mp3"
+	swingSound1 "sound/weapons/sword/swing1.mp3"
+	swingSound2 "sound/weapons/sword/swing2.mp3"
+	swingSound3 "sound/weapons/sword/swing2.mp3"
+	saberLength 36
+	numBlades 2
+	saberColor random
+	saberStyle staff
+	throwable 0
+	singleBladeStyle medium
+	singleBladeThrowable 0
+	twoHanded 1
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+	damagescale 0.5
+
+	noDismemberment 1
+	noDismemberment2 1
+	holsterPlace    back    //back center
+}
+
+riot_baton
+{
+	name		"Riot Baton"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/plasma_ldr/riot_baton.glm"
+	hitPersonEffect 	"electrostaff/hit.efx"
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect		"electrostaff/block.efx"
+	hitOtherEffect		"electrostaff/other.efx"
+	soundOn "sound/weapons/electro_baton/draw.mp3"
+	soundLoop "sound/weapons/electro_baton/idle.mp3"
+	soundOff "sound/weapons/electro_baton/draw.mp3"
+	fallSound1 "sound/weapons/sword/fall4.mp3"
+	fallSound2 "sound/weapons/sword/fall5.mp3"
+	fallSound3 "sound/weapons/sword/fall6.mp3"
+	spinsound "sound/weapons/electro_baton/swing1.mp3"
+	swingSound1 "sound/weapons/electro_baton/swing2.mp3"
+	swingSound2 "sound/weapons/electro_baton/swing3.mp3"
+	swingSound3 "sound/weapons/electro_baton/swing3.mp3"
+	blockSound1	"sound/weapons/electrostaff/block1.mp3"
+	blockSound2	"sound/weapons/electrostaff/block2.mp3"
+	blockSound3	"sound/weapons/electrostaff/block3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3" 
+	bounceSound1	"sound/weapons/electrostaff/bounce1.mp3"
+	bounceSound2	"sound/weapons/electrostaff/bounce2.mp3"
+	bounceSound3	"sound/weapons/electrostaff/bounce3.mp3"
+	hitSound1	"sound/weapons/electrostaff/hit.mp3"
+	hitSound2	"sound/weapons/electrostaff/hit.mp3"
+	hitSound3	"sound/weapons/electrostaff/hit.mp3"
+	noBlade 1
+	saberLength	8
+	saberColor	blue
+	throwable	0
+	bounceonwalls 	1
+	alwaysBlock	1
+	onInWater	1
+	noWallMarks	1
+	trailstyle		1
+    kataMove       	LS_ROLL_STAB
+	noFlips			1
+	noCartwheels	1
+	holsterPlace    none	
+}
+
+riot_shield
+{
+	name		"Riot Shield"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/plasma_ldr/riot_shield.glm"
+	soundOn		"sound/weapons/clawshield/draw1.mp3"
+	soundLoop	none
+	soundOff	none
+	saberLength	36
+	saberColor	random
+	noDlight	1
+	noBlade		1
+	noIdleEffect	1
+	onInWater	1
+	noWallMarks	1
+	trailStyle	1
+	bounceOnWalls	0
+	boltToWrist	1
+	disarmable	0
+	alwaysBlock	1
+	throwable	0
+	noManualDeactivate 1
+    kataMove        LS_ROLL_STAB
+	noFlips			1
+	noCartwheels	1
+	noDismemberment 1
+	holsterPlace    none	
+}
+
+stunbaton
+{
+	name		"Stun Baton"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/stunbaton/stun_w.glm"
+	soundOn		"sound/weapons/sword/draw1.mp3"
+	soundLoop	"sound/weapons/baton/idle.wav"
+	soundOff	"sound/weapons/sword/catch.mp3"
+	fallSound1	"sound/weapons/sword/fall4.mp3"
+	fallSound2	"sound/weapons/sword/fall5.mp3"
+	fallSound3	"sound/weapons/sword/fall6.mp3"
+	spinsound	"sound/weapons/melee/swing3.mp3"
+	swingSound1	"sound/weapons/sword/swing1.mp3"
+	swingSound2	"sound/weapons/sword/swing2.mp3"
+	saberLength	14
+	saberColor	random
+	noDlight	1
+	bladeEffect	"stunbaton/blade.efx"
+	blockEffect "stunbaton/flesh_impact.efx"
+	hitPersonEffect	"stunbaton/flesh_impact.efx"
+	noBlade	1
+	noIdleEffect	1
+	noWallMarks	1
+	trailStyle	1
+	bounceOnWalls	1
+	onInWater	1
+	noManualDeactivate	1
+	noDismemberment 1
+}
+
+tusken_chieftain_gaffi
+{
+	name		@MENUS_TUSKEN_CHIEFTAIN_GAFFI
+	saberType	SABER_STAFF
+	saberModel	"models/weapons2/tusken_staff_sar/tusken_staff_sar2.glm"
+	soundOn		"sound/weapons/sword/draw1.mp3"
+	soundLoop	none
+	soundOff	"sound/weapons/sword/catch.mp3"
+	fallSound1	"sound/weapons/sword/fall4.mp3"
+	fallSound2	"sound/weapons/sword/fall5.mp3"
+	fallSound3	"sound/weapons/sword/fall6.mp3"
+	hitSound1	"sound/weapons/sword/stab1.mp3"
+	hitSound2	"sound/weapons/sword/stab2.mp3"
+	hitSound3	"sound/weapons/sword/stab3.mp3"
+	spinSound	"sound/weapons/sword/swing4.mp3"
+	swingSound1	"sound/weapons/sword/swing1.mp3"
+	swingSound2	"sound/weapons/sword/swing2.mp3"
+	swingSound3	"sound/weapons/sword/swing3.mp3"
+	bounceSound1	"sound/weapons/sword/stab1.mp3"
+	bounceSound2	"sound/weapons/sword/stab2.mp3"
+	bounceSound3	"sound/weapons/sword/stab3.mp3"
+	numBlades	2
+	saberLength	20
+	saberRadius	0.5
+	saberColor	red
+    saberStyle  staff
+	noManualDeactivate	1
+	singleBladeStyle	medium
+	singleBladeThrowable	0
+	noDlight	1
+	noBlade	        1
+	noIdleEffect	1
+	noWallMarks	1
+	bounceOnWalls	1
+	trailStyle	1
+	lockable		1
+	throwable		0
+	damageScale		1.3
+	onInWater		1
+	g2MarksShader "gfx/damage/bloodcutmark"
+	g2WeaponMarkShader "gfx/effects/bloodsplat"
+	blockEffect	"sparks/spark.efx"
+	hitPersonEffect 	"sparks/Sword_blood.efx"
+	hitOtherEffect	"sparks/sword_cut.efx"
+    holsterPlace    back    //back center
+}

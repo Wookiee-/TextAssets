@@ -1,0 +1,639 @@
+// These weapon models should only be used in the character menu
+
+menu_wp_blaster
+{
+	name "blaster"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/blaster_r/blaster_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_disruptor
+{
+	name "disruptor"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/disruptor/disruptor_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_bowcaster
+{
+	name "bowcaster"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/bowcaster/bowcaster_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_repeater
+{
+	name "repeater"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/TL50/TL50_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_flechette
+{
+	name "flechette"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/golan_arms/golan_arms_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_rocket_launcher
+{
+	name "merr_sonn"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/merr_sonn/merr_sonn_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_concussion
+{
+	name "lj-50_concussion"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/lj-50_concussion/lj-50_concussion_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_blaster_pistol
+{
+	name "blaster_pistol"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/blaster_pistol/blaster_pistol_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_tusken_rifle
+{
+	name "tusken_rifle"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/tusken_rifle/tusken_rifle_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_tusken_staff
+{
+	name "tusken_staff
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/tusken_staff/tusken_staff_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_battledroid
+{
+	name "battledroid sad_e5"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/sad_e5/e5_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_firstorder
+{
+	name "f11d_blaster"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/f11d_blaster/blaster_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_clonecarbine
+{
+	name "clonecarbine dc-15s"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/dc-15s/dc-15s_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_rebelblaster
+{
+	name "rebelblaster dh-17"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/dh-17/dh-17_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_clonerifle
+{
+	name "clonerifle dc-15a"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/dc-15a/dc-15a_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_clonecommando
+{
+	name "clonecommando DC-17m"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/DC-17m/blaster_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_rebelrifle
+{
+	name "rebelrifle A280"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/A280/A280_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_rey
+{
+	name "rey lpa_nn-14"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/lpa_nn-14/blaster_pistol_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_jango
+{
+	name "janjo westar_if"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/westar_if/westar_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_boba
+{
+	name "janjo ee-3carbine"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/ee-3carbine/ee3rotj_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_clonepistol
+{
+	name "clonepistol dc-17"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/dc-17/dc-17_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_z6_rotary_cannon
+{
+	name "z6_rotary_cannon"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/z6_rotary/rotary_cannon_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_blaster_pistol_kotor
+{
+	name "blaster_pistol"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/kotor_bpistol2/kotor_bpistol2_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_blaster_kotor
+{
+	name "blaster"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/kotor_brifle2/kotor_brifle2_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_clonepistol_kotor
+{
+	name "clonepistol dc-17"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/kotor_pistol1/kotor_pistol1_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_rebelblaster_kotor
+{
+	name "rebelblaster dh-17"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_rebelrifle_kotor
+{
+	name "rebelrifle A280"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/kotor_drifle/kotor_drifle_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_repeater_kotor
+{
+	name "repeater"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/kotor_repeater/kotor_repeater_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}
+
+menu_wp_disruptor_kotor
+{
+	name "disruptor"
+	saberType SABER_SINGLE
+	saberModel	"models/weapons2/kotor_brifle3/kotor_brifle3_w.glm"
+	soundOn none
+	soundLoop none
+	soundOff none
+	saberLength 36
+	saberColor random
+	throwable 0
+	singleBladeThrowable 0
+	noDlight 1
+	noBlade 1
+	noIdleEffect 1
+	noWallMarks 1
+	trailStyle 1
+	bounceOnWalls 1
+	onInWater 1
+	noManualDeactivate 1
+}

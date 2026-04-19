@@ -1,0 +1,438 @@
+bane
+{
+	name		"Darth Bane"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_bane.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+bastila_staff
+{
+	name		"Bastila Shan" 
+	saberType	SABER_STAFF
+	saberModel	"models/weapons2/saber_plasma/saber_bastila.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberColor	yellow
+	numBlades	2
+	saberRadius 2.7
+	saberLength	32
+	saberStyle	staff
+	singleBladeStyle	medium
+	singleBladeThrowable	0
+	brokenSaber1	none
+	brokenSaber2	none
+	twoHanded	1
+	throwable	1
+}
+
+bastila_single
+{
+	name		"Bastila Shan"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_bastila2.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/saberoff4.mp3"
+	saberColor	yellow
+	saberLength	36
+	saberRadius 2.7
+}
+
+dagan
+{
+	name		"Dagan Gera"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_dagan.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/saberoff4.mp3"
+	saberColor	yellow
+	saberLength	36
+	saberRadius 2.7
+}
+
+dagan_staff
+{
+	name		"Dagan Gera" 
+	saberType	SABER_STAFF
+	saberModel	"models/weapons2/saber_plasma/saber_dagan_staff.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	numBlades	2
+	saberRadius 2.7
+	saberLength	32
+	saberStyle	staff
+	singleBladeStyle	medium
+	singleBladeThrowable	0
+	brokenSaber1	none
+	brokenSaber2	none
+	twoHanded	1
+	throwable	1
+}
+
+dooku_tfu
+{
+	name		"Count Dooku - Straight [TFU]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_marek5.glm"
+	soundOn		"sound/weapons/saber/saberon_dooku3.wav"
+	soundLoop	"sound/weapons/saber/saberhum3.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.wav"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+    holsterPlace    lhip    // left hip
+}
+
+desolous
+{
+	name		"Darth Desolous"
+	saberType 	SABER_SINGLE
+	saberModel 	"models/weapons2/saber_desolous/saber_w.glm"
+	soundOn		"sound/weapons/saber/saberonquick.mp3"
+	soundLoop	"sound/weapons/saber/saberhum3.wav"
+	soundOff	"sound/weapons/saber/saberoffquick.mp3"
+	saberLength 36
+	saberColor 	red
+	saberRadius 2.7
+}
+
+jolee
+{
+	name		"Jolee Bindo"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_jolee.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/saberoff4.mp3"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+
+malak
+{
+	name		"Darth Malak"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_malak.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+malgus
+{
+	name		"Darth Malgus"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_malgus.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	48
+	saberRadius 2.7
+}
+
+nihilus
+{
+	name		"Darth Nihilus"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_nihilus.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+phobos
+{
+	name		"Darth Phobos" 
+	saberType	SABER_STAFF
+	saberModel	"models/weapons2/saber_plasma/saber_phobos.glm"
+	soundOn		"sound/weapons/saber/saberonquick.wav"
+	soundLoop	"sound/weapons/saber/saberhum2.wav"
+	soundOff	"sound/weapons/saber/saberoffquick.wav"
+	saberColor	red
+	numBlades	2
+	saberRadius 2.7
+	saberLength	32
+	saberStyle	staff
+	singleBladeStyle	medium
+	singleBladeThrowable	0
+	brokenSaber1	none
+	brokenSaber2	none
+	twoHanded	1
+	throwable	1
+}
+
+revan_jedi
+{
+	name		"Jedi Revan"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_revan.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/saberoff.mp3"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+
+revan
+{
+	name		"Darth Revan"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_revan.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+revan2
+{
+	name		"Darth Revan (SWTOR)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_revan.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	purple
+	saberLength	36
+	saberRadius 2.7
+}
+
+sion
+{
+	name		"Darth Sion"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_sion.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+talon
+{
+	name		"Darth Talon"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/darth_talon/darth_talon.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.wav"
+	soundLoop	"sound/weapons/saber/saberhum2.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.wav"
+	saberLength 36
+	saberRadius 2.7
+	saberColor  red
+}
+
+desann
+{
+	name		"Retribution"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_desann/saber_w.glm"
+	soundOn		"sound/weapons/saber/savage_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumsavage.wav"
+	soundOff	"sound/weapons/saber/savage_saber_off.mp3"
+	swingSound1	"sound/weapons/saber/savagehup1.mp3"
+	swingSound2	"sound/weapons/saber/savagehup2.mp3"
+	swingSound3	"sound/weapons/saber/savagehup3.mp3"
+	saberColor	red
+	saberLength	48
+	saberRadius 3.0
+}
+
+galenmarek
+{
+	name		"Galen Marek [TFU2]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_dough/saber_galen2.glm"
+	soundOn		"sound/weapons/saber/saberon3.mp3"
+	soundLoop	"sound/weapons/saber/saberhum9.wav"
+	soundOff	"sound/weapons/saber/saberoff3.mp3"
+	saberLength	36
+	saberColor	blue
+	saberRadius 2.7
+}
+
+galenmarek_alt
+{
+	name		"Galen Marek Alt. [TFU2]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_dough/saber_galen3.glm"
+	soundOn		"sound/weapons/saber/saberon3.mp3"
+	soundLoop	"sound/weapons/saber/saberhum9.wav"
+	soundOff	"sound/weapons/saber/saberoff3.mp3"
+	saberLength	36
+	saberColor	blue
+	saberRadius 2.7
+}
+
+galenmarek_cjr
+{
+	name		"Galen Marek (Ceremonial Jedi Hilt)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_dough/saber_galen4.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhum9.wav"
+	soundOff	"sound/weapons/saber/saberoff.mp3"
+	saberLength	36
+	saberColor	green
+	saberRadius 2.7
+}
+
+kyle
+{
+	name		"Kyle Katarn"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber/saber_w.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.mp3"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+
+kyle_boss
+{
+	name		"Kyle Katarn"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber/saber_w.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.mp3"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+	lockBonus	2
+	parryBonus	2
+	disarmBonus	2
+	notInMP	1
+}
+
+mara
+{
+	name		"Mara Jade"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_mara2.glm"
+	soundOn		"sound/weapons/saber/mara_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhum7.wav"
+	soundOff	"sound/weapons/saber/mara_saber_off.mp3"
+	swingSound1 "sound/weapons/saber/kylehup4.mp3"
+	swingSound2 "sound/weapons/saber/kylehup6.mp3"
+	swingSound3 "sound/weapons/saber/kylehup7.mp3"
+	saberColor	purple
+	saberLength	36
+	saberRadius 2.7
+}
+
+kota
+{
+	name		"Rahm Kota"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_dough/saber_rahm.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhum5.wav"
+	soundOff	"sound/weapons/saber/saberoff.mp3"
+	saberColor	green
+	saberLength	36
+	saberRadius 2.7
+}
+
+sith_stalker
+{
+	name		"Sith Stalker"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_dough/saber_stalker.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhum9.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	32
+	saberRadius 2.7
+}
+
+sith_stalker2
+{
+	name		"Sith Stalker [Alternate]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_marek4.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhum9.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+starkiller
+{
+	name		"Starkiller"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_dough/saber_galen.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhum9.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+tavion
+{
+	name		"Revenger"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_rooxon/saber_tavion.glm"
+	soundOn		"sound/weapons/saber/tavion_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhum7.wav"
+	soundOff	"sound/weapons/saber/tavion_saber_off.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+visas
+{
+	name		"Visas Marr"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_visas.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/saberoff4.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+juhani
+{
+	name		"Juhani"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_juhani.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/saberoff4.mp3"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+

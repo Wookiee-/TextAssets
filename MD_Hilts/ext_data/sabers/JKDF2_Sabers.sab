@@ -1,0 +1,132 @@
+Boc
+{
+	name		"Boc"
+	saberType	SABER_SINGLE
+	saberModel 	"models/weapons2/saber_plasma/saber_boc.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.wav"
+	soundLoop	"sound/weapons/saber/saberhum2.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.wav"
+	saberLength	36
+	saberColor	purple
+	saberRadius 2.7
+}
+
+Gorc
+{
+	name		"Gorc"
+	saberType	SABER_SINGLE
+	saberModel 	"models/weapons2/saber_gorc/saber_w.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum2.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberLength	70
+	saberColor	orange
+	saberRadius 2.5
+	lockable	0
+	disarmable	0
+	parryBonus	1
+	breakParryBonus	1
+}
+
+jerec
+{
+	name		"Jerec"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_jerec.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhum.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	swingSound1 "sound/weapons/saber/kylehup2.mp3"
+	swingSound2 "sound/weapons/saber/kylehup5.mp3"
+	swingSound3 "sound/weapons/saber/kylehup8.mp3"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+Maw
+{
+	name		"Maw"
+	saberType	SABER_SINGLE
+	saberModel 	"models/weapons2/saber_plasma/saber_maw.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.wav"
+	soundLoop	"sound/weapons/saber/saberhum3.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.wav"
+	saberColor	xff3f00
+	saberLength	36
+	saberRadius 2.7
+}
+
+Pic
+{
+	name		"Pic"
+	saberType	SABER_SINGLE
+	saberModel 	"models/weapons2/saber_plasma/saber_pic_gorc.glm"
+	soundOn		"sound/weapons/saber/saberonquick.wav"
+	soundLoop	"sound/weapons/saber/saberhum1.wav"
+	soundOff	"sound/weapons/saber/saberoffquick.wav"
+	saberLength	23
+	saberColor	orange
+	saberRadius 2
+}
+
+rahn
+{
+	name		"Qu Rahn"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_qu_rahn.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhum.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	swingSound1 "sound/weapons/saber/kylehup1.mp3"
+	swingSound2 "sound/weapons/saber/kylehup4.mp3"
+	swingSound3 "sound/weapons/saber/kylehup7.mp3"
+	saberColor	green
+	saberLength	36
+	saberRadius 2.7
+}
+
+Sariss
+{
+	name		"Sariss"
+	saberType	SABER_SINGLE
+	saberModel "models/weapons2/saber_plasma/saber_sariss.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberLength	36
+	saberColor	blue
+	saberRadius 2.7
+}
+
+yun
+{
+	name		"Yun"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_yun.glm"
+	soundOn		"sound/weapons/saber/saberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhum.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	swingSound1 "sound/weapons/saber/kylehup3.mp3"
+	swingSound2 "sound/weapons/saber/kylehup6.mp3"
+	swingSound3 "sound/weapons/saber/kylehup9.mp3"
+	saberColor	yellow
+	saberLength	36
+	saberRadius 2.7
+}
+
+mara_mots
+{
+	name		"Mara Jade [MOTS]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_mara.glm"
+	soundOn		"sound/weapons/saber/mara_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhum7.wav"
+	soundOff	"sound/weapons/saber/mara_saber_off.mp3"
+	swingSound1 "sound/weapons/saber/kylehup4.mp3"
+	swingSound2 "sound/weapons/saber/kylehup6.mp3"
+	swingSound3 "sound/weapons/saber/kylehup7.mp3"
+	saberColor	purple
+	saberLength	36
+	saberRadius 2
+}

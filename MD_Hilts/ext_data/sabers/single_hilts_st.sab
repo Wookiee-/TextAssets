@@ -1,0 +1,227 @@
+baylan
+{
+	name		"Baylan Skoll"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_baylan.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhummaul.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	swingSound1	"sound/weapons/saber/baylanhup1.mp3"
+	swingSound2	"sound/weapons/saber/baylanhup2.mp3"
+	swingSound3	"sound/weapons/saber/baylanhup3.mp3"
+	saberColor	xff3f00
+	saberLength	36
+	saberRadius 2.7
+	lockBonus	2
+	parryBonus	2
+	disarmBonus	2
+}
+
+shin
+{
+	name		"Shin Hati"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_shin.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhummaul.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.mp3"
+	saberColor	xff3f00
+	saberLength	36
+	saberRadius 2.7
+}
+
+darksaber_tm
+{
+	name		"Darksaber [The Mandalorian]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_darksaber3.glm"
+	soundOn		"sound/weapons/saber/darksaberon.wav"
+	soundLoop	"sound/weapons/saber/darksaberhum.wav"
+	soundOff	"sound/weapons/saber/darksaberoff.wav"
+	swingSound1	"sound/weapons/saber/darksaberhup1.mp3"
+	swingSound2	"sound/weapons/saber/darksaberhup2.mp3"
+	swingSound3	"sound/weapons/saber/darksaberhup3.mp3"
+	blockSound1	"sound/weapons/saber/darksaberblock1.mp3"
+	blockSound2	"sound/weapons/saber/darksaberblock1.mp3"
+	blockSound3	"sound/weapons/saber/darksaberblock1.mp3"
+	saberColor	black
+	saberLength	32
+	saberRadius 2.7
+}
+
+kylo_ren
+{
+	name		"Kylo Ren"
+	saberType	SABER_UNSTABLE
+	saberModel	"models/weapons2/saber_plasma/saber_kylo_ren.glm"
+	soundOn		"sound/weapons/saber/kylo_saber_on.wav"
+	soundLoop	"sound/weapons/saber/saberhumkylo.wav"
+	soundOff	"sound/weapons/saber/kylo_saber_off.wav"
+	swingSound1	"sound/weapons/saber/kylohup1.wav"
+	swingSound2	"sound/weapons/saber/kylohup2.wav"
+	swingSound3	"sound/weapons/saber/kylohup3.wav"
+	hitSound1	"sound/weapons/saber/kylohit1.wav"
+	hitSound2	"sound/weapons/saber/kylohit2.wav"
+	hitSound3	"sound/weapons/saber/kylohit3.wav"
+	blockSound1	"sound/weapons/saber/kyloblock1.wav"
+	blockSound2	"sound/weapons/saber/kyloblock2.wav"
+	blockSound3	"sound/weapons/saber/kyloblock3.wav"
+	bounceSound1 "sound/weapons/saber/kylobounce1.wav"
+	bounceSound2 "sound/weapons/saber/kylobounce2.wav"
+	bounceSound3 "sound/weapons/saber/kylobounce3.wav"
+	saberLength	36
+	saberLength2	8
+	saberLength3	8
+	saberRadius2	2
+	saberRadius3	2
+	trailStyle2	2
+	saberColor	unstable_red
+	saberRadius 2.7
+	numblades	3
+	noManualDeactivate 1
+}
+
+luke
+{
+	name		"Luke Skywalker [JKA]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_luke/saber_w.glm"
+	soundOn		"sound/weapons/saber/luke_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhum5.wav"
+	soundOff	"sound/weapons/saber/luke_saber_off.mp3"
+	swingSound1 "sound/weapons/saber/lukehup1.mp3"
+	swingSound2 "sound/weapons/saber/lukehup2.mp3"
+	swingSound3 "sound/weapons/saber/lukehup3.mp3"
+	saberLength	40
+	saberColor	green
+}
+
+leia_ep9
+{
+	name		"Leia Skywalker [Ep.IX]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_rey4.glm"
+	soundOn		"sound/weapons/saber/saberon3.mp3"
+	soundLoop	"sound/weapons/saber/saberhum1.wav"
+	soundOff	"sound/weapons/saber/saberoff3.mp3"
+	swingSound1 "sound/weapons/saber/lukehup1.mp3"
+	swingSound2 "sound/weapons/saber/lukehup2.mp3"
+	swingSound3 "sound/weapons/saber/lukehup3.mp3"
+	blockSound1	"sound/weapons/saber/lukeblock1.mp3"
+	blockSound2	"sound/weapons/saber/lukeblock2.mp3"
+	blockSound3	"sound/weapons/saber/lukeblock3.mp3"
+	bounceSound1 "sound/weapons/saber/lukebounce1.mp3"
+	bounceSound2 "sound/weapons/saber/lukebounce2.mp3"
+	bounceSound3 "sound/weapons/saber/lukebounce3.mp3"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+
+ren
+{
+	name		"Ren [TROKR]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_the_ren.glm"
+	soundOn		"sound/weapons/saber/enemy_saber_on.wav"
+	soundLoop	"sound/weapons/saber/saberhum3.wav"
+	soundOff	"sound/weapons/saber/enemy_saber_off.wav"
+	saberColor	red
+	saberLength	36
+	saberRadius 2.7
+}
+
+rey_ep7
+{
+	name		"Rey [Ep.VII]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_rey.glm"
+	soundOn		"sound/weapons/saber/rey_saber_on2.wav"
+	soundLoop	"sound/weapons/saber/saberhumanakin.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	swingSound1 "sound/weapons/saber/reyhup1.wav"
+	swingSound2 "sound/weapons/saber/vaderhup2.wav"
+	swingSound3 "sound/weapons/saber/vaderhup1.wav"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+
+rey_ep8
+{
+	name		"Rey [Ep.VIII]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_rey.glm"
+	soundOn		"sound/weapons/saber/rey_saber_on3.wav"
+	soundLoop	"sound/weapons/saber/saberhumreytlj.wav"
+	soundOff	"sound/weapons/saber/saberoffquick.wav"
+	swingSound1 "sound/weapons/saber/lukehup1.wav"
+	swingSound2 "sound/weapons/saber/lukehup2.wav"
+	swingSound3 "sound/weapons/saber/lukehup3.wav"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+
+rey_ep9
+{
+	name		"Rey [Ep.IX]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_rey2.glm"
+	soundOn		"sound/weapons/saber/rey_saber_on.wav"
+	soundLoop	"sound/weapons/saber/saberhumanakin.wav"
+	soundOff	"sound/weapons/saber/saberoffquick.wav"
+	swingSound1     "sound/weapons/saber/reyhup1.wav"
+	swingSound2    	"sound/weapons/saber/vaderhup2.wav"
+	swingSound3     "sound/weapons/saber/vaderhup1.wav"
+	saberColor	blue
+	saberLength	36
+	saberRadius 2.7
+}
+
+rey2_ep9
+{
+	name		"Rey (New) [Ep.IX]"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_rey5.glm"
+	soundOn		"sound/weapons/saber/rey_new_saber_on.mp3"
+	soundLoop	"sound/weapons/saber/saberhumrey.wav"
+	soundOff	"sound/weapons/saber/rey_new_saber_off.mp3"
+	swingSound1     "sound/weapons/saber/reyhup1.wav"
+	swingSound2    	"sound/weapons/saber/vaderhup2.wav"
+	swingSound3     "sound/weapons/saber/vaderhup1.wav"
+	saberColor	yellow
+	saberLength	36
+	saberRadius 2.7
+}
+
+rey_darkfold_ep9
+{
+	name		"Rey Palpatine [Ep.IX]"
+	saberType	SABER_UNSTABLE
+	saberModel	"models/weapons2/saber_plasma/saber_rey3.glm"
+	soundOn		"sound/weapons/saber/rey_saber_on_sith.wav"
+	soundLoop	"sound/weapons/saber/saberhumkylo.wav"
+	soundOff	"sound/weapons/saber/rey_saber_off_sith.wav"
+	swingSound1	"sound/weapons/saber/kylohup1.wav"
+	swingSound2	"sound/weapons/saber/kylohup2.wav"
+	swingSound3	"sound/weapons/saber/kylohup3.wav"
+	hitSound1	"sound/weapons/saber/kylohit1.wav"
+	hitSound2	"sound/weapons/saber/kylohit2.wav"
+	hitSound3	"sound/weapons/saber/kylohit3.wav"
+	blockSound1	"sound/weapons/saber/kyloblock1.wav"
+	blockSound2	"sound/weapons/saber/kyloblock2.wav"
+	blockSound3	"sound/weapons/saber/kyloblock3.wav"
+	bounceSound1	"sound/weapons/saber/kylobounce1.wav"
+	bounceSound2	"sound/weapons/saber/kylobounce2.wav"
+	bounceSound3	"sound/weapons/saber/kylobounce3.wav"
+	saberColor	unstable_red
+	numBlades	2
+	saberLength 40
+	saberLength2 40
+	saberRadius 2.7
+	throwable	1
+	noManualDeactivate 1
+	damageScale 1
+	damageScale2 0.1
+}
