@@ -1,0 +1,85 @@
+//JediNoFP personality				
+
+GeneralBotInfo
+{
+	reflex			 500
+	accuracy		 1
+	turnspeed		 0.01
+	turnspeed_combat 0.05
+	maxturn			 360
+	perfectaim		 1
+	chatability		 1
+	chatfrequency	 3
+	hatelevel		 3
+	camper			 0
+	saberspecialist	 1
+	forceinfo		 7-1-000000000000000330	
+}
+
+BotWeaponWeights
+{
+	WP_STUN_BATON		0
+	WP_MELEE		    10
+	WP_SABER		    20
+	WP_BRYAR_PISTOL		0
+	WP_BLASTER		    0
+	WP_DISRUPTOR		0
+	WP_BOWCASTER		0
+	WP_REPEATER		    0
+	WP_DEMP2		    0
+	WP_FLECHETTE		0
+	WP_ROCKET_LAUNCHER	0
+	WP_THERMAL		    0
+	WP_TRIP_MINE		0
+	WP_DET_PACK		    0
+	WP_CONCUSSION    	0
+	WP_BRYAR_OLD    	0
+	WP_BATTLEDROID    	0
+	WP_THEFIRSTORDER   	0
+	WP_CLONECARBINE    	0
+	WP_REBELBLASTER    	0
+	WP_CLONERIFLE    	0
+	WP_CLONECOMMANDO   	0
+	WP_Z6_ROTARY_CANNON	0
+	WP_REBELRIFLE    	0
+	WP_REY          	0
+	WP_JANGO        	0
+	WP_BOBA         	0
+	WP_CLONEPISTOL    	0
+}
+
+EmotionalAttachment
+{
+	Luke			2
+	Jedimaster		2
+	jediTrainer		2
+}
+
+BEGIN_CHAT_GROUPS
+Died
+{
+	I have become one with the Force.
+	I do not wish to destroy you, but I will...
+}
+Killed
+{
+	I am sorry it had to end that way.
+	My ally is the Force (and a powerful ally it is.)
+}
+BelovedKilled
+{
+	You tempt me by attacking my friends, %a.
+	I sense a tremor in the Force.
+}
+KilledHatedOne
+{
+	You must learn from this.
+}
+GeneralGreetings
+{
+	I am here to battle the Dark Side.
+}
+OrderAccepted
+{
+	The Force shall guide me!
+}

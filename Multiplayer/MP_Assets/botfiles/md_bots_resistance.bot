@@ -1,0 +1,181 @@
+{
+name		"Black Krrsantan"
+model		krrsantan
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/Chewie.jkb
+}
+
+{
+name		"Boba Fett"
+model		bobafett
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/bobafett.jkb
+}
+
+{
+name		"Cara Dune"
+model		caradune
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Din Djarin"
+model		dindjarin
+color1		7
+color2		0
+saber1		"darksaber_tm_mp"
+saber2		"none"
+rgb_script1	:255,255,0:500:0,255,0:500:255,0,0:500:
+personality /botfiles/SaberNoFP.jkb
+}
+
+{
+name		"Fennec Shand"
+model		fennec
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/Tuskensniper.jkb
+}
+
+{
+name		"Finn"
+model		finn
+color1		4
+color2		0
+saber1		"rey_ep7_mp"
+saber2		"none"
+personality /botfiles/SaberNoFP.jkb
+}
+
+{
+name		"Greef Karga"
+model		greef
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Grogu"
+model		grogu
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/LightForceNoSaber.jkb
+}
+
+{
+name		"Kuiil"
+model		kuiil
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/swamptrooper.jkb
+}
+
+{
+name		"Luke Skywalker"
+model		luke_tfa
+color1		3
+color2		0
+saber1		"luke_ep6_mp"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"New Republic Soldier"
+model		nrep_sold
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/stormtrooper.jkb
+}
+
+{
+name		"New Republic Security Droid"
+model		NRSD
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Paz Vizsla"
+model		pazvizsla
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/swamptrooper.jkb
+}
+
+{
+name		"Poe Dameron"
+model		poe
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/rebelpilot.jkb
+}
+
+{
+name		"Resistance Trooper"
+model		resistance
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/ResistanceTrooper.jkb
+}
+
+{
+name		"Rey"
+model		rey
+color1		4
+color2		0
+saber1		"rey_ep7_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Rose Tico"
+model		rose_tico
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/rebel.jkb
+}
+
+{
+name		"The Armorer"
+model		mando_arm
+color1		0
+color2		0
+saber1		"mando_arm_mp"
+saber2		"mando_arm2_mp"
+personality /botfiles/JediNoFp.jkb
+}
+

@@ -1,0 +1,107 @@
+//SithWarrior personality                                         //SERENITY BOT FILE//
+
+GeneralBotInfo
+{
+	reflex			500
+	accuracy		1
+	turnspeed		0.01
+	turnspeed_combat	0.05
+	maxturn			360
+	perfectaim		1
+	chatability		1
+	chatfrequency		3
+	hatelevel		3
+	camper			0
+	saberspecialist		1
+	forceinfo		    7-2-030300230000000333
+}
+
+BotWeaponWeights
+{
+	WP_STUN_BATON		0
+	WP_MELEE		    10
+	WP_SABER		    20
+	WP_BRYAR_PISTOL		0
+	WP_BLASTER		    0
+	WP_DISRUPTOR		0
+	WP_BOWCASTER		0
+	WP_REPEATER		    0
+	WP_DEMP2		    0
+	WP_FLECHETTE		0
+	WP_ROCKET_LAUNCHER	0
+	WP_THERMAL		    0
+	WP_TRIP_MINE		0
+	WP_DET_PACK		    0
+	WP_CONCUSSION    	0
+	WP_BRYAR_OLD    	0
+	WP_BATTLEDROID    	0
+	WP_THEFIRSTORDER   	0
+	WP_CLONECARBINE    	0
+	WP_REBELBLASTER    	0
+	WP_CLONERIFLE    	0
+	WP_CLONECOMMANDO   	0
+	WP_Z6_ROTARY_CANNON	0
+	WP_REBELRIFLE    	0
+	WP_REY          	0
+	WP_JANGO        	0
+	WP_BOBA         	0
+	WP_CLONEPISTOL    	0
+}
+
+EmotionalAttachment
+{
+        Sith         2
+        BobaFett     2
+}
+
+BEGIN_CHAT_GROUPS
+Died
+{	
+	You'll pay for this %s!
+        %s, i will have my revenge!
+	%s, i'll be back!
+}
+Killed
+{
+	Take that %s!
+        who do you think you are? Master Serenity?
+	Your weakness sickens me %s.
+	Now your republic will fall.
+	%s, is that all you have got?
+	%s, first i'll your saber then i'll take your head!
+}
+OrderAccepted
+{
+	As you wish.
+	By your command.
+}
+GeneralGreetings
+{
+	The sun rises today... I feel my youth!
+	At last we meet ^6Jedi ^6Master ^6Cadence speaks highly of you!
+}
+KilledHatedOne
+{
+	You must learn from this.
+      This Party's Over!
+      Once again  there is balance......
+      %s, you have assumed no force could challenged and now we have finally returned!
+      %s, it is a shame that you should die by my hand.
+      %s, the Dark side will win.
+}
+KilledOnPurposeByLove
+{
+	%s, watch who you threaten or you will learn a painful lesson.
+	%s, dont TK me im on your side NOOB!
+}
+Hatred
+{
+	For what you have done, you will pay %s!
+	%s, your oder is a fading light in the darkness!
+}
+
+
+
+
+
+

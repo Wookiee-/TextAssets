@@ -1,0 +1,105 @@
+//Desann personality                  
+
+GeneralBotInfo
+{
+	reflex			500
+	accuracy               1
+	turnspeed		0.01
+	turnspeed_combat	0.05
+	maxturn			360
+	perfectaim		1
+	chatability		1
+	chatfrequency		3
+	hatelevel		3
+	camper			0
+	saberspecialist		1
+	forceinfo		7-2-020300330000000333	
+}
+
+BotWeaponWeights
+{
+	WP_STUN_BATON		0
+	WP_MELEE		    10
+	WP_SABER		    20
+	WP_BRYAR_PISTOL		0
+	WP_BLASTER		    0
+	WP_DISRUPTOR		0
+	WP_BOWCASTER		0
+	WP_REPEATER		    0
+	WP_DEMP2		    0
+	WP_FLECHETTE		0
+	WP_ROCKET_LAUNCHER	0
+	WP_THERMAL		    0
+	WP_TRIP_MINE		0
+	WP_DET_PACK		    0
+	WP_CONCUSSION    	0
+	WP_BRYAR_OLD    	0
+	WP_BATTLEDROID    	0
+	WP_THEFIRSTORDER   	0
+	WP_CLONECARBINE    	0
+	WP_REBELBLASTER    	0
+	WP_CLONERIFLE    	0
+	WP_CLONECOMMANDO   	0
+	WP_Z6_ROTARY_CANNON	0
+	WP_REBELRIFLE    	0
+	WP_REY          	0
+	WP_JANGO        	0
+	WP_BOBA         	0
+	WP_CLONEPISTOL    	0
+}
+
+EmotionalAttachment
+{
+        Alora		2
+	Cultist         2
+	Tavion		2
+}
+
+BEGIN_CHAT_GROUPS
+Died
+{	
+	You'll pay for this %s!
+	This is just the beginning.
+	%s, i'll be back!
+	%s, I shall have my revenge!
+}
+Killed
+{
+	That will teach you to defy me %s!
+        who do you think you are? Jace Solaris?
+	Im dissapointed, Jedi Master Cadence speaks highly of you!
+	%s, first i'll take your saber then i'll take your head!	
+}
+Hatred
+{
+	%s, For that, you shall pay.
+	I find your lack of faith disturbing %s.
+}
+BelovedKilled
+{
+	Do you think that killing %s will matter to me?  %s was weak.
+	%s, you are weak!  You disgrace your Master!
+}
+KilledHatedOne
+{
+	%s, Give in to your hatred, let your anger flow.
+	%s, only your hatres can destroy me!!!
+}
+KilledOnPurposeByLove
+{
+	%s, watch who you threaten or you will learn a painful lesson.
+}
+GeneralGreetings
+{
+	Prepare for defeat %s.
+	%s, You challenge me?	
+}
+ResponseGreetings
+{
+	Another victim joins the fray?
+	%a, I fear you have joined a battle you cannot win.
+}
+OrderAccepted
+{
+	By your command %s .
+}

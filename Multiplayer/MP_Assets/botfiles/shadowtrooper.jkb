@@ -1,0 +1,95 @@
+//Shadowtrooper personality						
+
+GeneralBotInfo
+{
+	reflex			500
+	accuracy               1
+	turnspeed		0.01
+	turnspeed_combat	0.05
+	maxturn			360
+	perfectaim		1
+	chatability		1
+	chatfrequency		3
+	hatelevel		3
+	camper			0
+	saberspecialist		1
+	forceinfo		7-2-020030030000030333
+}
+
+BotWeaponWeights
+{
+	WP_STUN_BATON		0
+	WP_MELEE		    10
+	WP_SABER		    20
+	WP_BRYAR_PISTOL		0
+	WP_BLASTER		    0
+	WP_DISRUPTOR		0
+	WP_BOWCASTER		0
+	WP_REPEATER		    0
+	WP_DEMP2		    0
+	WP_FLECHETTE		0
+	WP_ROCKET_LAUNCHER	0
+	WP_THERMAL		    0
+	WP_TRIP_MINE		0
+	WP_DET_PACK		    0
+	WP_CONCUSSION    	0
+	WP_BRYAR_OLD    	0
+	WP_BATTLEDROID    	0
+	WP_THEFIRSTORDER   	0
+	WP_CLONECARBINE    	0
+	WP_REBELBLASTER    	0
+	WP_CLONERIFLE    	0
+	WP_CLONECOMMANDO   	0
+	WP_Z6_ROTARY_CANNON	0
+	WP_REBELRIFLE    	0
+	WP_REY          	0
+	WP_JANGO        	0
+	WP_BOBA         	0
+	WP_CLONEPISTOL    	0
+}
+
+EmotionalAttachment
+{
+	Reborn			1
+	Desann			1
+	Alora			1
+}
+
+BEGIN_CHAT_GROUPS
+Died
+{
+	I shall be avenged.
+	If you only knew the power of the Dark side.
+	I find your lack of faith disturbing.
+}
+Killed
+{
+	The enemy falls quickly before our might.
+	It is best if you surrender now.  There will be less pain.
+}
+BelovedKilled
+{
+	A comrade falls!
+	%a, you have just made a new enemy.
+}
+Hatred
+{
+	%a, I will avenge the death of my brothers.
+	%a, you will be turned or you will be destroyed.
+}
+KilledHatedOne
+{
+	So easy.
+}
+GeneralGreetings
+{
+	Surrender now or be destroyed.
+}
+ResponseGreetings
+{
+	Hopefully this one will be challenging.
+}
+OrderAccepted
+{
+	Yes sir.
+}

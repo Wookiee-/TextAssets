@@ -1,0 +1,230 @@
+{
+name		"Atris"
+model		atris
+color1		4
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Atton Rand"
+model		atton
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Bao Dur"
+model		bao_dur
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Bastila Shan"
+model		bastila
+color1		2
+color2		0
+saber1		"bastila_staff_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Bastila Shan (Dark Jedi)"
+model		jedi_kotor_fem
+color1		0
+color2		0
+saber1		"bastila_staff_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Canderous Ordo"
+model		canderous
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/swamptrooper.jkb
+}
+
+{
+name		"Canderous Ordo (Mandalorian Armor)"
+model		canderous_mando
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/swamptrooper.jkb
+}
+
+{
+name		"Carth Onasi"
+model		carth
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Dorak"
+model		jedi_kotor
+color1		5
+color2		0
+saber1		"saber_2"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Jedi Warrior"
+model		sith_eradicator
+color1		4
+color2		0
+saber1		"aayla_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Jolee Bindo"
+model		jolee_bindo
+color1		3
+color2		0
+saber1		"jolee_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Juhani"
+model		juhani
+color1		4
+color2		0
+saber1		"juhani_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Kao Cen Darach"
+model		jedi_tor
+color1		3
+color2		0
+saber1		"jolee_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Kreia"
+model		kreia
+color1		3
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Meetra Surik"
+model		meetra
+color1		4
+color2		0
+saber1		"jolee_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Republic Officer"
+model		OR_officer
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/rebelpilot.jkb
+}
+
+{
+name		"Republic Soldier"
+model		OR_trooper
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/stormtrooper.jkb
+}
+
+{
+name		"Republic Trooper"
+model		republictrooper
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/swamptrooper.jkb
+}
+
+{
+name		"Revan (Star Forge)"
+model		revan_jedi
+color1		4
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Revan (Mandalorian Wars)"
+model		revan_mw
+color1		5
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Revan (Cathar)"
+model		revan_prekotor
+color1		5
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Revan (Jedi)"
+model		jedi_robe_revan
+color1		4
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Vandar Tokare"
+model		vandar
+color1		3
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/yoda.jkb
+}
+

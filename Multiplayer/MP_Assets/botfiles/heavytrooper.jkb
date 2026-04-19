@@ -1,0 +1,55 @@
+//heavytrooper personality								
+
+GeneralBotInfo
+{
+	reflex			500
+	accuracy               1
+	turnspeed		0.01
+	turnspeed_combat	0.05
+	maxturn			360
+	perfectaim		1
+	chatability		1
+	chatfrequency		3
+	hatelevel		3
+	camper			0
+	saberspecialist		0
+	forceinfo		7-2-000000000000000000
+}
+
+BotWeaponWeights
+{
+	WP_STUN_BATON		5
+	WP_MELEE		    10
+	WP_SABER		    0
+	WP_BRYAR_PISTOL		5
+	WP_BLASTER		    6
+	WP_DISRUPTOR		5
+	WP_BOWCASTER		5
+	WP_REPEATER		    5
+	WP_DEMP2		    5
+	WP_FLECHETTE		10
+	WP_ROCKET_LAUNCHER	5
+	WP_THERMAL		    5
+	WP_TRIP_MINE		5
+	WP_DET_PACK		    5
+	WP_CONCUSSION    	5
+	WP_BRYAR_OLD    	0
+	WP_BATTLEDROID    	5
+	WP_THEFIRSTORDER   	5
+	WP_CLONECARBINE    	5
+	WP_REBELBLASTER    	5
+	WP_CLONERIFLE    	5
+	WP_CLONECOMMANDO   	15
+	WP_Z6_ROTARY_CANNON	20
+	WP_REBELRIFLE    	5
+	WP_REY          	5
+	WP_JANGO        	5
+	WP_BOBA         	5
+	WP_CLONEPISTOL    	5
+}
+
+
+EmotionalAttachments
+{
+	BobaFett		1
+}

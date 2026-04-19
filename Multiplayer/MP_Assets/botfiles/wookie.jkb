@@ -1,0 +1,92 @@
+//tarfur /kachirho wookie CLASS BOT personality             
+
+GeneralBotInfo
+{
+	reflex			500
+	accuracy		1
+	turnspeed		0.01
+	turnspeed_combat	0.05
+	maxturn			360
+	perfectaim		1
+	chatability		1
+	chatfrequency		3
+	hatelevel		3
+	camper			0
+	saberspecialist		0
+       forceinfo		7-2-000000003000000330
+}
+
+BotWeaponWeights
+{
+	WP_STUN_BATON		0
+	WP_MELEE		    10
+	WP_SABER		    20
+	WP_BRYAR_PISTOL		0
+	WP_BLASTER		    0
+	WP_DISRUPTOR		0
+	WP_BOWCASTER		0
+	WP_REPEATER		    0
+	WP_DEMP2		    0
+	WP_FLECHETTE		0
+	WP_ROCKET_LAUNCHER	0
+	WP_THERMAL		    0
+	WP_TRIP_MINE		0
+	WP_DET_PACK		    0
+	WP_CONCUSSION    	0
+	WP_BRYAR_OLD    	0
+	WP_BATTLEDROID    	0
+	WP_THEFIRSTORDER   	0
+	WP_CLONECARBINE    	0
+	WP_REBELBLASTER    	0
+	WP_CLONERIFLE    	0
+	WP_CLONECOMMANDO   	0
+	WP_Z6_ROTARY_CANNON	0
+	WP_REBELRIFLE    	0
+	WP_REY          	0
+	WP_JANGO        	0
+	WP_BOBA         	0
+	WP_CLONEPISTOL    	0
+}
+
+EmotionalAttachment
+{
+	Lando		2
+	Jedi		2
+	jedi_Trainer	2
+}
+
+BEGIN_CHAT_GROUPS
+Died
+{
+	Rrrraaarrr!
+}
+Killed
+{
+	Rrrraaarrr!
+}
+Beloved Killed
+{
+	Rrrraaarrr!
+}
+Hatred
+{
+	Rrrraaarrr!
+}
+LovedOneKilledLovedOne
+{
+	Rrrraaarrr!
+}
+GeneralGreetings
+{
+	Rrrraaarrr!
+}
+ResponseGreetings
+{
+	Oooh, Ooh, Ooh.
+}
+OrderAccepted
+{
+	Rrrraaarrr!
+}
+
+

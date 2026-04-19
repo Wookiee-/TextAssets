@@ -1,0 +1,206 @@
+{
+name		"Asajj Ventress"
+model		asajj
+color1		0
+color2		0
+saber1		"ventress_tcw_mp"
+saber2		"ventress_tcw_mp"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"B1 Battle Droid"
+model		battledroid
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/battledroid.jkb
+}
+
+{
+name		"B2 Super Battle Droid"
+model		sbd_mp
+personality	/botfiles/sbd.jkb
+}
+
+{
+name		"Cad Bane"
+model		cadbane
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Count Dooku"
+model		dooku
+color1		0
+color2		0
+saber1		"dooku_mp"
+saber2		"none"
+personality /botfiles/dooku.jkb
+}
+
+{
+name		"Darth Maul"
+model		darthmaul
+color1		0
+color2		0
+saber1		"dual_maul_mp"
+saber2		"none"
+personality /botfiles/maul.jkb
+}
+
+{
+name		"Darth Plagueis"
+model		darthplagueis
+color1		0
+color2		0
+saber1		"yarael_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Sidious"
+model		palpatine
+color1		0
+color2		0
+saber1		"sidious_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Durge"
+model		durge
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/swamptrooper.jkb
+}
+
+{
+name		"Embo"
+model		embo
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/rodian.jkb
+}
+
+{
+name		"General Grievous"
+model		grievous
+color1		4
+color2		3
+saber1		"grievous_mp"
+saber2		"grievous_mp"
+personality /botfiles/SaberNoFP.jkb
+}
+
+{
+name		"Hondo Ohnaka"
+model		hondo
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/stormtrooper.jkb
+}
+
+{
+name		"Jango Fett"
+model		jangofett
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/JangoFett.jkb
+}
+
+{
+name		"Magnaguard"
+model		magnaguard
+color1		0
+color2		0
+saber1		"electrostaff_mp"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+
+{
+name		"Mandalorian"
+model		deathwatch
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/bobafett.jkb
+}
+
+{
+name		"Mother Talzin"
+model		MotherTalzin
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/DarkForceNoSaber.jkb
+}
+
+{
+name		"Neimoidian Guard"
+model		NeimoidianSecurity
+color1		0
+color2		0
+saber1		"electrostaff_mp"
+saber2		"none"
+personality /botfiles/SithNoFP.jkb
+}
+
+{
+name		"Nute Gunray"
+model		gunray_ep3
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/imperial.jkb
+}
+
+{
+name		"Savage Opress"
+model		savage_opress
+color1		0
+color2		0
+saber1		"dual_opress_mp"
+saber2		"none"
+personality /botfiles/maul.jkb
+}
+
+{
+name		"Shu Mai"
+model		shu_mai
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/imperial.jkb
+}
+
+{
+name		"Wat Tambor"
+model		wat_tambor
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/Imperial_worker.jkb
+}
+

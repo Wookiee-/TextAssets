@@ -1,0 +1,83 @@
+{
+name		"Armitage Hux"
+model		hux
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/Imperial_officer.jkb
+}
+
+{
+name		"Captain Phasma"
+model		phasma
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/Imperial_officer.jkb
+}
+
+{
+name		"Kylo Ren"
+model		kylo_ren
+color1		0
+color2		0
+saber1		"kylo_ren_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+rgb_script1	:255,0,255:500:0,0,255:500:
+}
+
+{
+name		"Kylo Ren (Swolo)"
+model		ben_swolo
+color1		0
+color2		0
+saber1		"kylo_ren_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+rgb_script1	:255,0,255:500:0,0,255:500:
+}
+
+{
+name		"Praetorian Guard"
+model		praetorian_guard
+color1		0
+color2		0
+saber1		"vibro-voluge_mp"
+saber2		"none"
+personality /botfiles/SithNoFP.jkb
+}
+
+{
+name		"Ren"
+model		ren
+color1		0
+color2		0
+saber1		"ren_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+rgb_script1	:255,0,255:500:0,0,255:500:
+}
+
+{
+name		"Stormtrooper"
+model		stormie_tfa
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/stormtrooper.jkb
+}
+
+{
+name		"Supreme Leader Snoke"
+model		snoke
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/DarkForceNoSaber.jkb
+}
+

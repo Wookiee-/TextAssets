@@ -1,0 +1,102 @@
+//Yoda personality
+
+GeneralBotInfo
+{
+	reflex			700
+	accuracy		30
+	turnspeed		0.01
+	turnspeed_combat	0.03
+	maxturn			360
+	perfectaim		0
+	chatability		1
+	chatfrequency		3
+	hatelevel		5
+	camper			0
+	saberspecialist		1
+	forceinfo		7-1-232222000230002332
+}
+
+BotWeaponWeights
+{
+	WP_STUN_BATON		0
+	WP_MELEE		    10
+	WP_SABER		    20
+	WP_BRYAR_PISTOL		0
+	WP_BLASTER		    0
+	WP_DISRUPTOR		0
+	WP_BOWCASTER		0
+	WP_REPEATER		    0
+	WP_DEMP2		    0
+	WP_FLECHETTE		0
+	WP_ROCKET_LAUNCHER	0
+	WP_THERMAL		    0
+	WP_TRIP_MINE		0
+	WP_DET_PACK		    0
+	WP_CONCUSSION    	0
+	WP_BRYAR_OLD    	0
+	WP_BATTLEDROID    	0
+	WP_THEFIRSTORDER   	0
+	WP_CLONECARBINE    	0
+	WP_REBELBLASTER    	0
+	WP_CLONERIFLE    	0
+	WP_CLONECOMMANDO   	0
+	WP_Z6_ROTARY_CANNON	0
+	WP_REBELRIFLE    	0
+	WP_REY          	0
+	WP_JANGO        	0
+	WP_BOBA         	0
+	WP_CLONEPISTOL    	0
+}
+
+EmotionalAttachment
+{
+	Luke			2
+	Jedi			2
+}
+
+
+BEGIN_CHAT_GROUPS
+
+Died
+{
+	Next time will not be so easy.
+	Do not act in anger, young Padawan.
+}
+
+Killed
+{
+	Try not to be angry.  Anger leads to hate, hate leads to the Dark Side.
+	A jedi's strength flows through the Force.
+}
+
+BelovedKilled
+{
+	%a, if you fight against %s, you fight against me.
+	%s, you must learn to focus.
+}
+
+Hatred
+{
+	%a, watch your step or be destroyed.
+}
+
+KilledHatedOne
+{
+	A hard lesson taught.
+	The Dark side shall never win.
+}
+
+GeneralGreetings
+{
+	Training is in session.
+}
+
+ResponseGreetings
+{
+	Another competitor joins!
+}
+
+OrderAccepted
+{
+	I shall do my best.
+}

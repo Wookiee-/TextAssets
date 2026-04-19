@@ -1,0 +1,270 @@
+{
+name		"Calo Nord"
+model		calonord
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Dark Jedi"
+model		darkjedi
+color1		0
+color2		0
+saber1		"kyle_mp"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+
+{
+name		"Darth Bandon"
+model		sith_warrior
+color1		0
+color2		0
+saber1		"phobos_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Darth Bane"
+model		darthbane
+color1		0
+color2		0
+saber1		"talon_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Malgus"
+model		darthmalgus
+color1		0
+color2		0
+saber1		"kyle_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Malgus (Onslaught)"
+model		darthmalgus_onslaught
+color1		0
+color2		0
+saber1		"kyle_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Malak"
+model		malak
+color1		0
+color2		0
+saber1		"kyle_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Nihilus"
+model		nihilus
+color1		0
+color2		0
+saber1		"kyle_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Revan"
+model		revan
+color1		0
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Revan (Reborn)"
+model		revan_reborn
+color1		0
+color2		5
+saber1		"revan_mp"
+saber2		"revan_mp"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Sion"
+model		sion
+color1		0
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Darth Traya"
+model		traya
+color1		0
+color2		0
+saber1		"revan_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Darth Vindican"
+model		vindican
+color1		0
+color2		0
+saber1		"phobos_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Davik Kang"
+model		davik
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/Imperial_officer.jkb
+}
+
+{
+name		"Emperor Valkorion"
+model		valkorion
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/DarkForceNoSaber.jkb
+}
+
+{
+name		"HK 47"
+model		hk47
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/battledroid.jkb
+}
+
+{
+name		"Imperial Trooper"
+model		sithtrooper_tor
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/stormtrooper.jkb
+}
+
+{
+name		"Lord Scourge"
+model		scourge
+color1		0
+color2		0
+saber1		"kyle_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Mandalore The Ultimate"
+model		mandalore_ultimate
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/bobafett.jkb
+}
+
+{
+name		"Neo-Crusader"
+model		neocrusader
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/stormtrooper.jkb
+}
+
+{
+name		"Sith Eradicator"
+model		sith_eradicator
+color1		0
+color2		0
+saber1		"kyle_mp"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+
+{
+name		"Sith Officer"
+model		sith_officer
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/imperial_officer.jkb
+}
+
+{
+name		"Sith Trooper"
+model		sithtrooper_kotor
+color1		0
+color2		0
+saber1		"cyberninja_mp"
+saber2		"none"
+personality /botfiles/SaberNoFP.jkb
+}
+
+{
+name		"Sith Warrior"
+model		jedi_kotor
+color1		0
+color2		0
+saber1		"saber_2"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+
+{
+name		"Thexan"
+model		thexan
+color1		2
+color2		0
+saber1		"galenmarek_cjr_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Visas Marr"
+model		visas
+color1		0
+color2		0
+saber1		"sith_stalker_mp"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+
+{
+name		"Yuthura Ban"
+model		yuthura
+color1		0
+color2		0
+saber1		"saber_1"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+

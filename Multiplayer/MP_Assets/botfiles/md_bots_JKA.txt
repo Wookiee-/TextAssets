@@ -1,0 +1,402 @@
+//MOVIEDUELS Base JKA BOT SYSTEM FILE 
+
+//Jedi ===============================================
+
+{
+name		"Master Katarn"
+model		Kyle
+color1		4
+saber1		"kyle_mp"
+personality	/botfiles/Kyle.jkb
+}
+
+{
+name		"Jedi Master"
+model		jedi/master
+color1		4
+saber1		"saber_3"
+personality	/botfiles/jedimaster.jkb
+}
+
+{
+name		"Morgan Katarn"
+model		morgan/default
+color1		1
+saber1		"staff_5"
+personality	/botfiles/Morgan.jkb
+}
+
+{
+name		"Jedi Trainer"
+model		jeditrainer
+color1		2
+saber1		"saber_5"
+personality	/botfiles/jeditrainer.jkb
+}
+
+{
+name		"Jedi Knight"
+model		jedi/head_if5|torso_if5|lower_if4
+color1		1
+saber1		"saber_2"
+personality	/botfiles/jedi.jkb
+}
+
+{
+name		"Jedi Duels"
+model		jedi_hf/head_B1|torso_C1|lower_D1
+color1		4
+color2		3
+saber1		"saber_3"
+saber2		"saber_7"
+personality	/botfiles/jedi.jkb
+}
+
+{
+name		"Jedi"
+model		jedi
+color1		1
+saber1		"saber_8"
+personality	/botfiles/jedi.jkb
+}
+
+{
+name		"Jace Solaris"
+model		jedi_hm/head_b1|torso_e1|lower_d1
+color1		4
+saber1		"saber_9"
+personality	/botfiles/JaceSolaris.jkb
+}
+
+{
+name		"Jacen Korr"
+model		"jedi_hf/head_b3|torso_c2|lower_b2"
+color1		6
+saber1		"saber_2"
+personality	/botfiles/Luke.jkb
+}
+
+{
+name		"Saber Master"
+model		jeditrainer/default
+color1		3
+saber1		"saber_3"
+personality	/botfiles/SaberMaster.jkb
+rgb_script1	:255,255,0:500:0,255,0:500:255,0,0:500:
+}
+
+{
+name		"Saber Training"
+model		jeditrainer/blue
+color1		5
+saber1		"kylo_ren_mp"
+personality	/botfiles/SaberMaster.jkb
+rgb_script1	:255,255,0:500:0,255,0:500:255,0,0:500:
+}
+
+
+//Sith ======================================
+
+{
+name		"Desann"
+model		desann
+color1		0
+saber1		"desann_mp"
+personality	/botfiles/Desann.jkb
+}
+
+{
+name		"Tavion"
+model		tavion_new
+color1		0
+saber1		"kyle_mp"
+personality	/botfiles/Tavion.jkb
+}
+
+{
+name		"Alora"
+model		alora
+color1		0
+saber1		"saber_5"
+personality	/botfiles/Alora.jkb
+}
+
+{
+name		"Cultist"
+model		cultist
+color1		0
+saber1		"saber_7"
+personality	/botfiles/Cultist.jkb
+rgb_saber1	128,0,255
+}
+
+{
+name		"Reborn"
+model		reborn
+color1		0
+saber1		"saber_6"
+personality	/botfiles/Reborn.jkb
+}
+
+{
+name		"Reborn Twin"
+model		reborn_twin
+color1		0
+saber1		"staff_2"
+personality	/botfiles/Reborn.jkb
+}
+
+{
+name		"New Reborn"
+model		reborn_new
+color1		0
+saber1		"kyle_mp"
+personality	/botfiles/Reborn.jkb
+}
+
+{
+name		"Reborn Master"
+model		reborn/red
+color1		0
+color2		0
+saber1		"saber_3"
+saber2		"saber_7"
+personality	/botfiles/Reborn.jkb
+}
+
+{
+name		"Reborn Boss"
+model		reborn/boss
+color1		0
+color2		0
+saber1		"saber_5"
+personality	/botfiles/Reborn.jkb
+}
+
+{
+name		"Shadowtrooper"
+model		shadowtrooper
+color1		0
+saber1		"kyle_mp"
+personality	/botfiles/shadowtrooper.jkb
+}
+
+{
+name		"Darth Tompa"
+model		reborn/boss
+color1		0
+saber1		"saber_4"
+personality	/botfiles/tompa.jkb
+}
+
+{
+name		"Rosh Penin"
+model		rosh_penin
+color1		0
+saber1		"saber_5"
+personality	/botfiles/RoshPenin.jkb
+}
+
+{
+name		"Sith Warrior"
+model		cultist/head_if2|torso_if2|lower_if2
+color1		0
+saber1		"staff_3"
+personality	/botfiles/Tavion.jkb
+}
+
+{
+name		"Sith Apprentice"
+model		jedi/head_if4|torso_if2|lower_if4
+color1		0
+saber1		"saber_1"
+personality	/botfiles/Cultist.jkb
+}
+
+{
+name		"Jedi Traitor"
+model		jeditrainer/head_if1|torso_if2|lower_if2
+color1		0
+saber1		"saber_5"
+personality	/botfiles/Tavion.jkb
+}
+
+{
+name		"Grey Jedi"
+model		jeditrainer/head_if1|torso_if2|lower_if2
+color1		0
+saber1		"saber_1"
+personality	/botfiles/Tavion.jkb
+}
+
+//Gunners =======================================================================
+
+{
+name		"Tusken sniper"
+model		tusken_ep1n2
+personality	/botfiles/Tuskensniper.jkb
+}
+
+{
+name		"Noghri"
+model		noghri
+personality	/botfiles/Noghri.jkb
+}
+
+{
+name		"Greedo"
+model		Rodian
+personality	/botfiles/rodian.jkb
+}
+
+{
+name		"Ak-Buz"
+model		weequay
+personality	/botfiles/weequay.jkb
+}
+
+{
+name		"Krussk"
+model		trandoshan
+personality	/botfiles/trandoshan.jkb
+}
+
+{
+name		"Gran Boxer"
+model		gran/red
+personality	/botfiles/gran.jkb
+}
+
+{
+name		"Gran Shooter"
+model		gran
+personality	/botfiles/granshooter.jkb
+}
+
+{
+name		"Chiss"
+model		chiss
+personality	/botfiles/Chiss.jkb
+}
+
+{
+name		"Reelo"
+model		reelo
+personality	/botfiles/reelo.jkb
+}
+
+{
+name		"Jawa"
+model		jawa
+personality	/botfiles/jawa.jkb
+}
+
+{
+name		"Lando"
+model		landoT
+personality	/botfiles/Lando.jkb
+}
+
+{
+name		"Prisoner"
+model		Prisoner
+personality	/botfiles/Prisoner.jkb
+}
+
+{
+name		"Rebel"
+model		rebel
+personality	/botfiles/rebel.jkb
+}
+
+{
+name		"Rebel Pilot"
+model		rebel_pilot
+personality	/botfiles/rebelpilot.jkb
+}
+
+{
+name		"Mercenary"
+model		human_merc
+personality	/botfiles/Merc.jkb
+}
+
+{
+name		"Galak Fyarr"
+model		galak
+personality	/botfiles/Galak.jkb
+}
+
+{
+name		"Galak_Mech"
+model		galakmech
+personality	/botfiles/Galakmech.jkb
+}
+
+{
+name		"Lannik Racto"
+model		human_merc/default_racto
+personality	/botfiles/Galak.jkb
+}
+
+{
+name		"Lieutenant Cabbel"
+model		imperial
+personality	/botfiles/imperial.jkb
+}
+
+{
+name		"IW-323"
+model		imperial_worker
+personality	/botfiles/Imperial_worker.jkb
+}
+
+{
+name		"Rax Joris"
+model		rax_joris
+personality	/botfiles/RaxJoris.jkb
+}
+
+{
+name		"Snowtrooper"
+model		snowtrooper
+personality	/botfiles/stormtrooper.jkb
+}
+
+{
+name		"TK-421"
+model		stormtrooper
+personality	/botfiles/stormtrooper.jkb
+}
+
+{
+name		"SW-967"
+model		swamptrooper
+personality	/botfiles/swamptrooper.jkb
+}
+
+{
+name		"SP-597"
+model		stormpilot
+personality	/botfiles/stormpilot.jkb
+}
+
+{
+name		"Ugnaught"
+model		ugnaught
+personality	/botfiles/ugnaught.jkb
+}
+
+//Mandolorians =======================================================================
+
+{
+name		"Daos fett"
+model		boba_fett/red
+personality	/botfiles/BobaFett1.jkb
+}
+
+{
+name		"Roxis fett"
+model		boba_fett/blue
+personality	/botfiles/BobaFett2.jkb
+}

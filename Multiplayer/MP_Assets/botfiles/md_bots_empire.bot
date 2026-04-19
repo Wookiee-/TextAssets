@@ -1,0 +1,402 @@
+
+{
+name		"Baylan Skoll"
+model		baylan
+color1		0
+color2		0
+saber1		"baylan"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Boc"
+model		boc
+color1		5
+color2		5
+saber1		"Boc_mp"
+saber2		"Boc_mp"
+personality /botfiles/alora.jkb
+}
+
+{
+name		"Bossk"
+model		bossk
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/trandoshan.jkb
+}
+
+{
+name		"Dagan Gera"
+model		dagan_gera
+color1		0
+color2		0
+saber1		"dagan_staff"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Death Trooper"
+model		deathtrooper
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/CloneTrooper.jkb
+}
+
+{
+name		"Darth Desolous"
+model		darthdesolous
+color1		0
+color2		0
+saber1		"desolous_mp"
+saber2		"desolous_shield_mp"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Darth Krayt"
+model		darthkrayt
+color1		0
+color2		0
+saber1		"asharad_mp"
+saber2		"asharad2_mp"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Darth Phobos"
+model		darthphobos
+color1		0
+color2		0
+saber1		"phobos_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Darth Talon"
+model		darthtalon
+color1		0
+color2		0
+saber1		"talon_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Darth Vader"
+model		darthvader
+color1		0
+color2		0
+saber1		"vader_ro_mp"
+saber2		"none"
+personality /botfiles/vader.jkb
+}
+
+{
+name		"Director Orson Krennic"
+model		krennic
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/stormpilot.jkb
+}
+
+{
+name		"Emperor Palpatine"
+model		palpatine_fa
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/DarkForceNoSaber.jkb
+}
+
+{
+name		"Gamorrean Gaurd"
+model		gamorrean
+color1		0
+color2		0
+saber1		"gammobaxe_mp"
+saber2		"none"
+personality /botfiles/SaberNoFP.jkb
+}
+
+{
+name		"Gorc"
+model		Gorc
+color1		1
+color2		0
+saber1		"Gorc_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Grand Admiral Thrawn"
+model		thrawn
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/imperial.jkb
+}
+
+{
+name		"Grand Moff Tarkin"
+model		tarkin
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/lando.jkb
+}
+
+{
+name		"Hazardtrooper"
+model		hazardtrooper
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/heavytrooper.jkb
+}
+
+{
+name		"evotrooper"
+model		evotrooper
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/heavytrooper.jkb
+}
+
+{
+name		"evotrooper/shadow"
+model		evotrooper/shadow
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/heavytrooper.jkb
+}
+
+{
+name		"Imperial Royal Guard"
+model		royal
+color1		0
+color2		0
+saber1		"forcepike_mp"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+
+{
+name		"Jerec"
+model		jerec
+color1		0
+color2		0
+saber1		"jerec_mp"
+saber2		"none"
+personality /botfiles/dooku.jkb
+}
+
+{
+name		"Maw"
+model		maw_intro
+color1		0
+color2		0
+saber1		"Maw_mp"
+saber2		"none"
+personality /botfiles/desann.jkb
+}
+
+{
+name		"Moff Gideon"
+model		gideon
+color1		7
+color2		0
+saber1		"darksaber_tm_mp"
+saber2		"none"
+rgb_script1	:255,255,0:500:0,255,0:500:255,0,0:500:
+personality /botfiles/SaberNoFP.jkb
+}
+
+{
+name		"Pic"
+model		Pic
+color1		2
+color2		0
+saber1		"pic_mp"
+saber2		"none"
+personality /botfiles/yoda.jkb
+}
+
+{
+name		"Purge Trooper"
+model		purgetrooper
+color1		0
+color2		0
+saber1		"purge_staff"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+
+{
+name		"Saber Training Droid"
+model		sabertraining_droid
+color1		4
+color2		0
+saber1		"training"
+saber2		"none"
+personality /botfiles/sabertraining.jkb
+}
+
+{
+name		"Saboteur"
+model		saboteur
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/ImperialSaboteur.jkb
+}
+
+{
+name		"Sariss"
+model		sariss
+color1		4
+color2		0
+saber1		"sariss_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Shin Hati"
+model		shin
+color1		0
+color2		0
+saber1		"shin"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Starkiller"
+model		stk_training_gear
+color1		0
+color2		0
+saber1		"starkiller_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Taron Malicos"
+model		taron_malicos
+color1		0
+color2		0
+saber1		"malicos_mp"
+saber2		"malicos_mp"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"The Grand Inquisitor"
+model		GI_rebels
+color1		0
+color2		0
+saber1		"inquisitor_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"The Eighth Brother"
+model		8thbrother
+color1		0
+color2		0
+saber1		"inquisitor4"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"The Fifth Brother"
+model		5thbrother
+color1		0
+color2		0
+saber1		"inquisitor2"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"The Ninth Sister"
+model		9thsister
+color1		0
+color2		0
+saber1		"inquisitor5"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"The Second Sister"
+model		secondsister
+color1		0
+color2		0
+saber1		"saber_trilla_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"The Seventh Sister"
+model		7thsister
+color1		0
+color2		0
+saber1		"inquisitor3"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"The Third Sister"
+model		reva
+color1		0
+color2		0
+saber1		"saber_trilla_mp"
+saber2		"none"
+personality /botfiles/tavion.jkb
+}
+
+{
+name		"Vizam"
+model		vizam
+color1		0
+color2		0
+saber1		"tusken_chieftain_gaffi_mp"
+saber2		"none"
+personality /botfiles/reborn.jkb
+}
+
+{
+name		"Yun"
+model		yun
+color1		2
+color2		0
+saber1		"Yun_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+

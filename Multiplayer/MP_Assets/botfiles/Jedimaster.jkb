@@ -1,0 +1,108 @@
+//Jedimaster personality                   //SERENITY BOT FILE//
+
+GeneralBotInfo
+{
+	reflex			500
+	accuracy               1
+	turnspeed		0.01
+	turnspeed_combat	0.05
+	maxturn			360
+	perfectaim		1
+	chatability		1
+	chatfrequency		3
+	hatelevel		3
+	camper			0
+	saberspecialist		1
+	forceinfo       7-1-020303000030000333	
+}
+
+BotWeaponWeights
+{
+	WP_STUN_BATON		0
+	WP_MELEE		    10
+	WP_SABER		    20
+	WP_BRYAR_PISTOL		0
+	WP_BLASTER		    0
+	WP_DISRUPTOR		0
+	WP_BOWCASTER		0
+	WP_REPEATER		    0
+	WP_DEMP2		    0
+	WP_FLECHETTE		0
+	WP_ROCKET_LAUNCHER	0
+	WP_THERMAL		    0
+	WP_TRIP_MINE		0
+	WP_DET_PACK		    0
+	WP_CONCUSSION    	0
+	WP_BRYAR_OLD    	0
+	WP_BATTLEDROID    	0
+	WP_THEFIRSTORDER   	0
+	WP_CLONECARBINE    	0
+	WP_REBELBLASTER    	0
+	WP_CLONERIFLE    	0
+	WP_CLONECOMMANDO   	0
+	WP_Z6_ROTARY_CANNON	0
+	WP_REBELRIFLE    	0
+	WP_REY          	0
+	WP_JANGO        	0
+	WP_BOBA         	0
+	WP_CLONEPISTOL    	0
+}
+
+EmotionalAttachment
+{
+	Luke			2
+	Jedimaster		2
+	jediTrainer		2
+}
+
+BEGIN_CHAT_GROUPS
+Died
+{
+      I have become one with the Force.
+      The Force has chosen my life
+      In death as in life I am one with the force..............
+      Do not act in anger, young Padawan.
+}
+Killed
+{
+	I am sorry it had to end that way.
+	My ally is the Force (and a powerful ally it is.)
+        Try not to be angry.  Anger leads to hate, hate leads to the Dark Side.
+	A jedi's strength flows through the Force.
+}
+BelovedKilled
+{
+	I sense a tremor in the Force.
+        %s has become one with the force.
+	%s, you have MUCH to learn.
+     	%s, you must learn to focus.
+}
+KilledHatedOne
+{
+	You must learn from this.
+      Once again  there is balance......
+     	The Dark side shall never win.
+}
+GeneralGreetings
+{
+	I am here to battle the Dark Side.
+        We're keepers of the peace, not soldiers.     
+}
+OrderAccepted
+{
+      The Force shall guide me!
+      As I am willed!
+      Don't worry, I am on it.
+} 
+LovedOneKilledLovedOne
+{
+	You will learn not to attack my allies!
+	You will not strike another!
+	Come for me oh dark one... taste my skill!
+} 
+ResponseGreetings
+{
+	This will be fun!
+        Defend yourself!
+	%a, we would be honored if you would join us.
+}

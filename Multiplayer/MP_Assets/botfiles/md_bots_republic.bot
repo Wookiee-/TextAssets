@@ -1,0 +1,743 @@
+{
+name		"Aayla Secura"
+model		aayla
+color1		4
+color2		0
+saber1		"aayla_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Adi Gallia"
+model		adi_gallia
+color1		4
+color2		0
+saber1		"adi_gallia_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Agen Kolar"
+model		agen_kolar
+color1		3
+color2		0
+saber1		"shaak_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Ahsoka Tano"
+model		ahsoka
+color1		3
+color2		2
+saber1		"ahsoka_mp"
+saber2		"ahsoka_short_mp"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Ahsoka Tano (Season 7)"
+model		ahsoka_s7
+color1		4
+color2		4
+saber1		"ahsoka_alt_mp"
+saber2		"ahsoka_short_alt_mp"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Ahsoka Tano (Rebels)"
+model		md_ahsoka_rebels
+color1		8
+color2		8
+saber1		"ahsoka_reb1_mp"
+saber2		"ahsoka_reb2_mp"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Ahsoka Tano (The Mandolorian)"
+model		ahsoka_tm
+color1		8
+color2		8
+saber1		"ahsoka_reb1_mp"
+saber2		"ahsoka_reb2_mp"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Anakin Skywalker"
+model		anakin
+color1		4
+color2		0
+saber1		"anakin_ep3_mp"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Anakin Skywalker (EP2)"
+model		anakin_ep2
+color1		4
+color2		0
+saber1		"anakin_ep2_mp"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Bail Organa"
+model		bailorgana
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/jan.jkb
+}
+
+{
+name		"Barris Offee"
+model		barriss_offee
+color1		4
+color2		0
+saber1		"barriss_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Bo-Katan Kryze"
+model		bokatan
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/bobafett.jkb
+}
+
+{
+name		"Bolla Ropal"
+model		bolla_ropal
+color1		3
+color2		0
+saber1		"aayla_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Bultar Swan"
+model		bultar
+color1		3
+color2		0
+saber1		"shaak_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Cin Drallig"
+model		cin_drallig
+color1		3
+color2		0
+saber1		"drallig_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Captain Rex"
+model		clonetrooper_p2
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/CloneTrooper.jkb
+}
+
+{
+name		"Clone Commando"
+model		clonerc2
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/CloneTrooper.jkb
+}
+
+{
+name		"Clone Trooper"
+model		clonetrooper_p1
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/CloneTrooper.jkb
+}
+
+{
+name		"Coleman Trebor"
+model		coleman
+color1		3
+color2		0
+saber1		"coleman_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Depa Billaba"
+model		depabillaba_tcw
+color1		4
+color2		0
+saber1		"depa_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Eekar Oki"
+model		eekar
+color1		4
+color2		0
+saber1		"quigon_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Eeth Koth"
+model		eeth_koth
+color1		3
+color2		0
+saber1		"fisto_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Even Piell"
+model		even_piell
+color1		3
+color2		0
+saber1		"even_piell"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Falon Grey"
+model		falon_grey
+color1		4
+color2		0
+saber1		"even_piell"
+saber1		"galenmarek_alt"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Fi-Ek Sirch"
+model		sirch
+color1		4
+color2		0
+saber1		"even_piell"
+saber1		"luminara"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Foul Moudama"
+model		foul_moudama
+color1		4
+color2		0
+saber1		"even_piell"
+saber1		"coleman"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Gungan Warrior"
+model		gungan
+color1		0
+color2		0
+saber1		"gungan_shield_mp"
+saber2		"gammobaxe_mp"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Halsey"
+model		halsey
+color1		3
+color2		0
+saber1		"shaak_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Ima-Gun Di"
+model		ima_gundi
+color1		4
+color2		0
+saber1		"saesee_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"J'oopi She"
+model		joopi_she
+color1		4
+color2		0
+saber1		"coleman_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Jar Jar Binks"
+model		jarjar
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/rebel.jkb
+}
+
+{
+name		"Jedi Master"
+model		jedi_spanki
+color1		3
+color2		0
+saber1		"quinlan_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Jedi Temple Guard"
+model		jtguard
+color1		2
+color2		0
+saber1		"temple_guard_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Jocasta Nu"
+model		jocasta
+color1		4
+color2		0
+saber1		"jocasta_nu_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Kelleran Beq"
+model		kelleran_beq
+color1		3
+color2		0
+saber1		"adi_gallia_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Ki-Adi Mundi"
+model		ki_adi_mundi
+color1		4
+color2		0
+saber1		"mundi_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Kit Fisto"
+model		fisto
+color1		3
+color2		0
+saber1		"fisto_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Knox"
+model		knox
+color1		4
+color2		0
+saber1		"rig_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Koffi Arana"
+model		koffi_arana
+color1		4
+color2		0
+saber1		"aayla_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Luminara Unduli"
+model		luminara
+color1		3
+color2		0
+saber1		"luminara_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Ma'kis'shaalas"
+model		jedi_nikto
+color1		4
+color2		0
+saber1		"luminara_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Mace Windu"
+model		macewindu
+color1		5
+color2		0
+saber1		"windu_mp"
+saber2		"none"
+personality /botfiles/windu.jkb
+}
+
+{
+name		"Micah Giiett"
+model		micah_giiett
+color1		2
+color2		2
+saber1		"coleman_mp"
+saber2		"coleman_mp"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Nahdar Vebb"
+model		nahdar
+color1		4
+color2		0
+saber1		"quigon_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Obi-Wan Kenobi"
+model		obiwan_ep3
+color1		4
+color2		0
+saber1		"obiwan_ep3_mp"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Obi-Wan Kenobi (EP2)"
+model		obiwan_ep2
+color1		4
+color2		0
+saber1		"obiwan_ep1"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Obi-Wan Kenobi (EP1)"
+model		obiwan_ep1
+color1		4
+color2		0
+saber1		"obiwan_ep1"
+saber2		"none"
+personality /botfiles/luke.jkb
+}
+
+{
+name		"Oppo Rancisis"
+model		oppo_rancisis
+color1		3
+color2		0
+saber1		"oppo_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Pablo Jill"
+model		ongree
+color1		4
+color2		0
+saber1		"coleman_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Padme Amidala"
+model		queen_amidala
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/jan.jkb
+}
+
+{
+name		"Plo Koon"
+model		plo_koon
+color1		4
+color2		0
+saber1		"plo_koon_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Pong Krell"
+model		pong_krell
+color1		4
+color2		3
+saber1		"pong_krell_mp"
+saber2		"pong_krell_mp"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Que-Mars Redath-Gom"
+model		redathgom
+color1		3
+color2		0
+saber1		"saesee_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Qui-Gon Jinn"
+model		quigon
+color1		3
+color2		0
+saber1		"quigon"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Quinlan Vos"
+model		quinlan_vos
+color1		3
+color2		0
+saber1		"quinlan_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Satine Kryze"
+model		satine
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/jan.jkb
+}
+
+{
+name		"Saesee Tiin"
+model		saesee_tiin
+color1		3
+color2		0
+saber1		"saesee_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Sarissa Jeng"
+model		sarissa_jeng
+color1		4
+color2		0
+saber1		"luminara_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Shaak Ti"
+model		shaak_ti
+color1		4
+color2		0
+saber1		"shaak_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Shakkra Kien"
+model		jtguard_boss
+color1		1
+color2		0
+saber1		"temple_guard_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Sora Bulq"
+model		sora_bulq
+color1		4
+color2		0
+saber1		"saesee_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Serra Keto"
+model		serraketo
+color1		3
+color2		3
+saber1		"quigon_mp"
+saber2		"quigon_mp"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Stass Allie"
+model		stass_allie
+color1		3
+color2		0
+saber1		"coleman_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Tarados Gon"
+model		tarados_gon
+color1		4
+color2		0
+saber1		"luminara_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Tera Sinube"
+model		tera_sinube
+color1		8
+color2		0
+saber1		"sinube_mp"
+saber2		"none"
+personality /botfiles/kyle.jkb
+}
+
+{
+name		"Thongla Jur"
+model		thongla_jur
+color1		3
+color2		0
+saber1		"windu_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Tiplar"
+model		tiplee
+color1		3
+color2		0
+saber1		"shaak_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Tiplee"
+model		tiplee
+color1		4
+color2		0
+saber1		"shaak_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Tsui Choi"
+model		tsuichoi
+color1		0
+color2		0
+saber1		"none"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Yaddle"
+model		yaddle
+color1		3
+color2		0
+saber1		"yoda_mp"
+saber2		"none"
+personality /botfiles/yoda.jkb
+}
+
+{
+name		"Yarael Poof"
+model		yarael
+color1		4
+color2		0
+saber1		"yarael_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Yoda"
+model		yoda
+color1		3
+color2		0
+saber1		"yoda_mp"
+saber2		"none"
+personality /botfiles/yoda.jkb
+}
+
+{
+name		"Youngling"
+model		youngling
+color1		4
+color2		0
+saber1		"youngling_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
+{
+name		"Zett Jukassa"
+model		zett_jukassa
+color1		4
+color2		0
+saber1		"coleman_mp"
+saber2		"none"
+personality /botfiles/jedi.jkb
+}
+
