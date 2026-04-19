@@ -1,0 +1,88 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           INQUISITOR1
+LANG_ENGLISH        "I wondered when you would return."
+LANG_GERMAN         "Ich hatte mich gefragt, wann du zurueckkehren wuerdest."
+
+REFERENCE           INQUISITOR2
+LANG_ENGLISH        "Try to fight, and you will fail. The Rebellion will be destroyed. You will die, and your apprentice will become a servant of evil."
+LANG_GERMAN         "Wenn du versuchst zu kaempfen, wirst du scheitern. Die Rebellion wird vernichtet werden. Du wirst sterben, und dein Schueler wird zum Diener des Boesen."
+
+REFERENCE           INQUISITOR3
+LANG_ENGLISH        "The dark side. It pulls at him, it calls to him. Eventually, he will be consumed by it."
+LANG_GERMAN         "Due dunkle Seite. Sie ruft nach ihm, sie greift nach ihm. Letztendlich wird er von ihr verschlungen werden."
+
+REFERENCE           INQUISITOR4
+LANG_ENGLISH        "Stand aside. The boy must be eliminated before he embraces the darkness."
+LANG_GERMAN         "Tritt zur Seite. Der Junge muss eliminiert werden, bevor er sich der dunklen Seite anschliesst."
+
+REFERENCE           INQUISITOR5
+LANG_ENGLISH        "Is this the limit of your knowledge?"
+LANG_GERMAN         "Seh ich hier die Grenzen deines Wissens?"
+
+REFERENCE           INQUISITOR6
+LANG_ENGLISH        "I think not."
+LANG_GERMAN         "Das denke ich nicht."
+
+REFERENCE           INQUISITOR7
+LANG_ENGLISH        "You will never be strong enough to protect your pupil, and you will perish for your failure."
+LANG_GERMAN         "Du wirst nie stark genug sein, um deinen Schueler zu beschuetzen und dein Versagen wird euer Untergang sein."
+
+REFERENCE           INQUISITOR8
+LANG_ENGLISH        "Even now, the servants of the dark side come for your apprentice. You cannot fight forever."
+LANG_GERMAN         "Sogar jetzt kommen die Diener der dunklen Seite, um deinen Schueler zu holen. Du kannst nicht ewig kaempfen."
+
+REFERENCE           INQUISITOR9
+LANG_ENGLISH        "By the right of the Council, by the will of the Force... Kanan Jarrus, you may rise."
+LANG_GERMAN         "Gemaess dem Recht des Rates, nach dem Willen der Macht... Kanan Jarrus, darfst du dich erheben."
+
+REFERENCE           INQUISITOR10
+LANG_ENGLISH        "It means you are what I once was. A knight of the Jedi Order."
+LANG_GERMAN         "Es bedeutet, dass du das bist, was ich einst war. Ein Ritter des Jedi-Ordens."
+
+REFERENCE           INQUISITOR11
+LANG_ENGLISH        "The temple is falling. Go. I will delay the enemy."
+LANG_GERMAN         "Der Tempel stuerzt ein. Geh. Ich halte den Feind auf."
+
+REFERENCE           KANAN1
+LANG_ENGLISH        "A temple guard."
+LANG_GERMAN         "Ein Tempel-Waechter."
+
+REFERENCE           KANAN1B
+LANG_ENGLISH        "I've come for knowledge. I need to know how to defeat Vader and his Inquisitors."
+LANG_GERMAN         "Ich suche nach Erkenntnis. Wie kann ich Vader und seine Inquisitoren besiegen?"
+
+REFERENCE           KANAN2
+LANG_ENGLISH        "What are you talking about?"
+LANG_GERMAN         "Ich weiss nicht, wovon ihr sprecht."
+
+REFERENCE           KANAN3
+LANG_ENGLISH        "I won't let that happen."
+LANG_GERMAN         "Ich lasse nicht zu, dass das passiert."
+
+REFERENCE           KANAN4
+LANG_ENGLISH        "I learned enough."
+LANG_GERMAN         "Glaubt mir, ich habe genug Wissen."
+
+REFERENCE           KANAN5
+LANG_ENGLISH        "You're right. I can't protect Ezra forever. Not even from himself. All I can do is what I've done... train him the best I could."
+LANG_GERMAN         "Ihr habt Recht. Ich kann Ezra nicht ewig beschuetzen. Nicht einmal vor sich selbst. Ich kann nur weitermachen wie bisher... Ihn so gut ausbilden, wie es geht."
+
+REFERENCE           KANAN6
+LANG_ENGLISH        "Wait, what does this mean?"
+LANG_GERMAN         "Wartet, was hat das zu bedeuten?"
+
+ENDMARKER

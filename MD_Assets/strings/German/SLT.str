@@ -1,0 +1,45 @@
+REFERENCE           OBJECTIVE
+LANG_ENGLISH        "Defeat All Enemies To Complete Your Final Task!"
+LANG_GERMAN         "Besiege alle Feinde, um deine letzte Aufgabe abzuschliessen!"
+
+REFERENCE           WAVE2
+LANG_ENGLISH        "Module 2: Kota's Militia"
+LANG_GERMAN         "Modul 2: Kota's Miliz"
+
+REFERENCE           WAVE3
+LANG_ENGLISH        "Module 3: Imperial Assault Squad"
+LANG_GERMAN         "Modul 3: Imperialer Angriffstrupp"
+
+REFERENCE           WAVE4
+LANG_ENGLISH        "Module 4: Imperial Armed Recon Squad"
+LANG_GERMAN         "Modul 4: Imperialer bewaffneter Aufklaerungstrupp"
+
+REFERENCE           WAVE5
+LANG_ENGLISH        "Module 5: AT-ST"
+LANG_GERMAN         "Modul 5: AT-ST"
+
+REFERENCE           WAVE6
+LANG_ENGLISH        "Module 6: Imperial Royal Guard"
+LANG_GERMAN         "Modul 6: Imperiale Koenigliche Wache"
+
+REFERENCE           WAVE7
+LANG_ENGLISH        "Module 7: Obi-Wan Kenobi"
+LANG_GERMAN         "Modul 7: Obi-Wan Kenobi"
+
+REFERENCE           WAVE8
+LANG_ENGLISH        "Module 8: Boba Fett"
+LANG_GERMAN         "Modul 8: Boba Fett"
+
+REFERENCE           WAVE9
+LANG_ENGLISH        "Module 9: Shaak Ti"
+LANG_GERMAN         "Modul 9: Shaak Ti"
+
+REFERENCE           STAGECOMPLETE
+LANG_ENGLISH        "Module Complete!"
+LANG_GERMAN         "Modul abgeschlossen!"
+
+REFERENCE           STAGE10COMPLETE
+LANG_ENGLISH        "All Modules Complete, You Have Passed Your Final Trial!"
+LANG_GERMAN         "Alle Module abgeschlossen, du hast deine letzte Pruefung bestanden!"
+
+ENDMARKER

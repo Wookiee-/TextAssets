@@ -1,0 +1,44 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           PAL1
+LANG_ENGLISH        "Good! Your hate has made you powerful."
+LANG_GERMAN         "Sehr gut! Dein Hass hat dich maechtig gemacht."
+
+REFERENCE           PAL2
+LANG_ENGLISH        "I'm looking forward to completing your training."
+LANG_GERMAN         "Ich freue mich schon darauf, deine Ausbildung abzuschliessen."
+
+REFERENCE           VAD1
+LANG_ENGLISH        "You don't know the power of the Dark Side! I must obey my Master!"
+LANG_GERMAN         "Du weisst nicht, wie stark die dunkle Seite der Macht sein kann! Ich muss meinem Herrn gehorchen!"
+
+REFERENCE           VAD2
+LANG_ENGLISH        "I must obey my Master."
+LANG_GERMAN         "Ich muss meinem Herrn gehorchen."
+
+REFERENCE           VAD3
+LANG_ENGLISH        "Yes, Master."
+LANG_GERMAN         "Ja, mein Imperator."
+
+REFERENCE           ANI1_BONUS
+LANG_ENGLISH        "How can you do this!? This is outrageous. It's unfair!"
+LANG_GERMAN         "Wie koennt Ihr das tun? Das ist unerhoert! Es ist ungerecht!"
+
+REFERENCE           ANI2
+LANG_ENGLISH        "You're shorter than I expected."
+LANG_GERMAN         "Ihr seid kleiner, als ich erwartet hatte."
+
+ENDMARKER

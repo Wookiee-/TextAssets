@@ -1,0 +1,180 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           PROLOGUE_ANI1
+LANG_ENGLISH        "Chancellor."
+LANG_GERMAN         "Kanzler."
+
+REFERENCE           PROLOGUE_ANI1B
+LANG_ENGLISH        "We've just received a report from Master Kenobi.\nHe has engaged General Grievous."
+LANG_GERMAN         "Wir haben soeben einen Bericht von Meister Kenobi erhalten.\nEr hat General Grievous angegriffen."
+
+REFERENCE           PROLOGUE_ANI2
+LANG_ENGLISH        "I should be there with him."
+LANG_GERMAN         "Ich sollte bei ihm sein."
+
+REFERENCE           PROLOGUE_ANI3
+LANG_ENGLISH        "I wish I knew."
+LANG_GERMAN         "Ich wuenschte ich wuesste es."
+
+REFERENCE           PROLOGUE_ANI3B
+LANG_ENGLISH        "More and more I get the feeling that..\nI'm being excluded from the Council."
+LANG_GERMAN         "Mehr und mehr habe ich das Gefuehl, dass..\nich aus dem Rat ausgeschlossen werde."
+
+REFERENCE           PROLOGUE_ANI3C
+LANG_ENGLISH        "I know there are things about the Force that they're not telling me."
+LANG_GERMAN         "Ich weiss, es gibt Dinge im Zusammenhang der Macht, von denen sie mir nichts erzaehlen."
+
+REFERENCE           PROLOGUE_ANI4
+LANG_ENGLISH        "How do you know the ways of the Force?"
+LANG_GERMAN         "Woher habt ihr das Wissen ueber die Macht?"
+
+REFERENCE           PROLOGUE_ANI5
+LANG_ENGLISH        "You know the Dark Side?"
+LANG_GERMAN         "Ihr kennt die dunkle Seite?"
+
+REFERENCE           PROLOGUE_ANI6
+LANG_ENGLISH        "What did you say?"
+LANG_GERMAN         "Was habt ihr da gesagt?"
+
+REFERENCE           PROLOGUE_ANI7
+LANG_ENGLISH        "You're the Sith Lord."
+LANG_GERMAN         "Ihr seid der Sith-Lord."
+
+REFERENCE           PROLOGUE_ANI8
+LANG_ENGLISH        "I would certainly like to!"
+LANG_GERMAN         "Das wuerde ich nur zu gern!"
+
+REFERENCE           PROLOGUE_ANI9
+LANG_ENGLISH        "I am going to turn you over to the Jedi Council."
+LANG_GERMAN         "Ich werde euch unverzueglich dem Rat der Jedi uebergeben."
+
+REFERENCE           PROLOGUE_ANI10
+LANG_ENGLISH        "I will quickly discover the truth of all this."
+LANG_GERMAN         "Die Wahrheit ueber all dieses werd ich schnell in Erfahrung bringen."
+
+REFERENCE           PROLOGUE_PAL1
+LANG_ENGLISH        "We can only hope that Master Kenobi is up to the challenge."
+LANG_GERMAN         "Hoffen wir, dass Meister Kenobi dieser Herausforderung gewachsen ist."
+
+REFERENCE           PROLOGUE_PAL2
+LANG_ENGLISH        "It's upsetting to me, to see that the Council doesn't seem to fully appreciate your talents."
+LANG_GERMAN         "Es betruebt mich zutiefst zu erleben, dass der Rat kein volles Vertrauen in deine Faehigkeiten hat."
+
+REFERENCE           PROLOGUE_PAL2B
+LANG_ENGLISH        "Don't you wonder why they won't make you a Jedi Master?"
+LANG_GERMAN         "Fragst du dich nicht auch, warum sie dich nicht zum Jedi-Meister ernennen?"
+
+REFERENCE           PROLOGUE_PAL3
+LANG_ENGLISH        "They don't trust you, Anakin."
+LANG_GERMAN         "Sie vertrauen dir nicht, Anakin."
+
+REFERENCE           PROLOGUE_PAL3B
+LANG_ENGLISH        "They see your future. They know your power will be too strong to control.\nYou must break through the fog of lies the Jedi have created around you."
+LANG_GERMAN         "Sie sehen deine Zukunft. Sie wissen, dass deine Macht zu gross sein wird, als dass sie sie kontrollieren koennen.\nDu musst den Nebel der Luegen, die die Jedi um dich herum ausgebreitet haben, durchbrechen."
+
+REFERENCE           PROLOGUE_PAL3C
+LANG_ENGLISH        "Let me help you to know the subtleties of the Force."
+LANG_GERMAN         "Lass mich dir helfen, die Feinheiten der Macht zu verstehen."
+
+REFERENCE           PROLOGUE_PAL4
+LANG_ENGLISH        "My mentor taught me everything about the Force."
+LANG_GERMAN         "Mein Mentor lehrte mich alles ueber die Macht."
+
+REFERENCE           PROLOGUE_PAL4B
+LANG_ENGLISH        "Even the nature of the dark side."
+LANG_GERMAN         "Selbst ueber die verborgene Natur der Dunklen Seite."
+
+REFERENCE           PROLOGUE_PAL5
+LANG_ENGLISH        "Anakin,"
+LANG_GERMAN         "Anakin,"
+
+REFERENCE           PROLOGUE_PAL5B
+LANG_ENGLISH        "if one is to understand the great mystery, one must study all it's aspects, not just the dogmatic, narrow view of the Jedi."
+LANG_GERMAN         "wenn sich jemand entschliesst, das grosse Mysterium verstehen zu wollen, dann muss er alle seine Askepte studieren, nicht nur den dokmatischen Ansatz der Jedi."
+
+REFERENCE           PROLOGUE_PAL5C
+LANG_ENGLISH        "If you wish to become a complete and wise leader, you must embrace a larger view of the Force."
+LANG_GERMAN         "Wenn du ein vollkommender und weiser Anfuehrer werden willst, dann musst du die Macht aus einem groesseren Blickwinkel betrachten."
+
+REFERENCE           PROLOGUE_PAL5D
+LANG_ENGLISH        "Be careful of the Jedi, Anakin."
+LANG_GERMAN         "Huete dich vor den Jedi, Anakin."
+
+REFERENCE           PROLOGUE_PAL5E
+LANG_ENGLISH        "Only through me can you achieve a power greater than any Jedi."
+LANG_GERMAN         "Nur durch mich kannst du jene Macht erlangen, die weit umfangreicher ist, als die eines jeden Jedi."
+
+REFERENCE           PROLOGUE_PAL5F
+LANG_ENGLISH        "Learn to know the dark side of the Force, and you will be able to save your wife.. from certain death."
+LANG_GERMAN         "Lerne die dunkle Seite der Macht kennen und du wirst die Moeglichkeit besitzen, deine Frau.. vor dem sicheren Tod zu bewahren."
+
+REFERENCE           PROLOGUE_PAL6
+LANG_ENGLISH        "Use my knowledge. I beg you."
+LANG_GERMAN         "Nutze mein Wissen. Ich bitte dich."
+
+REFERENCE           PROLOGUE_PAL7
+LANG_ENGLISH        "I know what's been troubling you.\nListen to me."
+LANG_GERMAN         "Ich weiss, was dir sorgen bereitet.\nHoer mir zu."
+
+REFERENCE           PROLOGUE_PAL7B
+LANG_ENGLISH        "Don't continue to be a pawn of the Jedi Council."
+LANG_GERMAN         "Hoer auf, nur ein willenloser Befehlsempfaenger des Rates der Jedi zu sein."
+
+REFERENCE           PROLOGUE_PAL7C
+LANG_ENGLISH        "Ever since I've known you, you've been searching for a life greater than that of an ordinary Jedi.\nA life of significance, of conscience."
+LANG_GERMAN         "Seitdem ich dich kenne, bist du auf der Suche nach einem Leben, das groesser ist als das jeden anderen Jedis.\nEin Leben von Bedeutung, von Gewissenhaftigkeit."
+
+REFERENCE           PROLOGUE_PAL7D
+LANG_ENGLISH        "Are you going to kill me?"
+LANG_GERMAN         "Wirst du mich nun toeten?"
+
+REFERENCE           PROLOGUE_PAL8
+LANG_ENGLISH        "I know you would."
+LANG_GERMAN         "Ich weiss, dass du das willst."
+
+REFERENCE           PROLOGUE_PAL8B
+LANG_ENGLISH        "I can feel your anger.\nIt gives you focus, makes you stronger."
+LANG_GERMAN         "Ich fuehle deinen Zorn.\nEr gibt dir Willenskraft. Er macht dich staerker."
+
+REFERENCE           PROLOGUE_PAL9
+LANG_ENGLISH        "Of course. You should."
+LANG_GERMAN         "Gewiss. Das solltest du."
+
+REFERENCE           PROLOGUE_PAL9B
+LANG_ENGLISH        "But you're not sure of their intentions, are you?"
+LANG_GERMAN         "Aber ueber ihre Absichten bist du dir im Unklaren, nicht wahr?"
+
+REFERENCE           PROLOGUE_PAL10
+LANG_ENGLISH        "You have great wisdom, Anakin."
+LANG_GERMAN         "Du verfuegst ueber grosse Weisheit, Anakin."
+
+REFERENCE           PROLOGUE_PAL10B
+LANG_ENGLISH        "Know the power of the dark side."
+LANG_GERMAN         "Lerne die Macht der dunklen Seite kennen."
+
+REFERENCE           PROLOGUE_PAL10C
+LANG_ENGLISH        "Power to save Padme."
+LANG_GERMAN         "Die Macht, Padme vor dem Tod zu bewahren."
+
+REFERENCE           PAL5
+LANG_ENGLISH        "It's treason, then."
+LANG_GERMAN         "Dann handelt es sich um Verrat."
+
+REFERENCE           BONUS_PAL1
+LANG_ENGLISH        "I was right! The Jedi are taking over."
+LANG_GERMAN         "Ich hatte Recht! Die Jedi uebernehmen die Macht."
+
+ENDMARKER

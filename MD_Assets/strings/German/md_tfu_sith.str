@@ -1,0 +1,48 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           PAL1
+LANG_ENGLISH        "Yes! Kill him! He was weak, broken! Kill him and you take your rightful place at my side!"
+LANG_GERMAN         "Ja! Vernichte ihn! Er war schwach, gebrochen! Vernichte ihn jetzt und komme an meine Seite!"
+
+REFERENCE           PAL2
+LANG_ENGLISH        "You have restored peace and justice to the Galaxy."
+LANG_GERMAN         "Du hast den Frieden und die Gerechtigkeit in der Gelaxis wieder hergestellt."
+
+REFERENCE           STA1
+LANG_ENGLISH        "You have nothing left to teach me!"
+LANG_GERMAN         "Ihr koennt mir nichts mehr beibringen."
+
+REFERENCE           STA2
+LANG_ENGLISH        "What is thy bidding, my Master?"
+LANG_GERMAN         "Was wuenscht ihr, mein Meister?"
+
+REFERENCE           VAD1
+LANG_ENGLISH        "I've trained you well, but you still have much to learn."
+LANG_GERMAN         "Ich habe dich gut ausgebildet, aber du musst noch viel lernen."
+
+REFERENCE           VAD2
+LANG_ENGLISH        "This was your destiny. To bring the Emperor's enemies together. And die here alone."
+LANG_GERMAN         "Das war deine Bestimmung. Die Feinde des Imperators zu vereinen und einsam hier zu sterben."
+
+REFERENCE           VAD4
+LANG_ENGLISH        "There will be another."
+LANG_GERMAN         "Es wird einen anderen geben."
+
+REFERENCE           VAD6
+LANG_ENGLISH        "What is thy bidding, my Master?"
+LANG_GERMAN         "Womit kann ich euch zu Diensten sein, mein Gebieter?"
+
+ENDMARKER

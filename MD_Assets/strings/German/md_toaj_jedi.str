@@ -1,0 +1,224 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           LUKE1
+LANG_ENGLISH        "I don't know. I feel like..."
+LANG_GERMAN         "Naja, ich weiss nicht. Es kommt mir vor..."
+
+REFERENCE           LUKE2
+LANG_ENGLISH        "Like we're being watched."
+LANG_GERMAN         "Als ob wir beobachtet werden."
+
+REFERENCE           LUKE3
+LANG_ENGLISH        "I'm looking for a Jedi master."
+LANG_GERMAN         "Ich suche einen Jedi-Meister."
+
+REFERENCE           LUKE4
+LANG_ENGLISH        "You know him?"
+LANG_GERMAN         "Kennst du ihn etwa?"
+
+REFERENCE           LUKE5
+LANG_ENGLISH        "Mostly 'cause of my father, I guess."
+LANG_GERMAN         "Hauptsaechlich wegen meines Vaters, glaub ich."
+
+REFERENCE           LUKE6
+LANG_ENGLISH        "Oh, come on. How could you know my father? You don't even know who I am. I don't even know what I'm doing here. We're wasting our time!"
+LANG_GERMAN         "Ach komm hoer auf. Wie kannst du meinen Vater gekannt haben? Du weisst noch nicht einmal, wer ich bin. Was soll das, was tue ich hier eigentlich? Das ist doch alles nur Zeitverschwendung."
+
+REFERENCE           LUKE7
+LANG_ENGLISH        "Yoda."
+LANG_GERMAN         "#same"
+
+REFERENCE           LUKE8
+LANG_ENGLISH        "There's something not right here."
+LANG_GERMAN         "Irgendwas stimmt nicht."
+
+REFERENCE           LUKE9
+LANG_ENGLISH        "I feel cold. Death."
+LANG_GERMAN         "Ich spuere Kaelte. Toedliche Kaelte."
+
+REFERENCE           LUKE10
+LANG_ENGLISH        "What's in there?"
+LANG_GERMAN         "Was werde ich dort finden?"
+
+REFERENCE           LUKE12
+LANG_ENGLISH        "I can't. It's too big."
+LANG_GERMAN         "Ich schaffe es nicht. Es ist einfach zu gross."
+
+REFERENCE           LUKE13
+LANG_ENGLISH        "You want the impossible."
+LANG_GERMAN         "Du willst das unmoegliche."
+
+REFERENCE           LUKE14
+LANG_ENGLISH        "I don't believe it."
+LANG_GERMAN         "Also das... das glaube ich einfach nicht."
+
+REFERENCE           YODA1
+LANG_ENGLISH        "Feel like what?"
+LANG_GERMAN         "Was kommt dir...?"
+
+REFERENCE           YODA2
+LANG_ENGLISH        "Away put your weapon. I mean you no harm."
+LANG_GERMAN         "Steck weg deine Waffe. Kein Leid will ich dir zufuegen."
+
+REFERENCE           YODA3
+LANG_ENGLISH        "I am wondering, why are you here?"
+LANG_GERMAN         "Doch frage ich mich, warum bist du hier?"
+
+REFERENCE           YODA4
+LANG_ENGLISH        "Jedi master. Yoda. You seek Yoda."
+LANG_GERMAN         "Jedi-Meister. Yoda. Du suchst Yoda."
+
+REFERENCE           YODA5
+LANG_ENGLISH        "Take you to him I will. Yes, yes, but now we must eat. Come. Good food. Come."
+LANG_GERMAN         "Dich zu ihm bringen das werde ich. Doch doch doch. Aber jetzt wir essen erst, komm. Gutes Essen, komm."
+
+REFERENCE           YODA6
+LANG_ENGLISH        "Why wish you become Jedi?"
+LANG_GERMAN         "Weshalb moechtest du werden ein Jedi?"
+
+REFERENCE           YODA7
+LANG_ENGLISH        "Father. Powerful Jedi was he. Powerful Jedi."
+LANG_GERMAN         "Vater. Maechtiger Jedi war er. Maechtiger Jedi."
+
+REFERENCE           YODA8
+LANG_ENGLISH        "I cannot teach him. The boy has no patience. He is not ready."
+LANG_GERMAN         "Unterweisen kann ich ihn nicht. Keine Geduld hat der junge Mensch. Bereit ist er nicht."
+
+REFERENCE           YODA9
+LANG_ENGLISH        "That place... is strong with the dark side of the Force. A domain of evil it is."
+LANG_GERMAN         "Jener Ort dort... von der dunklen Seite der Macht ist er erfuellt. Dem Reich des Boesen gehoert er an."
+
+REFERENCE           YODA10
+LANG_ENGLISH        "In you must go."
+LANG_GERMAN         "Dorthin musst du."
+
+REFERENCE           YODA11
+LANG_ENGLISH        "Only what you take with you."
+LANG_GERMAN         "Nur was du mit dir nimmst."
+
+REFERENCE           YODA12
+LANG_ENGLISH        "Your weapons... you will not need them."
+LANG_GERMAN         "Deine Waffen... nicht brauchen wirst du sie."
+
+REFERENCE           YODA14
+LANG_ENGLISH        "Size matters not. Look at me. Judge me by my size, do you? And well you should not..."
+LANG_GERMAN         "Groesse bedeutet nichts. Sieh mich an. Nach meiner Groesse beurteilst du mich, tust du das? Aber das solltest du nicht..."
+
+REFERENCE           YODA15
+LANG_ENGLISH        "for my ally is the Force. And a powerful ally it is."
+LANG_GERMAN         "denn die Macht ist mein Verbuendeter. Und ein maechtiger Verbuendeter ist sie."
+
+REFERENCE           YODA16
+LANG_ENGLISH        "Life creates it ... makes it grow. Its energy surrounds us ... and binds us. Luminous beings are we, not this crude matter."
+LANG_GERMAN         "Das Leben erschafft sie .... bringt sie zur Entfaltung. Ihre Energie umgibt uns ... verbindet uns mit allem. Erleuchtete Wesen sind wir, nicht diese rohe Materie."
+
+REFERENCE           YODA17
+LANG_ENGLISH        "You must feel the Force around you. Here, between you, me... the tree, the rock - everywhere. Yes... even between the land and the ship."
+LANG_GERMAN         "Du musst sie fuehlen die Macht, die dich umgibt. Hier, zwischen dir, mir... dem Baum, dem Felsen dort - allgegenwaertig. Ja... selbst zwischen dem Sumpf und dem Schiff."
+
+REFERENCE           YODA18
+LANG_ENGLISH        "That is why you fail."
+LANG_GERMAN         "Darum... darum versagst du."
+
+REFERENCE           YODA100
+LANG_ENGLISH        "Many dangers there are in these swamps. Avoid the water, you must!"
+LANG_GERMAN         "In diesen Suempfen lauern viele Gefahren. Das Wasser meiden, du musst!"
+
+REFERENCE           YODA101
+LANG_ENGLISH        "The lightsaber is the Jedi's most valuable possession. Use it you can to block lasers. Feel the Force around you. It will guide your hands."
+LANG_GERMAN         "Das Lichtschwert ist der wertvollste Besitz eines Jedi. Blockiere damit Laserstrahlen, und spuere die Macht um dich herum. Es fuehrt deine Haende."
+
+REFERENCE           YODA102
+LANG_ENGLISH        "Good."
+LANG_GERMAN         "Gut."
+
+REFERENCE           YODA103
+LANG_ENGLISH        "Well done!"
+LANG_GERMAN         "Gut gemacht!"
+
+REFERENCE           YODA104
+LANG_ENGLISH        "Focus! More careful you must be."
+LANG_GERMAN         "Konzentriere dich! Vorsichtiger du musst sein."
+
+REFERENCE           YODA105
+LANG_ENGLISH        "Patience, young Skywalker. Forward you must go."
+LANG_GERMAN         "Geduld, junger Skywalker. Vorwaerts du musst gehen."
+
+REFERENCE           YODA106
+LANG_ENGLISH        "Fear not, young one. Focus you must. The creatures are strong, but stronger your will can be. Let the Force guide your thoughts. Strike with purpose, not with rage."
+LANG_GERMAN         "Fuerchte dich nicht, junge. Konzentriere dich. Die Kreaturen sind stark, aber staerker du kannst sein. Lass die Macht deine Gedanken leiten. Schlage zielgerichtet zu, nicht aus Wut."
+
+REFERENCE           YODA107
+LANG_ENGLISH        "Well done, well done. Feel it, did you? The power of peace within. Now we must go."
+LANG_GERMAN         "Gut gemacht, gut gemacht. Spuerst du es? Die Kraft des inneren Friedens. Gehen wir."
+
+REFERENCE           YODA108
+LANG_ENGLISH        "More tests. The swamp brings spiders, silent, swift, deadly. Predict their move you cannot. Flow with the Force you must."
+LANG_GERMAN         "Der Sumpf bringt weitere Pruefungen mit sich. Spinnen, Stille, schnelle Toedlichkeit. Bewegungen du kannst nicht vorhersagen. Mit der Macht fliessen du musst."
+
+REFERENCE           YODA109
+LANG_ENGLISH        "The swamp teaches and you listen now. Follow the path we must."
+LANG_GERMAN         "Der Sumpf lehrt uns, und du hoerst zu. Dem Pfad folgen wir muessen."
+
+REFERENCE           YODA110
+LANG_ENGLISH        "Focus. The Spiders did not beat you, your mind did."
+LANG_GERMAN         "Konzentriere dich! Die Spinnen haben dich nicht besiegt, du hast dich darum gekuemmert."
+
+REFERENCE           YODA111
+LANG_ENGLISH        "A Jedi's strength is not in speed, but in harmony. Feet fast, heart calm, mind clear. Obstacles will try to stop you: mud, branches, fear, doubt. Ignore them not; feel them, accept them. Now go: let the Force run with you."
+LANG_GERMAN         "Die Staerke eines Jedi liegt nicht in der Geschwindigkeit, sondern in der Harmonie. Schnelle Fuesse, ruhiges Herz, klarer Geist. Hindernisse werden versuchen, dich aufzuhalten: Schlamm, Aeste, Angst, Zweifel. Ignoriere sie nicht; fuehle sie, akzeptiere sie. Und jetzt geh: Lass die Macht mit dir laufen."
+
+REFERENCE           YODA112
+LANG_ENGLISH        "Yes, run. Yes, a Jedi's strength flows from the Force."
+LANG_GERMAN         "Ja, lauf. Ja, die Staerke eines Jedi entspringt der Macht."
+
+REFERENCE           YODA113
+LANG_ENGLISH        "Half of your time you have used."
+LANG_GERMAN         "Die Haelfte deiner Zeit, du hast verbraucht."
+
+REFERENCE           YODA114
+LANG_ENGLISH        "Little time remains. Rush you must, young Skywalker."
+LANG_GERMAN         "Nur noch wenig Zeit bleibt. Beeilen du dich musst, junger Skywalker."
+
+REFERENCE           YODA115
+LANG_ENGLISH        "Almost is not enough. Go again you must."
+LANG_GERMAN         "Fast reicht nicht. Noch einmal du musst."
+
+REFERENCE           YODA116
+LANG_ENGLISH        "Missed the end you did. Repeat the path, you must."
+LANG_GERMAN         "Das Ende du hast verpasst. Den Pfad wiederholen, du musst."
+
+REFERENCE           YODA120
+LANG_ENGLISH        "Clumsy. You are much to learn. You still have."
+LANG_GERMAN         "Nah dran du bist. Viel zu lernen, du noch hast."
+
+REFERENCE           YODA121
+LANG_ENGLISH        "Fall down, rise stronger. That is the path."
+LANG_GERMAN         "Hinfallen, staerker aufstehen. Das ist der Pfad."
+
+REFERENCE           YODA122
+LANG_ENGLISH        "Too fast you moved."
+LANG_GERMAN         "Zu schnell du hast dich bewegt."
+
+REFERENCE           YODA123
+LANG_ENGLISH        "Careful you must be."
+LANG_GERMAN         "Vorsichtig du musst sein."
+
+REFERENCE           YODA124
+LANG_ENGLISH        "Swim? A Jedi must not need to."
+LANG_GERMAN         "Schwimmen? Muss ein Jedi nicht."
+
+ENDMARKER

@@ -1,0 +1,1508 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "in game text for single player and MP items"
+
+
+//----------------------------------------------------------
+//     JEDI ACADEMY ORIGINAL REFERENCES
+//----------------------------------------------------------
+
+REFERENCE           OBJECTIVES
+LANG_ENGLISH        "Mission Objectives:"
+LANG_GERMAN         "Missionsziele:"
+
+REFERENCE           OBJNONE
+LANG_ENGLISH        "No objectives currently specified."
+LANG_GERMAN         "Momentan keine Ziele vorgegeben"
+
+REFERENCE           INSUFFICIENTENERGY
+LANG_ENGLISH        "Weapon ammo depleted."
+LANG_GERMAN         "Munition verbraucht"
+
+REFERENCE           MISSIONFAILED
+LANG_ENGLISH        "MISSION FAILED"
+LANG_GERMAN         "MISSION GESCHEITERT"
+
+REFERENCE           MISSIONFAILED_PLAYER
+LANG_ENGLISH        "YOU HAVE DIED."
+LANG_GERMAN         "SIE SIND TOT"
+
+REFERENCE           MISSIONFAILED_LUKE
+LANG_ENGLISH        "LUKE SKYWALKER HAS DIED."
+LANG_GERMAN         "LUKE SKYWALKER IST TOT"
+
+REFERENCE           MISSIONFAILED_CHEWIE
+LANG_ENGLISH        "CHEWBACCA HAS DIED."
+LANG_GERMAN         "CHEWBACCA IST TOT"
+
+REFERENCE           MISSIONFAILED_KYLE
+LANG_ENGLISH        "KYLE KATARN HAS DIED."
+LANG_GERMAN         "KYLE KATARN IST TOT"
+
+REFERENCE           MISSIONFAILED_ROSH
+LANG_ENGLISH        "ROSH PENIN HAS DIED."
+LANG_GERMAN         "ROSH PENIN IST TOT"
+
+REFERENCE           MISSIONFAILED_TUSKEN
+LANG_ENGLISH        "YOU WERE CAUGHT BY TUSKEN RAIDERS."
+LANG_GERMAN         "DU WURDEST VON TUSKEN-RAIDERN GEFANGEN GENOMMEN."
+
+REFERENCE           MISSIONFAILED_WEDGE
+LANG_ENGLISH        "WEDGE ANTILLES HAS DIED."
+LANG_GERMAN         "WEDGE ANTILLES IST TOT"
+
+REFERENCE           MISSIONFAILED_TURNED
+LANG_ENGLISH        "YOU'VE TURNED ON YOUR FRIENDS."
+LANG_GERMAN         "SIE HABEN SICH GEGEN IHRE FREUNDE GERICHTET."
+
+REFERENCE           MISSIONFAILED_R5D2
+LANG_ENGLISH        "THE R5 UNIT WAS DESTROYED."
+LANG_GERMAN         "DIE R5-EINHEIT WURDE ZERSToeRT"
+
+REFERENCE           MISSIONFAILED_PRISONERS
+LANG_ENGLISH        "TOO MANY PRISONERS HAVE DIED."
+LANG_GERMAN         "ZU VIELE GEFANGENE SIND TOT"
+
+REFERENCE           MISSIONFAILED_EMPLACEDGUNS
+LANG_ENGLISH        "ALL EMPLACED GUNS WERE DESTROYED."
+LANG_GERMAN         "ALLE GESCHueTZE WURDEN ZERSToeRT"
+
+REFERENCE           MISSIONFAILED_KYLECAPTURE
+LANG_ENGLISH        "YOU HAVE BEEN CAPTURED."
+LANG_GERMAN         "SIE WURDEN FESTGENOMMEN"
+
+REFERENCE           MISSIONFAILED_LADYLUCK
+LANG_ENGLISH        "THE DREADNAUGHT HAS BEEN DESTROYED."
+LANG_GERMAN         "DIE DREADNAUGHT WURDE ZERSToeRT."
+
+REFERENCE           MISSIONFAILED_UNKNOWN
+LANG_ENGLISH        " "
+LANG_GERMAN         "#same"
+
+REFERENCE           MISSIONFAILED_TOOMANYALLIESDIED
+LANG_ENGLISH        "YOU KILLED TOO MANY ALLIES."
+LANG_GERMAN         "ZU VIELE VERBueNDETE GEToeTET"
+
+REFERENCE           RELOADMISSION
+LANG_ENGLISH        "Press fire button to restart or ESCAPE to access menu."
+LANG_GERMAN         "Feuertaste zum Neustart oder ESC fuer die Menues."
+
+REFERENCE           CONTINUE
+LANG_ENGLISH        "Press fire button to continue."
+LANG_GERMAN         "Feuern zum Fortsetzen."
+
+REFERENCE           LSDS_CHOICE
+LANG_ENGLISH        "Deactivate your lightsaber remain on the path of light.\n\nAttack Rosh to turn to the dark side."
+LANG_GERMAN         "Lichtschwert deaktivieren und auf der Hellen Seite bleiben.\n\nRosh angreifen und zur Dunklen Seite wechseln."
+
+REFERENCE           DD_LSDS_CHOICE
+LANG_ENGLISH        "Deactivate your lightsaber to come back to the light.\n\nKill Obi-Wan to remain on the dark side."
+LANG_GERMAN         "Lichtschwert deaktivieren, um zur Hellen Seite zurueckzukehren.\n\nToete Obi-Wan, um auf der dunklen Seite zu bleiben."
+
+REFERENCE           MISSIONCOMPLETION
+LANG_ENGLISH        "LEVEL STATS"
+LANG_GERMAN         "MISSIONSBERICHT"
+
+REFERENCE           SECRETAREAS
+LANG_ENGLISH        "Secret Areas Found: "
+LANG_GERMAN         "Gefundene Verstecke: "
+
+REFERENCE           ENEMIESKILLED
+LANG_ENGLISH        "Enemies Killed: "
+LANG_GERMAN         "Ausgeschaltete Feinde: "
+
+REFERENCE           FAVORITEWEAPON
+LANG_ENGLISH        "Favorite Weapon: "
+LANG_GERMAN         "Lieblingswaffe: "
+
+REFERENCE           SHOTSFIRED
+LANG_ENGLISH        "Shots Fired: "
+LANG_GERMAN         "Schuesse: "
+
+REFERENCE           HITS
+LANG_ENGLISH        "Hits: "
+LANG_GERMAN         "Treffer: "
+
+REFERENCE           ACCURACY
+LANG_ENGLISH        "Accuracy: "
+LANG_GERMAN         "Genauigkeit: "
+
+REFERENCE           FORCEUSE
+LANG_ENGLISH        "Force Use"
+LANG_GERMAN         "Machteinsatz"
+
+REFERENCE           HEAL
+LANG_ENGLISH        "Heal: "
+LANG_GERMAN         "Heilung: "
+
+REFERENCE           SPEED
+LANG_ENGLISH        "Speed: "
+LANG_GERMAN         "Geschwindigkeit: "
+
+REFERENCE           ABSORB
+LANG_ENGLISH        "Absorb:"
+LANG_GERMAN         "Absorption:"
+
+REFERENCE           PULL
+LANG_ENGLISH        "Pull: "
+LANG_GERMAN         "Griff: "
+
+REFERENCE           PUSH
+LANG_ENGLISH        "Push: "
+LANG_GERMAN         "Schub: "
+
+REFERENCE           PROTECTION
+LANG_ENGLISH        "Protection:"
+LANG_GERMAN         "Schutz:"
+
+REFERENCE           MINDTRICK
+LANG_ENGLISH        "Mind Trick: "
+LANG_GERMAN         "Geistestrick: "
+
+REFERENCE           GRIP
+LANG_ENGLISH        "Grip: "
+LANG_GERMAN         "Wuergegriff: "
+
+REFERENCE           LIGHTNING
+LANG_ENGLISH        "Lightning: "
+LANG_GERMAN         "Blitz: "
+
+REFERENCE           LIGHTSABERUSE
+LANG_ENGLISH        "Lightsaber Use "
+LANG_GERMAN         "Lichtschwerteinsatz"
+
+REFERENCE           THROWN
+LANG_ENGLISH        "Thrown: "
+LANG_GERMAN         "Wuerfe: "
+
+REFERENCE           BLOCKS
+LANG_ENGLISH        "Blocks: "
+LANG_GERMAN         "Bloecke: "
+
+REFERENCE           LEGATTACKS
+LANG_ENGLISH        "Leg Attacks: "
+LANG_GERMAN         "Beinangriffe: "
+
+REFERENCE           ARMATTACKS
+LANG_ENGLISH        "Arm Attacks: "
+LANG_GERMAN         "Armangriffe: "
+
+REFERENCE           BODYATTACKS
+LANG_ENGLISH        "Body Attacks: "
+LANG_GERMAN         "Koerperangriffe: "
+
+REFERENCE           OTHERATTACKS
+LANG_ENGLISH        "Other Attacks: "
+LANG_GERMAN         "Sonst. Angriffe: "
+
+REFERENCE           CURRENTFORCEPOWERS
+LANG_ENGLISH        "CURRENT FORCE POWER LEVELS"
+LANG_GERMAN         "KRaeFTE DER MACHT - STUFEN"
+
+REFERENCE           HEAL2
+LANG_ENGLISH        "Heal"
+LANG_GERMAN         "Heilung"
+
+REFERENCE           JUMP2
+LANG_ENGLISH        "Jump"
+LANG_GERMAN         "Sprung"
+
+REFERENCE           SPEED2
+LANG_ENGLISH        "Speed"
+LANG_GERMAN         "Geschwindigkeit"
+
+REFERENCE           PUSH2
+LANG_ENGLISH        "Push"
+LANG_GERMAN         "Schub"
+
+REFERENCE           MINDTRICK2
+LANG_ENGLISH        "Mind Trick"
+LANG_GERMAN         "Geistestrick"
+
+REFERENCE           GRIP2
+LANG_ENGLISH        "Grip"
+LANG_GERMAN         "Wuergegriff"
+
+REFERENCE           LIGHTNING2
+LANG_ENGLISH        "Lightning"
+LANG_GERMAN         "Blitz"
+
+REFERENCE           SABER_THROW2
+LANG_ENGLISH        "Saber Throw"
+LANG_GERMAN         "Schwertwurf"
+
+REFERENCE           SABER_OFFENSE2
+LANG_ENGLISH        "Saber Offense"
+LANG_GERMAN         "Schwertangriff"
+
+REFERENCE           SABER_DEFENSE2
+LANG_ENGLISH        "Saber Defense"
+LANG_GERMAN         "Schwertabwehr"
+
+REFERENCE           PULL2
+LANG_ENGLISH        "Pull"
+LANG_GERMAN         "Griff"
+
+REFERENCE           NONE
+LANG_ENGLISH        "NONE"
+LANG_GERMAN         "KEINE"
+
+REFERENCE           DATAPAD_UPDATED
+LANG_ENGLISH        "Datapad updated"
+LANG_GERMAN         "Datenpad aktualisiert"
+
+REFERENCE           PICKUPLINE
+NOTES               "Printed before item name when pick is obtained"
+LANG_ENGLISH        "Obtained"
+LANG_GERMAN         "Aufgenommen:"
+
+REFERENCE           SABER_DESC
+LANG_ENGLISH        "Lightsaber\nAn elegant weapon for a more civilized age, the lightsaber is the preferred weapon of the Jedi Knight.  The lightsaber is an energy blade of great power that can be used by the wielder for both attack and defense.\nPrimary Fire - Slashing and swinging attacks\nSecondary Fire - Force powered saber throw\nDefensive Ability - Deflects blaster and energy weapon fire, parries enemy lightsaber attacks\nAmmo Type - N/A"
+LANG_GERMAN         "Lichtschwert\nAls elegante Waffe fuer eine zivilisiertere aera ist das Lichtschwert die bevorzugte Waffe eines Jedi-Ritters. Es wird durch Energie aufgeladen und eignet sich sowohl zum Angriff als auch zur Verteidigung.\nPrimaerangriff - Hieb- und Stichattacken.\n2. Feuermodus - Schwert-Machtwurf\nVerteidigung - Wehrt Angriffe mit Blastern und Energiewaffen ab, pariert feindliche Lichtschwert-Angriffe\nMunition - nicht zutreffend"
+
+REFERENCE           NEW_BLASTER_PISTOL_DESC
+LANG_ENGLISH        "DL-44 Heavy Blaster Pistol \nOne of the most common firearms in the galaxy, the DL-44 Heavy Blaster Pistol is a hand-held energy weapon with a slow rate of fire and incredible accuracy.\nPrimary Fire - Slow, single shot with great accuracy and damage\nSecondary Fire - Charged energy buildup for increased damage blast attack\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "DL-44 Schwere Blaster-Pistole \nEine der am haeufigsten verwendeten Schusswaffen in der Galaxis, die Schwere Blaster-Pistole DL-44 ist eine tragbare Energiewaffe mit einer langsamen Feuerrate und unglaublicher Genauigkeit.\nPrimaerfeuer - Langsamer Einzelschuss mit grosser Genauigkeit und grossem Schaden\nSekundaeres Feuer - Aufgeladener Energieaufbau fuer erhoehten Schadensexplosionsangriff\nMunitionstyp - Blaster-Pack"
+
+REFERENCE           ALONGTIME
+LANG_ENGLISH        "A long time ago in a galaxy far,\nfar away...."
+LANG_GERMAN         "Es war einmal vor langer Zeit in einer weit,\nweit entfernten Galaxis...."
+
+REFERENCE           BLASTER_PISTOL_DESC
+LANG_ENGLISH        "Bryar Blaster Pistol \nKyle Katarn's weapon of choice, the Bryar Blaster Pistol is a common hand-held energy weapon with a slow rate of fire and incredible accuracy.\nPrimary Fire - Slow, single shot with great accuracy and damage\nSecondary Fire - Charged energy buildup for increased damage blast attack\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "Bryar-Blaster-Pistole\nKyle Katarns Lieblingswaffe, die Bryar-Blaster-Pistole, ist eine gewoehnliche Handfeuer-Energiewaffe mit einer geringen Feuerrate und unglaublicher Praezision.\nPrimaerangriff - Langsamer Einzelschuss mit grosser Praezision und schwerem Schaden\n2. Feuermodus - Energieaufladung fuer staerkeren Angriff\nMunition - Blaster-Pack"
+
+REFERENCE           BLASTER_RIFLE_DESC
+LANG_ENGLISH        "E-11 Blaster Rifle \nThe primary weapon of the Imperial forces, the E-11 is a sturdy and deadly blaster rifle capable of inflicting great damage despite its small size.  The E-11's compact design makes it easy to carry and conceal.\nPrimary Fire - Slow, single shot with moderate accuracy and great damage\nSecondary Fire - Rapid, burst fire with low accuracy and expanded firing area\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "E-11-Blaster-Gewehr\nDie Primaerwaffe der imperialen Truppen, das E-11, ist ein robustes, toedliches Blaster-Gewehr, das trotz seiner geringen Groesse schwere Schaeden verursacht. Dank des kompakten Designs ist das E-11 leicht zu tragen und zu verstecken.\nPrimaerangriff - Langsamer Einzelschuss mit mittlerer Praezision und grossem Schaden\n2. Feuermodus - Schnelles Stossfeuer mit geringer Praezision und groesserer Reichweite\nMunition - Blaster-Pack"
+
+REFERENCE           DISRUPTOR_RIFLE_DESC
+LANG_ENGLISH        "Tenloss DXR-6 Disruptor rifle \nThis nefarious weapon affects matter at the molecular level, ripping apart living material with ease.   Because of the weapon's inhumane nature, the DXR-6 is outlawed throughout the galaxy and is generally only used by scattered droid and Remnant forces.\nPrimary Fire - Single shot with slow fire rate, fast projectile and small radius damage\nSecondary Fire - Scoped mode: Single shot with slow fire rate, increased damage and high weapon energy consumption\nAmmo Type - Power cell"
+LANG_GERMAN         "Tenloss DXR-6 Disruptorgewehr\nDiese gefaehrliche Waffe greift Materie auf der Molekularebene an und reisst sogar Objekte mit Leichtigkeit in Stuecke. Aufgrund der Unmenschlichkeit dieser Methode ist der Einsatz der DXR-6 in der gesamten Galaxis untersagt. Sie wird nur noch von einigen Droiden und Hinterbliebenen verwendet.\nPrimaerangriff - Einzelschuss, geringe Feuerrate und Sofortangriff\n2. Feuermodus - Zielfernrohr: Einzelschuss, geringe Feuerrate, staerkere Schaeden und hoher Waffenenergieverbrauch\nMunition - Energiezelle"
+
+REFERENCE           BOWCASTER_DESC
+LANG_ENGLISH        "Wookiee Bowcaster\nThis archaic-looking weapon fires powerful bolts of metal enveloped in pockets of energy.  Capable of inflicting incredible damage, the bowcaster requires tremendous physical strength to fire.  Most bowcasters sold outside the Wookiee homeworld come equipped with self-cocking actions that allow physically weaker creatures to fire them.\nPrimary Fire - Slow, single shot with radius damage.  Hold FIRE to charge weapon for spread attack\nSecondary Fire - Unleashes a reflective shot that bounces off solid surfaces\nAmmo Type - Power cell"
+LANG_GERMAN         "Wookiee-Bogenwerfer\nDiese archaisch anmutende Waffe feuert starke Metallbolzen mit Energiemantel ab. Der Bogenwerfer kann unglaubliche Schaeden verursachen. Sein Traeger benoetigt enorme Kraefte, um ihn zu halten. Die meisten Bogenwerfer, die nicht aus der Heimat der Wookiees stammen, verfuegen ueber selbstladende Mechanismen, damit sie auch schwaechere Wesen nutzen koennen.\nPrimaerangriff - Langsamer Einzelschuss mit Radiusschaden. Bei laenger gedrueckter Feuertaste Streufeuer.\n2. Feuermodus - Feuert einen reflektiven Schuss, der von festen Oberflaechen abprallt.\nMunition - Energiezelle"
+
+REFERENCE           HEAVYREPEATER_DESC
+LANG_ENGLISH        "Imperial Heavy Repeater with Concussion Launcher\nThis destructive projectile weapon is extremely deadly, firing rapid streams of metal bullets.  Imperial forces use the Heavy Repeater's deadly suppressive fire and concussion launcher for crowd control and to spread heavy fire over large areas.\nPrimary Fire - Fully automatic projectile fire \nSecondary Fire - Single shot, concussion explosive round\nAmmo type - Metallic bolts"
+LANG_GERMAN         "Imperiales Schnellfeuergewehr mit Aufschlagzuender\nDiese destruktive Projektilwaffe feuert sehr schnell toedliche Metallkugeln ab. Die imperialen Truppen nutzen das Schnellfeuergewehr, um den Feind weitraeumig festzunageln, und halten grosse Meuten mit dem Aufschlagzuender in Schach.\nPrimaerangriff - Vollautomatisches Projektilfeuer\n2. Feuermodus - Einzelschuss, Aufschlagzuender\nMunition - Metallbolzen"
+
+REFERENCE           DEMP2_DESC
+LANG_ENGLISH        "Destructive Electro-Magnetic Pulse 2 Gun\nCommonly referred to as the DEMP 2, this pulse rifle is primarily used against droids and electrical devices.  The DEMP 2 fires high-powered ion bursts that disrupt electrical systems.  Unlike previous incarnations of the weapon, the DEMP 2's ion charges are capable of damaging living material.\nPrimary Fire - Single shot, stuns humans, damages droids\nSecondary Fire - Charged energy attack that creates an expanding shell of electromagnetic energy on impact that damages humanoids, droids and turrets\nAmmo Type - Power cell"
+LANG_GERMAN         "Elektromagnetisches Puls-2-Gewehr\nDas sogenannte DEMP-2-Pulsgewehr wird vor allem gegen Droiden und elektrische Geraete eingesetzt. Das DEMP 2 feuert kraeftige Ionenstoesse, die Elektrosysteme stoeren. Anders als seine Vorgaenger kann das DEMP 2 auch lebende Wesen mit seinen Ionenladungen verletzen.\nPrimaerangriff - Einzelschuss, bei Menschen Schock, Droiden werden beschaedigt\n2. Feuermodus - Der geladene Schuss startet eine elektromagnetische Energiewelle, die Droiden, Menschen und Geschuetze angreift\nMunition - Energiezelle"
+
+REFERENCE           FLECHETTE_DESC
+LANG_ENGLISH        "Golan Arms FC1 Flechette Weapon \nWidely used by the Corporate Sector Authority's police squads, the FC1 fires shards of red-hot metal in a widespread pattern.   The weapon is designed to hit multiple targets in close proximity, but great care must be taken to avoid ricochet damage.\nPrimary Fire - Single shot, spread fire\nSecondary Fire - Fires two bouncing shield-protected proximity mines which explode after a short time\nAmmo Type - Metallic Bolts"
+LANG_GERMAN         "Golan Arms FC1 Flechette-Waffe\nDie oft von den Eingreiftruppen der Sektorautoritaet verwendete FC1 feuert rote und heisse Metallsplitter mit einer weitlaeufigen Streuung. Die Waffe soll mehrere Ziele in ihrer Naehe angreifen, doch es besteht Gefahr der Verletzung des Schuetzen durch Querschlaeger.\nPrimaerangriff - Einzelschuss, Streuwirkung\n2. Feuermodus - Feuert zwei springende schild-geschuetzte Kontaktminen, die nach kruzer Zeit explodieren\nMunition - Metallbolzen"
+
+REFERENCE           CONCUSSION_DESC
+LANG_ENGLISH        "Stouker Concussion Rifle  \nThe Stouker fires a concussive blast creating an implosion that spreads about 4 meters in diameter.\nPrimary Fire - Single shot, large implosive effect that damages everything, slow firing rate\nSecondary Fire - Fires a smaller projectile shot that has a smaller explosive radius but does much more damage in that radius and has a more severe recoil\nAmmo Type - Metallic Bolts"
+LANG_GERMAN         "Stouker-Stossgewehr\nDer Stouker feuert seine Ladung und erzeugt eine Implosion mit vier Metern Durchmesser.\nPrimaerangriff - Einzelschuss, grosse Implosionswirkung auf alles innerhalb des Radius, langsame Feuerrate.\n2. Feuermodus - Verschiesst kleinere Projektile mit kleinerem Implosionsradius, die aber innerhalb des Radius mehr Schaden anrichten und einen heftigen Rueckstoss verursachen\nMunitionstyp - Metallbolzen."
+
+REFERENCE           MERR_SONN_DESC
+LANG_ENGLISH        "Merr-Sonn PLX-2M Portable Missile System   \nThe PLX-2M is an extremely powerful weapon that fires Arakyd 3T3 missiles.  The sheer explosive power of the PLX-2M makes it dangerous to fire blindly in close quarters, but is extremely effective when used as a 'smart' tracking weapon.\nPrimary Fire - Fires a single, forward-firing explosive missile\nSecondary Fire - Fires a single 'smart' missile that tracks acquired and locked targets\nAmmo Type - Rockets"
+LANG_GERMAN         "Tragbares Merr-Sonn PLX-2M Raketensystem\nDie PLX-2M ist eine starke, Arakyd-3T3-Raketen feuernde Waffe. Die explosive Energie der PLX-2M macht das blinde Feuern auf kurze Distanz gefaehrlich, aber sie eignet sich gut als 'intelligente' Zielsuchwaffe.\nPrimaerangriff - Einzelne, vorwaertsfliegende Explosionsrakete\n2. Feuermodus - Einzelne, 'intelligente' Rakete, die das Ziel verfolgt\nMunition - Raketen"
+
+REFERENCE           THERMAL_DETONATOR_DESC
+LANG_ENGLISH        "Thermal Detonator \nThe thermal detonator is a radius-damage grenade that releases a barrage of thermal energy capable of disintegrating all matter around it.\nPrimary Fire - Detonator explodes after a short time.  Press FIRE longer for longer throw\nSecondary Fire - Detonator explodes on impact.  Press ALT-FIRE longer for longer throw"
+LANG_GERMAN         "Thermaldetonator\nDer Thermaldetonator ist eine Radiusgranate, deren freigesetzte thermale Energie Materie zersetzen kann.\nPrimaerangriff - Nach kurzer Zeit explodierende Granate. Durch das Halten der Feuertaste kann die Wurflaenge bestimmt werden.\n2. Feuermodus - Explosion beim Kontakt. Durch das Halten der alternativen Feuertaste kann die Wurflaenge bestimmt werden."
+
+REFERENCE           TRIP_MINE_DESC
+LANG_ENGLISH        "Trip Mines \nTrip mines consist of a beam projector affixed to a shaped explosive casing.  The laser activates when the mine is placed and extends a beam from the charge to the nearest surface that intersects its path.  If the beam is broken or the charge is fired upon, the mine detonates and causes radius damage to anything in range.\nPrimary Fire - Once placed, triggered by breaking the beam\nSecondary Fire - Once placed, the mine acts as a proximity device, waiting until an enemy comes within blast radius, then detonates, damaging any enemies in the area"
+LANG_GERMAN         "Kontaktmine\nDie Kontaktmine besteht aus einem Strahlprojektor an einer explosiven Huelle. Der Laser wird beim Platzieren der Mine aktiviert und wirft einen Strahl auf die naechste Flaeche, die seine Bahn kreuzt. Wird der Strahl unterbrochen oder die Ladung beschossen, so explodiert die Mine und verursacht Radiusschaeden in ihrer Reichweite.\nPrimaerangriff - Verhaelt sich wie ein Kontaktzuender mit Laser\n2. Feuermodus - Nach dem Platzieren verhaelt sie sich wie eine Annaeherungsmine und wartet auf einen Feind, der den Feuerradius betritt; ihre Explosion ist die Folge"
+
+REFERENCE           DET_PACK_DESC
+LANG_ENGLISH        "Detonation Packs \nA detonation pack is essentially a small explosive device with a remote detonation trigger.  The pack is placed or thrown and can be detonated at will by the user.  Detonation packs are commonly used to ambush enemies or open sealed doors.\nPrimary Fire - Sets charge at the user's feet\nSecondary Fire - Explodes all set charges"
+LANG_GERMAN         "Detonationspack\nEin Detonationspack ist ein kleiner Sprengkopf mit einem ferngesteuerten Ausloeser. Der Pack wird platziert oder geworfen und kann beliebig detoniert werden. Detonationspacks werden oft fuer Hinterhalte benutzt oder um Tueren zu oeffnen.\nPrimaerangriff - Ladung vor den Fuessen platzieren\n2. Feuermodus - Alle Ladungen zuenden"
+
+REFERENCE           STUN_BATON_DESC
+LANG_ENGLISH        "Stun Baton \nCommonly used to subdue unruly prisoners, the stun baton was designed for use in melee combat where killing your opponent is not necessarily the desired outcome.\nPrimary Fire - Short range jabbing electrical stun attack\nSecondary Fire - None"
+LANG_GERMAN         "Betaeubungsstab \nDer Betaeubungsstab wird ueblicherweise verwendet, um widerspenstige Gefangene zu unterwerfen, und wurde fuer den Einsatz im Nahkampf entwickelt, bei dem das Toeten des Gegners nicht unbedingt das gewuenschte Ergebnis ist.\nPrimaerfeuer - Elektrischer Betaeubungsangriff mit kurzer Reichweite\nSekundaerfeuer - Keines"
+
+REFERENCE           NEURO_SAAV_DESC
+LANG_ENGLISH        "Neuro-Saav Model TD2.3 Electrobinoculars\nElectrobinoculars operate in low-light and normal light conditions to magnify distant objects and provide a heads-up display that features detailed information on the area viewed.  The heads-up display measures distances and offers various telemetry readouts on the object or area in view. Powered by normal battery cells that drain power at a minimal rate."
+LANG_GERMAN         "Neuro-Saav Modell TD2.3 Elektrofernglas\nElektrofernglaeser funktionieren bei normaler sowie geringer Beleuchtung und vergroessern optisch entfernte Objekte. Zusaetzlich liefern sie detaillierte Informationen ueber den betrachteten Bereich. Das Heads-Up-Display misst Entfernungen und bietet verschiedene Telemetriedaten zum betrachteten Objekt oder Bereich. Betrieben werden sie mit einer normalen Batteriezelle mit geringem Verbrauch."
+
+REFERENCE           BACTA_DESC
+LANG_ENGLISH        "BioTech Bacta Canister\nBacta canisters are portable, disposable packs of bacta ointments and emergency care tools.  Designed for use in the field, bacta canisters can be used to heal wounds and restore vitality during medical recovery.  No field medic should be without them."
+LANG_GERMAN         "BioTech Bacta-Kanister\nBacta-Kanister sind tragbare Einmalpacks mit Bacta-Salbe und Notfallmitteln. Diese Kanister wurden speziell fuer den Einsatz in Gefechten konzipiert und koennen Wunden heilen und waehrend der Genesung Vitalitaet wiederherstellen. Kein Feldsanitaeter sollte ohne sie aufbrechen."
+
+REFERENCE           INQUISITOR_DESC
+LANG_ENGLISH        "Seeker Drone\nAn attack drone similar to the training drones used by Jedi to practice their lightsaber skills, the Seeker hovers around its user and attacks any enemy the user fires upon.  The drone operates automatically for a limited time and then self-destructs\nwhen its power is depleted."
+LANG_GERMAN         "Sucherdrohne\nDiese Angriffsdrohnen aehneln sehr den Trainingsdrohnen, die von den Jedis zum Training mit dem Lichtschwert eingesetzt werden. Die Sucherdrohne schwebt um den Besitzer und greift automatisch die Feinde an, die der Besitzer auch attackiert. Die Drohne funktioniert fuer eine bestimmte Zeit voll automatisch und zerstoert sich dann selbst."
+
+REFERENCE           LA_GOGGLES_DESC
+LANG_ENGLISH        "Light Amplification Goggles\nAlso known as infra-goggles, this helpful device creates a balance of light levels that allows the user to see well in most situations. The resulting effect enhances the overall brightness but casts everything in a greenish hue. The goggles require batteries to function, draining them at roughly the same rate as Electrobinoculars.   Light Amplification Goggles can be worn during combat, but will not function without an available power source."
+LANG_GERMAN         "Nachtsichtbrille\nDieser nuetzliche Gegenstand, der auch als Infra-Brille bezeichnet wird, gleicht automatisch die Lichtverhaeltnisse aus, wodurch der Besitzer in den meisten Faellen deutlicher sehen kann. Das Ergebnis ist eine Verbesserung der allgemeinen Helligkeit auf Kosten eines gruenen Leuchtschleiers. Die Brille benoetigt Batterien und verbraucht diese mit fast der gleichen Geschwindigkeit wie Elektrofernglaeser. Nachtsichtbrillen koennen auch im Kampf getragen werden, funktionieren aber nicht ohne Energiequelle."
+
+REFERENCE           PORTABLE_SENTRY_DESC
+LANG_ENGLISH        "Portable Assault Sentry  \nThis deadly weapon is roughly the size of a large backpack, but don't let its size fool you. Once activated, the weapon unfurls and is set to auto-target any enemy threat. The Sentry drains battery life at an accelerated rate and, once it's deployed, can't be restored to its original portable condition."
+LANG_GERMAN         "Tragbarer Angriffswaechter\nDiese toedliche Waffe hat nahezu die Groesse eines grossen Rucksacks, doch sollte man sich davon nicht taeuschen lassen. Nach der Aktivierung richtet sich die Waffe automatisch ein und attackiert saemtliche Feinde. Der Waechter verbraucht im grossen Umfang Batterieenergie und kann, nachdem er platziert wurde, nicht wieder in den urspruenglichen tragbaren Zustand zurueckversetzt werden."
+
+REFERENCE           SECURITY_KEY_DESC
+LANG_ENGLISH        "Security Key"
+LANG_GERMAN         "Codekarte"
+
+REFERENCE           EMPTY_INV
+LANG_ENGLISH        "EMPTY INVENTORY"
+LANG_GERMAN         "LEERES INVENTAR"
+
+REFERENCE           FORCE_HEAL_DESC
+LANG_ENGLISH        "Force Heal\nDuration: Instantaneous effect\nArea Of Effect: Jedi only\nEffect: Jedi have the ability to heal themselves after injury\n\n"
+LANG_GERMAN         "Macht-Heilung\nDauer: Sofortige Wirkung\nWirkung auf: Nur Jedis\nWirkung: Der Jedi heilt nach Verletzungen\n\n"
+
+REFERENCE           FORCE_JUMP_DESC
+LANG_ENGLISH        "Force Jump\nDuration: Immediate\nArea Of Effect: Jedi only\nEffect: Allows Jedi to make a tremendous vertical leap\n\n"
+LANG_GERMAN         "Macht-Sprung\nDauer: Sofortige Wirkung\nWirkung auf: Nur Jedis\nWirkung: Ermoeglicht dem Jedi einen gewaltigen vertikalen Satz\n\n"
+
+REFERENCE           FORCE_SPEED_DESC
+LANG_ENGLISH        "Force Speed\nDuration: 10 seconds\nArea of Effect: Jedi and surroundings\nEffect:  A Jedi speeds up and the world appears to slow down around them\n\n"
+LANG_GERMAN         "Macht-Geschwindigkeit\nDauer: 10 Sekunden\nWirkung auf: Jedi und Umgebung\nWirkung: Der Jedi wird schneller und die Welt um ihn herum scheinbar langsamer.\n\n"
+
+REFERENCE           FORCE_PUSH_DESC
+LANG_ENGLISH        "Force Push\nDuration: Instantaneous effect\nArea Of Effect: Objects or Persons\nEffect: Allows Jedi to push objects away from themselves and defend from missile and Force Grip attacks\n\n"
+LANG_GERMAN         "Macht-Schub\nDauer: Sofortige Wirkung\nWirkung auf: Objekte oder Personen\nWirkung: Ermoeglicht Wegschieben von Objekten und die Selbstverteidigung vor Raketenangriffen sowie dem Wuergegriff\n\n"
+
+REFERENCE           FORCE_PULL_DESC
+LANG_ENGLISH        "Force Pull\nDuration: Instantaneous effect\nArea Of Effect: Objects or Persons\nEffect: Allows Jedi to pull specific world objects to themselves\n\n"
+LANG_GERMAN         "Macht-Griff\nDauer: Sofortige Wirkung\nWirkung auf: Objekte oder Personen\nWirkung: Ermoeglicht dem Jedi das Heranziehen bestimmter Objekte\n\n"
+
+REFERENCE           FORCE_MIND_TRICK_DESC
+LANG_ENGLISH        "Force Mind Trick\nDuration: Variable\nArea Of Effect: Humanoids\nEffect: Allows Jedi to confuse and/or misdirect attention \n\n"
+LANG_GERMAN         "Macht Geistestrick\nDauer: Variabel\nWirkung auf: Menschen\nWirkung: Ermoeglicht dem Jedi die Verwirrung und/oder Ablenkung\n\n"
+
+REFERENCE           FORCE_GRIP_DESC
+LANG_ENGLISH        "Force Grip\nDuration: Instantaneous\nArea Of Effect: Living persons only\nEffect: Allows Jedi to choke or constrict the organs of a living being\n\n"
+LANG_GERMAN         "Macht-Wuergegriff\nDauer: Sofortige Wirkung\nWirkung auf: Nur Lebende\nWirkung: Ermoeglicht dem Jedi, eine andere Person zu wuergen, so dass ihr die Luft wegbleibt.\n\n"
+
+REFERENCE           FORCE_LIGHTNING_DESC
+LANG_ENGLISH        "Force Lightning\nDuration: Variable\nArea Of Effect: Living persons only\nEffect: Allows Jedi to hurl a devastating electrical attack against enemies\n\n"
+LANG_GERMAN         "Macht-Blitz\nDauer: Unterschiedlich\nWirkung auf: Nur Lebende\nWirkung: Ermoeglicht dem Jedi einen gefaehrlichen Elektro-Angriff\n\n"
+
+REFERENCE           FORCE_SABER_DEFENSE_DESC
+LANG_ENGLISH        "Lightsaber Defense\nDuration: Always on\nArea Of Effect: N/A\nEffect: Jedi can block damage with a lightsaber  \n\n"
+LANG_GERMAN         "Lichtschwert-Abwehr\nDauer: Kontinuierlich\nWirkung auf: Nicht zutreffend\nWirkung: Ermoeglicht dem Jedi das Abwehren von Treffern mit dem Lichtschwert\n\n"
+
+REFERENCE           FORCE_SABER_OFFENSE_DESC
+LANG_ENGLISH        "Lightsaber Offense\nDuration: Always on\nArea Of Effect: N/A\nEffect: As a Jedi gains combat experience, their lightsaber attack effectiveness increases\n\n"
+LANG_GERMAN         "Lichtschwert-Angriff\nDauer: Kontinuierlich\nWirkung auf: Nicht zutreffend\nWirkung: Mit steigender Kampferfahrung steigert der Jedi seine Angriffseffektivitaet\n\n"
+
+REFERENCE           FORCE_SABER_THROW_DESC
+LANG_ENGLISH        "Lightsaber Throw\nDuration: Instant\nArea Of Effect: Player arc\nEffect:  A Jedi can throw a lightsaber and use it as a missile weapon\n\n"
+LANG_GERMAN         "Lichtschwert-Wurf\nDauer: Sofortige Wirkung\nWirkung auf: Spieler\nWirkung: Der Jedi kann sein Lichtschwert werfen und es wie eine Raketenwaffe einsetzen\n\n"
+
+REFERENCE           FORCE_ABSORB_DESC
+LANG_ENGLISH        "Force Absorption\nDuration: 20 seconds\nArea Of Effect: Jedi only\nEffect: Jedi can absorb dark Force power, Force Push and Force Pull directed at them\n\n"
+LANG_GERMAN         "Macht-Absorption\nDauer: 20 Sekunden\nWirkung auf: Nur Jedis\nWirkung: Der Jedi kann die Macht der Dunklen Seite sowie den Macht-Schub und Macht-Griff absorbieren\n\n"
+
+REFERENCE           FORCE_PROTECT_DESC
+LANG_ENGLISH        "Force Protection\nDuration: Variable\nArea Of Effect: Jedi only\nEffect: Allows Jedi to decrease incoming damage from energy, physical, projectile, and explosive sources\n\n"
+LANG_GERMAN         "Macht-Schutz\nDauer: Variabel\nWirkung auf: Nur Jedis\nWirkung: Der Jedi kann den Schaden durch Energie-, Projektil- und Explosivwaffen sowie physikalische Schaeden senken.\n\n"
+
+REFERENCE           FORCE_SENSE_DESC
+LANG_ENGLISH        "Force Sense\nDuration: Variable\nArea Of Effect: Objects or persons\nEffect: Allows Jedi to see people and objects that are invisible or behind solids\n\n"
+LANG_GERMAN         "Macht-Gespuer\nDauer: Variabel\nWirkung auf: Objekte und Personen\nWirkung: Ermoeglicht dem Jedi, Personen und Objekte zu sehen, die unsichtbar sind oder hinter undurchsichtigen Objekten liegen\n\n"
+
+REFERENCE           FORCE_DRAIN_DESC
+LANG_ENGLISH        "Force Drain\nDuration: Variable\nArea Of Effect: Living persons only\nEffect: Allows Jedi to transfer the life essence of a person to themselves\n\n"
+LANG_GERMAN         "Macht-Entzug\nDauer: Variabel\nWirkung auf: Nur Lebende\nWirkung: Der Jedi kann die Lebenskraft eines anderen auf sich selbst uebertragen\n\n"
+
+REFERENCE           FORCE_RAGE_DESC
+LANG_ENGLISH        "Force Rage\nDuration: 10 seconds\nArea Of Effect: Jedi only\nEffect: Affords Jedi protection against damage, an increase in speed, and an increase in damage potential, at the expense of health.  The Jedi needs some recovery time after a Rage ends\n\n"
+LANG_GERMAN         "Macht-Rage\nDauer: 10 Sekunden\nWirkung auf: Nur Jedis\nWirkung: Schuetzt den Jedi vor Schaeden, steigert die Geschwindigkeit und die Wirkung der eigenen Treffer auf Kosten der Gesundheit. Der Jedi muss sich zum Ende der Rage erholen.\n\n"
+
+REFERENCE           INCORRECT_KEY
+LANG_ENGLISH        "Incorrect security key"
+LANG_GERMAN         "Falsche Codekarte"
+
+REFERENCE           CANT_CARRY_SECURITY_KEY
+LANG_ENGLISH        "You can't carry any more security keys"
+LANG_GERMAN         "Codekarten-Maximum erreicht."
+
+REFERENCE           TOOK_IMPERIAL_SECURITY_KEY
+LANG_ENGLISH        "You took the security key"
+LANG_GERMAN         "Sie haben eine Codekarte."
+
+REFERENCE           CANT_CARRY_GOODIE_KEY
+LANG_ENGLISH        "You can't carry any more supply keys"
+LANG_GERMAN         "Bonus-Codekarten-Maximum erreicht."
+
+REFERENCE           TOOK_IMPERIAL_GOODIE_KEY
+LANG_ENGLISH        "You took the supply key"
+LANG_GERMAN         "Sie haben die Bonus-Codekarte."
+
+REFERENCE           SECURITY_KEY_UNLOCKEDDOOR
+LANG_ENGLISH        "Your security key unlocked the door"
+LANG_GERMAN         "Die Codekarte hat die Tuer geoeffnet."
+
+REFERENCE           NEED_SECURITY_KEY
+LANG_ENGLISH        "You need a security key!"
+LANG_GERMAN         "Codekarte benoetigt!"
+
+REFERENCE           WEAPON_MELEE
+LANG_ENGLISH        "Melee"
+LANG_GERMAN         "Nahkampf"
+
+REFERENCE           WEAPON_STUN_BATON
+LANG_ENGLISH        "Stun Baton"
+LANG_GERMAN         "Schockstab"
+
+REFERENCE           WEAPON_SABER
+LANG_ENGLISH        "Lightsaber"
+LANG_GERMAN         "Lichtschwert"
+
+REFERENCE           WEAPON_BRYAR_PISTOL
+LANG_ENGLISH        "Bryar Blaster Pistol"
+LANG_GERMAN         "Bryar-Blaster-Pistole"
+
+REFERENCE           WEAPON_BLASTER
+LANG_ENGLISH        "E11-Blaster Rifle"
+LANG_GERMAN         "E11-Blaster-Gewehr"
+
+REFERENCE           WEAPON_DISRUPTOR
+LANG_ENGLISH        "Tenloss DXR-6 Disruptor rifle"
+LANG_GERMAN         "Tenloss DXR-6 Disruptorgewehr"
+
+REFERENCE           WEAPON_BOWCASTER
+LANG_ENGLISH        "Wookiee Bowcaster"
+LANG_GERMAN         "Wookiee-Bogenwerfer"
+
+REFERENCE           WEAPON_REPEATER
+LANG_ENGLISH        "Imperial Heavy Repeater"
+LANG_GERMAN         "Imperiales Schnellfeuergewehr"
+
+REFERENCE           WEAPON_DEMP2
+LANG_ENGLISH        "Destructive Electro-Magnetic Pulse 2 Gun"
+LANG_GERMAN         "Elektromagnetisches Puls-2-Gewehr"
+
+REFERENCE           WEAPON_FLECHETTE
+LANG_ENGLISH        "Golan Arms FC1 Flechette Weapon"
+LANG_GERMAN         "Golan Arms FC1 Flechette-Waffe"
+
+REFERENCE           WEAPON_ROCKET_LAUNCHER
+LANG_ENGLISH        "Merr-Sonn PLX-2M Portable Missile System"
+LANG_GERMAN         "Tragbares Merr-Sonn PLX-2M Raketensystem"
+
+REFERENCE           WEAPON_THERMAL
+LANG_ENGLISH        "Thermal Detonator"
+LANG_GERMAN         "Thermaldetonator"
+
+REFERENCE           WEAPON_TRIP_MINE
+LANG_ENGLISH        "Trip Mines"
+LANG_GERMAN         "Kontaktmine"
+
+REFERENCE           WEAPON_DET_PACK
+LANG_ENGLISH        "Detonation Packs"
+LANG_GERMAN         "Detonationspack"
+
+REFERENCE           ITEM_BINOCULARS
+LANG_ENGLISH        "Neuro-Saav Model TD2.3 Electrobinoculars"
+LANG_GERMAN         "Neuro-Saav Modell TD2.3 Elektrofernglas"
+
+REFERENCE           ITEM_BACTA
+LANG_ENGLISH        "BioTech Bacta Canister"
+LANG_GERMAN         "BioTech Bacta-Kanister"
+
+REFERENCE           ITEM_SEEKER
+LANG_ENGLISH        "Seeker Drone"
+LANG_GERMAN         "Sucherdrohne"
+
+REFERENCE           ITEM_LA_GOGGLES
+LANG_ENGLISH        "Light Amplification Goggles"
+LANG_GERMAN         "Nachtsichtbrille"
+
+REFERENCE           ITEM_SENTRY_GUN
+LANG_ENGLISH        "Portable Assault Sentry"
+LANG_GERMAN         "Tragbarer Angriffswaechter"
+
+REFERENCE           WEAPON_ATST_MAIN
+LANG_ENGLISH        "ATST Main Cannon"
+LANG_GERMAN         "ATST-Zentralkanone"
+
+REFERENCE           WEAPON_ATST_SIDE
+LANG_ENGLISH        "ATST Side Cannons"
+LANG_GERMAN         "ATST-Seitenkanone"
+
+REFERENCE           ATST_SIDE_DESC
+LANG_ENGLISH        "ATST Side Cannons"
+LANG_GERMAN         "ATST-Seitenkanone"
+
+REFERENCE           AMMO_FORCE
+LANG_ENGLISH        "Force Crystal"
+LANG_GERMAN         "Kristall der Macht"
+
+REFERENCE           AMMO_BLASTER
+LANG_ENGLISH        "Blaster Pack Ammo"
+LANG_GERMAN         "Blasterpack - Munition"
+
+REFERENCE           AMMO_POWERCELL
+LANG_ENGLISH        "Power Cell Ammo"
+LANG_GERMAN         "Energiezelle - Munition"
+
+REFERENCE           AMMO_METALLIC_BOLTS
+LANG_ENGLISH        "Metallic Bolt Ammo"
+LANG_GERMAN         "Metallbolzen - Munition"
+
+REFERENCE           AMMO_ROCKETS
+LANG_ENGLISH        "Rocket Ammo"
+LANG_GERMAN         "Raketen - Munition"
+
+REFERENCE           AMMO_THERMAL
+LANG_ENGLISH        "Belt of Thermal Detonators"
+LANG_GERMAN         "Thermaldetonator-Guertel"
+
+REFERENCE           AMMO_TRIPMINE
+LANG_ENGLISH        "Pack of Trip Mines"
+LANG_GERMAN         "Paket Kontaktminen"
+
+REFERENCE           ITEM_BATTERY
+LANG_ENGLISH        "Batteries"
+LANG_GERMAN         "Batterien"
+
+REFERENCE           ITEM_MEDPAK_INSTANT
+LANG_ENGLISH        "Instant Use Medpack"
+LANG_GERMAN         "Soforthilfe-Paket"
+
+REFERENCE           ITEM_SHIELD_SM_INSTANT
+LANG_ENGLISH        "Small Shield Booster"
+LANG_GERMAN         "Schildenergie - Klein"
+
+REFERENCE           ITM_SHIELD_LRG_PICKUP
+LANG_ENGLISH        "Large Shield Booster"
+LANG_GERMAN         "Schildenergie - Gross"
+
+REFERENCE           AMMO_DETPACK
+LANG_ENGLISH        "Pack of Detonation Packs"
+LANG_GERMAN         "Paket Detonationspacks"
+
+REFERENCE           FORCE_HEAL_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi goes into a meditative stance for a short time and must remain stationary.  Any movement or attack will prevent healing.  Healing rate depends on game difficulty.\n"
+LANG_GERMAN         "Stufe 1 - Der Jedi meditiert einen Moment und muss dabei still bleiben. Jede Bewegung und jeder Angriff behindert die Heilung. Die Genesungsgeschwindigkeit haengt vom Schwierigkeitsgrad ab.\n"
+
+REFERENCE           FORCE_HEAL_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi no longer needs to be stationary.  The Jedi will heal over a short period of time.  Healing rate depends on game difficulty.\n"
+LANG_GERMAN         "Stufe 2 - Der Jedi muss nicht mehr stehen bleiben und heilt deutlich schneller. Die Genesungsgeschwindigkeit haengt vom Schwierigkeitsgrad ab.\n"
+
+REFERENCE           FORCE_HEAL_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi heals more rapidly than rank 2.  Healing rate depends on game difficulty."
+LANG_GERMAN         "Stufe 3 - Der Jedi heilt schneller als bei Stufe 2. Die Genesungsgeschwindigkeit haengt vom Schwierigkeitsgrad ab.\n"
+
+REFERENCE           FORCE_JUMP_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi can leap up to three times their normal jump height."
+LANG_GERMAN         "Stufe 1 - Der Jedi kann dreimal so hoch wie normal springen."
+
+REFERENCE           FORCE_JUMP_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can leap up to six times their normal jump height."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann sechsfach so hoch wie normal springen."
+
+REFERENCE           FORCE_JUMP_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can leap up to twelve times their normal jump height."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann zwoelffach so hoch wie normal springen."
+
+REFERENCE           FORCE_SPEED_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi moves 33% faster than normal"
+LANG_GERMAN         "Stufe 1 - Der Jedi ist 33% schneller als normal."
+
+REFERENCE           FORCE_SPEED_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi moves 100% faster than normal"
+LANG_GERMAN         "Stufe 2 - Der Jedi ist 100% schneller als normal."
+
+REFERENCE           FORCE_SPEED_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi moves 400% faster than normal"
+LANG_GERMAN         "Stufe 3 - Der Jedi ist 400% schneller als normal."
+
+REFERENCE           FORCE_PUSH_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi uses the Force to push a specific enemy or object focused on.  They can also use it to get out of a Force Grip or Drain."
+LANG_GERMAN         "Stufe 1 - Der Jedi kann bestimmte Feinde oder Objekte direkt vor ihm wegschieben. Ausserdem kann er sich so gegen Macht-Wuergegriff und -Entzug wehren."
+
+REFERENCE           FORCE_PUSH_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi uses the Force to push back multiple enemies or objects in a limited arc."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann mehrere Feinde oder Objekte in einem begrenzten Bereich wegschieben."
+
+REFERENCE           FORCE_PUSH_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can push back multiple enemies with enough force to do damage by pushing the enemies into solid surfaces or off ledges. They can also use it to attempt to break saber locks."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann mehrere Feinde wegschieben und sie gegen Waende oder ueber Abgruende schleudern und ihnen Schaden zufuegen. So koennen auch verkantete Lichtschwerter wieder befreit werden."
+
+REFERENCE           FORCE_PULL_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi can pull certain levers and objects in the targeting reticle; can also pull one enemy.\n"
+LANG_GERMAN         "Stufe 1 - Der Jedi kann Schalter und Objekte unter dem Fadenkreuz bewegen. Zusaetzlich kann er einen Feind heranziehen.\n"
+
+REFERENCE           FORCE_PULL_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can pull the weapon out of the hands of an enemy, providing the enemy is facing them."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann seine Feinde entwaffnen, sofern diese ihn anblicken."
+
+REFERENCE           FORCE_PULL_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can pull multiple enemies and their weapons."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann mehrere Feinde und deren Waffen zu sich ziehen."
+
+REFERENCE           FORCE_MIND_TRICK_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi can confuse one enemy for 10 seconds by directly targeting that enemy.\nNote:  A direct attack made by the Jedi on a confused enemy will cancel the effect.  Mind trick does not work on some, more powerful enemies such as Cultists and Reborn."
+LANG_GERMAN         "Stufe 1 - Der Jedi kann einen Feind fuer 10 Sekunden verwirren, indem er ihn als Ziel erfasst.\nHinweis: Ein direkter Angriff eines verwirrten Feindes durch den Jedi macht den Effekt wirkungslos. Geistestricks sind bei maechtigeren Feinden wie Kultisten oder Wiedergeborenen nutzlos."
+
+REFERENCE           FORCE_MIND_TRICK_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can confuse one enemy for 15 seconds by directly targeting that enemy or distract multiple enemies that have not noticed them by using mind trick on a nearby surface."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann einen Feind fuer 15 Sekunden verwirren, indem er ihn als Ziel erfasst, oder auch mehrere Feinde ablenken, die ihn nicht bemerkt haben, indem ein Geistestrick auf ein Objekt in der Naehe angewendet wird."
+
+REFERENCE           FORCE_MIND_TRICK_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can turn one enemy into an ally for 30 seconds by directly targeting that enemy or distract multiple enemies that have not noticed them by using mind trick on a nearby surface.  An ally will not respond to direct attacks by the Jedi."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann einen Feind fuer 30 Sekunden zu einem Verbuendeten machen, indem er ihn als Ziel erfasst, oder auch mehrere Feinde ablenken, die ihn nicht bemerkt haben, indem ein Geistestrick auf ein Objekt in der Naehe angewendet wird. Ein Verbuendeter reagiert nicht auf direkte Angriffe des Jedis."
+
+REFERENCE           FORCE_GRIP_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi can grip and hold one enemy immobile, but undamaged for 5 seconds."
+LANG_GERMAN         "Stufe 1 - Der Feind bleibt fuer fuenf Sekunden im Wuergegriff, erleidet aber keinen Schaden."
+
+REFERENCE           FORCE_GRIP_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can lift one enemy off the ground and do damage, with the effect lasting as long as there is Force power."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann einen Gegner anheben und ihm so lange Schaden zufuegen, wie Kraefte der Macht vorhanden sind."
+
+REFERENCE           FORCE_GRIP_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can lift one enemy off the ground and do damage as with rank 2, but can also smash the enemy into surfaces or use the enemy as a shield."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann den Gegner aehnlich der Stufe 2 anheben, ihm Schaden zufuegen und ihn dabei in Waende werfen oder ihn sogar als Schild benutzen."
+
+REFERENCE           FORCE_LIGHTNING_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi launches a single bolt that fires forward, doing instant damage.\n"
+LANG_GERMAN         "Stufe 1 - Der Jedi feuert einen einzelnen Blitz nach vorn, der sofortigen Schaden anrichtet."
+
+REFERENCE           FORCE_LIGHTNING_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can maintain the Force Lightning for a sustained forward attack.\n"
+LANG_GERMAN         "Stufe 2 - Der Jedi kann den Blitz der Macht 'aufbauen' und ihn kontinuierlich einsetzen."
+
+REFERENCE           FORCE_LIGHTNING_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi emanates a sustained fan of electricity in a large forward arc, damaging anything in front of them."
+LANG_GERMAN         "Stufe 3 - Der Jedi erzeugt einen dauerhaften Bogen voller Elektrizitaet, der allem vor ihm Schaden zufuegen kann."
+
+REFERENCE           FORCE_SABER_DEFENSE_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi can deflect projectiles and melee attacks in a small arc directly in front of them.  Deflected projectiles go in a random direction.\n"
+LANG_GERMAN         "Stufe 1 - Der Jedi kann in einem kleinen Bereich direkt vor ihm Projektile und Nahkampfangriffe abwehren. Die Bahn der abgewehrten Projektile ist nicht vorhersehbar.\n"
+
+REFERENCE           FORCE_SABER_DEFENSE_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can deflect projectiles and melee attacks in a larger arc directly in front of them.  Increased deflection speed.  Deflected projectiles go in the general direction of their origin.\n"
+LANG_GERMAN         "Stufe 2 - Der Jedi kann in einem weiteren Bereich direkt vor ihm Projektile und Nahkampfangriffe mit gesteigerter Geschwindigkeit abwehren. Projektile werden in ihre Ursprungsrichtung zurueckgelenkt."
+
+REFERENCE           FORCE_SABER_DEFENSE_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi has a larger defense area and can deflect projectiles back at the attacker. Increased deflection speed."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann in einem grossen Bereich Projektile mit gesteigerter Geschwindigkeit abwehren und zum Angreifer zuruecklenken."
+
+REFERENCE           FORCE_ABSORB_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi can absorb minor amounts of Force power directed at them with no ill effects and gain some Force power back as a result."
+LANG_GERMAN         "Stufe 1 - Der Jedi kann leichte Machtangriffe absorbieren, ohne Schaeden zu erleiden und einen kleinen Teil der eingesetzten Macht fuer sich verwenden."
+
+REFERENCE           FORCE_ABSORB_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can absorb moderate amounts of Force power directed at them with no ill effects and gain a modest amount of Force power back as a result."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann moderate Machtangriffe absorbieren, ohne Schaeden zu erleiden und einen Teil der eingesetzten Macht fuer sich verwenden."
+
+REFERENCE           FORCE_ABSORB_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can absorb a great amount of Force power directed at them with no ill effects and gain a large amount of Force power back as a result."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann schwere Machtangriffe absobieren, ohne Schaeden zu erleiden und einen grossen Teil der eingesetzten Macht fuer sich verwenden."
+
+REFERENCE           FORCE_PROTECT_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi is protected against 25% of the damage from physical and energy and projectile based attacks, but not from Force based attacks."
+LANG_GERMAN         "Stufe 1 - Der Jedi ist vor 25% der Treffer durch physikalische, Projektil- und Energie-Angriffe, jedoch nicht vor Machtangriffen geschuetzt."
+
+REFERENCE           FORCE_PROTECT_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi is protected against 50% of the damage from physical and energy and projectile based attacks, but not from Force based attacks."
+LANG_GERMAN         "Stufe 2 - Der Jedi ist vor 50% der Treffer durch physikalische, Projektil- und Energie-Angriffe, jedoch nicht vor Machtangriffen geschuetzt."
+
+REFERENCE           FORCE_PROTECT_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi is protected against 75% of the damage from physical and energy and projectile based attacks, but not from Force based attacks."
+LANG_GERMAN         "Stufe 3 - Der Jedi ist vor 75% der Treffer durch physikalische, Projektil- und Energie-Angriffe, jedoch nicht vor Machtangriffen geschuetzt."
+
+REFERENCE           FORCE_SENSE_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi can sense people and invisible markers at short range for 5 seconds."
+LANG_GERMAN         "Stufe 1 - Der Jedi kann Personen und unsichtbare Markierungen auf kurze Distanz fuer 5 Sekunden spueren."
+
+REFERENCE           FORCE_SENSE_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can sense people, objects, and invisible markers at medium range for 10 seconds."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann Personen, Objekte und unsichtbare Markierungen auf mittlere Distanz fuer 10 Sekunden spueren."
+
+REFERENCE           FORCE_SENSE_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can sense people, objects, invisible markers, and the health of living beings at long range for 20 seconds."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann Personen, Objekte, unsichtbare Markierungen und den Gesundheitsstatus lebender Wesen auf grosse Distanz fuer 20 Sekunden spueren."
+
+REFERENCE           FORCE_DRAIN_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi can drain life essence from another person and transfer it to themselves by making direct physical contact with that person."
+LANG_GERMAN         "Stufe 1 - Der Jedi kann einer anderen Person die Lebenskraft entziehen und diese selber nutzen, wenn er physischen Kontakt hat."
+
+REFERENCE           FORCE_DRAIN_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can drain life essence from another person and transfer it to themselves by making direct physical contact with them or from a short distance away."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann einer anderen Person die Lebenskraft entziehen und diese selber nutzen, wenn er physischen Kontakt hat oder in direkter Naehe steht."
+
+REFERENCE           FORCE_DRAIN_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can drain life essence from another person and transfer it to themselves by making direct physical contact with them or from a safe distance away.  From a distance, multiple people can be drained at one time."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann einer anderen Person die Lebenskraft entziehen und diese selber nutzen, wenn er physischen Kontakt hat oder in der Naehe steht. Aus der Distanz kann mehreren Personen gleichzeitig die Kraft entzogen werden."
+
+REFERENCE           FORCE_RAGE_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi is protected against 50% of all damage, has stronger attacks, and cannot die.  However, the Jedi loses health rapidly and must wait for 10 seconds after the rage before it can be used again.  The Jedi must have at least 25 health to use this power."
+LANG_GERMAN         "Stufe 1 - Der Jedi ist vor 50% aller Treffer geschuetzt, kann staerker angreifen und nicht sterben. Dennoch verliert er schnell an Gesundheit und muss 10 Sekunden nach der Rage warten, bevor er sie erneut einsetzen kann. Zum Einsatz dieser Kraft muss die Gesundheit bei mindestens 25 liegen."
+
+REFERENCE           FORCE_RAGE_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi is protected against 75% of all damage, is 25% faster, has stronger attacks, and cannot die.  However, the Jedi loses health and must wait for 10 seconds after the rage before it can be used again.  The Jedi must have at least 25 health to use this power."
+LANG_GERMAN         "Stufe 2 - Der Jedi ist vor 75% aller Treffer geschuetzt, ist 25% schneller, kann staerker angreifen und nicht sterben. Dennoch verliert er an Gesundheit und muss 10 Sekunden nach der Rage warten, bevor er sie erneut einsetzen kann. Zum Einsatz dieser Kraft muss die Gesundheit bei mindestens 25 liegen."
+
+REFERENCE           FORCE_RAGE_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi is protected against 90% of all damage, is 50% faster, has stronger attacks, and cannot die.  The Jedi loses only a small amount of health but still must wait for 10 seconds after the rage before it can be used again.  The Jedi must have at least 25 health to use this power."
+LANG_GERMAN         "Stufe 3 - Der Jedi ist vor 90% aller Treffer geschuetzt, ist 50% schneller, kann staerker angreifen und nicht sterben. Er verliert nur wenig Gesundheit, muss aber trotzdem 10 Sekunden nach der Rage warten, bevor er sie erneut einsetzen kann. Zum Einsatz dieser Kraft muss die Gesundheit bei mindestens 25 liegen."
+
+REFERENCE           FORCE_SABER_OFFENSE_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi is proficient in the use of a lightsaber and has a chance to break saber locks and parrys against other Jedi of similar proficiency."
+LANG_GERMAN         "Stufe 1 - Der Jedi kann sein Lichtschwert effektiv einsetzen und dabei manchmal sogar verkantete Schwerter loesen und Angriffe von Jedis der gleichen Stufe parieren."
+
+REFERENCE           FORCE_SABER_OFFENSE_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi is proficient in the use of a lightsaber and has a chance to break saber locks and parrys against other Jedi of similar proficiency and will break saber locks and parrys against weaker opponents."
+LANG_GERMAN         "Stufe 2 - Der Jedi kann sein Lichtschwert effektiv einsetzen und dabei manchmal sogar verkantete Schwerter loesen und Angriffe von Jedis der gleichen Stufe parieren. Gegen schwaechere Gegner setzt er sich problemlos durch."
+
+REFERENCE           FORCE_SABER_OFFENSE_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi is proficient in the use of a lightsaber and has a chance to break saber locks and parrys against other Jedi of similar proficiency and will break saber locks and parrys against weaker opponents."
+LANG_GERMAN         "Stufe 3 - Der Jedi kann sein Lichtschwert effektiv einsetzen und dabei manchmal sogar verkantete Schwerter loesen und Angriffe von Jedis der gleichen Stufe parieren. Gegen schwaechere Gegner setzt er sich problemlos durch."
+
+REFERENCE           FORCE_SABER_THROW_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Lightsaber flies straight from the player and returns.\n"
+LANG_GERMAN         "Stufe 1 - Das Lichtschwert fliegt gerade nach vorne und kehrt zurueck.\n"
+
+REFERENCE           FORCE_SABER_THROW_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi can exert control over the flying lightsaber as it arcs out, but the lightsaber still returns directly to the player.  "
+LANG_GERMAN         "Stufe 2 - Der Jedi kann minimalen Einfluss auf die Flugbahn nehmen, doch das Lichtschwert kehrt immer auf dem direkten Wege zurueck."
+
+REFERENCE           FORCE_SABER_THROW_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi will automatically steer the saber into nearby enemies."
+LANG_GERMAN         "Stufe 3 - Der Jedi lenkt das Lichtschwert automatisch in nahe Gegner."
+
+REFERENCE           ITEM_GOODIE_KEY
+LANG_ENGLISH        "Supply Key"
+LANG_GERMAN         "Bonuskarte"
+
+REFERENCE           GOODIE_KEY_DESC
+LANG_ENGLISH        "Supply Key\nAn electronic security pass used by Imperial officers to access secure cargo shipment containers"
+LANG_GERMAN         "Bonus-Codekarte\nEine elektronische Passierkarte der imperialen Offiziere, die Zugang zu Frachtcontainern gestattet."
+
+REFERENCE           YOU_TOOK_SUPPLY_KEY
+LANG_ENGLISH        "You took the supply key"
+LANG_GERMAN         "Sie haben die Bonuskarte."
+
+REFERENCE           SECURITY_KEY_DP_DESC
+LANG_ENGLISH        "Security Key\nAn electronic Level 2 clearance security pass used to access secure areas\n"
+LANG_GERMAN         "Codekarte\nEine elektronische Codekarte der Sicherheitsstufe 2 zum Zugang in gesperrte Bereiche.\n"
+
+REFERENCE           ITEM_SECURITY_KEY
+LANG_ENGLISH        "Security Key"
+LANG_GERMAN         "Codekarte"
+
+REFERENCE           YOU_TOOK_SECURITY_KEY
+LANG_ENGLISH        "You took the security key"
+LANG_GERMAN         "Sie haben die Codekarte."
+
+REFERENCE           NEW_FORCE_POWER_INFO
+LANG_ENGLISH        "New Force Power Information"
+LANG_GERMAN         "Neue Informationen - Kraefte der Macht"
+
+REFERENCE           NEW_OBJECTIVE_INFO
+LANG_ENGLISH        "New Objective Information"
+LANG_GERMAN         "Neue Informationen - Missionsziele"
+
+REFERENCE           SECRET_AREA
+LANG_ENGLISH        "Secret Area!"
+LANG_GERMAN         "Sie haben ein Versteck gefunden!"
+
+REFERENCE           NEED_KEY_TO_OPEN
+LANG_ENGLISH        "You need a key to open this."
+LANG_GERMAN         "Sie benoetigen eine Codekarte."
+
+REFERENCE           ONE_KILL_PER_5_SECONDS
+LANG_ENGLISH        "Only one kill per 5 seconds!"
+LANG_GERMAN         "Nur ein Abschuss pro 5 Sekunden!"
+
+REFERENCE           CHECKPOINT
+LANG_ENGLISH        "Checkpoint!"
+LANG_GERMAN         "Kontrollpunkt!"
+
+REFERENCE           SECRETAREAS_OF
+NOTES               "used to display "0 of 3" secret-areas-found string."
+LANG_ENGLISH        "of"
+LANG_GERMAN         "von"
+
+REFERENCE           EXIT_VIEW
+LANG_ENGLISH        "Press 'JUMP' to exit."
+LANG_GERMAN         "Taste 'Sprung' zum Verlassen."
+
+REFERENCE           LIGHTSABERCOMBATSTYLE_FAST
+LANG_ENGLISH        "Lightsaber Combat Style: Fast"
+LANG_GERMAN         "Lichtschwert-Stil: Schnell"
+
+REFERENCE           LIGHTSABERCOMBATSTYLE_MEDIUM
+LANG_ENGLISH        "Lightsaber Combat Style: Medium"
+LANG_GERMAN         "Lichtschwert-Stil: Mittel"
+
+REFERENCE           LIGHTSABERCOMBATSTYLE_STRONG
+LANG_ENGLISH        "Lightsaber Combat Style: Strong"
+LANG_GERMAN         "Lichtschwert-Stil: Stark"
+
+REFERENCE           LIGHTSABERCOMBATSTYLE_DESANN
+LANG_ENGLISH        "Lightsaber Combat Style: Desann"
+LANG_GERMAN         "Lichtschwert-Stil: Desann"
+
+REFERENCE           LIGHTSABERCOMBATSTYLE_TAVION
+LANG_ENGLISH        "Lightsaber Combat Style: Tavion"
+LANG_GERMAN         "Lichtschwert-Stil: Tavion"
+
+REFERENCE           ITEM_MEDPAC
+NOTES               "MP version of ITEM_BACTA"
+LANG_ENGLISH        "Instant Use Medpack"
+LANG_GERMAN         "Soforthilfe-Paket"
+
+REFERENCE           ITEM_SHIELD
+NOTES               "MP force field item"
+LANG_ENGLISH        "Forcefield"
+LANG_GERMAN         "Energiefeld"
+
+REFERENCE           ITEM_SHIELD_LRG_INSTANT
+NOTES               "MP item"
+LANG_ENGLISH        "Large Shield Booster"
+LANG_GERMAN         "Schildenergie - Gross"
+
+REFERENCE           ITEM_FORCE_ENLIGHTEN_LIGHT
+LANG_ENGLISH        "Light Force Enlightenment"
+LANG_GERMAN         "Helle Macht-Erleuchtung"
+
+REFERENCE           ITEM_FORCE_ENLIGHTEN_DARK
+LANG_ENGLISH        "Dark Force Enlightenment"
+LANG_GERMAN         "Dunkle Macht-Erleuchtung"
+
+REFERENCE           ITEM_FORCE_BOON
+LANG_ENGLISH        "Force Boon"
+LANG_GERMAN         "Macht-Segen"
+
+REFERENCE           ITEM_YSALIMARI
+LANG_ENGLISH        "Ysalamiri"
+LANG_GERMAN         "#same"
+
+REFERENCE           WEAPON_EMPLACED
+LANG_ENGLISH        "Emplaced Gun"
+LANG_GERMAN         "Geschuetzstellung"
+
+REFERENCE           WEAPON_TURRETWP
+LANG_ENGLISH        "Turret Gun"
+LANG_GERMAN         "Geschuetz"
+
+REFERENCE           DARK_RAGE2
+LANG_ENGLISH        "Dark Rage"
+LANG_GERMAN         "Dunkle Rage"
+
+REFERENCE           TEAM_CTF_REDFLAG
+LANG_ENGLISH        "Red Flag"
+LANG_GERMAN         "Rote Flagge"
+
+REFERENCE           TEAM_CTF_BLUEFLAG
+LANG_ENGLISH        "Blue Flag"
+LANG_GERMAN         "Blaue Flagge"
+
+REFERENCE           TEAM_CTF_NEUTRALFLAG
+LANG_ENGLISH        "Neutral Flag"
+LANG_GERMAN         "Neutrale Flagge"
+
+REFERENCE           ITEM_REDCUBE
+LANG_ENGLISH        "Red Cube"
+LANG_GERMAN         "Roter Wuerfel"
+
+REFERENCE           ITEM_BLUECUBE
+LANG_ENGLISH        "Blue Cube"
+LANG_GERMAN         "Blauer Wuerfel"
+
+REFERENCE           ITEM_DATAPAD
+LANG_ENGLISH        "Datapad"
+LANG_GERMAN         "Datenpad"
+
+REFERENCE           PROTECT2
+LANG_ENGLISH        "Protect"
+LANG_GERMAN         "Schutz"
+
+REFERENCE           ABSORB2
+LANG_ENGLISH        "Absorb"
+LANG_GERMAN         "Absorption"
+
+REFERENCE           TEAM_HEAL2
+LANG_ENGLISH        "Team Heal"
+LANG_GERMAN         "Team-Heilung"
+
+REFERENCE           SEEING2
+LANG_ENGLISH        "Sense"
+LANG_GERMAN         "Gespuer"
+
+REFERENCE           DRAIN2
+LANG_ENGLISH        "Drain"
+LANG_GERMAN         "Entzug"
+
+REFERENCE           TEAM_REPLENISH2
+LANG_ENGLISH        "Team Energize"
+LANG_GERMAN         "Team-Hilfe"
+
+REFERENCE           DOOR_OPENED_ELSEWHERE
+LANG_ENGLISH        "This door is opened elsewhere."
+LANG_GERMAN         "Die Tuer wird anderswo geoeffnet."
+
+REFERENCE           WEAPON_BLASTER_PISTOL
+LANG_ENGLISH        "DL-44 Heavy Blaster Pistol"
+LANG_GERMAN         "DL-44 Schwere Blaster-Pistole"
+
+REFERENCE           WEAPON_CONCUSSION_RIFLE
+LANG_ENGLISH        "Stouker Concussion Rifle"
+LANG_GERMAN         "Stouker-Stossgewehr"
+
+REFERENCE           AMMO_ALL
+LANG_ENGLISH        "Ammo Dispenser"
+LANG_GERMAN         "Munitionsvorrat"
+
+REFERENCE           ITEM_MEDPAC_BIG
+LANG_ENGLISH        "Big Bacta"
+LANG_GERMAN         "Grosser Bacta-Tank"
+
+REFERENCE           ITEM_EWEB_HOLDABLE
+LANG_ENGLISH        "E-Web"
+LANG_GERMAN         "E-Netz"
+
+REFERENCE           ITEM_CLOAK
+LANG_ENGLISH        "Cloak"
+LANG_GERMAN         "Tarnung"
+
+REFERENCE           FAST_STYLE
+LANG_ENGLISH        "Fast and efficient, but with limited range. Short, quick motions allow for multiple attacks but with minimum damage. This style can be chained indefinitely. It utilizes a defensive stance in which the Jedi holds his saber across his front in a ready position to fend off attacks or make quick jabs. Represented by a blue bar on the right side of the HUD."
+LANG_GERMAN         "Schnell und effizient, aber nur auf kurze Distanz. Kurze, schnelle Bewegungen erlauben mehrfache Angriffe mit geringem Schaden. Dieser Stil verwendet keine Drehungen und kann beliebig oft eingesetzt werden. Der Stil setzt auf eine defensive Haltung, bei der der Jedi sein Lichtschwert vor den Koerper in Bereitschaftshaltung fuehrt. Ein blauer Bogen rechts im HUD zeigt diesen Stil an."
+
+REFERENCE           STRONG_STYLE
+LANG_ENGLISH        "Uses powerful strikes to batter through defenses. This style incorporates great range and power, but often leaves the Jedi open for counter attack. It utilizes a powerful, aggressive stance in which the Jedi holds his saber high and back, ready to go into a heavy swing. Represented by a red bar on the right side of the HUD."
+LANG_GERMAN         "Setzt auf kraftvolle Schlaege, um damit durch gegnerische Formationen zu brechen. Dieser Stil verwendet eine grosse Reichweite und Kraft, doch ist der Jedi sehr anfaellig fuer Gegenangriffe. Der Stil setzt auf eine kraftvolle, aggressive Haltung, bei der der Jedi sein Lichtschwert hoch und weiter zurueck fuehrt, von wo aus er gut angreifen kann. Ein roter Bogen rechts im HUD zeigt diesen Stil an."
+
+REFERENCE           CANT_SAVE_DEAD
+LANG_ENGLISH        "Can't save game while dead!"
+LANG_GERMAN         "Du musst zum Speichern leben!"
+
+
+//----------------------------------------------------------
+//     Movie Duels NEW REFERENCES
+//----------------------------------------------------------
+
+REFERENCE	    BATTLEDROID_DESC
+LANG_ENGLISH        "Baktoid Armor E-5 Blaster Rifle\nThe E-5 blaster rifle was the standard issue blaster of the OOM and B1 battle droids and the elite BX-series droid commando during the Clone Wars. The E-5 blaster rifle was a powerful, light, but somewhat inaccurate weapon.\nPrimary Fire - Slow, single shot with moderate accuracy and great damage\nSecondary Fire - Rapid, burst fire with low accuracy and expanded firing area\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "Baktoid Ruestung E-5 Blastergewehr\nDas E-5 Blastergewehr war der Standardblaster der OOM- und B1-Kampfdroiden und des Elite-Droidenkommandos der BX-Serie waehrend der Klonkriege. Das E-5-Blastergewehr war eine leistungsstarke, leichte, aber etwas ungenaue Waffe.\nPrimaerfeuer – Langsamer Einzelschuss mit maessiger Genauigkeit und grossem Schaden\nSekundaerfeuer – Schneller Feuerstoss mit geringer Genauigkeit und erweitertem Schussbereich\nMunitionstyp – Blaster-Paket"
+
+REFERENCE	    THEFIRSTORDER_DESC
+LANG_ENGLISH        "Sonn-Blas F-11D Blaster Rifle\nThe F-11D Blaster Rifle was the standard issue blaster of the First Order Stormtroopers during the First Order-Resistance Conflict. As the successor to the E-11, the F-11D came equipped with an adjustable J19 electroscope, magnatomic adhesion grip, and foregrip.\nPrimary Fire - Slow, single shot with moderate accuracy and great damage\nSecondary Fire - Rapid, burst fire with low accuracy and expanded firing area\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "Sonn-Blas F-11D Blaster-Gewehr\nDas F-11D-Blaster-Gewehr war der Standard-Blaster der Erste Ordnung Sturmtruppen waehrend des Erste Ordnung-Widerstand-Konflikts. Als Nachfolger der E-11 war die F-11D mit einem einstellbaren J19-Elektroskop, einem Magnatom-Haftgriff und einem Vordergriff ausgestattet.\nPrimaerfeuer - Langsamer Einzelschuss mit maessiger Genauigkeit und grossem Schaden\nSekundaerfeuer - Schneller Feuerstoss mit geringer Genauigkeit und erweitertem Schussbereich\nMunitionstyp - Blaster-Paket"
+
+REFERENCE	    CLONECARBINE_DESC
+LANG_ENGLISH        "BlasTech DC-15S Blaster Carbine\nThe DC-15S Blaster Carbine was a standard issue weapon of the Clone Troopers of the Grand Army of the Republic during the Clone Wars. Smaller in scale than the DC-15A rifle, the DC-15S was considered easier to handle with a potentially higher rate of fire.\nPrimary Fire - Slow, single shot with moderate accuracy and great damage\nSecondary Fire - Rapid, burst fire with low accuracy and expanded firing area\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech DC-15S Blaster Karabiner\nDer DC-15S Blaster Karabiner war eine Standardwaffe der Klontruppen der Grossen Armee der Republik waehrend der Klonkriege. Das DC-15S ist kleiner als das DC-15A-Gewehr und wurde mit einer potenziell hoeheren Feuerrate als einfacher zu handhaben angesehen.\nPrimaerfeuer - Langsamer Einzelschuss mit maessiger Genauigkeit und grossem Schaden\nSekundaerfeuer - Schneller Feuerstoss mit geringe Genauigkeit und erweiterter Schussbereich\nMunitionstyp - Blasterpaket"
+
+REFERENCE	    REBELBLASTER_DESC
+LANG_ENGLISH        "BlasTech DH-17 Blaster Pistol\nThe DH-17 Blaster Pistol was a close-quarter automatic blaster pistol popularly used during the Galactic Civil War. Often favored by starship personnel in both the Rebel Alliance and Galactic Empire, the DH-17 was designed solely for close quarter combat, delivering lethal blasts with every shot, but suffered from poor accuracy at long range. Users of the blaster had to be careful, as prolonged use would drain its energy supply quickly, leaving the user defenseless.\nPrimary Fire - Slow, single shot with low accuracy and significant damage\nSecondary Fire - Rapid, automatic fire with poor accuracy and significant damage.\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech DH-17 Blaster-Pistole\nDie DH-17-Blaster-Pistole war eine automatische Blaster-Pistole fuer den Nahkampf, die im Volksmund waehrend des Galaktischen Buergerkriegs verwendet wurde. Die DH-17 wird oft von Raumschiffpersonal der Rebellenallianz und des Galaktischen Imperiums bevorzugt. Sie wurde ausschliesslich fuer den Nahkampf entwickelt und lieferte bei jedem Schuss toedliche Explosionen, litt jedoch unter schlechter Genauigkeit auf lange Distanz. Benutzer des Blasters mussten vorsichtig sein, da eine laengere Nutzung die Energiezufuhr schnell entleeren wuerde und der Benutzer wehrlos bliebe.\nPrimaerfeuer – Langsamer Einzelschuss mit geringer Genauigkeit und erheblichem Schaden\nSekundaerfeuer – Schnelles, automatisches Feuer mit geringer Genauigkeit und erheblicher Schaden.\nMunitionstyp - Blasterpaket"
+
+REFERENCE	    CLONERIFLE_DESC
+LANG_ENGLISH        "BlasTech DC-15A Blaster Rifle\nThe DC-15A Blaster Rifle was a standard issue rifle of the Clone Troopers of the Grand Army of the Republic during the Clone Wars. Most prominently seen during the First Battle of Geonosis, the DC-15A was a long range rifle designed for open field combat, featuring a greater accuracy than the DC-15S, its carbine counterpart. \nPrimary Fire - Slow, single shot with good accuracy and great damage\nSecondary Fire - Rapid fire with reduced accuracy and slightly expanded firing area\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech DC-15A Blastergewehr\nDas DC-15A Blastergewehr war ein Standardgewehr der Klontruppen der Grossen Armee der Republik waehrend der Klonkriege. Das DC-15A, das waehrend der ersten Schlacht von Geonosis am bekanntesten war, war ein Langstreckengewehr, das fuer den offenen Kampf entwickelt wurde und eine groessere Genauigkeit als das DC-15S, sein Karabiner-Gegenstueck, aufwies. \nPrimaerfeuer – Langsamer Einzelschuss mit guter Genauigkeit und grossem Schaden\nSekundaerfeuer – Schnellfeuer mit reduzierter Genauigkeit und leicht erweitertem Schussbereich\nMunitionstyp – Blasterpaket"
+
+REFERENCE	    CLONECOMMANDO_DESC
+LANG_ENGLISH        "BlasTech DC-17m Interchangeable Weapon System\nThe DC-17m Interchangeable Weapon System was the standard issue weapon for the Clone Commandos of the Grand Army of the Republic during the Clone Wars. A versatile weapon, the DC-17m was a highly accurate weapon, with two other separate weapon configurations; sniper and anti-armor. In rifle mode, the weapon was incredibly accurate at most ranges, but was noticeably weak.\nPrimary Fire - Fast, single shot with perfect accuracy, yet weak damage\nSecondary Fire - Rapid, burst fire with near-perfect accuracy\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech DC-17m Wechselwaffensystem\nDas DC-17m Wechselwaffensystem war die Standardwaffe fuer die Klonkommandos der Grossen Armee der Republik waehrend der Klonkriege. Als vielseitige Waffe war die DC-17m eine hochpraezise Waffe mit zwei anderen separaten Waffenkonfigurationen; Scharfschuetze und Anti-Ruestung. Im Gewehrmodus war die Waffe auf den meisten Entfernungen unglaublich genau, aber merklich schwach.\nPrimaerfeuer – Schneller Einzelschuss mit perfekter Genauigkeit, aber schwacher Schaden\nSekundaerfeuer – Schnelles, Burstfeuer mit nahezu perfekter Genauigkeit\nMunitionstyp – Blaster-Paket"
+
+REFERENCE	    REBELRIFLE_DESC
+LANG_ENGLISH        "BlasTech A280 Blaster Rifle\nThe A280 Blaster Rifle was a weapon mostly used by the commandos of the Rebel Alliance during the Galactic Civil War. The A280 was well known for its armor piercing capabilities, with pinpoint accuracy and fair damage, but suffered from a slower rate of fire.\nPrimary Fire - Slow, single shot with pinpoint accuracy and great damage\nSecondary Fire - Slow automatic fire with pinpoint accuracy\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech A280 Blastergewehr\nDas A280 Blastergewehr war eine Waffe, die hauptsaechlich von den Kommandos der Rebellenallianz waehrend des Galaktischen Buergerkriegs verwendet wurde. Der A280 war bekannt fuer seine panzerbrechenden Faehigkeiten mit punktgenauer Genauigkeit und angemessenem Schaden, litt jedoch unter einer langsameren Feuerrate.\nPrimaerfeuer - Langsamer Einzelschuss mit punktgenauer Genauigkeit und grossem Schaden\nSekundaerfeuer - Langsames automatisches Feuer mit punktgenauer Genauigkeit\nMunitionstyp - Blaster Pack"
+
+REFERENCE        Z6_ROTARY_CANNON_DESC
+LANG_ENGLISH        "Z6 Rotary Cannon\nThe Z6 Rotary Cannon was a powerful, high-caliber heavy blaster used by the Clone Troopers during the Clone Wars and later in the Galactic Civil War. Known for its devastating rate of fire and ability to mow down enemy infantry in seconds, the Z6 featured a rotating barrel that allowed for sustained fire without overheating. While the cannon’s sheer power and rapid fire made it effective against large groups of enemies, its weight and slow handling made it less suited for mobility.\nPrimary Fire - Continuous, high-rate of fire with moderate accuracy\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "Z6-Rotationskanone\nDie Z6-Rotationskanone war ein maechtiger, grosskalibriger schwerer Blaster, der von den Klonkriegern waehrend der Klonkriege und spaeter im Galaktischen Buergerkrieg verwendet wurde. Bekannt fuer ihre verheerende Feuerrate und die Faehigkeit, feindliche Infanterie in Sekunden niederzumaehen, verfuegte die Z6 ueber einen rotierenden Lauf, der anhaltendes Feuer ohne Ueberhitzung ermoeglichte. Waehrend die schiere Kraft und das Schnellfeuer der Kanone sie gegen grosse Gruppen von Feinden effektiv machten, war sie aufgrund ihres Gewichts und der langsamen Handhabung weniger fuer Mobilitaet geeignet.\nPrimaerfeuer - Kontinuierliches Schnellfeuer mit moderater Genauigkeit\nMunitionstyp - Blaster-Paket"
+
+REFERENCE	    REY_DESC
+LANG_ENGLISH        "LPA NN-14 Blaster Pistol\nThe NN-14 Blaster Pistol was a blaster pistol gifted to Rey by Han Solo during the First-Order Resistance Conflict. The NN-14 featured a compact grip, enlarged power core, and flash stabilizing muzzle. In combat, the NN-14 was favored for its near-pinpoint accuracy and great damage.\nPrimary Fire - Slow, single shot with great accuracy and damage\nSecondary Fire - Charged energy buildup for increased damage blast attack\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "LPA NN-14 Blaster-Pistole\nDie NN-14 Blaster-Pistole war eine Blaster-Pistole, die Rey von Han Solo waehrend des Widerstandskonflikts erster Ordnung geschenkt wurde. Der NN-14 verfuegte ueber einen kompakten Griff, einen vergroesserten Kraftkern und eine blitzstabilisierende Muendung. Im Kampf wurde die NN-14 wegen ihrer punktgenauen Genauigkeit und ihres grossen Schadens bevorzugt.\nPrimaerfeuer – Langsamer Einzelschuss mit grosser Genauigkeit und Schaden\nSekundaerfeuer – Aufgeladener Energieaufbau fuer erhoehten Schadensexplosionsangriff\nMunitionstyp – Blasterpaket"
+
+REFERENCE	    JANGO_DESC
+LANG_ENGLISH        "WESTAR-34 Blaster Pistol\nThe WESTAR-34 Blaster Pistol was the weapon of choice by bounty hunter Jango Fett prior to the Clone Wars. The WESTAR-34 fired powerful bolts that were very effective at close range, utilizing its dallorian construction to absorb more heat than a standard blaster.\nPrimary Fire - Single shot with great accuracy and low damage\nSecondary Fire - Rapid fire with near-perfect accuracy, but low damage.\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "WESTAR-34 Blaster-Pistole\nDie WESTAR-34 Blaster-Pistole war vor den Klonkriegen die Waffe der Wahl des Kopfgeldjaegers Jango Fett. Der WESTAR-34 feuerte kraftvolle Bolzen ab, die auf kurze Distanz sehr effektiv waren, und nutzte seine dalorianische Konstruktion, um mehr Waerme zu absorbieren als ein Standardblaster.\nPrimaerfeuer – Einzelschuss mit grosser Genauigkeit und geringem Schaden\nSekundaerfeuer – Schnellfeuer mit nahezu perfekter Genauigkeit, aber geringem Schaden.\nMunitionstyp - Blaster-Paket"
+
+REFERENCE	    SBD_DESC
+LANG_ENGLISH        "Super Battle Droid Weapon\nThe Player should never get this weapon \n If you have it then something is wrong"
+LANG_GERMAN         "Superkampfdroiden-Waffe\Der Spieler sollte diese Waffe niemals bekommen \n Wenn du sie hast, dann stimmt etwas nicht"
+
+REFERENCE	    DUAL_PISTOL_DESC
+LANG_ENGLISH        "WESTAR-34 Dual Blaster Pistol\nThe WESTAR-34 Blaster Pistol was the weapon of choice by bounty hunter Jango Fett prior to the Clone Wars. The WESTAR-34 fired powerful bolts that were very effective at close range, utilizing its dallorian construction to absorb more heat than a standard blaster.\nPrimary Fire - Single shot with great accuracy and low damage\nSecondary Fire - Rapid fire with near-perfect accuracy, but low damage.\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "WESTAR-34 Dual Blaster-Pistole\nDie WESTAR-34 Blaster-Pistole war vor den Klonkriegen die Waffe der Wahl des Kopfgeldjaegers Jango Fett. Der WESTAR-34 feuerte kraftvolle Bolzen ab, die auf kurze Distanz sehr effektiv waren, und nutzte seine dalorianische Konstruktion, um mehr Waerme zu absorbieren als ein Standardblaster.\nPrimaerfeuer – Einzelschuss mit grosser Genauigkeit und geringem Schaden\nSekundaerfeuer – Schnellfeuer mit nahezu perfekter Genauigkeit, aber geringem Schaden.\nMunitionstyp - Blaster-Paket"
+
+REFERENCE	    BOBA_DESC
+LANG_ENGLISH        "BlasTech EE-3 Carbine Rifle\nThe EE-3 Carbine Rifle was the weapon of choice by bounty hunter Boba Fett prior to and during the Galactic Civil War. Modeled after the E-11 Blaster Rifle, used by the infamous Stormtroopers of the Galactic Empire, the EE-3 featured a three shot burst that was highly effective at close range, but suffered at a longer range.\nPrimary Fire - Single shot with great accuracy and low damage\nSecondary Fire - Three shot burst fire with high accuracy, low damage, and minor fire delay.\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech EE-3-Karabinergewehr\nDas EE-3-Karabinergewehr war vor und waehrend des Galaktischen Buergerkriegs die Waffe der Wahl des Kopfgeldjaegers Boba Fett. Nach dem Vorbild des E-11-Blastergewehrs, das von den beruechtigten Sturmtruppen des Galaktischen Imperiums verwendet wurde, verfuegte die EE-3 ueber einen Drei-Schuss-Schuss, der auf kurze Distanz sehr effektiv war, aber auf groessere Distanz litt.\nPrimaerfeuer - Einzelschuss mit grosser Genauigkeit und geringem Schaden\nSekundaeres Feuer - Drei Schuss Feuer mit hoher Genauigkeit, geringem Schaden und geringer Feuerverzoegerung.\nMunitionstyp - Blaster-Paket"
+
+REFERENCE	    CLONEPISTOL_DESC
+LANG_ENGLISH        "BlasTech DC-17 Hand Pistol\nThe DC-17 Hand Pistol was the standard issue pistol to the Clone Troopers of the Grand Army of the Republic during the Clone Wars. An advanced firearm, the DC-17 was generally issued to the more elite and high ranking Clone Troopers such as ARC Troopers, Commanders, Captains, and Jet Troopers.\nPrimary Fire - Slow, single shot with great accuracy and damage\nSecondary Fire - Charged energy buildup for increased damage blast attack\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech DC-17 Handpistole\nDie DC-17 Handpistole war die Standardpistole der Klontruppen der Grossen Armee der Republik waehrend der Klonkriege. Als fortschrittliche Schusswaffe wurde die DC-17 im Allgemeinen an die elitaereren und hochrangigeren Klontruppen wie ARC-Truppen, Kommandanten, Kapitaene und Jet-Truppen ausgegeben.\nPrimaerfeuer - Langsamer Einzelschuss mit grosser Genauigkeit und Schaden\nSekundaerfeuer - Aufgeladener Energieaufbau fuer erhoehten Schadensexplosionsangriff\nMunitionstyp - Blasterpaket"
+
+REFERENCE           MELEE_DESC
+LANG_ENGLISH        "Melee Fist \nCommonly used as a last line of defence, Melee combat is a jedi,s second skill, many years of training in the art of unarmed combat ensure that a jedi is highly skilled without his lightsaber.\nPrimary Fire - Short range punch\nSecondary Fire - Kicks and Grab Katas."
+LANG_GERMAN         "Nahkampf-Faust\nHaeufig als letzte Verteidigungslinie eingesetzt, ist der Nahkampf die zweite Faehigkeit eines Jedi; viele Jahre des Trainings in der Kunst des unbewaffneten Kampfes stellen sicher, dass ein Jedi auch ohne sein Lichtschwert hochqualifiziert ist.\nPrimaerfeuer - Schlag (kurze Reichweite)\nSekundaerfeuer - Tritte und Greif-Katas."
+
+REFERENCE           CLOAK_DESC
+LANG_ENGLISH        "Cloaking Shield\nThe cloaking shield renders the wearer invisible to others, allowing for stealthy movement.  However, due to the immense energy necessary to power the device, the cloak last for a short duration.  \n\nA direct hit from a DEMP 2 gun will temporarily disable the shield.  Additionally, a hit from the secondary fire of the DEMP 2 will permanently disable the shield."
+LANG_GERMAN         "Tarnungsschild\nDer Tarnungsschild macht den Traeger fuer andere unsichtbar und ermoeglicht so eine heimliche Bewegung. Aufgrund der immensen Energie, die erforderlich ist, um das Geraet mit Strom zu versorgen, haelt der Umhang jedoch nur kurze Zeit. \n\nEin direkter Treffer von einer DEMP 2-Kanone deaktiviert den Schild voruebergehend. Ausserdem deaktiviert ein Treffer des Sekundaerfeuers des DEMP 2 den Schild dauerhaft."
+
+REFERENCE	    BARRIER_DESC
+LANG_ENGLISH        "Gunners Personal Shield\nThis bubble energy field can be used by non saber wielders at any location, at which time it deploys a round shield that can block enemy fire.  The shield protects the body for a period of time.  The shield will disappear after expending its power supply or after enduring a certain amount of damage."
+LANG_GERMAN         "Schuetzen-Persoenlicher Schild\nDieses Blasenenergiefeld kann von Nicht-Schwerttraegern an jedem Ort verwendet werden, wobei es zu diesem Zeitpunkt einen runden Schild entfaltet, der feindliches Feuer blockieren kann. Der Schild schuetzt den Koerper fuer eine gewisse Zeit. Der Schild verschwindet, wenn er seine Energie verbraucht oder einen bestimmten Schaden erlitten hat."
+
+REFERENCE           JETPACK_DESC
+LANG_ENGLISH        "Jetpack\nThe jetpack allows the wearer to fly for short durations, giving them a tactical advantage over others.  If the user does not fire the rockets, they will slowly lose altitude.\n\nThe jetpack is only usable in the Siege gametype.\n\n(Note:  To activate the jetpack, jump, then press 'use' while in the air.  Holding 'jump' will allow the user to gain altitude, while holding 'crouch' will decrease altitude.)"
+LANG_GERMAN         "Jetpack\nDas Jetpack ermoeglicht es dem Traeger, fuer kurze Zeit zu fliegen, was ihm einen taktischen Vorteil gegenueber anderen verschafft. Wenn der Benutzer die Raketen nicht abfeuert, verlieren sie langsam an Hoehe.\n\nDas Jetpack kann nur im Spieltyp Siege verwendet werden.\n\n(Hinweis: Um das Jetpack zu aktivieren, springe und halte dann „Sprung“ gedrueckt, um an Hoehe zu gewinnen, waehrend man „Hocken“ haelt, um die Hoehe zu verringern.)"
+
+REFERENCE           WEAPON_BLASTER
+NOTES		    "Edited name of original weapon"
+LANG_ENGLISH        "BlasTech E-11 Blaster Rifle"
+LANG_GERMAN         "BlasTech E-11 Blastergewehr"
+
+REFERENCE           BLASTER_RIFLE_DESC
+NOTES		    "Edited description of original weapon"
+LANG_ENGLISH        "BlasTech E-11 Blaster Rifle \nThe primary weapon of the Imperial forces, the E-11 is a sturdy and deadly blaster rifle capable of inflicting great damage despite its small size.  The E-11's compact design makes it easy to carry and conceal.\nPrimary Fire - Slow, single shot with moderate accuracy and great damage\nSecondary Fire - Rapid, burst fire with low accuracy and expanded firing area\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech E-11 Blastergewehr \nDie E-11, die Hauptwaffe der imperialen Streitkraefte, ist ein robustes und toedliches Blastergewehr, das trotz seiner geringen Groesse grossen Schaden anrichten kann. Das kompakte Design der E-11 erleichtert das Tragen und Verstecken.\nPrimaerfeuer – Langsamer Einzelschuss mit maessiger Genauigkeit und grossem Schaden\nSekundaerfeuer – Schneller Feuerstoss mit geringer Genauigkeit und erweitertem Schussbereich\nMunitionstyp – Blasterpaket"
+
+REFERENCE           WEAPON_THERMAL
+NOTES		    "Edited name of original weapon"
+LANG_ENGLISH        "Baradium-core Thermal Detonator"
+LANG_GERMAN         "Thermodetonator mit Baradium-Kern"
+
+REFERENCE           THERMAL_DETONATOR_DESC
+NOTES		    "Edited description of original weapon"
+LANG_ENGLISH        "Baradium-core Thermal Detonator \nThe thermal detonator is a radius-damage grenade that creates an expanding particle field, vaporizing anything within its blast radius before it collapses after a small amount of time.\nPrimary Fire - Detonator explodes after about three seconds.  Press FIRE longer for longer throw\nSecondary Fire - Detonator explodes on impact.  Press ALT-FIRE longer for longer throw"
+LANG_GERMAN         "Baradium-Kern Thermaldetonator \nDer Thermaldetonator ist eine Radius-Schaden-Granate, die ein expandierendes Partikelfeld erzeugt, das alles innerhalb seines Explosionsradius verdampft, bevor es nach kurzer Zeit zusammenbricht.\nPrimaerfeuer - Detonator explodiert nach etwa drei Sekunden. FEUER laenger druecken fuer einen laengeren Wurf\nSekundaeres Feuer - Detonator explodiert beim Aufprall. Druecke ALT-FEUER laenger fuer einen laengeren Wurf"
+
+REFERENCE	    WEAPON_BATTLEDROID
+LANG_ENGLISH        "Baktoid Armor E-5 Blaster Rifle"
+LANG_GERMAN         "Baktoid Armor E-5 Blastergewehr"
+
+REFERENCE	    WEAPON_THEFIRSTORDER
+LANG_ENGLISH	    "Sonn-Blas F-11D Blaster Rifle"
+LANG_GERMAN         "Sonn-Blas F-11D Blastergewehr"
+
+REFERENCE	    WEAPON_REBELBLASTER
+LANG_ENGLISH	    "BlasTech DH-17 Blaster Pistol"
+LANG_GERMAN         "BlasTech DH-17 Blaster-Pistole"
+
+REFERENCE	    WEAPON_CLONECARBINE
+LANG_ENGLISH	    "BlasTech DC-15S Blaster Carbine"
+LANG_GERMAN         "BlasTech DC-15S Blaster Karabiner"
+
+REFERENCE	    WEAPON_CLONERIFLE
+LANG_ENGLISH	    "BlasTech DC-15A Blaster Rifle"
+LANG_GERMAN         "BlasTech DC-15A Blastergewehr"
+
+REFERENCE	    WEAPON_CLONECOMMANDO
+LANG_ENGLISH	    "BlasTech DC-17m Interchangeable Weapon System"
+LANG_GERMAN         "BlasTech DC-17m Wechselwaffensystem"
+
+REFERENCE        WEAPON_Z6ROTARYCANNON
+LANG_ENGLISH        "Z6 Rotary Cannon"
+LANG_GERMAN         "Z6 Rotationskanone"
+
+REFERENCE	    WEAPON_REBELRIFLE
+LANG_ENGLISH	    "BlasTech A280 Blaster Rifle"
+LANG_GERMAN         "BlasTech A280 Blastergewehr"
+
+REFERENCE	    WEAPON_REY
+LANG_ENGLISH	    "LPA NN-14 Blaster Pistol"
+LANG_GERMAN         "LPA NN-14 Blaster-Pistole"
+
+REFERENCE	    WEAPON_JANGO
+LANG_ENGLISH	    "WESTAR-34 Blaster Pistol"
+LANG_GERMAN         "WESTAR-34 Blasterpistole"
+
+REFERENCE	    WEAPON_DUAL_PISTOL
+LANG_ENGLISH	    "WESTAR-34 Dual Blaster Pistol"
+LANG_GERMAN         "WESTAR-34 Dual Blaster Pistole"
+
+REFERENCE	    WEAPON_BOBA
+LANG_ENGLISH	    "BlasTech EE-3 Carbine Rifle"
+LANG_GERMAN         "BlasTech EE-3 Karabinergewehr"
+
+REFERENCE	    WEAPON_CLONEPISTOL
+LANG_ENGLISH	    "BlasTech DC-17 Hand Pistol"
+LANG_GERMAN         "BlasTech DC-17 Handpistole"
+
+REFERENCE           ATST_MAIN_DESC
+LANG_ENGLISH        "ATST Main Cannon"
+LANG_GERMAN         "ATST-Hauptkanone"
+
+REFERENCE           TUSKEN_RIFLE_DESC
+LANG_ENGLISH        "Tusken Rifle \nThe standard projectile weapon used by the Tusken Raiders of Tatooine in ranged combat.   The long range weapon has impressive range and stopping power.\nPrimary Fire - Short range swing\nSecondary Fire - Single shot with slow fire rate\nAmmo Type - Power cell"
+LANG_GERMAN         "Tusken-Gewehr \nDie Standard-Projektilwaffe, die von den Tusken-Raeubern von Tatooine im Fernkampf verwendet wird. Die Langstreckenwaffe hat eine beeindruckende Reichweite und Bremskraft.\nPrimaerfeuer – Kurzstreckenschwung\nSekundaerfeuer – Einzelschuss mit langsamer Feuerrate\nMunitionstyp – Energiezelle"
+
+REFERENCE           NOGHRI_STICK_DESC
+LANG_ENGLISH        "Noghri Stick \nThe traditional melee weapon of the Noghri race. The weapon serves as a useful multipurpose tool and melee weapon.\nPrimary Fire - Overhead swing\nSecondary Fire - Uppercut swing\nAmmo Type - None"
+LANG_GERMAN         "Noghri-Stick \nDie traditionelle Nahkampfwaffe der Noghri Spezies. Die Waffe dient als nuetzliches Mehrzweckwerkzeug und als Nahkampfwaffe.\nPrimaerfeuer - Ueberkopfschwung\nSekundaerfeuer - Aufwaertsschwung\nMunitionstyp - Keine"
+
+REFERENCE           ITEM_MEDPAK_INSTANT
+NOTES		    "Edited name of original item"
+LANG_ENGLISH        "BioTech Bacta Canister"
+LANG_GERMAN         "BioTech Bacta-Kanister"
+
+REFERENCE           WEAPON_BLASTER_PISTOL
+NOTES		    "Edited name of original weapon"
+LANG_ENGLISH        "BlasTech DL-44 Heavy Blaster Pistol"
+LANG_GERMAN         "BlasTech DL-44 Schwere Blaster-Pistole"
+
+REFERENCE           NEW_BLASTER_PISTOL_DESC
+NOTES		    "Edited name of original weapon"
+LANG_ENGLISH        "BlasTech DL-44 Heavy Blaster Pistol \nOne of the most common firearms in the galaxy, the BlasTech DL-44 Heavy Blaster Pistol is a hand-held energy weapon with a slow rate of fire and incredible accuracy.\nPrimary Fire - Slow, single shot with great accuracy and damage\nSecondary Fire - Charged energy buildup for increased damage blast attack\nAmmo Type - Blaster Pack"
+LANG_GERMAN         "BlasTech DL-44 Schwere Blaster-Pistole \nEine der am haeufigsten verwendeten Schusswaffen in der Galaxis, die BlasTech DL-44 Schwere Blaster-Pistole ist eine tragbare Energiewaffe mit einer langsamen Feuerrate und unglaublicher Praezision.\nPrimaerfeuer - Langsam, einzeln mit grosser Genauigkeit und Schaden geschossen\nSekundaeres Feuer - Aufgeladener Energieaufbau fuer erhoehten Schaden Explosionsangriff\nMunitionstyp - Blasterpaket"
+
+REFERENCE           ITEM_BARRIER
+LANG_ENGLISH        "Gunners Personal Shield"
+LANG_GERMAN         "Schuetzen-persoenlicher Schild"
+
+REFERENCE           DOTF_KICKMAUL
+LANG_ENGLISH        "Kick or Push the Sith Warrior off the catwalk!"
+LANG_GERMAN         "Tritt oder stosse den Sith-Krieger vom Laufsteg!"
+
+REFERENCE           TANTIVE_HINT
+LANG_ENGLISH        "Destroy All Resistance Before Proceeding."
+LANG_GERMAN         "Zerstoere alle Widerstaende, bevor du fortfaehrst."
+
+REFERENCE           DD_LSDS_CHOICE
+LANG_ENGLISH        "Deactivate your lightsaber to come back to the light.\n\nKill Obi-Wan to remain on the dark side."
+LANG_GERMAN         "Deaktiviere dein Lichtschwert, um zur hellen Seite zurueckzukommen.\in\Toete Obi-Wan, um auf der dunklen Seite zu bleiben."
+
+REFERENCE	    WEAPON_NOGHRI_STICK
+LANG_ENGLISH	    "Nogri Stick"
+LANG_GERMAN         "Nogri-Stick"
+
+REFERENCE	    WEAPON_TUSKEN_RIFLE
+LANG_ENGLISH	    "Tusken Rifle"
+LANG_GERMAN         "Tusken-Gewehr"
+
+REFERENCE	    WEAPON_WRIST
+LANG_ENGLISH	    "Mandalorian Wrist Blaster"
+LANG_GERMAN         "Mandalorianischer Handgelenksblaster"
+
+REFERENCE           WRIST_DESC
+LANG_ENGLISH        "Mandalorian Armour Wrist Blaster\nThe Mandalorian Rocket Gauntlet is a wrist-mounted blaster based on the titular Manadlorian 's gauntlets."
+LANG_GERMAN         "Mandalorianischer Ruestungs-Handgelenksblaster \Der Mandalorianische Raketenhandschuh ist ein am Handgelenk befestigter Blaster, der auf den titelgebenden mandalorianischen Panzerhandschuhen basiert."
+
+REFERENCE	    GRAPPLE_DESC
+LANG_ENGLISH        "Grapple Hook \nGrappling Hook is a device with multiple hooks attached to a rope; it is thrown, dropped, sunk, projected, or fastened directly by hand to where at least one hook may catch and hold. Generally, grappling hooks are used to temporarily secure one end of a rope."
+LANG_GERMAN         "Greifhaken \nDer Greifhaken ist ein Geraet mit mehreren Haken, die an einem Seil befestigt sind. es wird geworfen, fallen gelassen, versenkt, projiziert oder direkt von Hand befestigt, wo mindestens ein Haken fangen und halten kann. Im Allgemeinen werden Enterhaken verwendet, um ein Ende eines Seils voruebergehend zu sichern."
+
+REFERENCE           ITEM_GRAPPLEHOOK
+LANG_ENGLISH        "Grappling Hook"
+LANG_GERMAN         "Greifhaken"
+
+REFERENCE	    STASIS
+LANG_ENGLISH	    "Stasis:"
+LANG_GERMAN         "#same"
+
+REFERENCE	    STASIS2
+LANG_ENGLISH	    "Stasis"
+LANG_GERMAN         "#same"
+
+REFERENCE	    USES_STASIS_FORCE_ABILITY
+LANG_ENGLISH	    "Uses Force Stasis ability."
+LANG_GERMAN         "Verwendet die Faehigkeit Machtstasis."
+
+REFERENCE	    FORCE_STASIS_DESC
+LANG_ENGLISH	    "Force Stasis\nDuration: Variable\nArea of Effect: Living persons or objects\nEffect: Allows Jedi to paralyse a living being or droid.\n\n"
+LANG_GERMAN         "Machtstasis\Dauer: Variabel\Wirkbereich: Lebende Personen oder Objekte\Wirkung: Ermoeglicht dem Jedi, ein Lebewesen oder einen Droiden zu laehmen.\n\n"
+
+REFERENCE           FORCE_STASIS_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi paralyses a single enemy for 5 seconds."
+LANG_GERMAN         "Rang 1 – Jedi laehmt einen einzelnen Feind 5 Sekunden lang."
+
+REFERENCE           FORCE_STASIS_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi paralyses a single enemy for 10 seconds."
+LANG_GERMAN         "Rang 2 – Jedi laehmt einen einzelnen Feind 10 Sekunden lang."
+
+REFERENCE           FORCE_STASIS_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi paralyses a single enemy for 15 seconds."
+LANG_GERMAN         "Rang 3 – Jedi laehmt einen einzelnen Feind 15 Sekunden lang."
+
+REFERENCE	    DESTRUCTION
+LANG_ENGLISH	    "Destruction:"
+LANG_GERMAN         "Zerstoerung:"
+
+REFERENCE	    DESTRUCTION2
+LANG_ENGLISH	    "Destruction"
+LANG_GERMAN         "Zerstoerung"
+
+REFERENCE           USES_DESTRUCTION_FORCE_ABILITY
+LANG_ENGLISH	    "Uses Force Destruction ability."
+LANG_GERMAN         "Verwendet die Faehigkeit Macht-Zerstoerung"
+
+REFERENCE	    FORCE_DESTRUCTION_DESC
+LANG_ENGLISH	    "Force Destruction\nDuration: Instant\nArea of Effect: Projectile\nEffect: Allows Jedi to launch a projectile of force energy.\n\n"
+LANG_GERMAN         "Macht-Zerstoerung\nDauer: Sofort\Wirkungsbereich: Projektil\Wirkung: Ermoeglicht dem Jedi, ein Projektil aus Machtenergie abzufeuern.\n\n"
+
+REFERENCE           FORCE_DESTRUCTION_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi launches an orb of force energy."
+LANG_GERMAN         "Rang 1 – Der Jedi startet eine Kugel aus Kraftenergie."
+
+REFERENCE           FORCE_DESTRUCTION_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi launches a more powerful orb of force energy."
+LANG_GERMAN         "Rang 2 – Der Jedi startet eine maechtigere Kugel aus Machtenergie."
+
+REFERENCE           FORCE_DESTRUCTION_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi launches an extremely dangerous orb of force energy."
+LANG_GERMAN         "Rang 3 – Der Jedi startet eine extrem gefaehrliche Kugel aus Machtenergie."
+
+REFERENCE           GRASP
+LANG_ENGLISH	    "Grasp:"
+LANG_GERMAN         "Griff:"
+
+REFERENCE	    GRASP2
+LANG_ENGLISH	    "Grasp"
+LANG_GERMAN         "Griff"
+
+REFERENCE	    INGAME_GRASP2
+LANG_ENGLISH	    "Grasp"
+LANG_GERMAN         "Griff"
+
+REFERENCE           FORCE_GRASP_DESC
+LANG_ENGLISH        "Force Grasp\nDuration: Instantaneous\nArea Of Effect: Living persons or objects\nEffect: Allows Jedi to hold an enemy or an object with the Force.\n\n"
+LANG_GERMAN         "Machtgriff\nDauer: Sofort\Wirkungsbereich: Lebende Personen oder Objekte\Wirkung: Ermoeglicht dem Jedi, einen Feind oder ein Objekt mit der Macht festzuhalten.\n\n"
+
+REFERENCE           FORCE_GRASP_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Enemy is startled and knocked off balance for 5 seconds."
+LANG_GERMAN         "Rang 1 – Der Feind wird erschreckt und fuer 5 Sekunden aus dem Gleichgewicht geworfen."
+
+REFERENCE           FORCE_GRASP_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi lifts their enemy straight off the ground, rendering them defenseless."
+LANG_GERMAN         "Rang 2 – Der Jedi hebt den Feind direkt vom Boden und macht sie wehrlos."
+
+REFERENCE           FORCE_GRASP_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi can freely lift up their enemy and move them around."
+LANG_GERMAN         "Rang 3 – Jedi koennen ihre Feinde frei hochheben und bewegen."
+
+REFERENCE	    REPULSE
+LANG_ENGLISH	    "Repulse:"
+LANG_GERMAN         "Abwehr:"
+
+REFERENCE	    REPULSE2
+LANG_ENGLISH	    "Repulse"
+LANG_GERMAN         "Abwehr"
+
+REFERENCE	    INGAME_REPULSE2
+LANG_ENGLISH	    "Repulse"
+LANG_GERMAN         "Abwehr"
+
+REFERENCE	    USES_REPULSE_FORCE_ABILITY
+LANG_ENGLISH	    "Uses Force Repulse ability."
+LANG_GERMAN         "Verwendet die Faehigkeit Macht-Abwehr"
+
+REFERENCE	    FORCE_REPULSE_DESC
+LANG_ENGLISH	    "Force Repulse\nDuration: Instant\nArea of Effect: Near Jedi\nEffect: Allows Jedi to push and damage nearby enemies\n\n"
+LANG_GERMAN         "Macht-Abwehr\nDauer: Sofort\nWirkungsbereich: In der Naehe des Jedi\nWirkung: Ermoeglicht dem Jedi, Gegner in der Naehe zu stossen und zu beschaedigen\n\n"
+
+REFERENCE           FORCE_REPULSE_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi pushes enemies within a small radius. If power is charged, enemies take damage depending on charge time."
+LANG_GERMAN         "Rang 1 – Der Jedi schiebt Feinde in einen kleinen Radius. Wenn Energie aufgeladen wird, erleiden Feinde je nach Ladezeit Schaden."
+
+REFERENCE           FORCE_REPULSE_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi pushes enemies within a medium radius. If power is charged, enemies take damage depending on charge time."
+LANG_GERMAN         "Rang 2 – Der Jedi schiebt Feinde in einen mittleren Radius. Wenn Energie aufgeladen wird, erleiden Feinde je nach Ladezeit Schaden."
+
+REFERENCE           FORCE_REPULSE_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi pushes enemies within a large radius. If power is charged, enemies take damage depending on charge time."
+LANG_GERMAN         "Rang 3 – Der Jedi schiebt Feinde in einen grossen Radius. Wenn Energie aufgeladen wird, erleiden Feinde je nach Ladezeit Schaden."
+
+REFERENCE	    INGAME_LIGHTNING_STRIKE2
+LANG_ENGLISH	    "Electric Judgement"
+LANG_GERMAN         "Elektrisches Urteil"
+
+REFERENCE	    STRIKE2
+LANG_ENGLISH	    "Electric Judgement"
+LANG_GERMAN         "Elektrisches Urteil"
+
+REFERENCE           STRIKE
+LANG_ENGLISH	    "Electric Judgement:"
+LANG_GERMAN         "Elektrisches Urteil:"
+
+REFERENCE           LIGHTNING_STRIKE2
+LANG_ENGLISH        "Electric Judgement"
+LANG_GERMAN         "Elektrisches Urteil"
+
+REFERENCE           LIGHTNING_STRIKE
+LANG_ENGLISH        "Electric Judgement: "
+LANG_GERMAN         "Elektrisches Urteil:"
+
+REFERENCE           FORCE_LIGHTNINGSTRIKE_DESC
+LANG_ENGLISH        "Force Electric Judgement\nDuration: Instant\nArea Of Effect: Entire Environment\nEffect: Electric Judgment is a Force technique used by the Jedi to spray yellow electric bolts of variable intensity from the hands and fingers.\n\n"
+LANG_GERMAN         "Macht-Elektrisches Urteil\nDauer: Sofort\nWirkbereich: Gesamte Umgebung\nWirkung: Elektrisches Urteil ist eine Machttechnik, die von den Jedi verwendet wird, um gelbe elektrische Blitze unterschiedlicher Intensitaet aus den Haenden und Fingern zu spruehen.\n\n"
+
+REFERENCE           FORCE_LIGHTNING_STRIKE_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi fires a burst of lightning able to travel a significant distance, causing very little damage."
+LANG_GERMAN         "Rang 1 – Der Jedi feuert einen Blitz ab, der eine betraechtliche Entfernung zuruecklegen kann und sehr wenig Schaden anrichtet."
+
+REFERENCE           FORCE_LIGHTNING_STRIKE_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi fires a burst of lightning able to travel a significant distance, causing minor damage and requires less concentration."
+LANG_GERMAN         "Rang 2 – Der Jedi feuert einen Blitz ab, der eine betraechtliche Entfernung zuruecklegen kann, geringfuegigen Schaden anrichtet und weniger Konzentration erfordert."
+
+REFERENCE           FORCE_LIGHTNING_STRIKE_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi fires a burst of lightning able to travel a significant distance, causing moderate damage and requiring much less concentration."
+LANG_GERMAN         "Rang 3 – Der Jedi feuert einen Blitz ab, der eine betraechtliche Entfernung zuruecklegen kann, maessigen Schaden verursacht und viel weniger Konzentration erfordert."
+
+REFERENCE	    FEAR
+LANG_ENGLISH	    "Fear:"
+LANG_GERMAN         "Furcht:"
+
+REFERENCE	    FEAR2
+LANG_ENGLISH	    "Fear"
+LANG_GERMAN         "Furcht"
+
+REFERENCE	    INGAME_FEAR2
+LANG_ENGLISH	    "Fear"
+LANG_GERMAN         "Furcht"
+
+REFERENCE           FORCE_FEAR_DESC
+LANG_ENGLISH        "Force Fear\nDuration: Indefinite\nArea Of Effect: Living persons only\nEffect: Jedi infects the victim's mind with the Dark Side of the Force, causing them to lash out in fear against allies and enemies alike.\n\n"
+LANG_GERMAN         "Macht-Furcht\nDauer: Unbegrenzt\nWirkungsbereich: Nur lebende Personen\nEffekt: Jedi infiziert den Geist des Opfers mit der Dunklen Seite der Macht, wodurch er aengstlich auf Verbuendete und Feinde einschlaegt.\n\n"
+
+REFERENCE           FORCE_FEAR_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Victim permanently lashes out against allies and enemies alike. Common enemies have a 50% chance to be affected, while Force Sensitives are almost impossible to affect."
+LANG_GERMAN         "Rang 1 – Das Opfer schlaegt permanent gegen Verbuendete und Feinde. Gewoehnliche Feinde haben eine Chance von 50%, betroffen zu sein, waehrend es bei Machtempfindlichen fast unmoeglich ist, sie zu beeinflussen."
+
+REFERENCE           FORCE_FEAR_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Victim permanently lashes out against allies and enemies alike. Common enemies will be affected, while most force sensitives have a 5% chance of being affected. More powerful Jedi and Sith have a 1% chance of being affected."
+LANG_GERMAN         "Rang 2 – Das Opfer schlaegt permanent gegen Verbuendete und Feinde. Normale Feinde werden betroffen sein, waehrend die meisten Machtempfindlichen eine Chance von 5% haben, betroffen zu sein. Maechtigere Jedi und Sith haben eine Chance von 1%, betroffen zu sein."
+
+REFERENCE           FORCE_FEAR_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Victim permanently lashes out against allies and enemies alike. Common enemies will be affected, while most force sensitives have a 50% chance of being affected. More powerful Jedi and Sith have a 2% chance of being affected."
+LANG_GERMAN         "Rang 3 – Das Opfer schlaegt permanent gegen Verbuendete und Feinde. Normale Feinde werden betroffen sein, waehrend die meisten Machtempfindlichen eine Chance von 50% haben, betroffen zu sein. Staerkere Jedi und Sith haben eine Chance von 2%, betroffen zu sein."
+
+REFERENCE	    DEADLYSIGHT
+LANG_ENGLISH	    "Deadly Sight:"
+LANG_GERMAN         "Toedlicher Anblick:"
+
+REFERENCE	    DEADLYSIGHT2
+LANG_ENGLISH	    "Deadly Sight"
+LANG_GERMAN         "Toedlicher Anblick"
+
+REFERENCE	    FORCE_DEADLYSIGHT_DESC
+LANG_ENGLISH	    "Force Deadly Sight\nDuration: Instant\nArea of Effect: Near Jedi\nEffect: Force Deadly Sight is a power of the dark side of the Force, focusing the user's hatred into deadly energy.\n\n"
+LANG_GERMAN         "Macht-Toedlicher Anblick\nDauer: Sofort\nWirkungsbereich: In der Naehe vom Jedi\nEffekt: Macht-Toedliche Sicht ist eine Macht der dunklen Seite der Macht, die den Hass des Benutzers in toedliche Energie buendelt.\n\n"
+
+REFERENCE           FORCE_DEADLYSIGHT_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - By channeling this ability, a Force-user harnessed fury and hatred and then projected them through an intense glare onto the victim.The Deadly Sight will blister the skin and vaporize extremities."
+LANG_GERMAN         "Rang 1 – Durch das Kanalisieren dieser Faehigkeit spannt ein Machtbenutzer Wut und Hass und projiziert sie dann durch einen intensiven Blick auf das Opfer. Der toedliche Anblick laesst Blasen auf der Haut und verdampft die Extremitaeten."
+
+REFERENCE           FORCE_DEADLYSIGHT_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - By channeling this ability, a Force-user harnessed fury and hatred and then projected them through an intense glare onto the victim.The Deadly Sight will blister the skin and vaporize extremities."
+LANG_GERMAN         "Rang 2 – Durch das Kanalisieren dieser Faehigkeit spannt ein Machtbenutzer Wut und Hass und projiziert sie dann durch einen intensiven Blick auf das Opfer. Der toedliche Anblick laesst Blasen auf der Haut und verdampft die Extremitaeten."
+
+REFERENCE           FORCE_DEADLYSIGHT_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - By channeling this ability, a Force-user harnessed fury and hatred and then projected them through an intense glare onto the victim.The Deadly Sight will blister the skin and vaporize extremities."
+LANG_GERMAN         "Rang 3 – Durch das Kanalisieren dieser Faehigkeit spannt ein Machtbenutzer Wut und Hass und projiziert sie dann durch einen intensiven Blick auf das Opfer. Der toedliche Anblick laesst Blasen auf der Haut und verdampft die Extremitaeten."
+
+REFERENCE           BLAST
+LANG_ENGLISH        "Blast: "
+LANG_GERMAN         "Vernichten:"
+
+REFERENCE           BLAST2
+LANG_ENGLISH        "Blast"
+LANG_GERMAN         "Vernichten"
+
+REFERENCE           FORCE_BLAST_DESC
+LANG_ENGLISH        "Force Blast\nDuration: Instant\nArea Of Effect: Entire Environment\nEffect: Jedi unleashes a concentrated telekinetic burst against their enemies, causing damage.\n\n"
+LANG_GERMAN         "Macht-Vernichten\nDauer: Sofort\nWirkbereich: Gesamte Umgebung\nEffekt: Der Jedi entfesselt einen konzentrierten Telekinesestoss gegen seine Feinde und verursacht Schaden.\n\n"
+
+REFERENCE           FORCE_BLAST_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi detonates a concentrated burst of force energy, causing little damage."
+LANG_GERMAN         "Rang 1 – Der Jedi detoniert einen konzentrierten Energiestoss, der wenig Schaden anrichtet."
+
+REFERENCE           FORCE_BLAST_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi detonates a concentrated burst of force energy, causing minor damage."
+LANG_GERMAN         "Rang 2 – Der Jedi detoniert einen konzentrierten Energiestoss, der geringfuegigen Schaden anrichtet."
+
+REFERENCE           FORCE_BLAST_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi detonates a concentrated burst of force energy, causing moderate damage."
+LANG_GERMAN         "Rang 3 – Der Jedi detoniert einen konzentrierten Energiestoss, der maessigen Schaden anrichtet."
+
+REFERENCE	    INSANITY
+LANG_ENGLISH	    "Insanity:"
+LANG_GERMAN         "Wahnsinn:"
+
+REFERENCE	    INSANITY2
+LANG_ENGLISH	    "Insanity"
+LANG_GERMAN         "Wahnsinn"
+
+REFERENCE	    FORCE_INSANITY_DESC
+LANG_ENGLISH	    "Force Insanity\nDuration: Variable\nArea of Effect: Living persons only\nEffect: Allows Jedi to wrack mind of an enemy\n\n"
+LANG_GERMAN         "Macht-Wahnsinn\nDauer: Variabel\Wirkungsbereich: Nur lebende Personen\Wirkung: Erlaubt dem Jedi, die Gedanken eines Feindes zu lenken\n\n"
+
+REFERENCE           FORCE_INSANITY_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - Jedi wracks the mind of a single enemy for 5 seconds."
+LANG_GERMAN         "Rang 1 – Der Jedi erschuettert den Verstand eines einzelnen Feindes fuer 5 Sekunden."
+
+REFERENCE           FORCE_INSANITY_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - Jedi wracks the mind of a single enemy for 10 seconds."
+LANG_GERMAN         "Rang 2 – Der Jedi erschuettert den Verstand eines einzelnen Feindes fuer 10 Sekunden."
+
+REFERENCE           FORCE_INSANITY_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - Jedi wracks the mind of a single enemy for 15 seconds. The enemy then dies."
+LANG_GERMAN         "Rang 3 – Der Jedi erschuettert den Verstand eines einzelnen Feindes fuer 15 Sekunden."
+
+REFERENCE	    BLINDING
+LANG_ENGLISH	    "Blinding:"
+LANG_GERMAN         "Blendung:"
+
+REFERENCE	    BLINDING2
+LANG_ENGLISH	    "Blinding"
+LANG_GERMAN         "Blendung"
+
+REFERENCE	    FORCE_BLINDING_DESC
+LANG_ENGLISH	    "Force Blinding\nDuration: Variable\nArea of Effect: Living persons only\nEffect: Force blinding was a telekinetic light side Force power. Upon use of this technique, a blinding flash of energy emanated from a user's hand, manifesting as a flash of light that overloaded a target's vision, causing temporary blindness.\n\n"
+LANG_GERMAN         "Macht-Blendung\nDauer: Variabel\nWirkungsbereich: Nur lebende Personen\nWirkung: Machtblendung war eine telekinetische Faehigkeit der Hellen Seite der Macht. Bei Anwendung dieser Technik ging ein blendender Energieblitz von der Hand des Benutzers aus, der sich als Lichtblitz manifestierte, der die Sicht eines Ziels ueberlastete und voruebergehende Blindheit verursachte.\n\n"
+
+REFERENCE           FORCE_BLINDING_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - A powerful tool of the light side, a Jedi could obfuscate an opponent's sight, making it difficult for the adversary to spot and attack the Jedi or anyone else."
+LANG_GERMAN         "Rang 1 – Ein maechtiges Werkzeug der hellen Seite, ein Jedi kann die Sicht eines Gegners verschleiern und es dem Gegner erschweren, den Jedi oder andere Personen zu erkennen und anzugreifen."
+
+REFERENCE           FORCE_BLINDING_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - A powerful tool of the light side, a Jedi could obfuscate an opponent's sight, making it difficult for the adversary to spot and attack the Jedi or anyone else."
+LANG_GERMAN         "Rang 2 – Ein maechtiges Werkzeug der hellen Seite, ein Jedi kann die Sicht eines Gegners verschleiern und es dem Gegner erschweren, den Jedi oder andere Personen zu erkennen und anzugreifen."
+
+REFERENCE           FORCE_BLINDING_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - A powerful tool of the light side, a Jedi could obfuscate an opponent's sight, making it difficult for the adversary to spot and attack the Jedi or anyone else."
+LANG_GERMAN         "Rang 3 – Ein maechtiges Werkzeug der hellen Seite, ein Jedi kann die Sicht eines Gegners verschleiern und es dem Gegner erschweren, den Jedi oder andere Personen zu erkennen und anzugreifen."
+
+REFERENCE	    PROJECTION
+LANG_ENGLISH	    "Projection:"
+LANG_GERMAN         "Vorsprung:"
+
+REFERENCE	    PROJECTION2
+LANG_ENGLISH	    "Projection"
+LANG_GERMAN         "Vorsprung"
+
+REFERENCE	    FORCE_PROJECTION_DESC
+LANG_ENGLISH	    "Force Projection\nDuration: Variable\nArea of Effect: Jedi only\nEffect: Force projection, also known as Similfuturus, was a Fallanassi Force technique recorded in the sacred Jedi texts and utilized by Jedi Master Luke Skywalker during the Battle of Crait.\n\n"
+LANG_GERMAN         "Macht-Vorsprung\nDauer: Variabel\nWirkungsbereich: Nur Jedi\nWirkung: Macht-Vorsprung, auch bekannt als Similfuturus, war eine Technik der Fallanassi-Macht, die in den heiligen Jedi-Texten aufgezeichnet und von Jedi-Meister Luke Skywalker waehrend der Schlacht von Crait verwendet wurde.\n\n"
+
+REFERENCE           FORCE_PROJECTION_LVL1_DESC
+LANG_ENGLISH        "Rank 1 - The technique allows a Jedi to create an illusory doppelganger of themselves that could be transmitted through the Force across vast distances."
+LANG_GERMAN         "Rang 1 – Die Technik ermoeglicht es einem Jedi, einen illusorischen Doppelgaenger seiner selbst zu erschaffen, der durch die Macht ueber grosse Entfernungen uebertragen werden koennte."
+
+REFERENCE           FORCE_PROJECTION_LVL2_DESC
+LANG_ENGLISH        "Rank 2 - The technique allows a Jedi to create an illusory doppelganger of themselves that could be transmitted through the Force across vast distances."
+LANG_GERMAN         "Rang 2 – Die Technik ermoeglicht es einem Jedi, einen illusorischen Doppelgaenger seiner selbst zu erschaffen, der durch die Macht ueber grosse Entfernungen uebertragen werden koennte."
+
+REFERENCE           FORCE_PROJECTION_LVL3_DESC
+LANG_ENGLISH        "Rank 3 - The technique allows a Jedi to create an illusory doppelganger of themselves that could be transmitted through the Force across vast distances."
+LANG_GERMAN         "Rang 3 – Die Technik ermoeglicht es einem Jedi, einen illusorischen Doppelgaenger seiner selbst zu erschaffen, der durch die Macht ueber grosse Entfernungen uebertragen werden koennte."
+
+ENDMARKER
+
+

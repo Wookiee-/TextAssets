@@ -1,0 +1,37 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           PILOT1
+LANG_ENGLISH        "Yes, sir?"
+LANG_GERMAN         "Ja, Sir?"
+
+REFERENCE           PILOT2
+LANG_ENGLISH        "With all due respect, the ambassadors for the Supreme Chancellor wish to board immediately."
+LANG_GERMAN         "Mit allem gebuehrenden Respekt, die Botschafter des Obersten Kanzlers wuenschen sofort an Bord kommen zu duerfen."
+
+REFERENCE           VIA
+LANG_ENGLISH        "Yes, of course. As you know, our blockade is perfectly legal, and we'd be happy to receive the ambassadors."
+LANG_GERMAN         "Aber gern. Wie ihr wisst, ist unsere Blockade vollkommen legal. Und wir freuen uns, die Botschafter zu empfangen."
+
+REFERENCE           QUI1
+LANG_ENGLISH        "Captain."
+LANG_GERMAN         "#same"
+
+REFERENCE           QUI2
+LANG_ENGLISH        "Tell them we wish to board at once."
+LANG_GERMAN         "Teilt Ihm mit, dass wir sofort an Bord zu kommen wuenschen."
+
+
+ENDMARKER

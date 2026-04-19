@@ -1,0 +1,224 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           BDG1
+LANG_ENGLISH        "Check it out, Corporal. We'll cover you."
+LANG_GERMAN         "Corporal ueberpruef die Lage."
+
+REFERENCE           BD1
+LANG_ENGLISH        "Roger, roger."
+LANG_GERMAN         "#same"
+
+REFERENCE           BDG2
+LANG_ENGLISH        "Uh-oh. Blast them."
+LANG_GERMAN         "Uh-oh. Vernichtet sie."
+
+REFERENCE           DRO1
+LANG_ENGLISH        "Master, Destroyers!"
+LANG_GERMAN         "Meister, Droidekas!"
+
+REFERENCE           DRO3
+LANG_ENGLISH        "Obi-Wan: They have shield generators!\nQui-Gon: It's a stand-off. Let's go!"
+LANG_GERMAN         "Obi-Wan: Sie haben Schildgeneratoren!\nQui-Gon: Ein Patt. Los weg hier!"
+
+REFERENCE           GUN1
+LANG_ENGLISH        "What?! What did you say?"
+LANG_GERMAN         "Was? Was hast du gesagt?"
+
+REFERENCE           GUN2
+LANG_ENGLISH        "Distract them. I will contact Lord Sidious."
+LANG_GERMAN         "Halt sie hin. Ich werde Kontakt mit Lord Sidious aufnehmen."
+
+REFERENCE           GUN3
+LANG_ENGLISH        "My Lord, is that legal?"
+LANG_GERMAN         "Mein Lord, ist das denn legal?"
+
+REFERENCE           GUN4
+LANG_ENGLISH        "And the Jedi?"
+LANG_GERMAN         "Und die Jedi?"
+
+REFERENCE           GUN5
+LANG_ENGLISH        "Yes. Yes, my Lord. Uh, as you wish."
+LANG_GERMAN         "Ja. Ja, mein Lord. Wie ihr wuenscht."
+
+REFERENCE           GUN6
+LANG_ENGLISH        "They must be dead, by now. Destroy what's left of them."
+LANG_GERMAN         "Inzwischen muessten sie tot sein. Vernichtet, was von ihnen uebrig ist."
+
+REFERENCE           GUN7
+LANG_ENGLISH        "Close the blast doors!"
+LANG_GERMAN         "Schliesst die Feuerschutztuer."
+
+REFERENCE           GUN8
+LANG_ENGLISH        "This is impossible!"
+LANG_GERMAN         "Das ist unmoeglich!"
+
+REFERENCE           NEI1
+LANG_ENGLISH        "Sir!"
+LANG_GERMAN         "#same"
+
+REFERENCE           NEI1B
+LANG_ENGLISH        "They've gone up the ventilation shaft."
+LANG_GERMAN         "Sie sind den Luftschacht hinaufgeklettert."
+
+REFERENCE           OBI1
+LANG_ENGLISH        "How do you think this Trade Viceroy will deal with the Chancellor's demands?"
+LANG_GERMAN         "Wie wird dieser Handelsvizekoenig auf die Forderungen des Kanzlers reagieren?"
+
+REFERENCE           OBI2
+LANG_ENGLISH        "Is it in their nature to make us wait this long?"
+LANG_GERMAN         "Ist es bei denen ueblich, uns so lange warten zu lassen?"
+
+REFERENCE           OBI3
+LANG_ENGLISH        "Master, Destroyers!"
+LANG_GERMAN         "Meister, Droidekas!"
+
+REFERENCE           OBI4
+LANG_ENGLISH        "It's an invasion army."
+LANG_GERMAN         "Das ist eine Invasionsarmee."
+
+REFERENCE           OBI5
+LANG_ENGLISH        "You were right about one thing, Master."
+LANG_GERMAN         "In einer Sacht hattet ihr Recht gehabt Meister."
+
+REFERENCE           OBI5B
+LANG_ENGLISH        "The negotiations were short."
+LANG_GERMAN         "Die Verhandlungen waren kurz."
+
+REFERENCE           PRO1
+LANG_ENGLISH        "The ambassadors are Jedi Knights, I believe."
+LANG_GERMAN         "Die Botschafter sind Jedi-Ritter, glaube ich."
+
+REFERENCE           PRO2
+LANG_ENGLISH        "Oh! Sorry!"
+LANG_GERMAN         "Oh! Verzeihung!"
+
+REFERENCE           PRO3
+LANG_ENGLISH        "Oh! Excuse me."
+LANG_GERMAN         "Oh! Verzeihung."
+
+REFERENCE           QUI1
+LANG_ENGLISH        "These Federation types are cowards. The negotiations will be short."
+LANG_GERMAN         "Diese Foerderationsvertreter sind allesamt Feiglinge. Die Verhandlungen werden nicht lange andauern."
+
+REFERENCE           QUI2
+LANG_ENGLISH        "No. I sense an unusual amount of fear, for something as trivial as this Trade dispute."
+LANG_GERMAN         "Nein. Ich spuere ein ungewoehnlich hohes Mass an Furcht, angesichts von etwas so Banalem wie diesem Handelsdisput."
+
+REFERENCE           QUI3
+LANG_ENGLISH        "Dioxis."
+LANG_GERMAN         "#same"
+
+REFERENCE           QUI4
+LANG_ENGLISH        "I sense an unusual amount of fear."
+LANG_GERMAN         "Ich spuere ein ungewoehnlich hohes Mass an Furcht."
+
+REFERENCE           QUI5
+LANG_ENGLISH        "Battledroids?"
+LANG_GERMAN         "Kampfdroiden?"
+
+REFERENCE           QUI6
+LANG_ENGLISH        "This is an odd play for the Trade Federation."
+LANG_GERMAN         "Ein seltsamer Schachzug der Handelsfoerderation."
+
+REFERENCE           QUI6B
+LANG_ENGLISH        "We've got to warn the Naboo and contact Chancellor Valorum."
+LANG_GERMAN         "Wir muessen die Naboo warnen und Komtakt zu Kanzler Valorum aufnehmen."
+
+REFERENCE           QUI6C
+LANG_ENGLISH        "Let's split up. Stow aboard separate ships and meet down on the planet."
+LANG_GERMAN         "Wir trennen uns, verstecken uns an Bord verschiedener Schiffe und treffen uns dann unten auf dem Planeten wieder."
+
+REFERENCE           QUI_EXTRA1
+LANG_ENGLISH        "The room is filling with poison gas!"
+LANG_GERMAN         "Der Raum fuellt sich mit giftigem Gas!"
+
+REFERENCE           QUI_EXTRA2
+LANG_ENGLISH        "It appears as if the Trade Federation is preparing to attack Naboo."
+LANG_GERMAN         "Es scheint, als wuerde die Handelsfoederation einen Angriff auf Naboo vorbereiten."
+
+REFERENCE           QUI_EXTRA3
+LANG_ENGLISH        "There should be a control panel nearby that will disable this force field."
+LANG_GERMAN         "Irgendwo hier muss sich eine Kontrollkonsole befinden, mit der man die Tuer oeffnen kann."
+
+REFERENCE           QUI_EXTRA4
+LANG_ENGLISH        "The droids have locked these blast doors. We have to find another way around."
+LANG_GERMAN         "Finde heraus, wie wir diese Tuer oeffnen koennen. Beeile dich!"
+
+REFERENCE           QUI_EXTRA5
+LANG_ENGLISH        "Obi-Wan. Watch those snipers!"
+LANG_GERMAN         "Beeile dich!"
+
+REFERENCE           QUI_EXTRA6
+LANG_ENGLISH        "The door is open. Let's go!"
+LANG_GERMAN         "Die Tuer ist offen. Schnell!"
+
+REFERENCE           RUN1
+LANG_ENGLISH        "I knew it. They're here to force a settlement."
+LANG_GERMAN         "Ich wusste es. Sie sind hier um eine Einigung zu erzwingen."
+
+REFERENCE           RUN2
+LANG_ENGLISH        "Are you brain-dead? I'm not going in there, with two Jedi."
+LANG_GERMAN         "Hast du einen Knall? Ich gehe doch nicht rein zu zwei Jedi."
+
+REFERENCE           RUN2B
+LANG_ENGLISH        "Send a droid."
+LANG_GERMAN         "Schick den Droiden."
+
+REFERENCE           RUN3
+LANG_ENGLISH        "This scheme of yours has failed, Lord Sidious."
+LANG_GERMAN         "Eure Verschwoerung ist gescheitert, Lord Sidious."
+
+REFERENCE           RUN3B
+LANG_ENGLISH        "The blockade is finished. We dare not go against the Jedi."
+LANG_GERMAN         "Die Blockade ist beendet. Wir koennen nichts gegen die Jedi tun."
+
+REFERENCE           RUN4
+LANG_ENGLISH        "They are still coming through!"
+LANG_GERMAN         "Sie kommen trotzdem durch!"
+
+REFERENCE           RUN5
+LANG_ENGLISH        "Where are those droidekas?"
+LANG_GERMAN         "Wo bleiben die Droidekas?"
+
+REFERENCE           RUN6
+LANG_ENGLISH        "They're no match for droidekas."
+LANG_GERMAN         "Gegen die Droidekas haben sie keine Chance."
+
+REFERENCE           SID1
+LANG_ENGLISH        "What is it?"
+LANG_GERMAN         "Was gibt es?"
+
+REFERENCE           SID2
+LANG_ENGLISH        "Viceroy, I don't want this stunted slime in my sight again!"
+LANG_GERMAN         "Vizekoenig, ich will diese schleimige Ausgeburt nie wieder sehen!"
+
+REFERENCE           SID2B
+LANG_ENGLISH        "This turn of events is unfortunate. We must accelerate our plans. Begin landing your troops."
+LANG_GERMAN         "Diese Wendung der Ereignisse ist bedauerlich. Wir muessen unser Vorhaben beschleunigen. Beginnt die Landung euere Truppen."
+
+REFERENCE           SID3
+LANG_ENGLISH        "I will make it legal."
+LANG_GERMAN         "Ich werde dafuer sorge tragen."
+
+REFERENCE           SID4
+LANG_ENGLISH        "The Chancellor should never have brought them into this."
+LANG_GERMAN         "Der Kanzler haette sie niemals hineinziehen duerfen."
+
+REFERENCE           SID4B
+LANG_ENGLISH        "Kill them immediately!"
+LANG_GERMAN         "Toetet beide auf der Stelle!"
+
+ENDMARKER

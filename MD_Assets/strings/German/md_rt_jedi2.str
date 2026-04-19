@@ -1,0 +1,136 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           PAL1
+LANG_ENGLISH        "Palpatine: You have done well, my new apprentice.\nNow, Lord Vader, go and bring peace to the Empire."
+LANG_GERMAN         "Palpatine: Das hast du gut gemacht, mein neuer Schueler.\nUnd nun, Lord Vader, geht und verbreitet Frieden im Imperium."
+ 
+REFERENCE           OBI1
+LANG_ENGLISH        "Not even the younglings survived."
+LANG_GERMAN         "Nicht einmal die Juenglinge haben ueberlebt."
+
+REFERENCE           OBI2
+LANG_ENGLISH        "Who? Who could’ve done this?"
+LANG_GERMAN         "Wer? Wer koennte das getan haben?"
+
+REFERENCE           OBI3
+LANG_ENGLISH        "I have recalibrated the code, warning all surviving Jedi to stay away."
+LANG_GERMAN         "Ich habe den Code rekallibriert und alle ueberlebenden Jedi gewarnt, nicht hierher zu kommen."
+
+REFERENCE           OBI4
+LANG_ENGLISH        "Wait, Master."
+LANG_GERMAN         "Wartet, Meister."
+
+REFERENCE           OBI4B
+LANG_ENGLISH        "There is something I must know."
+LANG_GERMAN         "Es gibt da etwas, dass ich wissen muss."
+
+REFERENCE           OBI5
+LANG_ENGLISH        "I must know the truth, Master."
+LANG_GERMAN         "Ich muss die Wahrheit erfahren, Meister."
+
+REFERENCE           OBI5B
+LANG_ENGLISH        "It can't be... It can't be!"
+LANG_GERMAN         "Das ist nicht moeglich.. Das ist doch nicht moeglich!"
+
+REFERENCE           OBI6
+LANG_ENGLISH        "I can't watch any more."
+LANG_GERMAN         "Ich kann mir das nicht laenger ansehen."
+
+REFERENCE           OBI7
+LANG_ENGLISH        "Send me to kill the Emperor. I will not kill Anakin."
+LANG_GERMAN         "Entsendet mich, den Imperator zu toeten. Ich werde Anakin nicht toeten."
+
+REFERENCE           OBI8
+LANG_ENGLISH        "He is like my brother. I cannot do it!"
+LANG_GERMAN         "Er ist mir wie ein Bruder. Ich kann es nicht tun!"
+
+REFERENCE           OBI9
+LANG_ENGLISH        "I do not know where the Emperor has sent him."
+LANG_GERMAN         "Ich weiss nicht, wohin ihn der Imperator geschickt hat."
+
+REFERENCE           OBI9B
+LANG_ENGLISH        "I don't know where to look."
+LANG_GERMAN         "Ich weiss nicht, wo ich ihn suchen soll."
+
+REFERENCE           OBI10
+LANG_ENGLISH        "How many other Jedi have managed to survive?"
+LANG_GERMAN         "Wie viele Jedi haben sonst noch ueberlebt?"
+
+REFERENCE           OBI11
+LANG_ENGLISH        "It can't be. It can't be!"
+LANG_GERMAN         "Das ist nicht moeglich.. Das ist doch nicht moeglich!"
+
+REFERENCE           YOD1
+LANG_ENGLISH        "Killed not by clones, this.. Padawan."
+LANG_GERMAN         "Nicht von Klonkriegern getoetet, dieser.. Padawan wurde."
+
+REFERENCE           YOD1B
+LANG_ENGLISH        "By a lightsaber, he was."
+LANG_GERMAN         "Sondern durch ein Laserschwert, er starb."
+
+REFERENCE           YOD2
+LANG_ENGLISH        "For the clones..."
+LANG_GERMAN         "Fuer die Klone..."
+
+REFERENCE           YOD2B
+LANG_ENGLISH        "To discover the recalibration, a long time it will take."
+LANG_GERMAN         "Eine lange Zeit es wird brauchen, die Rekalibrierung zu entdecken."
+
+REFERENCE           YOD3
+LANG_ENGLISH        "If into the security recordings you go, only pain will you find."
+LANG_GERMAN         "Wenn die Sicherheitsaufzeichnungen du dir ansiehst, nur Schmerz du wirst finden."
+
+REFERENCE           YOD4
+LANG_ENGLISH        "Destroy the Sith, we must."
+LANG_GERMAN         "Vernichten die Sith, wir muessen."
+
+REFERENCE           YOD5
+LANG_ENGLISH        "To fight this Lord Sidious, strong enough you are not."
+LANG_GERMAN         "Diesen Lord Sidious zu bezwingen, stark genug du bist nicht."
+
+REFERENCE           YOD6
+LANG_ENGLISH        "Twisted by the Dark Side, young Skywalker has become."
+LANG_GERMAN         "Verwirrt von der dunklen Seite, der Junge Skywalker geworden ist."
+
+REFERENCE           YOD6B
+LANG_ENGLISH        "The boy you trained, gone he is. Consumed by Darth Vader."
+LANG_GERMAN         "Der Junge, den ausgebildet du hast, verschwunden er ist. In Darth Vader."
+
+REFERENCE           YOD7
+LANG_ENGLISH        "Use your feelings, Obi-Wan, and find him you will."
+LANG_GERMAN         "Nutze deine Gefuehle, Obi-Wan. Dann ihn finden du wirst."
+
+REFERENCE           YOD8
+LANG_ENGLISH        "Heard from no one, have we."
+LANG_GERMAN         "Gehoert von niemandem, wir haben."
+
+REFERENCE           OBISPLIT1
+LANG_ENGLISH        "We seem to have attracted some unwanted attention."
+LANG_GERMAN         "Wir scheinen ein wenig Aufmerksamkeit erregt zu haben."
+
+REFERENCE           OBISPLIT2
+LANG_ENGLISH        "Shall we split up?"
+LANG_GERMAN         "Sollen wir uns trennen?"
+
+REFERENCE           YODSPLIT1
+LANG_ENGLISH        "Divide that attention, we can."
+LANG_GERMAN         "Diese Aufmerksamkeit teilen wir koennen."
+
+REFERENCE           YODSPLIT2
+LANG_ENGLISH        "And may the Force soon bring us together again."
+LANG_GERMAN         "Moege die Macht uns wieder zusammenfuehren."
+
+ENDMARKER

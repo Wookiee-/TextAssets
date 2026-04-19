@@ -1,0 +1,60 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           ANI1
+LANG_ENGLISH        "I sense Count Dooku . . ."
+LANG_GERMAN         "Ich spuere Count Dooku. . ."
+
+REFERENCE           ANI2
+LANG_ENGLISH        "Next move?"
+LANG_GERMAN         "Was sollen wir tun?"
+
+REFERENCE           ANI3
+LANG_ENGLISH        "Artoo, go back. I need you to stay with the ship."
+LANG_GERMAN         "R2, geh wieder zurueck. Ich will, dass du beim Schiff bleibst."
+
+REFERENCE           OBI1
+LANG_ENGLISH        "R2, locate the Chancellor."
+LANG_GERMAN         "R2, lokalisiere den Kanzler."
+
+REFERENCE           OBI2
+LANG_ENGLISH        "The Chancellor's signal is coming from right there. The observation platform at the top of that spire."
+LANG_GERMAN         "Das Signal des Kanzlers kommt genau von dort. Von der Aussichtsplattform oben in diesem Turm."
+
+REFERENCE           OBI3
+LANG_ENGLISH        "I sense a trap."
+LANG_GERMAN         "Ich spure eine Falle."
+
+REFERENCE           OBI4
+LANG_ENGLISH        "Spring the trap."
+LANG_GERMAN         "Die Falle aktivieren."
+
+REFERENCE           OBI5
+LANG_ENGLISH        "Here, take this, and wait for orders."
+LANG_GERMAN         "Ja, nimm das, warte auf weitere Befehle."
+
+REFERENCE           GRI1
+LANG_ENGLISH        "What's the situation, Captain?"
+LANG_GERMAN         "Wie ist die Lage, Captain?"
+
+REFERENCE           GRI2
+LANG_ENGLISH        "Just as Count Dooku predicted."
+LANG_GERMAN         "Genau wie es Count Dooku vorhergesagt hat."
+
+REFERENCE           CAP1
+LANG_ENGLISH        "Two Jedi have landed in the main hangar bay. We're tracking them."
+LANG_GERMAN         "Zwei Jedi sind im Haupthangar gelandet. Wir verfolgen sie."
+
+ENDMARKER

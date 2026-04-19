@@ -1,0 +1,44 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH "HALT"
+// LANG_GERMAN "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+// and because we do not store duplicate strings, which will then get exported again next time
+// as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "in game text for saber styles"
+
+REFERENCE           FAST_STYLE
+LANG_ENGLISH        "Fast and efficient, but with limited range. Short, quick motions allow for multiple attacks but with minimum damage. This style can be chained indefinitely. It utilizes a defensive stance in which the Jedi holds his saber across his front in a ready position to fend off attacks or make quick jabs. Represented by a blue bar on the right side of the HUD."
+LANG_GERMAN         "Schnell und effizient, aber mit begrenzter Reichweite. Kurze, schnelle Bewegungen ermoeglichen mehrere Angriffe, aber mit minimalem Schaden. Dieser Stil kann unbegrenzt verkettet werden. Er nutzt eine defensive Haltung, in der der Jedi sein Lichtschwert quer vor sich in einer Bereitschaftsposition haelt, um Angriffe abzuwehren oder schnelle Stoesse auszufuehren. Wird durch einen blauen Balken auf der rechten Seite des HUD dargestellt."
+
+REFERENCE           MEDIUM_STYLE
+LANG_ENGLISH        "An intermediate style between the fast and the strong styles, the medium style is based on a perfect equilibrium between speed and power. Users of the medium style would typically utilize a neutral stance, the lightsaber being held in medium position in front of the user ready for both defensive and offensive maneuvers. Represented by a yellow bar on the right side of the HUD."
+LANG_GERMAN         "Ein Zwischenstil zwischen dem schnellen und dem starken Stil, der mittlere Stil basiert auf einem perfekten Gleichgewicht zwischen Geschwindigkeit und Kraft. Benutzer des mittleren Stils verwenden typischerweise eine neutrale Haltung, wobei das Lichtschwert in mittlerer Position vor dem Benutzer gehalten wird, bereit fuer defensive und offensive Manoever. Wird durch einen gelben Balken auf der rechten Seite des HUD dargestellt."
+
+REFERENCE           STRONG_STYLE
+LANG_ENGLISH        "Uses powerful strikes to batter through defenses. This style incorporates great range and power, but often leaves the Jedi open for counter attack. It utilizes a powerful, aggressive stance in which the Jedi holds his saber high and back, ready to go into a heavy swing. Represented by a red bar on the right side of the HUD."
+LANG_GERMAN         "Verwendet kraftvolle Schlaege, um sich durch Verteidigungen zu schlagen. Dieser Stil beinhaltet grosse Reichweite und Kraft, laesst den Jedi aber oft offen fuer Gegenangriffe. Er nutzt eine kraftvolle, aggressive Haltung, in der der Jedi sein Lichtschwert hoch und nach hinten haelt, bereit fuer einen schweren Schwung. Wird durch einen roten Balken auf der rechten Seite des HUD dargestellt."
+
+REFERENCE           DUAL_STYLE
+LANG_ENGLISH        "An intermediate style between the fast and the strong styles, the dual style is based on a perfect equilibrium between speed and power. Users of the medium style would typically utilize a neutral stance, the lightsaber being held in medium position in front of the user ready for both defensive and offensive maneuvers. Represented by a orange bar on the right side of the HUD."
+LANG_GERMAN         "Ein Zwischenstil zwischen dem schnellen und dem starken Stil, der Dual-Stil basiert auf einem perfekten Gleichgewicht zwischen Geschwindigkeit und Kraft. Benutzer des mittleren Stils verwenden typischerweise eine neutrale Haltung, wobei das Lichtschwert in mittlerer Position vor dem Benutzer gehalten wird, bereit fuer defensive und offensive Manoever. Wird durch einen orangefarbenen Balken auf der rechten Seite des HUD dargestellt."
+
+REFERENCE           STAFF_STYLE
+LANG_ENGLISH        "An intermediate style between the fast and the strong styles, the staff style is based on a perfect equilibrium between speed and power. Users of the medium style would typically utilize a neutral stance, the lightsaber being held in medium position in front of the user ready for both defensive and offensive maneuvers. Represented by a green bar on the right side of the HUD."
+LANG_GERMAN         "Ein Zwischenstil zwischen dem schnellen und dem starken Stil, der Stab-Stil basiert auf einem perfekten Gleichgewicht zwischen Geschwindigkeit und Kraft. Benutzer des mittleren Stils verwenden typischerweise eine neutrale Haltung, wobei das Lichtschwert in mittlerer Position vor dem Benutzer gehalten wird, bereit fuer defensive und offensive Manoever. Wird durch einen gruenen Balken auf der rechten Seite des HUD dargestellt."
+
+REFERENCE           DESANN_STYLE
+LANG_ENGLISH        "This one-handed style is sort of a cross between Medium and Strong styles. It is only available to single saber by default. Compared to Red Stance it is slightly faster. It also has unlimited attack chaining. It uses the same stance pose as Medium style. It uses the Leaping slash-down DFA of Strong style, the Lunge attack of Fast, and the kata of Strong style. Represented by a purple bar on the right side of the HUD."
+LANG_GERMAN         "Dieser einhaendige Stil ist eine Art Kreuzung zwischen Mittlerem und Starkem Stil. Er ist standardmaessig nur fuer das einzelne Lichtschwert verfuegbar. Im Vergleich zur Roten Haltung ist er etwas schneller. Er hat auch unbegrenzte Angriffsketten. Er verwendet dieselbe Haltung wie der Mittlere Stil. Er nutzt den springenden Abwaertsschlag (DFA) des Starken Stils, den Ausfallschritt-Angriff (Lunge) des Schnellen Stils und die Kata des Starken Stils. Wird durch einen violetten Balken auf der rechten Seite des HUD dargestellt."
+
+REFERENCE           TAVION_STYLE
+LANG_ENGLISH        "This one-handed style is sort of a cross between Fast style and Medium style. The wielder uses the same pose/saber stance as Fast Style. It is not available with any other type of saber. Its attacks are as quick as Fast style. It also has unlimited attack chaining. It uses the flip slash DFA of Medium style and the kata of Fast style. Represented by a cyan bar on the right side of the HUD."
+LANG_GERMAN         "Dieser einhaendige Stil ist eine Art Kreuzung zwischen Schnellem Stil und Mittlerem Stil. Der Traeger verwendet dieselbe Pose/Lichtschwerthaltung wie der Schnelle Stil. Er ist nicht mit anderen Lichtschwerttypen verfuegbar. Seine Angriffe sind so schnell wie der Schnelle Stil. Er hat auch unbegrenzte Angriffsketten. Er nutzt den Flip-Slash DFA des Mittleren Stils und die Kata des Schnellen Stils. Wird durch einen cyanfarbenen Balken auf der rechten Seite des HUD dargestellt."
+
+ENDMARKER

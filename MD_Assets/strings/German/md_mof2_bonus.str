@@ -1,0 +1,29 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+
+REFERENCE           CLO1
+LANG_ENGLISH        "There's no sign of his body, sir."
+LANG_GERMAN         "Eine Leiche ist nirgends zu finden, sir."
+
+REFERENCE           CLO2
+LANG_ENGLISH        "Yes, sir! Right away, sir!"
+LANG_GERMAN         "Ja, sir! Sofort, sir!"
+
+REFERENCE           PAL4
+LANG_ENGLISH        "Then he is not dead. Double your search!"
+LANG_GERMAN         "Dann ist er noch nicht tot. Verdoppelt die Suchmannschaften!"
+
+ENDMARKER

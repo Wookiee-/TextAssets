@@ -1,0 +1,49 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+
+REFERENCE           OD_ANI6
+LANG_ENGLISH        "I shouldn't!"
+LANG_GERMAN         "Das darf ich nicht!"
+
+REFERENCE           OD_PAL3
+LANG_ENGLISH        "Good, Anakin, Good [Laughs] Kill him."
+LANG_GERMAN         "Gut, Anakin. Gut. [Lacht] Toete ihn, mein Junge."
+
+REFERENCE           OD_PAL4
+LANG_ENGLISH        "Kill him now."
+LANG_GERMAN         "Auf der Stelle."
+
+REFERENCE           OD_PAL5
+LANG_ENGLISH        "Do it!"
+LANG_GERMAN         "Tu es!"
+
+REFERENCE           BONUS_PAL1
+LANG_ENGLISH        "Your arrogance blinds you. Now you will experience the full power of the Dark Side!"
+LANG_GERMAN         "Eure Arroganz blendet euch. Jetzt werdet ihr erleben, wie sich die vollkommene Macht der dunklen Seite auswirkt!"
+
+REFERENCE           BONUS_ANI1
+LANG_ENGLISH        "How can you do this? This is outrageous. It's unfair!"
+LANG_GERMAN         "Wie koennt ihr das tun? Das ist unerhoert. Das ist ungerecht!"
+
+REFERENCE           BONUS_GRI1
+LANG_ENGLISH        "[Coughs] Anakin Skywalker. I was expecting someone with your reputation to be a little.. Older."
+LANG_GERMAN         "[Hustet] Anakin Skywalker. Bei jemandem mit deinem Ruhm haette ich erwartet, dass du ein wenig ... aelter waerst."
+
+REFERENCE           PO_ANI5
+LANG_ENGLISH        "What have I done?!"
+LANG_GERMAN         "Was hab ich getan?!"
+
+ENDMARKER

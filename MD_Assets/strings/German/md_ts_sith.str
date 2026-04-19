@@ -1,0 +1,72 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           MAUL1
+LANG_ENGLISH        "[ Sighs ] Look what has become of you.\nA rat in the desert."
+LANG_GERMAN         "[ Seufzt ] Sieh an, was aus dir geworden ist.\nEine Ratte in der Wueste."
+
+REFERENCE           MAUL2
+LANG_ENGLISH        "I've come to kill you, but perhaps it's worse to leave you here, festering in your squalor."
+LANG_GERMAN         "Ich bin gekommen, um dich zu toeten, aber vielleicht ist es noch schlimmer, dich hier zu lassen, damit du dich hier deinem Elend stellen kannst."
+
+REFERENCE           MAUL3
+LANG_ENGLISH        "[Grunts]\nAnd what do you have?"
+LANG_GERMAN         "[Grunzt]\nUnd was hast du?"
+
+REFERENCE           MAUL4
+LANG_ENGLISH        "Why come to this place?\nNot simply to hide."
+LANG_GERMAN         "Aus welchem Grund bist du hierher gekommen?\nDoch nicht nur, um dich zu verstecken."
+
+REFERENCE           MAUL5
+LANG_ENGLISH        "Oh, you have a purpose here.\nPerhaps you are protecting something."
+LANG_GERMAN         "Oh, du hast hier etwas wichtiges zu tun. Was koennte das sein?\nVielleicht beschuetzt du etwas?"
+
+REFERENCE           MAUL5B
+LANG_ENGLISH        "No."
+LANG_GERMAN         "Nein."
+
+REFERENCE           MAUL5C
+LANG_ENGLISH        "Protecting someone."
+LANG_GERMAN         "Du bist hier, um jemanden zu beschuetzen."
+
+REFERENCE           MAUL6
+LANG_ENGLISH        "[ Grunts ]"
+LANG_GERMAN         "[ Grunzt ]"
+
+REFERENCE           MAUL7
+LANG_ENGLISH        "Tell me. Is it the Chosen One?"
+LANG_GERMAN         "Sag es mir. Ist es der Auserwaehlte?"
+
+REFERENCE           MAUL8
+LANG_ENGLISH        "He.. will avenge us."
+LANG_GERMAN         "Er.. wird uns.. wird und raechen."
+
+REFERENCE           MAUL9
+LANG_ENGLISH        "[ Grunts ] You disappoint me!"
+LANG_GERMAN         "[ Grunzt ] Du enttaeuscht mich!"
+
+REFERENCE          	BEN1
+LANG_ENGLISH       	"Look what I have risen above."
+LANG_GERMAN         "Sieh worueber ich mich erhoben habe."
+
+REFERENCE          	BEN2
+LANG_ENGLISH       	"If you define yourself by your power to take life,\na desire to dominate, to possess, then you have nothing."
+LANG_GERMAN         "Wenn du dich ueber deine Macht, Leben zu nehmen, definierst,\nueber dein Verlangen, zu beherrschen, zu besitzen, dann hast du rein gar nhcts."
+
+REFERENCE          	BEN3
+LANG_ENGLISH       	"He is."
+LANG_GERMAN         "Er ist es."
+
+ENDMARKER

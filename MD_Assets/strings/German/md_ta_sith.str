@@ -1,0 +1,169 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+
+REFERENCE           C3PO1
+LANG_ENGLISH        "Did you hear that?"
+LANG_GERMAN         "Hast du das gehoert?"
+
+REFERENCE           C3PO1B
+LANG_ENGLISH        "They shut down the main reactor.\nWe'll be destroyed for sure."
+LANG_GERMAN         "Sie haben den Hauptreaktor getroffen.\nWir werden bestimmt vernichtet werden."
+
+REFERENCE           C3PO1C
+LANG_ENGLISH        "This is madness!"
+LANG_GERMAN         "Der reine Wahnwitz!"
+
+REFERENCE           C3PO2
+LANG_ENGLISH        "We're doomed."
+LANG_GERMAN         "Wir sind verloren."
+
+REFERENCE           C3PO2B
+LANG_ENGLISH        "There'll be no escape for the princess this time."
+LANG_GERMAN         "Diesmal gibts kein Entrinnen fuer die Prinzessin."
+
+REFERENCE           C3PO3
+LANG_ENGLISH        "What's that?"
+LANG_GERMAN         "Was ist das?"
+
+REFERENCE           C3PO4
+LANG_ENGLISH        "R2-D2, where are you?"
+LANG_GERMAN         "R2-D2, wo steckst du?"
+
+REFERENCE           C3PO5
+LANG_ENGLISH        "At last. Where have you been?"
+LANG_GERMAN         "Endlich. Wo hast du nur gesteckt?"
+
+REFERENCE           C3PO5B
+LANG_ENGLISH        "They're heading in this direction. What are we going to do?\nWe'll be sent to the spice mine of Kessel or smashed into who knows what."
+LANG_GERMAN         "Die kommen direkt auf uns zu. Was jetzt?\nDie werden uns in die Minen schicken oder zu sonst was verschrotten."
+
+REFERENCE           C3PO6
+LANG_ENGLISH        "Wait a minute. Where are you going?"
+LANG_GERMAN         "Moment mal, wo willst du hin?"
+
+REFERENCE           C3PO7
+LANG_ENGLISH        "Hey, you're not permitted in there. It's restricted.\nYou'll be deactivated for sure."
+LANG_GERMAN         "Halt, da darfst du nicht rein. Zutritt untersagt.\nDu wirst noch deaktiviert werden."
+
+REFERENCE           C3PO8
+LANG_ENGLISH        "Don't call me a mindless philosopher, you overweight glob of grease.\nNow come out, before somebody sees you."
+LANG_GERMAN         "Du kleiner Schmieroelklumpen, sag nicht immer du wirkoepfiger Philosoph zu mir.\nKomm lieber, bevor dich jemand sieht."
+
+REFERENCE           C3PO9
+LANG_ENGLISH        "Secret mission? What plans?\nWhat are you talking about? I'm not getting in there."
+LANG_GERMAN         "Geheimauftrag? Was fuer Plaene?\nWovon redest du? Da geh ich nicht rein."
+
+REFERENCE           C3PO10
+LANG_ENGLISH        "I'm going to regret this."
+LANG_GERMAN         "Das wird mir noch leid tun."
+
+REFERENCE           IMP1
+LANG_ENGLISH        "Holding her is dangerous. If word of this gets out,\nit could generate sympathy for the Rebellion in the senate."
+LANG_GERMAN         "Sie gefangen zu halten ist gefaehrlich. Wenn etwas durchsickert,\nkann das der Rebellion Sympathien bringen im Senat."
+
+REFERENCE           IMP2
+LANG_ENGLISH        "She'll die before she'll tell you anything."
+LANG_GERMAN         "Sie wird lieber sterben, als uns etwas zu verraten."
+
+REFERENCE           IMP3
+LANG_ENGLISH        "Lord Vader, the battle station plans are not aboard this ship,\nand no transmissions were made."
+LANG_GERMAN         "Lord Vader, die Geheimplaene sind nicht an Bord dieses Raumschiffs,\nUebertragungen sind nicht aufgezeichnet worden."
+
+REFERENCE           IMP3B
+LANG_ENGLISH        "An escape pod was jettisoned during the fighting,\nbut no life-forms were aboard."
+LANG_GERMAN         "Waehrend der Kaempfe hat sich eine Rettungskapsel abgeloest,\naber es war kein Lebewesen an Bord."
+
+REFERENCE           IMP4
+LANG_ENGLISH        "Yes, sir."
+LANG_GERMAN         "Jawol, sir."
+
+REFERENCE           LEIA1
+LANG_ENGLISH        "Darth Vader. Only you could be so bold.\nThe Imperial Senate will not sit still for this. When they hear you've attacked a diplomat-"
+LANG_GERMAN         "Darth Vader. Nur ihr konntet so etwas wagen.\nDas Imperiale Zentrum wird euch zur Rechenschaft ziehen, wenn bekannt wird, dass Sie ein diplomat-"
+
+REFERENCE           LEIA2
+LANG_ENGLISH        "I don't know what you're talking about.\nI'm a member of the Imperial Senate on a diplomatic mission to Alderaan."
+LANG_GERMAN         "Ich habe keine Ahnung, wovon ihr redet.\nIch bin Mitglied des Imperialen Senats und als Diplomat auf dem Weg nach Alderaan."
+
+REFERENCE           R2D21
+LANG_ENGLISH        "(R2-D2 BEEPS)"
+LANG_GERMAN         "#same"
+
+REFERENCE           R2D21B
+LANG_ENGLISH        "(BEEP WHISTLE BLIP)"
+LANG_GERMAN         "#same"
+
+REFERENCE           R2D21C
+LANG_ENGLISH        "(WHISTLE BEEP BEEP)"
+LANG_GERMAN         "#same"
+
+REFERENCE           R2D22
+LANG_ENGLISH        "(BEEP BEEP)"
+LANG_GERMAN         "#same"
+
+REFERENCE           R2D2_PLANS
+LANG_ENGLISH        "(BEEP BLIP BEEP)"
+LANG_GERMAN         "#same"
+
+REFERENCE           REBEL1
+LANG_ENGLISH        "(CHOKING) We intercepted no transmissions.\nThis is a consular ship. Were on a diplomatic mission."
+LANG_GERMAN         "(GEWUERGT) Wir haben keine Plaene empfangen.\nDies ist ein Konsularschiff. Wir sind in diplomatischer Mission unterwegs."
+
+REFERENCE           STORMTROOPER1
+LANG_ENGLISH        "The Death Star plans are not in the main computer."
+LANG_GERMAN         "Die Plaene vom Todesstern sind nicht im Computer."
+
+REFERENCE           STORMTROOPER2
+LANG_ENGLISH        "There's one. Set for stun."
+LANG_GERMAN         "Da ist jemand. Betaeubungsschuss."
+
+REFERENCE           STORMTROOPER3
+LANG_ENGLISH        "She'll be alright.\nInform Lord Vader we have a prisoner."
+LANG_GERMAN         "Der fehlt nichts.\Sagt Lord Vader, wir haben eine Gefangene."
+
+REFERENCE           VADER1
+LANG_ENGLISH        "Where are those transmissions you intercepted?\nWhat have you done with those plans?"
+LANG_GERMAN         "Was habt ihr mit der Funkuebertragung dieser Plaene gemacht,\ndie ihr empfangen habt?"
+
+REFERENCE           VADER2
+LANG_ENGLISH        "If this is a consular ship, where is the ambassador?"
+LANG_GERMAN         "Wenn das hier ein Konsularschiff ist, wo ist dann der Botschafter?"
+
+REFERENCE           VADER3
+LANG_ENGLISH        "Commander, tear this ship apart until you've found those plans!\nAnd bring me the passengers. I want them alive!"
+LANG_GERMAN         "Commander, nehmen Sie das Schiff auseinander, bis Sie die Plaene haben!\nUnd brigen Sie mir die Passagiere, lebend!"
+
+REFERENCE           VADER4
+LANG_ENGLISH        "Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by rebel spies. I want to know what happened to the plans they sent you."
+LANG_GERMAN         "Aber Hoheit, ihr befandet euch diesmal nicht auf einem Wohltaetigkeitsflug. Die Spione der Rebellen hatten mehrfach Funkverbindung mit diesem Raumschiff. Was ist mit den Plaenen passiert, die sie euch gefunkt haben?"
+
+REFERENCE           VADER5
+LANG_ENGLISH        "You are a part of the Rebel Alliance and a traitor.\nTake her away!"
+LANG_GERMAN         "Ihr gehoert zur Allianz der Rebellen, ihr seid eine Verraeterin.\nSchafft sie weg!"
+
+REFERENCE           VADER6
+LANG_ENGLISH        "I have traced the Rebel spies to her.\nNow she is my only link to finding their secret base!"
+LANG_GERMAN         "Ich habe die Spur der Spione bis zu ihr verfolgt.\nJetzt wird sie mir helfen, den geheimen Stuetzpunkt zu finden."
+
+REFERENCE           VADER7
+LANG_ENGLISH        "Leave that to me.\nSend a distress signal, and then inform the senate that all aboard were killed."
+LANG_GERMAN         "Ueberlassen sie das mir. Sie funken ein Notsignal, dann melden sie dem Senat, dass hier keiner ueberlebt hat."
+
+REFERENCE           VADER8
+LANG_ENGLISH        "She must have hidden the plans in the escape pod. Send a detachment down to retrieve them. See to it personally, Commander. There'll be no one to stop us this time."
+LANG_GERMAN         "Da drinn muss sie die Plaene versteckt haben. Schicken sie ein Bergungskommando los. Sie werden sich persoenlich darum kuemmern, Commander. Diesmal wird uns niemand aufhalten."
+
+ENDMARKER

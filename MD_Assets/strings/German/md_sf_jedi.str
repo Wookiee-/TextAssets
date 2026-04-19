@@ -1,0 +1,169 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           KYLO1
+LANG_ENGLISH        "I know what I have to do."
+LANG_GERMAN         "Ich weiss, was ich zu tun habe."
+
+REFERENCE           KYLO2
+LANG_ENGLISH        "It's time to let old things die. Snoke... Skywalker. The Sith... the Jedi, the Rebels... let it all die."
+LANG_GERMAN         "Es wird Zeit, dass die Vergangenheit stirbt. Snoke... Skywalker. Die Sith... die Jedi, die Rebellen... lass alles sterben."
+
+REFERENCE           KYLO3
+LANG_ENGLISH        "Rey. I want you to join me. We can rule together and bring a new order to the galaxy."
+LANG_GERMAN         "Rey. Verbuende dich mit mir. Wir koennen gemeinsam herrschen und der Galaxis eine neue Ordnung bringen."
+
+REFERENCE           KYLO4
+LANG_ENGLISH        "No, no you're still holding on! Let go!"
+LANG_GERMAN         "Nein, nein, du haeltst noch daran fest! Lass los!"
+
+REFERENCE           KYLO5
+LANG_ENGLISH        "Do you want to know the truth about your parents? Or have you always known? You've just hidden it away."
+LANG_GERMAN         "Willst du die Wahrheit ueber deine Eltern wissen? Oder hast du sie immer gewusst? Du hast sie nur verdraengt."
+
+REFERENCE           KYLO6
+LANG_ENGLISH        "You know the truth. Say it. Say it."
+LANG_GERMAN         "Du kennst die Wahrheit. Sag es. Sag es."
+
+REFERENCE           KYLO7
+LANG_ENGLISH        "They were filthy junk traders... who sold you off for drinking money."
+LANG_GERMAN         "Sie waren dreckige Schrotthaendler... verkauften dich, um ihren Suff zu finanzieren."
+
+REFERENCE           KYLO8
+LANG_ENGLISH        "They're dead... in a poverished grave in the Jakku desert. You have no place in this story. You come from nothing you're nothing."
+LANG_GERMAN         "Sie sind tot... wurden verscharrt auf einem Armenfriedhof auf Jakku. Du hast keinen Platz in dieser Geschichte. Du kommst aus dem Nichts, du bist nichts."
+
+REFERENCE           KYLO9
+LANG_ENGLISH        "But not to me. Join me."
+LANG_GERMAN         "Doch nicht fuer mich. Komm mit mir."
+
+REFERENCE           KYLO10
+LANG_ENGLISH        "Please."
+LANG_GERMAN         "Bitte."
+
+REFERENCE           REY1
+LANG_ENGLISH        "You underestimate Skywalker... and Ben Solo... And me."
+LANG_GERMAN         "Ihr unterschaetzt Skywalker... und Ben Solo... und mich."
+
+REFERENCE           REY2
+LANG_ENGLISH        "No."
+LANG_GERMAN         "Nein."
+
+REFERENCE           REY4
+LANG_ENGLISH        "[Screaming in pain]"
+LANG_GERMAN         "[Schrei vor Schmerz]"
+
+REFERENCE           REY7
+LANG_ENGLISH        "[Screaming in pain]"
+LANG_GERMAN         "[Schrei vor Schmerz]"
+
+REFERENCE           REY10
+LANG_ENGLISH        "The fleet. Order them to stop firing. There is still time to save the fleet."
+LANG_GERMAN         "Die Flotte. Gib den Befehl, das Feuer einzustellen. Wir koennen die Flotte immer noch retten."
+
+REFERENCE           REY11
+LANG_ENGLISH        "Ben?"
+LANG_GERMAN         "#same"
+
+REFERENCE           REY12
+LANG_ENGLISH        "Don't do this, Ben. Please don't go this way."
+LANG_GERMAN         "Tu das nicht, Ben. Bitte geh nicht diesen Weg."
+
+REFERENCE           REY13
+LANG_ENGLISH        "They were nobody."
+LANG_GERMAN         "Sie waren niemand."
+
+REFERENCE           SNOKE1
+LANG_ENGLISH        "Well done, my good and faithful apprentice. My faith in you, is restored."
+LANG_GERMAN         "Ausgezeichnet, mein guter und treuer Schueler. Mein Vertrauen in dich ist wiederhergestellt."
+
+REFERENCE           SNOKE2
+LANG_ENGLISH        "Young Rey. Welcome."
+LANG_GERMAN         "Junge Rey. Willkommen."
+
+REFERENCE           SNOKE3
+LANG_ENGLISH        "Come closer, child."
+LANG_GERMAN         "Komm naeher, Kind."
+
+REFERENCE           SNOKE4
+LANG_ENGLISH        "So much strength. Darkness rises... and light to meet it."
+LANG_GERMAN         "So ueberaus Stark. Die Dunkelheit erhebt sich... genau wie das Licht, um sich zu messen."
+
+REFERENCE           SNOKE5
+LANG_ENGLISH        "I warned my young apprentice... that as he grew stronger... his equal in the light would rise."
+LANG_GERMAN         "Ich habe meinen jungen Schueler gewarnt... dass, wenn er staerker wuerde... sich jemand ebenbuertiges auf der guten Seite erhebt."
+
+REFERENCE           SNOKE6
+LANG_ENGLISH        "Skywalker... I assumed... wrongly."
+LANG_GERMAN         "Skywalker... hatte ich angenommen... irrtuemlich."
+
+REFERENCE           SNOKE7
+LANG_ENGLISH        "Closer, I said."
+LANG_GERMAN         "Naeher, sagte ich."
+
+REFERENCE           SNOKE8
+LANG_ENGLISH        "Oh, have you seen something? A weakness in my apprentice. Is that why you came?"
+LANG_GERMAN         "Oh, hast du etwas gesehen? Eine Schwaeche in meinem Schueler. Ist das der Grund, warum du hier bist?"
+
+REFERENCE           SNOKE9
+LANG_ENGLISH        "Young fool. It was I who bridged your minds. I stoked Ren's conflicted soul. I knew he was not strong enough to hide it from you. And you were not wise enough to resist the bait."
+LANG_GERMAN         "Du Junge Naerrin. Ich war es, der euren Geist verbunden hat. Ich habe den Konflikt in Rens Seele geschuert. Ich wusste, er wuerde nicht stark genug sein, um es vor dir zu verbergen. Und du wuerdest nicht klug genug sein, dem Koeder zu widerstehen."
+
+REFERENCE           SNOKE10
+LANG_ENGLISH        "And now... you will give me Skywalker. Then I will kill you... with the cruelist stroke."
+LANG_GERMAN         "Und jetzt...gibst du mir Skywalker. Und dann werde ich euch... mit dem grausamsten Schlag zerschmettern."
+
+REFERENCE           SNOKE11
+LANG_ENGLISH        "Yes."
+LANG_GERMAN         "Doch."
+
+REFERENCE           SNOKE12
+LANG_ENGLISH        "Give me... everything."
+LANG_GERMAN         "Gib mir... alles."
+
+REFERENCE           SNOKE13
+LANG_ENGLISH        "Well, well... I did not expect Skywalker to be so wise. We will give him and the Jedi Order... the death he desires. After the Rebels are gone, we will go to his planet... and obliterate the entire island."
+LANG_GERMAN         "Oh ja, ja... ich haette nicht erwartet, dass Skywalker so weise ist. Wir werden ihm und dem Orden der Jedi... das Ende angedeihen, dass er ersehnt. Nachdem wir die Rebellen vernichtet haben, begeben wir uns auf seinen Planeten... und loeschen die gesamte Insel aus."
+
+REFERENCE           SNOKE14
+LANG_ENGLISH        "Such spunk. Look here, now."
+LANG_GERMAN         "So couragiert. Jetzt, sieh her."
+
+REFERENCE           SNOKE15
+LANG_ENGLISH        "The entire Resistance on those transports. Soon they will all be gone. For you, all is lost."
+LANG_GERMAN         "Der gesamte Widerstand in diesen Transportern. Schon bald werden sie alle Vergangenheit sein. Fuer dich ist alles verloren."
+
+REFERENCE           SNOKE16
+LANG_ENGLISH        "Oh, still that fiery spit of hope. You have the spirit of a true Jedi!"
+LANG_GERMAN         "Oh, und immer noch dieser gluehende Funken Hoffnung. Du besitzt das Temperament eines wahren Jedi!"
+
+REFERENCE           SNOKE17
+LANG_ENGLISH        "And because of that... you must die."
+LANG_GERMAN         "Und deswegen... musst du sterben."
+
+REFERENCE           SNOKE18
+LANG_ENGLISH        "My worthy apprentice... son of darkness, heir apparent to Lord Vader. Where there was conflict, I now sense resolve. Where there was weakness, strength. Complete your training... and fulfill your destiny."
+LANG_GERMAN         "Mein wuerdiger Schueler... Sohn der Dunkelheit, rechtmaessiger Erbe des Lord Vader. Wo es einst Konflikt gab, fuehle ich nun Entschlossenheit. Wo es einst Schwaeche gab, Staerke. Schliesse deine Ausbildung ab... und erfuelle dein Schicksal."
+
+REFERENCE           SNOKE19
+LANG_ENGLISH        "You think you can turn him? Pathetic child."
+LANG_GERMAN         "Du denkst, du koenntest ihn bekehren? Armseliges Kind."
+
+REFERENCE           SNOKE20
+LANG_ENGLISH        "I can not be betrayed... I can not be beaten. I see his mind... I see his every intent. Yes. I see him turning the lightsaber to strike true. And now... Foolish child. He ignites it... And kill his true enemy!"
+LANG_GERMAN         "Es ist nicht moeglich, mich zu verraten... es ist nicht moeglich, mich zu besiegen. Ich sehe seine Gedanken... ich sehe seine Absichten, jede einzelne. Ja. Ich sehe, ihn das Lichtschwert schwenken, bereit loszuschlagen. Und jetzt... toerichtes Kind. Zuendet er es... und toetet seinen wahren Feind!"
+
+
+ENDMARKER

@@ -1,0 +1,76 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           KOT1
+LANG_ENGLISH        "He's beaten. Let it go!"
+LANG_GERMAN         "Er ist besiegt. Lass gut sein!"
+
+REFERENCE           KOT2
+LANG_ENGLISH        "Maybe so. But if you strike him down in anger, you'll be right back where you began."
+LANG_GERMAN         "Vielleicht. Doch wenn du ihn im Zorn niederstreckst, bist du genau dort, wo es anfing."
+
+REFERENCE           PAL1
+LANG_ENGLISH        "Yes! Kill him! He was weak, broken! Kill him and you take your rightful place at my side!"
+LANG_GERMAN         "Ja! Vernichte ihn! Er war schwach, gebrochen! Vernichte ihn jetzt und komme an meine Seite!"
+
+REFERENCE           PAL2
+LANG_ENGLISH        "You have restored peace and justice to the Galaxy."
+LANG_GERMAN         "Du hast den Frieden und die Gerechtigkeit in der Gelaxis wieder hergestellt."
+
+REFERENCE           PAL3
+LANG_ENGLISH        "You were destined to destroy me. Do it! Give in to your hatred!"
+LANG_GERMAN         "Mich zu vernichte ist dir bestimmt. Tu es! Gib dich deinem Hass hin!"
+
+REFERENCE           PAL4
+LANG_ENGLISH        "Then he is now more powerful than ever."
+LANG_GERMAN         "Dann ist er jetzt maechtiger als je zuvor."
+
+REFERENCE           STA1
+LANG_ENGLISH        "You have nothing left to teach me!"
+LANG_GERMAN         "Ihr koennt mir nichts mehr beibringen."
+
+REFERENCE           STA2
+LANG_ENGLISH        "What is thy bidding, my Master?"
+LANG_GERMAN         "Was wuenscht ihr, mein Meister?"
+
+REFERENCE           STA3
+LANG_ENGLISH        "It's a trick. He's stronger than you know. And he deserves to die for what he's done to me."
+LANG_GERMAN         "Das ist ein Trick. Er ist staerker, als ihr ahnt. Er verdient den Tod fuer das, was er mir antat."
+
+REFERENCE           STA4
+LANG_ENGLISH        "Get Bail and the others out of here. I'll be right behind you."
+LANG_GERMAN         "Bringt Bail und die anderen hier raus. Ich bin gleich hinter euch."
+
+REFERENCE           STA5
+LANG_ENGLISH        "Go! Hurry! Protect the Senators!"
+LANG_GERMAN         "Geht! Schnell! Beschuetzt die Senatoren!"
+
+REFERENCE           VAD1
+LANG_ENGLISH        "I've trained you well, but you still have much to learn."
+LANG_GERMAN         "Ich habe dich gut ausgebildet, aber du musst noch viel lernen."
+
+REFERENCE           VAD2
+LANG_ENGLISH        "This was your destiny. To bring the Emperor's enemies together. And die here alone."
+LANG_GERMAN         "Das war deine Bestimmung. Die Feinde des Imperators zu vereinen und einsam hier zu sterben."
+
+REFERENCE           VAD4
+LANG_ENGLISH        "There will be another."
+LANG_GERMAN         "Es wird einen anderen geben."
+
+REFERENCE           VAD5
+LANG_ENGLISH        "He is dead."
+LANG_GERMAN         "Er ist tot."
+
+ENDMARKER

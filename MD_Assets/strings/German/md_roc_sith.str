@@ -1,0 +1,84 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           OD_ANI1
+LANG_ENGLISH        "You all right?"
+LANG_GERMAN         "Geht es euch gut?"
+
+REFERENCE           OD_ANI2
+LANG_ENGLISH        "I was about to say that."
+LANG_GERMAN         "Das wollte ich auch gerade sagen."
+
+REFERENCE           OD_ANI3
+LANG_ENGLISH        "My powers have doubled since the last time we met, Count."
+LANG_GERMAN         "Meine Kraefte haben sich seit unserer letzten Begegnung verdoppelt, Count."
+
+REFERENCE           OD_DOK1
+LANG_ENGLISH        "Your swords, please. We don't want to make a mess of things, in front of the Chancellor."
+LANG_GERMAN         "Eure Schwerter bitte. Wir wollen doch hier in Gegenwart des Kanzlers kein Blutbad anrichten."
+
+REFERENCE           OD_DOK2
+LANG_ENGLISH        "I've been looking forward to this."
+LANG_GERMAN         "Darauf hatte ich mich bereits gefreut."
+
+REFERENCE           OD_DOK3
+LANG_ENGLISH        "Good. Twice the pride, double the fall."
+LANG_GERMAN         "Gut. Hochmut, mein Junge, kommt vor dem Fall."
+
+REFERENCE           OD_DOK4
+LANG_ENGLISH        "I sense great fear in you, Skywalker."
+LANG_GERMAN         "Ich spuere grosse Furcht in dir, Skywalker."
+
+REFERENCE           OD_DOK5
+LANG_ENGLISH        "You have hate! You have anger! But you don't use them."
+LANG_GERMAN         "Du verfuegst ueber Hass! Du verfuegst ueber Zorn! Doch du benutzt sie nicht."
+
+REFERENCE           OD_DOK6B
+LANG_ENGLISH        "The Force is with us, Master Sidious!"
+LANG_GERMAN         "Die Macht ist mit uns, Meister Sidious!"
+
+REFERENCE           OD_DOK7
+LANG_ENGLISH        "Just because there are two of you do not assume that you have the advantage."
+LANG_GERMAN         "Nur weil Sie zu zweit sind, heisst das nicht, dass Sie im Vorteil sind."
+
+REFERENCE           OD_OBI1
+LANG_ENGLISH        "Chancellor."
+LANG_GERMAN         "Kanzler."
+
+REFERENCE           OD_OBI2
+LANG_ENGLISH        "This time we will do it together."
+LANG_GERMAN         "Dieses Mal werden wir gemeinsam kaempfen."
+
+REFERENCE           OD_OBI3
+LANG_ENGLISH        "Chancellor Palpatine, Sith Lords are our speciality."
+LANG_GERMAN         "Kanzler Palpatine, Sith-Lords sind unsere Spezialitaet."
+
+REFERENCE           OD_OBI4
+LANG_ENGLISH        "You won't get away this time, Dooku."
+LANG_GERMAN         "Dieses Mal werdet ihr uns nicht entkommen, Dooku."
+
+REFERENCE           OD_PAL1
+LANG_ENGLISH        "Count Dooku."
+LANG_GERMAN         "Count Dooku."
+
+REFERENCE           OD_PAL2
+LANG_ENGLISH        "Get help. You're no match for him. He's a Sith Lord!"
+LANG_GERMAN         "Holt Hilfe. Ihr koennt ihn nicht bezwingen. Er ist ein Sith-Lord!"
+
+REFERENCE           OD_PAL12
+LANG_ENGLISH        "Lord Tyranus, you have done well."
+LANG_GERMAN         "Lord Tyranus, ich bin sehr zufrieden."
+
+ENDMARKER
