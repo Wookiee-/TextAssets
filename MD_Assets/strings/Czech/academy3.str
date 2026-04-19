@@ -1,0 +1,81 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           10LUK001
+LANG_ENGLISH        "So they know about Dagobah.  Master Yoda hid there, knowing his presence would be masked by the planet's strong dark side aura.  If they find it..."
+LANG_CZECH        "Takze uz vi o Dagobahu.  Mistr Yoda se tam skryval. Vedel, ze tam bude kryt silnou aurou Temne strany.  Kdyby ho nasli..."
+
+REFERENCE           10KYK001
+LANG_ENGLISH        "Did you find anything on Hoth?"
+LANG_CZECH        "Nasel jsi neco na Hothu?"
+
+REFERENCE           10JAK005
+LANG_ENGLISH        "Nothing.  They must have already taken the Force energy from there."
+LANG_CZECH        "Nic.  Uz odtamtud museli vycerpat vsechnu energii."
+
+REFERENCE           10LUK002
+LANG_ENGLISH        "Just as others have reported.  Bespin, Endor, Coruscant, everywhere..."
+LANG_CZECH        "Stejne jako vsude jinde.  Bespin, Endor, Coruscant, vsude..."
+
+REFERENCE           10LUK003
+NOTES               "(pause)"
+LANG_ENGLISH        "Kyle, what about Byss?"
+LANG_CZECH        "Kyle, co Byss?"
+
+REFERENCE           10KYK002
+LANG_ENGLISH        "Rosh hasn't returned.  He's long overdue and we haven't heard from him."
+LANG_CZECH        "Rosh se nevratil.  Uz je tam dele, nez by mel a neohlasil se."
+
+REFERENCE           10LUK004
+NOTES               "(closes his eyes)"
+LANG_ENGLISH        "I sense he's still alive..."
+LANG_CZECH        "Citim, ze je porad nazivu..."
+
+REFERENCE           10KYK003
+LANG_ENGLISH        "I'm going to Byss to look for him.  I know some people that can get me into some of the outlying Imperial outposts.  I'll see what I can find out."
+LANG_CZECH        "Poletim na Byss a najdu ho.  Znam par lidi, kteri me dokazi dostat do nekterych imperialnich stanic. Uvidime, co zjistim."
+
+REFERENCE           10LUK005
+LANG_ENGLISH        "Very well."
+LANG_CZECH        "Dobre."
+
+REFERENCE           10JAK006
+LANG_ENGLISH        "What about me?  I want to help. Rosh is my friend."
+LANG_CZECH        "A co ja?  Chci pomoct. Rosh je muj pritel."
+
+REFERENCE           10KYK004
+LANG_ENGLISH        "You can help by staying here and completing your training."
+LANG_CZECH        "Pomuzes nam tim, ze tu zustanes a dokoncis svuj trenink."
+
+REFERENCE           10LUK006
+LANG_ENGLISH        "Kyle's right.  There are still missions for you to undertake and we can't neglect the training of one of our most promising students."
+LANG_CZECH        "Kyle ma pravdu.  Porad zbyva par ukolu, o ktere se muzes postarat a my nemuzeme zanedbat trenink jednoho z nasich nejslibnejsich studentu."
+
+REFERENCE           10JAK007
+LANG_ENGLISH        "Promising?"
+LANG_CZECH        "Nejslibnejsich?"
+
+REFERENCE           10LUK007
+LANG_ENGLISH        "Yes. Due to your heroics on Hoth, we are promoting you to Apprentice."
+LANG_CZECH        "Ano. Vzhledem k tvym hrdinskym cinum na Hothu te povysujeme na ucednika."
+
+REFERENCE           10JAK008
+LANG_ENGLISH        "Thank you Master Skywalker.  Master... uh, Kyle."
+LANG_CZECH        "Dekuji, mistre Skywalkere.  Mistre... uh, Kyle."
+
+
+ENDMARKER
+
+

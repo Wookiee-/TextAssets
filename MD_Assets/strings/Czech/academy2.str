@@ -1,0 +1,108 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           09LUK001
+LANG_ENGLISH        "I have called you all here to relay some... disturbing news.  Someone sliced into my personal records and accessed some highly sensitive data about places where I felt a strong connection to the Force. Places like Cloud City, Hoth, and Byss."
+LANG_CZECH        "Zavolal jsem Vas vsechny, abych Vam oznamil... znepokojujici zpravy.  Nekdo se vloupal do mych osobnich zaznamu a ziskal pristup k urcitym velice citlivym udajum o mistech, kde jsem pocitil velmi silne spojeni se Silou. O mistech jako Oblacne mesto, Hoth a Byss."
+
+REFERENCE           09ROP001
+NOTES               "(piping up)"
+LANG_ENGLISH        "What could they get from that, besides a tour?"
+LANG_CZECH        "K cemu by to mohli pouzit? Tedy krome mista k dovolene?"
+
+REFERENCE           09KYK001
+NOTES               "(glaring at Rosh)"
+LANG_ENGLISH        "Something nasty."
+LANG_CZECH        "K necemu nebezpecnemu."
+
+REFERENCE           09LUK002
+LANG_ENGLISH        "I believe that the scepter Jaden saw was somehow used to drain the residual Force power from the Massassi Temple."
+LANG_CZECH        "Verim, ze zezlo, ktere Jaden videl, bylo nejakym zpusobem pouzivano k cerpani zbytkove Sily z chramu Massassi."
+
+REFERENCE           09JE1001
+LANG_ENGLISH        "Drain the Force?  How can anyone do that?"
+LANG_CZECH        "Cerpat Silu?  Jak by to nekdo dokazal?"
+
+REFERENCE           09LUK003
+LANG_ENGLISH        "I'm not sure.  But I've learned from the Jedi Holocron that devices were created in the past that could absorb and store Force energy."
+LANG_CZECH        "Nejsem si jisty.  Ale z Jedi Holocronu jsem se dozvedel, ze byla kdysi vyrobena zarizeni, ktera jsou schopna absorbovat a uchovavat Silu."
+
+REFERENCE           09KYK002
+LANG_ENGLISH        "Those people Jaden saw may have discovered some way to harvest Force power with that scepter."
+LANG_CZECH        "Lide, ktere Jaden videl, mozna prisli na zpusob, jak tim zezlem cerpat Silu."
+
+REFERENCE           09LUK004
+LANG_ENGLISH        "Which could be dangerous indeed."
+LANG_CZECH        "Coz by mohlo byt nebezpecne."
+
+REFERENCE           09JAK001
+NOTES               "(speaks up)"
+LANG_ENGLISH        "So what are we going to do?"
+LANG_CZECH        "Takze co budeme delat my?"
+
+REFERENCE           09LUK005
+LANG_ENGLISH        "We'll have to investigate any locations from my records.  That includes all of you students.  Corran, you're going to Wayland.  Kyle, I need you to look at the Valley of the Jedi..."
+LANG_CZECH        "Musime prozkoumat vsechna mista z mych zaznamu. Vsichni vcetne studentu. Corrane, ty pujdes do Waylandu. Kyle, ty vyrazis zkontrolovat Udoli Jediu..."
+
+REFERENCE           09ROP002
+NOTES               "(turning towards Jaden)"
+LANG_ENGLISH        "Finally, some real action!"
+LANG_CZECH        "Konecne poradna akce!"
+
+REFERENCE           09JAK002
+NOTES               "(seems worried)"
+LANG_ENGLISH        "Why would they be stealing Force power?"
+LANG_CZECH        "Proc by nekdo kradl energii Sily?"
+
+REFERENCE           09ROP003
+NOTES               "(shrugs, doesn't care)"
+LANG_ENGLISH        "I don't know.  You worry too much, Jaden.  I bet that these cult guys can't take on a Jedi."
+LANG_CZECH        "Nevim.  Prilis se staras, Jadene.  Vsadim se, ze tyhle hosi z kultu se nemuzou Jedium vyrovnat."
+
+REFERENCE           09JAK003
+LANG_ENGLISH        "Well, we're not Jedi yet.  We're just students."
+LANG_CZECH        "No, ale my jeste nejsme Jedii. Jsme jen studenti."
+
+REFERENCE           09KYK003
+LANG_ENGLISH        "You may be 'just' students, but you're both well on your way.  Don't rush it."
+LANG_CZECH        "Mozna jste "jenom" studenti, ale oba si vedete dobre.  Nepokazte si to."
+
+REFERENCE           09LUK006
+LANG_ENGLISH        "Jaden, I'm sending you to Hoth, where I had a vision of Obi-Wan Kenobi.  I imagine there is a pretty strong aura there."
+LANG_CZECH        "Jadene, ty pujdes na Hoth. Tam jsem mel vizi Obi-Wana Kenobiho.  Je tam velmi silna aura."
+
+REFERENCE           09LUK007
+NOTES               "(To Rosh:)"
+LANG_ENGLISH        "Rosh, I'm sending you to the remains of the planet Byss.  It's very remote, so I doubt the Cult has been there.  Don't stay too long; the Imperial Remnant may still be operating in the area."
+LANG_CZECH        "Roshi, ty pujdes na zbytky planety Byss. Je to velmi daleko, takze pochybuji, ze tam Kult byl. Nezustavej tam moc dlouho. Mohou tam porad operovat zbytky imperialnich jednotek ."
+
+REFERENCE           09ROP004
+NOTES               "(cockily)"
+LANG_ENGLISH        "No problem."
+LANG_CZECH        "Zadny problem."
+
+REFERENCE           09LUK008
+LANG_ENGLISH        "That's everyone then.  May the Force be with all of you."
+LANG_CZECH        "A je to.  Necht Vas vsechny provazi Sila."
+
+REFERENCE           09ROP005
+NOTES               "(joking)"
+LANG_ENGLISH        "Good luck. Call me if you need any help."
+LANG_CZECH        "Hodne stesti. Zavolej mi, kdyz budes potrebovat pomoc."
+
+
+ENDMARKER
+
+

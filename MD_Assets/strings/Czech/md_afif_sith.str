@@ -1,0 +1,260 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           ANI1
+LANG_ENGLISH        "I saw your ship."
+LANG_CZECH        "Videl jsem tvou lod."
+
+REFERENCE           ANI2
+LANG_ENGLISH        "What are you doing out here?"
+LANG_CZECH        "Co tady delas?"
+
+REFERENCE           ANI3
+LANG_ENGLISH        "What things?"
+LANG_CZECH        "Jake veci?"
+
+REFERENCE           ANI4
+LANG_ENGLISH        "Obi-Wan is trying to turn you against me."
+LANG_CZECH        "Obi-Wan se te snazi obratit proti mne."
+
+REFERENCE           ANI5
+LANG_ENGLISH        "Us?"
+LANG_CZECH        "Nas?"
+
+REFERENCE           ANI6
+LANG_ENGLISH        "Love won't save you, Padme.\nOnly my new powers can do that."
+LANG_CZECH        "Laska te nezachrani, Padme.\nTo muze pouze moje nova moc."
+
+REFERENCE           ANI7
+LANG_ENGLISH        "I won't lose you the way I lost my mother."
+LANG_CZECH        "Nechci te ztratit tak, jako svou matku."
+
+REFERENCE           ANI7B
+LANG_ENGLISH        "I am becoming more powerful than any Jedi has ever dreamed of."
+LANG_CZECH        "Stal jsem se mocnejsim, nez se jakemukoliv Jedii kdy snilo."
+
+REFERENCE           ANI7C
+LANG_ENGLISH        "And I'm doing it for you.\nTo protect you."
+LANG_CZECH        "A to jen pro tebe.\nAbych te ochranil."
+
+REFERENCE           ANI8
+LANG_ENGLISH        "Don't you see?"
+LANG_CZECH        "Nechapes to?"
+
+REFERENCE           ANI8B
+LANG_ENGLISH        "We don't have to run away anymore."
+LANG_CZECH        "Uz nemusime nikam utikat."
+
+REFERENCE           ANI8C
+LANG_ENGLISH        "I have brought peace to the Republic."
+LANG_CZECH        "Ja prinesl Republice mir."
+
+REFERENCE           ANI8D
+LANG_ENGLISH        "I am more powerful than the Chancellor.\nI- I can over-throw him."
+LANG_CZECH        "Jsem mocnejsi nez Kancler.\nA- A muzu ho svrhnout."
+
+REFERENCE           ANI8E
+LANG_ENGLISH        "And together, you and I can rule the galaxy,\nmake things the way we want them to be!"
+LANG_CZECH        "A my dva muzeme spolecne vladnout galaxii.\nVsechno bude takove, jak budeme chtit."
+
+REFERENCE           ANI9
+LANG_ENGLISH        "I don't want to hear any more about Obi-Wan."
+LANG_CZECH        "Uz ani slovo o Obi-Wanovi."
+
+REFERENCE           ANI9B
+LANG_ENGLISH        "The Jedi turned against me.\nDon't you turn against me."
+LANG_CZECH        "Jediove se vzbourili proti mne.\nChces udelat totez?"
+
+REFERENCE           ANI10
+LANG_ENGLISH        "Because of Obi-Wan?"
+LANG_CZECH        "Kvuli Obi-Wanovi?"
+
+REFERENCE           ANI11
+LANG_ENGLISH        "Liar!"
+LANG_CZECH        "Lharko!"
+
+REFERENCE           ANI12
+LANG_ENGLISH        "You're with him!\nYou brought him here to kill me!"
+LANG_CZECH        "Spykla ses s nim!\nPrivedla jsi ho, aby me zabil!"
+
+REFERENCE           ANI13
+LANG_ENGLISH        "You turned her against me!"
+LANG_CZECH        "Postval jste ji proti mne!"
+
+REFERENCE           ANI14
+LANG_ENGLISH        "You will not take her from me!"
+LANG_CZECH        "Ty mi ji nevezmes!"
+
+REFERENCE           ANI15
+LANG_ENGLISH        "Don't lecture me, Obi-Wan."
+LANG_CZECH        "Nepoucuj me, Obi-Wane."
+
+REFERENCE           ANI15B
+LANG_ENGLISH        "I see through the lies of the Jedi."
+LANG_CZECH        "Uz jsem prohledl lzi Jediu."
+
+REFERENCE           ANI15C
+LANG_ENGLISH        "I do not fear the Dark Side,\nas you do."
+LANG_CZECH        "Narozdil od tebe se nebojim Temne strany."
+
+REFERENCE           ANI15D
+LANG_ENGLISH        "I have brought peace, freedom, justice,\nand security to my new empire."
+LANG_CZECH        "Prinesl jsem mir, svobodu, spravedlnost,\na bezpeci svemu Imperiu."
+
+REFERENCE           ANI16
+LANG_ENGLISH        "Don't make me kill you."
+LANG_CZECH        "Nenut me, abych te zabil."
+
+REFERENCE           ANI17
+LANG_ENGLISH        "If you're not with me,"
+LANG_CZECH        "Pokud nejsi se mnou,"
+
+REFERENCE           ANI17B
+LANG_ENGLISH        "then you're my enemy."
+LANG_CZECH        "jsi muj nepritel."
+
+REFERENCE           ANI18
+LANG_ENGLISH        "You will try."
+LANG_CZECH        "Tak to zkus."
+
+REFERENCE           OBI1
+LANG_ENGLISH        "Let her go, Anakin."
+LANG_CZECH        "Nech ji byt, Anakine."
+
+REFERENCE           OBI1B
+LANG_ENGLISH        "Let her go."
+LANG_CZECH        "Nech ji byt."
+
+REFERENCE           OBI2
+LANG_ENGLISH        "You have done that yourself!"
+LANG_CZECH        "To jsi zpusobil ty sam!"
+
+REFERENCE           OBI3
+LANG_ENGLISH        "Your anger and your lust for power have already done that."
+LANG_CZECH        "To uz dokazal tvuj hnev a slepa touha po moci."
+
+REFERENCE           OBI3B
+LANG_ENGLISH        "You have allowed this Dark Lord to twist your mind, until now-"
+LANG_CZECH        "Dovolil jsi tomu Temnemu Lordovi, aby nahlodal tvou mysl-"
+
+REFERENCE           OBI3C
+LANG_ENGLISH        "until now you have become the very thing you swore to destroy."
+LANG_CZECH        "a ted ses stal presne tim, co jsi mel znicit."
+
+REFERENCE           OBI4
+LANG_ENGLISH        "Your new empire?"
+LANG_CZECH        "Tvemu Imperiu?"
+
+REFERENCE           OBI5
+LANG_ENGLISH        "Anakin, my allegiance is to the Republic, to democracy!"
+LANG_CZECH        "Anakine, ja slouzim Republice a demokracii!"
+
+REFERENCE           OBI6
+LANG_ENGLISH        "Only a Sith deals in absolutes."
+LANG_CZECH        "Jenom Sith uvazuje cernobile."
+
+REFERENCE           OBI6B
+LANG_ENGLISH        "I will do what I must."
+LANG_CZECH        "Udelam, co musim."
+
+REFERENCE           PAD1
+LANG_ENGLISH        "I was so worried about you.\n..Obi-Wan.. told me terrible things!"
+LANG_CZECH        "Bala jsem se o tebe.\n..Obi-Wan.. mi rekl hrozne veci!"
+
+REFERENCE           PAD2
+LANG_ENGLISH        "He said you've turned to the dark side."
+LANG_CZECH        "Rekl, ze ses pridal k temne strane."
+
+REFERENCE           PAD2B
+LANG_ENGLISH        "That you..."
+LANG_CZECH        "Ze jsi..."
+
+REFERENCE           PAD2C
+LANG_ENGLISH        "killed younglings!"
+LANG_CZECH        "zabijel deti!"
+
+REFERENCE           PAD3
+LANG_ENGLISH        "He cares about us."
+LANG_CZECH        "Zalezi mu na nas."
+
+REFERENCE           PAD4
+LANG_ENGLISH        "He knows."
+LANG_CZECH        "Vi o nas."
+
+REFERENCE           PAD4B
+LANG_ENGLISH        "He wants to help you."
+LANG_CZECH        "Chce ti pomoct."
+
+REFERENCE           PAD4D
+LANG_ENGLISH        "Anakin, all I want is your love."
+LANG_CZECH        "Anakine, vsechno co chci, je jen tvoje laska."
+
+REFERENCE           PAD5
+LANG_ENGLISH        "At what cost?\nYou're a good person. Don't do this."
+LANG_CZECH        "Ale za jakou cenu?\nJsi dobry clovek. Nedelej to."
+
+REFERENCE           PAD6
+LANG_ENGLISH        "Come away with me."
+LANG_CZECH        "Tak odlet se mnou."
+
+REFERENCE           PAD6B
+LANG_ENGLISH        "Help me raise our child.\nLeave everything else behind while we still can."
+LANG_CZECH        "Pomoz mi vychovat dite.\nZapomeneme na vsechno ostatni, dokud to jde."
+
+REFERENCE           PAD7
+LANG_ENGLISH        "I don't believe what I'm hearing."
+LANG_CZECH        "Neverim vlastnim usim."
+
+REFERENCE           PAD7B
+LANG_ENGLISH        "Obi-Wan was right! You've changed."
+LANG_CZECH        "Obi-Wan mel pravdu! Ty ses zmenil!"
+
+REFERENCE           PAD8
+LANG_ENGLISH        "I don't know you, anymore."
+LANG_CZECH        "Ja te nepoznavam."
+
+REFERENCE           PAD8B
+LANG_ENGLISH        "Anakin, you're breaking my heart.."
+LANG_CZECH        "Anakine, zlomil jsi mi srdce.."
+
+REFERENCE           PAD8C
+LANG_ENGLISH        "You're going down a path I can't follow."
+LANG_CZECH        "Vydal ses cestou, na ktere te nemuzu nasledovat."
+
+REFERENCE           PAD9
+LANG_ENGLISH        "Because of what you've done. What you plan to do."
+LANG_CZECH        "Kvuli tomu, co jsi udelal. A co chces udelat."
+
+REFERENCE           PAD9B
+LANG_ENGLISH        "Stop! Stop now, come back!\nI love you!"
+LANG_CZECH        "Prestan! Prestan a vrat se!\nMam te rada!"
+
+REFERENCE           PAD10
+LANG_ENGLISH        "No!"
+LANG_CZECH        "Ne!"
+
+REFERENCE           PAD11
+LANG_ENGLISH        "No!"
+LANG_CZECH        "Ne!"
+
+REFERENCE           PAD11B
+LANG_ENGLISH        "..Anakin.."
+LANG_CZECH        "..Anakine.."
+
+REFERENCE           3PO1
+LANG_ENGLISH        "Hush! Not so loud."
+LANG_CZECH        "Tise! Ne tak hlasite."
+
+ENDMARKER

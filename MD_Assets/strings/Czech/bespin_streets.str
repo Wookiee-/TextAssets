@@ -1,0 +1,68 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           13BE1001
+LANG_ENGLISH        "You must be Katarn. Lando sent us to help. We've got teams trying to take back this sector of the city, but's it's no small task. The place is swarming with Reelo's thugs. Our men will help you wherever they can. Good luck!"
+LANG_CZECH        "Vy musite byt Katarn. Lando nas poslal na pomoc. Mame tymy, ktere se snazi ziskat zpet tento sektor mesta, ale neni to snadny ukol. Okoli se jen hemzi Reelovymi kriminalniky. Nasi chlapi Vam pomohou, kdekoliv budou moci. Hodne stesti!"
+
+REFERENCE           13KJO002
+LANG_ENGLISH        "Thanks! You too."
+LANG_CZECH        "Diky! Vam taky."
+
+REFERENCE           13BE2001
+LANG_ENGLISH        "I'll stay here and see if I can keep them off your back."
+LANG_CZECH        "Ja tu zustanu a pokusim se je udrzet dal od Vas."
+
+REFERENCE           13ST2001
+LANG_ENGLISH        "Let's go. We're pulling out."
+LANG_CZECH        "Jdeme. Stahujeme se."
+
+REFERENCE           13RO2001
+LANG_ENGLISH        "( What about us? )"
+LANG_CZECH        "( A co my? )"
+
+REFERENCE           13ST2002
+LANG_ENGLISH        "You're on your own."
+LANG_CZECH        "Je to na vas."
+
+REFERENCE           13KJO001
+LANG_ENGLISH        "Droid access panel. And my little friend is scrap. Guess I won't be getting in here."
+LANG_CZECH        "Pristupovy panel pro droidy. A muj maly pritel je srot. Hadam, ze se tam nedostanu."
+
+REFERENCE           13BE1002
+LANG_ENGLISH        "Don't shoot! We're on your side."
+LANG_CZECH        "Nestrilejte! Jsme na Vasi strane."
+
+REFERENCE           13BE1003
+LANG_ENGLISH        "We're with you, Commander! Lead the way!"
+LANG_CZECH        "Jsme s Vami, Veliteli! Vedte nas!"
+
+REFERENCE           13BE2002
+LANG_ENGLISH        "What are you doing?"
+LANG_CZECH        "Co to delate?"
+
+REFERENCE           13BE2003
+LANG_ENGLISH        "He's a traitor. Blast him!"
+LANG_CZECH        "Je to zradce. Zastrelte ho!"
+
+REFERENCE           13BE2004
+LANG_ENGLISH        "This area seems secure, sir. Follow us."
+LANG_CZECH        "Tato oblast vypada bezpecne, pane Nasledujte nas."
+
+REFERENCE           13KJO003
+LANG_ENGLISH        "Stormtroopers?!"
+LANG_CZECH        "Stormtrooperi?!"
+
+REFERENCE           13KJO004
+LANG_ENGLISH        "Imperials?!"
+LANG_CZECH        "Imperialove?!"
+
+REFERENCE           13KJO005
+LANG_ENGLISH        "The Remnant is here?!"
+LANG_CZECH        "Zbytky Imperia jsou zde?!"
+
+REFERENCE           13KJO006
+LANG_ENGLISH        "What's the Remnant doing here?!"
+LANG_CZECH        "Co tu delaji zbytky Imperia?!"
+
+ENDMARKER

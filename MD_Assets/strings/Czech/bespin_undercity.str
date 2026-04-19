@@ -1,0 +1,40 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           12LAC008
+LANG_ENGLISH        "They'll work their way down towards your position."
+LANG_CZECH 	   "Vytvareji si cestu smerem k tve pozici."
+
+REFERENCE           12KJO007
+LANG_ENGLISH        "Thanks, Lando."
+LANG_CZECH 	   "Diky, Lando."
+
+REFERENCE           12LAC009
+LANG_ENGLISH        "Thanks nothing.   Jan was my friend, too.  Good luck."
+LANG_CZECH 	   "Neni zac. Jan byla take mym pritelem. Hodne stesti."
+
+REFERENCE           12KJO009
+LANG_ENGLISH        "Meet you in the city."
+LANG_CZECH 	   "Sejdeme se ve meste."
+
+REFERENCE           12KJO027
+LANG_ENGLISH        "Thanks."
+LANG_CZECH 	   "Diky."
+
+REFERENCE           12KJO029
+LANG_ENGLISH        "Strange...he looked like a Jedi and fought like a Jedi, but his power felt so...warped."
+LANG_CZECH 	   "Divne...vypadal jako Jedi a bojoval jako Jedi, ale jeho sila byla citit tak...pokrivene."
+
+REFERENCE           12KJO030
+LANG_ENGLISH        "I sense a disturbance in the Force. But there's something's strange about it."
+LANG_CZECH 	   "Citim naruseni Sily. Ale je v tom neco divneho."
+
+REFERENCE           12KJO031
+LANG_ENGLISH        "A Jedi?? No, he seemed...different somehow."
+LANG_CZECH 	   "Jedi?? Ne, vypadal...nejak divne."
+
+REFERENCE           12KJO032
+LANG_ENGLISH        "You must be the droid Lando told me about."
+LANG_CZECH 	   "Ty musis byt ten droid, o kterem mi Lando vypravel."
+
+ENDMARKER

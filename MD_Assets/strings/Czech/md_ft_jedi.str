@@ -1,0 +1,84 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           KYLO1
+LANG_ENGLISH        "Did you come back to say you forgive me?"
+LANG_CZECH        "Vratil ses, abys mi odpustil?"
+
+REFERENCE           KYLO2
+LANG_ENGLISH        "To save my soul?"
+LANG_CZECH        "Spasil mou dusi?"
+
+REFERENCE           KYLO3
+LANG_ENGLISH        "I'm sure you are!"
+LANG_CZECH        "Tomu verim!"
+
+REFERENCE           KYLO4
+LANG_ENGLISH        "The Resistance is dead."
+LANG_CZECH        "Odboj je mrtev."
+
+REFERENCE           KYLO5
+LANG_ENGLISH        "The war is over."
+LANG_CZECH        "Valka skoncila."
+
+REFERENCE           KYLO6
+LANG_ENGLISH        "And when I kill you, I will have killed the last Jedi."
+LANG_CZECH        "A az te zabiju, zemre i posledni z Jediu."
+
+REFERENCE           KYLO7
+LANG_ENGLISH        "I'll destroy her, and you, and all of it."
+LANG_CZECH        "Znicim ji, tebe a vsechno stare."
+
+REFERENCE           KYLO8
+LANG_ENGLISH        "No."
+LANG_CZECH        "Ne."
+
+REFERENCE           KYLO9
+LANG_ENGLISH        "No!!!"
+LANG_CZECH        "Ne!!!"
+
+REFERENCE           LUKE1
+LANG_ENGLISH        "No."
+LANG_CZECH        "Ne."
+
+REFERENCE           LUKE2
+LANG_ENGLISH        "I failed you, Ben."
+LANG_CZECH        "Zklamal jsem te, Bene."
+
+REFERENCE           LUKE3
+LANG_ENGLISH        "I'm Sorry."
+LANG_CZECH        "Mrzi me to."
+
+REFERENCE           LUKE4
+LANG_ENGLISH        "Amazing. Every word of what you just said was wrong."
+LANG_CZECH        "Uzasne. Kazde slovo te vety je spatne."
+
+REFERENCE           LUKE5
+LANG_ENGLISH        "The Rebellion is reborn today. The war is just beginning."
+LANG_CZECH        "Povstani dnes znovu oziva. Valka teprve zacina."
+
+REFERENCE           LUKE6
+LANG_ENGLISH        "And I will not be the last Jedi."
+LANG_CZECH        "A vez, ze ja nebudu poslednim z Jediu."
+
+REFERENCE           LUKE7
+LANG_ENGLISH        "No. Strike me down in anger and I'll always be with you. Just like your father."
+LANG_CZECH        "Ne. Zabij me ve vzteku a ja budu navzdy s tebou. Tak, jako tvuj otec."
+
+REFERENCE           LUKE8
+LANG_ENGLISH        "See you around, kid."
+LANG_CZECH        "Jeste se uvidime."
+
+ENDMARKER

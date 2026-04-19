@@ -1,0 +1,143 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           ""
+
+REFERENCE           T1_SOUR
+LANG_ENGLISH        "We've been receiving a number of reports that the Disciples of Ragnos have been trying to hire mercenaries and smugglers to haul some cargo.  If we can contact one of these mercenary groups, maybe we can find out the cult's base of operations.  One of the smuggling rings that we know about is based at Mos Eisley.  Go there and see what you can find out."
+LANG_CZECH        "Dostavame mnoho hlaseni o tom, ze se Stoupenci Ragnose pokouseli najmout kupce a paseraky\nk prevozu nejakeho nakladu. Pokud dokazeme kontaktovat jednu z tech zoldackych skupin, mozna najdeme operacni zakladnu kultu.  Jedna paseracka skupina, o ktere vime, je na Mos Eisley. Let tam\na pokus se neco zjistit."
+
+REFERENCE           T1_SURPRISE
+LANG_ENGLISH        "A moisture farmer on Tatooine recently overheard a group of smugglers talking about a Sith cult in a local bar and had his R5 droid record the conversation.  Unfortunately, he became afraid and sold the droid to some Jawas before leaving Tatooine.  We need to get a hold of that droid before the Jawas wipe its memory.  You are to locate the Jawas, purchase the droid, and return to the Academy."
+LANG_CZECH        "Jeden farmar na Tatooine zaslechl v mistnim baru, jak se skupina paseraku bavi o kultu Sithu a jeho droid R5 rozhovor nahral. Nanestesti se zacal bat a nez opustil Tatooine, prodal droida Jawum. Musime se toho droida zmocnit drive, nez mu Jawove vymazou pamet. Pokusis se najit ty Jawy, zakoupit droida a vratis se na Akademii."
+
+REFERENCE           T1_FATAL
+LANG_ENGLISH        "Officials from the planet Bakura have requested our assistance.  An unknown party has taken control of a power station up in the mountains.  They sent a team to investigate, but they haven't reported in.  Their concerns are two-fold:  they want to stop whoever has taken over the station, and more importantly ensure that the station itself remains undamaged.  The station is built over a dormant volcano, and if the facility is destroyed, the volcano could destroy a heavily populated city.  The Bakurans' need someone to infiltrate the facility and thwart the group's plan."
+LANG_CZECH        "Vedeni planety Bakura pozadalo o nasi pomoc. Neznama skupina prevzala kontrolu nad elektrarnou\nv horach. Poslali tym na pruzkum, ale ten se jeste neohlasil. Preji si dve veci: chteji zastavit toho, kdo ovladl stanici, at je to kdokoliv a co je dulezitejsi, zajistit, aby sama stanice zustala neposkozena. Vulkan by mohl znicit huste obydlene mesto. Bakurane potrebuji, aby se nekdo dostal do elektrarny a prekazil skupine plany."
+
+REFERENCE           T1_DANGER
+LANG_ENGLISH        "The Academy has received a distress call from a merchant ship that crashed on the planet Blenjeel.  They were pulled out of hyperspace when they crossed paths with an Interdictor cruiser.  The Imperials, apparently not wanting their presence known, fired on the merchant ship.  The merchants managed to make it to the planet surface and call for help.  As far as we know, the planet is uninhabited."
+LANG_CZECH        "Akademie obdrzela nouzove volani z kupecke lodi, ktera havarovala na planete Blenjeel. Byli vytrzeni\nz hyperprostoru, kdyz zkrizili cestu krizniku Interdictor. Imperialni jednotky, ktere zrejme nechtely, aby se o nich vedelo, na kupeckou lod vystrelily.  Kupci se dokazali dostat na povrch planety a zavolat o pomoc. Pokud vime, je planeta neobydlena."
+
+REFERENCE           T1_RAIL
+LANG_ENGLISH        "The city of Coronet on Corellia has had numerous reports of activity by the Disciples of Ragnos.  However, it's not clear if it's really the Sith cult or if the locals are just being paranoid after hearing about it on the Holonet.  Go to Coronet and determine the truth."
+LANG_CZECH        "Mesto Coronet na Corellii oznamuje znacnou aktivitu Stoupencu Ragnose. Nicmene neni zcela jasne, zda to je skutecne kult Sithu nebo jsou mistni jen paranoidni po tom, co slyseli v Holozpravach. Let na Coronet\na zjisti pravdu."
+
+REFERENCE           T2_TRIP
+LANG_ENGLISH        "A spaceport worker on the planet Zonju V may have information pertaining to the Cult's connection with the Imperial Remnant.  The worker is hiding at an abandoned outpost three kilometers outside of Zoronhed.  Meet up with the worker and find out what he knows."
+LANG_CZECH        "Pracovnik kosmodromu na planete Zonju V ma mozna informace o spojeni kultu se zbytky imperialnich jednotek. Pracovnik se skryva na opustene stanici tri kilometry od Zoronhedu. Setkej se s nim a zjisti, co vi."
+
+REFERENCE           T2_DPRED
+LANG_ENGLISH        "New Republic Intelligence has intercepted transmissions coming from the planet Dosuun.  They believe that suspected cult members sent the transmissions from a base on the planet.  Since there are no Republic fleets in this area of the Outer Rim, they have asked us to investigate."
+LANG_CZECH        "Vysetrovatele Nove republiky zachytili prenos prichazejici z planety Dosuun. Veri, ze podezreli clenove kultu poslali zpravu ze zakladny na planete. Vzhledem\nk tomu, ze v teto oblasti nema Republika zadne lode, pozadali nas o vysetreni."
+
+REFERENCE           T2_RANCOR
+LANG_ENGLISH        "We have received word from a mining guild on Nar Kreeta that a number of elders are held captive by the local Hutt crimelord.  These elders went to negotiate a treaty with the Hutt, but never returned.  The crimelord claims no one ever came to see him."
+LANG_CZECH        "Od tezarske spolecnosti na Nar Kreete jsme se dozvedeli, ze je nekolik staresinu drzeno ve vezeni mistnim huttskym vudcem podsveti.  Tito staresinove se snazili vyjednat s Huttem dohodu, ale nikdy se nevratili. Vudce prohlasil, ze se s nikym bavit nebude."
+
+REFERENCE           T2_ROGUE
+LANG_ENGLISH        "We have received anonymous information that a large number of assassin droids have flooded the black market recently.  These droids have been banned for a number of years and no public companies produce them.  Lannik Racto, a small-time crimelord on Coruscant, is suspected to be manufacturing these new droids.  Capture Racto so that we may determine where his factory is."
+LANG_CZECH        "Obdrzeli jsme anonymni hlaseni, ze nedavno zaplavilo cerny trh znacne mnozstvi vrazednych droidu. Jejich vyroba byla dlouhou dobu tlumena a zadna verejna spolecnost je jiz nevyrabi. Z jejich vyroby je podezrely bezvyznamny kriminalnik Lannik Racto. Zajmi Racta, abychom zjistili, kde je jeho tovarna."
+
+REFERENCE           T2_WEDGE
+LANG_ENGLISH        "New Republic Intelligence has recently discovered the existence of an Imperial tibanna gas platform on the planet Kril'dor.  If the Republic can take control of the platform, it would deal a severe blow to the Imperial Remnant.  General Wedge Antilles of Rogue Squadron has come up with a bold plan in which he and a single ground troop could capture the entire facility.  General Antilles believes that only a Jedi could accomplish the ground portion of the mission."
+LANG_CZECH        "Spehove Nove republiky nedavno na planete Kril'dor objevili existenci imperialni stanice na tezbu plynu. Kdyby dokazala Republika nad stanici prevzit kontrolu, znamenalo by to pro zbytky Imperia velkou ztratu. General Wedge Antilles z Rogue Squadron prisel\n s planem, kdy mala skupina vojaku ovladne celou stanici. General Antilles veri, ze jenom Jedi by mohl dokoncit pozemni cast mise."
+
+REFERENCE           T3_BYSS
+LANG_ENGLISH        "Since Rosh never completed his mission at Byss, we still need to determine if Tavion managed to siphon Force energy from the remains of the planet.  The Emperor spent a lot of time there, so it would be a huge source of power.  If it has been taken, we'll have an idea of just how powerful Tavion is."
+LANG_CZECH        "Vzhledem k tomu, ze Rosh nedokoncil svoji misi na Byss, potrebujeme porad zjistit, zda jiz Tavion odcerpala energii ze zbytku planety. Cisar tam stravil mnoho casu, takze tam bude velky zdroj Sily. Pokud se ho zmocnila, muzeme si udelat predstavu, jak mocna Tavion je."
+
+REFERENCE           T3_RIFT
+LANG_ENGLISH        "We've received word from the Chandrilans that some cultists have broken into an ancient tomb that is supposedly the burial site of a Jedi Knight.  Hurry there and stop them from siphoning that Force power."
+LANG_CZECH        "Od Chandrilanu jsme obdrzeli zpravu, ze se mnozstvi kultistu vloupalo do prastare hrobky, ktera je pohrebnim mistem rytire Jedi. Rychle se tam dostan a zabran jim vycerpat energii Sily."
+
+REFERENCE           T3_STAMP
+LANG_ENGLISH        "We got word from a freighter captain that there are members of the cult at the spaceport on Taanab.  Head over there and find out what they are doing there."
+LANG_CZECH        "Od kapitana nakladni lodi jsme obdrzeli zpravu, ze na kosmodromu na Tanaabu jsou clenove kultu. Let tam\na zjisti, co tam delaji."
+
+REFERENCE           T3_HEVIL
+LANG_ENGLISH        "Our resident Jedi scholar Tionne recently learned of the planet Yalara from our Jedi Holocron.  The planet was once home to a peaceful, yet primitive species that was not ready to be integrated into galactic society.  For this reason, the Jedi Master Broden Kel Verdox harnessed the power of the planet to create a cloaking device, hiding the entire planet from discovery.  But now, someone else has discovered Yalara.  Go to Yalara and find out if anyone has been there.  If the cloaking device is in danger of being stolen, it would be better to destroy it rather than have it fall into the wrong hands."
+LANG_CZECH        "Nas zdejsi student Tionne se dozvedel o planete Yalara z naseho Jedi Holocronu. Planeta byla kdysi domovem mirumilovneho primitivniho druhu, ktery nebyl pripraven na integraci do galakticke spolecnosti. Z tohoto duvodu Mistr Jedi Broden Kel Verdox vyuzil energii planety\nk vytvoreni maskovaciho zarizeni, ktere celou planetu ukryvalo. Ale nyni objevil Yalaru nekdo jiny. Let na Yalaru a zjisti, jestli tam nekdo byl. Pokud je nebezpeci, ze bude zarizeni ukradeno, bude lepsi ho znicit, nez aby padlo do spatnych rukou."
+
+REFERENCE           T3_BOUNTY
+LANG_ENGLISH        "Information has surfaced about a large stockpile of old weapons hidden in the wastes of Ord Mantell.  Destroy the stockpiles so they don't fall into the wrong hands.  Records from the time of the Rebellion indicate there should be seven caches hidden in the ruined city."
+LANG_CZECH        "Na povrch se vynorila informace o velke zasobe starych zbrani skrytych v ruinach Ord Mantellu. Znic zasoby, aby nepadly do spatnych rukou. Zaznamy z doby Rebelie rikaji, ze je v ruinach mesta skryto sedm skladist."
+
+REFERENCE           NONE
+LANG_ENGLISH        " "
+LANG_CZECH        " "
+
+REFERENCE           YAVIN2
+LANG_ENGLISH        "Report to the training grounds with Rosh to begin Force power training with Kyle Katarn."
+LANG_CZECH        "Hlaste se s Roshem na vycvik v pouzivani Sily s Kylem Katarnem."
+
+REFERENCE           ACADEMY2
+LANG_ENGLISH        "Master Skywalker has summoned all available Jedi back to the Academy."
+LANG_CZECH        "Mistr Skywalker povolal vsechny zbyle Jedie zpatky na Akademii."
+
+REFERENCE           HOTH2
+LANG_ENGLISH        "Investigate the site of Luke's vision of Obi-Wan in the wastelands of Hoth to determine if the cult of Ragnos has been there."
+LANG_CZECH        "Prozkoumej misto Lukovy vize Obi-Wana v pustinach Hothu a zjisti, zda tam clenove kultu Ragnose byli."
+
+REFERENCE           HOTH3
+LANG_ENGLISH        "Discover what the Imperial Remnant troops are doing in Echo Base."
+LANG_CZECH        "Zjisti, co delaji zbytky imperialnich jednotek v zakladne Echo."
+
+REFERENCE           ACADEMY3
+LANG_ENGLISH        "Return to the Academy and report to Luke what you have found on Hoth."
+LANG_CZECH        "Vrat se na Akademii a informuj Luka o tom, co jsi nasel na Hothu."
+
+REFERENCE           ACADEMY4
+LANG_ENGLISH        "Master Skywalker has summoned all available Jedi to the Academy to relay some important information about the Disciples of Ragnos."
+LANG_CZECH        "Mistr Skywalker povolal vsechny zbyvajici Jedie na Akademii, aby sdelil dulezite informace o Stoupencich Ragnose."
+
+REFERENCE           VJUN1
+LANG_ENGLISH        "Master Skywalker has dispatched the Jedi to locations of heavy Force activity in the hopes of catching up with the Disciples of Ragnos.  Travel with Master Kyle Katarn to Darth Vader's castle on Vjun to stop the cult from draining its Force energy."
+LANG_CZECH        "Mistr Skywalker posila Jedie na mista znacne aktivity Sily a doufa, ze narazi na Stoupence Ragnose. Cestuj\ns mistrem Kylem Katarnem do pevnosti Dartha Vadera na Vjunu a zabrante kultu cerpat jeho energii."
+
+REFERENCE           VJUN2
+LANG_ENGLISH        "Make your way through the underworks of Bast Castle and find an entry into the castle itself."
+LANG_CZECH        "Projdi prostory pod pevnosti Bast a najdi vstup do pevnosti samotne."
+
+REFERENCE           VJUN3
+LANG_ENGLISH        "Enter Vader's castle and stop the cult from draining its Force energy.  Try to meet back up with Kyle."
+LANG_CZECH        "Vstup do Vaderovy pevnosti a zabran kultu cerpat jeho energii.  Pokus se setkat s Kylem."
+
+REFERENCE           ACADEMY5
+LANG_ENGLISH        "Return to the Academy and report to Luke what you have found on Vjun."
+LANG_CZECH        "Vrat se na Akademii a nahlas Lukovi, co jste nasli na Vjunu."
+
+REFERENCE           ACADEMY6
+LANG_ENGLISH        "Master Skywalker has summoned all Jedi back to the Academy.  He has formulated a plan to stop the Disciples of Ragnos."
+LANG_CZECH        "Mistr Skywalker povolal vsechny zbyvajici Jedie na Akademii.  Vytvoril plan na zastaveni Stoupencu Ragnose."
+
+REFERENCE           TASPIR1
+LANG_ENGLISH        "Gain entrance into the cult facility on Taspir III to search for Rosh Penin."
+LANG_CZECH        "Ziskej pristup do tovarny kultu na Taspiru III a patrej po Roshi Peninovi."
+
+REFERENCE           TASPIR2
+LANG_ENGLISH        "Look for Kyle and Rosh in the cult facility."
+LANG_CZECH        "Hledej v tovarne kultu Kyla a Roshe."
+
+REFERENCE           KOR1
+LANG_ENGLISH        "Travel to Korriban, burial place of Marka Ragnos to confront Tavion."
+LANG_CZECH        "Let na Korriban, pohrebni misto Marky Ragnose, a utkej se s Tavion."
+
+REFERENCE           KOR2
+LANG_ENGLISH        "Enter  the Tomb of Ragnos to confront Tavion.\n\n"
+LANG_CZECH        "Vstup do Ragnosovy hrobky a utkej se s Tavion.\n\n"
+
+
+ENDMARKER
+
+

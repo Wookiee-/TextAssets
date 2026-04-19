@@ -1,0 +1,28 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           ANI
+LANG_ENGLISH        "Qui-Gon, sir. Wait! I'm tired."
+LANG_CZECH        "Pane Qui-Gone. Uz nemuzu!"
+
+REFERENCE           QUI1
+LANG_ENGLISH        "Anakin, drop!"
+LANG_CZECH       "Anakine, k zemi!"
+
+REFERENCE           QUI2
+LANG_ENGLISH        "Go! Tell them to take off."
+LANG_CZECH        "Bez! At hned odstartuji."
+
+ENDMARKER

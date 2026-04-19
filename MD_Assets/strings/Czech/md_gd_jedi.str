@@ -1,0 +1,156 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           OBI6
+LANG_ENGLISH        "Do you believe what Count Dooku said about Sidious controlling the Senate?"
+LANG_CZECH        "Verite tomu, jak Dooku tvrdil, ze Sidious ovlada Senat?"
+
+REFERENCE           OBI6B
+LANG_ENGLISH        "It doesn't feel right."
+LANG_CZECH        "Pripada mi to zvlastni."
+
+REFERENCE           OBI7
+LANG_ENGLISH        "On his way to Naboo. Escorting Senator Amidala home.."
+LANG_CZECH        "Leti na Naboo. Doprovazi Senatorku Amidalu.."
+
+REFERENCE           OBI7B
+LANG_ENGLISH        "I have to admit that without the Clones, it would not have been a victory."
+LANG_CZECH        "Bez pomoci klonu bychom nedosahli vitezstvi tak snadno."
+
+REFERENCE           WIN1
+LANG_ENGLISH        "It is done, then."
+LANG_CZECH        "Pak je to vyreseno."
+
+REFERENCE           WIN2
+LANG_ENGLISH        "Nevertheless, I feel we should keep a closer eye on the Senate."
+LANG_CZECH        "Kazdopadne myslim, ze bychom meli bedlive sledovat Senat."
+
+REFERENCE           WIN3
+LANG_ENGLISH        "Where is your apprentice?"
+LANG_CZECH        "Kde je tvuj ucednik?"
+
+REFERENCE           YOD4
+LANG_ENGLISH        "Joined the Dark Side, Dooku has. Mmm."
+LANG_CZECH        "K Temne Strane, Dooku pridal se. Mmm."
+
+REFERENCE           YOD4B
+LANG_ENGLISH        "Lies, deceit, creating mistrust are his ways now."
+LANG_CZECH        "Lzi, zrada a neduvera jsou ted nastroje jeho."
+
+REFERENCE           YOD5
+LANG_ENGLISH        "I agree."
+LANG_CZECH        "Take myslim."
+
+REFERENCE           YOD6
+LANG_ENGLISH        "Victory?"
+LANG_CZECH        "Vitezstvi?"
+
+REFERENCE           YOD6B
+LANG_ENGLISH        "Victory, you say?"
+LANG_CZECH        "Vitezstvi, rikas?"
+
+REFERENCE           YOD6C
+LANG_ENGLISH        "Master Obi-Wan, not victory."
+LANG_CZECH        "Mistre Obi-Wane, ne vitezstvi."
+
+REFERENCE           YOD6D
+LANG_ENGLISH        "The shroud of the Dark Side has fallen."
+LANG_CZECH        "Temna Strana, dostala se k moci."
+
+REFERENCE           YOD6E
+LANG_ENGLISH        "Begun, the Clone War has."
+LANG_CZECH        "Zacala Klonova Valka."
+
+REFERENCE           ANI1
+LANG_ENGLISH        "You're gonna pay for all the Jedi that you killed today, Dooku!"
+LANG_CZECH        "Zaplatis za vsechny Jedie, ktere jsi dnes zabil, Dooku!"
+ 
+REFERENCE           ANI2
+LANG_ENGLISH        "No, I'm taking him now!"
+LANG_CZECH        "Ne, zabiju ho sam!"
+
+REFERENCE           ANI3
+LANG_ENGLISH        "I am a slow learner."
+LANG_CZECH        "Ucim se pomalu."
+
+REFERENCE           DOK1
+LANG_ENGLISH        "As you see, my Jedi powers are far beyond yours. Now.. Back down!"
+LANG_CZECH        "Jak vidis, me schopnosti jsou silnejsi nez tve. No tak.. vzdej se!"
+
+REFERENCE           DOK2
+LANG_ENGLISH        "Master Kenobi, you disappoint me. Yoda holds you in such high esteem."
+LANG_CZECH        "Mistre Kenobi, zklamal jsi me. Yoda te tolik vychvaloval."
+
+REFERENCE           DOK2B
+LANG_ENGLISH        "Surely you can do better?!"
+LANG_CZECH        "To je vsechno, co umis?!"
+
+REFERENCE           DOK3
+LANG_ENGLISH        "Brave of you, boy."
+LANG_CZECH        "Jsi odvazny, chlapce."
+
+REFERENCE           DOK3B
+LANG_ENGLISH        "But I would have thought you had learned your lesson."
+LANG_CZECH        "Ale myslel jsem, ze uz ses poucil."
+
+REFERENCE           DOK4
+LANG_ENGLISH        "Master Yoda!"
+LANG_CZECH        "Mistr Yoda!"
+
+REFERENCE           DOK5
+LANG_ENGLISH        "You have interfered with our affairs, for the last time!"
+LANG_CZECH        "To bylo naposled, co jste se pletl do nasich veci!"
+
+REFERENCE           DOK6
+LANG_ENGLISH        "It is obvious that this contest cannot be decided by our knowledge of the Force.."
+LANG_CZECH        "Je zrejme, ze tento konflikt nevyresime pouze pomoci Sily.."
+
+REFERENCE           DOK6B
+LANG_ENGLISH        "But by our skills with a lightsaber."
+LANG_CZECH        "ale spise pomoci svetelnych mecu."
+
+REFERENCE           DOK7
+LANG_ENGLISH        "This is just the beginning!"
+LANG_CZECH        "To je teprve zacatek!"
+
+REFERENCE           OBI1
+LANG_ENGLISH        "We'll take him together. You'll go in slowly, on the left.."
+LANG_CZECH        "Musime spolecne. Pomalu se priblizime.."
+
+REFERENCE           OBI2
+LANG_ENGLISH        "No, Anakin! No! No!"
+LANG_CZECH        "Ne, Anakine! Ne! Ne!"
+
+REFERENCE           OBI3
+LANG_ENGLISH        "I don't think so."
+LANG_CZECH        "Na to zapomen."
+
+REFERENCE           OBI4
+LANG_ENGLISH        "Anakin!"
+LANG_CZECH        "Anakine!"
+
+REFERENCE           YOD1
+LANG_ENGLISH        "Count Dooku."
+LANG_CZECH        "Hrabe Dooku."
+
+REFERENCE           YOD2
+LANG_ENGLISH        "Fought well you have, my old Padawan."
+LANG_CZECH        "Bojujes dobre, muj stary Padawane."
+
+REFERENCE           YOD3
+LANG_ENGLISH        "Much to learn, you still have."
+LANG_CZECH        "Jeste hodne, naucit se musis."
+
+ENDMARKER

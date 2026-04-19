@@ -1,0 +1,204 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           02KJO004
+LANG_ENGLISH        "Jan?  I've found an exit."
+LANG_CZECH        "Jan? Nasel jsem vychod."
+
+REFERENCE           02JAO003
+LANG_ENGLISH        "Good.  Grab some of those crystals and get yourself out of there.  This place is giving me the creeps."
+LANG_CZECH        "Dobre. Popadni par tech krystalu a vypadni odtamtud. Mam z tohoto mista husi kuzi."
+
+REFERENCE           02GAF001
+LANG_ENGLISH        "Lord Desann, this is Admiral Fyyar."
+LANG_CZECH        "Lorde Desanne, tady je Admiral Fyyar."
+
+REFERENCE           02DES001
+LANG_ENGLISH        "Ah, Admiral Fyyar.  How go our experiments?"
+LANG_CZECH        "Ach, Admiral Fyyar. Jak jdou nase experimenty?"
+
+REFERENCE           02GAF002
+LANG_ENGLISH        "As of this moment, they're not going at all.  The testing facility on Kejim has been neutralized by a pair of New Republic mercenaries, and they've taken some of the crystals."
+LANG_CZECH        "Momentalne nejdou moc dobre. Testovaci zarizeni na Kejimu bylo neutralizovano parem zoldaku Nove Republiky a ti take vzali nektere krystaly."
+
+REFERENCE           02DES002
+LANG_ENGLISH        "Mercenaries? Who?"
+LANG_CZECH        "Zoldaci? Kdo?"
+
+REFERENCE           02GAF003
+LANG_ENGLISH        "Judging by their ship and the conversations our cameras picked up, I believe it was the pilot Jan Ors, and her mercenary partner, Kyle Katarn."
+LANG_CZECH        "Soude podle jejich lodi a rozhovoru, ktere zachytily nase kamery, se domnivam, ze to byla pilotka Jan Ors a jeji zoldacky kolega Kyle Katarn."
+
+REFERENCE           02DES003
+LANG_ENGLISH        "Katarn, eh?  Hmm.  This "setback" could prove to be the answer to all our problems."
+LANG_CZECH        "Katarn, ech? Hmm. Tento "neuspech" by mohl byt odpovedi na vsechny nase problemy."
+
+REFERENCE           02KJO001
+LANG_ENGLISH        "Looks like another level here, Jan. I'm going to check it out."
+LANG_CZECH        "Vypada to tady na dalsi patro, Jan. Jdu to proverit."
+
+REFERENCE           02JAO001
+LANG_ENGLISH        "Want me to come down there?"
+LANG_CZECH        "Chces, abych prisla dolu?"
+
+REFERENCE           02KJO002
+LANG_ENGLISH        "No, stay with the ship. I'll call you if I run into trouble."
+LANG_CZECH        "Ne, zustan u lodi. Zavolam ti, kdybych se dostal do potizi."
+
+REFERENCE           02JAO002
+LANG_ENGLISH        "Be careful, Kyle."
+LANG_CZECH        "Bud opatrny, Kyle."
+
+REFERENCE           02KJO003
+LANG_ENGLISH        "Hey...it's me!"
+LANG_CZECH        "Hej...to jsem ja!"
+
+REFERENCE           02IO2001
+LANG_ENGLISH        "Fire!"
+LANG_CZECH        "Strilejte!"
+
+REFERENCE           02KJO005
+LANG_ENGLISH        "Looks pretty cold in there."
+LANG_CZECH        "Vypada to tam dost chladne."
+
+REFERENCE           02KJO006
+LANG_ENGLISH        "Geez, it's freezing in here!"
+LANG_CZECH        "Boze, tady mrzne!"
+
+REFERENCE           02ST1001
+LANG_ENGLISH        "Here he comes!"
+LANG_CZECH        "Uz je tady!"
+
+REFERENCE           02ST1002
+LANG_ENGLISH        "Get clear!"
+LANG_CZECH        "Z cesty!"
+
+REFERENCE           02ST1003
+LANG_ENGLISH        "Watch the mines!"
+LANG_CZECH        "Pozor na miny!"
+
+REFERENCE           02ST1004
+LANG_ENGLISH        "Run!"
+LANG_CZECH        "Utikej!"
+
+REFERENCE           02KJO007
+LANG_ENGLISH        "It's locked."
+LANG_CZECH        "Je to zamcene."
+
+REFERENCE           02KJO008
+LANG_ENGLISH        "It's sealed."
+LANG_CZECH        "Je to zapecetene."
+
+REFERENCE           02KJO009
+LANG_ENGLISH        "I'll have to find another way to open this."
+LANG_CZECH        "Musim najit jiny zpusob, jak to otevrit."
+
+REFERENCE           02KJO010
+LANG_ENGLISH        "I'll never get this open."
+LANG_CZECH        "Nikdy to neotevru."
+
+REFERENCE           02KJO011
+LANG_ENGLISH        "Let's see what this little guy can do."
+LANG_CZECH         "Podivejme se, co tenhle maly kluk dokaze."
+
+REFERENCE           02KJO012
+LANG_ENGLISH        "This should be interesting."
+LANG_CZECH         "To by melo byt zajimave."
+
+REFERENCE           02KJO013
+LANG_ENGLISH        "No way I can survive in there."
+LANG_CZECH         "V zadnem pripade tam nemuzu prezit."
+
+REFERENCE           02KJO014
+LANG_ENGLISH        "Maybe if I can shut off the power to that thing."
+LANG_CZECH         "Mozna, kdybych vypnul privod energie do te veci."
+
+REFERENCE           02KJO015
+LANG_ENGLISH        "It's powered down"
+LANG_CZECH         "Je to bez energie."
+
+REFERENCE           02KJO016
+LANG_ENGLISH        "It's off line."
+LANG_CZECH         "Je to mimo provoz."
+
+REFERENCE           02KJO017
+LANG_ENGLISH        "I need to power this up first."
+LANG_CZECH         "Potrebuji to nejdrive zapnout."
+
+REFERENCE           02KJO018
+LANG_ENGLISH        "Jan, I found a way out. Meet you up top."
+LANG_CZECH         "Jan, nasel jsem cestu ven. Setkam se s tebou nahore."
+
+REFERENCE           03MOM001
+LANG_ENGLISH        "... I'm afraid we haven't been able to decode any more of that transmission."
+LANG_CZECH         "... Obavam se, ze se nam nepodarilo rozlustit dalsi cast prenosu."
+
+REFERENCE           03KJO001
+LANG_ENGLISH        "Good.  If I've put the Valley of the Jedi behind me, so can the rest of the galaxy."
+LANG_CZECH         "Dobre. Kdyz jsem Udoli Jediu hodil za hlavu ja, muze to udelat i zbytek galaxie."
+
+REFERENCE           03JAO001
+LANG_ENGLISH        "So, what were the Remnant doing in that lab?"
+LANG_CZECH         "Takze, co delaly zbytky Imperia v te laboratori?"
+
+REFERENCE           03MOM002
+LANG_ENGLISH        "Our scientists believe that they were trying to artificially infuse the powers of the Force into living subjects.  Those crystals you're holding are very much like those found in a Jedi's lightsaber."
+LANG_CZECH         "Nasi vedci se domnivaji, ze se snazili umele vdechnout Silu zivym subjektum. Krystaly, ktere drzite v ruce, jsou velmi podobne tem, ktere se nachazeji ve svetelnem meci Jediu."
+
+REFERENCE           03KJO002
+LANG_ENGLISH        "Spast!"
+LANG_CZECH         "Sakra!"
+
+REFERENCE           03JAO002
+LANG_ENGLISH        "But that's impossible, isn't it?  You can't just give people the Force with a machine, right?"
+LANG_CZECH         "Ale to je prece nemozne, nebo ne? Nemuzete lidem dat Silu jen tak pomoci pristroje, nemam pravdu?"
+
+REFERENCE           03MOM003
+LANG_ENGLISH        "Everything we know about the Force tells us that such devices are nothing but the fevered dreams of fools and madmen, Jan.  But try telling that to those poor beings you found in that laboratory."
+LANG_CZECH         "Vsechno, co vime o Sile, nam rika, ze takova zarizeni jsou jen blaznive sny blaznu a silencu, Jan. Ale zkus to rict tem ubohym bytostem, ktere jsi nasla v te laboratori."
+
+REFERENCE           03KJO003
+LANG_ENGLISH        "Who were they?"
+LANG_CZECH         "Co byli zac?"
+
+REFERENCE           03MOM004
+LANG_ENGLISH        "Colonists from Artus Prime, a remote mining world on the far reaches of the New Republic's influence."
+LANG_CZECH         "Koloniste z Artus Prime, odlehleho tezebniho sveta na okraji vlivu Nove Republiky."
+
+REFERENCE           03KJO004
+LANG_ENGLISH        "Let me guess: crystal mining?"
+LANG_CZECH         "Nechte me hadat: tezili krystaly?"
+
+REFERENCE           03MOM005
+LANG_ENGLISH        "Yes. We lost contact with them shortly before receiving the transmission from Kejim. Now we fear that the colony has been captured by the Remnant."
+LANG_CZECH         "Ano. Ztratili jsme s nimi kontakt kratce predtim, nez jsme obdrzeli vysilani z Kejimu. Nyni se obavame, ze kolonie byla obsazena zbytky Imperia."
+
+REFERENCE           03JAO003
+LANG_ENGLISH        "Or worse."
+LANG_CZECH         "Nebo jeste hur."
+
+REFERENCE           03MOM006
+LANG_ENGLISH        "Indeed.  Without knowing the full extent of the Remnant's plans, or the colonists' plight, the New Republic is uneasy about sending in a full liberation force, so--"
+LANG_CZECH         "Vskutku. Aniz by Nova Republika znala cely rozsah planu zbytku Imperia nebo osud kolonistu, je nejista ohledne vyslani plnych osvobozovacich sil, takze--"
+
+REFERENCE           03KJO005
+LANG_ENGLISH        "So you'd like us to sneak in, assess the situation, and call in the fleet if necessary?"
+LANG_CZECH         "Takze chcete, abychom se vplizili dovnitr, zhodnotili situaci a v pripade potreby zavolali flotilu?"
+
+REFERENCE           03MOM007
+LANG_ENGLISH        "Yes."
+LANG_CZECH         "Ano."
+
+REFERENCE           03KJO006
+LANG_ENGLISH        "You know I don't like messing with this Force business anymore."
+LANG_CZECH         "Vy vite, ze se nerad zapletam do zalezitosti spojenych se Silou."
+
+REFERENCE           03MOM008
+LANG_ENGLISH        "We'll double your usual fee."
+LANG_CZECH         "Zdvojnasobime vasi obvyklou vyplatu."
+
+REFERENCE           03JAO004
+LANG_ENGLISH        "We'll take it."
+LANG_CZECH         "Vezmeme to."
+
+ENDMARKER

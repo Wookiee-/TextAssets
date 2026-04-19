@@ -1,0 +1,48 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           3PO1
+LANG_ENGLISH        "What's all this noise? Oh, a battle! There's been some terrible mistake. I'm programmed for etiquette, not destruction!"
+LANG_CZECH	   "Co je to za hluk? Coze? Bitva?! To musi byt nejaky hrozny omyl. Ja jsem odbornik na etiketu, ne na boj!"
+
+REFERENCE           DOK1
+LANG_ENGLISH        "Master Windu, how pleasant of you to join us."
+LANG_CZECH	   "Mistr Windu, jsme radi, ze jste nas navstivil."
+
+REFERENCE           DOK2
+LANG_ENGLISH        "Brave, but uh.. Foolish, my old Jedi friend. You're impossibly outnumbered."
+LANG_CZECH	   "Odvazne, ale.. hloupe, muj stary priteli. Mame obrovskou presilu."
+
+REFERENCE           DOK3
+LANG_ENGLISH        "We'll see."
+LANG_CZECH	   "Uvidime."
+
+REFERENCE           VEN1
+LANG_ENGLISH        "Now you'll fall, as all Jedi must!"
+LANG_CZECH	   "Ted zemres, tak, jako musi vsichni Jediove!"
+
+REFERENCE           VEN2
+LANG_ENGLISH        "Do you think you'll still be able to call on the Force, after I separate your head from your body?!"
+LANG_CZECH	   "Myslis si, ze budes stale moci pouzivat Silu potom, co ti oddelim hlavu od tela?!"
+
+REFERENCE           WIN1
+LANG_ENGLISH        "This party's over!"
+LANG_CZECH	   "Predstaveni skoncilo!"
+
+REFERENCE           WIN2
+LANG_ENGLISH        "I don't think so."
+LANG_CZECH	   "Jeste uvidime."
+
+ENDMARKER

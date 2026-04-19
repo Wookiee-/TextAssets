@@ -1,0 +1,44 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           OBI1
+LANG_ENGLISH        "No!"
+LANG_CZECH        "Ne!"
+
+REFERENCE           OBI4
+LANG_ENGLISH        "No."
+LANG_CZECH        "Ne."
+
+REFERENCE           OBI5
+LANG_ENGLISH        "Yes, Master."
+LANG_CZECH        "Ano, mistre!"
+
+REFERENCE           QUI1
+LANG_ENGLISH        "[ Muttering ]\nNo, it- it's too late. It's-"
+LANG_CZECH        "[ Mumlani ]\nUz- Uz je pozde. Uz-"
+
+REFERENCE           QUI2
+LANG_ENGLISH        "Obi-Wan. Promise..\npromise me you will train the boy."
+LANG_CZECH       "Obi-Wane. Slib mi..\nSlib mi, ze chlapce vycvicis."
+
+REFERENCE           QUI3
+LANG_ENGLISH        "He is the chosen one. He... will bring balance."
+LANG_CZECH       "On je Vyvoleny. On... vrati rovnovahu Sile."
+
+REFERENCE           QUI4
+LANG_ENGLISH        "Train him."
+LANG_CZECH       	"Vycvic ho."
+
+ENDMARKER

@@ -1,0 +1,46 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           ANI1
+LANG_ENGLISH        "R2, stay with the ship."
+LANG_CZECH        "R2, zustan u lodi."
+
+REFERENCE           GUN1
+LANG_ENGLISH        "The plan has gone as you had promised, my lord."
+LANG_CZECH        "Vse probehlo tak, jak jste slibil, muj pane."
+
+REFERENCE           GUN2
+LANG_ENGLISH        "Welcome, Lord Vader. We've been expecting you."
+LANG_CZECH        "Vitejte, Lorde Vadere. Ocekavali jsme Vas."
+
+REFERENCE           GUN3
+LANG_ENGLISH        "Gunray: The war is over!.. Lord Sidious promised us peace!.. We only want..."
+LANG_CZECH        "Gunray: Valka skoncila!.. Lord Sidious nam slibil mir!.. Chceme jenom..."
+
+REFERENCE           SID1
+LANG_ENGLISH        "You have done well, Viceroy."
+LANG_CZECH         "Udelal jste, co jste mel, Mistokrali."
+
+REFERENCE           SID1B
+LANG_ENGLISH        "When my new apprentice Darth Vader arrives,"
+LANG_CZECH         "Az dorazi muj novy ucednik Darth Vader,"
+
+REFERENCE           SID1C
+LANG_ENGLISH        "he will take care of you."
+LANG_CZECH         "Urcite se o Vas postara."
+
+ENDMARKER
+
+

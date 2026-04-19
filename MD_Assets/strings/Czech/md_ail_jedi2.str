@@ -1,0 +1,76 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           OBI1
+LANG_ENGLISH        "Ah, there you are."
+LANG_CZECH       "Aha, tady jsi."
+
+REFERENCE           OBI2
+LANG_ENGLISH        "Good, maybe I stand more of a chance this time."
+LANG_CZECH       "Dobre, pak mam tentokrat mozna vetsi sanci."
+
+REFERENCE           OBI3
+LANG_ENGLISH        "Are you ready?"
+LANG_CZECH       "Pripraveny?"
+
+REFERENCE           OBI4
+LANG_ENGLISH        "Then let's begin."
+LANG_CZECH       "Tak zacneme."
+
+REFERENCE           OBI5
+LANG_ENGLISH        "You grow too aggressive Anakin, be mindful. A Jedi's goal is to defend life, not take it."
+LANG_CZECH       "Jsi az prilis agresivni Anakine, hlidej se. Jediove maji zivot branit, ne brat."
+
+REFERENCE           OBI6
+LANG_ENGLISH        "Your need for victory Anakin, it blinds you."
+LANG_CZECH       "Tva touha po vitezstvi te zaslepuje, Anakine."
+
+REFERENCE           OBI7
+LANG_ENGLISH        "You're a great warrior Anakin, but your need to prove yourself is your undoing."
+LANG_CZECH       "Jsi velky valecnik Anakine, ale tva touha se prosadit, te znici."
+
+REFERENCE           OBI8
+LANG_ENGLISH        "Until you overcome it, a padawan you will still be."
+LANG_CZECH       "Dokud ji neprekonas, padawanem i nadale budes."
+
+REFERENCE           ANI1
+LANG_ENGLISH        "Was beginning to think you weren't coming master."
+LANG_CZECH       "Uz jsem myslel, ze neprijdete, mistre."
+
+REFERENCE           ANI2
+LANG_ENGLISH        "Are you?"
+LANG_CZECH       "A vy?"
+
+REFERENCE           ANI3
+LANG_ENGLISH        "Mercy doesn't defeat an enemy master."
+LANG_CZECH       "Nepritele soucit neskoli."
+
+REFERENCE           ANI4
+LANG_ENGLISH        "Which is why you're gonna lose."
+LANG_CZECH       "A proto prohrajete."
+
+REFERENCE           ANI5
+LANG_ENGLISH        "There is no way out master."
+LANG_CZECH       "A mam Vas, mistre."
+
+REFERENCE           ANI6
+LANG_ENGLISH        "Admit you are beaten."
+LANG_CZECH       "Uznejte svou prohru."
+
+REFERENCE           ANI7
+LANG_ENGLISH        "There, your weapon's gone, it's over."
+LANG_CZECH       "Tak, prisel jste o zbran. Je po vsem."
+
+ENDMARKER

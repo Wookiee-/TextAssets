@@ -1,0 +1,61 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           VAD1
+LANG_ENGLISH        "What is thy bidding, my master?"
+LANG_CZECH        "Ceho si zadas, muj pane?"
+
+REFERENCE           VAD2
+LANG_ENGLISH        "I have felt it."
+LANG_CZECH        "Take jsem to citil."
+
+REFERENCE           VAD3
+LANG_ENGLISH        "How is that possible?"
+LANG_CZECH        "Jak je to mozne?"
+
+REFERENCE           VAD4
+LANG_ENGLISH        "He's just a boy.\nObi-Wan can no longer help him."
+LANG_CZECH        "Je to pouze chlapec.\nObi-Wan mu uz nepomuze."
+
+REFERENCE           VAD5
+LANG_ENGLISH        "If he could be turned,\nhe would become a powerful ally."
+LANG_CZECH        "Kdyby presel k nam,\nmeli bychom silneho spojence."
+
+REFERENCE           VAD6
+LANG_ENGLISH        "He will join us or die, master."
+LANG_CZECH        "Prida se k nam nebo zemre, pane."
+
+REFERENCE           PAL1
+LANG_ENGLISH        "There is a great disturbance in the Force."
+LANG_CZECH        "Ucitil jsem velky zachvev Sily."
+
+REFERENCE           PAL2
+LANG_ENGLISH        "We have a new enemy, the young rebel who destroyed the Death Star.\nI have no doubt this boy is the offspring of Anakin Skywalker."
+LANG_CZECH        "Mame noveho nepritele, mladeho Povstalce, ktery znicil Hvezdu Smrti.\nNepochybuji o tom, ze ten hoch, je potomek Anakina Skywalkera."
+
+REFERENCE           PAL3
+LANG_ENGLISH        "Search your feelings Lord Vader.\nYou will know it to be true. He could destroy us."
+LANG_CZECH        "Zkoumej sve pocity Lorde Vadere.\nA poznas, ze je to pravda. Mohl by nas znicit."
+
+REFERENCE           PAL4
+LANG_ENGLISH        "The Force is strong with him.\nThe son of Skywalker must not become a Jedi."
+LANG_CZECH        "Citim v nem mocnou Silu. Syn Skywalkera se nesmi stat Jediem."
+
+REFERENCE           PAL5
+LANG_ENGLISH        "Yes... He would be a great.. asset.\nCan it be done?"
+LANG_CZECH        "Ano... Byl by velkym.. prinosem.\nJe to mozne?"
+
+
+ENDMARKER

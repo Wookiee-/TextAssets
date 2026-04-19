@@ -1,0 +1,59 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           J6
+LANG_ENGLISH        "Oh no. I sense the Dark side. I can't let you pass!"
+LANG_CZECH        "Ale ne. Citim v tobe Temnou stranu. Nemuzu te nechat projit!"
+
+REFERENCE           W3
+LANG_ENGLISH        "In the name of the Republic and the Jedi Council, you're under arrest!"
+LANG_CZECH        "Jmenem Republiky a Rady Jediu, jsi zatcen!"
+
+REFERENCE           YOU1
+LANG_ENGLISH        "Master Skywalker, there are too many of them. What are we going to do?"
+LANG_CZECH        "Mistre Skywalkere, je jich tam hrozne moc. Co budeme delat?"
+
+REFERENCE           SHA1
+LANG_ENGLISH        "Anakin, why are you doing this?"
+LANG_CZECH        "Anakine, proc tohle delas?"
+
+REFERENCE           SHA2
+LANG_ENGLISH        "We accepted you into the Jedi Council, and now you betray us?"
+LANG_CZECH        "Prijali jsme te do Rady Jediu a nyni nas zrazujes?"
+
+REFERENCE           SHA3
+LANG_ENGLISH        "How low must a person fall to become a killer of defenseless children?"
+LANG_CZECH        "Jak hluboko musi clovek padnout, aby se stal vrahem bezbrannych deti?"
+
+REFERENCE           SHA4
+LANG_ENGLISH        "The Republic? Or Palpatine? He has twisted your pain into chains. You call this freedom?"
+LANG_CZECH        "Republika? Nebo Palpatine? Z tve bolesti vytvoril okovy. Tomu rikas svoboda?"
+
+REFERENCE           ANI7
+LANG_ENGLISH        "The Jedi betrayed the Republic. You've blinded yourself to the truth, Master Ti. The Order is finished."
+LANG_CZECH        "Jediove zradili Republiku. Zavrela jste oci pred pravdou, mistryne Ti. Rad je u konce."
+
+REFERENCE           ANI8
+LANG_ENGLISH        "The Chancellor showed me what the Council never would. The Jedi are traitors and I will not allow you to stand in the way."
+LANG_CZECH        "Kancler mi ukazal to, co Rada nikdy nedokazala. Jediove jsou zradci a ja vam nedovolim, abyste mi stali v ceste."
+
+REFERENCE           SIN1
+LANG_ENGLISH        "Do not take another step to the dark side!"
+LANG_CZECH        "Neudelej dalsi krok k temne strane!"
+
+
+ENDMARKER
+
+

@@ -1,0 +1,140 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           15LUK014
+LANG_ENGLISH        "Kyle!  Are you there?"
+LANG_CZECH 	   "Kyle! Jsi tam?"
+
+REFERENCE           15KJO015
+LANG_ENGLISH        "Yeah.  I thought you said not to fight Desann alone."
+LANG_CZECH 	   "Jo. Myslel jsem, ze jsi rikal nebojovat s Desannem sam."
+
+REFERENCE           15LUK015
+LANG_ENGLISH        "I didn't have a choice; I never even felt him coming.  He's escaped onto a ship."
+LANG_CZECH 	   "Nemel jsem na vyber; nikdy nevycitim jeho prichod. Utekl na lod."
+
+REFERENCE           15KJO016
+LANG_ENGLISH        "I know. I'm on it."
+LANG_CZECH 	   "Ja vim. Jdu na to."
+
+REFERENCE           15LUK016
+LANG_ENGLISH        "We need to destroy the ship before Desann and his army reaches its target...whatever it is.  Try to find the ship's communication center, and use its sensor array to contact Rogue Squadron.  I'll keep trying..."
+LANG_CZECH 	   "Musime znicit lod, nez Desann a jeho armada dosahne sveho cile...at uz je to cokoliv. Snaz se najit lodni komunikacni centrum a pouzij jeho senzory ke kontaktu s letkou Rogue Squadron.  Ja se pokusim..."
+
+REFERENCE           15KJO017
+LANG_ENGLISH        "Luke?"
+LANG_CZECH 	   "Luku?"
+
+REFERENCE           15LUK017
+LANG_ENGLISH        "...Force...you."
+LANG_CZECH 	   "...Sila...s tebou."
+
+REFERENCE           21KJO001
+LANG_ENGLISH        "Now, where would I put a communications center on a tub like this?"
+LANG_CZECH 	   "No, kde bych ja umistil na takovem miste komunikacni centrum?"
+
+REFERENCE           21WEA001
+LANG_ENGLISH        "...Leader...Katarn...Rogue Leader to Kyle Katarn..."
+LANG_CZECH 	   "...Velitel...Katarnovi...Velitel Rogue Kyle Katarnovi..."
+
+REFERENCE           21KJO002
+LANG_ENGLISH        "Rogue Leader, this is Kyle Katarn."
+LANG_CZECH 	   "Veliteli Rogue, tady Kyle Katarn."
+
+REFERENCE           21WEA002
+LANG_ENGLISH        "Katarn, good to hear your voice.  We've locked onto your signal, and are in pursuit.  That's one whaladon of a ship you've hooked, Kyle."
+LANG_CZECH 	   "Katarne, rad slysim Vas hlas. Zamerili jsme Vas signal a spechame na misto. To je tedy pekna whaladonska lod, co jste zajal, Kyle."
+
+REFERENCE           21KJO003
+LANG_ENGLISH        "Can you bring her down?"
+LANG_CZECH 	   "Poradite si s ni?"
+
+REFERENCE           21WEA003
+LANG_ENGLISH        "Maybe, but I'd feel a lot better about our chances if somebody on the inside were working to disable the ship's shield array."
+LANG_CZECH 	   "Mozna, ale citil bych se lepe, kdyby nekdo uvnitr zapracoval na vypnuti lodnich stitu."
+
+REFERENCE           21KJO004
+LANG_ENGLISH        "I'll see what I can about those shields, but I've got some unfinished business here."
+LANG_CZECH 	   "Uvidim, co s temi stity zmuzu, ale mam tady nejakou nedodelanou praci."
+
+REFERENCE           21WEA004
+LANG_ENGLISH        "Understood.  Once you get the shields down, make sure you get out of there in a hurry, because there's not going to be much left of this ship once we're done with her."
+LANG_CZECH 	   "Chapu. Jakmile vypnete stity, ujistete se, ze se dostanete ven co nejrychleji, protoze z te lodi moc nezbyde, jakmile se do ni pustime."
+
+REFERENCE           21KJO005
+LANG_ENGLISH        "Don't waste any time on my account."
+LANG_CZECH 	   "Se mnou neztracejte cas."
+
+REFERENCE           21WEA005
+LANG_ENGLISH        "Good luck, Kyle.  Rogue Leader out."
+LANG_CZECH 	   "Hodne stesti, Kyle. Velitel Rogue konci."
+
+REFERENCE           21KJO006
+LANG_ENGLISH        "Got it!  And on the way to the shields too!"
+LANG_CZECH 	   "Mam to! A ted na ty stity!"
+
+REFERENCE           21ST1001
+LANG_ENGLISH        "Hey! What's that droid doing?"
+LANG_CZECH 	   "Hej! Co ten droid dela?"
+
+REFERENCE           21ST2001
+LANG_ENGLISH        "It must be malfunctioning."
+LANG_CZECH 	   "Musi mit poruchu."
+
+REFERENCE           21ST1002
+LANG_ENGLISH        "Shut it down."
+LANG_CZECH 	   "Vypni ho."
+
+REFERENCE           21ST2002
+LANG_ENGLISH        "How am I supposed to do that?"
+LANG_CZECH 	   "Jak to mam asi udelat?"
+
+REFERENCE           21ST1003
+LANG_ENGLISH        "Just shoot it. We have more."
+LANG_CZECH 	   "Proste ho strel. Mame jich vic."
+
+REFERENCE           21KJO025
+LANG_ENGLISH        "Droid access panels. Where's an R5 when you need it?"
+LANG_CZECH 	   "Pristupove panely pro droidy. Kde je R5, kdyz ho potrebuji?"
+
+REFERENCE           21KJO026
+LANG_ENGLISH        "These are droid control consoles."
+LANG_CZECH 	   "Tohle jsou ridici konzole pro droidy."
+
+REFERENCE           21KJO027
+LANG_ENGLISH        "Ok, let's see how good I am as an R5."
+LANG_CZECH 	   "Dobre, podivame se, jestli jsem dobry, jako R5."
+
+REFERENCE           21KJO028
+LANG_ENGLISH        "Looks like they use a tram system to get around. This must be one big ship."
+LANG_CZECH 	   "Vypada to, ze pouzivaji system vlaku, aby se dostali kolem. Tohle musi byt velka lod."
+
+REFERENCE           21KJO029
+LANG_ENGLISH        "Communications array control. I'm in the right place. Now I just need to set up a link to reach Rogue Squadron."
+LANG_CZECH 	   "Ovladani komunikacnich rele. Jsem na spravnem miste. Ted jen musim navazat spojeni s Rogue Squadron."
+
+REFERENCE           21KJO030
+LANG_ENGLISH        "I may need to get right into the array and set things manually. I wonder if that's safe?"
+LANG_CZECH 	   "Musim se dostat primo k rele a nastavit to rucne. Zajimalo by me, jestli je to bezpecne?"
+
+REFERENCE           21KJO031
+LANG_ENGLISH        "The whole thing's set up like some kind of code."
+LANG_CZECH 	   "Cela ta vec je nastavena jako nejaky kod."
+
+REFERENCE           21KJO033
+LANG_ENGLISH        "That should do it. C'mon Rogues! I hope you're listnening."
+LANG_CZECH 	   "Ted by to melo fungovat. Pospeste Rogues! Doufam, ze me slysite."
+
+REFERENCE           15KJO012
+LANG_ENGLISH        "Great."
+LANG_CZECH 	   "Vyborne."
+
+REFERENCE           22PRO001
+LANG_ENGLISH        "R5 unit. Transmit your clearance code."
+LANG_CZECH 	   "Jednotko R5. Odesli svuj overovaci kod."
+
+REFERENCE           22PRO002
+LANG_ENGLISH        "This R5 unit is under unauthorized control."
+LANG_CZECH 	   "Tahle jednotka R5 je pod neautorizovanou kontrolou."
+
+ENDMARKER

@@ -1,0 +1,32 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           DOK4B
+LANG_ENGLISH        "You have fought gallantly. Worthy of recognition in the archives of the Jedi Order. Now, it is finished. Surrender.. And your lives will be spared."
+LANG_CZECH        "Bojovali jste statecne. Jiste se zapisete do dejin Radu Jediu. A ted, je dokonano. Vzdejte se.. a uniknete jiste smrti."
+
+REFERENCE           DOK5B
+LANG_ENGLISH        "Then.. I'm sorry, friend."
+LANG_CZECH        "Pak.. je mi lito, priteli."
+
+REFERENCE           PAD1
+LANG_ENGLISH        "Look!"
+LANG_CZECH        "Podivejte!"
+
+REFERENCE           OBI1
+LANG_ENGLISH        "I don't believe you. I'll never join you, Dooku!"
+LANG_CZECH        "Neverim ti. Nikdy se k tobe nepridam, Dooku!"
+
+ENDMARKER

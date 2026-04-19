@@ -1,0 +1,94 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_CZECH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           ANI1
+LANG_ENGLISH        "I agree."
+LANG_CZECH       	"Souhlasim."
+
+REFERENCE           ANI1B
+LANG_ENGLISH        "The Council's next move, will be against the Senate."
+LANG_CZECH        	"Ted se Jediove postavi proti Senatu."
+
+REFERENCE           ANI2
+LANG_ENGLISH        "I understand, Master."
+LANG_CZECH        	"Rozumim, Mistre."
+
+REFERENCE           ANI3
+LANG_ENGLISH        "What about the other Jedi spread across the galaxy?"
+LANG_CZECH        	"A co ostatni Jediove po cele galaxii?"
+
+REFERENCE           PAL1
+LANG_ENGLISH        "Because the Council did not trust you, my young apprentice.."
+LANG_CZECH        	"Protoze ti Rada neverila, muj mlady ucedniku.."
+
+REFERENCE           PAL1B
+LANG_ENGLISH        "I believe you are the only Jedi with no knowledge of this plot."
+LANG_CZECH        	"Jsi ted zrejme jediny Jedi, ktery nevi o tomto spiknuti."
+
+REFERENCE           PAL1C
+LANG_ENGLISH        "When the Jedi learn what has transpired here, they will kill us, along with all the Senators."
+LANG_CZECH        	"Az se Jediove dozvi, co se tady stalo, zabiji nas oba.. a vsechny Senatory take."
+ 
+REFERENCE           PAL2
+LANG_ENGLISH        "Every single Jedi, including your friend, Obi-Wan Kenobi.. is now an enemy of the Republic."
+LANG_CZECH        	"Jeden kazdy Jedi, vcetne tveho pritele, Obi-Wana Kenobiho, je ted nepritelem Republiky."
+
+REFERENCE           PAL3
+LANG_ENGLISH        "We must move quickly. The Jedi are relentless. If they are not all destroyed, it will be civil war, without end."
+LANG_CZECH         	"Jednejme rychle. Jediove nezahaleji. Pokud nebudou do jednoho zniceni, vypukne obcanska valka bez konce."
+
+REFERENCE           PAL3B
+LANG_ENGLISH        "First, I want you to go to the Jedi Temple. We will catch them off balance."
+LANG_CZECH         	"Nejdrive se musis vydat do Chramu Jediu. Musime je prekvapit."
+
+REFERENCE           PAL3C
+LANG_ENGLISH        "Do what must be done, Lord Vader. Do not hesitate. Show no mercy."
+LANG_CZECH         	"Udelej, co je treba, Lorde Vadere. Ted nevahej a nemej slitovani."
+
+REFERENCE           PAL3D
+LANG_ENGLISH        "Only then, will you be strong enough with the Dark Side, to save Padmé."
+LANG_CZECH         	"Teprve potom poznas Temnou stranu dost na to, aby jsi zachranil Padme."
+
+REFERENCE           PAL4
+LANG_ENGLISH        "Their betrayal will be dealt with."
+LANG_CZECH         	"Jejich zrada bude potrestana."
+
+REFERENCE           PAL4B
+LANG_ENGLISH        "After you have killed all the Jedi in the Temple, go to the Mustafar system. Wipe out Viceroy Gunray and the other Separatist leaders."
+LANG_CZECH         	"Az zabijes vsechny Jedie v Chramu, vydej se do soustavy Mustafar. Zlikviduj Mistokrale Gunraye a ostatni vudce Separatistu."
+
+REFERENCE           PAL4C
+LANG_ENGLISH        "Once more, the Sith will rule the galaxy!"
+LANG_CZECH         	"Ano, Sithove budou znovu vladnout galaxii!"
+
+REFERENCE           PAL4D
+LANG_ENGLISH        "And.. we shall have.. peace."
+LANG_CZECH         	"A pak.. v ni bude.. mir."
+
+REFERENCE           PAL5
+LANG_ENGLISH        "The time has come.."
+LANG_CZECH        	"Cas nadesel.."
+
+REFERENCE           PAL5B
+LANG_ENGLISH        "Execute Order Sixty-Six."
+LANG_CZECH        	"Provedte Rozkaz 66."
+
+REFERENCE           COD1
+LANG_ENGLISH        "Yes, my lord."
+LANG_CZECH        	"Ano, muj Lorde."
+
+ENDMARKER
+
+

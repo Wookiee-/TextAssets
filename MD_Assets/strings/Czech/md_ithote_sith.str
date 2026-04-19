@@ -1,0 +1,64 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           EMP1
+LANG_ENGLISH        "Guards, leave us."
+LANG_CZECH        "Straze, muzete odejit."
+
+REFERENCE           EMP2
+LANG_ENGLISH        "The Deathstar.. destroyed."
+LANG_CZECH        "Hvezda Smrti.. znicena."
+
+REFERENCE           EMP3
+LANG_ENGLISH        "The ultimate symbol of Imperial power, wiped from the existence by a single pilot."
+LANG_CZECH        "Ultimatni symbol moci Imperia, ktery byl vymazan z existence jedinym pilotem."
+
+REFERENCE           EMP4
+LANG_ENGLISH        "The Rebellion should have been crushed, instead it thrives."
+LANG_CZECH        "Povstani melo byt rozdrceno, ale misto toho jen vzkveta."
+
+REFERENCE           EMP5
+LANG_ENGLISH        "All because of your weakness."
+LANG_CZECH        "A to vse kvuli tve slabosti."
+
+REFERENCE           EMP6
+LANG_ENGLISH        "The Force serves the strong!"
+LANG_CZECH        "Sila slouzi silnym!"
+
+REFERENCE           EMP7
+LANG_ENGLISH        "And you.. are no longer worthy of my favor."
+LANG_CZECH        "A ty.. uz nejsi hoden me prizne."
+
+REFERENCE           EMP8
+LANG_ENGLISH        "You are no longer my enforcer."
+LANG_CZECH        "Uz nejsi muj vykonavatel."
+
+REFERENCE           EMP9
+LANG_ENGLISH        "You are nothing."
+LANG_CZECH        "Nejsi nic."
+
+REFERENCE           EMP10
+LANG_ENGLISH        "If you wish to serve me again, you will earn it."
+LANG_CZECH        "Chces-li mi znovu slouzit, musis si to zaslouzit."
+
+REFERENCE           EMP11
+LANG_ENGLISH        "Now crawl from my sight!"
+LANG_CZECH        "Ted se mi ztrat z oci!"
+
+REFERENCE           VAD1
+LANG_ENGLISH        "The Force was strong with the rebel pilot."
+LANG_CZECH        "Sila byla s povstaleckym pilotem silna."
+
+ENDMARKER

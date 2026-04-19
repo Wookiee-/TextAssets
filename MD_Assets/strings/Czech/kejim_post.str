@@ -1,0 +1,448 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           01JAO001
+LANG_ENGLISH        "Preparing for final approach. Whatever's causing those transmissions, it's not showing up on any of the sensors.  This Imperial outpost looks as abandoned as reported."
+LANG_CZECH         "Priprava na finalni priblizeni. At uz je pricinou techto prenosu cokoli, na zadnem ze senzoru se to neukazuje. Tato imperialni zakladna vypada stejne opustene, jak bylo hlaseno."
+
+REFERENCE           01KJO001
+LANG_ENGLISH        "It's as dead as the rest of Kejim.  Mon Mothma must be getting paranoid.  She never used to send pros like us out on blue milk runs like this."
+LANG_CZECH         "Je mrtva, jako zbytek Kejimu. Mon Mothma musi byt paranoidni. Nikdy neposilala profiky, jako jsme my, na neco takoveho."  
+
+REFERENCE           01MOM001
+LANG_ENGLISH        "Kyle, Jan.  Greetings."
+LANG_CZECH         "Kyle, Jan. Zdravim vas."
+
+REFERENCE           01JAO002
+LANG_ENGLISH        "Mon Mothma.  Kyle was just talking about you."
+LANG_CZECH         "Mon Mothmo. Kyle o Vas prave hovoril."
+
+REFERENCE           01MOM002
+LANG_ENGLISH        "No doubt.  I bring troubling information about your mission on Kejim."
+LANG_CZECH         "O tom nepochybuji. Prinasim znepokojujici informaci o vasi misi na Kejim."
+
+REFERENCE           01KJO002
+LANG_ENGLISH        "I hate it when you say "troubling.""
+LANG_CZECH         "Nesnasim, kdyz rikate "znepokojujici"."
+
+REFERENCE           01MOM003
+LANG_ENGLISH        "We've managed to decode a small fraction of the transmission we intercepted earlier, and, well, listen for yourselves..."
+LANG_CZECH         "Podarilo se nam dekodovat malou cast prenosu, ktery jsme predtim zachytili, a, no, poslechnete si to sami..."
+
+REFERENCE           01IO1001
+LANG_ENGLISH        "Admiral Fyyar: in.............. Shadow ..............................................................................................................................., we may have to .................. Valley of the Jedi ............. Reborn ........."
+LANG_CZECH       "Admiral Fyyar: v.............. Stinovy ..............................................................................................................................., mozna bychom meli .................. Udoli Jediu ............. Znovuzrozenec ........."
+
+REFERENCE           01JAO003
+LANG_ENGLISH        "The Valley of the Jedi?"
+LANG_CZECH         "Udoli Jediu?"
+
+REFERENCE           01KJO003
+LANG_ENGLISH        "Reborn?"
+LANG_CZECH         "Znovuzrozenec?"
+
+REFERENCE           01MOM004
+LANG_ENGLISH        "We believe this transmission was intended for Galak Fyyar, the suspected leader of the Remnant forces in that sector.  It's probably nothing more than a couple of soldiers telling tales around the glowlamp, but as you are the only survivors of the Valley of the Jedi incident, I thought it only fair to warn you that this mission may be more dangerous than we originally anticipated.  Your objectives, however, remain the same: Find out what you can, clear out any Remnant forces you encounter, and may the Force be With You."
+LANG_CZECH         "Domnivame se, ze toto vysilani bylo urceno Galaku Fyyarovi, predpokladanemu vudci sil zbytku Imperia v tomto sektoru. Pravdepodobne nejde o nic vic, nez o par vojaku, kteri si vypraveji pohadky u lampy, ale vzhledem k tomu, ze jste jedini, kdo prezil incident v Udoli Jediu, považovala jsem za fer vas varovat, ze tato mise muze byt nebezpecnejsi, nez jsme puvodne predpokladali. Vase cile vsak zustavaji stejne: zjistete, co se da, odstrante vsechny sily zbytku Imperia, na ktere narazite, a at vas provazi Sila."
+
+REFERENCE           01JAO004
+LANG_ENGLISH        "So much for the blue milk run."
+LANG_CZECH         "Prilis mnoho na takovy vylet."
+
+REFERENCE           01KJO012
+LANG_ENGLISH        "Did that do it?"
+LANG_CZECH         "Hotovo?"
+
+REFERENCE           01JAO023
+LANG_ENGLISH        "No, but you managed to get everyone's attention."
+LANG_CZECH         "Ne, ale podarilo se ti ziskat pozornost vsech."
+
+REFERENCE           01KJO018
+LANG_ENGLISH        "Jan, I'm going to need your help. There's an access terminal here but it's encoded."
+LANG_CZECH         "Jan, budu potrebovat tvoji pomoc. Je tady pristupovy terminal, ale je zakodovany."
+
+REFERENCE           01JAO039
+LANG_ENGLISH        "I'm on my way."
+LANG_CZECH         "Uz jsem na ceste."
+
+REFERENCE           01JAO040
+LANG_ENGLISH        "Kyle! I'm pinned down. Get back here and give me a hand."
+LANG_CZECH         "KYle! Jsem tu obklicena. Vrat se zpatky a pomoz mi."
+
+REFERENCE           01KJO019
+LANG_ENGLISH        "Hang on, Jan!"
+LANG_CZECH         "Vydrz Jan!"
+
+REFERENCE           01IO2001
+LANG_ENGLISH        "Please proceed with your transmission, Admiral Fyyar."
+LANG_CZECH         "Pokracujte prosim ve vysilani, Admirale Fyyare."
+
+REFERENCE           01GAF001
+LANG_ENGLISH        "Convey my dissatisfaction with Commander Stavan on his performance. Inform him that he has been removed from command and will be reassigned. That is all."
+LANG_CZECH         "Sdelte moji nespokojenost Veliteli Stavanovi s jeho vykonem. Informujte ho, ze byl odvolan z veleni a bude prevelen. To je vse."
+
+REFERENCE           01IO2002
+LANG_ENGLISH        "We'll send the message immediately."
+LANG_CZECH         "Zpravu ihned zasleme."
+
+REFERENCE           01JAO066
+LANG_ENGLISH        "Let's go, Kyle!"
+LANG_CZECH         "Tak pojd, Kyle!"
+
+REFERENCE           01KJO027
+LANG_ENGLISH        "Not yet!"
+LANG_CZECH         "Jeste ne!"
+
+REFERENCE           01KJO029
+LANG_ENGLISH        "Jan, prep the ship for takeoff. I just want to check out one last area."
+LANG_CZECH         "Jan, priprav lod na vzletnuti. Jeste proverim jednu oblast."
+
+REFERENCE           01JAO067
+LANG_ENGLISH        "Great!"
+LANG_CZECH         "Skvele!"
+
+REFERENCE           01JAO068
+LANG_ENGLISH        "Nice work!"
+LANG_CZECH         "Dobra prace!"
+
+REFERENCE           01JAO069
+LANG_ENGLISH        "Meet you at the ship."
+LANG_CZECH         "Setkam se s tebou u lodi."
+
+REFERENCE           01JAO005
+LANG_ENGLISH        "Blasters aren't going to do much good against that."
+LANG_CZECH         "Proti tomu blastery moc nepomohou."
+
+REFERENCE           01JAO006
+LANG_ENGLISH        "The door is locked."
+LANG_CZECH         "Dvere jsou zamcene."
+
+REFERENCE           01JAO007
+LANG_ENGLISH        "Shhh"
+LANG_CZECH         "Psst."
+
+REFERENCE           01JAO008
+LANG_ENGLISH        "I think I saw someone."
+LANG_CZECH         "Myslim, ze jsem nekoho zahledla."
+
+REFERENCE           01JAO009
+LANG_ENGLISH        "What's that?"
+LANG_CZECH         "Co je to?"
+
+REFERENCE           01JAO010
+LANG_ENGLISH        "Better keep it down."
+LANG_CZECH         "Radeji se drz pri zemi."
+
+REFERENCE           01JAO011
+LANG_ENGLISH        "Maybe we can get in without being noticed."
+LANG_CZECH         "Mozna se dostaneme dovnitr bez toho, aby nas zpozorovali."
+
+REFERENCE           01JAO012
+LANG_ENGLISH        "Kyle!"
+LANG_CZECH         "#same"
+
+REFERENCE           01JAO013
+LANG_ENGLISH        "Help me!"
+LANG_CZECH         "Pomoz mi!"
+
+REFERENCE           01JAO014
+LANG_ENGLISH        "I could use some help!"
+LANG_CZECH         "Hodila by se mi pomoc!"
+
+REFERENCE           01JAO015
+LANG_ENGLISH        "What are you waiting for?"
+LANG_CZECH         "Na co cekas?"
+
+REFERENCE           01JAO016
+LANG_ENGLISH        "I hate to rush you Kyle, but we do have a mission to perform here."
+LANG_CZECH         "Nerada te popohanim Kyle, ale mame tu dodelat misi."
+
+REFERENCE           01JAO017
+LANG_ENGLISH        "What are you doing?"
+LANG_CZECH         "Co to delas?"
+
+REFERENCE           01JAO018
+LANG_ENGLISH        "Whose side are you on?"
+LANG_CZECH         "Na ci strane jsi?"
+
+REFERENCE           01JAO019
+LANG_ENGLISH        "You traitor!"
+LANG_CZECH         "Ty zradce!"
+
+REFERENCE           01JAO020
+LANG_ENGLISH        "Troopers!"
+LANG_CZECH         "Vojaci!"
+
+REFERENCE           01JAO021
+LANG_ENGLISH        "We've got company."
+LANG_CZECH         "Mame spolecnost."
+
+REFERENCE           01JAO022
+LANG_ENGLISH        "Look out!¨
+LANG_CZECH         "Davej pozor!"
+
+REFERENCE           01KJO005
+LANG_ENGLISH        "The blasters are offline. I need to get them powered up."
+LANG_CZECH         "Blastery jsou offline. Musim je zapnout."
+
+REFERENCE           01KJO006
+LANG_ENGLISH        "Jan!"
+LANG_CZECH         "#same"
+
+REFERENCE           01KJO007
+LANG_ENGLISH        "Look out!"
+LANG_CZECH         "Davej pozor!"
+
+REFERENCE           01KJO008
+LANG_ENGLISH        "Over there!"
+LANG_CZECH         "Tamhle!"
+
+REFERENCE           01KJO009
+LANG_ENGLISH        "Behind you!"
+LANG_CZECH         "Za tebou!"
+
+REFERENCE           01KJO010
+LANG_ENGLISH        "Stay here, Jan."
+LANG_CZECH         "Zustan tu, Jan."
+
+REFERENCE           01KJO011
+LANG_ENGLISH        "I'll see if I can find a way to get the door open."
+LANG_CZECH         "Uvidim, jestli dokazu najit zpusob, jak otevrit dvere."
+
+REFERENCE           01PRO001
+LANG_ENGLISH        "Perimeter defenses online."
+LANG_CZECH         "Obrana perimetru zapnuta."
+
+REFERENCE           01JAO024
+LANG_ENGLISH        "Very subtle, Kyle."
+LANG_CZECH         "Velmi chytre, Kyle."
+
+REFERENCE           01JAO025
+LANG_ENGLISH        "Well, that's one way to do it."
+LANG_CZECH         "No, to je jedna moznost, jak to udelat."
+
+REFERENCE           01JAO026
+LANG_ENGLISH        "You did it!"
+LANG_CZECH         "Zvladl jsi to!"
+
+REFERENCE           01IO1002
+LANG_ENGLISH        "Keep an eye out for those Rebels."
+LANG_CZECH         "Davejte si pozor na tyhle Povstalce."
+
+REFERENCE           01JAO027
+LANG_ENGLISH        "Ok, I'll wait here. Don't take all day."
+LANG_CZECH         "Ok, pockam tady. At ti to nezabere cely den."
+
+REFERENCE           01KJO013
+LANG_ENGLISH        "Wait here, Jan."
+LANG_CZECH         "Pockej tady, Jan."
+
+REFERENCE           01KJO014
+LANG_ENGLISH        "Cover our back."
+LANG_CZECH         "Kryj nam zada."
+
+REFERENCE           01JAO028
+LANG_ENGLISH        "Now this looks interesting."
+LANG_CZECH         "Tohle vypada zajimave."
+
+REFERENCE           01JAO029
+LANG_ENGLISH        "I think this is a primary control console."
+LANG_CZECH         "Myslim, ze tohle je hlavni ovladaci konzole."
+
+REFERENCE           01JAO030
+LANG_ENGLISH        "I think I'll hang out here a while and see what kind of trouble I can cause."
+LANG_CZECH         "Myslim, ze se tu chvili zdrzim a uvidim, jake problemy dokazu zpusobit."
+
+REFERENCE           01JAO031
+LANG_ENGLISH        "I need some time here to see what I can dig up."
+LANG_CZECH         "Potrebuji nejaky cas, abych zjistila, co se da vyhrabat."
+
+REFERENCE           01JAO032
+LANG_ENGLISH        "How's it going?"
+LANG_CZECH         "Jak to jde?"
+
+REFERENCE           01JAO033
+LANG_ENGLISH        "Are you ok?"
+LANG_CZECH         "Jsi v poradku?"
+
+REFERENCE           01KJO015
+LANG_ENGLISH        "Great"
+LANG_CZECH         "Skvele."
+
+REFERENCE           01KJO016
+LANG_ENGLISH        "Fine."
+LANG_CZECH         "V poradku."
+
+REFERENCE           01KJO017
+LANG_ENGLISH        "I'm ok."
+LANG_CZECH         "Jsem v poradku."
+
+REFERENCE           01JAO034
+LANG_ENGLISH        "Kyle. The schematics show that the base is divided into 3 sections."
+LANG_CZECH         "Kyle. Schemata ukazuji, ze zakladna je rozdelena do 3 sekci."
+
+REFERENCE           01SO2001A
+LANG_ENGLISH        "Open the door!"
+LANG_CZECH         "Otevrete dvere!"
+
+REFERENCE           01SO1001
+LANG_ENGLISH        "Get reinforcements!"
+LANG_CZECH         "Zavolejte posily!"
+
+REFERENCE           01JAO035
+LANG_ENGLISH        "I'm getting some good stuff, Kyle."
+LANG_CZECH         "Mam opravdu neco dobreho, Kyle."
+
+REFERENCE           01JAO036
+LANG_ENGLISH        "I'm busy, Kyle."
+LANG_CZECH         "Nemam cas, Kyle."
+
+REFERENCE           01JAO037
+LANG_ENGLISH        "I'm going to keep at this and see what I can find out."
+LANG_CZECH         "Budu v tom pokracovat a uvidime, co se mi podari zjistit."
+
+REFERENCE           01JAO038
+LANG_ENGLISH        "I'll join you later, Kyle."
+LANG_CZECH         "Pripojim se k tobe pozdeji, Kyle."
+
+REFERENCE           01JAO041
+LANG_ENGLISH        "Kyle! Where are you? I can't hold out much longer."
+LANG_CZECH         "Kyle! Kde jsi? Uz je dlouho nezadrzim."
+
+REFERENCE           01JAO042
+LANG_ENGLISH        "Hurry up, Kyle!"
+LANG_CZECH         "Pospes si, Kyle!"
+
+REFERENCE           01JAO043
+LANG_ENGLISH        "Took you long enough!"
+LANG_CZECH         "To ti trvalo dlouho!"
+
+REFERENCE           01JAO044
+LANG_ENGLISH        "Thanks, Kyle!"
+LANG_CZECH         "Diky, Kyle."
+
+REFERENCE           01JAO045
+LANG_ENGLISH        "Now, to break that code. Lead the way."
+LANG_CZECH         "A nyni prolom kod. Pokracuj."
+
+REFERENCE           01JAO046
+LANG_ENGLISH        "Got it!"
+LANG_CZECH         "Mam to!"
+
+REFERENCE           01JAO047
+LANG_ENGLISH        "Piece of cake."
+LANG_CZECH         "Je to brnkacka."
+
+REFERENCE           01JAO048
+LANG_ENGLISH        "That should get you where you need to go."
+LANG_CZECH         "To by te melo dostat tam, kam potrebujes jit."
+
+REFERENCE           01JAO049
+LANG_ENGLISH        "What would you do without me?"
+LANG_CZECH         "Co by jsi beze mne delal?"
+
+REFERENCE           01JAO050
+LANG_ENGLISH        "Nice shooting, Kyle."
+LANG_CZECH         "Pekna trefa, Kyle."
+
+REFERENCE           01JAO051
+LANG_ENGLISH        "Are we good, or what?"
+LANG_CZECH         "Jsme dobri, vis?"
+
+REFERENCE           01JAO052
+LANG_ENGLISH        "That was close!"
+LANG_CZECH         "To bylo blizko!"
+
+REFERENCE           01JAO053
+LANG_ENGLISH        "Hey! Where are you going?"
+LANG_CZECH         "Hej! Kam to jdes?"
+
+REFERENCE           01JAO054
+LANG_ENGLISH        "This way Kyle."
+LANG_CZECH         "Tudy Kyle."
+
+REFERENCE           01JAO055
+LANG_ENGLISH        "Aren't you going with me?"
+LANG_CZECH         "Ty se mnou nejdes?"
+
+REFERENCE           01JAO056
+LANG_ENGLISH        "What? Am I supposed to do this alone?"
+LANG_CZECH         "Co? Mam to snad udelat sama?"
+
+REFERENCE           01JAO057
+LANG_ENGLISH        "That's the wrong way!"
+LANG_CZECH         "To je spatna cesta!"
+
+REFERENCE           01JAO058
+LANG_ENGLISH        "Kyle, are you ok?"
+LANG_CZECH         "Kyle, jsi v poradku?"
+
+REFERENCE           01JAO059A
+LANG_ENGLISH        "What was that?"
+LANG_CZECH         "Co to bylo?"
+
+REFERENCE           01JAO059B
+LANG_ENGLISH        "What would you do without me?"
+LANG_CZECH         "Co bys beze mne delal?"
+
+REFERENCE           01JAO059C
+LANG_ENGLISH        "Nice shooting, Kyle."
+LANG_CZECH         "Pekna trefa, Kyle."
+
+REFERENCE           01KJO020
+LANG_ENGLISH        "Just taking care of business."
+LANG_CZECH         "Jen se staram o kseft."
+
+REFERENCE           01KJO021
+LANG_ENGLISH        "Just another day at work, Jan."
+LANG_CZECH         "Pouze dalsi den v praci, Jan."
+
+REFERENCE           01KJO022
+LANG_ENGLISH        "No problem."
+LANG_CZECH         "Zadny problem."
+
+REFERENCE           01ST1001
+LANG_ENGLISH        "Wait, don't shoot!"
+LANG_CZECH         "Pockej, nestrilej!"
+
+REFERENCE           01ST2001
+LANG_ENGLISH        "Watch your fire! Those are fuel valves."
+LANG_CZECH         "Dej si pozor, kam strilis! Tohle jsou palivove clanky."
+
+REFERENCE           01KJO023
+LANG_ENGLISH        "Each of these terminals are securely locked."
+LANG_CZECH         "Kazdy z techto terminalu je bezpecne uzamcen."
+
+REFERENCE           01KJO024
+LANG_ENGLISH        "Looks like an Imperial code."
+LANG_CZECH         "Vypada to jako Imperialni kod."
+
+REFERENCE           01KJO025
+LANG_ENGLISH        "I found another code."
+LANG_CZECH         "Nasel jsem dalsi kod."
+
+REFERENCE           01KJO026
+LANG_ENGLISH        "I found the last code!"
+LANG_CZECH         "Nasel jsem posledni kod!"
+
+REFERENCE           01JAO063
+LANG_ENGLISH        "Hurry up, Kyle!"
+LANG_CZECH         "Pospes si, Kyle!"
+
+REFERENCE           01JAO064
+LANG_ENGLISH        "What's taking so long?"
+LANG_CZECH         "Co ti trvalo tak dlouho?"
+
+REFERENCE           01JAO065
+LANG_ENGLISH        "We're going to have company!"
+LANG_CZECH         "Budeme mit spolecnost!"
+
+REFERENCE           01KJO028
+LANG_ENGLISH        "I'm working on it."
+LANG_CZECH         "Pracuji na tom."
+
+REFERENCE           01KJO030
+LANG_ENGLISH        "All right! Now let's see what's so important."
+LANG_CZECH         "Dobre! Ted se podivame, co je tak duleziteho."
+
+ENDMARKER

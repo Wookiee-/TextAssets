@@ -1,0 +1,52 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           17KJO001
+LANG_ENGLISH        "Those look like some kind of assault ships. And they seem to be packing them for a little trip."
+LANG_CZECH 	   "Vypada to na nejaky druh utocnych lodi. A zda se, ze jsou pripravene na malou vyjizdku."
+
+REFERENCE           17KJO002
+LANG_ENGLISH        "There's got to be some way out of here."
+LANG_CZECH 	   "Musi odsud vest nejaka cesta."
+
+REFERENCE           17KJO003
+LANG_ENGLISH        "Not very subtle. But it seems to have gotten the job done."
+LANG_CZECH 	   "To nebylo moc chytre. Ale zda se, ze to zalezitost vyresilo."
+
+REFERENCE           17IW2002
+LANG_ENGLISH        "I can't move."
+LANG_CZECH 	   "Nemuzu se hybat."
+
+REFERENCE           17IW2003
+LANG_ENGLISH        "Everything's electrified!"
+LANG_CZECH 	   "Vsechno je pod elektrickym proudem!"
+
+REFERENCE           17IW2004
+LANG_ENGLISH        "Someone get to a power terminal."
+LANG_CZECH 	   "Nekdo se dostal k terminalu energie."
+
+REFERENCE           17KJO004
+LANG_ENGLISH        "Better be careful where I step here."
+LANG_CZECH 	   "Radeji budu opatrny, kam slapu."
+
+REFERENCE           17KJO005
+LANG_ENGLISH        "The exit's blocked by the current."
+LANG_CZECH 	   "Vychod je momentalne zablokovany."
+
+REFERENCE           17IO1002
+LANG_ENGLISH        "TK664, what is your status?"
+LANG_CZECH 	   "TK664, jaky je tvuj stav?"
+
+REFERENCE           17IO1003
+LANG_ENGLISH        "TK664! Report!"
+LANG_CZECH 	   "TK664! Hlas se!"
+
+REFERENCE           17GAF001
+LANG_ENGLISH        "He's caused enough trouble already. Hunt him down and eliminate him, or your master will hear of my disappointment."
+LANG_CZECH 	   "Uz zpusobil dost problemu. Chytte ho a zlikvidujte nebo vas pan uslysi o mem zklamani."
+
+REFERENCE           17IO1004
+LANG_ENGLISH        "Continue with your work. This intrusion will not delay our agenda."
+LANG_CZECH 	   "Pokracujte ve sve praci. To vyruseni nezpozdi nas plan."
+
+ENDMARKER

@@ -1,0 +1,1228 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "Movie Duels Menus"
+
+//----------------------------------------------------------
+//	-- CONTENTS/HEADINGS: --
+//
+//	- MAIN MENUS: -
+//	h1: OLD REPUBLIC
+//	h2: SITH EMPIRE
+//	h3: REPUBLIC
+//	h4: SEPARATIST
+//	h5: REBELS
+//	h6: EMPIRE
+//	h7: RESISTANCE
+//	h8: FIRST ORDER
+//
+//----------------------------------------------------------
+
+
+//----------------------------------------------------------
+// 	h1: OLD REPUBLIC
+//----------------------------------------------------------
+
+REFERENCE           		BASTILA_SHAN
+LANG_ENGLISH        "A powerful Jedi from the Old Republic era, Bastila Shan was renowned for her rare Battle Meditation ability, which could sway the outcome of entire wars. Trained in the ways of the Force from a young age, she played a pivotal role in the Jedi Civil War, struggling with her connection to Darth Revan - and the dark side within herself."
+LANG_CZECH       "Bastila Shan, mocna Jedi z ery Stare republiky, byla proslula svou vzacnou schopnosti bojove meditace, ktera mohla ovlivnit vysledek celych valek. Od mladi byla cvicena v pouzivani Sily a sehrala klicovou roli v Obcanske valce Jediu, kde zapasila se svym spojenim s Darth Revanem a temnou stranou v sobe same."
+
+REFERENCE 			REPUBLIC_TROOPER
+LANG_ENGLISH 		"A soldier of the Galactic Republic, Republic Troopers fought across the galaxy during the Jedi Civil War. Trained for versatility and discipline, they formed the backbone of Republic ground forces against the Sith."
+LANG_CZECH       "Vojaci Galakticke republiky, Republikovi vojaci, bojovali behem Obcanske valky Jediu po cele galaxii. Vycviceni k vsestrannosti a discipline tvorili pater pozemnich sil Republiky proti Sithum."
+
+REFERENCE 			TRASK_ULGO
+LANG_ENGLISH 		"A Republic soldier aboard the Endar Spire, Trask Ulgo aided a Force-sensitive ally during Darth Malak's attack. He sacrificed his life to ensure their escape, helping set the Jedi Civil War in motion."
+LANG_CZECH       "Trask Ulgo, vojak Republiky na palube Endar Spire, pomohl behem utoku Dartha Malaka spojenci citlivemu na Silu. Obetoval svuj zivot, aby zajistil jeho utek, a pomohl tak rozbehnout Obcanskou valku Jediu."
+
+REFERENCE 			REPUBLIC_OFFICER
+LANG_ENGLISH 		"A commissioned leader within the Republic military, Republic Officers oversaw fleets and armies during the Old Republic's wars. They coordinated closely with Jedi commanders to counter Sith expansion."
+LANG_CZECH       "Republikovi dustojnici byli povereni velitele v armade Republiky, kteri behem valek Stare republiky dohlizeli na flotily a armady. Uzce spolupracovali s veliteli Jediu, aby celili expanzi Sithu."
+
+REFERENCE 			MEETRA_SURIK
+LANG_ENGLISH 		"Known as the Jedi Exile, Meetra Surik was a former Jedi Knight who cut herself off from the Force after the Mandalorian Wars. She later reclaimed her power and confronted the Sith Triumvirate, shaping the fate of the Republic."
+LANG_CZECH       "Meetra Surik, znama jako Jedi Vyhnankyne, byla byvala rytirka Jedi, ktera se po Mandalorianskych valkach odrizla od Sily. Pozdeji znovu ziskala svou moc a postavila se proti Triumviratu Sithu, cimz ovlivnila osud Republiky."
+
+REFERENCE 			JOLEE_BINDO
+LANG_ENGLISH 		"A reclusive Jedi living on Kashyyyk, Jolee Bindo rejected rigid Jedi doctrine in favor of personal experience. Cynical yet insightful, he aided the Republic during the Jedi Civil War."
+LANG_CZECH       "Jolee Bindo, samotarsky Jedi zijici na Kashyyyku, odmitl prisnou doktrinu Jediu a uprednostnoval osobni zkusenosti. Cynicky, ale bystry, pomahal Republice behem Obcanske valky Jediu."
+
+REFERENCE 			JEDI_WARRIOR
+LANG_ENGLISH 		"A battle-oriented member of the Jedi Order, Jedi Warriors served on the front lines of the Old Republic's conflicts. They relied on martial skill and the Force to oppose Sith and Mandalorian enemies."
+LANG_CZECH       "Jedi valecnici, bojovi clenove radu Jedi, slouzili v prednich liniich konfliktu Stare republiky. Spolehali se na sve bojove schopnosti a Silu, aby celili nepratelum z rad Sithu a Mandalorianu."
+
+REFERENCE 			CARTH_ONASI
+LANG_ENGLISH 		"A decorated Republic pilot and officer, Carth Onasi fought throughout the Jedi Civil War. Though shaped by betrayal and loss, he remained steadfast in his loyalty to the Republic."
+LANG_CZECH       "Carth Onasi, vyznamenany pilot a dustojnik Republiky, bojoval behem cele Obcanske valky Jediu. Ackoli ho poznamenala zrada a ztrata, zustal verny Republice."
+
+REFERENCE 			CANDEROUS_ORDO
+LANG_ENGLISH 		"A seasoned Mandalorian warrior, Canderous Ordo fought in the Mandalorian Wars and later allied with the Republic. Fierce and honor-bound, he sought to preserve Mandalorian strength through survival."
+LANG_CZECH       "Zkuseny mandaloriansky valecnik Canderous Ordo bojoval v Mandalorianskych valkach a pozdeji se spojil s Republikou. Byl zurivy a cestny a snazil se zachovat silu Mandalorianu prostrednictvim preziti."
+
+REFERENCE 			ATTON_RAND
+LANG_ENGLISH 		"A former Republic pilot with a hidden past, Atton Rand traveled with the Jedi Exile after the Jedi Purge. Concealing Force sensitivity, he struggled with guilt and the path to redemption."
+LANG_CZECH       "Atton Rand, byvaly pilot Republiky se skrytou minulosti, cestoval po Cistce s Jedi Vyhnankyni. Skryval svou citlivost na Silu a zapasil s pocitem viny a cestou k vykoupeni."
+
+REFERENCE 			ATRIS
+LANG_ENGLISH 		"A Jedi historian and Council member, Atris survived the Purge by retreating to Telos. Her rigid devotion to Jedi ideals gradually drew her toward the dark side."
+LANG_CZECH       "Atris, historicka Jediu a clenka Rady, prezila Cistku tim, ze se uchylila na Telos. Jeji neochvejna oddanost idealum Jediu ji postupne privedla na temnou stranu."
+
+REFERENCE 			JEDI_KOTOR
+LANG_ENGLISH 		"Jedi of the Old Republic era defended the galaxy during the Mandalorian Wars and Jedi Civil War. Their choices and sacrifices shaped the balance between the Republic and the Sith."
+LANG_CZECH       "Jediove z ery Stare republiky branili galaxii behem Mandalorianskych valek a Obcanske valky Jediu. Jejich rozhodnuti a obeti formovaly rovnovahu mezi Republikou a Sithy."
+
+REFERENCE 			VROOK_LAMAR
+LANG_ENGLISH 		"A stern Jedi Master on the Dantooine Council, Vrook Lamar was known for his uncompromising views. He survived the Purge but remained deeply critical of the Jedi Exile."
+LANG_CZECH       "Vrook Lamar, prisny mistr Jedi v Rade Dantooine, byl znamy svymi nekompromisnimi nazory. Prezil Cistku, ale zustal hluboce kriticky vuci Jedi Vyhnankyni."
+
+REFERENCE 			ZHAR_LESTIN
+LANG_ENGLISH 		"A Twi'lek Jedi Master on the Dantooine Council, Zhar Lestin oversaw Jedi training during the Jedi Civil War. He opposed the Sith while struggling with the Order's decline."
+LANG_CZECH       "Zhar Lestin, mistr Jedi z rasy Twi'leku a clen Rady na Dantooine, dohlizel na vycvik Jediu behem Obcanske valky Jediu. Postavil se proti Sithum a zaroven bojoval s upadkem Radu."
+
+REFERENCE 			DORAK
+LANG_ENGLISH 		"A Jedi archivist stationed on Dantooine, Dorak specialized in ancient Sith history. His knowledge provided critical insight during the Jedi Civil War."
+LANG_CZECH       "Dorak, archivar Jediu pusobici na Dantooine, se specializoval na starovekou historii Sithu. Jeho znalosti poskytly behem Obcanske valky Jediu zasadni informace."
+
+REFERENCE 			KREIA
+LANG_ENGLISH 		"A former Jedi Master and mentor to the Jedi Exile, Kreia was a complex and manipulative Force-user shaped by betrayal and loss. Rejecting both Jedi and Sith dogma, she sought to challenge the Force's control over destiny and the galaxy."
+LANG_CZECH       "Kreia, byvala mistryne Jedi a mentorka Jedi Vyhnankyne, byla komplexni a manipulativni uzivatelka Sily, kterou formovala zrada a ztrata. Odmitala dogmata Jediu i Sithu a snazila se zpochybnit vliv Sily na osud a galaxii."
+
+REFERENCE 			JUHANI
+LANG_ENGLISH 		"A Cathar Jedi Knight, Juhani struggled with her anger and briefly fell to the dark side before finding redemption. During the Jedi Civil War, she fought alongside Revan, proving her loyalty to the Jedi and the Republic."
+LANG_CZECH       "Juhani, rytirka radu Jedi z rasy Catharu, bojovala se svym hnevem a na kratkou dobu propadla temne strane, nez nasla vykoupeni. Behem Obcanske valky Jediu bojovala po boku Revana a prokazala svou loajalitu k Jedium a Republice."
+
+REFERENCE 			KAO_CEN_DARACH
+LANG_ENGLISH 		"A revered Jedi Master of the Old Republic, Kao Cen Darach was known for his skill with a double-bladed lightsaber. He defended his Padawan Satele Shan from a Sith attack, sacrificing his life in the struggle."
+LANG_CZECH       "Kao Cen Darach, cteny mistr Jedi Stare republiky, byl znamy svou zrucnosti s dvojitym svetelnym mecem. Branil svou padawanku Satele Shan pred utokem Sithu a v boji obetoval svuj zivot."
+
+REFERENCE 			VEN_ZALLOW
+LANG_ENGLISH 		"A courageous Jedi Knight, Ven Zallow helped defend the Jedi Temple during the Sith assault on Coruscant. His stand against overwhelming odds became a symbol of Jedi resistance in the Great Galactic War."
+LANG_CZECH       "Odvazny rytir Jedi Ven Zallow pomahal branit chram Jediu behem utoku Sithu na Coruscant. Jeho odpor proti presile se stal symbolem odporu Jediu ve Velke galakticke valce."
+
+REFERENCE 			REPUBLIC_TROOPER_KOTOR
+LANG_ENGLISH 		"A disciplined soldier of the Galactic Republic, Republic Troopers fought Sith forces throughout the Jedi Civil War. Equipped for adaptability, they supported Jedi commanders in battles across contested worlds."
+LANG_CZECH       "Vojaci Galakticke republiky, Republikovi vojaci, bojovali behem Obcanske valky Jediu po cele galaxii. Byli prizpusobivi a podporovali velitele Jediu v bitvach na spornych svetech."
+
+REFERENCE 			VANDAR_TOKARE
+LANG_ENGLISH 		"A small but powerful Jedi Master, Vandar Tokare served on the Jedi Council during the Jedi Civil War. Known for his wisdom and foresight, he guided the Order through one of its darkest periods."
+LANG_CZECH       "Maly, ale mocny mistr Jedi, Vandar Tokare, pusobil v Rade Jediu behem Obcanske valky Jediu. Znamy svou moudrosti a proziravosti, provedl Rad jednim z jeho nejtemnejsich obdobi."
+
+REFERENCE 			BAO_DUR
+LANG_ENGLISH 		"A Zabrak engineer and Republic veteran, Bao-Dur served under the Jedi Exile during the Mandalorian Wars. Haunted by his role in deploying the Mass Shadow Generator, he later aided in rebuilding the Jedi."
+LANG_CZECH       "Bao-Dur, zabraksky inzenyr a veteran Republiky, slouzil behem Mandalorianskych valek pod vedenim Jedi Vyhnankyne. Pronasledovan vycitkami svedomi kvuli sve roli pri nasazeni Generatoru masoveho stinu, pozdeji pomahal pri obnove radu Jediu."
+
+//----------------------------------------------------------
+// 	h2: SITH EMPIRE
+//----------------------------------------------------------
+
+REFERENCE           		DARTH_REVAN
+LANG_ENGLISH        "Once a charismatic Jedi Knight and hero of the Mandalorian Wars, Revan fell to the dark side and led a Sith armada against the Republic. Betrayed and nearly destroyed, he was redeemed and reprogrammed by the Jedi Council. Revan's legacy shaped the fate of the galaxy for generations, as both savior and destroyer."
+LANG_CZECH       "Drive charismaticky rytir Jedi a hrdina Mandalorianskych valek, Revan podlehl temne strane a vedl armadu Sithu proti Republice. Zrazen a temer znicen, byl vykoupen a preprogramovan Radou Jediu. Revanovo dedictvi formovalo osud galaxie po cele generace, jako spasitel i nicitel."
+
+REFERENCE 			DARTH_MALGUS
+LANG_ENGLISH 		"A powerful Sith Lord of the Old Republic era, Darth Malgus was a ruthless warrior who led the assault on the Jedi Temple during the Great Galactic War. Rejecting weakness and tradition alike, he sought to reshape the Sith through strength and domination."
+LANG_CZECH       "Darth Malgus, mocny Sithsky Lord z doby Stare republiky, byl nemilosrdny valecnik, ktery vedl utok na chram Jediu behem Velke galakticke valky. Odmital slabost i tradice a snazil se pretvorit Sithy prostrednictvim sily a nadvlady."
+
+REFERENCE 			DARTH_MALAK
+LANG_ENGLISH 		"Once a Jedi Knight named Alek, Darth Malak became the apprentice of Darth Revan and a leading Sith Lord of the Jedi Civil War. After betraying his master, he ruled through fear until his defeat by Revan restored balance to the Republic."
+LANG_CZECH       "Darth Malak, kdysi rytir Jedi jmenem Alek, se stal ucednikem Dartha Revana a prednim Sithskym Lordem behem Obcanske valky Jediu. Pote, co zradil sveho mistra, vladl pomoci strachu, dokud ho Revan neporazil a neobnovil rovnovahu v Republice."
+
+REFERENCE 			DARTH_SION
+LANG_ENGLISH 		"A member of the Sith Triumvirate, Darth Sion was a dark side warrior who held his shattered body together through pain and hatred. He relentlessly hunted the surviving Jedi after the Purge, embodying the Sith philosophy of endurance through suffering."
+LANG_CZECH       "Darth Sion, clen Sithskeho Triumviratu, byl bojovnik temne strany, ktery drzel sve roztristene telo pohromade diky bolesti a nenavisti. Po Cistce neunavne lovil prezivsi Jedie a ztelesnoval sithskou filozofii vytrvalosti skrze utrpeni."
+
+REFERENCE 			DARTH_TRAYA
+LANG_ENGLISH 		"Known as Kreia, Darth Traya was a former Jedi Master who became a Sith Lord seeking to end the Force's influence on the galaxy. As the architect of the Sith Triumvirate, she manipulated events from the shadows to test and reshape her disciples."
+LANG_CZECH       "Darth Traya, znama jako Kreia, byla byvala mistryne Jediu, ktera se stala Sithskou Lordkou a snazila se ukoncit vliv Sily na galaxii. Jako architektka Sithskeho Triumviratu manipulovala udalostmi ze stinu, aby otestovala a pretvorila sve ucedniky."
+
+REFERENCE 			DARTH_NIHILUS
+LANG_ENGLISH 		"A Sith Lord born from the devastation of the Mandalorian Wars, Darth Nihilus survived by consuming the Force itself. His insatiable hunger destroyed entire worlds, marking him as one of the most catastrophic threats of the Old Republic era."
+LANG_CZECH       "Darth Nihilus, Sithsky Lord, ktery se zrodil z trosek Mandalorianskych valek, prezil diky tomu, ze pohlcoval samotnou Silu. Jeho nenasytny hlad znicil cele svety, coz z nej ucinilo jednu z nejkatastrofalnejsich hrozeb ery Stare republiky."
+
+REFERENCE 			LORD_SCOURGE
+LANG_ENGLISH 		"A Sith Lord of the Old Republic, Lord Scourge served the Sith Emperor as his Wrath, enforcing his will through strength and assassination. Granted extended life through the dark side, he later betrayed the Empire to oppose the Emperor's return."
+LANG_CZECH       "Lord Scourge, Sithsky Lord Stare republiky, slouzil Sithskemu Cisari jako jeho Hnev a prosazoval jeho vuli silou a vrazdami. Diky temne strane ziskal prodlouzeny zivot, ale pozdeji zradil Imperium, aby se postavil proti navratu Cisare."
+
+REFERENCE 			SITH_ERADICATOR
+LANG_ENGLISH 		"An elite Sith enforcer trained for destruction, Sith Eradicators wielded heavy armor and devastating Force power. They were deployed to crush Jedi resistance and dominate battlefields during the Old Republic's wars."
+LANG_CZECH       "Elitni sithsti vykonavatele vycviceni k niceni, Sithsti Vyhlazovaci, byli vybaveni tezkou zbroji a nicivou silou Sily. Byli nasazeni, aby rozdrtili odpor Jediu a ovladli bojiste behem valek Stare republiky."
+
+REFERENCE 			DARTH_BANDON
+LANG_ENGLISH 		"A Dark Jedi turned Sith apprentice, Darth Bandon served Darth Malak during the Jedi Civil War. Arrogant and aggressive, he pursued the Jedi relentlessly until his defeat revealed his lack of true mastery."
+LANG_CZECH       "Temny Jedi, ktery se stal ucednikem Sithu, Darth Bandon slouzil Darthu Malakovi behem Obcanske valky Jediu. Arogantni a agresivni, neunavne pronasledoval Jedie, dokud jeho porazka neodhalila jeho nedostatek skutecneho mistrovstvi."
+
+REFERENCE 			DARTH_BANE
+LANG_ENGLISH 		"A Sith Lord who rose after the fall of the Sith Empire, Darth Bane reshaped the dark side through the Rule of Two. By limiting the Sith to master and apprentice, he ensured their survival through secrecy and power."
+LANG_CZECH       "Darth Bane, Sithsky Lord, ktery povstal po padu Sithskeho Imperia, pretvoril temnou stranu pomoci Pravidla Dvou. Omezenim Sithu na mistra a ucednika zajistil jejich preziti diky utajeni a moci."
+
+REFERENCE 			SITH_TROOPER_KOTOR
+LANG_ENGLISH 		"A heavily armored soldier of the Sith Empire, Sith Troopers enforced Malak's rule during the Jedi Civil War. Fanatically loyal and well-equipped, they formed the core of Sith ground forces."
+LANG_CZECH       "Sithsti vojaci, tezce obrneni vojaci Sithskeho Imperia, prosazovali Malakovo panovani behem Obcanske valky Jediu. Fanaticky loajalni a dobre vybaveni tvorili jadro pozemnich sil Sithu."
+
+REFERENCE 			NEO_CRUSADER
+LANG_ENGLISH 		"A Mandalorian warrior of the Neo-Crusaders, these soldiers led the assault against the Republic during the Mandalorian Wars. Their advanced armor and discipline made them a formidable galactic threat."
+LANG_CZECH       "Mandaloriansti valecnici z rad Neo-krizaku vedli behem Mandalorianskych valek utok proti Republice. Diky sve pokrocile vyzbroji a discipline predstavovali pro galaxii obrovskou hrozbu."
+
+REFERENCE 			CALO_NORD
+LANG_ENGLISH 		"A cold and methodical bounty hunter, Calo Nord was employed by Davik Kang and later the Sith. Known for his patience and deadly efficiency, he relentlessly pursued his assigned targets."
+LANG_CZECH       "Calo Nord, chladny a metodicky lovec odmen, byl zamestnan Davikem Kangem a pozdeji Sithy. Byl znamy svou trpelivosti a smrtici ucinnosti a neunavne pronasledoval sve cile."
+
+REFERENCE 			HK47
+LANG_ENGLISH 		"An assassin droid constructed by Darth Revan, HK-47 was programmed for efficiency, loyalty, and lethal sarcasm. He accompanied Revan and later the Jedi Exile, offering combat support and dark humor."
+LANG_CZECH       "HK-47, zabijacky droid sestrojeny Darth Revanem, byl naprogramovan pro efektivitu, loajalitu a smrtici sarkasmus. Doprovazel Revana a pozdeji i Jedi Vyhnankyni, poskytoval jim bojovou podporu a temny humor."
+
+REFERENCE 			DAVIK_KANG
+LANG_ENGLISH 		"A powerful crime lord on Taris, Davik Kang controlled the planet's underworld during the Jedi Civil War. His influence ended abruptly when he was killed during a Republic escape from the city."
+LANG_CZECH       "Davik Kang, mocny zlocinecky boss na planete Taris, ovladal behem Obcanske valky Jediu podsveti teto planety. Jeho vliv nahle skoncil, kdyz byl zabit behem uteku Republiky z mesta."
+
+REFERENCE 			MANDALORE_ULTIMATE
+LANG_ENGLISH 		"The supreme leader of the Mandalorian Neo-Crusaders, Mandalore the Ultimate led the invasion of the Republic. His defeat by Revan marked the turning point of the Mandalorian Wars."
+LANG_CZECH       "Nejvyssi vudce Mandalorianskych Neo-krizaku, Mandalore the Ultimate, vedl invazi do Republiky. Jeho porazka Revanem znamenala zlomovy bod v Mandalorianskych valkach."
+
+REFERENCE 			VISAS_MARR
+LANG_ENGLISH 		"A Miraluka Force-user and servant of Darth Nihilus, Visas Marr was the sole survivor of Katarr. Bound by guilt and loyalty, she later joined the Jedi Exile in opposing her former master."
+LANG_CZECH       "Visas Marr, uzivatelka Sily z lidu Miraluka a sluzebnice Dartha Nihiluse, byla jedina prezivsi z Katarru. Svazana pocitem viny a loajality se pozdeji pripojila k Jedi Vyhnankyni v boji proti svemu byvalemu mistrovi."
+
+REFERENCE 			DARK_JEDI
+LANG_ENGLISH 		"Former Jedi who fell to the dark side, Dark Jedi served Sith Lords during the Old Republic's conflicts. They wielded corrupted teachings of the Force to hunt their former allies."
+LANG_CZECH       "Byvali Jediove, kteri presli na temnou stranu, temni Jediove slouzili Sithskym Lordum behem konfliktu Stare republiky. Vyuzivali zkazene uceni Sily k lovu svych byvalych spojencu."
+
+REFERENCE 			DARTH_VINDICAN
+LANG_ENGLISH 		"A Sith Lord during the Great Galactic War, Darth Vindican trained apprentices in the ruthless traditions of the Sith. His ambition reflected the constant struggle for power within the Sith hierarchy."
+LANG_CZECH       "Darth Vindican, Sithsky Lord behem Velke galakticke valky, cvicil ucedniky v nemilosrdnych tradicich Sithu. Jeho ambice odrazely neustaly boj o moc v ramci Sithske hierarchie."
+
+REFERENCE 			EMPEROR_VALKORION
+LANG_ENGLISH 		"The immortal Sith Emperor of Zakuul and the Sith Empire, Valkorion sought absolute control over the galaxy. Sustained by countless lifetimes, he manipulated wars and bloodlines to serve his vision."
+LANG_CZECH       "Valkorion, nesmrtelny Sithsky Cisar Zakuulu a Sithskeho Imperia, usiloval o absolutni kontrolu nad galaxii. Zil nescetne mnozstvi zivotu a manipuloval valkami a rodovymi liniemi, aby dosahl sveho cile."
+
+REFERENCE 			ARCANN
+LANG_ENGLISH 		"The son of Emperor Valkorion, Arcann was a powerful Force-wielder who ruled the Eternal Empire through conquest. Consumed by anger and betrayal, his reign brought devastation to the galaxy."
+LANG_CZECH       "Arcann, syn Cisare Valkoriona, byl mocnym uzivatelem Sily, ktery vladl Vecnemu Imperiu prostrednictvim dobyvani. Jeho vlada, pohanena hnevem a zradou, prinesla galaxii zkazu."
+
+REFERENCE 			THEXAN
+LANG_ENGLISH 		"Twin brother to Arcann, Thexan was a noble and disciplined warrior of Zakuul. His death at Valkorion's command deeply shaped Arcann's descent into darkness."
+LANG_CZECH       "Thexan, dvojce Arcanna, byl uslechtily a disciplinovany valecnik ze Zakuulu. Jeho smrt na prikaz Valkoriona hluboce ovlivnila Arcannuv pad do temnoty."
+
+REFERENCE 			SITH_KOTOR
+LANG_ENGLISH 		"Sith of the Old Republic era waged war against the Jedi and the Republic through conquest and deception. Their conflicts defined the galaxy during the Jedi Civil War and beyond."
+LANG_CZECH       "Sithove z ery Stare republiky vedli valku proti Jedium a Republice prostrednictvim dobyvani a podvodu. Jejich konflikty urcovaly podobu galaxie behem Obcanske valky Jediu i po ni."
+
+REFERENCE 			JORAK_ULN
+LANG_ENGLISH 		"An ancient Jedi Master driven mad by forbidden knowledge, Jorak Uln resided among the ruins of Korriban. Obsessed with Sith secrets, he tested Force-sensitives and served as a grim warning of the dangers of unchecked curiosity."
+LANG_CZECH       "Jorak Uln, staroveky mistr Jedi, ktery se zblaznil kvuli zakazanemu vedeni, zil mezi ruinami Korribanu. Byl posedly tajemstvim Sithu, testoval osoby citlive na Silu a slouzil jako varovny priklad pred nebezpecim nekontrolovane zvedavosti."
+
+REFERENCE 			SAUL_KARATH
+LANG_ENGLISH 		"A former Republic admiral, Saul Karath defected to the Sith and became one of Darth Malak's chief commanders. His betrayal and strategic brilliance made him a deadly adversary during the Jedi Civil War."
+LANG_CZECH       "Byvaly admiral Republiky Saul Karath prebehl k Sithum a stal se jednim z hlavnich velitelu Dartha Malaka. Jeho zrada a strategicky talent z nej ucinily smrtelneho protivnika behem Obcanske valky Jediu."
+
+REFERENCE 			SITH_OFFICER
+LANG_ENGLISH 		"An authority figure within the Sith military, Sith Officers commanded fleets and garrisons under Malak's rule. Ruthless and ambitious, they enforced Sith dominance through fear and discipline."
+LANG_CZECH       "Sithsti dustojnici, autority v ramci Sithske armady, veleli flotilam a posadkam pod Malakovym velenim. Bezohledni a ambiciozni, prosazovali nadvladu Sithu prostrednictvim strachu a discipliny."
+
+REFERENCE 			UTHAR_WYNN
+LANG_ENGLISH 		"A Sith Lord and overseer of the Korriban Academy, Uthar Wynn trained apprentices in the brutal ways of the Sith. His teachings emphasized ambition and betrayal, reflecting Sith philosophy in its purest form."
+LANG_CZECH       "Uthar Wynn, Sithsky Lord a spravce Akademie Korriban, ucil sve ucedniky brutalnim zpusobum Sithu. Jeho uceni kladlo duraz na ambice a zradu, coz odrazelo Sithskou filozofii v jeji nejcistsi podobe."
+
+REFERENCE 			YUTHURA_BAN
+LANG_ENGLISH 		"A former slave who rose through the Sith ranks, Yuthura Ban became a prominent student at the Korriban Academy. Her ambition and inner conflict made her a pivotal figure whose fate could turn toward redemption or darkness."
+LANG_CZECH       "Yuthura Ban, byvala otrokyne, ktera se vypracovala v radach Sithu, se stala vyznamnou studentkou Akademie na Korribanu. Jeji ambice a vnitrni konflikt z ni ucinily klicovou postavu, jejiz osud se mohl obratit bud k vykoupeni, nebo k temnote."
+
+REFERENCE             IMPERIAL_TROOPER_KOTOR
+LANG_ENGLISH         "Imperial Troopers were the infantry units of the reconstituted Sith Empire's army. They served as the primary ground forces in Imperial campaigns of conquest, defending Sith holdings during the Great Galactic War and the Cold War."
+LANG_CZECH       "Imperialni vojaci byli pechotni jednotky obnovene armady Sithskeho Imperia. Slouzili jako hlavni pozemni sily v imperialnich dobyvacich tazenich a branili sithska uzemi behem Velke galakticke valky a Studene valky."
+
+
+//----------------------------------------------------------
+// 	h3: REPUBLIC
+//----------------------------------------------------------
+
+REFERENCE           AAYLA_SECURA
+LANG_ENGLISH        "A Twi'lek Jedi Knight from Ryloth, Aayla Secura was known for her agility, lightsaber mastery, and calm presence in battle. She fought with distinction during the Clone Wars as a General of the Republic, serving on the front lines until her death during the execution of Order 66."
+LANG_CZECH       "Aayla Secura, twi'lekska rytirka Jedi z Rylothu, byla znama svou obratnosti, mistrovskym ovladanim svetelneho mece a klidnym vystupovanim v boji. Behem Klonovych valek se vyznamenala jako generalka Republiky a slouzila na fronte az do sve smrti pri provedeni Rozkazu 66."
+
+REFERENCE           ADI_GALLIA
+LANG_ENGLISH        "A respected Jedi Master and member of the High Council, Adi Gallia was known for her diplomatic skill and combat prowess. She served as a General during the Clone Wars and frequently undertook covert missions. Gallia met her end at the hands of Darth Maul, defending the Republic with unwavering resolve."
+LANG_CZECH       "Adi Gallia, respektovana mistryne Jedi a clenka Nejvyssi rady, byla znama svymi diplomatickymi schopnostmi a bojovymi dovednostmi. Behem Klonovych valek slouzila jako generalka a casto se ucastnila tajnych misi. Gallia zemrela rukou Dartha Maula, kdyz s neochvejnym odhodlanim branila Republiku."
+
+REFERENCE           AGEN_KOLAR
+LANG_ENGLISH        "A skilled Zabrak Jedi Master, Agen Kolar served on the Jedi High Council during the final years of the Republic. Known for his lightsaber mastery and courage, he was one of the Jedi who confronted Chancellor Palpatine, only to be swiftly struck down by Darth Sidious."
+LANG_CZECH       "Zkuseny zabraksky mistr Jedi Agen Kolar pusobil v Nejvyssi rade Jediu behem poslednich let existence Republiky. Byl znamy svym mistrovskym ovladanim svetelneho mece a svou odvahou. Patril k Jedium, kteri se postavili kancleri Palpatinovi, ale byli rychle porazeni Darth Sidiousem."
+
+REFERENCE           AHSOKA_TANO
+LANG_ENGLISH        "Discovered by Plo Koon and trained by Anakin Skywalker, Ahsoka Tano was a Togruta Padawan who fought bravely in the Clone Wars. Disillusioned with the Jedi Order, she walked away from it and later became a key figure in the early Rebellion, surviving Order 66 and confronting both Darth Vader and the Empire."
+LANG_CZECH       "Ahsoka Tano, kterou objevil Plo Koon a vycvicil Anakin Skywalker, byla togrutska padawanka, ktera statecne bojovala v Klonovych valkach. Zklamana Radem Jediu ho opustila a pozdeji se stala klicovou postavou raneho Povstani, prezila Rozkaz 66 a postavila se jak Darthu Vaderovi, tak Imperiu."
+
+REFERENCE           ANAKIN_SKYWALKER
+LANG_ENGLISH        "Discovered by Qui-Gon Jinn on Tatooine, Anakin was prophesied to bring balance to the Force. As a Jedi General, he fought valiantly in the Clone Wars, but manipulation by Darth Sidious led him to destroy the Jedi and become the Sith Lord, Darth Vader."
+LANG_CZECH       "Anakin, objeveny Qui-Gonem Jinnem na Tatooine, mel podle proroctvi prinest rovnovahu Sile. Jako jedijsky general statecne bojoval v Klonovych valkach, ale manipulace Dartha Sidiousa ho dovedla k zniceni Jediu a k tomu, ze se stal Sithskym Lordem, Darth Vaderem."
+
+REFERENCE           BARRISS_OFFEE
+LANG_ENGLISH        "Trained under Luminara Unduli, Barriss Offee was a Mirialan Jedi who served as a healer and fighter during the Clone Wars. Disillusioned by the Jedi Order's role in the war, she orchestrated a bombing of the Jedi Temple and was ultimately captured and imprisoned for treason."
+LANG_CZECH       "Barriss Offee, zakyne Luminary Unduli, byla mirialanska Jedi, ktera behem Klonovych valek slouzila jako lecitelka a bojovnice. Zklamana roli Radu Jedi ve valce zorganizovala bombovy utok na chram Jediu a nakonec byla zatcena a uveznena za zradu."
+
+REFERENCE           BOLLA_ROPAL
+LANG_ENGLISH        "A Rodian Jedi Master, Bolla Ropal was the keeper of the Kyber memory crystal, which contained the identities of Force-sensitive children across the galaxy. He was captured and tortured by Cad Bane during the Clone Wars and died rather than betray the secrets of the Jedi."
+LANG_CZECH       "Bolla Ropal, rodiansky mistr Jedi, byl strazcem pametoveho krystalu Kyber, ktery obsahoval identitu deti citlivych na Silu z cele galaxie. Behem Klonovych valek byl zajat a mucen Cad Banem a radeji zemrel, nez aby prozradil tajemstvi Jediu."
+
+REFERENCE           BOSS
+LANG_ENGLISH        "Designated RC-1138, 'Boss' was the leader of Delta Squad, an elite unit of clone commandos. Calm under pressure and a natural leader, Boss led his team through some of the most dangerous missions of the Clone Wars, demonstrating tactical brilliance and unshakable loyalty."
+LANG_CZECH       "Boss, znamy pod oznacenim RC-1138, byl velitelem Delta Squad, elitni jednotky klonovych komand. Boss, ktery dokazal zachovat klid i v nejtezsich situacich a byl rozenym vudcem, vedl svuj tym pri nekterych z nejnebezpecnejsich misi Klonovych valek, pri nichz prokazal taktickou brilantnost a neotresitelnou loajalitu."
+
+REFERENCE           BULTAR_SWAN
+LANG_ENGLISH        "A human Jedi Knight known for her discipline and devotion, Bultar Swan survived many battles during the Clone Wars. Trained by Plo Koon, she was one of the few survivors of Order 66 and later joined a group of Jedi seeking justice, only to be slain by Darth Vader."
+LANG_CZECH       "Bultar Swan, lidska rytirka Jedi znama svou disciplinou a oddanosti, prezila mnoho bitev behem Klonovych valek. Vyskolena Plo Koonem, byla jednou z mala prezivsich Rozkazu 66. Pozdeji se pripojila ke skupine Jediu usilujicich o spravedlnost, aby byla nakonec zabita Darth Vaderem."
+
+REFERENCE           CAPTAIN_REX
+LANG_ENGLISH        "Known by his designation CT-7567, Captain Rex served under Anakin Skywalker and Ahsoka Tano during the Clone Wars. A loyal and skilled leader, he resisted the effects of Order 66 thanks to the removal of his inhibitor chip and later fought against the Empire alongside the early Rebellion."
+LANG_CZECH       "Kapitan Rex, znamy pod oznacenim CT-7567, slouzil behem Klonovych valek pod Anakinem Skywalkerem a Ahsokou Tano. Jako loajalni a schopny velitel odolal ucinkum Rozkazu 66 diky odstraneni sveho inhibicniho cipu a pozdeji bojoval proti Imperiu po boku raneho Povstani."
+
+REFERENCE           CIN_DRALLIG
+LANG_ENGLISH        "The head of lightsaber combat training at the Jedi Temple, Cin Drallig was a legendary swordmaster. He trained countless Jedi in the art of defense and dueling, and was among the last defenders of the Temple during Anakin Skywalker's brutal attack."
+LANG_CZECH       "Cin Drallig, vedouci vycviku boje se svetelnym mecem v chramu Jediu, byl legendarnim mistrem sermu. Vycvicil nespocet Jediu v umeni obrany a souboju a patril mezi posledni obrance chramu behem brutalniho utoku Anakina Skywalkera."
+
+REFERENCE           CLONE_TROOPER
+LANG_ENGLISH        "Engineered from the DNA of Jango Fett, clone troopers were created to serve the Galactic Republic in the Clone Wars. Trained from birth to fight, they formed the backbone of the Republic's military and were ultimately used to carry out Order 66 against the Jedi."
+LANG_CZECH       "Klonovani vojaci byli vytvoreni z DNA Jango Fetta, aby slouzili Galakticke republice v Klonovych valkach. Od narozeni byli cviceni k boji, aby tvorili pater armady Republiky a aby byli nakonec vyuziti k provedeni Rozkazu 66 proti Jedium."
+
+REFERENCE           COLEMAN_TREBOR
+LANG_ENGLISH        "A Vurk Jedi Master and member of the High Council, Coleman Trebor was known for his wisdom and calm demeanor. He attempted to confront Count Dooku during the Battle of Geonosis but was quickly killed by Jango Fett while trying to protect the Jedi."
+LANG_CZECH       "Coleman Trebor, mistr Jedi z Vurku a clen Nejvyssi rady, byl znamy svou moudrosti a klidnym vystupovanim. Behem Bitvy o Geonosis se pokusil postavit hrabeti Dooku, ale pri snaze chranit Jedie byl rychle zabit Jango Fettem."
+
+REFERENCE           COMMANDER_CODY
+LANG_ENGLISH        "Designated CC-2224, Commander Cody was a senior clone officer who served under Obi-Wan Kenobi during the Clone Wars. Known for his discipline and tactical reliability, he carried out Order 66 without hesitation, remaining loyal to the Republic as it became the Empire."
+LANG_CZECH       "Velitel Cody, oznaceny jako CC-2224, byl vysoky klonovy dustojnik, ktery slouzil pod Obi-Wanem Kenobim behem Klonovych valek. Byl znamy svou disciplinou a taktickou spolehlivosti a bez vahani provedl Rozkaz 66, pricemz zustal loajalni Republice, ktera se stala Imperiem."
+
+REFERENCE           COMMANDER_FOX
+LANG_ENGLISH        "CC-1010, known as Commander Fox, led the Coruscant Guard tasked with protecting the capital and enforcing security on Coruscant. Zealous in carrying out his orders, Fox was responsible for several arrests during the Clone Wars, including that of Ahsoka Tano. He was later killed by Darth Vader."
+LANG_CZECH       "CC-1010, znamy jako velitel Fox, velel strazi Coruscantu, ktera mela za ukol chranit hlavni mesto a zajistovat bezpecnost na Coruscantu. Fox byl horlivy pri plneni svych rozkazu a behem Klonovych valek mel na svedomi nekolik zatceni, vcetne zadrzeni Ahsoky Tano. Pozdeji byl zabit Darth Vaderem."
+
+REFERENCE           COMMANDER_NEYO
+LANG_ENGLISH        "Commander Neyo, designated CC-8826, was a clone officer known for his quiet demeanor and efficiency. He led the 91st Reconnaissance Corps and executed Jedi Master Stass Allie during Order 66 without hesitation, embodying the cold obedience of the clones in the Empire's rise."
+LANG_CZECH       "Velitel Neyo, oznaceny jako CC-8826, byl klonovy dustojnik znamy svym tichym chovanim a efektivitou. Vedl 91. pruzkumny sbor a bez vahani popravil mistryni Jedi Stass Allie behem Rozkazu 66, cimz ztelesnil chladnou poslusnost klonu pri vzestupu Imperia."
+
+REFERENCE           COMMANDER_VAUGHN
+LANG_ENGLISH        "Commander Vaughn served under Ahsoka Tano in the 332nd Company during the Siege of Mandalore. Loyal and competent, he fought with distinction during the final days of the Clone Wars and was killed during the execution of Order 66 while trying to locate Ahsoka."
+LANG_CZECH       "Velitel Vaughn slouzil pod Ahsokou Tano ve 332. rote behem Oblehani Mandalore. Byl loajalni a kompetentni, bojoval s odhodlanim behem poslednich dnu Klonovych valek a byl zabit behem provadeni Rozkazu 66, kdyz se pokousel najit Ahsoku."
+
+REFERENCE           DEPA_BILLABA
+LANG_ENGLISH        "A former Padawan of Mace Windu, Depa Billaba became a Jedi Master and served on the High Council. She fought in the Clone Wars and mentored Caleb Dume, who would later become Kanan Jarrus. She gave her life during Order 66 to ensure her Padawan's escape."
+LANG_CZECH       "Depa Billaba, byvala padawanka Mace Windua, se stala mistryni Jedi a pusobila ve Vysoke rade. Bojovala v Klonovych valkach a byla mentorkou Caleba Dumea, ktery se pozdeji stal Kananem Jarrusem. Behem Rozkazu 66 obetovala svuj zivot, aby umoznila utek svemu padawanovi."
+
+REFERENCE           EEKAR_OKI
+LANG_ENGLISH        "A Nautolan Jedi Knight, Eekar Oki served during the Clone Wars and fought in several key battles. Little is known about his ultimate fate, but he stood among the many Jedi who defended the Republic until the rise of the Empire."
+LANG_CZECH       "Eekar Oki, rytir Jedi z Nautoly, slouzil behem Klonovych valek a bojoval v nekolika klicovych bitvach. O jeho osudu se toho moc nevi, ale patril mezi mnoho Jediu, kteri branili Republiku az do vzniku Imperia."
+
+REFERENCE           EETH_KOTH
+LANG_ENGLISH        "A Zabrak Jedi Master and member of the Jedi High Council, Eeth Koth survived many battles during the Clone Wars. After being presumed dead, he left the Order and started a new life, only to be tracked down and killed by Darth Vader during the Jedi Purge."
+LANG_CZECH       "Eeth Koth, mistr Jedi a clen Nejvyssi rady Jediu, prezil mnoho bitev behem Klonovych valek. Pote, co byl prohlasen za mrtveho, opustil Rad a zacal novy zivot, ale behem cistky Jediu ho vypatral a zabil Darth Vader."
+
+REFERENCE           EVEN_PIELL
+LANG_ENGLISH        "A Lannik Jedi Master with a fierce temperament, Even Piell served on the Jedi Council and was known for his bravery. He played a critical role in the Citadel mission during the Clone Wars, sacrificing his life to protect vital Republic intelligence from falling into enemy hands."
+LANG_CZECH       "Even Piell, mistr Jedi z Lanniku s divokou povahou, pusobil v Rade Jediu a byl znamy svou statecnosti. Sehral klicovou roli v misi Citadela behem Klonovych valek, kdy obetoval svuj zivot, aby ochranil dulezite informace Republiky pred padnutim do rukou nepritele."
+
+REFERENCE           FI_EK_SIRCH
+LANG_ENGLISH        "A Nikto Jedi Knight, Fi-Ek Sirch was skilled with the lightsaber and served during the Clone Wars. He participated in the Battle of Geonosis and stood with the Jedi until his death during the Purge."
+LANG_CZECH       "Fi-Ek Sirch, rytir Jedi z rasy Nikto, byl zrucny v zachazeni se svetelnym mecem a slouzil behem Klonovych valek. Zucastnil se Bitvy o Geonosis a stal po boku Jediu az do sve smrti behem Cistky."
+
+REFERENCE           FIVES
+LANG_ENGLISH        "Designated CT-5555, 'Fives' was an ARC Trooper known for his courage and determination to uncover the truth behind the inhibitor chips implanted in clones. His relentless pursuit of the conspiracy led to his tragic death, but his actions planted the seeds of doubt that would later save others."
+LANG_CZECH       "Fives, s oznacenim CT-5555, byl vojak ARC znamy svou odvahou a odhodlanim odhalit pravdu o inhibicnich cipech implantovanych do klonu. Jeho neunavne patrani po spiknuti vedlo k jeho tragicke smrti, ale jeho ciny zasely seminko pochybnosti, ktere pozdeji zachranilo zivoty dalsich."
+
+REFERENCE           FIXER
+LANG_ENGLISH        "RC-1140, known as 'Fixer', was the technical expert of Delta Squad. Calm, methodical, and precise, Fixer excelled at slicing systems and demolitions, playing a crucial role in many of the squad's high-risk Clone Wars missions."
+LANG_CZECH       "RC-1140, znamy jako 'Fixer', byl technickym expertem Delta Squad. Klidny, metodicky a presny Fixer vynikal v hackovani systemu a demolicich a hral klicovou roli v mnoha vysoce rizikovych misich oddilu behem Klonovych valek."
+
+REFERENCE           FOUL_MOUDAMA
+LANG_ENGLISH        "A Talz Jedi Knight known for his towering strength and loyalty, Foul Moudama served in the Clone Wars and fought valiantly to protect Chancellor Palpatine during the Battle of Coruscant. He was ultimately slain by General Grievous in a desperate defense."
+LANG_CZECH       "Foul Moudama, rytir Jedi z rasy Talzu, znamy svou obrovskou silou a loajalitou, slouzil v Klonovych valkach a statecne bojoval za zachranu kanclere Palpatina behem bitvy o Coruscant. Nakonec byl zabit generalem Grievousem pri zoufale obrane."
+
+REFERENCE           GREGOR
+LANG_ENGLISH        "Clone Commando CC-5576-39, or 'Gregor', was presumed dead after a crash on Sarrish but later resurfaced with memory loss. Regaining his identity, he returned to the fight against the Empire and eventually joined the Rebellion alongside Rex and Wolffe."
+LANG_CZECH       "Klonove komando CC-5576-39, znamy jako 'Gregor', byl po havarii na Sarrishu povazovan za mrtveho, ale pozdeji se objevil s vypadkem pameti. Pote, co znovu ziskal svou identitu, se vratil do boje proti Imperiu a nakonec se pripojil k Povstani po boku Rexe a Wolffa."
+
+REFERENCE           GUNGAN_WARRIOR
+LANG_ENGLISH        "Proud and loyal defenders of Naboo, Gungan warriors fought with traditional energy shields and electropoles. Their bravery during the Battle of Naboo helped repel the Trade Federation, earning them newfound respect among their allies."
+LANG_CZECH       "Hrdi a loajalni obranci Naboo, gungansky valecnici bojovali s tradicnimi energetickymi stity a elektronovymi kopimi. Jejich statecnost behem Bitvy o Naboo pomohla odrazit Obchodni Federaci, cimz si vyslouzili novy respekt mezi svymi spojenci."
+
+REFERENCE           HALSEY
+LANG_ENGLISH        "A human Jedi Knight, Halsey served during the Clone Wars and was known for his devotion to the Jedi Code. He was killed alongside his Padawan Knox during an ambush by Savage Opress on Devaron, a brutal reminder of the growing threat of the dark side."
+LANG_CZECH       "Halsey, lidsky rytir Jedi, slouzil behem Klonovych valek a byl znamy svou oddanosti kodexu Jedi. Byl zabit spolecne se svym padawanem Knoxem behem prepadeni Savage Opressem na Devaronu, krute pripominky rostouci hrozby temne strany."
+
+REFERENCE           IMA_GUN_DI
+LANG_ENGLISH        "A Kajain'sa'Nikto Jedi Master, Ima-Gun Di fought bravely during the Clone Wars. He made a heroic last stand on Ryloth to protect Twi'lek refugees, sacrificing his life so they could escape, exemplifying the Jedi ideal of selfless service."
+LANG_CZECH       "Jako mistr Jedi z lidu Kajain'sa'Nikto bojoval Ima-Gun Di statecne behem Klonovych valek. Na Rylothu se hrdinsky postavil na ochranu twi'leckych uprchliku a obetoval svuj zivot, aby mohli uniknout, cimz ztelesnil ideal Jediu o nezistne sluzbe."
+
+REFERENCE           J_OOPI_SHE
+LANG_ENGLISH        "An eccentric and ancient Jedi Master, J'oopi She was known more for his wisdom and humor than combat skills. Despite his age and eccentricity, he remained loyal to the Jedi Code, though his fate following the Clone Wars remains uncertain."
+LANG_CZECH       "Excentricky a starobyly mistr Jedi, J'oopi She, byl znam spise pro svou moudrost a humor nez pro bojove schopnosti. Navzdory svemu veku a excentricite zustal verny kodexu Jedi, i kdyz jeho osud po Klonovych valkach zustava nejisty."
+
+REFERENCE           JAR_JAR_BINKS
+LANG_ENGLISH        "A clumsy but well-meaning Gungan from Naboo, Jar Jar Binks played an unexpected role in galactic events. His actions in the Senate helped grant emergency powers to Chancellor Palpatine, unknowingly aiding in the rise of the Empire."
+LANG_CZECH       "Jar Jar Binks, neohrabany, ale dobrosrdecny Gungan z Naboo, sehral necekanou roli v galaktickych udalostech. Jeho ciny v Senatu pomohly udelit mimoradne pravomoci kancleri Palpatinovi, cimz nevedomky prispel k vzestupu Imperia."
+
+REFERENCE           JEDI_MASTER
+LANG_ENGLISH        "Jedi Masters were seasoned Force users recognized for their wisdom, leadership, and mastery of the Jedi arts. Often serving on the High Council or as battlefield generals, they upheld the Jedi Code and mentored younger generations of Jedi."
+LANG_CZECH       "Mistri Jedi byli zkuseni uzivatele Sily, uznavani pro svou moudrost, vudci schopnosti a ovladani umeni Jediu. Casto slouzili ve Vysoke rade nebo jako generalove na bojisti, dodrzovali Kodex Jedi a byli mentory mladsich generaci Jedi."
+
+REFERENCE           JEDI_VETERAN
+LANG_ENGLISH        "Hardened by years of conflict, Jedi Veterans were experienced warriors who had survived countless battles during the Clone Wars. Their combat skills and strategic knowledge made them invaluable leaders and defenders of the Republic."
+LANG_CZECH       "Zoceleni dlouholetymi konflikty byli veterani Jedi zkusenymi valecniky, kteri prezili nescetne bitvy behem Klonovych valek. Diky svym bojovym schopnostem a strategickym znalostem byli neocenitelnymi vudci a obranci Republiky."
+
+REFERENCE           JEDI_KNIGHT
+LANG_ENGLISH        "Jedi Knights were fully trained members of the Jedi Order, often tasked with peacekeeping missions and battlefield leadership. Having passed the Trials, they served as guardians of the Republic and protectors of the innocent across the galaxy."
+LANG_CZECH       "Rytiri Jedi byli plne vycviceni clenove radu Jedi, kteri byli casto poverovani mirovymi misemi a vedenim bitev. Po absolvovani zkousek slouzili jako strazci Republiky a ochranci nevinnych po cele galaxii."
+
+REFERENCE           JEDI_PADAWAN
+LANG_ENGLISH        "Padawans were Jedi apprentices undergoing one-on-one training under a Jedi Knight or Master. Carrying training braids and bound by the Jedi Code, they aspired to earn the rank of Knight through courage, discipline, and mastery of the Force."
+LANG_CZECH       "Padawani byli ucednici Jediu, kteri absolvovali individualni vycvik pod vedenim rytire nebo mistra Jedi. Nosili vycvikove copanky a byli vazani Kodexem Jediu. Usilovali o ziskani hodnosti rytire prostrednictvim odvahy, discipliny a ovladnuti Sily."
+
+REFERENCE           JEDI_BRUTE
+LANG_ENGLISH        "Jedi Brutes were powerful Force-wielders who relied more on raw strength and aggression than finesse. Though rare within the Order, these warriors were often deployed in the thick of battle, using their might to turn the tide in desperate situations."
+LANG_CZECH       "Jedi Brutove byli mocni uzivatele Sily, kteri se spolehali spise na hrubou silu a agresivitu nez na jemnost. Ackoli byli v radu vzacni, tito valecnici byli casto nasazovani v nejprudsich bojich, kde svou silou dokazali zvratit vyvoj v beznadejnych situacich."
+
+REFERENCE           JEDI_TEMPLE_GUARD
+LANG_ENGLISH        "Anonymous and stoic, Jedi Temple Guards were elite Jedi Knights sworn to defend the Jedi Temple on Coruscant. Clad in ceremonial robes and wielding double-bladed yellow lightsabers, they upheld peace and order within the temple, embodying absolute dedication to the Jedi Order."
+LANG_CZECH       "Anonymni a stoicke straze chramu Jedi byli elitni rytiri Jedi, kteri prisahali, ze budou branit chram Jedi na Coruscantu. Obleceni v ceremonialnich robach a ozbrojeni zlutymi svetelnymi meci s dvojitou cepeli udrzovali v chramu mir a poradek a ztelesnovali absolutni oddanost radu Jedi."
+
+REFERENCE           JOCASTA_NU
+LANG_ENGLISH        "The chief librarian of the Jedi Archives, Jocasta Nu was a guardian of knowledge and history within the Jedi Temple. After surviving the initial Jedi Purge, she attempted to preserve the Jedi legacy but was ultimately tracked down and killed by Darth Vader."
+LANG_CZECH       "Hlavni knihovnice archivu Jediu, Jocasta Nu, byla strazkyni znalosti a historie v chramu Jediu. Pote, co prezila pocatecni Cistku Jediu, se pokusila zachovat odkaz Jediu, ale nakonec byla vypatrana a zabita Darth Vaderem."
+
+REFERENCE           KELLERAN_BEQ
+LANG_ENGLISH        "Known as the 'Sabered Hand', Jedi Master Kelleran Beq was a highly skilled duelist and protector of younglings. He played a crucial role in rescuing Grogu from the Jedi Temple during Order 66, ensuring the child's survival amidst chaos."
+LANG_CZECH       "Mistr Jedi Kelleran Beq, znamy jako 'Savlovita ruka', byl velmi zkuseny duelant a ochrance mladych ucedniku. Sehral klicovou roli pri zachrane Grogua z chramu Jediu behem Rozkazu 66, kdyz zajistil preziti ditete uprostred chaosu."
+
+REFERENCE           KI_ADI_MUNDI
+LANG_ENGLISH        "A Cerean Jedi Master and member of the High Council, Ki-Adi Mundi was a prominent figure in the Clone Wars, known for his intellect and military leadership. He led troops on Mygeeto, where he was betrayed and killed during the execution of Order 66."
+LANG_CZECH       "Ki-Adi Mundi, cereansky mistr Jedi a clen Nejvyssi rady, byl vyznamnou postavou Klonovych valek, znamou pro svou inteligenci a vojenske velitelske schopnosti. Velel vojskum na Mygeetu, kde byl zrazen a zabit behem provadeni Rozkazu 66."
+
+REFERENCE           KIT_FISTO
+LANG_ENGLISH        "A Nautolan Jedi Master from Glee Anselm, Kit Fisto was known for his friendly nature and skill in underwater combat. A veteran of many battles in the Clone Wars, he fell in battle alongside fellow Jedi while attempting to arrest Darth Sidious."
+LANG_CZECH       "Kit Fisto, Nautolansky mistr Jedi z Glee Anselm, byl znamy svou pratelskou povahou a dovednostmi v podvodnim boji. Veteran mnoha bitev v Klonovych valkach padl v boji po boku svych kolegu Jediu pri pokusu o zatceni Darth Sidiouse."
+
+REFERENCE           KNOX
+LANG_ENGLISH        "Padawan to Jedi Knight Halsey, Knox was a young human Jedi in training during the Clone Wars. He was killed alongside his master during a surprise attack by Savage Opress on Devaron, a tragic end for a promising learner."
+LANG_CZECH       "Padawan rytire Jedi Halseyho, Knox byl mlady lidsky Jedi, ktery se behem Klonovych valek ucil. Byl zabit spolecne se svym mistrem behem prekvapiveho utoku Savage Opresse na Devaronu, coz byl tragicky konec pro slibneho ucednika."
+
+REFERENCE           KOFFI_ARANA
+LANG_ENGLISH        "Once a respected Jedi Knight, Koffi Arana became disillusioned with the Jedi Council and went rogue during the Clone Wars. Taking justice into his own hands, he attempted to assassinate Darth Vader but was ultimately defeated and killed in the confrontation."
+LANG_CZECH       "Koffi Arana, kdysi respektovany rytir Jedi, byl zklaman Radou Jediu a behem Klonovych valek se stal odpadlikem. Vzal spravedlnost do svych rukou a pokusil se zavrazdit Dartha Vadera, ale nakonec byl porazen a zabit."
+
+REFERENCE           LUMINARA_UNDULI
+LANG_ENGLISH        "A calm and disciplined Jedi Master from Mirial, Luminara Unduli served as a General during the Clone Wars and was a mentor to Barriss Offee. She was ultimately captured and executed by the Empire, her image later used in a cruel trap to lure surviving Jedi."
+LANG_CZECH       "Luminara Unduli, klidna a disciplinovana mistr Jedi z Mirialu, slouzila behem Klonovych valek jako generalka a byla mentorkou Barriss Offee. Nakonec byla zajata a popravena Imperiem, pricemz jeji obraz byl pozdeji pouzit v krute pasti, aby nalakal prezivsi Jedie."
+
+REFERENCE           MA_KIS_SHAALAS
+LANG_ENGLISH        "A muscular Nikto Jedi Master, Ma'kis'shaalas was renowned for his raw strength and bravery in battle. He fought in the Battle of Geonosis and was a loyal defender of the Jedi Order, eventually perishing during the Clone Wars."
+LANG_CZECH       "Ma'kis'haalas, svalnaty mistr Jedi z rasy Nikto, byl prosluly svou surovou silou a statecnosti v boji. Bojoval v Bitve o Geonosis a byl vernym obrancem radu Jedi, nakonec vsak zahynul behem Klonovych valek."
+
+REFERENCE           MACE_WINDU
+LANG_ENGLISH        "A revered Jedi Master and champion of the Order, Mace Windu was known for his mastery of Form VII lightsaber combat and his unwavering sense of justice. He led many missions during the Clone Wars and nearly defeated Darth Sidious before being betrayed by Anakin Skywalker."
+LANG_CZECH       "Mace Windu, cteny mistr Jedi a sampion Radu, byl znamy svym mistrovskym ovladanim bojoveho umeni Formy VII se svetelnym mecem a neochvejnym smyslem pro spravedlnost. Vedl mnoho misi behem Klonovych valek a temer porazil Darth Sidiouse, nez byl zrazen Anakinem Skywalkerem."
+
+REFERENCE           MICAH_GIIETT
+LANG_ENGLISH        "A wise and level-headed Jedi Master, Micah Giiett was a member of the Jedi Council known for his strategic thinking and sense of humor. He gave his life during a mission to Nar Shaddaa, sacrificing himself so his team could escape."
+LANG_CZECH       "Micah Giiett, moudry a rozvazny mistr Jedi, byl clenem Rady Jediu znamy svym strategickym myslenim a smyslem pro humor. Polozil svuj zivot behem mise na Nar Shaddaa, obetoval se, aby jeho tym mohl uniknout."
+
+REFERENCE           NAHDAR_VEBB
+LANG_ENGLISH        "A Mon Calamari Jedi Knight and former Padawan of Kit Fisto, Nahdar Vebb was courageous but impulsive. Recently knighted during the Clone Wars, he was killed by General Grievous while letting emotion cloud his judgment, revealing the dangers of straying from Jedi discipline."
+LANG_CZECH       "Nahdar Vebb, rytir Jedi z Mon Calamari a byvaly padawan Kita Fista, byl odvazny, ale impulzivni. Kratce po svem pasovani na rytire behem Klonovych valek byl zabit generalem Grievousem, kdyz se nechal unest emocemi a ztratil soudnost, coz ukazalo, jak nebezpecne je odchylit se od discipliny Jediu."
+
+REFERENCE           OBI_WAN_KENOBI
+LANG_ENGLISH        "A noble Jedi Master and skilled negotiator, Obi-Wan Kenobi served as a General in the Clone Wars and trained Anakin Skywalker. After surviving the Jedi Purge, he watched over Luke from exile on Tatooine under the name 'Ben', eventually guiding him toward the path of a Jedi."
+LANG_CZECH       "Obi-Wan Kenobi, uslechtily mistr Jedi a zkuseny vyjednavac, slouzil jako general v Klonovych valkach a trenoval Anakina Skywalkera. Pote, co prezil Cistku Jediu, dohlizel na Lukea z exilu na Tatooine pod jmenem 'Ben' a nakonec ho nasmeroval na cestu Jediu."
+
+REFERENCE           OPPO_RANCISIS
+LANG_ENGLISH        "A wise and strategic Thisspiasian Jedi Master, Oppo Rancisis was a long-serving member of the Jedi High Council. Renowned for his battlefield tactics and mastery of Malacia, he played a key leadership role in the Clone Wars before being slain during the Jedi Purge."
+LANG_CZECH       "Moudry a strategicky uvazujici mistr Jedi z rasy Thisspias, Oppo Rancisis, byl dlouholetym clenem Nejvyssi rady Jediu. Prosluly svymi bojovymi taktikami a mistrovskym ovladanim Malacia. Hral klicovou vedouci roli v Klonovych valkach, nez byl zabit behem Cistky Jediu."
+
+REFERENCE           PABLO_JILL
+LANG_ENGLISH        "An Ongree Jedi Knight from the Outer Rim, Pablo-Jill was known for his agility and lightsaber prowess. He represented the Jedi Order in various diplomatic missions and fought in the Battle of Geonosis, later perishing during the Clone Wars."
+LANG_CZECH       "Pablo-Jill, ongrejsky rytir Jedi z Vnejsiho okraje, byl znamy svou obratnosti a mistrovskym ovladanim svetelneho mece. Zastupoval rad Jedi v ruznych diplomatickych misich a bojoval v Bitve o Geonosis. Pozdeji zahynul behem Klonovych valek."
+
+REFERENCE           PADME_AMIDALA
+LANG_ENGLISH        "Queen turned Senator of Naboo, Padmé Amidala was a fierce advocate for diplomacy and democracy. Secretly married to Anakin Skywalker, she worked to preserve peace during the Clone Wars and died heartbroken after his fall, giving birth to Luke and Leia Skywalker."
+LANG_CZECH       "Padme Amidala, kralovna a senatorka Naboo, byla horlivou zastankyni diplomacie a demokracie. Tajne se provdala za Anakina Skywalkera a snazila se zachovat mir behem Klonovych valek. Po Anakinove padu zemrela se zlomenym srdcem a porodila Lukea a Leiu Skywalkerovy."
+
+REFERENCE           PLO_KOON
+LANG_ENGLISH        "A Kel Dor Jedi Master from Dorin, Plo Koon was a wise and respected member of the Jedi High Council. Known for discovering Ahsoka Tano and his strong sense of justice, he served as a General in the Clone Wars until he was killed in his starfighter during Order 66."
+LANG_CZECH       "Plo Koon, mistr Jedi Kel Dor z Dorinu, byl moudrym a respektovanym clenem Nejvyssi rady Jediu. Proslul objevenim Ahsoky Tano a svym silnym smyslem pro spravedlnost. Slouzil jako general v Klonovych valkach, dokud nebyl zabit ve svem stihaci behem Rozkazu 66."
+
+REFERENCE           PONG_KRELL
+LANG_ENGLISH        "A Besalisk Jedi General, Pong Krell was known for his brutal tactics and disdain for clones. During the Umbara campaign, he betrayed the Republic, seeking power with the Sith. His treason was uncovered by his own troops, who executed him for his crimes."
+LANG_CZECH       "Besalisky general Jediu, Pong Krell, byl znamy svymi brutalnimi taktikami a pohrdanim klony. Behem kampane na Umbare zradil Republiku a snazil se ziskat moc u Sithu. Jeho zradu odhalili jeho vlastni vojaci, kteri ho za jeho zlociny popravili."
+
+REFERENCE           QUE_MARS_REDATH_GOM
+LANG_ENGLISH        "A hulking Weequay Jedi Knight, Que-Mars Redath-Gom was a quiet yet imposing presence among the Jedi ranks. He fought in the Battle of Geonosis and served during the Clone Wars, ultimately falling during the dark times that followed."
+LANG_CZECH       "Que-Mars Redath-Gom, mohutny rytir Jedi z rasy Weequay, byl tichou, ale impozantni postavou mezi radami Jediu. Bojoval v Bitve o Geonosis a slouzil behem Klonovych valek, nakonec vsak padl behem temnych casu, ktere nasledovaly."
+
+REFERENCE           QUI_GON_JINN
+LANG_ENGLISH        "A maverick Jedi Master, Qui-Gon Jinn often followed the will of the Force over the directives of the Jedi Council. He discovered Anakin Skywalker on Tatooine, believing him to be the Chosen One, and was slain by Darth Maul on Naboo. His belief in the Living Force left a lasting legacy."
+LANG_CZECH       "Qui-Gon Jinn, nekonvencni mistr Jedi, casto uprednostnoval vuli Sily pred pokyny Rady Jediu. Objevil Anakina Skywalkera na Tatooine, o kterem veril, ze je Vyvoleny, a byl zabit Darth Maulem na Naboo. Jeho vira v Zivou Silu zanechala trvale dedictvi."
+
+REFERENCE           QUINLAN_VOS
+LANG_ENGLISH        "A Kiffar Jedi Master known for his undercover work and psychometric abilities, Quinlan Vos often walked the line between light and dark. He was sent to assassinate Count Dooku but fell in love with Asajj Ventress and struggled with his identity, ultimately returning to the light."
+LANG_CZECH       "Quinlan Vos, mistr Jedi z rasy Kiffaru, znamy pro svou praci v utajeni a psychometricke schopnosti, casto balancoval na hranici mezi svetlem a temnotou. Byl vyslan, aby zavrazdil hrabete Dooku, ale zamiloval se do Asajj Ventress a zapasil se svou identitou, az se nakonec vratil ke svetlu."
+
+REFERENCE           REPUBLIC_COMMANDO
+LANG_ENGLISH        "Republic Commandos were elite clone soldiers trained for high-risk missions behind enemy lines. Equipped with advanced armor and specialized gear, they operated in tight squads like Delta and Omega, handling infiltration, sabotage, and frontline assault with ruthless efficiency."
+LANG_CZECH       "Republikova komanda byli elitni klonovi vojaci vycviceni pro vysoce rizikove mise za nepratelskymi liniemi. Vybaveni pokrocilou vyzbroji a specializovanym vybavenim operovali v malych jednotkach, jako Delta a Omega, a s nemilosrdnou ucinnosti provadeli infiltrace, sabotaze a utoky na frontove linii."
+
+REFERENCE           SAESEE_TIIN
+LANG_ENGLISH        "A powerful telepath and pilot, Saesee Tiin was an Iktotchi Jedi Master who served on the High Council. He fought valiantly during the Clone Wars and joined the mission to arrest Darth Sidious, where he was quickly struck down by the Sith Lord."
+LANG_CZECH       "Saesee Tiin, mocny telepat a pilot, byl mistr Jedi z naroda Iktotchi, ktery slouzil ve Vysoke rade. Statecne bojoval behem Klonovych valek a pripojil se k misi za ucelem zatceni Dartha Sidiousa, kde byl rychle porazen Sithskym lordem."
+
+REFERENCE           SARISSA_JENG
+LANG_ENGLISH        "A skilled Jedi Knight and martial artist, Sarissa Jeng fought in the Battle of Geonosis with a unique and aggressive fighting style. Though little is known about her missions during the Clone Wars, she stood among the many Jedi who gave their lives in service to the Republic."
+LANG_CZECH       "Sarissa Jeng, zkusena rytirka Jedi a bojova artistka, bojovala v Bitve o Geonosis svym jedinecnym a agresivnim bojovym stylem. Ackoli o jejich misich behem Klonovych valek neni mnoho znamo, patrila mezi mnoho Jediu, kteri polozili sve zivoty ve sluzbe Republice."
+
+REFERENCE           SATINE_KRYZE
+LANG_ENGLISH        "Duchess of Mandalore and leader of the pacifist New Mandalorians, Satine Kryze was a strong-willed idealist. She shared a complicated past and unspoken love with Obi-Wan Kenobi. Her assassination during the Clone Wars marked a tragic blow to Mandalore's future."
+LANG_CZECH       "Vevodkyne z Mandalore a vudkyne pacifistickych Novych Mandalorianu, Satine Kryze, byla idealistkou s pevnou vuli. S Obi-Wanem Kenobim sdilela komplikovanou minulost a nevyrcenou lasku. Jeji zavrazdeni behem Klonovych valek znamenalo tragickou ranu pro budoucnost Mandalore."
+
+REFERENCE           SCORCH
+LANG_ENGLISH        "RC-1262, nicknamed 'Scorch', was the explosives expert of Delta Squad. Known for his humor and technical skill, he fought in some of the Clone Wars' most dangerous operations and later became entangled in Imperial programs targeting rogue clones."
+LANG_CZECH       "RC-1262, prezdivany 'Scorch', byl expertem na vybusniny v Delta Squad. Znamy svym humorem a technickymi dovednostmi, bojoval v nekterych z nejnebezpecnejsich operaci Klonovych valek a pozdeji se stal soucasti imperialnich programu zamerenych na zbehle klony."
+
+REFERENCE           SEV
+LANG_ENGLISH        "RC-1207, or 'Sev', was Delta Squad's sniper and a fierce warrior with a grim sense of humor. During a mission on Kashyyyk, Sev was separated from his squad and declared missing in action, with his ultimate fate left unknown."
+LANG_CZECH       "RC-1207, neboli 'Sev', byl odstrelovac Delta Squad a neuprosny bojovnik s ponurym smyslem pro humor. Behem mise na Kashyyyku se Sev oddelil od sve jednotky a byl prohlasen za nezvestneho v boji, pricemz jeho osud zustal neznamy."
+
+REFERENCE           SHAAK_TI
+LANG_ENGLISH        "A Togruta Jedi Master from Shili, Shaak Ti was a calm and contemplative figure who played key roles in battles across the Clone Wars. She oversaw the training of clones on Kamino and met her end during the Jedi Purge, with varying accounts of her final moments."
+LANG_CZECH       "Shaak Ti, Togrutska mistryne Jedi z Shili, byla klidna a zamyslena postava, ktera hrala klicovou roli v bitvach behem Klonovych valek. Dohlizela na vycvik klonu na Kamino a zemrela behem Cistky Jediu, pricemz o jejich poslednich chvilich existuji ruzne verze."
+
+REFERENCE           SHAKKRA_KIEN
+LANG_ENGLISH        "A lesser-known but skilled Jedi Knight, Shakkra Kien served during the Clone Wars. Though records of her exploits are sparse, she was among the many Jedi who fought valiantly to defend the Republic during its darkest days."
+LANG_CZECH       "Shakkra Kien byl mene znamy, ale velmi schopny rytir Jedi, ktery slouzil behem Klonovych valek. Ackoli zaznamy o jeho cinech jsou sporadicke, patril mezi mnoho Jediu, kteri statecne bojovali za obranu Republiky v jejich nejtemnejsich dnech."
+
+REFERENCE           SORA_BULQ
+LANG_ENGLISH        "A Weequay Jedi Master and expert in lightsaber combat, Sora Bulq trained many Jedi in Form VII. Disillusioned with the Jedi Council, he fell to the dark side and aligned with Count Dooku, becoming a leader in the Separatist cause before being killed by Quinlan Vos."
+LANG_CZECH       "Sora Bulq, mistr Jedi z rasy Weequay a expert na boj se svetelnym mecem, vycvicil mnoho Jediu ve Forme VII. Zklamany Radou Jediu presel na temnou stranu a spojil se s hrabetem Dooku. Stal se vudcem separatistickeho hnuti a nakonec byl zabit Quinlanem Vosem."
+
+REFERENCE           SERRA_KETO
+LANG_ENGLISH        "A promising human Jedi Knight trained under Cin Drallig, Serra Keto was known for her fierce spirit and dual lightsaber technique. She defended the Jedi Temple during Anakin Skywalker's assault but was ultimately slain in battle."
+LANG_CZECH       "Serra Keto, nadejna rytirka Jedi, ktera se ucila pod vedenim Cina Dralliga, byla znama svou neustupnou povahou a technikou boje se dvema svetelnymi meci. Branila chram Jediu behem utoku Anakina Skywalkera, ale nakonec byla v boji zabita."
+
+REFERENCE           STASS_ALLIE
+LANG_ENGLISH        "A Tholothian Jedi Master and cousin of Adi Gallia, Stass Allie served on the Jedi Council and fought in the Clone Wars. While on a mission to Saleucami, she was killed when her clone troopers turned on her during the execution of Order 66."
+LANG_CZECH       "Stass Allie, Tholothianska mistryne Jedi a sestrenice Adi Gallii, byla clenkou Rady Jediu a bojovala v Klonovych valkach. Behem mise na Saleucami byla zabita, kdyz se proti ni obratili jeji klonovi vojaci pri provadeni Rozkazu 66."
+
+REFERENCE           TARADOS_GON
+LANG_ENGLISH        "A Klatooinian Jedi Master, Tarados Gon was a skilled warrior who fought in the Battle of Geonosis. Loyal and brave, he served in the early Clone Wars and died in combat, one of many Jedi lost in the conflict's opening battles."
+LANG_CZECH       "Tarados Gon, Klatooinijsky mistr Jedi, byl zkuseny valecnik, ktery bojoval v bitve o Geonosis. Byl loajalni a statecny, slouzil v ranych fazich Klonovych valek a padl v boji jako jeden z mnoha Jediu, kteri zahynuli v uvodnich bitvach tohoto konfliktu."
+
+REFERENCE           TERA_SINUBE
+LANG_ENGLISH        "An ancient Cosian Jedi Master, Tera Sinube was a patient teacher and keeper of the Jedi Archives. He guided younglings in wisdom and justice, aiding Ahsoka Tano in recovering her lightsaber. He was eventually captured and killed during the rise of the Empire."
+LANG_CZECH       "Tera Sinube, staroveky mistr Jedi z rasy Cosianu, byl trpelivym ucitelem a spravcem archivu Jediu. Vychovaval mlade ucedniky v moudrosti a spravedlnosti a pomohl Ahsoce Tano ziskat zpet jeji svetelny mec. Behem vzestupu Imperia byl nakonec zajat a zabit."
+
+REFERENCE           THONGLA_JUR
+LANG_ENGLISH        "A heroic Jedi Knight of the Clone Wars, Thongla Jur fought with valor in defense of the Republic. Though little is recorded about his deeds, his legacy endures among the fallen defenders of peace during the Jedi Purge."
+LANG_CZECH       "Thongla Jur, hrdinny rytir Jedi z Klonovych valek, statecne bojoval na obranu Republiky. Ackoli o jeho cinech existuje jen malo zaznamu, jeho odkaz pretrvava mezi padlymi obranci miru behem Cistky Jediu."
+
+REFERENCE           TIPLAR
+LANG_ENGLISH        "A Mikkian Jedi General, Tiplar served alongside her twin sister Tiplee during the Clone Wars. She was killed suddenly by clone trooper Tup due to a malfunctioning inhibitor chip, a grim foreshadowing of the tragedy of Order 66."
+LANG_CZECH       "Tiplar, generalka Jedi z Mikkianu, slouzila behem Klonovych valek po boku sve dvojcete Tiplee. Byla necekane zabita klonovym vojakem Tupem kvuli poruse inhibicniho cipu, ktera byla predzvesti tragedie Rozkazu 66."
+
+REFERENCE           TIPLEE
+LANG_ENGLISH        "Tiplee, twin sister of Tiplar, was a Mikkian Jedi Master who served in several major Clone Wars battles. After her sister's death, she continued fighting for the Republic and was later slain by Count Dooku during a confrontation with the Sith Lord."
+LANG_CZECH       "Tiplee, dvojce Tiplar, byla Mikkijska mistryne Jedi, ktera se zucastnila nekolika vyznamnych bitev Klonovych valek. Po smrti sve sestry pokracovala v boji za Republiku a pozdeji byla zabita hrabetem Dooku behem stretu se Sithskym Lordem."
+
+REFERENCE           TSUI_CHOI
+LANG_ENGLISH        "A diminutive Aleena Jedi Master, Tsui Choi was known for his incredible agility and strength in the Force. Surviving the initial Jedi Purge, he continued to resist the Empire before being killed by Darth Vader during a final stand."
+LANG_CZECH       "Tsui Choi, drobny mistr Jedi z rasy Aleena, byl znamy svou neuveritelnou obratnosti a moci v Sile. Prezil pocatecni Cistku Jediu a pokracoval v odporu proti Imperiu, nez byl zabit Darth Vaderem behem posledniho boje."
+
+REFERENCE           YADDLE
+LANG_ENGLISH        "A member of the same mysterious species as Yoda, Yaddle was a wise and gentle Jedi Master who served on the High Council. Known for her deep knowledge of the Force and compassion, she later stepped down from the Council and died confronting Count Dooku during the rise of the Sith."
+LANG_CZECH       "Yaddle, clenka stejneho tajemneho druhu jako Yoda, byla moudra a laskava mistryne Jedi, ktera slouzila ve Vysoke rade. Znama pro svou hlubokou znalost Sily a soucit, pozdeji odstoupila z Rady a zemrela pri stretu s hrabetem Dookuem behem vzestupu Sithu."
+
+REFERENCE           YARAEL_POOF
+LANG_ENGLISH        "A Quermian Jedi Master, Yarael Poof was known for his powerful mind tricks and diplomatic abilities. He served on the Jedi High Council during the final days of the Republic but died before the Clone Wars while preventing a catastrophic attack on Coruscant."
+LANG_CZECH       "Yarael Poof, mistr Jedi z rasy Quermianu, byl znamy svymi mocnymi mentalnimi triky a diplomatickymi schopnostmi. Behem poslednich dnu Republiky pusobil v Nejvyssi rade Jediu, ale zemrel pred zacatkem Klonovych valek, kdyz zabranil katastrofickemu utoku na Coruscant."
+
+REFERENCE           YODA
+LANG_ENGLISH        "One of the most powerful and revered Jedi Masters in galactic history, Yoda served the Order for over 800 years. Wise, patient, and deeply attuned to the Force, he led the Jedi through the Clone Wars and into exile after their fall, guiding future generations from the shadows."
+LANG_CZECH       "Yoda, jeden z nejmocnejsich a nejuznavanejsich mistru Jedi v historii galaxie, slouzil Radu vice nez 800 let. Moudry, trpelivy a hluboce spjaty se Silou vedl Jedi behem Klonovych valek a po jejich padu do exilu, kde ze stinu vedl budouci generace."
+
+REFERENCE           YOUNGLING
+LANG_ENGLISH        "Force-sensitive children undergoing early training in the Jedi Temple. Guided by Masters in lightsaber combat and the Force, many younglings perished during Order 66, victims of the Empire's brutal purge."
+LANG_CZECH       "Deti citlive na Silu, ktere prochazeji ranym vycvikem v chramu Jediu. Vedeny mistry v boji se svetelnym mecem a Silou, mnoho mladych ucedniku zahynulo behem Rozkazu 66, jako obeti brutalni cistky Imperia."
+
+REFERENCE           ZETT_JUKASSA
+LANG_ENGLISH        "A young Jedi Padawan trained in the Jedi Temple, Zett Jukassa fought bravely during the assault on the Temple led by Anakin Skywalker. Despite his youth, he attempted to protect escaping Jedi and civilians, but was killed by clone troopers during Order 66."
+LANG_CZECH       "Zett Jukassa, mlady padawan Jedi, ktery se cvicil v chramu Jedi, statecne bojoval behem utoku na chram vedeneho Anakinem Skywalkerem. Navzdory svemu mladi se pokusil chranit prchajici Jedi a civilisty, ale byl zabit klonovymi vojaky behem Rozkazu 66."
+
+REFERENCE 			FALON_GREY
+LANG_ENGLISH 		"A former Jedi Knight of the Old Republic era, Falon Grey left the Order to serve the Galactic Republic as a covert agent. Skilled in diplomacy and strategy, he worked behind the scenes during the Republic-Sith conflict, proving that the Force could be wielded without allegiance to the Jedi."
+LANG_CZECH       "Falon Grey, byvaly rytir Jedi z ery Stare republiky, opustil Rad, aby slouzil Galakticke republice jako tajny agent. Byl zrucny v diplomacii a strategii a behem konfliktu mezi Republikou a Sithy pracoval v zakulisi, cimz dokazal, ze Silu lze ovladat i bez loajality k Jedium."
+
+REFERENCE 			DEATH_WATCH
+LANG_ENGLISH 		"A militant Mandalorian faction, Death Watch opposed the pacifist New Mandalorians and sought to restore Mandalore's warrior traditions. Active during the final years of the Republic, they allied with Sith and criminal forces, plunging Mandalore into chaos and civil war."
+LANG_CZECH       "Militantni frakce Mandalorianu, Umrlci Hlidka, se postavila proti pacifistickym Novym Mandalorianum a snazila se obnovit valecnicke tradice Mandalore. Behem poslednich let existence Republiky se spojili se Sithy a zlocineckymi silami a uvrhli Mandalore do chaosu a obcanske valky."
+
+
+//----------------------------------------------------------
+// 	h4: SEPARATIST
+//----------------------------------------------------------
+
+REFERENCE           ASAJJ_VENTRESS
+LANG_ENGLISH        "A Dathomirian Nightsister and former Jedi Padawan, Asajj Ventress became a deadly Sith assassin under Count Dooku. Betrayed by her master, she sought her own path, working as a bounty hunter and ultimately sacrificing herself to save Quinlan Vos, seeking redemption in her final act."
+LANG_CZECH       "Asajj Ventress, Dathomirska Nocni sestra a byvala padawanka Jediu, se stala smrtici sithskou vrazedkyni pod velenim hrabete Dooku. Zrazena svym mistrem, vydala se vlastni cestou, pracovala jako lovkyne odmen a nakonec se obetovala, aby zachranila Quinlana Vose, a ve svem poslednim cinu hledala vykoupeni."
+
+REFERENCE           B1_BATTLE_DROID
+LANG_ENGLISH        "Mass-produced by the Separatists, B1 Battle Droids formed the bulk of the droid army. Easily manufactured and expendable, they were known for their poor aim and comic incompetence, but their sheer numbers made them a constant threat during the Clone Wars."
+LANG_CZECH       "Bojove droidy B1, masove vyrabene Separatisty, tvorily vetsinu droidi armady. Byly snadno vyrobitelne a nahraditelne, prosluly svou spatnou muskou a komickou neschopnosti, ale diky svemu poctu predstavovaly behem Klonovych valek neustalou hrozbu."
+
+REFERENCE           B2_SUPER_BATTLE_DROID
+LANG_ENGLISH        "An upgraded model of the B1, B2 Super Battle Droids were bulkier, stronger, and lacked the need for external command units. Heavily armored and equipped with wrist blasters, they posed a greater challenge to Republic forces throughout the Clone Wars."
+LANG_CZECH       "Vylepseny model B1, B2 Super Battle Droids, byl mohutnejsi, silnejsi a nevyzadoval externi velitelske jednotky. Silne obrneny a vybaveny zapestnimi blastery predstavoval pro republikove sily behem Klonovych valek vetsi vyzvu."
+
+REFERENCE           CAD_BANE
+LANG_ENGLISH        "A ruthless Duros bounty hunter, Cad Bane was one of the galaxy's deadliest mercenaries during the Clone Wars. Known for his cunning, gadgets, and fearlessness, he worked for major clients including the Separatists and Jabba the Hutt, often outwitting Jedi and clones alike."
+LANG_CZECH       "Cad Bane, nemilosrdny lovec odmen z rasy Duros, byl behem Klonovych valek jednim z nejnebezpecnejsich zoldaku v galaxii. Byl znamy svou prohnanosti, vynalezavosti a nebojacnosti. Pracoval pro vyznamne klienty, vcetne Separatistu a Jabby Hutta, a casto prelstil jak Jedie, tak klony."
+
+REFERENCE           CLONE_ASSASSIN
+LANG_ENGLISH        "Clone Assassins were elite operatives bred for secrecy and silent execution. Used by the Republic and later the Empire, they were deployed in covert operations and Jedi purges, operating without question and eliminating targets with lethal efficiency."
+LANG_CZECH       "Klonovani zabijaci byli elitni agenti vyskoleni k utajeni a tichemu zabijeni. Byli vyuzivani Republikou a pozdeji Imperiem, nasazovani v tajnych operacich a pri vyvrazdovani Jediu, jednali bez otazek a likvidovali cile s smrtici ucinnosti."
+
+REFERENCE           COUNT_DOOKU
+LANG_ENGLISH        "Once a respected Jedi Master, Count Dooku fell to the dark side and became Darth Tyranus, apprentice to Darth Sidious. He led the Separatist Alliance during the Clone Wars, orchestrating chaos across the galaxy. His death at Anakin's hands marked a turning point in the Sith's rise."
+LANG_CZECH       "Kdysi respektovany mistr Jedi, hrabe Dooku, propadl temne strane a stal se Darth Tyranusem, ucednikem Dartha Sidiouse. Behem Klonovych valek vedl Separatistickou alianci a vyvolal chaos v cele galaxii. Jeho smrt z rukou Anakina znamenala zlomovy bod ve vzestupu Sithu."
+
+REFERENCE           DARTH_MAUL
+LANG_ENGLISH        "A Zabrak warrior trained by Darth Sidious, Darth Maul was thought killed after his duel with Obi-Wan Kenobi. Surviving through hatred, he returned with vengeance, forming criminal empires and waging war against Jedi and Sith alike, seeking revenge until his final confrontation with Kenobi."
+LANG_CZECH       "Darth Maul, Zabraksky valecnik vycviceny Darthem Sidiousem, byl po souboji s Obi-Wanem Kenobim povazovan za mrtveho. Prezil diky sve nenavisti a vratil se, aby se pomstil. Vytvoril zlocinecke imperium a vedl valku proti Jedium i Sithum, az do sveho posledniho stretu s Kenobim."
+
+REFERENCE           DARTH_PLAGUESIS
+LANG_ENGLISH        "A Sith Lord obsessed with immortality, Darth Plagueis was the master of Darth Sidious. His deep knowledge of the dark side allowed him to manipulate life and death, but his ambition blinded him to betrayal—he was ultimately murdered in his sleep by his own apprentice."
+LANG_CZECH       "Darth Plagueis, Sithsky Lord posedly nesmrtelnosti, byl mistrem Dartha Sidiouse. Jeho hluboke znalosti temne strany mu umoznovaly manipulovat se zivotem a smrti, ale jeho ambice ho zaslepily natolik, ze se stal obeti zrady – nakonec byl ve spanku zavrazden svym vlastnim ucednikem."
+
+REFERENCE           DARTH_SIDIOUS
+LANG_ENGLISH        "Born as Sheev Palpatine on Naboo, Darth Sidious was a Sith Lord who manipulated his way to power as Supreme Chancellor of the Republic. Operating in secret for decades, he orchestrated the fall of the Jedi, the rise of the Galactic Empire, and ruled the galaxy as Emperor with dark mastery over the Force."
+LANG_CZECH       "Darth Sidious, narozeny jako Sheev Palpatine na Naboo, byl Sithsky Lord, ktery se vypracoval k moci jako Nejvyssi Kancler Republiky. Po desetileti pusobil v utajeni, zosnoval pad Jediu, vzestup Galaktickeho Imperia a vladl galaxii jako Cisar s temnou moci nad Silou."
+
+REFERENCE           DROIDEKA
+LANG_ENGLISH        "Also known as Destroyer Droids, Droidekas were deadly rolling machines equipped with twin blasters and personal energy shields. Used by the Separatists, they were formidable foes, capable of overwhelming Jedi and clone squads with sheer firepower and defense."
+LANG_CZECH       "Droideky, zname take jako nicive droidy, byly smrtici pojizdne stroje vybavene dvojitymi blastery a osobnimi energetickymi stity. Pouzivaly je Separatiste a byly to obavani nepratele, schopni premoci jednotky Jediu a klonu svou palebnou silou a obranou."
+
+REFERENCE           DURGE
+LANG_ENGLISH        "A nearly indestructible Gen'Dai bounty hunter, Durge fought for the Separatists during the Clone Wars. Possessing regenerative abilities and centuries of combat experience, he harbored a deep hatred for Mandalorians and clashed with Jedi in brutal encounters."
+LANG_CZECH       "Durge, temer neznicitelny lovec odmen Gen'Dai, bojoval behem Klonovych valek za Separatisty. Disponoval regeneracnimi schopnostmi a staletimi bojovych zkusenosti, choval hlubokou nenavist k Mandalorianum a stretaval se s Jedii v brutalnich soubojich."
+
+REFERENCE           EMBO
+LANG_ENGLISH        "A Kyuzo bounty hunter known for his stoic demeanor and lethal skill, Embo was among the most respected hunters of the Clone Wars. Using his wide-brimmed hat as a shield and weapon, he served various clients, often guided by his own sense of honor."
+LANG_CZECH       "Embo, lovec odmen z rasy Kyuzo znamy svym stoickym chovanim a smrticimi schopnostmi, patril mezi nejrespektovanejsi lovce behem Klonovych valek. Svuj klobouk s sirokou krempou pouzival jako stit i zbran a slouzil ruznym klientum, casto veden svym vlastnim smyslem pro cest."
+
+REFERENCE           GENERAL_GRIEVOUS
+LANG_ENGLISH        "A fearsome cyborg and Supreme Commander of the Separatist droid army, General Grievous was trained in lightsaber combat by Count Dooku. He collected the sabers of fallen Jedi and was infamous for his brutality across the Clone Wars. He was ultimately defeated by Obi-Wan Kenobi on Utapau."
+LANG_CZECH       "General Grievous, obavany kyborg a nejvyssi velitel Separatisticke armady droidu, byl vycvicen v boji se svetelnymi meci hrabetem Dooku. Sbiral mece padlych Jediu a byl prosluly svou brutalitou behem Klonovych valek. Nakonec byl porazen Obi-Wanem Kenobim na Utapau."
+
+REFERENCE           HONDO_OHNAKA
+LANG_ENGLISH        "A charismatic Weequay pirate, Hondo Ohnaka led the Ohnaka Gang on Florrum. Known for his wit, unpredictability, and opportunism, he often clashed with Jedi and Sith alike but occasionally aided them when it suited him. Despite his greed, he had a peculiar code of honor."
+LANG_CZECH       "Charismaticky pirat Weequay, Hondo Ohnaka, vedl gang Ohnaka na Florrumu. Znamy pro svuj duvtip, nepredvidatelnost a oportunismus, casto se stretaval s Jedii i Sithy, ale obcas jim pomahal, kdyz se mu to hodilo. Navzdory sve chamtivosti mel zvlastni kodex cti."
+
+REFERENCE           JANGO_FETT
+LANG_ENGLISH        "A legendary Mandalorian bounty hunter, Jango Fett was chosen as the genetic template for the Republic's clone army. He demanded an unaltered clone as payment—his 'son', Boba Fett. Jango was killed in battle by Mace Windu during the First Battle of Geonosis."
+LANG_CZECH       "Legendarni Mandaloriansky lovec odmen Jango Fett byl vybran jako geneticky vzor pro klonovou armadu Republiky. Jako odmenu pozadoval nezmeneneho klona – sveho 'syna' Bobu Fetta. Jango byl zabit v boji Mace Winduem behem prvni Bitvy o Geonosis."
+
+REFERENCE           LORD_VADER
+LANG_ENGLISH        "Once the Jedi Knight Anakin Skywalker, Lord Vader became the enforcer of the Galactic Empire after pledging himself to Darth Sidious. As a Sith Lord, he hunted down surviving Jedi and crushed resistance across the galaxy, becoming a symbol of fear and oppression."
+LANG_CZECH       "Lord Vader, kdysi rytir Jedi Anakin Skywalker, se stal vykonavatelem Galaktickeho Imperia pote, co se zavazal Darthu Sidiousovi. Jako Sithsky Lord pronasledoval prezivsi rytire Jedi a potlacil odpor v cele galaxii, cimz se stal symbolem strachu a utlaku."
+
+REFERENCE           MAGNAGUARD
+LANG_ENGLISH        "IG-100 MagnaGuards were advanced droids employed by General Grievous. Programmed to duel Jedi, they wielded electrostaffs capable of blocking lightsabers. These relentless bodyguards could continue fighting even after losing limbs or sustaining heavy damage."
+LANG_CZECH       "IG-100 MagnaGuards byli pokrocili droidi ve sluzbach generala Grievouse. Byli naprogramovani k soubojum s Jedii a byli vybaveni elektrickymi holemi, ktere dokazaly blokovat svetelne mece. Tito neuprosni bodyguardi mohli pokracovat v boji i po ztrate koncetin nebo utrpeni tezkych zraneni."
+
+REFERENCE           MOTHER_TALZIN
+LANG_ENGLISH        "Matriarch of the Nightsisters, Mother Talzin was a powerful dark side sorceress from Dathomir. She wielded ancient magicks and manipulated galactic events from the shadows. A rival of Darth Sidious, she sought vengeance through her son, Savage Opress, and fell in a clash with the Sith."
+LANG_CZECH       "Matka Talzin, matriarcha Nocnich sester, byla mocna carodejka temne strany z Dathomiru. Ovladala starodavnou magii a z pozadi manipulovala galaktickymi udalostmi. Jako rivalka Dartha Sidiouse se snazila pomstit prostrednictvim sveho syna Savage Opresse, ale nakonec padla v boji se Sithy."
+
+REFERENCE           NEIMOIDIAN_GUARD
+LANG_ENGLISH        "The Neimoidian Guard served as the armed security force of the Trade Federation. Armed with blaster rifles and clad in distinctive armor, they protected key leaders like Nute Gunray and enforced order aboard Federation vessels and installations."
+LANG_CZECH       "Neimoidianska garda slouzila jako ozbrojena bezpecnostni sila Obchodni Federace. Vyzbrojeni blasterovymi puskami a odeni v charakteristickem brneni chranili klicove vudce, jako byl Nute Gunray, a vynucovali poradek na palubach lodi a zakladen Federace."
+
+REFERENCE           NEIMOIDIAN_BRUTE
+LANG_ENGLISH        "Larger and more physically imposing than standard Neimoidians, Neimoidian Brutes served as enforcers and shock troopers for the Trade Federation. Rarely seen in command roles, they were employed for intimidation and brute strength during military operations."
+LANG_CZECH       "Neimoidiansti bruti, vetsi a fyzicky impozantnejsi nez standardni Neimoidiane, slouzily jako vymahaci a uderni vojaci Obchodni Federace. Zridkakdy je bylo videt ve velitelskych rolich, ale byly pouzivani k zastrasovani a k projevovani hrube sily behem vojenskych operaci."
+
+REFERENCE           NUTE_GUNRAY
+LANG_ENGLISH        "Viceroy of the Trade Federation, Nute Gunray played a pivotal role in the rise of the Separatists. Ambitious and cowardly, he conspired with Darth Sidious in the blockade of Naboo and remained a puppet leader throughout the Clone Wars. He was executed by Darth Vader on Mustafar."
+LANG_CZECH       "Mistokral Obchodni Federace Nute Gunray sehral klicovou roli ve vzestupu Separatistu. Byl ambiciozni a zbabely, konspiroval s Darthem Sidiousem pri blokade Naboo a zustal loutkovym vudcem po celou dobu Klonovych valek. Na Mustafaru ho popravil Darth Vader."
+
+REFERENCE           SAVAGE_OPRESS
+LANG_ENGLISH        "A Dathomirian Zabrak transformed by dark magicks, Savage Opress was the brother of Darth Maul and apprentice to Count Dooku. Empowered by Mother Talzin, he turned against his master and waged war alongside Maul. His strength was immense, but he ultimately fell to Darth Sidious."
+LANG_CZECH       "Savage Opress, Dathomirsky Zabrak, promeneny temnou magii, byl bratrem Dartha Maula a ucednikem hrabete Dookua. Posilen Matkou Talzin, se obratil proti svemu panovi a vedl valku po Maulove boku. Jeho sila byla nesmirna, ale nakonec podlehl Darthu Sidiousovi."
+
+REFERENCE           SHU_MAI
+LANG_ENGLISH        "President of the Commerce Guild, Shu Mai was a Separatist leader who supported Count Dooku during the Clone Wars. Focused on profit and industry, she provided resources and troops for the war effort. She was executed by Darth Vader during the purge of the Separatist Council."
+LANG_CZECH       "Shu Mai, prezidentka Obchodniho cechu, byla separatisticka vudkyne, ktera behem Klonovych valek podporovala hrabete Dooku. Zamerovala se na zisk a prumysl a poskytovala zdroje a vojaky pro valecne usili. Behem cistky Separatisticke rady ji popravil Darth Vader."
+
+REFERENCE           TUSKAN_RAIDER
+LANG_ENGLISH        "Also known as Sand People, Tusken Raiders were nomadic warriors native to Tatooine. Fiercely territorial and hostile to outsiders, they lived in clans and upheld ancient traditions. Feared by settlers, they played a tragic role in shaping Anakin Skywalker's destiny."
+LANG_CZECH       "Tuskensti najezdnici, znami take jako Pisecni lide, byli kocovni valecnici pochazejici z Tatooine. Byli zurive teritorialni a nepratelsti vuci cizincum, zili v klanech a dodrzovali starodavne tradice. Osadnici se jich bali a sehrali tragickou roli pri utvareni osudu Anakina Skywalkera."
+
+REFERENCE           WAT_TAMBOR
+LANG_ENGLISH        "Foreman of the Techno Union, Wat Tambor supplied the Separatists with advanced weaponry and droids. Encased in a pressurized suit, he oversaw brutal experiments and occupations during the Clone Wars. Like his fellow council members, he was executed on Mustafar by Darth Vader."
+LANG_CZECH       "Wat Tambor, predak Techno Unie, zasoboval separatisty pokrocilymi zbranemi a droidy. Oblecen v pretlakovem obleku dohlizel na brutalni experimenty a okupace behem Klonovych valek. Stejne jako jeho kolegove z rady byl na Mustafaru popraven Darthem Vaderem."
+
+REFERENCE 			DEATH_WATCH_MAUL
+LANG_ENGLISH 		"Following the rise of Darth Maul, a faction of Death Watch pledged loyalty to the former Sith Lord after his seizure of Mandalore. These Mandalorians served as enforcers of Maul's rule, helping to overthrow Duchess Satine and install him as ruler before the group fractured amid internal betrayal and civil war."
+LANG_CZECH       "Po vzestupu Dartha Maula se frakce Umrlci Hlidky zavazala k vernosti byvalemu Sithskemu Lordovi pote, co se zmocnil Mandaloru. Tito Mandaloriane slouzili jako vynucovatele Maulovy vlady a pomohli svrhnout vevodkyni Satine a dosadit ho na trun, nez se skupina rozpadla uprostred vnitrni zrady a obcanske valky."
+
+REFERENCE 			PRE_VIZSLA
+LANG_ENGLISH 		"A Mandalorian warlord and leader of Death Watch, Pre Vizsla wielded the Darksaber in his campaign to reclaim Mandalore's warrior legacy. He allied with Darth Maul to overthrow the New Mandalorians, only to be challenged and slain by Maul in single combat, losing both leadership and the Darksaber."
+LANG_CZECH       "Pre Vizsla, Mandaloriansky valecnik a vudce Umrlci Hlidky, pouzival Temny mec ve svem tazeni za znovuziskani valecnickeho odkazu planety Mandalore. Spojil se s Darthem Maulem, aby svrhl Nove Mandaloriany, aby byl nasledne Maulem v souboji jeden na jednoho zabit, cimz ztratil jak vudcovstvi, tak Temny mec."
+
+//----------------------------------------------------------
+// 	h5: REBELS
+//----------------------------------------------------------
+
+REFERENCE           A_SHARAD_HETT  
+LANG_ENGLISH        "A Jedi Knight raised among Tusken Raiders, A'Sharad Hett survived the Clone Wars and the Jedi Purge. Struggling with identity and loss, he later fell to the dark side and became Darth Krayt, founding the One Sith and seeking to reshape the galaxy under his rule."
+LANG_CZECH       "A'Sharad Hett, rytir Jedi vychovany mezi Tuskenskymi najezdniky, prezil Klonove valky a Cistku Jediu. Bojoval s identitou a ztratou, ale pozdeji presel na temnou stranu a stal se Darthem Kraytem, ​​zalozil kult Jeden Sith a snazil se pod svou vladou pretvorit galaxii."
+
+REFERENCE           ADMIRAL_ACKBAR  
+LANG_ENGLISH        "A brilliant tactician of the Mon Calamari species, Admiral Ackbar led the Rebel fleet in many key battles, including the pivotal assault on the second Death Star. Known for his strategic genius and iconic warning, he remained a loyal defender of the New Republic until his death in the war against the First Order."
+LANG_CZECH       "Admiral Ackbar, brilantni taktik rasy Mon Calamari, vedl flotilu Povstalcu v mnoha klicovych bitvach, vcetne klicoveho utoku na druhou Hvezdu Smrti. Znamy jako strategicky genius a pro svoje ikonicke varovani, zustal vernym obrancem Nove Republiky az do sve smrti ve valce proti Prvnimu radu."
+
+REFERENCE           BAIL_ORGANA  
+LANG_ENGLISH        "Senator of Alderaan and a founding member of the Rebel Alliance, Bail Organa worked covertly to oppose the Empire. A close ally to the Jedi, he adopted Leia as his daughter and helped lay the foundation for future resistance. He perished when Alderaan was destroyed by the Death Star."
+LANG_CZECH       "Bail Organa, senator Alderaanu a zakladajici clen Povstalecke Aliance, tajne pracoval na odporu proti Imperiu. Jako blizky spojenec Jediu adoptoval Leiu jako svou dceru a pomohl polozit zaklady budouciho odporu. Zahynul, kdyz Alderaan znicila Hvezda Smrti."
+
+REFERENCE           BAZE_MALBUS  
+LANG_ENGLISH        "A hardened warrior and protector of Jedha's sacred traditions, Baze Malbus once served as a Guardian of the Whills. Though disillusioned with faith, he remained loyal to his friend Chirrut Îmwe and fought bravely during the mission to steal the Death Star plans on Scarif."
+LANG_CZECH       "Baze Malbus, ostrileny valecnik a ochrance posvatnych tradic Jedhy, kdysi slouzil jako strazce Whillu. Prestoze byl zklaman virou, zustal verny svemu priteli Chirrutu Imwemu a statecne bojoval behem mise s cilem ukrast plany Hvezdy Smrti na Scarifu."
+
+REFERENCE           BEN_KENOBI  
+LANG_ENGLISH        "Once known as Obi-Wan Kenobi, the Jedi Master took the name 'Ben' while hiding on Tatooine. Watching over Luke Skywalker from afar, he lived in exile until called to action. Though burdened by past failures, he guided the next generation with wisdom and sacrifice."
+LANG_CZECH       "Kdysi znamy jako Obi-Wan Kenobi, mistr Jedi prijal jmeno 'Ben', kdyz se ukryval na Tatooine. Z dalky dohlizel na Lukea Skywalkera a zil v exilu, dokud nebyl povolan k akci. Prestoze byl zatizen minulymi neuspechy, vedl dalsi generaci s moudrosti a obetavosti."
+
+REFERENCE           BESPIN_SECURITY  
+LANG_ENGLISH        "Bespin Security forces served under Lando Calrissian to maintain order in Cloud City. Equipped with blasters and distinctive uniforms, they helped protect the city's operations and were drawn into the conflict during the Empire's occupation of the gas mining facility."
+LANG_CZECH       "Bezpecnostni sily Bespinu slouzily pod velenim Landa Calrissiana, aby v Oblacnem meste udrzovaly poradek. Vybavene blastery a charakteristickymi uniformami, pomahaly chranit mestske operace a byly vtazeny do konfliktu behem okupace plynoveho tezebniho zarizeni Imperiem."
+
+REFERENCE           BODHI_ROOK  
+LANG_ENGLISH        "An Imperial cargo pilot who defected to the Rebellion, Bodhi Rook was instrumental in delivering the message from Galen Erso that revealed the Death Star's weakness. Despite his fear, he found courage and gave his life during the mission to secure the plans on Scarif."
+LANG_CZECH       "Bodhi Rook, imperialni pilot nakladni lodi, ktery prebehl k Povstani, sehral klicovou roli v doruceni zpravy od Galena Erso, ktera odhalila slabinu Hvezdy Smrti. Navzdory svemu strachu nasel odvahu a behem mise na zajisteni planu na Scarifu obetoval svuj zivot."
+
+REFERENCE           C3PO  
+LANG_ENGLISH        "A protocol droid fluent in over six million forms of communication, C-3PO was built by Anakin Skywalker and became a constant companion to the Skywalker family. Often anxious yet loyal, he played key roles in diplomatic missions and galactic conflicts across decades."
+LANG_CZECH       "C-3PO, protokolarni droid ovladajici plynne vice nez sest milionu forem komunikace, byl postaven Anakinem Skywalkerem a stal se stalym spolecnikem rodiny Skywalkeru. Casto uzkostlivy, ale loajalni, hral klicove role v diplomatickych misich a galaktickych konfliktech po cela desetileti."
+
+REFERENCE           CADE_SKYWALKER  
+LANG_ENGLISH        "A descendant of Luke Skywalker, Cade was a rogue Force-sensitive who turned away from the Jedi Order after trauma and loss. Becoming a bounty hunter and self-medicating his pain, he eventually embraced his destiny to confront the Sith and redeem the Skywalker legacy in a dark era."
+LANG_CZECH       "Cade, potomek Lukea Skywalkera, byl zradny a citlivy na Silu, ktery se po traumatu a ztrate odvratil od Radu Jedi. Stal se lovcem odmen a sam si lecil svou bolest, aby nakonec prijal svuj osud postavit se Sithum a v temne ere napravit odkaz Skywalkeru."
+
+REFERENCE           CAL_KESTIS  
+LANG_ENGLISH        "A Jedi Padawan who survived Order 66, Cal Kestis lived in hiding until events forced him to confront the Empire. With the help of allies, he sought to restore the Jedi Order, battling Inquisitors and uncovering ancient secrets while resisting the darkness within himself."
+LANG_CZECH       "Cal Kestis, padawan Jedi, ktery prezil Rozkaz 66, zil v ukrytu, dokud ho udalosti nedonutily ke konfrontaci s Imperiem. S pomoci spojencu se snazil obnovit Rad Jedi, bojoval s Inkvizitory a odhaloval starodavna tajemstvi, zatimco odolaval temnote v sobe."
+
+REFERENCE           CALEB_DUME  
+LANG_ENGLISH        "Once a Jedi Padawan, Caleb Dume survived the Purge and assumed the name Kanan Jarrus. Hiding his identity for years, he eventually joined the Rebellion and trained Ezra Bridger, sacrificing himself in the fight for Lothal and leaving a legacy of hope and mentorship."
+LANG_CZECH       "Caleb Dume, kdysi Jedi Padawan, prezil Cistku a prijal jmeno Kanan Jarrus. Svou identitu leta skryval, ale nakonec se pridal k Povstani a vycvicil Ezru Bridgera. Obetoval se v boji za Lothal a zanechal po sobe odkaz nadeje a mentorstvi."
+
+REFERENCE           CAPTAIN_REX_OT
+LANG_ENGLISH        "A respected clone trooper and leader of the 501st Legion, Captain Rex fought alongside Anakin Skywalker and Ahsoka Tano during the Clone Wars. He removed his control chip to resist Order 66 and later joined the Rebellion, continuing to fight for freedom in the galaxy."
+LANG_CZECH       "Kapitan Rex, respektovany klonovy vojak a vudce 501. legie, bojoval po boku Anakina Skywalkera a Ahsoky Tano behem Klonovych valek. Aby se postavil proti Rozkazu 66, odstranil si kontrolni cip a pozdeji se pripojil k Povstani, kde pokracoval v boji za svobodu v galaxii."
+
+REFERENCE           CASSIAN_ANDOR  
+LANG_ENGLISH        "A seasoned intelligence officer and spy, Cassian Andor served the Rebellion with unwavering dedication. Shaped by years of covert warfare, he played a pivotal role in obtaining the Death Star plans. His early sacrifices laid the groundwork for future victories against the Empire."
+LANG_CZECH       "Cassian Andor, zkuseny zpravodajsky dustojnik a spion, slouzil Povstalcum s neochvejnou oddanosti. Zformovan lety tajneho valceni sehral klicovou roli pri ziskavani planu Hvezdy smrti. Jeho rane obeti polozily zaklady pro budouci vitezstvi proti Imperiu."
+
+REFERENCE           CHEWBACCA  
+LANG_ENGLISH        "A towering Wookiee from Kashyyyk, Chewbacca was Han Solo's loyal co-pilot and a hero of the Rebellion. Brave, strong, and deeply honorable, he fought against tyranny from the Clone Wars through the Resistance, becoming a beloved figure across the galaxy."
+LANG_CZECH       "Chewbacca, impozantni Wookiee z Kashyyyku, byl vernym kopilotem Hana Sola a hrdinou Povstani. Statecny, silny a hluboce cestny bojoval proti tyranii od Klonovych valek az po Odboj a stal se milovanou postavou v cele galaxii."
+
+REFERENCE           CHIRRUT_IMWE  
+LANG_ENGLISH        "A blind warrior-monk from Jedha, Chirrut Îmwe was deeply devoted to the Force despite not being a Jedi. With extraordinary combat skills and unshakable faith, he aided the Rogue One team on Scarif, sacrificing himself to help transmit the Death Star plans."
+LANG_CZECH       "Chirrut Îmwe, slepy valecnik-mnich z Jedhy, byl hluboce oddany Sile, prestoze nebyl Jedi. Diky mimoradnym bojovym schopnostem a neotresitelne vire pomahal tymu Rogue One na Scarifu a obetoval se, aby pomohl predat plany Hvezdy Smrti."
+
+REFERENCE           EZRA_BRIDGER  
+LANG_ENGLISH        "A Force-sensitive orphan from Lothal, Ezra Bridger joined the Ghost crew and trained under Kanan Jarrus. He matured into a skilled Jedi and leader, ultimately sacrificing himself by disappearing into hyperspace with Grand Admiral Thrawn to save his planet from Imperial occupation."
+LANG_CZECH       "Ezra Bridger, sirotek z Lothalu citlivy na Silu, se pripojil k posadce Ducha a trenoval pod vedenim Kanana Jarrusa. Vyzral v zkuseneho Jediho a vudce, ktery se nakonec obetoval zmizenim v hyperprostoru s velkoadmiralem Thrawnem, aby zachranil svou planetu pred imperialni okupaci."
+
+REFERENCE           GALEN_MAREK  
+LANG_ENGLISH        "Codenamed Starkiller, Galen Marek was the secret apprentice of Darth Vader, trained to hunt Jedi. Struggling with his identity, he turned against the Empire and helped ignite the Rebel Alliance. His power and redemption left a lasting legacy in the fight for freedom."
+LANG_CZECH       "Galen Marek, s krycim jmenem Starkiller, byl tajnym ucednikem Dartha Vadera, vycvicenym k lovu Jediu. V boji se svou identitou se obratil proti Imperiu a pomohl zazehnout vznik Povstalecke Aliance. Jeho moc a vykoupeni zanechaly trvaly odkaz v boji za svobodu."
+
+REFERENCE           GNK_DROID  
+LANG_ENGLISH        "Known colloquially as 'Gonk droids,' GNK power droids served as portable energy units across the galaxy. Though slow-moving and simple, their reliability made them a common sight in military and industrial environments, silently powering critical systems."
+LANG_CZECH       "Energeticti droidi GNK, hovorove znami jako 'Gonk droidi', slouzili jako prenosne energeticke jednotky po cele galaxii. Prestoze se pohybovaly pomalu a byly nenarocni, diky sve spolehlivosti se bezne vyskytovaly ve vojenskem a prumyslovem prostredi a tise napajely kriticke systemy."
+
+REFERENCE           HAN_SOLO  
+LANG_ENGLISH        "Once a smuggler and rogue, Han Solo became a hero of the Rebel Alliance. Known for his quick wit and flying skills, he piloted the Millennium Falcon through countless battles. Though reluctant at first, his loyalty and bravery helped turn the tide against the Empire."
+LANG_CZECH       "Han Solo, kdysi paserak a darebak, se stal hrdinou Povstalecke Aliance. Prosluli svym bystrym vtipem a leteckymi schopnostmi pilotoval Millennium Falcon v nescetnych bitvach. Ackoli se zpocatku zdrahal, jeho loajalita a statecnost pomohly zvratit situaci proti Imperiu."
+
+REFERENCE           HERA_SYNDULLA  
+LANG_ENGLISH        "A skilled pilot and leader from Ryloth, Hera Syndulla captained the Ghost and fought tirelessly for the Rebellion. Known for her tactical brilliance and strong moral compass, she played a key role in forming the Rebel Alliance and later became a general in the New Republic."
+LANG_CZECH       "Hera Syndulla, zkusena pilotka a vudkyne z Rylothu, vedla posadku Ducha a neunavne bojovala za Povstani. Byla znama svou taktickou brilantnosti a silnym moralnim kompasem, sehrala klicovou roli pri formovani Povstalecke Aliance a pozdeji se stala generalkou v Nove Republice."
+
+REFERENCE           JAN_ORS  
+LANG_ENGLISH        "An elite operative for the Rebel Alliance, Jan Ors worked alongside Kyle Katarn on high-risk missions. Skilled in infiltration and combat, she provided critical intelligence and support in the early days of the Rebellion, helping secure vital victories against the Empire."
+LANG_CZECH       "Jan Ors, elitni agentka Povstalecke Aliance, pracovala po boku Kylea Katarna na vysoce rizikovych misich. Diky svym zkusenostem s infiltraci a bojem poskytovala v ranych dobach Povstani klicove informace a podporu, cimz pomahala zajistit klicova vitezstvi proti Imperiu."
+
+REFERENCE           JARO_TAPAL  
+LANG_ENGLISH        "A Lasat Jedi Master and mentor to Cal Kestis, Jaro Tapal was a fierce and disciplined warrior during the Clone Wars. He died defending his Padawan during Order 66, instilling in Cal the strength to survive and eventually confront the Empire."
+LANG_CZECH       "Jaro Tapal, Lasatsky mistr Jedi a mentor Cala Kestise, byl behem Klonovych valek nelitostnym a disciplinovanym valecnikem. Zemrel pri obrane sveho Padawana behem Rozkazu 66 a vstipil Calovi silu k preziti a odvahu postavit se Imperiu."
+
+REFERENCE           JEDI_TRAINER  
+LANG_ENGLISH        "Jedi Trainers guided younglings and Padawans in their early development, instructing them in lightsaber techniques, Force control, and Jedi philosophy. Their teachings were foundational to the Order, instilling discipline and purpose in future Jedi."
+LANG_CZECH       "Treneri Jedi vedli mlade Jedi a Padawany v jejich ranem vyvoji, ucili je technikam svetelneho mece, ovladani Sily a filozofii Jedi. Jejich uceni bylo zakladem Radu a vstepovalo budoucim Jedium disciplinu a smysl zivota."
+
+REFERENCE           JYN_ERSO  
+LANG_ENGLISH        "The daughter of Imperial scientist Galen Erso, Jyn became a reluctant hero of the Rebellion. Hardened by a life of loss and secrecy, she led the Rogue One mission to steal the Death Star plans, giving her life so the Rebellion could strike a decisive blow."
+LANG_CZECH       "Jyn, dcera imperialniho vedce Galena Erso, se neochotne stala hrdinkou Povstani. Zocelena zivotem plnym ztrat a utajovani vedla misi Rogue One s cilem ukrast plany Hvezdy Smrti a obetovala svuj zivot, aby Povstani mohlo zasadit rozhodujici uder."
+
+REFERENCE           K2SO  
+LANG_ENGLISH        "A reprogrammed Imperial security droid, K-2SO served the Rebellion with dry wit and unwavering loyalty. Partnered with Cassian Andor, he played a crucial role in the mission to Scarif, sacrificing himself to ensure the success of the Death Star data transmission."
+LANG_CZECH       "K-2SO, preprogramovany imperialni bezpecnostni droid, slouzil Povstani s drsnym humorem a neochvejnou loajalitou. Spolu s Cassianem Andorem sehral klicovou roli v misi na Scarif a obetoval se, aby zajistil uspesny prenos dat z Hvezdy Smrti."
+
+REFERENCE           KANAN_JARRUS  
+LANG_ENGLISH        "Born Caleb Dume, Kanan Jarrus survived Order 66 and hid his Jedi identity for years. He later joined the Ghost crew and trained Ezra Bridger, rediscovering his purpose. Kanan ultimately sacrificed himself to save his family, cementing his legacy in the Rebellion."
+LANG_CZECH       "Kanan Jarrus, narozeny jako Caleb Dume, prezil Rozkaz 66 a roky skryval svou identitu Jedie. Pozdeji se pripojil k posadce Ducha a vycvicil Ezru Bridgera, cimz znovuobjevil sve poslani. Kanan se nakonec obetoval, aby zachranil svou rodinu, a upevnil tak svuj odkaz v Povstani."
+
+REFERENCE           KENTO_MAREK  
+LANG_ENGLISH        "A former Jedi Knight, Kento Marek went into hiding after Order 66. He was eventually found and killed by Darth Vader, who then took his son, Galen Marek, as his secret apprentice. Kento's death set the stage for Starkiller's conflicted destiny."
+LANG_CZECH       "Kento Marek, byvaly rytir Jedi, se po vydani Rozkazu 66 skryval. Nakonec ho nasel a zabil Darth Vader, ktery si pak vzal jeho syna Galena Mareka jako sveho tajneho ucednika. Kentova smrt pripravila pudu pro Starkilleruv spletity osud."
+
+REFERENCE           KOTAS_MILITIA  
+LANG_ENGLISH        "Formed by General Rahm Kota, this militia was composed of seasoned fighters unaffiliated with the Clone Army. Loyal to the Jedi cause, they resisted Imperial rule and provided critical support during early uprisings against the Empire."
+LANG_CZECH       "Tuto milici, kterou zformoval general Rahm Kota, tvorili ostrileni bojovnici nevazani na Klonovou armadu. Loajalni Jedijske veci, odolavali imperialni vlade a poskytovali klicovou podporu behem ranych povstani proti Imperiu."
+
+REFERENCE           KYLE_KATARN  
+LANG_ENGLISH        "A former Imperial officer turned mercenary, Kyle Katarn discovered his Force sensitivity and became a Jedi. He was instrumental in recovering the Death Star plans and later trained new Jedi while confronting the dark side within himself and the galaxy."
+LANG_CZECH       "Byvaly imperialni dustojnik, ktery se stal zoldakem, Kyle Katarn objevil svoji citlivost na Silu a stal se Jediem. Sehral klicovou roli pri ziskavani planu Hvezdy Smrti a pozdeji vycvicil nove Jedie, zatimco celil temne strane v sobe i v galaxii."
+
+REFERENCE           LANDO_CALRISSIAN  
+LANG_ENGLISH        "A charismatic gambler, smuggler, and entrepreneur, Lando Calrissian became a hero of the Rebellion after helping save Cloud City and destroy the second Death Star. Known for his charm and style, he remained a key figure in the galaxy's fight for freedom."
+LANG_CZECH       "Charismaticky hazardni hrac, paserak a podnikatel Lando Calrissian se stal hrdinou Povstani pote, co pomohl zachranit Oblacne mesto a znicit druhou Hvezdu Smrti. Znamy pro sve kouzlo a styl zustal klicovou postavou v boji galaxie za svobodu."
+
+REFERENCE           LEIA_ORGANA  
+LANG_ENGLISH        "Princess of Alderaan, senator, and Rebel leader, Leia Organa was a fierce and compassionate warrior. Trained briefly as a Jedi and strong in the Force, she played a vital role in defeating both the Empire and the First Order, preserving hope across generations."
+LANG_CZECH       "Princezna z Alderaanu, senatorka a vudkyne Povstalcu, Leia Organa, byla nezlomna, ale soucitna bojovnice. Kratce se cvicila jako Jedi a byla silnou osobnosti Sily. Sehrala klicovou roli v porazce Imperia i Prvniho radu a zachovala nadeji napric generacemi."
+
+REFERENCE           LUKE_SKYWALKER  
+LANG_ENGLISH        "A farm boy from Tatooine, Luke Skywalker rose to become one of the most legendary Jedi. Trained by Obi-Wan and Yoda, he redeemed his father and helped defeat the Emperor. He later sought to rebuild the Jedi Order and guide the next generation of Force users."
+LANG_CZECH       "Luke Skywalker, farmarsky chlapec z Tatooine, se stal jednim z nejlegendarnejsich Jediu. Vycvicen Obi-Wanem a Yodou, vykoupil sveho otce a pomohl porazit Cisare. Pozdeji se snazil obnovit Rad Jedi a vest dalsi generaci uzivatelu Sily."
+
+REFERENCE           MARA_JADE  
+LANG_ENGLISH        "Once an Emperor's Hand, Mara Jade was a deadly assassin loyal to Palpatine. After the Empire's fall, she reformed and became a Jedi Master, eventually marrying Luke Skywalker. Her journey from darkness to light made her a complex and powerful figure in Jedi history."
+LANG_CZECH       "Mara Jade, kdysi Cisarova Ruka, byla smrtici vrazedkyne verna Palpatinovi. Po padu Imperia se reformovala a stala se mistryni Jedi, ktera se nakonec provdala za Lukea Skywalkera. Jeji cesta z temnoty ke svetlu z ni udelala komplexni a mocnou postavu v historii Jedi."
+
+REFERENCE           MON_MOTHMA  
+LANG_ENGLISH        "A respected senator and fierce critic of the Emperor, Mon Mothma became the political leader of the Rebel Alliance. She organized resistance efforts and later served as Chancellor of the New Republic, dedicating her life to democracy and peace in the galaxy."
+LANG_CZECH       "Mon Mothma, vazena senatorka a nelitostna kriticka Cisare, se stala politickou vudkyni Povstalecke Aliance. Organizovala odbojove usili a pozdeji slouzila jako Kanclerka Nove Republiky, kde zasvetila svuj zivot demokracii a miru v galaxii."
+
+REFERENCE           NIEN_NUNB  
+LANG_ENGLISH        "A skilled Sullustan pilot, Nien Nunb co-piloted the Millennium Falcon alongside Lando Calrissian during the Battle of Endor. He continued to serve the New Republic and Resistance, fighting bravely in key battles against the Empire and First Order."
+LANG_CZECH       "Nien Nunb, zkuseny Sullustansky pilot, kopilotoval Millennium Falcon po boku Landa Calrissiana behem Bitvy o Endor. Nadale slouzil Nove Republice a Odboji a statecne bojoval v klicovych bitvach proti Imperiu a Prvnimu radu."
+
+REFERENCE           QU_RAHN  
+LANG_ENGLISH        "A wise Jedi Master who survived the Purge, Qu Rahn guided Kyle Katarn from beyond the grave. A student of the living Force, he fought against the dark side in his final years and left behind knowledge vital to the rebirth of the Jedi Order."
+LANG_CZECH       "Qu Rahn, moudry mistr Jedi, ktery prezil Ocistu, vedl Kylea Katarna ze zahrobi. Jako student zivouci Sily bojoval v poslednich letech proti temne strane a zanechal po sobe znalosti nezbytne pro znovuzrozeni Radu Jedi."
+
+REFERENCE           R2D2  
+LANG_ENGLISH        "An astromech droid with unmatched bravery and loyalty, R2-D2 served Padmé Amidala, Anakin Skywalker, and later the Rebel Alliance. From carrying secret plans to repairing starships mid-battle, his actions shaped the course of galactic history across eras."
+LANG_CZECH       "R2-D2, astromechanicky droid s bezkonkurencni statecnosti a loajalitou, slouzil Padme Amidale, Anakinovi Skywalkerovi a pozdeji Povstalecke Alianci. Od noseni tajnych planu az po opravy hvezdnych lodi uprostred bitvy, jeho ciny utvarely beh galakticke historie napric epochami."
+
+REFERENCE           RAHM_KOTA  
+LANG_ENGLISH        "A battle-hardened Jedi General, Rahm Kota refused to use clone troopers, which spared him from Order 66. After surviving an attack by Darth Vader's apprentice, he became a mentor to Galen Marek, reigniting his faith in the Force and the fight against the Empire."
+LANG_CZECH       "Rahm Kota, bitvami zoceleny general Jedi, odmitl pouzivat klonovane vojaky, coz ho zachranilo pred Rozkazem 66. Pote, co prezil utok Vaderova ucednika, se stal mentorem Galena Mareka, ktery znovu roznitil jeho viru v Silu a boj proti Imperiu."
+
+REFERENCE           REBEL_ALLIANCE_TROOPER  
+LANG_ENGLISH        "Soldiers of the Rebel Alliance came from diverse backgrounds to resist Imperial tyranny. Armed with blasters and resolve, these troopers fought bravely on battlefronts such as Scarif, Hoth, and Endor, sacrificing much for the hope of a free galaxy."
+LANG_CZECH       "Vojaci Povstalecke Aliance pochazeli z ruznych prostredi, aby se postavili proti imperialni tyranii. Vyzbrojeni blastery a odhodlanim tito vojaci statecne bojovali na frontach, jako je Scarif, Hoth a Endor, a obetovali mnoho pro nadeji na svobodnou galaxii."
+
+REFERENCE           REBEL_ALLIANCE_PILOT  
+LANG_ENGLISH        "Pilots of the Rebel Alliance flew starfighters in critical missions against the Empire. Skilled and courageous, they engaged in battles such as Yavin and Endor, delivering decisive blows with unmatched determination and sacrifice."
+LANG_CZECH       "Piloti Povstalecke Aliance letali ve stihackach v klicovych misich proti Imperiu. Zkuseni a odvazni se zapojili do bitev, jako byly Bitvy o Yavin a Endor, kde s bezkonkurencnim odhodlanim a obetavosti zasadili rozhodujici udery."
+
+REFERENCE           ROSH_PENIN  
+LANG_ENGLISH        "A Jedi student at Luke Skywalker's academy, Rosh Penin struggled with his training and emotions. His wavering loyalty led him to briefly serve the dark side, but he ultimately sought redemption and rejoined the fight against the Sith."
+LANG_CZECH       "Rosh Penin, student Jedi na akademii Lukea Skywalkera, se potykal s vycvikem a emocemi. Jeho kolisava loajalita ho vedla k tomu, ze kratce slouzil temne strane, ale nakonec nasel vykoupeni a znovu se pripojil k boji proti Sithum."
+
+REFERENCE           SABINE_WREN  
+LANG_ENGLISH        "A Mandalorian warrior and graffiti artist, Sabine Wren was a former Imperial cadet who joined the Ghost crew. Skilled with explosives and lightsabers, she helped liberate Lothal and later searched the galaxy for Ezra Bridger alongside Ahsoka Tano."
+LANG_CZECH       "Sabine Wren, mandalorianska bojovnice a graffiti umelkyne, byla byvalou imperialni kadetkou, ktera se pripojila k posadce Ducha. Diky sve zrucnosti v zachazeni s vybusninami a svetelnymi meci pomohla osvobodit Lothal a pozdeji po boku Ahsoky Tano hledala v galaxii Ezru Bridgera."
+
+REFERENCE           YUN  
+LANG_ENGLISH        "A Dark Jedi in the service of Jerec, Yun displayed compassion despite his allegiance. After being defeated by Kyle Katarn, he chose to aid the Jedi at the cost of his own life, proving that even those who fall can find redemption."
+LANG_CZECH       "Yun, temny Jedi ve sluzbach Jereca, projevoval soucit navzdory sve vernosti. Pote, co byl porazen Kylem Katarnem, se rozhodl Jedium pomoci i za cenu vlastniho zivota, cimz dokazal, ze i ti, kdo padnou, mohou najit vykoupeni."
+
+REFERENCE 			CORRAN_HORN
+LANG_ENGLISH 		"A Corellian pilot turned Jedi Knight, Corran Horn served with Rogue Squadron before discovering his connection to the Force. Trained during the New Republic era, he became known for his unconventional Force abilities, later helping to rebuild the Jedi Order under Luke Skywalker."
+LANG_CZECH       "Corralliansky pilot, ktery se stal rytirem Jedi, slouzil u Rogue Squadron, nez objevil sve spojeni se Silou. Vycvicen behem ery Nove Republiky se stal znamym pro sve nekonvencni schopnosti Sily a pozdeji pomohl obnovit Rad Jedi pod vedenim Lukea Skywalkera."
+
+REFERENCE 			TOBIAS_BECKETT
+LANG_ENGLISH 		"A seasoned mercenary and thief, Tobias Beckett survived by trusting no one but his crew. Operating on the fringes of the growing rebellion, he embodied the harsh reality of life under Imperial rule, where loyalty was often fatal."
+LANG_CZECH       "Tobias Beckett, ostrileny zoldak a zlodej, prezil diky tomu, ze neduveroval nikomu jinemu nez sve parte. Pusobil na okraji siliciho Povstani a ztelesnoval drsnou realitu zivota pod imperialni vladou, kde loajalita byla casto osudna."
+
+REFERENCE 			JO_NA_NAWOOD
+LANG_ENGLISH 		"An Aldhani chieftain, Jo Na Nawood led the Dhanis while preserving their cultural traditions under Imperial occupation. His quiet resistance reflected the slow erosion of local autonomy as the Empire tightened its control."
+LANG_CZECH       "Vudce na Aldhani, Jo Na Nawood, vedl Dhanie a zaroven zachovaval jejich kulturni tradice pod imperialni okupaci. Jeho tichy odpor odrazel pomale narusovani mistni autonomie, jak Imperium zprisnovalo svou kontrolu."
+
+REFERENCE 			LUTHEN_RAEL
+LANG_ENGLISH 		"A covert revolutionary operating under multiple identities, Luthen Rael orchestrated rebel activity against the Galactic Empire from the shadows. Willing to sacrifice morality and lives alike, he became a key architect of the early Rebellion."	
+LANG_CZECH       "Luthen Rael, tajny revolucionar operujici pod nekolika identitami, ze stinu organizoval Povstalecke aktivity proti Galaktickemu Imperiu. Ochoten obetovat moralku i zivoty se stal klicovym strujcem raneho Povstani."
+
+//----------------------------------------------------------
+// 	h6: EMPIRE
+//----------------------------------------------------------
+
+REFERENCE           ALORA  
+LANG_ENGLISH        "An ambitious Dark Side apprentice, Alora trained under Tavion during the rise of the Disciples of Ragnos. Skilled and ruthless, she sought power at any cost, ultimately clashing with Jedi Knight Jaden Korr in her pursuit of ancient Sith strength."
+LANG_CZECH       "Alora, ambiciozni ucednice Temne strany, se ucila u Tavion behem vzestupu Stoupencu Ragnose. Schopna a nemilosrdna, usilovala o moc za kazdou cenu a ve svem hledani starodavne sily Sithu se nakonec stretla s rytirem Jedi Jadenem Korrem."
+
+REFERENCE           BAYLAN_SKOLL  
+LANG_ENGLISH        "A former Jedi turned mercenary, Baylan Skoll survived the Purge and grew disillusioned with the Jedi Order. As a Force-wielder with a mysterious agenda, he sought a new balance beyond light and dark, forging his own path amidst a galaxy in turmoil."
+LANG_CZECH       "Baylan Skoll, byvaly Jedi, ktery se stal zoldakem, prezil Cistku a ztratil iluze o radu Jediu. Jako uzivatel Sily s tajemnymi umysly hledal novou rovnovahu mezi svetlem a temnotou a razil si vlastni cestu uprostred galaxie zmitane nepokoji."
+
+REFERENCE           BOBA_FETT  
+LANG_ENGLISH        "The unaltered clone of Jango Fett, Boba Fett became one of the galaxy's most feared bounty hunters. Surviving the Sarlacc, he reclaimed his armor and forged a new legacy on Tatooine, balancing ruthless efficiency with a newfound sense of honor."
+LANG_CZECH       "Boba Fett, nezmeneny klon Janga Fetta, se stal jednim z nejobavanejsich lovcu odmen v galaxii. Prezil Sarlacca, ziskal zpet svou zbroj a na Tatooine si vybudoval nove postaveni, v nemz vyvazoval nemilosrdnou efektivitu nove objevenym smyslem pro cest."
+
+REFERENCE           BOC  
+LANG_ENGLISH        "A deranged Dark Jedi serving under Jerec, Boc was known for his manic behavior and dual lightsaber combat. Despite his erratic nature, he posed a deadly threat to Kyle Katarn before ultimately falling in battle during the fight for the Valley of the Jedi."
+LANG_CZECH       "Boc, pomateny temny Jedi slouzici pod Jerecem, byl znamy svym maniakalnim chovanim a bojem se dvema svetelnymi meci. Navzdory sve nevyzpytatelne povaze predstavoval smrtelnou hrozbu pro Kylea Katarna, nez nakonec padl v boji o Udoli Jediu."
+
+REFERENCE           BOSSK  
+LANG_ENGLISH        "A Trandoshan bounty hunter with a hatred for Wookiees, Bossk was feared across the galaxy for his brutal tactics. Frequently seen working alongside the galaxy's most notorious hunters, he pursued high-value targets during the Clone Wars and Galactic Civil War."
+LANG_CZECH       "Bossk, Trandoshansky lovec odmen, ktery nenavidel Wookiee, byl v cele galaxii obavany pro sve brutalni taktiky. Casto byl viden, jak spolupracuje s nejznamejsimi lovci galaxie, a behem Klonovych valek a Galakticke obcanske valky pronasledoval vysoce cenene cile."
+
+REFERENCE           DEATH_TROOPER  
+LANG_ENGLISH        "Elite soldiers of the Empire, Death Troopers were deployed for high-level missions, serving as bodyguards and enforcers for Imperial officers like Director Krennic. Clad in black armor and equipped with advanced gear, they struck fear into Rebel forces."
+LANG_CZECH       "Elitni vojaci Imperia, Death Troopers, byli nasazovani na vysoce dulezite mise a slouzili jako osobni strazci a vykonavatele pro imperialni dustojniky, jako byl reditel Krennic. Obleceni v cernych brnenich a vybaveni pokrocilou vyzbroji, nahaneli strach povstaleckym silam."
+
+REFERENCE           DARK_TROOPER  
+LANG_ENGLISH        "Dark Troopers were advanced battle droids developed by the Empire, equipped with heavy armor and powerful weaponry. Designed to overwhelm infantry with brute force, they represented the pinnacle of Imperial military engineering in their era."
+LANG_CZECH       "Dark Troopers byli pokrocili bojovi droidi vyvinuti Imperiem, vybaveni tezkym pancirem a vykonnymi zbranemi. Navrzeni k tomu, aby premohli pechotu hrubou silou, predstavovali vrchol imperialniho vojenskeho inzenyrstvi sve doby."
+
+REFERENCE           DARTH_DESOLOUS  
+LANG_ENGLISH        "Once a Jedi, Darth Desolous turned to the dark side and raised a brutal army against the Jedi Order. A master of melee combat and strategy, he was ultimately defeated, but his memory endured as a deadly holographic opponent in Sith training programs."
+LANG_CZECH       "Darth Desolous, kdysi Jedi, presel na temnou stranu a sestavil brutalni armadu proti radu Jedi. Byl mistrem v boji zblizka a strategii, nakonec byl porazen, ale jeho pamatka pretrvala jako smrtici holograficky protivnik v treninkovych programech Sithu."
+
+REFERENCE           DARTH_KRAYT  
+LANG_ENGLISH        "Born A'Sharad Hett, a former Jedi and Tusken Raider, he became Darth Krayt after embracing the dark side. Founder of the One Sith, he sought to reshape the galaxy under his rule, blending ancient Sith traditions with new philosophies of control."
+LANG_CZECH       "Narodil se jako A'Sharad Hett, byvaly Jedi a Tuskensky najezdnik, a pote, co se pridal k temne strane, se stal Darth Kraytem. Jako zakladatel kultu Jednoho Sithu se snazil pretvorit galaxii pod svou vladou a spojit starodavne tradice Sithu s novymi filozofiemi ovladani."
+
+REFERENCE           DARTH_PHOBOS  
+LANG_ENGLISH        "A seductive and manipulative Sith Lord, Darth Phobos thrived on fear and deception. Though long dead, her terrifying presence lived on through Sith training simulations, challenging apprentices with illusions and psychological warfare."
+LANG_CZECH       "Svudna a manipulativni Sithska Lordka Darth Phobos si libovala ve strachu a podvodu. Ackoli jiz davno zemrela, jeji desiva pritomnost pretrvavala v simulacnich trenincich Sithu, kde ucedniky proverovala iluzemi a psychologickymi hrami."
+
+REFERENCE           DARTH_TALON  
+LANG_ENGLISH        "A loyal servant of Darth Krayt, Darth Talon was a skilled and deadly Sith assassin. Recognizable by her red skin and black tattoos, she enforced Krayt's will across the galaxy and became a symbol of fear during the rise of the One Sith."
+LANG_CZECH       "Darth Talon, verna sluzebnice Dartha Krayta, byla zkusena a smrtici sithska vrazedkyne. Poznatelna podle sve cervene kuze a cernych tetovani prosazovala Kraytovu vuli po cele galaxii a stala se symbolem strachu behem vzestupu Jedinych Sithu."
+
+REFERENCE           DARTH_VADER  
+LANG_ENGLISH        "Once Anakin Skywalker, a Jedi Knight and hero of the Clone Wars, he was seduced by the dark side and became Darth Vader. As the Emperor's enforcer, he hunted down Jedi and crushed rebellion, until the love for his son brought about his redemption."
+LANG_CZECH       "Anakin Skywalker, rytir Jedi a hrdina Klonovych valek, byl sveden temnou stranou a stal se Darth Vaderem. Jako Cisaruv vykonavatel pronasledoval rytire Jedi a potlacoval povstani, dokud ho laska k synovi neprivedla k vykoupeni."
+
+REFERENCE           DESANN  
+LANG_ENGLISH        "A former Jedi who embraced the dark side, Desann became a formidable Sith aligned with the Empire Reborn. Towering in stature and power, he sought to recreate the Sith's strength through dark experiments, clashing with Kyle Katarn in a decisive duel."
+LANG_CZECH       "Desann, byvaly Jedi, ktery se pridal k temne strane, se stal obavanym Sithem spojenym se Znovuzrozenym Imperiem. Svou impozantni postavou a silou se snazil obnovit moc Sithu pomoci temnych experimentu a v rozhodujicim souboji se stretl s Kylem Katarnem."
+
+REFERENCE           DIRECTOR_ORSON_KRENNIC  
+LANG_ENGLISH        "Director Orson Krennic was the ruthless Imperial officer overseeing the Death Star project. Ambitious and cunning, he sought to secure power within the Empire by ensuring the superweapon's completion, clashing with both Rebels and rival Imperial leaders."
+LANG_CZECH       "Reditel Orson Krennic byl nemilosrdny imperialni dustojnik, ktery dohlizel na projekt Hvezdy Smrti. Ambiciozni a prohnany, snazil se zajistit si moc v Imperiu tim, ze zajistil dokonceni superzbrane, coz vedlo ke stretu jak s Povstalci, tak s rivaly z rad imperialnich vudcu."
+
+REFERENCE           EMPEROR_PALPATINE  
+LANG_ENGLISH        "Also known as Darth Sidious, Emperor Palpatine was the dark mastermind behind the fall of the Republic. Manipulating political and Sith power, he ruled the galaxy with fear and tyranny until his final defeat by Luke Skywalker and Anakin's redemption."
+LANG_CZECH       "Cisar Palpatine, znamy take jako Darth Sidious, byl temnym strujcem padu Republiky. Manipuloval politickou moci i moci Sithu a vladl galaxii strachem a tyranii, az do sve konecne porazky Lukem Skywalkerem a Anakinovym vykoupenim."
+
+REFERENCE           GALAK_FYYAR  
+LANG_ENGLISH        "A mercenary and bounty hunter, Galak Fyyar was known for his relentless pursuit of targets and allegiance to dark forces. His violent nature made him a feared figure in the Outer Rim, frequently crossing paths with Jedi and criminals alike."
+LANG_CZECH       "Galak Fyyar, zoldak a lovec odmen, byl znamy svym neuprosnym pronasledovanim cilu a vernosti temnym silam. Diky sve nasilnicke povaze byl v oblasti Vnejsiho okraje obavanou postavou, ktera se casto potkavala jak s Jedii, tak s kriminalniky."
+
+REFERENCE           GAMORREAN_GUARD  
+LANG_ENGLISH        "Brutish and loyal, Gamorrean Guards served as fearsome enforcers within the criminal underworld and Imperial facilities. Their raw strength and intimidating presence made them formidable bodyguards, especially in Jabba the Hutt's palace."
+LANG_CZECH       "Brutalni a loajalni Gamorreansti strazci slouzili jako obavani vymahaci v kriminalnim podsveti a imperialnich zarizenich. Diky sve hrube sile a zastrasujici pritomnosti byli obavanymi bodyguardy, zejmena v palaci Jabby Hutta."
+
+REFERENCE           GORC  
+LANG_ENGLISH        "Gorc was a Force-sensitive Gamorrean who served Jabba the Hutt before being betrayed to the Galactic Empire and mutated into Sithspawn. He formed a Force-linked bond with Pic, and together they were known as the 'Brothers of the Sith', serving the Dark Jedi Inquisitor Jerec. Gorc was killed in 5 ABY by Kyle Katarn."
+LANG_CZECH       "Gorc byl Gamorrean citlivy na Silu, ktery slouzil Jabba Huttovi, nez byl zrazen Galaktickymu Imperiu a zmutovan do Sithspawna. Vytvoril pouto Sily s Picem a spolecne byli znami jako 'Sithsti Bratri', slouzici temnemu Jedi Inkvizitorovi Jerecovi. Gorc byl zabit v roce 5 ABY Kylem Katarnem."
+
+REFERENCE           GRAND_ADMIRAL_THRAWN  
+LANG_ENGLISH        "A brilliant strategist and tactician, Grand Admiral Thrawn was one of the Empire's most feared commanders. Known for his calm demeanor and understanding of art, he used intellect and cunning to challenge the Rebel Alliance at every turn."
+LANG_CZECH       "Velkoadmiral Thrawn, brilantni strateg a taktik, byl jednim z nejobavanejsich velitelu Imperia. Znamy svym klidnym vystupovanim a porozumenim umeni, vyuzival svuj intelekt a prohnanost, aby na kazdem kroku celil Povstalecke Alianci."
+
+REFERENCE           GRAND_MOFF_TARKIN  
+LANG_ENGLISH        "Governor of the Outer Rim and overseer of the Death Star, Grand Moff Tarkin was a ruthless Imperial leader. His doctrine of fear and decisive actions shaped the Empire's military strategy until his demise during the Battle of Yavin."
+LANG_CZECH       "Guverner Vnejsiho okraje a spravce Hvezdy Smrti, Grand Moff Tarkin, byl nemilosrdnym imperialnim vudcem. Jeho doktrina strachu a rozhodnych cinu formovala vojenskou strategii Imperia az do jeho smrti behem Bitvy o Yavin."
+
+REFERENCE           GREEDO  
+LANG_ENGLISH        "A Rodian bounty hunter notorious for his encounter with Han Solo in the Mos Eisley Cantina. Greedo's eagerness and reputation for taking dangerous jobs made him a persistent threat to smugglers and criminals in the galaxy."
+LANG_CZECH       "Rodiansky lovec odmen, znamy diky svemu setkani s Hanem Solo v kantyne Mos Eisley. Greedova horlivost a povest, ze prijima nebezpecne zakazky, z nej cinily trvalou hrozbu pro paseraky a zlocince v galaxii."
+
+REFERENCE           HAZARDTROOPER  
+LANG_ENGLISH        "Elite Imperial infantry trained for hazardous environments, Hazardtroopers operated in extreme conditions with specialized gear. Their expertise in survival and combat made them key assets during high-risk missions for the Empire."
+LANG_CZECH       "Elitni imperialni pechota vycvicena pro nebezpecne prostredi, Hazardtroopers operovali v extremnich podminkach se specialnim vybavenim. Diky svym znalostem v oblasti preziti a boje byli klicovym prinosem pri vysoce rizikovych misich pro Imperium."
+
+REFERENCE           IMPERIAL_ROYAL_GUARD  
+LANG_ENGLISH        "Clad in striking red armor, the Imperial Royal Guards were elite protectors of Emperor Palpatine. Silent and deadly, their presence symbolized the Emperor's absolute power and they were trained in advanced combat and Force defense techniques."
+LANG_CZECH       "Imperiacni kralovska straz, odena do napadne cervene zbroje, byla elitni ochranou Cisare Palpatina. Ticha a smrtici, jeji pritomnost symbolizovala absolutni moc Cisare a jeji clenove byli vycviceni v pokrocilych bojovych technikach a technikach obrany Sily."
+
+REFERENCE           IMPERIAL_SHADOW_GUARD  
+LANG_ENGLISH        "A secretive division of Imperial operatives, the Shadow Guard specialized in covert missions and assassinations. Their skills in stealth and infiltration made them invaluable tools of the Emperor's will across the galaxy."
+LANG_CZECH       "Tajna divize imperialnich agentu, Stinova straz, se specializovala na tajne mise a atentaty. Diky svym schopnostem v oblasti utajeni a infiltrace se stali neocenitelnymi nastroji cisarovy vule v cele galaxii."
+
+REFERENCE           IMPERIAL_WORKER  
+LANG_ENGLISH        "Imperial Workers maintained and operated the vast machinery of the Empire, from starship construction to base operations. Though often overlooked, their labor was essential to the efficiency and power of the Imperial war machine."
+LANG_CZECH       "Imperialni delnici udrzovali a provozovali rozsahly strojni park Imperia, od stavby hvezdnych lodi po provoz zakladen. Ackoli byla jejich prace casto prehlizena, byla nezbytna pro efektivitu a silu imperialni valecne masinerie."
+
+REFERENCE           JEREC  
+LANG_ENGLISH        "Jerec was a powerful Miraluka Jedi Master and archaeologist who fell to the dark side and became a feared Imperial Inquisitor. Obsessed with Sith lore and the Valley of the Jedi, he sought ultimate power and to overthrow Palpatine and Vader. After the Emperor's death, Jerec briefly achieved immense power from the Valley but was ultimately defeated and killed by Kyle Katarn."
+LANG_CZECH       "Jerec byl mocny mistr Jedi a archeolog z rasy Miraluka, ktery propadl temne strane a stal se obavanym imperialnim inkvizitorem. Posedly tradicemi Sithu a Udolim Jediu usiloval o ziskani nejvyssi moci a svrzeni Palpatina a Vadera. Po smrti Cisare Jerec na kratkou dobu ziskal z Udoli nesmirnou moc, ale nakonec byl porazen a zabit Kylem Katarnem."
+
+REFERENCE           MAW  
+LANG_ENGLISH        "Maw was a Boltrunian Jedi who fell to the dark side and served Inquisitor Jerec in the search for the Valley of the Jedi. After losing his legs in a confrontation with Jedi Master Qu Rahn, he survived using a repulsorlift and became known as the 'Half-Man'. Maw was ultimately defeated and killed by Kyle Katarn on Ruusan."
+LANG_CZECH       "Maw byl Boltrunsky Jedi, ktery presel na temnou stranu a slouzil inkvizitorovi Jerecovi pri hledani Udoli Jediu. Pote, co prisel o nohy v souboji s mistrem Jedi Qu Rahnem, prezil diky repulsorliftu a stal se znamym jako 'Polovicni muz'. Maw byl nakonec porazen a zabit Kylem Katarnem na Ruusanu."
+
+REFERENCE           MOFF_GIDEON  
+LANG_ENGLISH        "A ruthless Imperial officer, Moff Gideon rose to power in the remnants of the Empire. Skilled in strategy and combat, he wields the Darksaber and commands elite forces, seeking to restore Imperial dominance amid the galaxy's chaos."
+LANG_CZECH       "Moff Gideon, nemilosrdny imperialni dustojnik, se dostal k moci v troskach Imperia. Je mistrem strategie a boje, ovlada Temny mec a veli elitnim jednotkam, jejichz cilem je obnovit imperialni nadvladu uprostred chaosu v galaxii."
+
+REFERENCE           PIC  
+LANG_ENGLISH        "Picaroon C. Boodle, known as Pic, was a mutated Kowakian monkey-lizard and one of Inquisitor Jerec's Dark Jedi, bonded through the Force with his 'brother' Gorc. Enhanced by Imperial experiments, the pair became a deadly combination of speed and strength. After Gorc was killed by Kyle Katarn in 5 ABY, Pic attacked in a rage and was also slain."
+LANG_CZECH       "Picaroon C. Boodle, znamy jako Pic, byl zmutovany Kowakiansky opici jester a jeden z Temnych Jediu inkvizitora Jereca, spojeny Silou se svym 'bratrem' Gorcem. Diky imperialnim experimentum se z nich stala smrtici kombinace rychlosti a sily. Pote, co Gorc byl zabit Kylem Katarnem v roce 5 ABY, Pic zautocil v zurivosti a byl take zabit."
+
+REFERENCE           REBORN  
+LANG_ENGLISH        "The Reborn were the deadly force of the Dark Jedi. They were the result of the fulfillment of the dream of artificially transferring the Force to individuals and a tool of Lord Hethrir's grand plan to restore the ideals of Emperor Palpatine, the ways of the Sith, and the Galactic Empire itself. They served under Desann and were later used by his apprentice, Tavion."
+LANG_CZECH       "Znovuzrozenci byli smrtici silou temnych Jediu. Byli vysledkem splneni snu o umelem prenosu Sily do jednotlivcu a nastrojem velkeho planu Lorda Hethrira, ktery chtel obnovit idealy Cisare Palpatina, zpusoby Sithu a samotne Galakticke Imperium. Slouzili pod Desannem a pozdeji byli vyuziti jeho ucednici Tavion."
+
+REFERENCE           PURGE_TROOPER  
+LANG_ENGLISH        "Elite Imperial soldiers trained specifically to hunt down and eliminate surviving Jedi after Order 66. Equipped with advanced armor and weapons, Purge Troopers are relentless and feared across the galaxy."
+LANG_CZECH       "Elitni imperialni vojaci specialne vycviceni k pronasledovani a likvidaci prezivsich Jediu po vydani Rozkazu 66. Purge Troopers jsou vybaveni pokrocilymi brnenimi a zbranemi, jsou neuprosni a v cele galaxii se jich vsichni boji."
+
+REFERENCE           RAX_JORIS  
+LANG_ENGLISH        "Rax Joris was a corrupt Imperial Remnant prison warden on Dosuun who cruelly hunted escaped prisoners for sport. In 14 ABY, he captured Jedi Jaden Korr and attempted the same game, taunting and attacking him with a concussion rifle. Joris was ultimately defeated by Korr, who reclaimed his lightsaber."
+LANG_CZECH       "Rax Joris byl zkorumpovany vezensky dozorce Zbytku Imperia na Dosuunu, ktery pro zabavu krute lovil uprchle vezne. V roce 14 ABY zajal Jedie Jadena Korra a pokusil se o stejnou hru, kdyz ho provokoval a utocil na nej narazovou puskou. Joris byl nakonec porazen Korrem, ktery ziskal zpet svuj svetelny mec."
+
+REFERENCE           ROCKETTROOPER  
+LANG_ENGLISH        "Specialized Imperial infantry equipped with jetpacks and heavy weaponry, Rockettroopers excelled in rapid assault and battlefield disruption. Their mobility and firepower made them formidable enemies in open combat."
+LANG_CZECH       "Raketovi vojaci byli specializovani imperialni pesaci vybaveni jetpacky a tezkymi zbranemi, kteri vynikali v rychlych utocich a narusovani bojiste. Diky sve pohyblivosti a palebne sile byli v otevrenem boji obavanymi neprateli."
+
+REFERENCE           ROYAL_COMBAT_GUARD  
+LANG_ENGLISH        "Elite warriors trained to protect Imperial royalty and key leaders. Wearing imposing armor and wielding advanced weapons, the Royal Combat Guards combine martial prowess with unwavering loyalty to the Empire."
+LANG_CZECH       "Elitni valecnici vycviceni k ochrane imperialnich elit a klicovych vudcu. Kralovska bojova garda, odena do impozantnich brneni a vyzbrojena modernimi zbranemi, spojuje bojove umeni s neochvejnou loajalitou k Imperiu."
+
+REFERENCE           SABER_TRAINING_DROID  
+LANG_ENGLISH        "Automated droids designed to help Jedi apprentices practice lightsaber combat. Equipped with sensors and adaptive programming, these droids simulate various fighting styles to hone the skills of Jedi trainees."
+LANG_CZECH       "Automatizovani droidi navrzeni tak, aby pomahali ucednikum Jediu trenovat boj se svetelnym mecem. Tito droidi jsou vybaveni senzory a adaptivnim programovanim a simuluji ruzne bojove styly, aby zdokonalili dovednosti ucedniku Jediu."
+
+REFERENCE           FORCE_TRAINING_DROID  
+LANG_ENGLISH        "Droids created to assist Force-sensitive students in developing their abilities. These training units provide challenges and feedback tailored to the user's skill level, accelerating mastery of Force powers."
+LANG_CZECH       "Droidi vytvoreni za ucelem pomoci studentum citlivym na Silu rozvijet sve schopnosti. Tyto treninkove jednotky poskytuji vyzvy a zpetnou vazbu prizpusobenou urovni dovednosti uzivatele, cimz urychluji osvojovani schopnosti Sily."
+
+REFERENCE           SABOTEUR  
+LANG_ENGLISH        "Imperial Saboteurs were elite Imperial Remnant soldiers trained in stealth, sabotage, and demolitions. Equipped with advanced weapons and stealth field generators, they could operate nearly invisibly behind enemy lines. During the Galactic Civil War, they conducted missions across the galaxy and sometimes worked alongside stormtroopers for the Disciples of Ragnos."
+LANG_CZECH       "Imperialni saboteri byli elitni vojaci Zbytku Imperia vycviceni v utajeni, sabotazi a demolicich. Vybaveni pokrocilymi zbranemi a generatory maskovaciho pole mohli temer neviditelne operovat za nepratelskymi liniemi. Behem Galakticke obcanske valky provadeli mise po cele galaxii a nekdy spolupracovali se stormtroopery pro Stoupence Ragnose."
+
+REFERENCE           SARISS  
+LANG_ENGLISH        "Sariss, known as the 'Prophetess', was a Force-sensitive Human and one of Jerec's seven Dark Jedi seeking the Valley of the Jedi after the Empire's fall. Daughter of Imperial Warlord Cronal, she was trained in the Dark Side by the Prophets on Dromund Kaas and completed her apprenticeship under Jerec, becoming one of his most loyal followers."
+LANG_CZECH       "Sariss, znama jako 'Prorokyne', byla clovek citlivy na Silu a jedna ze sedmi Temnych Jediu Jereca, kteri po padu Imperia hledali Udoli Jediu. Jako dcera imperialniho valecnika Cronala byla vycvicena v temne strane Proroky na Dromund Kaas a dokoncila sve uceni u Jereca, cimz se stala jednou z jeho nejvernejsich nasledovnic."
+
+REFERENCE           SHIN_HATI  
+LANG_ENGLISH        "Shin Hati was a Force-sensitive human and apprentice of Baylan Skoll, working with Morgan Elsbeth to track down Grand Admiral Thrawn. She dueled Sabine Wren and later confronted Ahsoka Tano while attempting to secure a Nightsister star map. She traveled to Peridea but was defeated and left to flee alone."
+LANG_CZECH       "Shin Hati byla clovek citlivy na Silu a ucednice Baylana Skolla, ktera spolupracovala s Morganem Elsbeth na vypatrani velkoadmirala Thrawna. Souperila se Sabine Wren a pozdeji se stretla s Ahsokou Tano pri pokusu o ziskani hvezdne mapy Nocnich sester. Odcestovala do Peridey, ale byla porazena a musela uprchnout sama."
+
+REFERENCE           STARKILLER  
+LANG_ENGLISH        "Born Galen Marek, Starkiller was Darth Vader's secret apprentice trained in the dark side. Torn between loyalty and redemption, his powerful Force abilities shaped key events in the battle between Sith and Jedi."
+LANG_CZECH       "Starkiller, rodnym jmenem Galen Marek, byl tajnym ucednikem Dartha Vadera, ktery ho cvicil v temne strane Sily. Rozpolceny mezi loajalitou a vykoupenim, jeho mocne schopnosti Sily ovlivnily klicove udalosti v boji mezi Sithy a Jedii."
+
+REFERENCE           STORMTROOPER  
+LANG_ENGLISH        "The backbone of the Imperial military, Stormtroopers enforce the Empire's will across the galaxy. Clad in iconic white armor, they maintain order through intimidation and combat, often facing off against Rebel forces."
+LANG_CZECH       "Stormtrooperi, pater imperialni armady, prosazuji vuli Imperia po cele galaxii. Obleceni do ikonicke bile zbroje udrzuji poradek zastrasovanim a bojem, pricemz casto celi povstaleckym silam."
+
+REFERENCE           TARON_MALICOS  
+LANG_ENGLISH        "Taron Malicos was a Jedi Master who fell to the dark side after surviving Order 66 and leading Dathomir's Nightbrothers. He tried to deceive Merrin and turn Cal Kestis to the dark side but was ultimately defeated and killed by Kestis and Merrin."
+LANG_CZECH       "Taron Malicos byl mistr Jedi, ktery presel na temnou stranu pote, co prezil Rozkaz 66 a vedl Dathomirske Nocni Bratry. Pokusil se oklamat Merrin a pretahnout Cala Kestise na temnou stranu, ale nakonec byl porazen a zabit Kestisem a Merrin."
+
+REFERENCE           TAVION_AXMIS  
+LANG_ENGLISH        "Tavion Axmis was a Human Dark Jedi and apprentice of Desann who sought the Valley of the Jedi and later led the Disciples of Ragnos. She turned Rosh Penin to the dark side and attempted to resurrect Marka Ragnos on Korriban. Axmis was ultimately killed when Jaden Korr defeated Ragnos, whose spirit had taken over her body."
+LANG_CZECH       "Tavion Axmis byla lidska Temna Jedi a ucednice Desanna, ktera hledala Udoli Jediu a pozdeji vedla Ragnosovy ucedniky. Privedla Rosh Penina na temnou stranu a pokusila se vzkrisit Marku Ragnose na Korribanu. Axmis byla nakonec zabita, kdyz Jaden Korr porazil Ragnose, jehoz duch ovladl jeji telo."
+
+REFERENCE           THE_GRAND_INQUISITOR  
+LANG_ENGLISH        "Once a Jedi Temple Guard, the Grand Inquisitor turned Sith hunter led the Empire's efforts to eradicate Jedi survivors. His cunning and lightsaber skills made him a feared enforcer of Imperial will."
+LANG_CZECH       "Velky inkvizitor, byvaly strazce chramu Jediu, se stal lovcem Sithu a vedl snahy Imperia o vyhubeni prezivsich Jediu. Diky sve prohnanosti a dovednostem s lightsaberem se stal obavanym vykonavatelem vule Imperia."
+
+REFERENCE           THE_EIGHTH_BROTHER  
+LANG_ENGLISH        "The Eighth Brother was a Force-sensitive Terrelian Inquisitor who hunted the Rebellion and the Spectres. He died on Malachor while attempting to escape after Kanan Jarrus damaged his lightsaber."
+LANG_CZECH       "Osmy Bratr byl Terrelijsky inkvizitor citlivy na Silu, ktery lovil Povstalce a posadku Ducha. Zemrel na Malachoru pri pokusu o utek pote, co mu Kanan Jarrus poskodil svetelny mec."
+
+REFERENCE           THE_FIFTH_BROTHER  
+LANG_ENGLISH        "The Fifth Brother was a male Inquisitor of the Empire who hunted the Rebellion and Jedi under Darth Vader's orders. He participated in missions against Eeth Koth, Nari, and the Spectres, and was ultimately killed by Maul on Malachor."
+LANG_CZECH       "Paty Bratr byl muzsky Inkvizitor Imperia, ktery na prikaz Dartha Vadera pronasledoval povstalce a rytire Jedi. Ucastnil se misi proti Eethu Kothovi, Nari a posadce Ducha a nakonec byl zabit Maulem na Malachoru."
+
+REFERENCE           THE_NINTH_SISTER  
+LANG_ENGLISH        "The Ninth Sister, formerly Jedi Masana Tide, was a Force-sensitive Dowutin Inquisitor who fell to the dark side after being captured and tortured by the Empire. Trained by the Grand Inquisitor and Darth Vader, she hunted Jedi including Ferren Barr and Cal Kestis. She was ultimately killed by Kestis on Coruscant in 9 BBY."
+LANG_CZECH       "Devata Sestra, drive Jedi Masana Tide, byla Dowutinska Inkvizitorka citliva na Silu, ktera presla na temnou stranu pote, co byla zajata a mucena Imperiem. Vyskolena Velkym Inkvizitorem a Darth Vaderem, lovila Jedie, vcetne Ferrena Barra a Cala Kestise. Nakonec byla zabita Kestisem na Coruscantu v roce 9 BBY."
+
+REFERENCE           THE_SECOND_SISTER  
+LANG_ENGLISH        "The Second Sister, formerly Trilla Suduri, fell to the dark side after being captured and tortured by the Empire. She became a ruthless Inquisitor, hunting Jedi fugitives like Cal Kestis across the galaxy. After being defeated by Kestis on Nur, she was executed by Vader, leaving a lasting impact on both Kestis and her former master, Cere Junda."
+LANG_CZECH       "Druha Sestra, drive Trilla Suduri, presla na temnou stranu pote, co byla zajata a mucena Imperiem. Stala se nemilosrdnou inkvizitorkou, ktera po cele galaxii lovila uprchle Jedie, jako byl Cal Kestis. Pote, co byla porazena Kestisem na Nuru, byla popravena Vaderem, coz zanechalo trvaly dopad jak na Kestise, tak na jeji byvalou ucitelku Cere Jundu."
+
+REFERENCE           THE_SEVENTH_SISTER  
+LANG_ENGLISH        "The Seventh Sister was a Mirialan Inquisitor of the Empire who hunted Jedi and sought to replace the Grand Inquisitor. She clashed with the Spectres across multiple missions but was ultimately killed by Maul on Malachor."
+LANG_CZECH       "Sedma Sestra byla Mirialanska inkvizitorka Imperia, ktera lovila Jedie a snazila se nahradit Velkeho Inkvizitora. Behem nekolika misi se stretla s posadkou Ducha, ale nakonec byla zabita Maulem na Malachoru."
+
+REFERENCE           THE_THIRD_SISTER  
+LANG_ENGLISH        "Reva Sevander, also known as the Third Sister, was driven by revenge against Darth Vader for the Jedi Purge. She hunted Obi-Wan Kenobi and Princess Leia, while secretly seeking to kill Vader. After failing to assassinate him and being confronted by Kenobi, she abandoned her quest for vengeance and ultimately chose to let go of her past."
+LANG_CZECH       "Reva Sevander, znama take jako Treti Sestra, byla pohanena pomstou proti Darthu Vaderovi za vyvrazdeni Jediu. Lovila Obi-Wana Kenobiho a princeznu Leiu, zatimco tajne usilovala o zabiti Vadera. Pote, co se ji nepodarilo ho zavrazdit a byla konfrontovana Kenobim, opustila svou touhu po pomste a nakonec se rozhodla nechat minulost minulosti."
+
+REFERENCE           VIZAM  
+LANG_ENGLISH        "Vizam was a Kajain'sa'Nikto who served as weapons master for Jabba the Hutt. He oversaw palace security, witnessed key events like the rancor pit and Leia’s infiltration, and participated in the transport of prisoners to the Sarlacc. Vizam was ultimately killed by Luke Skywalker aboard Jabba's sail barge."
+LANG_CZECH       "Vizam byl Kajain'sa'Nikto, ktery slouzil jako mistr zbrani pro Jabbu Hutta. Dohlizel na bezpecnost palace, byl svedkem klicovych udalosti, jako byla rancorova jama a infiltrace Leiy, a podilel se na transportu veznu ke Sarlaccovi. Vizam byl nakonec zabit Lukem Skywalkerem na palube Jabbyho lodi."
+
+REFERENCE           WEEQUAY  
+LANG_ENGLISH        "A species known for their toughness and warrior culture, Weequays often served as mercenaries, guards, and pirates. Their rugged appearance and fierce loyalty made them common figures in the galaxy's underworld."
+LANG_CZECH       "Weequayove, druh znamy svou tvrdosti a valecnickou kulturou, casto slouzili jako zoldaci, strazci a pirati. Diky svemu drsnemu vzhledu a neochvejne loajalite byli beznou soucasti podsveti galaxie."
+
+REFERENCE 			DAGAN_GERA
+LANG_ENGLISH 		"A Jedi Knight of the High Republic era, Dagan Gera was a gifted warrior who became consumed by bitterness after the loss of Tanalorr. Preserved in stasis for centuries, he awakened to a changed galaxy and ultimately fell to the dark side, clashing with Cal Kestis in a failed bid to reclaim his lost vision."
+LANG_CZECH       "Dagan Gera, rytir Jedi z ery Vysoke republiky, byl nadany valecnik, ktereho po ztrate Tanalorru pohltila horkost. Po staletich stravenych ve stazi se probudil do zmenene galaxie a nakonec podlehl temne strane. Ve snaze ziskat zpet svou ztracenou vizi se stretl s Calem Kestisem, ale neuspel."
+
+
+//----------------------------------------------------------
+// 	h7: RESISTANCE
+//----------------------------------------------------------
+
+REFERENCE           BLACK_KRRSTANTAN  
+LANG_ENGLISH        "A fearsome Wookiee bounty hunter and former gladiator, Black Krrsantan worked for the Hutt Cartel and later aligned with Boba Fett. Known for his brutal strength and combat prowess, he earned a reputation across the galaxy as a relentless and intimidating enforcer."
+LANG_CZECH       "Black Krrsantan, obavany Wookieesky lovec odmen a byvaly gladiator, pracoval pro kartel Huttu a pozdeji se spojil s Bobou Fettem. Byl znamy svou brutalni silou a bojovymi schopnostmi a v cele galaxii si vyslouzil povest neuprosneho a zastrasujiciho bojovnika."
+
+REFERENCE           BO_KATAN_KRYZE  
+LANG_ENGLISH        "A proud Mandalorian warrior and former member of Death Watch, Bo-Katan sought to restore Mandalore's honor. Wielding the Darksaber and leading the Nite Owls, she played a key role in both resisting Imperial rule and supporting Din Djarin in the fight for Mandalorian unity."
+LANG_CZECH       "Bo-Katan, hrda Mandalorianska valecnice a byvala clenka Umrlci Hlidky se snazila obnovit cest Mandalore. S Temnym mecem v ruce a v cele Nocnich Sov sehrala klicovou roli jak v odporu proti imperialni nadvlade, tak v podpore Dina Djarina v boji za mandalorianskou jednotu."
+
+REFERENCE           CARA_DUNE  
+LANG_ENGLISH        "A former Rebel shock trooper from Alderaan, Cara Dune became a marshal of the New Republic. Skilled in combat and fiercely loyal, she aided Din Djarin on several missions, using her military experience to fight remnants of the Empire and uphold justice on the Outer Rim."
+LANG_CZECH       "Cara Dune, byvala udernice Povstalcu z Alderaanu, se stala marsalkou Nove Republiky. Zkusena v boji a neochvejne loajalni, pomahala Dinovi Djarinovi pri nekolika misich a vyuzivala sve vojenske zkusenosti k boji proti zbytkum Imperia a k prosazovani spravedlnosti na Vnejsim okraji."
+
+REFERENCE           DIN_DJARIN  
+LANG_ENGLISH        "A Mandalorian foundling raised in the creed of the Children of the Watch, Din Djarin worked as a bounty hunter before becoming the protector of Grogu. His journey led him across the galaxy, forging alliances and ultimately taking part in the fight to restore Mandalore."
+LANG_CZECH       "Din Djarin, Mandaloriansky nalezence vychovany v duchu viry Deti Hlidky, pracoval jako lovec odmen, nez se stal ochrancem Grogua. Jeho cesta ho zavedla napric galaxii, kde uzaviral spojenectvi a nakonec se zapojil do boje za obnoveni Mandalore."
+
+REFERENCE           FENNEC_SHAND  
+LANG_ENGLISH        "An elite mercenary and assassin, Fennec Shand earned her reputation through ruthless efficiency and sharp tactics. After being saved by Boba Fett, she pledged her loyalty to him and became his trusted partner in governing the criminal underworld of Tatooine."
+LANG_CZECH       "Fennec Shand, elitni zoldak a vrah, si svou reputaci vydobyla diky sve nemilosrdne efektivite a bystre taktice. Pote, co ji zachranil Boba Fett, prisahala mu vernost a stala se jeho duveryhodnou partnerkou pri vladnuti zlocineckemu podsveti Tatooine."
+
+REFERENCE           FINN  
+LANG_ENGLISH        "Originally designated FN-2187, Finn was a First Order stormtrooper who defected after witnessing their cruelty. Joining the Resistance, he fought bravely in key battles and discovered his own sensitivity to the Force, seeking to find his place in the galaxy."
+LANG_CZECH       "Puvodne oznaceny jako FN-2187, Finn byl stormtrooper Prvniho radu, ktery dezertoval pote, co byl svedkem jejich krutosti. Pripojil se k Odboji, statecne bojoval v klicovych bitvach a objevil svou vlastni citlivost k Sile, pricemz se snazil najit sve misto v galaxii."
+
+REFERENCE           GREEF_KARGA  
+LANG_ENGLISH        "Once a guild magistrate on Nevarro, Greef Karga led bounty hunters and oversaw contracts. After aligning with Din Djarin, he transitioned into a leadership role, helping stabilize Nevarro and defend it from Imperial remnants and lawlessness."
+LANG_CZECH       "Greef Karga, byvaly soudce cechu na Nevarro, vedl lovce odmen a dohlizel na smlouvy. Pote, co se spojil s Dinem Djarinem, presel do vedouci role a pomahal stabilizovat Nevarro a branit ho pred zbytky Imperia a bezpravim."
+
+REFERENCE           GROGU  
+LANG_ENGLISH        "A mysterious young being strong in the Force, Grogu was rescued from the Jedi Temple during Order 66. Raised in secrecy, he was eventually protected by Din Djarin, with whom he formed a deep bond. Trained briefly by Luke Skywalker, Grogu chose to return to the Mandalorian's side."
+LANG_CZECH       "Grogu, tajemny mlady tvor silny v Sile, byl zachranen z chramu Jediu behem Rozkazu 66. Vychovan v tajnosti, nakonec se dostal pod ochranu Dina Djarina, s nimz navazal hluboke pouto. Po kratkem vycviku u Lukea Skywalkera se Grogu rozhodl vratit po bok Mandaloriana."
+
+REFERENCE           KUIIL  
+LANG_ENGLISH        "A wise and humble Ugnaught, Kuiil was a former Imperial indentured servant who earned his freedom. Living in solitude on Arvala-7, he helped Din Djarin care for Grogu and restore IG-11. He was known for his calm wisdom and the iconic phrase, 'I have spoken'."
+LANG_CZECH       "Kuiil, moudry a skromny Ugnaught, byl byvaly imperialni namezdni sluha, ktery si vyslouzil svobodu. Zil v osameni na Arvale-7 a pomahal Din Djarinovi pecovat o Grogua a opravit IG-11. Byl znamy svou klidnou moudrosti a ikonickou frazi 'Domluvil jsem'."
+
+REFERENCE           LUKE_SKYWALKER_SEQUEL  
+LANG_ENGLISH        "Years after the fall of the Empire, Luke Skywalker became a legend and sought to rebuild the Jedi Order. Haunted by failure after Ben Solo's fall, he exiled himself on Ahch-To. Ultimately, he returned in spirit, guiding the next generation and confronting his past with redemption."
+LANG_CZECH       "Roky po padu Imperia se Luke Skywalker stal legendou a snazil se obnovit Rad Jediu. Pronasledovan pocitem selhani po padu Bena Sola se uchylil do exilu na Ahch-To. Nakonec se vratil v duchu, aby vedl dalsi generaci a vyrovnal se se svou minulosti prostrednictvim vykoupeni."
+
+REFERENCE           NEW_REPUBLIC_SOLDIER  
+LANG_ENGLISH        "Soldiers of the New Republic defended the galaxy in the wake of the Empire's collapse. Often stationed in remote sectors, they patrolled trade routes, responded to unrest, and symbolized the fragile hope of galactic peace in a time of rising threats."
+LANG_CZECH       "Vojaci Nove Republiky branili galaxii po padu Imperia. Casto byli umisteni ve vzdalenych sektorech, hlidali obchodni trasy, reagovali na nepokoje a symbolizovali krehkou nadeji na galakticky mir v dobe rostoucich hrozeb."
+
+REFERENCE           NEW_REPUBLIC_SECURITY_DROID  
+LANG_ENGLISH        "Tasked with enforcing law and order, New Republic security droids provided support aboard prison ships and outposts. Equipped with powerful weapons and durable chassis, they ensured compliance among prisoners and maintained security in volatile regions of the galaxy."
+LANG_CZECH       "Bezpecnostni droidi Nove Republiky, jejichz ukolem bylo prosazovat zakon a poradek, poskytovali podporu na palubach vezenskych lodi a v prednich zakladnach. Vybaveni vykonnymi zbranemi a odolnym podvozkem zajistovali poslusnost veznu a udrzovali bezpecnost v nestabilnich oblastech galaxie."
+
+REFERENCE           PAZ_VIZSLA  
+LANG_ENGLISH        "A heavily armed Mandalorian warrior and member of the Tribe, Paz Vizsla was a descendant of the legendary Tarre Vizsla. Fiercely loyal to Mandalorian tradition, he clashed with Din Djarin over the Darksaber but ultimately sacrificed himself defending fellow Mandalorians from Imperial forces."
+LANG_CZECH       "Paz Vizsla, tezce ozbrojeny Mandaloriansky valecnik a clen kmene, byl potomkem legendarniho Tarra Vizsly. Byl oddany mandalorianskym tradicim a kvuli Temnemu meci se dostal do konfliktu s Dinem Djarinem, ale nakonec se obetoval, aby ochranil sve mandalorianske bratry pred imperialnimi silami."
+
+REFERENCE           POE_DAMERON  
+LANG_ENGLISH        "A daring pilot and commander in the Resistance, Poe Dameron was known for his exceptional flying skills and bold leadership. Loyal to General Leia Organa, he played a key role in battles against the First Order and helped rally the galaxy during the final conflict on Exegol."
+LANG_CZECH       "Poe Dameron, odvazny pilot a velitel Odboje, byl znamy svymi vyjimecnymi leteckymi schopnostmi a odvaznym vedenim. Byl loajalni generalce Leie Organe a sehral klicovou roli v bitvach proti Prvnimu radu. Pomohl sjednotit galaxii behem finalniho konfliktu na Exegolu."
+
+REFERENCE           REY  
+LANG_ENGLISH        "An orphaned scavenger from Jakku, Rey discovered her powerful connection to the Force and trained as a Jedi under Leia Organa. Confronting her lineage as the granddaughter of Emperor Palpatine, she rejected the Sith and embraced the legacy of the Jedi, taking the name Skywalker."
+LANG_CZECH       "Rey, osirela sberacka odpadku z Jakku, objevila sve silne spojeni se Silou a pod vedenim Leiy Organa se stala rytirkou Jedi. Kdyz se vyrovnala se svym puvodem jako vnucka Cisare Palpatina, zavrhla Sithy a prijala odkaz Jediu, pricemz prijala jmeno Skywalker."
+
+REFERENCE           ROSE_TICO  
+LANG_ENGLISH        "A maintenance worker turned Resistance fighter, Rose Tico was driven by the loss of her sister during the war. Courageous and compassionate, she aided Finn and helped expose corruption within the galaxy, fighting for those who could not defend themselves."
+LANG_CZECH       "Rose Tico, udrzbarka, ktera se stala bojovnici Odboje, byla pohanena ztratou sve sestry behem valky. Odvazna a soucitna, pomahala Finnovi a odhalovala korupci v galaxii, bojovala za ty, kteri se nemohli branit sami."
+
+REFERENCE           THE_ARMORER  
+LANG_ENGLISH        "A mysterious and revered leader among the Children of the Watch, the Armorer upheld ancient Mandalorian customs. Skilled in forging beskar and offering spiritual guidance, she helped Din Djarin and others rediscover their heritage. Her words and actions shaped the path of Mandalore's future."
+LANG_CZECH       "Zahadna a ctena vudkyne mezi Deti Hlidky, Zbrojni mistryne dodrzovala starodavne mandalorianske zvyky. Byla zrucna v kovani beskaru a poskytovala duchovni vedeni, pomohla Din Djarinovi a ostatnim znovuobjevit jejich dedictvi. Jeji slova a ciny formovaly budoucnost Mandalore."
+
+REFERENCE 			RESISTANCE_TROOPER
+LANG_ENGLISH 		"A volunteer soldier of the Resistance, Resistance Troopers fought to oppose the First Order's expansion. Poorly supplied but determined, they carried on the legacy of the Rebel Alliance in the fight for freedom."
+LANG_CZECH       "Dobrovolni vojaci Odboje, znami jako Odbojovi vojaci, bojovali proti expanzi Prvniho radu. Prestoze meli nedostatek zasob, byli odhodlani pokracovat v odkazu Povstalecke Aliance v boji za svobodu."
+
+
+//----------------------------------------------------------
+// 	h8: FIRST ORDER
+//----------------------------------------------------------
+
+REFERENCE           ARMITAGE_HUX
+LANG_ENGLISH        "General Armitage Hux was a ruthless officer of the First Order, known for his fanatical loyalty and ambition. He oversaw the development of Starkiller Base and played a key role in enforcing the regime's military dominance, though internal rivalries ultimately led to his downfall."
+LANG_CZECH       "General Armitage Hux byl nemilosrdny dustojnik Prvniho radu, znamy svou fanatickou loajalitou a ambicemi. Dohlizel na vyvoj zakladny Hvezdovrah a hral klicovou roli pri prosazovani vojenske dominance rezimu, ale vnitrni rivalita nakonec vedla k jeho padu."
+
+REFERENCE           CAPTAIN_PHASMA
+LANG_ENGLISH        "Clad in chromium armor and commanding the First Order's stormtroopers, Captain Phasma was a formidable and disciplined leader. Trained in combat and unwavering in duty, she enforced order with brutal efficiency before meeting her end in battle against the Resistance."
+LANG_CZECH       "Kapitanka Phasma, odena do chromove zbroje a velici stormtrooperum Prvniho radu, byla obavanou a disciplinovanou vudkyni. Vycvicena v boji a neochvejna ve sve povinnosti, prosazovala poradek s brutalni ucinnosti, nez nasla smrt v boji proti Odboji."
+
+REFERENCE           EMPEROR_PALPATINE_SEQUEL
+LANG_ENGLISH        "Sheev Palpatine, also known as Darth Sidious, survived the fall of the Empire through dark Sith rituals. Operating from the shadows on Exegol, he manipulated events to reclaim power as the Final Order's leader, seeking to dominate the galaxy once more before being finally destroyed by Rey."
+LANG_CZECH       "Sheev Palpatine, znamy take jako Darth Sidious, prezil pad Imperia diky temnym ritualum Sithu. Pusobici ze stinu na Exegolu manipuloval udalostmi, aby znovu ziskal moc jako vudce Konecneho radu, a snazil se znovu ovladnout galaxii, nez byl nakonec znicen Rey."
+
+REFERENCE           KYLO_REN
+LANG_ENGLISH        "Born Ben Solo, son of Leia Organa and Han Solo, Kylo Ren fell to the dark side under Snoke's influence. As a leader of the First Order and master of the Knights of Ren, he waged war against the Resistance before ultimately seeking redemption and sacrificing himself to save Rey."
+LANG_CZECH       "Kylo Ren, narozeny jako Ben Solo, syn Leiy Organa a Hana Sola, podlehl vlivu Snokea a presel na temnou stranu. Jako vudce Prvniho radu a mistr Rytiru z Renu vedl valku proti Odboji, nez nakonec nalezl vykoupeni a obetoval se, aby zachranil Rey."
+
+REFERENCE           PRAETORIAN_GUARD
+LANG_ENGLISH        "Elite protectors of Supreme Leader Snoke, the Praetorian Guards wielded specialized melee weapons and wore crimson armor. Trained to fight even Force-wielders, they were fiercely loyal and fought to the death defending Snoke, ultimately perishing in a clash with Kylo Ren and Rey."
+LANG_CZECH       "Elitni ochranci Nejvyssiho vudce Snokea, pretorianska garda, pouzivali specialni zbrane pro boj zblizka a nosili karminove brneni. Byli vycviceni k boji i proti uzivatelum Sily, byli velmi loajalni a bojovali az do smrti, aby ochranili Snokea, a nakonec zahynuli v boji s Kylo Renem a Rey."
+
+REFERENCE           REN
+LANG_ENGLISH        "The original master of the Knights of Ren, Ren was a dark side warrior who led the group before Kylo Ren. Wielding a red-bladed lightsaber and enforcing the group's brutal code, he fell in combat to Ben Solo, who claimed leadership and the mantle of 'Ren' for himself."
+LANG_CZECH       "Ren, puvodni velitel Radu rytiru Ren, byl bojovnik temne strany, ktery vedl skupinu pred Kylo Renem. Ovladal svetelny mec s cervenou cepeli a prosazoval brutalni kodex skupiny. V boji podlehl Benu Solovi, ktery se ujal vedeni a prisvojil si titul 'Ren'."
+
+REFERENCE           STORMTROOPER_FIRST_ORDER
+LANG_ENGLISH        "First Order stormtroopers were trained from childhood to obey without question. Clad in updated white armor and deployed in overwhelming numbers, they served as the primary enforcers of the regime, striking fear into Resistance forces and civilians alike."
+LANG_CZECH       "Stormtrooperi Prvniho radu byli od detstvi cviceni k bezpodminecne poslusnosti. Obleceni v modernizovanych bilych brnenich a nasazeni v prevazne pocetni prevaze slouzili jako hlavni vykonavatele rezimu a sirili strach mezi silami Odboje i civilnim obyvatelstvem."
+
+REFERENCE           RIOT_STORMTROOPER_FIRST_ORDER
+LANG_ENGLISH        "Specialized for crowd control and close-quarters combat, Riot Stormtroopers were equipped with electrobatons and heavy shields. They were deployed during uprisings and protests, famously clashing with Finn during the Battle of Takodana."
+LANG_CZECH       "Riot Stormtroopers, specializovani na kontrolu davu a boj zblizka, byli vybaveni elektrickymi obusky a tezkymi stity. Byli nasazeni behem povstani a protestu a proslavili se stretem s Finnem behem Bitvy o Takodanu."
+
+REFERENCE           SITH_TROOPER
+LANG_ENGLISH        "Sith Troopers were elite soldiers of the Final Order, clad in crimson armor and loyal to Emperor Palpatine. Secretly bred and trained on Exegol, they represented the culmination of Sith military might and were deployed during the Emperor's final bid for galactic domination."
+LANG_CZECH       "Sithsti vojaci byli elitni vojaci Posledniho radu, odeni do karminovych brneni a loajalni k Cisari Palpatinovi. Tajne vychovani a vycviceni na Exegolu, predstavovali vrchol vojenske moci Sithu a byli nasazeni behem Cisarovy posledni snahy o galaktickou nadvladu."
+
+REFERENCE           SUPREME_LEADER_SNOKE
+LANG_ENGLISH        "A dark side puppet created by Emperor Palpatine, Supreme Leader Snoke commanded the First Order and corrupted Ben Solo into Kylo Ren. Though immensely powerful in the Force, he was ultimately betrayed and killed by his apprentice during a pivotal moment of conflict."
+LANG_CZECH       "Temna loutka vytvorena Cisarem Palpatinem, Nejvyssi vudce Snoke velel Prvnimu radu a zkorumpoval Bena Sola, ktery se stal Kylo Renem. Ackoli byl nesmirne mocny v Sile, nakonec byl zrazen a zabit svym ucednikem behem klicoveho momentu konfliktu."
+
+
+ENDMARKER
+
+
+
+
+
+
+
+
+
+
+

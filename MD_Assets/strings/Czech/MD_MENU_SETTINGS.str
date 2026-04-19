@@ -1,0 +1,1076 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           ""
+
+//----------------------------------------------------------
+// 		SETTING/CONTROLS MENU
+//----------------------------------------------------------
+
+//----------------------------------------------------------
+// 	h1: SETTINGS
+//----------------------------------------------------------
+
+REFERENCE           SETUP_OPTIONS
+LANG_ENGLISH        "SETUP OPTIONS"
+LANG_CZECH	  "MOZNOSTI NASTAVENI"
+
+REFERENCE           GAMEPLAY_OPTIONS
+LANG_ENGLISH        "GAMEPLAY"
+LANG_CZECH	  "HRATELNOST"
+
+REFERENCE           COMBAT_OPTIONS
+LANG_ENGLISH        "COMBAT"
+LANG_CZECH	  "SOUBOJ"
+
+REFERENCE           INTERFACE_OPTIONS
+LANG_ENGLISH        "USER INTERFACE"
+LANG_CZECH	  "UZIVATELSKE ROZHRANI"
+
+REFERENCE           MD_MODE_CAPS
+LANG_ENGLISH        "COMBAT OPTIONS"
+LANG_CZECH	  "SOUBOJOVA NASTAVENI"
+
+REFERENCE           CUSTOM_RESOLUTION
+LANG_ENGLISH        "Custom Resolution:"
+LANG_CZECH	  "Vlastni rozliseni:"
+
+REFERENCE           CUSTOM_WIDTH_DESC
+LANG_ENGLISH        "Set custom resolution width"
+LANG_CZECH	  "Nastavit vlastni vysku rozliseni"
+
+REFERENCE           CUSTOM_HEIGHT_DESC
+LANG_ENGLISH        "Set custom resolution height"
+LANG_CZECH	  "Nastavit vlastni sirku rozliseni"
+
+REFERENCE           RENDERER
+LANG_ENGLISH        "Renderer:"
+LANG_CZECH	  "Vykreslovac:"
+
+REFERENCE           RENDERER_DESC
+LANG_ENGLISH        "Change the renderer library to use."
+LANG_CZECH	  "Zmenit typ vykreslovace, ktery chcete pouzit."
+
+REFERENCE           VANILLA
+LANG_ENGLISH        "Performance"
+LANG_CZECH	  "Vykon"
+
+REFERENCE           REND2
+LANG_ENGLISH        "Quality"
+LANG_CZECH	  "KVALITA"
+
+REFERENCE           WIDESCREEN_FOV
+LANG_ENGLISH        "Widescreen FOV:"
+LANG_CZECH	  "Sirokouhle zorne pole:"
+
+REFERENCE           WIDESCREEN_FOV_DESC
+LANG_ENGLISH        "Adjust the Field of View for 16:9 and above resolutions."
+LANG_CZECH	  "Nastavit zorne pole pro 16:9 a vyssi rozliseni."
+
+REFERENCE           WIDESCREEN_HUD
+LANG_ENGLISH        "Widescreen HUD:"
+LANG_CZECH	  "Sirokouhle HUD:"
+
+REFERENCE           WIDESCREEN_HUD_DESC
+LANG_ENGLISH        "Adjust the Hud for 16:9 and above resolutions."
+LANG_CZECH	  "Nastavit Hud pro 16:9 a vyssi rozliseni."
+
+REFERENCE           CINEMATIC_BARS
+LANG_ENGLISH        "Cinematic Bars:"
+LANG_CZECH	  "Filmove pruhy:"
+
+REFERENCE           CINEMATIC_BARS_DESC
+LANG_ENGLISH        "Hide the black bars during cutscenes, useful when playing in widescreen."
+LANG_CZECH	  "Schovat cerne pruhy behem filmovych sekvenci, uzitecne kdyz hrajete na sirokouhle obrazovce."
+
+REFERENCE           SHADOWS_PROJECTED 
+LANG_ENGLISH        "Projected"
+LANG_CZECH	  "Promitane"
+
+REFERENCE           BODY_MARKS
+LANG_ENGLISH        "Body Marks:"
+LANG_CZECH        "Poskozeni tel:"
+
+REFERENCE           BODY_MARKS_DESC
+LANG_ENGLISH        "Toggle to display scorch marks on bodies."
+LANG_CZECH        "Prepnutim zobrazite spaleniny na telech."
+
+REFERENCE           FAST_SKY
+LANG_ENGLISH        "Fast Sky:"
+LANG_CZECH	  "Rychla obloha:"
+
+REFERENCE           FAST_SKY_DESC
+LANG_ENGLISH        "Enables / disables sky."
+LANG_CZECH	  "Zapne / vypne oblohu."
+
+REFERENCE           FOG_LEVEL
+LANG_ENGLISH        "Fog Level:"
+LANG_CZECH	  "Uroven mlhy:"
+
+REFERENCE           FOG_LEVEL_DESC
+LANG_ENGLISH        "Set level of fog to appear on maps."
+LANG_CZECH	  "Nastavit uroven mlhy zobrazujici se na mape."
+
+REFERENCE           ENHANCED
+LANG_ENGLISH        "Enhanced"
+LANG_CZECH	  "Pokrocile"
+
+REFERENCE           DRAW_FPS
+LANG_ENGLISH        "Draw FPS:"
+LANG_CZECH	  "Vykreslit FPS:"
+
+REFERENCE           DRAW_FPS_DESC
+LANG_ENGLISH        "Toggle to show or hide FPS counter."
+LANG_CZECH	  "Prepina zobrazeni mereni FPS."
+
+REFERENCE           CURSOR
+LANG_ENGLISH        "Cursor:"
+LANG_CZECH	  "Kurzor:"
+
+REFERENCE           CURSOR_DESC
+LANG_ENGLISH        "Changes the cursor image."
+LANG_CZECH	  "Zmeni obrazek kurzoru."
+
+REFERENCE           WEAPON_DISMEMBERMENT
+LANG_ENGLISH        "Weapon Dismemberment:"
+LANG_CZECH	  "Oddelovani koncetin zbrani:"
+
+REFERENCE           WEAPON_DISMEMBERMENT_DESC
+LANG_ENGLISH        "Enables / disables weapon dismemberment."
+LANG_CZECH	  "Zapne / vypne oddelovani koncetin za pomoci zbrane."
+
+REFERENCE           SABER_REALISTIC
+LANG_ENGLISH        "Saber Damage:"
+LANG_CZECH	  "Poskozeni mecem:"
+
+REFERENCE           SABER_REALISTIC_DESC
+LANG_ENGLISH        "Set the damage level dealt by lightsabers."
+LANG_CZECH	  "Nastavte uroven poskozeni zpusobene svetelnym mecem."
+
+REFERENCE           SABER_LOCK_BREAK
+LANG_ENGLISH        "Saber Lock Executions:"
+LANG_CZECH	  "Popravy pri zablokovani mecu:"
+
+REFERENCE           SABER_LOCK_BREAK_DESC
+LANG_ENGLISH        "Enables possible deadly follow-up attacks upon winning a saber lock."
+LANG_CZECH	  "Zapne mozne smrtici utoky po vyhranem zablokovani mecu."
+
+REFERENCE           SABER_LOCK
+LANG_ENGLISH        "Saberlock:"
+LANG_CZECH	  "Zablokovani mecu:"
+
+REFERENCE           SABER_LOCK_DESC
+LANG_ENGLISH        "Select how often saber-lock occurs."
+LANG_CZECH	  "Nastavit, jak casto se objevi zablokovani mecu."
+
+REFERENCE           NEVER
+LANG_ENGLISH        "Never"
+LANG_CZECH	  "Nikdy"
+
+REFERENCE           RARELY
+LANG_ENGLISH        "Rarely"
+LANG_CZECH	  "Vzacne"
+
+REFERENCE           SOMETIMES
+LANG_ENGLISH        "Sometimes"
+LANG_CZECH	  "Obcas"
+
+REFERENCE           OFTEN
+LANG_ENGLISH        "Often"
+LANG_CZECH	  "Casto"
+
+REFERENCE           CORPSE_REMOVAL
+LANG_ENGLISH        "Corpse Removal Time:"
+LANG_CZECH	  "Cas na odstraneni tel:"
+
+REFERENCE           CORPSE_REMOVAL_DESC
+LANG_ENGLISH        "Set the time after which corpses will disappear."
+LANG_CZECH	  "Nastavit cas, po kterem zmizi mrtva tela."
+
+REFERENCE           WEAPON_REMOVAL
+LANG_ENGLISH        "Weapon Removal Time:"
+LANG_CZECH	  "Cas na odstraneni zbrani:"
+
+REFERENCE           WEAPON_REMOVAL_DESC
+LANG_ENGLISH        "Set the time after which weapons will disappear."
+LANG_CZECH	  "Nastavit cas, po kterem zmizi ze zeme zbrane."
+
+REFERENCE           10SEC
+LANG_ENGLISH        "10 seconds"
+LANG_CZECH	  "10 sekund"
+
+REFERENCE           30SEC
+LANG_ENGLISH        "30 seconds"
+LANG_CZECH	  "30 sekund"
+
+REFERENCE           1MIN
+LANG_ENGLISH        "1 minute"
+LANG_CZECH	  "1 minuta"
+
+REFERENCE           2MIN
+LANG_ENGLISH        "2 minutes"
+LANG_CZECH	  "2 minuty"
+
+REFERENCE           5MIN
+LANG_ENGLISH        "5 minutes"
+LANG_CZECH	  "5 minut"
+
+REFERENCE           BLOOD
+LANG_ENGLISH        "Blood:"
+LANG_CZECH	  "Krev:"
+
+REFERENCE           BLOOD_DESC
+LANG_ENGLISH        "Toggle blood effects."
+LANG_CZECH	  "Prepina efekty krve."
+
+REFERENCE           WEATHER
+LANG_ENGLISH        "Weather:"
+LANG_CZECH	  "Pocasi:"
+
+REFERENCE           WEATHER_DESC
+LANG_ENGLISH        "Set the weather in the map."
+LANG_CZECH	  "Nastavit pocasi na mape."
+
+REFERENCE           CLEAR
+LANG_ENGLISH        "Clear"
+LANG_CZECH	  "Jasno"
+
+REFERENCE           SNOW
+LANG_ENGLISH        "Snow"
+LANG_CZECH	  "Snih"
+ 
+REFERENCE           RAIN
+LANG_ENGLISH        "Rain"
+LANG_CZECH	  "Dest"
+
+REFERENCE           LAVA
+LANG_ENGLISH        "Lava"
+LANG_CZECH	  "#same"
+
+REFERENCE           SANDSTORM
+LANG_ENGLISH        "Sandstorm"
+LANG_CZECH	  "Pisecna boure"
+
+REFERENCE           HEAVY_RAIN_FOG
+LANG_ENGLISH        "Heavy Rain Fog"
+LANG_CZECH	  "Silny dest s mlhou"
+
+REFERENCE           FOG
+LANG_ENGLISH        "Fog"
+LANG_CZECH	  "Mlha"
+
+REFERENCE           ACID_RAIN
+LANG_ENGLISH        "Acid Rain"
+LANG_CZECH	  "Kysely dest"
+
+REFERENCE           WIND
+LANG_ENGLISH        "Wind"
+LANG_CZECH	  "Vitr"
+
+REFERENCE           SPACEDUST
+LANG_ENGLISH        "Spacedust"
+LANG_CZECH	  "Vesmirny prach"
+
+REFERENCE           PUSH_EFFECT
+LANG_ENGLISH        "Force Push Effect:"
+LANG_CZECH	  "Efekt Sily Odstrceni:"
+
+REFERENCE           PUSH_EFFECT_DESC
+LANG_ENGLISH        "Set the effect used for force push."
+LANG_CZECH	  "Nastavit efekt pouzivany pro Silu Odstrceni."
+
+REFERENCE           PUSH_EFFECT_JKA
+LANG_ENGLISH        "JKA"
+LANG_CZECH	  "#same"
+
+REFERENCE           PUSH_EFFECT_JKO
+LANG_ENGLISH        "JKO"
+LANG_CZECH	  "#same"
+
+REFERENCE           PUSH_EFFECT_NONE
+LANG_ENGLISH        "None"
+LANG_CZECH	  "Zadny"
+
+REFERENCE           SABER_LOCK_CAM
+LANG_ENGLISH        "Saber Lock Camera:"
+LANG_CZECH	  "Kamera pri zablokovani mecu:"
+
+REFERENCE           SABER_LOCK_CAM_DESC
+LANG_ENGLISH        "Set camera to be more cinematic during a saber lock."
+LANG_CZECH	  "Nastavit kameru tak, aby byla behem zablokovani mecu vice filmova."
+
+REFERENCE           LANGUAGE
+LANG_ENGLISH        "Language"
+LANG_CZECH	  "Jazyk"
+
+REFERENCE           LANGUAGE_DESC
+LANG_ENGLISH        "Set the language used in the mod."
+LANG_CZECH	  "Nastavit jazyk pouzivany ve hre."
+
+REFERENCE           LANG_DEUTSCH
+LANG_ENGLISH        "Deutsch"
+LANG_CZECH	  "#same"
+
+REFERENCE           LANG_ESPANYOL
+LANG_ENGLISH        "Espańol"
+LANG_CZECH	  "#same"
+
+REFERENCE           LANG_CZECH
+LANG_ENGLISH        "Czech"
+LANG_CZECH	  "Cestina"
+
+REFERENCE           SABER_IMPACT
+LANG_ENGLISH        "Saber Combat Mode:"
+LANG_CZECH	  "Soubojovy mod:"
+
+REFERENCE           SABER_IMPACT_DESC
+LANG_ENGLISH        "Activate Manual Saber Blocking Mode, See the Controls menu to use Manual Block."
+LANG_CZECH	  "Aktivujte manualni mod blokovani mece, podivejte se do menu Ovladani, abyste mohli pouzit Manualni blok."
+
+REFERENCE           JKA_MODE
+LANG_ENGLISH        "JKA Mode"
+LANG_CZECH	  "JKA Mod"
+
+REFERENCE           MD_MODE
+LANG_ENGLISH        "MD Mode"
+LANG_CZECH	  "MD Mod"
+
+REFERENCE           MDA_MODE
+LANG_ENGLISH        "MD Advanced Mode"
+LANG_CZECH	  "MD Pokrocily Mod"
+
+REFERENCE           JKII_MODE
+LANG_ENGLISH        "JKII Mode"
+LANG_CZECH	  "JKII Mod"
+
+REFERENCE           HUD_MODE
+LANG_ENGLISH        "Hud Mode:"
+LANG_CZECH	  "Hud Mod:"
+
+REFERENCE           HUD_MODE_DESC
+LANG_ENGLISH        "MD Mode Shows Blockpoints and saberfatigue levels."
+LANG_CZECH	  "MD Mod ukazuje blokove body a uroven unavy pri souboji."
+
+REFERENCE           MD_CLASSIC
+LANG_ENGLISH        "MD Classic"
+LANG_CZECH        "MD Klasicke"
+
+REFERENCE           MD_MODERN
+LANG_ENGLISH        "MD Modern"
+LANG_CZECH        "MD Moderni"
+
+REFERENCE           MD_JO
+LANG_ENGLISH        "JKII Remastered"
+LANG_CZECH        "JKII Remasterovane"
+
+REFERENCE           MD_VINTAGE
+LANG_ENGLISH        "MD Vintage"
+LANG_CZECH        "MD Zastarale"
+
+REFERENCE           MD_HUD_VERTICAL
+LANG_ENGLISH        "MD Vertical"
+LANG_CZECH        "MD Vertikalni"
+
+REFERENCE           MD_HUD_HORIZONTAL
+LANG_ENGLISH        "MD Horizontal"
+LANG_CZECH        "MD Horizontalni"
+
+REFERENCE           SHOW_SELECTION_BAR
+LANG_ENGLISH        "Show Selection Bar:"
+LANG_CZECH        "Ukazat vyberovou listu:"
+
+REFERENCE           SHOW_SELECTION_BAR_DESC
+LANG_ENGLISH        "Show selection bar when cycling through inventory, weapons or force powers."
+LANG_CZECH        "Ukaze vyberovou listu pri prochazeni inventare, zbrani nebo schopnosti Sily."
+
+REFERENCE           SHOW_RADAR
+LANG_ENGLISH        "Show Radar:"
+LANG_CZECH	  "Ukazat radar:"
+
+REFERENCE           SHOW_RADAR_DESC
+LANG_ENGLISH        "Show Radar to Identify objects and models on map."
+LANG_CZECH	  "Ukaze radar k identifikaci predmetu a modelu na mape."
+
+REFERENCE           SHOW_HEALTH_BAR
+LANG_ENGLISH        "Show health Bar:"
+LANG_CZECH	  "Ukazat listu zdravi:"
+
+REFERENCE           SHOW_HEALTH_BAR_DESC
+LANG_ENGLISH        "Show health meter above all characters."
+LANG_CZECH	  "Ukaze listu zdravi nad vsemi charaktery."
+
+REFERENCE           SHOW_BLOCKPOINT_BAR
+LANG_ENGLISH        "Show Block Point Bar:"
+LANG_CZECH	  "Ukazat listu blokovych bodu:"
+
+REFERENCE           SHOW_BLOCKPOINT_BAR_DESC
+LANG_ENGLISH        "Show Block Point Meter above all Saber Users (MD/MDA Mode only)."
+LANG_CZECH	  "Ukaze listu blokovych bodu nad vsemi uzivateli mece (pouze MD/MD Pokrocily Mod)."
+
+REFERENCE           SHOW_STAMINA_BAR
+LANG_ENGLISH        "Show Stamina Bar:"
+LANG_CZECH	  "Ukazat listu vydrze:"
+
+REFERENCE           SHOW_STAMINA_BAR_DESC
+LANG_ENGLISH        "Show Stamina Meter above all Saber Users (MD/MDA Mode only)."
+LANG_CZECH	  "Ukaze listu vydrze nad vsemi uzivateli mece (pouze MD/MD Pokrocily Mod)."
+
+REFERENCE           UNBLOCKABLE_ATTACK_WARNING
+LANG_ENGLISH        "Unblockable Attack Warning:"
+LANG_CZECH	  "Varovani pred neblok. utokem:"
+
+REFERENCE           UNBLOCKABLE_ATTACK_WARNING_DESC
+LANG_ENGLISH        "Makes NPCs appear red when they perform an unblockable attack."
+LANG_CZECH	  "NPC zcervena, kdyz provadi neblokovatelny utok."
+
+REFERENCE           LEDGE_GRAB
+LANG_ENGLISH        "Ledge Grab:"
+LANG_CZECH	  "Zachyceni se okraju:"
+
+REFERENCE           LEDGE_GRAB_DESC
+LANG_ENGLISH        "Sets whether your character will grab onto ledges to climb."
+LANG_CZECH	  "Nastavit, jestli se Vas charakter zachyti okraje, aby mohl splhat."
+
+REFERENCE           AUTO_PICK_UP
+LANG_ENGLISH        "Auto Item Pick Up:"
+LANG_CZECH	  "Automaticke sbirani predmetu:"
+
+REFERENCE           AUTO_PICK_UP_DESC
+LANG_ENGLISH        "Automatically pick up items when walked over or look and press the USE key."
+LANG_CZECH	  "Automaticky sbirat predmety, pokud pres ne prejdete nebo se na ne podivate a stisknete klavesu POUZIT."
+
+REFERENCE           SABER_RETURN
+LANG_ENGLISH        "Saber Return:"
+LANG_CZECH	  "Navrat mece:"
+
+REFERENCE           SABER_RETURN_DESC
+LANG_ENGLISH        "Sets whether the lightsaber will return to the hand when it touches a wall during a saber throw."
+LANG_CZECH	  "Nastavit, jestli se svetelny mec vrati do ruky, kdyz se behem hodu dotkne zdi."
+
+REFERENCE           SABER_BOUNCE_ON_WALLS
+LANG_ENGLISH        "Saber Bounce On Walls:"
+LANG_CZECH	  "Odraz mece od steny:"
+
+REFERENCE           SABER_BOUNCE_ON_WALLS_DESC
+LANG_ENGLISH        "Sets whether the lightsaber bounces when it hits the wall."
+LANG_CZECH	  "Nastavit, jestli se svetelny mec odrazi, kdyz zasahne zed."
+
+REFERENCE           SABERTHROW_TYPE
+LANG_ENGLISH        "Saberthrow Type:"
+LANG_CZECH	  "Typ hodu mecem:"
+
+REFERENCE           SABERTHROW_TYPE_DESC
+LANG_ENGLISH        "Switches between horizontal (base JKA) or vertical saber throw."
+LANG_CZECH	  "Prepina mezi horizontalnim (JKA) nebo vertikalnim hodem mece."
+
+REFERENCE           VERTICAL
+LANG_ENGLISH        "Vertical"
+LANG_CZECH	  "Vertikalni"
+
+REFERENCE           HORIZONTAL
+LANG_ENGLISH        "Horizontal"
+LANG_CZECH	  "Horizontalni"
+
+REFERENCE           GUNNER_BASH
+LANG_ENGLISH        "Gunner Melee:"
+LANG_CZECH	  "Uder zbrani:"
+
+REFERENCE           GUNNER_BASH_DESC
+LANG_ENGLISH        "Sets whether powerful characters with blasters can melee the player."
+LANG_CZECH	  "Nastavit, jestli muze silnejsi charakter uderit hrace zbrani."
+
+REFERENCE           MDA_SLOWMO
+LANG_ENGLISH        "Perfect Block Slowmo Action:"
+LANG_CZECH	  "Zpomalena akce pri bloku:"
+
+REFERENCE           MDA_SLOWMO_DESC
+LANG_ENGLISH        "MD/MDA Mode only. Activates a slow motion effect when performing a perfect block."
+LANG_CZECH	  "Pouze pro MD/MDA mod. Aktivuje zpomaleny efekt pri uspesnem perfektnim bloku."
+
+REFERENCE           IGNITION_TWIRL
+LANG_ENGLISH        "Saber Ignition Twirl:"
+LANG_CZECH	  "Zatoceni mecem:"
+
+REFERENCE           IGNITION_TWIRL_DESC
+LANG_ENGLISH        "Do the saber on/off animation."
+LANG_CZECH	  "Provede animaci pri zapnuti / vypnuti mece."
+
+REFERENCE           SINGLE_IGNITION_SPEED
+LANG_ENGLISH        "Single Saber Ignition Speed:"
+LANG_CZECH	  "Rychlost zap. standard. mece:"
+
+REFERENCE           SINGLE_IGNITION_SPEED_DESC
+LANG_ENGLISH        "How fast the lightsaber ignites."
+LANG_CZECH	  "Nastavit, jak rychle se svetelny mec zapne."
+
+REFERENCE           SLOW
+LANG_ENGLISH        "Slow"
+LANG_CZECH	  "Pomalu"
+
+REFERENCE           VERY_FAST
+LANG_ENGLISH        "Very Fast"
+LANG_CZECH	  "Velmi rychle"
+
+REFERENCE           INSTANT
+LANG_ENGLISH        "Instant"
+LANG_CZECH	  "Okamzite"
+
+REFERENCE           STAFF_IGNITION_SPEED
+LANG_ENGLISH        "Staff Saber Ignition Speed:"
+LANG_CZECH	  "Rychlost zap. obouruc. mece:"
+
+REFERENCE           STAFF_IGNITION_SPEED_DESC
+LANG_ENGLISH        "How fast the Staff lightsaber ignites."
+LANG_CZECH	  "Nastavit, jak rychle se obourucni svetelny mec zapne."
+
+REFERENCE           SABER_STANCE
+LANG_ENGLISH        "Cosmetic Saber Stance:"
+LANG_CZECH	  "Kosmeticky postoj mece:"
+
+REFERENCE           SABER_STANCE_DESC
+LANG_ENGLISH        "Use unique character stances (some stances may make you vulnerable)."
+LANG_CZECH	  "Pouzit unikatni charakterove postoje (nektere postoje Vas ucini nechranenymi)."
+
+REFERENCE           SABER_ATTACK_SPEED
+LANG_ENGLISH        "Saber Attack Speed:"
+LANG_CZECH	  "Rychlost utoku mecem:"
+
+REFERENCE           SABER_ATTACK_SPEED_DESC
+LANG_ENGLISH        "MD Mode slightly reduces saber swing speeds to increase blocking reaction time."
+LANG_CZECH	  "MD mod zpomaluje rychlost utoku mecem kvuli zvyseni sance na reakci pri jeho bloku."
+
+REFERENCE           SABER_DAMAGE_SYSTEM
+LANG_ENGLISH        "Saber Damage System:"
+LANG_CZECH	  "System poskozeni mecem:"
+
+REFERENCE           SABER_DAMAGE_SYSTEM_DESC
+LANG_ENGLISH        "Set the system used to calculate saber damage."
+LANG_CZECH	  "Nastavit system pouzivany pro vypocet poskozeni mecem."
+
+REFERENCE           SLOWMO_SELECTION
+LANG_ENGLISH        "Slowmo Selection:"
+LANG_CZECH	  "Zpomaleny vyber:"
+
+REFERENCE           SLOWMO_SELECTION_DESC
+LANG_ENGLISH        "Slows down time when scrolling between weapons, items or force powers."
+LANG_CZECH	  "Zpomaly hru pri volbe zbrani, predmetu nebo schopnosti Sily."
+
+REFERENCE           AUTO_HEALTH_REGEN
+LANG_ENGLISH        "Auto-Health Regeneration:"
+LANG_CZECH	  "Auto-regenerace zdravi:"
+
+REFERENCE           AUTO_HEALTH_REGEN_DESC
+LANG_ENGLISH        "Set if your character will automatically replenish health (users with FP_HEAL 3)."
+LANG_CZECH	  "Nastavte, zda bude vase postava automaticky doplnovat zdravi (hraci se Sila Leceni 3)."
+
+REFERENCE           PLAYER_HEALTH_SYNC
+LANG_ENGLISH        "Default Player Health:"
+LANG_CZECH	  "Zakladni zdravi hrace:"
+
+REFERENCE           PLAYER_HEALTH_SYNC_DESC
+LANG_ENGLISH        "Use the default 100 health or the health of the selected character."
+LANG_CZECH	  "Pouzije zakladnich 100 bodu zivota nebo pouzije zdravi zvolene postavy."
+
+REFERENCE           ADVANCED_LOD
+LANG_ENGLISH        "Advanced LOD:"
+LANG_CZECH	  "Pokrocily LOD:"
+
+REFERENCE           ADVANCED_LOD_DESC
+LANG_ENGLISH        "Increases level of detail."
+LANG_CZECH	  "Zvysuje uroven detailu."
+
+REFERENCE           AMD_FIX
+LANG_ENGLISH        "AMD GPU Support:"
+LANG_CZECH      "AMD GPU Podpora:"
+
+REFERENCE           AMD_FIX_DESC
+LANG_ENGLISH        "Enables OpenGL support for AMD graphic cards."
+LANG_CZECH      "Zapne OpenGl podporu pro AMD graficke karty."
+
+REFERENCE           ROLL_SOUND
+LANG_ENGLISH        "Roll Sound:"
+LANG_CZECH      "Zvuk pri prevaleni:"
+
+REFERENCE           ROLL_SOUND_DESC
+LANG_ENGLISH        "Sets whether roll sounds are played."
+LANG_CZECH      "Nastavit, jestli bude prehran zvuk behem prevaleni."
+
+REFERENCE           JUMP_SOUND
+LANG_ENGLISH        "Jump Sound:"
+LANG_CZECH      "Zvuk pri skoku:"
+
+REFERENCE           JUMP_SOUND_DESC
+LANG_ENGLISH        "Sets whether jump sounds are played."
+LANG_CZECH      "Nastavit, jestli bude prehran zvuk behem skoku."
+
+REFERENCE           PLAY_ALL
+LANG_ENGLISH        "Play All"
+LANG_CZECH      "Prehrat vsechny"
+
+REFERENCE           OTHER_PLAYERS_ONLY
+LANG_ENGLISH        "Other Players Only"
+LANG_CZECH      "Pouze pro ostatni hrace"
+
+REFERENCE           PLAYER_ONLY
+LANG_ENGLISH        "Player Only"
+LANG_CZECH      "Pouze hrac"
+
+REFERENCE           RENDERER_REND2
+LANG_ENGLISH        "Rend2 (Beta):"
+
+REFERENCE           RENDERER_REND2_DESC
+LANG_ENGLISH        "Introduces new rendering techniques, improving visuals and performance."
+
+REFERENCE           ANTIALIASING
+LANG_ENGLISH        "Antialiasing:"
+
+REFERENCE           ANTIALIASING_DESC
+LANG_ENGLISH        "Antialiasing."
+
+REFERENCE           HDR
+LANG_ENGLISH        "HDR:"
+
+REFERENCE           HDR_DESC
+LANG_ENGLISH        "Rendering in HDR (High Dynamic Range) Colorspace."
+
+REFERENCE           TONEMAPPING
+LANG_ENGLISH        "Tonemapping:"
+
+REFERENCE           TONEMAPPING_DESC
+LANG_ENGLISH        "Enables tonemapping."
+
+REFERENCE           AUTOEXPOSURE
+LANG_ENGLISH        "Autoexposure:"
+
+REFERENCE           AUTOEXPOSURE_DESC
+LANG_ENGLISH        "Enables automatic exposure based on scene brightness."
+
+REFERENCE           HDR_LIGHTING_SUPPORT
+LANG_ENGLISH        "HDR Lighting Support:"
+
+REFERENCE           HDR_LIGHTING_SUPPORT_DESC
+LANG_ENGLISH        "Loads HDR lighting data (Requires rend2 lighting data)."
+
+REFERENCE           DELUXEMAPPING
+LANG_ENGLISH        "Deluxemapping:"
+
+REFERENCE           DELUXEMAPPING_DESC
+LANG_ENGLISH        "Enables normalmapping and specularmapping on static geometry."
+
+REFERENCE           DELUXEMAPPING_SPECULAR
+LANG_ENGLISH        "Deluxemap Specular:"
+
+REFERENCE           DELUXEMAPPING_SPECULAR_DESC
+LANG_ENGLISH        "Scale the specular response from deluxemaps."
+
+REFERENCE           CUBEMAPPING
+LANG_ENGLISH        "Cubemapping:"
+
+REFERENCE           CUBEMAPPING_DESC
+LANG_ENGLISH        "Render cubemaps for reflections."
+
+REFERENCE           CUBEMAPPING_BOUNCES
+LANG_ENGLISH        "Cubemapping Bounces:"
+
+REFERENCE           CUBEMAPPING_BOUNCES_DESC
+LANG_ENGLISH        "How many reflection bounces to render in cubemaps."
+
+REFERENCE           PARALLAX_OCCLUSION_MAPPING
+LANG_ENGLISH        "Parallax Occlusion Mapping:"
+
+REFERENCE           PARALLAX_OCCLUSION_MAPPING_DESC
+LANG_ENGLISH        "Parallax Occlusion Mapping (Requires rend2 materials)."
+
+REFERENCE           GENERATE_NORMALMAPS
+LANG_ENGLISH        "Generate Normalmaps:"
+
+REFERENCE           GENERATE_NORMALMAPS_DESC
+LANG_ENGLISH        "Generate normalmaps from diffuse textures."
+
+REFERENCE           SSAO
+LANG_ENGLISH        "SSAO:"
+
+REFERENCE           SSAO_DESC
+LANG_ENGLISH        "Enables Screenspace ambient occlusion."
+
+REFERENCE           DYNAMIC_GLOW_BLOOM
+LANG_ENGLISH        "Bloom:"
+
+REFERENCE           DYNAMIC_GLOW_BLOOM_DESC
+LANG_ENGLISH        "Scale a bloom effect on top of dynamic glow."
+
+REFERENCE           MSAA
+LANG_ENGLISH        "MSAA:"
+
+REFERENCE           MSAA_DESC
+LANG_ENGLISH        "Enables MSAA antialiasing (SMAA should not be used at the same time)."
+
+REFERENCE           SMAA
+LANG_ENGLISH        "SMAA:"
+
+REFERENCE           SMAA_DESC
+LANG_ENGLISH        "Enables SMAA antialiasing (MSAA should not be used at the same time)."
+
+REFERENCE           SMAA_QUALITY
+LANG_ENGLISH        "SMAA Quality:"
+
+REFERENCE           SMAA_QUALITY_DESC
+LANG_ENGLISH        "Set SMAA quality."
+
+REFERENCE           VOLUMETRIC_FOG
+LANG_ENGLISH        "Volumetric Fog:"
+
+REFERENCE           VOLUMETRIC_FOG_DESC
+LANG_ENGLISH        "Enables lightgrid lighting on fog volumes."
+
+REFERENCE           DYNAMIC_LIGHTS
+LANG_ENGLISH        "Dynamic Lights:"
+
+REFERENCE           DYNAMIC_LIGHTS_DESC
+LANG_ENGLISH        "Change how dynamic lights look."
+
+REFERENCE           DYNAMIC_LIGHTS_ON
+LANG_ENGLISH        "On - No Shadows"
+
+REFERENCE           DYNAMIC_LIGHTS_ON2
+LANG_ENGLISH        "On - With Shadows"
+
+REFERENCE           CAMERA_EXPOSURE
+LANG_ENGLISH        "Camera Exposure:"
+
+REFERENCE           CAMERA_EXPOSURE_DESC
+LANG_ENGLISH        "Alter brightness."
+
+REFERENCE           FORCE_SUN
+LANG_ENGLISH        "Force Sun:"
+
+REFERENCE           FORCE_SUN_DESC
+LANG_ENGLISH        "Enables sunlight and real-time cascaded shadows (Disable volumetric shadows)."
+
+
+//----------------------------------------------------------
+// 	h2: CONTROLS
+//----------------------------------------------------------
+
+REFERENCE           CONFIGURE_CONTROLS
+LANG_ENGLISH        "CONFIGURE CONTROLS"
+LANG_CZECH	  "MOZNOSTI OVLADANI"
+
+REFERENCE           MANUAL_BLOCK
+LANG_ENGLISH        "Manual Block:"
+LANG_CZECH	  "Manualni blok:"
+
+REFERENCE           MANUAL_BLOCK_DESC
+LANG_ENGLISH        "MD/MDA Mode only. Hold with attack to control direction. Hold when running to sprint."
+LANG_CZECH	  "Pouze pro MD/MD Pokrocily mod. Podrzte utok ke kontrole smeru. Drzte pri behu, abyste sprintovali." 
+
+REFERENCE           KICK
+LANG_ENGLISH        "Kick:"
+LANG_CZECH	  "Kop:"
+
+REFERENCE           KICK_DESC
+LANG_ENGLISH        "Kick with a weapon in hand."
+LANG_CZECH	  "Provedte kop se zbrani v ruce."
+
+REFERENCE           SABERDOWN
+LANG_ENGLISH        "Saber On / Off:"
+LANG_CZECH	  "Zapnout / vypnout mec:"
+
+REFERENCE           SABERDOWN_DESC
+LANG_ENGLISH        "Activates/deactivates a lightsaber."
+LANG_CZECH	  "Zapne/vypne svetelny mec."
+
+REFERENCE           SINGLE_DUAL_PISTOLS
+LANG_ENGLISH        "Single/Dual Pistols:"
+LANG_CZECH	  "Jedna/Dve pistole:"
+
+REFERENCE           SINGLE_DUAL_PISTOLS_DESC
+LANG_ENGLISH        "Change between single and dual pistols. Re-equip pistol to take effect."
+LANG_CZECH	  "Zmeni mezi jednou a dvema pistolemi. Znovu vyberte pistol, aby probehla zmena."
+
+REFERENCE           RELOAD_WEAPON
+LANG_ENGLISH        "Saber On/Off & Weapon Reload:"
+LANG_CZECH	  "Zap./Vyp. mec & Nabit zbran:"
+
+REFERENCE           RELOAD_WEAPON_DESC
+LANG_ENGLISH        "Turns on/off lightsaber, reloads weapon, and recharges when weapon overheats."
+LANG_CZECH	  "Zapne/vypne svetelny mec, nabije zbran a zchladi ji, kdyz se prehreje."
+
+REFERENCE           USES_FORCE_DESTRUCTION_ABILITY
+LANG_ENGLISH        "Uses Force Destruction Ability."
+LANG_CZECH	  "Pouzije Silu Destrukce."
+
+REFERENCE           USES_FORCE_STASIS_ABILITY
+LANG_ENGLISH        "Uses Force Stasis Ability."
+LANG_CZECH	  "Pouzije Silu Znehybneni."
+
+REFERENCE           USES_FORCE_DEADLYSIGHT_ABILITY
+LANG_ENGLISH        "Uses Force Deadly Sight Ability."
+LANG_CZECH	  "Pouzije Silu Smrticiho pohledu."
+
+REFERENCE           USES_FORCE_FEAR_ABILITY
+LANG_ENGLISH        "Uses Force Fear Ability."
+LANG_CZECH	  "Pouzije Silu Strachu."
+
+REFERENCE           USES_FORCE_JUDGEMENT_ABILITY
+LANG_ENGLISH        "Uses Force Judgement Ability."
+LANG_CZECH	  "Pouzije Silu Elektrickeho rozsudku."
+
+REFERENCE           USES_FORCE_REPULSE_ABILITY
+LANG_ENGLISH        "Uses Force Repulse Ability."
+LANG_CZECH	  "Pouzije Silu Odpuzeni."
+
+REFERENCE           USES_FORCE_GRASP_ABILITY
+LANG_ENGLISH        "Uses Force Grasp Ability."
+LANG_CZECH	  "Pouzije Silu Uchopeni."
+
+REFERENCE           USES_FORCE_BLAST_ABILITY
+LANG_ENGLISH        "Uses Force Blast Ability."
+LANG_CZECH	  "Pouzije Silu Vybuchu."
+
+REFERENCE           USES_FORCE_PROJECTION_ABILITY
+LANG_ENGLISH        "Uses Force Projection Ability."
+LANG_CZECH	  "Pouzije Silu Projekce."
+
+REFERENCE           SABER_MENU
+LANG_ENGLISH        "Saber Menu:"
+LANG_CZECH	  "Menu mece:"
+
+REFERENCE           SABER_MENU_DESC
+LANG_ENGLISH        "Opens saber customization menu."
+LANG_CZECH	  "Otevre menu prizpusobeni mece."
+
+REFERENCE           CHARACTER_MENU
+LANG_ENGLISH        "Character Menu:"
+LANG_CZECH	  "Menu postavy:"
+
+REFERENCE           CHARACTER_MENU_DESC
+LANG_ENGLISH        "Opens character menu."
+LANG_CZECH	  "Otevre menu postavy."
+
+REFERENCE           NPC_SPAWN_MENU
+LANG_ENGLISH        "NPC Spawn Menu:"
+LANG_CZECH	  "Menu vyvolani NPC:"
+
+REFERENCE           NPC_SPAWN_MENU_DESC
+LANG_ENGLISH        "Opens NPC spawn menu."
+LANG_CZECH	  "Otevre menu vyvolani NPC."
+
+REFERENCE           NPC_COMMANDS_MENU
+LANG_ENGLISH        "NPC Commands Menu:"
+LANG_CZECH	  "Menu prikazu NPC:"
+
+REFERENCE           NPC_COMMANDS_MENU_DESC
+LANG_ENGLISH        "Opens NPC Commands menu."
+LANG_CZECH	  "Otevre menu prikazu NPC."
+
+REFERENCE           NPC_SPAWN_RECENT
+LANG_ENGLISH        "NPC Spawn Recent:"
+LANG_CZECH	  "Vyvolani posledniho NPC:"
+
+REFERENCE           NPC_SPAWN_RECENT_DESC
+LANG_ENGLISH        "Spawns the most recently spawned NPC."
+LANG_CZECH	  "Vyvola naposledy vyvolane NPC."
+
+REFERENCE           NPC_RECENT_COMMAND
+LANG_ENGLISH        "NPC Recent Command:"
+LANG_CZECH	  "Posledni prikaz NPC:"
+
+REFERENCE           NPC_RECENT_COMMAND_DESC
+LANG_ENGLISH        "Executes The Last Used NPC Command On The Currently Selected NPC."
+LANG_CZECH	  "Provede posledni pouzity prikaz NPC na posledni zvolene NPC."
+
+REFERENCE           FREEZE_NPCS
+LANG_ENGLISH        "Freeze NPCs:"
+LANG_CZECH	  "Zmrazit NPC:"
+
+REFERENCE           FREEZE_NPCS_DESC
+LANG_ENGLISH        "Toggles NPC freeze."
+LANG_CZECH	  "Prepina zmrazeni NPC."
+
+REFERENCE           WALK_RUN
+LANG_ENGLISH        "Walk/Run:"
+LANG_CZECH	  "Chuze/Beh:"
+
+REFERENCE           WALK_RUN_DESC
+LANG_ENGLISH        "Toggle between always walking and running."
+LANG_CZECH	  "Prepina mezi chuzi a behem."
+
+REFERENCE           SURRENDER
+LANG_ENGLISH        "Surrender:"
+LANG_CZECH	  "Vzdat se:"
+
+REFERENCE           SURRENDER_DESC
+LANG_ENGLISH        "Hold for 2 Seconds to Surrender to enemies."
+LANG_CZECH	  "Podrzte na 2 sekundy, abyste se vzdali nepratelum."
+
+REFERENCE           COMBAT_STANCE
+LANG_ENGLISH        "Combat Stance:"
+LANG_CZECH	  "Bojovy postoj:"
+
+REFERENCE           COMBAT_STANCE_DESC
+LANG_ENGLISH        "Triggers your character to go into a ready stance."
+LANG_CZECH	  "Umozni Vasi postave prejit do bojoveho postoje."
+
+REFERENCE           WEAPON_WHEEL
+LANG_ENGLISH        "Weapon Wheel:"
+LANG_CZECH	  "Kruhovy inventar:"
+
+REFERENCE           WEAPON_WHEEL_DESC
+LANG_ENGLISH        "Opens the weapon wheel to equip a weapon."
+LANG_CZECH	  "Otevre kruhovy inventar, ze ktereho si muzete vybrat zbran."
+
+REFERENCE           FORCE_WHEEL
+LANG_ENGLISH        "Force Power Wheel:"
+LANG_CZECH	  "Kruhovy inventar Sily:"
+
+REFERENCE           FORCE_WHEEL_DESC
+LANG_ENGLISH        "Opens the force power wheel to equip a force power."
+LANG_CZECH	  "Otevre kruhovy inventar Sily, ze ktereho si muzete vybrat schopnost."
+
+//----------------------------------------------------------
+// 	h3: MULTIPLAYER SETTINGS & CONTROLS
+//----------------------------------------------------------
+
+REFERENCE           AWARD_SOUNDS
+LANG_ENGLISH        "Award Sounds:"
+LANG_CZECH	  "Zvuky pri oceneni:"
+
+REFERENCE           AWARD_SOUNDS_DESC
+LANG_ENGLISH        "Enables award sounds."
+LANG_CZECH	  "Povoli zvuky pri oceneni."
+
+REFERENCE           DRAW_TIMER
+LANG_ENGLISH        "Draw Timer:"
+LANG_CZECH	  "Vykreslit casomiru:"
+
+REFERENCE           DRAW_TIMER_DESC
+LANG_ENGLISH        "Draws game timer."
+LANG_CZECH	  "Vykresli herni casomiru."
+
+REFERENCE	    LAGOMETER
+LANG_ENGLISH	    "Display Lag Meter:"
+LANG_CZECH	  "Vykreslit meric zpozdeni:"
+
+REFERENCE	    LAGOMETER_DESC
+LANG_ENGLISH	    "Displays lag meter."
+LANG_CZECH	  "Vykresli meric zpozdeni."
+
+REFERENCE           3RD_PERSON_INVERT_GUNS
+LANG_ENGLISH        "3rd Person Invert Guns:"
+LANG_CZECH	  "Obratit pohled zbrani ve treti osobe:"
+
+REFERENCE           3RD_PERSON_INVERT_GUNS_DESC
+LANG_ENGLISH        "Determines how the current third/first person setting affects guns."
+LANG_CZECH	  "Urcuje, jak aktualni nastaveni treti/prvni osoby ovlivnuje zbrane."
+
+REFERENCE	    TRUEINVERTSABER
+LANG_ENGLISH	    "3rd Person Invert:"
+LANG_CZECH	  "Obratit pohled ve treti osobe:"
+
+REFERENCE	    TRUEINVERTSABER_DESC
+LANG_ENGLISH	    "Determines how the current third/first person setting affects sabers, melee and guns."
+LANG_CZECH	  "Urcuje, jak aktualni nastaveni treti/prvni osoby ovlivnuje svetelne mece, zbrane na blizko a blastery."
+
+REFERENCE	    TRUEINVERTSABERSAME
+LANG_ENGLISH	    "All Same"
+LANG_CZECH	  "Vse stejne"
+
+REFERENCE	    TRUEINVERTSABERINVERT 
+LANG_ENGLISH	    "Saber/Melee Inverted"
+LANG_CZECH	  "Mec/zbrane na blizko obracene"
+
+REFERENCE	    TRUEINVERTSABERALWAYSTHIRDPERSON
+LANG_ENGLISH	    "Sabers/Melee Always 3rd Person"
+LANG_CZECH	  "Mec/zbrane na blizko vzdy ve treti osobe"
+
+REFERENCE           DEATH_FX
+LANG_ENGLISH        "Death FX:"
+LANG_CZECH	  "Efekt smrti:"
+
+REFERENCE           DEATH_FX_DESC
+LANG_ENGLISH        "Enables effect to play on death."
+LANG_CZECH	  "Povoli prehrat efekt pri smrti."
+
+REFERENCE           FRIENDLY_FIRE
+LANG_ENGLISH        "Friendly Fire:"
+LANG_CZECH	  "Pratelska palba:"
+
+REFERENCE           FRIENDLY_FIRE_DESC
+LANG_ENGLISH        "Allows teammates to take damage."
+LANG_CZECH	  "Umozni spoluhracum byt zraneni."
+
+REFERENCE           PRIVATE_DUELS
+LANG_ENGLISH        "Private Duels:"
+LANG_CZECH	  "Osobni souboje:"
+
+REFERENCE           PRIVATE_DUELS_DESC
+LANG_ENGLISH        "Enables private duels."
+LANG_CZECH	  "Povoli osobni souboje s mecem."
+
+REFERENCE           MULTIPLE
+LANG_ENGLISH        "Multiple"
+LANG_CZECH	  "Vicenasobne"
+
+REFERENCE           BOT_DUELS
+LANG_ENGLISH        "Bot Duels:"
+LANG_CZECH	  "Souboje botu:"
+
+REFERENCE           BOT_DUELS_DESC
+LANG_ENGLISH        "Allows bots to accept duels."
+LANG_CZECH	  "Povoli botum prijimat osobni souboje s mecem."
+
+REFERENCE           DRAW_NAMES
+LANG_ENGLISH        "Draw Enemy Names:"
+LANG_CZECH	  "Vykreslit jmena nepratel:"
+
+REFERENCE           DRAW_NAMES_DESC
+LANG_ENGLISH        "Sets whether player's/bot's names will appear when highlighted in the crosshair."
+LANG_CZECH	  "Nastavi, zda se pri zobrazeni v zamerovaci vykresli jmena hracu nebo botu."
+
+REFERENCE           GRAPPLING_HOOK
+LANG_ENGLISH        "Grappling Hook:"
+LANG_CZECH	  "Zachytny hak:"
+
+REFERENCE           GRAPPLING_HOOK_DESC
+LANG_ENGLISH        "Fire Grappling Hook."
+LANG_CZECH	  "Vystreli zachytny hak."
+
+REFERENCE           DASH
+LANG_ENGLISH        "Dash:"
+LANG_CZECH	  "Zrychleni:"
+
+REFERENCE           DASH_DESC
+LANG_ENGLISH        "Perform a speed Dash manover."
+LANG_CZECH	  "Predvete zrychlovaci manevr."
+
+REFERENCE           RECORD_DEMO
+LANG_ENGLISH        "Record Demo:"
+LANG_CZECH	  "Zacit nahravat:"
+
+REFERENCE           RECORD_DEMO_DESC
+LANG_ENGLISH        "Start a new demo recording."
+LANG_CZECH	  "Zacne nahravat nove demo."
+
+REFERENCE           STOP_RECORDING
+LANG_ENGLISH        "Stop Recording:"
+LANG_CZECH	  "Zastavit nahravani:"
+
+REFERENCE           STOP_RECORDING_DESC
+LANG_ENGLISH        "Stop recording demo."
+LANG_CZECH	  "Zastavi nahravani dema."
+
+ENDMARKER
+
+
+

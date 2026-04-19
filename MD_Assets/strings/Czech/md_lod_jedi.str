@@ -1,0 +1,228 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           AHSOKA1
+LANG_ENGLISH        "Master?"
+LANG_CZECH       "Mistre?"
+
+REFERENCE           AHSOKA2
+LANG_ENGLISH        "Anakin."
+LANG_CZECH          "Anakine."
+
+REFERENCE           AHSOKA3
+LANG_ENGLISH        "You look the same."
+LANG_CZECH          "Vypadas stejne."
+
+REFERENCE           AHSOKA4
+LANG_ENGLISH        "Well, that happens."
+LANG_CZECH          "To se stava."
+
+REFERENCE           AHSOKA5
+LANG_ENGLISH        "Actually what happened?"
+LANG_CZECH          "Co se vlastne stalo?"
+
+REFERENCE           AHSOKA6
+LANG_ENGLISH        "I don't remember."
+LANG_CZECH          "Nepamatuju si to."
+
+REFERENCE           AHSOKA7
+LANG_ENGLISH        "Baylan Skoll."
+LANG_CZECH          "Baylan Skoll."
+
+REFERENCE           AHSOKA8
+LANG_ENGLISH        "Why?"
+LANG_CZECH          "Proc?"
+
+REFERENCE           AHSOKA9
+LANG_ENGLISH        "Chance?"
+LANG_CZECH          "Sanci?"
+
+REFERENCE           AHSOKA10
+LANG_ENGLISH        "Tell me what's going on."
+LANG_CZECH          "Rekni mi, co se deje."
+
+REFERENCE           AHSOKA11
+LANG_ENGLISH        "It's a little late for that."
+LANG_CZECH          "Na to je trochu pozde."
+
+REFERENCE           AHSOKA12
+LANG_ENGLISH        "All right. What's the lesson, Master?"
+LANG_CZECH          "Dobre. Jaka je lekce, mistre?"
+
+REFERENCE           AHSOKA13
+LANG_ENGLISH        "I won't fight you."
+LANG_CZECH          "Nebudu s tebou bojovat."
+
+REFERENCE           AHSOKA14
+LANG_ENGLISH        "Looks like you don't have that much to offer."
+LANG_CZECH          "Vypada to, ze toho uz moc nenabizis."
+
+REFERENCE           AHSOKA15
+LANG_ENGLISH        "[ Groaning ]"
+LANG_CZECH          "[ Stenani ]"
+
+REFERENCE           AHSOKA16
+LANG_ENGLISH        "I choose to live!"
+LANG_CZECH          "Volim zivot!"
+
+REFERENCE           AHSOKA17
+LANG_ENGLISH        "This was the Siege of Mandalore. We've parted ways by now."
+LANG_CZECH          "Tohle bylo oblehani Mandaloru. V te dobe jsme se uz rozdelili."
+
+REFERENCE           AHSOKA18
+LANG_ENGLISH        "It was."
+LANG_CZECH          "To byla."
+
+REFERENCE           AHSOKA19
+LANG_ENGLISH        "Is that all?"
+LANG_CZECH          "To je vsechno?"
+
+REFERENCE           AHSOKA20
+LANG_ENGLISH        "But my part of that legacy is death and war."
+LANG_CZECH          "Ale moje cast toho odkazu je smrt a valka."
+
+REFERENCE           AHSOKA21
+LANG_ENGLISH        "You are more Anakin.. but more powerful and dangerous than anyone realised."
+LANG_CZECH          "Jsi vic Anakine.. mnohem mocnejsi a nebezpecnejsi, nez si kdo uvedomil."
+
+REFERENCE           AHSOKA22
+LANG_ENGLISH        "If I'm everything you are.."
+LANG_CZECH          "Jestli jsem vsechno, cim jsi ty.."
+
+REFERENCE           AHSOKA23
+LANG_ENGLISH        "Don't say that!"
+LANG_CZECH          "To nerikej!"
+
+REFERENCE           AHSOKA24
+LANG_ENGLISH        "No!"
+LANG_CZECH          "Ne!"
+
+REFERENCE           AHSOKA25
+LANG_ENGLISH        "[ Groaning ]"
+LANG_CZECH          "[ Stenani ]"
+
+REFERENCE           ANAKIN1
+LANG_ENGLISH        "Hello, Snips."
+LANG_CZECH          "Ahoj, Stekno."
+
+REFERENCE           ANAKIN2
+LANG_ENGLISH        "I didn't expect to see you so soon."
+LANG_CZECH          "Necekal jsem, ze te uvidim tak brzy."
+
+REFERENCE           ANAKIN3
+LANG_ENGLISH        "You look old."
+LANG_CZECH          "Vypadas starsi."
+
+REFERENCE           ANAKIN4
+LANG_ENGLISH        "You lost a fight!"
+LANG_CZECH          "Prohrala jsi boj!"
+
+REFERENCE           ANAKIN5
+LANG_ENGLISH        "Trust me.. you lost."
+LANG_CZECH          "Ver mi.. prohralas."
+
+REFERENCE           ANAKIN6
+LANG_ENGLISH        "So you do remember."
+LANG_CZECH          "Takze si prece jen pamatujes."
+
+REFERENCE           ANAKIN7
+LANG_ENGLISH        "That's good."
+LANG_CZECH          "To je dobre."
+
+REFERENCE           ANAKIN8
+LANG_ENGLISH        "It means you still have a chance."
+LANG_CZECH          "Znamena to, ze mas porad sanci."
+
+REFERENCE           ANAKIN9
+LANG_ENGLISH        "To live.."
+LANG_CZECH          "Zit.."
+
+REFERENCE           ANAKIN10
+LANG_ENGLISH        "I'm here to finish your training."
+LANG_CZECH          "Jsem tady, abych dokoncil tvuj vycvik."
+
+REFERENCE           ANAKIN11
+LANG_ENGLISH        "One is never too old to learn, Snips."
+LANG_CZECH          "Nikdy nejsi prilis stara na uceni, Stekno."
+
+REFERENCE           ANAKIN12
+LANG_ENGLISH        "Live.. or die!"
+LANG_CZECH          "Zij.. nebo zemri!"
+
+REFERENCE           ANAKIN13
+LANG_ENGLISH        "I've heard that before."
+LANG_CZECH          "To uz jsem nekdy slysel."
+
+REFERENCE           ANAKIN14
+LANG_ENGLISH        "I haven't thaught you everything yet!"
+LANG_CZECH          "Jeste jsem te vse nenaucil!"
+
+REFERENCE           ANAKIN15
+LANG_ENGLISH        "You lack conviction!"
+LANG_CZECH          "Chybi ti odhodlani!"
+
+REFERENCE           ANAKIN16
+LANG_ENGLISH        "Time to die!"
+LANG_CZECH          "Cas zemrit!"
+
+REFERENCE           ANAKIN17
+LANG_ENGLISH        "There's hope for you yet."
+LANG_CZECH          "Porad je v tobe nadeje."
+
+REFERENCE           ANAKIN18
+LANG_ENGLISH        "I don't know this battle."
+LANG_CZECH          "Tuhle bitvu neznam."
+
+REFERENCE           ANAKIN19
+LANG_ENGLISH        "Looks intense."
+LANG_CZECH          "Vypada intenzivne."
+
+REFERENCE           ANAKIN20
+LANG_ENGLISH        "You did well."
+LANG_CZECH          "Vedla sis dobre."
+
+REFERENCE           ANAKIN21
+LANG_ENGLISH        "You're a warrior now, as I trained you to be."
+LANG_CZECH          "Ted uz jsi valecnice, tak jak jsem te vycvicil."
+
+REFERENCE           ANAKIN22
+LANG_ENGLISH        "Ahsoka, within you will be everything I am. All the knowledge I possess. Just as I inherited knowledge from my master and he from his. You're part of a legacy."
+LANG_CZECH          "Ahsoko, v tobe bude vse, cim jsem ja. Vsechny me znalosti. Stejne jako jsem je zdedil od sveho mistra, a on od sveho. Jsi soucasti odkazu."
+
+REFERENCE           ANAKIN23
+LANG_ENGLISH        "But you're more than that, cause I'm more than that."
+LANG_CZECH          "Ale jsi vic nez to, protoze ja jsem vic nez to."
+
+REFERENCE           ANAKIN24
+LANG_ENGLISH        "Is that what this is about?"
+LANG_CZECH          "O tohle tady jde?"
+
+REFERENCE           ANAKIN25
+LANG_ENGLISH        "You've learned nothing!"
+LANG_CZECH          "Nenaucila ses nic!"
+
+REFERENCE           ANAKIN26
+LANG_ENGLISH        "Back to the beginning."
+LANG_CZECH          "Zpatky na zacatek."
+
+REFERENCE           ANAKIN27
+LANG_ENGLISH        "I gave you a choice.. Live.. or die!"
+LANG_CZECH          "Dal jsem ti volbu.. Zij.. nebo zemri!"
+
+REFERENCE           ANAKIN28
+LANG_ENGLISH        "Incorrect."
+LANG_CZECH          "Nespravne."
+
+ENDMARKER

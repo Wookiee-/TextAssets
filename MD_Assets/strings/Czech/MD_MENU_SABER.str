@@ -1,0 +1,670 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "in game text for saber styles"
+
+
+//----------------------------------------------------------
+// 			SABER MENUS
+//----------------------------------------------------------
+
+//----------------------------------------------------------
+// 	h1: COMMON
+//----------------------------------------------------------
+
+
+REFERENCE           FAST_STYLE
+LANG_ENGLISH        "Fast and efficient, but with limited range. Short, quick motions allow for multiple attacks but with minimum damage. This style can be chained indefinitely. It utilizes a defensive stance in which the Jedi holds their saber across their front in a ready position to fend off attacks or make quick jabs. Represented by a blue bar on the right side of the HUD."
+LANG_CZECH        "Rychly styl\nRychly a efektivni, ale s omezenym dosahem. Kratke, rychle pohyby umoznuji vice utoku, ale s minimalnim poranenim. Tento styl lze menit donekonecna. Vyuziva obranny postoj, ve kterem Jedi drzi svuj mec pred tvari v pohotovostni pozici, aby odrazil utoky nebo provedl rychle vypady. Je predstavovan modrym pruhem na prave strane HUDu."
+
+REFERENCE           MEDIUM_STYLE
+LANG_ENGLISH        "An intermediate style between the fast and the strong styles, the medium style is based on a perfect equilibrium between speed and power. Users of the medium style would typically utilize a neutral stance, the lightsaber being held in medium position in front of the user ready for both defensive and offensive maneuvers. Represented by a yellow bar on the right side of the HUD."
+LANG_CZECH        "Stredni styl\nPrechodny styl mezi rychlym a silovym stylem, stredni styl je zalozen na perfektni rovnovaze mezi rychlosti a silou. Uzivatele stredniho stylu vyuzivaji neutralniho postoje, ve kterem Jedi drzi svuj mec pred tvari ve stredni pozici, ve ktere je pripraven na obranne i utocne manevry. Je predstavovan zlutym pruhem na prave strane HUDu."
+
+REFERENCE           STRONG_STYLE
+LANG_ENGLISH        "Uses powerful strikes to batter through defenses. This style incorporates great range and power, but often leaves the Jedi open for counter attack. It utilizes a powerful, aggressive stance in which the Jedi holds their saber high and back, ready to go into a heavy swing. Represented by a red bar on the right side of the HUD."
+LANG_CZECH        "Silovy styl\nVyuziva silne udery k probiti se skrz obranu. Tento styl zahrnuje velky dosah i silu, ale casto nechava Jediho nechraneneho pred protiutokem. Vyuziva silneho, agresivniho postoje, ve kterem drzi Jedi svuj mec vysoko a naprazeny dozadu, pripraveny prejit do silneho svihu. Je predstavovan cervenym pruhem na prave strane HUDu."
+
+REFERENCE           DUAL_STYLE
+LANG_ENGLISH        "This style incorporates the use of a second Lightsaber, allowing for stronger offensive capability with shared traits of the Fast style, such as faster attacks and indefinite chaining, while negating it's damage and defense drawbacks with the second Blade. Users of the dual style would typically position their lightsabers to their left and right, ready for both defensive and offensive maneuvers. Represented by an orange bar on the right side of the HUD."
+LANG_CZECH        "Dualni styl\nPrechodny styl mezi rychlym a silovym stylem, dualni styl je zalozen na perfektni rovnovaze mezi rychlosti a silou. Uzivatele dualniho stylu vyuzivaji neutralniho postoje, ve kterem Jedi drzi sve mece pred tvari ve stredni pozici, ve ktere je pripraven na obranne i utocne manevry. Je predstavovan oranzovym pruhem na prave strane HUDu."
+
+REFERENCE           STAFF_STYLE
+LANG_ENGLISH        "This style incorporates a Lightsaber with two Blades, allowing for stronger offensive capability with shared traits of the Fast style, such as faster attacks and indefinite chaining, while negating it's damage and defense drawbacks with the second Blade. Users of the staff style would typically utilize a neutral stance, the lightsaber being held in front of the user ready for both defensive and offensive maneuvers. Represented by a green bar on the right side of the HUD."
+LANG_CZECH        "Obourucni styl\nPrechodny styl mezi rychlym a silovym stylem, obourucni styl je zalozen na perfektni rovnovaze mezi rychlosti a silou. Uzivatele obourucniho stylu vyuzivaji neutralniho postoje, ve kterem Jedi drzi svuj mec pred tvari ve stredni pozici, ve ktere je pripraven na obranne i utocne manevry. Je predstavovan olivovym pruhem na prave strane HUDu."
+
+REFERENCE           DESANN_STYLE
+LANG_ENGLISH        "An alteration of the Strong style, this form only utilizes one-hand for fighting, allowing for faster attacks than the Strong style, while sharing it's powerful, defense-shattering strikes & specialized moves. It also shares traits with the Fast style, primarily it's Lunge attack and indefinite chaining. Represented by a purple bar on the right side of the HUD."
+LANG_CZECH        "Desannuv styl\nTento jednorucni styl je kombinaci mezi strednim a silovym stylem. Ve srovnani se silovym style je o trochu rychlejsi. Tento styl lze menit donekonecna. Pouziva utok z vysoku siloveho stylu, prudky vypad rychleho stylu a silne utocne kata. Je predstavovan fialovym pruhem na prave strane HUDu."
+
+REFERENCE           TAVION_STYLE
+LANG_ENGLISH        "An alteration of the Fast style, this form only utilizes one-hand for fighting, allowing for much quicker attacks than the Fast style, while sharing the flip-slash DFA of the Medium style, although lacking the Fast Style's Lunge attack. Represented by a cyan bar on the right side of the HUD."
+LANG_CZECH        "Tavionin styl\nTento jednorucni styl je kombinaci mezi rychlym a strednim stylem. Jeho utoky jsou stejne rychle jako u rychleho stylu. Tento styl lze menit donekonecna. Pouziva utok z vysoku stredniho stylu a rychle utocne kata. Je predstavovan azurovym pruhem na prave strane HUDu."
+
+REFERENCE           LIGHTSABER_CREATION
+LANG_ENGLISH	    "LIGHTSABER CREATION"
+LANG_CZECH       "TVORBA SVETEL. MECE"
+
+REFERENCE           LIGHTSABER_STYLE
+LANG_ENGLISH	    "LIGHTSABER STYLE:"
+LANG_CZECH       "STYL MECE:"
+
+REFERENCE           LIGHTSABER_STYLE_DESC
+LANG_ENGLISH	    "Use Ingame Saber Menu To Give Saber Style"
+LANG_CZECH       "Pouzijte menu mece k ziskani stylu mece"
+
+REFERENCE           EXPAND_DUAL
+LANG_ENGLISH	    "Expand Dual"
+LANG_CZECH       "Rozsirit druhy"
+
+REFERENCE           EXPAND
+LANG_ENGLISH	    "Expand"
+LANG_CZECH       "Rozsirit"
+
+REFERENCE           RED
+LANG_ENGLISH	    "Red:"
+LANG_CZECH       "Cervena:"
+
+REFERENCE           GREEN
+LANG_ENGLISH	    "Green:"
+LANG_CZECH       "Zelena:"
+
+REFERENCE           BLUE
+LANG_ENGLISH	    "Blue:"
+LANG_CZECH       "Modra:"
+
+REFERENCE           SABER_BLADE
+LANG_ENGLISH	    "Saber Blade:"
+LANG_CZECH       "Cepel mece:"
+
+REFERENCE           SABER
+LANG_ENGLISH	    "SABER"
+LANG_CZECH       "MEC"
+
+REFERENCE           HILT
+LANG_ENGLISH	    "HILT"
+LANG_CZECH       "RUKOJET"
+
+REFERENCE           CRYSTAL
+LANG_ENGLISH	    "CRYSTAL"
+LANG_CZECH       "KRYSTAL"
+
+REFERENCE           COLOR
+LANG_ENGLISH	    "COLOR"
+LANG_CZECH       "BARVA"
+
+REFERENCE           SINGLE
+LANG_ENGLISH	    "SINGLE"
+LANG_CZECH       "PRVNI"
+
+REFERENCE           DUAL
+LANG_ENGLISH	    "DUAL"
+LANG_CZECH       "DRUHY"
+
+REFERENCE           FAST_STANCE
+LANG_ENGLISH	    "Fast"
+LANG_CZECH       "Rychly"
+
+REFERENCE           MEDIUM_STANCE
+LANG_ENGLISH	    "Medium"
+LANG_CZECH       "Stredni"
+
+REFERENCE           STRONG_STANCE
+LANG_ENGLISH	    "Strong"
+LANG_CZECH       "Silovy"
+
+REFERENCE           DUAL_STANCE
+LANG_ENGLISH	    "Dual"
+LANG_CZECH       "Dualni"
+
+REFERENCE           STAFF_STANCE
+LANG_ENGLISH	    "Staff"
+LANG_CZECH       "Obourucni"
+
+REFERENCE           DESANN_STANCE
+LANG_ENGLISH	    "Desann"
+LANG_CZECH       "#same"
+
+REFERENCE           TAVION_STANCE
+LANG_ENGLISH	    "Tavion"
+LANG_CZECH       "#same"
+
+REFERENCE           GIVE_FAST_STYLE
+LANG_ENGLISH	    "Give Fast Style"
+LANG_CZECH       "Obdrzite rychly styl"
+
+REFERENCE           GIVE_MEDIUM_STYLE
+LANG_CZECH       "Obdrzite stredni styl"
+
+REFERENCE           GIVE_STRONG_STYLE
+LANG_ENGLISH	    "Give Strong Style"
+LANG_CZECH       "Obdrzite silovy styl"
+
+REFERENCE           GIVE_DUAL_STYLE
+LANG_ENGLISH	    "Give Dual Style"
+LANG_CZECH       "Obdrzite dualni styl"
+
+REFERENCE           GIVE_STAFF_STYLE
+LANG_ENGLISH	    "Give Staff Style"
+LANG_CZECH       "Obdrzite obourucni styl"
+
+REFERENCE           GIVE_DESANN_STYLE
+LANG_ENGLISH	    "Give Desann Style"
+LANG_CZECH       "Obdrzite Desannuv styl"
+
+REFERENCE           GIVE_TAVION_STYLE
+LANG_ENGLISH	    "Give Tavion Style"
+LANG_CZECH       "Obdrzite Tavionin styl"
+
+REFERENCE           SFX_SABERS
+LANG_ENGLISH        "SFX Sabers:"
+LANG_CZECH       "SFX Mece:"
+
+REFERENCE           SFX_SABERS_DESC
+LANG_ENGLISH        "Switch On / Off enhanced lightsaber effects"
+LANG_CZECH       "Zapnout / Vypnout rozsirene efekty svetelneho mece"
+
+REFERENCE           SFX_GLOW
+LANG_ENGLISH        "Glow:"
+LANG_CZECH       "Svit:"
+
+REFERENCE           SFX_GLOW_DESC
+LANG_ENGLISH        "Customize the intensity of lightsaber glow"
+LANG_CZECH       "Prizpusobte si intenzitu svitu svetelneho mece"
+
+REFERENCE           SFX_CORE
+LANG_ENGLISH        "Core:"
+LANG_CZECH       "Jadro:"
+
+REFERENCE           SFX_CORE_DESC
+LANG_ENGLISH        "Customize the size of lightsaber core"
+LANG_CZECH       "Prizpusobte si velikost jadra svetelneho mece"
+
+REFERENCE           CHOOSE_A_NEW_FIGHT_FORM
+LANG_ENGLISH        "CHOOSE A NEW FIGHT FORM"
+LANG_CZECH       "VYBERTE SI NOVY BOJOVY STYL"
+
+REFERENCE           NEW_STYLE
+LANG_ENGLISH        "NEW STYLE:"
+LANG_CZECH       "NOVY STYL:"
+
+REFERENCE           FAST
+LANG_ENGLISH        "FAST"
+LANG_CZECH       "RYCHLY"
+
+REFERENCE           STRONG
+LANG_ENGLISH        "STRONG"
+LANG_CZECH       "SILOVY"
+
+REFERENCE           SINGLE_HILTS
+LANG_ENGLISH        "Single Hilts"
+LANG_CZECH       "Standardni rukojete"
+
+REFERENCE           DUAL_HILTS
+LANG_ENGLISH        "Dual Hilts"
+LANG_CZECH       "Dve rukojete"
+
+REFERENCE           STAFF_HILTS
+LANG_ENGLISH        "Staff Hilts"
+LANG_CZECH       "Obourucni rukojete"
+
+//----------------------------------------------------------
+// 	h2: SABER HILTS
+//----------------------------------------------------------
+
+REFERENCE           AAYLA
+LANG_ENGLISH        "Aayla Secura"
+LANG_CZECH       "#same"
+
+REFERENCE           ADI
+LANG_ENGLISH        "Adi Gallia"
+LANG_CZECH       "#same"
+
+REFERENCE           AHSOKA
+LANG_ENGLISH        "Ahsoka Tano [TCW]"
+LANG_CZECH       "#same"
+
+REFERENCE           AHSOKA_SHORT
+LANG_ENGLISH        "Ahsoka Tano - Shoto [TCW]"
+LANG_CZECH       "#same"
+
+REFERENCE           AHSOKA_REBELS
+LANG_ENGLISH        "Ahsoka Tano [Rebels]"
+LANG_CZECH       "Ahsoka Tano [Povstalci]"
+
+REFERENCE           AHSOKA_REBELS_SHORT
+LANG_ENGLISH        "Ahsoka Tano - Shoto [Rebels]"
+LANG_CZECH       "Ahsoka Tano - Shoto [Povstalci]"
+
+REFERENCE           ANAKIN_EP2
+LANG_ENGLISH        "Anakin Skywalker [Ep. II]"
+LANG_CZECH       "#same"
+
+REFERENCE           ANAKIN_EP3
+LANG_ENGLISH        "Anakin Skywalker [Ep. III]"
+LANG_CZECH       "#same"
+
+REFERENCE           ASHARAD
+LANG_ENGLISH        "A'Sharad Hett"
+LANG_CZECH       "#same"
+
+REFERENCE           ASHARAD_ALT
+LANG_ENGLISH        "A'Sharad Hett [Alternate]"
+LANG_CZECH       "A'Sharad Hett - Alternativni"
+
+REFERENCE           VENTRESS_CW
+LANG_ENGLISH        "Asajj Ventress [CW]"
+LANG_CZECH       "Asajj Ventress [Klonove valky - puvodni]"
+
+REFERENCE           VENTRESS_TCW
+LANG_ENGLISH        "Asajj Ventress [TCW]"
+LANG_CZECH       "Asajj Ventress [Klonove valky]"
+
+REFERENCE           VENTRESS_STAFF
+LANG_ENGLISH        "Asajj Ventress [Staff]"
+LANG_CZECH       "Asajj Ventress [Obourucni]"
+
+REFERENCE           BARRISS
+LANG_ENGLISH        "Barriss Offee"
+LANG_CZECH       "#same"
+
+REFERENCE           BASTILA
+LANG_ENGLISH        "Bastila Shan"
+LANG_CZECH       "#same"
+
+REFERENCE           BAYLAN
+LANG_ENGLISH        "Baylan Skoll"
+LANG_CZECH       "#same"
+
+REFERENCE           BOC
+LANG_ENGLISH        "Boc Aseca"
+LANG_CZECH       "#same"
+
+REFERENCE           CAL_KESTIS
+LANG_ENGLISH        "Cal Kestis"
+LANG_CZECH       "#same"
+
+REFERENCE           COLEMAN
+LANG_ENGLISH        "Coleman Trebor"
+LANG_CZECH       "#same"
+
+REFERENCE           COUNT_DOOKU
+LANG_ENGLISH        "Count Dooku"
+LANG_CZECH       "Hrabe Dooku"
+
+REFERENCE           COUNT_DOOKU_TFU
+LANG_ENGLISH        "Count Dooku - Straight [TFU]"
+LANG_CZECH       "Hrabe Dooku - Rovny [TFU]"
+
+REFERENCE           DARKSABER_TCW
+LANG_ENGLISH        "Darksaber [TCW]"
+LANG_CZECH       "Temny mec [Klonove valky]"
+
+REFERENCE           DARKSABER_REBELS
+LANG_ENGLISH        "Darksaber [Rebels]"
+LANG_CZECH       "Temny mec [Povstalci]"
+
+REFERENCE           DARKSABER_TM
+LANG_ENGLISH        "Darksaber [TM]"
+LANG_CZECH       "Temny mec [TM]"
+
+REFERENCE           D_DESOLOUS
+LANG_ENGLISH        "Darth Desolous [TFU]"
+LANG_CZECH       "#same"
+
+REFERENCE           D_MAUL
+LANG_ENGLISH        "Darth Maul [Damaged]"
+LANG_CZECH       "Darth Maul [Poskozeny]"
+
+REFERENCE           D_MAUL_STAFF
+LANG_ENGLISH        "Darth Maul"
+LANG_CZECH       "#same"
+
+REFERENCE           D_MAUL_TCW
+LANG_ENGLISH        "Darth Maul [TCW]"
+LANG_CZECH       "Darth Maul [Klonove valky]"
+
+REFERENCE           D_MAUL_REBELS
+LANG_ENGLISH        "Maul [Rebels]"
+LANG_CZECH       "Maul [Povstalci]"
+
+REFERENCE           D_PHOBOS
+LANG_ENGLISH        "Darth Phobos [TFU]"
+LANG_CZECH       "#same"
+
+REFERENCE           D_SIDIOUS
+LANG_ENGLISH        "Darth Sidious"
+LANG_CZECH       "#same"
+
+REFERENCE           D_SIDIOUS_ALT
+LANG_ENGLISH        "Darth Sidious - Backup"
+LANG_CZECH       "Darth Sidious [Alternativni]"
+
+REFERENCE           D_VADER_EP3
+LANG_ENGLISH        "Darth Vader [Ep.III]"
+LANG_CZECH       "#same"
+
+REFERENCE           D_VADER_EP4
+LANG_ENGLISH        "Darth Vader [Ep.IV]"
+LANG_CZECH       "#same"
+
+REFERENCE           D_VADER_EP5
+LANG_ENGLISH        "Darth Vader [Ep.V]"
+LANG_CZECH       "#same"
+
+REFERENCE           D_VADER_EP6
+LANG_ENGLISH        "Darth Vader [Ep.VI]"
+LANG_CZECH       "#same"
+
+REFERENCE           DEPA
+LANG_ENGLISH        "Depa Billaba"
+LANG_CZECH       "#same"
+
+REFERENCE           DESANN
+LANG_ENGLISH        "Desann"
+LANG_CZECH       "#same"
+
+REFERENCE           ELECTROSTAFF
+LANG_ENGLISH        "Electrostaff"
+LANG_CZECH       "Elektrotyc"
+
+REFERENCE           EVEN
+LANG_ENGLISH        "Even Piell"
+LANG_CZECH       "#same"
+
+REFERENCE           EZRA
+LANG_ENGLISH        "Ezra Bridger"
+LANG_CZECH       "#same"
+
+REFERENCE           EZRA_S3
+LANG_ENGLISH        "Ezra Bridger [Jedi]"
+LANG_CZECH       "#same"
+
+REFERENCE           GALEN_MAREK
+LANG_ENGLISH        "Galen Marek [TFU2]"
+LANG_CZECH       "#same"
+
+REFERENCE           GALEN_MAREK_ALT
+LANG_ENGLISH        "Galen Marek - Promotional [TFU2]"
+LANG_CZECH       "#same"
+
+REFERENCE           GALEN_MAREK_CJR
+LANG_ENGLISH        "Galen Marek [Jedi]"
+LANG_CZECH       "#same"
+
+REFERENCE           GORC
+LANG_ENGLISH        "Gorc"
+LANG_CZECH       "#same"
+
+REFERENCE           GRANDINQUISITOR
+LANG_ENGLISH        "Grand Inquisitor"
+LANG_CZECH	    "Nejvyssi Inquisitor"
+
+REFERENCE           GRANDINQUISITOR_OWK
+LANG_ENGLISH        "Grand Inquisitor [OWK]"
+LANG_CZECH	    "Nejvyssi Inquisitor [OWK]"
+
+REFERENCE           FIFTHBROTHER
+LANG_ENGLISH        "Fifth Brother"
+LANG_CZECH	    "Paty Bratr"
+
+REFERENCE           SEVENTHSISTER
+LANG_ENGLISH        "Seventh Sister"
+LANG_CZECH	    "Sedma Sestra"
+
+REFERENCE           EIGHTHBROTHER
+LANG_ENGLISH        "Eighth Brother"
+LANG_CZECH	    "Osmy Bratr"
+
+REFERENCE           INQUISITOR_STAFF
+LANG_ENGLISH        "Grand Inquisitor"
+LANG_CZECH	    "Nejvyssi Inquisitor"
+
+REFERENCE           JT_GUARD
+LANG_ENGLISH        "Jedi Temple Guard"
+LANG_CZECH       "Strazce Chramu Jediu"
+
+REFERENCE           JEREC
+LANG_ENGLISH        "Jerec"
+LANG_CZECH       "#same"
+
+REFERENCE           KANAN
+LANG_ENGLISH        "Kanan Jarrus"
+LANG_CZECH       "#same"
+
+REFERENCE           KI_ADI
+LANG_ENGLISH        "Ki-Adi Mundi"
+LANG_CZECH       "#same"
+
+REFERENCE           KIT
+LANG_ENGLISH        "Kit Fisto"
+LANG_CZECH       "#same"
+
+REFERENCE           KYLE
+LANG_ENGLISH        "Kyle Katarn"
+LANG_CZECH       "#same"
+
+REFERENCE           KYLO
+LANG_ENGLISH        "Kylo Ren"
+LANG_CZECH       "#same"
+
+REFERENCE           LEIA_EP9
+LANG_ENGLISH        "Leia Organa"
+LANG_CZECH       "#same"
+
+REFERENCE           LUKE_EP4
+LANG_ENGLISH        "Luke Skywalker [Ep. IV]"
+LANG_CZECH       "#same"
+
+REFERENCE           LUKE_EP5
+LANG_ENGLISH        "Luke Skywalker [Ep. V]"
+LANG_CZECH       "#same"
+
+REFERENCE           LUKE_EP6
+LANG_ENGLISH        "Luke Skywalker [Ep. VI]"
+LANG_CZECH       "#same"
+
+REFERENCE           LUMINARA
+LANG_ENGLISH        "Luminara Unduli"
+LANG_CZECH       "#same"
+
+REFERENCE           MACE_EP1
+LANG_ENGLISH        "Mace Windu [Ep. I]"
+LANG_CZECH       "#same"
+
+REFERENCE           MACE
+LANG_ENGLISH        "Mace Windu [Ep. II-III]"
+LANG_CZECH       "#same"
+
+REFERENCE           MARA
+LANG_ENGLISH        "Mara Jade"
+LANG_CZECH       "#same"
+
+REFERENCE           MARA_MOTS
+LANG_ENGLISH        "Mara Jade [MOTS]"
+LANG_CZECH       "#same"
+
+REFERENCE           MAW
+LANG_ENGLISH        "Maw"
+LANG_CZECH       "#same"
+
+REFERENCE           OBI_EP1
+LANG_ENGLISH        "Obi-Wan Kenobi [Ep. I-II]"
+LANG_CZECH       "#same"
+
+REFERENCE           OBI_EP3
+LANG_ENGLISH        "Obi-Wan Kenobi [Ep. III]"
+LANG_CZECH       "#same"
+
+REFERENCE           OBI_OWK
+LANG_ENGLISH        "Obi-Wan Kenobi [OWK]"
+LANG_CZECH       "#same"
+
+REFERENCE           OBI_EP4
+LANG_ENGLISH        "Obi-Wan Kenobi [Ep. IV]"
+LANG_CZECH       "#same"
+
+REFERENCE           OPPO
+LANG_ENGLISH        "Oppo Rancisis"
+LANG_CZECH       "#same"
+
+REFERENCE           PIC
+LANG_ENGLISH        "Pic"
+LANG_CZECH       "#same"
+
+REFERENCE           PLO
+LANG_ENGLISH        "Plo Koon"
+LANG_CZECH       "#same"
+
+REFERENCE           QUI
+LANG_ENGLISH        "Qui-Gon Jinn"
+LANG_CZECH       "#same"
+
+REFERENCE           QUINLAN
+LANG_ENGLISH        "Quinlan Vos"
+LANG_CZECH       "#same"
+
+REFERENCE           RAHN
+LANG_ENGLISH        "Qu Rahn"
+LANG_CZECH       "#same"
+
+REFERENCE           KOTA
+LANG_ENGLISH        "Rahm Kota"
+LANG_CZECH       "#same"
+
+REFERENCE           REY_EP7
+LANG_ENGLISH        "Rey [Ep.VII]"
+LANG_CZECH       "#same"
+
+REFERENCE           REY_EP8
+LANG_ENGLISH        "Rey [Ep.VIII]"
+LANG_CZECH       "#same"
+
+REFERENCE           REY_EP9
+LANG_ENGLISH        "Rey [Ep.IX]"
+LANG_CZECH       "#same"
+
+REFERENCE           REY2_EP9
+LANG_ENGLISH        "Rey Skywalker [Ep.IX]"
+LANG_CZECH       "#same"
+
+REFERENCE           REY_DARKFOLD_EP9
+LANG_ENGLISH        "Rey Palpatine - Folded [Ep.IX]"
+LANG_CZECH       "Rey Palpatine - Slozeny [Ep.IX]"
+
+REFERENCE           REVAN
+LANG_ENGLISH        "Revan"
+LANG_CZECH       "#same"
+
+REFERENCE           REY_DARKSTAFF_EP9
+LANG_ENGLISH        "Rey Palpatine [Ep.IX]"
+LANG_CZECH       "#same"
+
+REFERENCE           RIG_NEMA
+LANG_ENGLISH        "Rig Nema"
+LANG_CZECH       "#same"
+
+REFERENCE           SAESSEE
+LANG_ENGLISH        "Saessee Tiin"
+LANG_CZECH       "#same"
+
+REFERENCE           SAVAGE
+LANG_ENGLISH        "Savage Opress"
+LANG_CZECH       "#same"
+
+REFERENCE           SARISS
+LANG_ENGLISH        "Sariss"
+LANG_CZECH       "#same"
+
+REFERENCE           SECONDSISTER
+LANG_ENGLISH        "Second Sister"
+LANG_CZECH       "Druha Sestra"
+
+REFERENCE           SHIN
+LANG_ENGLISH        "Shin Hati"
+LANG_CZECH       "#same"
+
+REFERENCE           STALKER
+LANG_ENGLISH        "Sith Stalker"
+LANG_CZECH       "Sithsky stopar"
+
+REFERENCE           STALKER2
+LANG_ENGLISH        "Sith Stalker - Alternate"
+LANG_CZECH       "Sithsky stopar - Alternativni"
+
+REFERENCE           STARKILLER
+LANG_ENGLISH        "Starkiller"
+LANG_CZECH       "#same"
+
+REFERENCE           SHAAK
+LANG_ENGLISH        "Shaak Ti"
+LANG_CZECH       "#same"
+
+REFERENCE           STINGER
+LANG_ENGLISH        "Stinger"
+LANG_CZECH       "Zihadlo"
+
+REFERENCE           TARON
+LANG_ENGLISH        "Taron Malicos"
+LANG_CZECH       "#same"
+
+REFERENCE           TAVION
+LANG_ENGLISH        "Tavion Axmis"
+LANG_CZECH       "#same"
+
+REFERENCE           YARAEL
+LANG_ENGLISH        "Yarael Poof"
+LANG_CZECH       "#same"
+
+REFERENCE           YODA
+LANG_ENGLISH        "Yoda"
+LANG_CZECH       "#same"
+
+REFERENCE           YUN
+LANG_ENGLISH        "Yun"
+LANG_CZECH       "#same"
+
+REFERENCE           MALGUS
+LANG_ENGLISH        "Darth Malgus"
+LANG_CZECH       "#same"
+
+REFERENCE           MALAK
+LANG_ENGLISH        "Darth Malak"
+LANG_CZECH       "#same"
+
+REFERENCE           NIHILUS
+LANG_ENGLISH        "Darth Nihilus"
+LANG_CZECH       "#same"
+
+REFERENCE           BANE
+LANG_ENGLISH        "Darth Bane"
+LANG_CZECH       "#same"
+
+REFERENCE           JOLEE
+LANG_ENGLISH        "Jolee"
+LANG_CZECH       "#same"
+
+REFERENCE           DAGAN
+LANG_ENGLISH        "Dagan Gera"
+LANG_CZECH       "#same"
+
+REFERENCE           DAGAN_STAFF
+LANG_ENGLISH        "Dagan Gera Staff"
+LANG_CZECH       "Dagan Gera [Obourucni]"
+
+ENDMARKER
+
+
+
+
+

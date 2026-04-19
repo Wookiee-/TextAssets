@@ -1,0 +1,104 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           LUKE1
+LANG_ENGLISH        "No!"
+LANG_CZECH        "Ne!"
+
+REFERENCE           LUKE3
+LANG_ENGLISH        "I'll never join you!"
+LANG_CZECH        "Nikdy se k tobe nepridam!"
+
+REFERENCE           LUKE4
+LANG_ENGLISH        "He told me enough!"
+LANG_CZECH        "Rekl mi dost!"
+
+REFERENCE           LUKE5
+LANG_ENGLISH        "He told me you killed him."
+LANG_CZECH        "Rekl mi, ze jsi ho zabil."
+
+REFERENCE           LUKE6
+LANG_ENGLISH        "No. No. That's not true! That's impossible!"
+LANG_CZECH        "Ne. Ne. To neni pravda! To neni mozne!"
+
+REFERENCE           LUKE7
+LANG_ENGLISH        "No! No! No!"
+LANG_CZECH        "Ne! Ne! Ne!"
+
+REFERENCE           VADER1
+LANG_ENGLISH        "The Force is with you, young Skywalker. But you are not a Jedi yet."
+LANG_CZECH        "Sila je s tebou, mlady Skywalkere. Ale jeste nejsi Jedi."
+
+REFERENCE           VADER2
+LANG_ENGLISH        "You have learned much, young one.\nYou'll find I'm full of surprises."
+LANG_CZECH        "Hodne ses toho naucil, mladiku.\nZjistis, ze jsem plny prekvapeni."
+
+REFERENCE           VADER3
+LANG_ENGLISH        "Your destiny lies with me, Skywalker. Obi-Wan knew this to be true."
+LANG_CZECH        "Tvuj osud lezi v mych rukou, Skywalkere. Obi-Wan vedel, ze je to pravda."
+
+REFERENCE           VADER4
+LANG_ENGLISH        "All to easy."
+LANG_CZECH        "Prilis snadne."
+
+REFERENCE           VADER5
+LANG_ENGLISH        "Perhaps you are not as strong as the Emperor thought."
+LANG_CZECH        "Mozna nejsi tak silny, jak Cisar predvidal."
+
+REFERENCE           VADER6
+LANG_ENGLISH        "Impressive... most impressive."
+LANG_CZECH        "Pusobive... velmi pusobive."
+
+REFERENCE           VADER7
+LANG_ENGLISH        "Obi-Wan has taught you well. You have controlled your fear..."
+LANG_CZECH        "Obi-Wan te vycvicil dobre. Ovladl jsi svuj strach..."
+
+REFERENCE           VADER8
+LANG_ENGLISH        "Now release your anger. Only your hatred can destroy me."
+LANG_CZECH        "Ted dej pruchod svemu hnevu. Pouze tva nenavist me muze znicit."
+
+REFERENCE           VADER9
+LANG_ENGLISH        "You are beaten. It is useless to resist. Don't let yourself be destroyed as Obi-Wan did."
+LANG_CZECH        "Jsi porazen. Nema cenu vzdorovat. Nenut me zabit te jako Obi-Wana."
+
+REFERENCE           VADER11
+LANG_ENGLISH        "There is no escape.  Don't make me destroy you."
+LANG_CZECH        "Neni uniku. Nenut me, abych te znicil."
+
+REFERENCE           VADER12
+LANG_ENGLISH        "You do not yet realize your importance. You have only begun to discover your power. Join me and I will complete your training. With our combined strength, we can end this destructive conflict and bring order to the galaxy."
+LANG_CZECH        "Jeste si neuvedomujes svou dulezitost. Teprve zacinas objevovat svou silu. Pridej se ke mne a ja dokoncim tvuj vycvik. Spojenim nasich sil muzeme ukoncit tento nicivy konflikt a nastolit poradek v galaxii."
+
+REFERENCE           VADER13
+LANG_ENGLISH        "If you only knew the power of the  dark side. Obi-Wan never told you what happened to your father?"
+LANG_CZECH        "Kdybys jen vedel, jakou moc ma temna strana. Obi-Wan ti nikdy nerekl, co se stalo s tvym otcem?"
+
+REFERENCE           VADER14
+LANG_ENGLISH        "No. I am your father."
+LANG_CZECH        "Ne. Ja jsem tvuj otec."
+
+REFERENCE           VADER15
+LANG_ENGLISH        "Search your feelings. You know it to be true."
+LANG_CZECH        "Prozkoumej sve pocity. Vis, ze je to pravda."
+
+REFERENCE           VADER16
+LANG_ENGLISH        "Luke.  You can destroy the Emperor. He has foreseen this. It is your destiny. Join me, and together we can rule the galaxy as father and son."
+LANG_CZECH        "Luku. Muzes znicit Cisare. On to predvidal. Je to tvuj osud. Pridej se ke mne a spolecne budeme vladnout galaxii jako otec a syn."
+
+REFERENCE           VADER17
+LANG_ENGLISH        "Come with me. It is the only way."
+LANG_CZECH        "Pojd se mnou. Je to jedina cesta."
+
+ENDMARKER

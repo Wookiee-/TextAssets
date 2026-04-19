@@ -1,0 +1,53 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+ 
+REFERENCE           OBI1_EPILOGUE
+LANG_ENGLISH        "Qui-Gon believed in him."
+LANG_CZECH	   "Qui-Gon v nej veril."
+
+REFERENCE           OBI2_EPILOGUE
+LANG_ENGLISH        "Master Yoda, I gave Qui-Gon my word. I will train Anakin."
+LANG_CZECH	   "Mistre Yodo, dal jsem Qui-Gonovi slovo. Vycvicim Anakina."
+
+REFERENCE           OBI3_EPILOGUE
+LANG_ENGLISH        "Without the approval of the Council if I must."
+LANG_CZECH	   "Kdyz to nepujde jinak, i proti vuli Rady."
+
+REFERENCE           YOD1_EPILOGUE
+LANG_ENGLISH        "Confer on you, the level of Jedi Knight the Council does.\nBut agree with your taking this boy as your Padawan learner, I do not."
+LANG_CZECH	   "Staniz se, titul Rytire Jedi, Rada udeluje ti.\nAle dovolit ti vzit toho chlapce jako ucednika Padawana, ja nemohu."
+
+REFERENCE           YOD2_EPILOGUE
+LANG_ENGLISH        "The Chosen One the boy may be.\nNevertheless, grave danger I fear in his training."
+LANG_CZECH	   "Vyvolenym chlapec byt muze.\nAvsak, nebezpeci z jeho vycviku obavam se."
+
+REFERENCE           YOD3_EPILOGUE
+LANG_ENGLISH        "( Grunting )"
+LANG_CZECH	   "( Nesouhlasne mruceni )"
+
+REFERENCE           YOD4_EPILOGUE
+LANG_ENGLISH        "Qui-Gon's defiance I sense in you, need that you do not."
+LANG_CZECH	   "Qui-Gonovu zpupnost citim v tobe, to zapotrebi neni."
+
+REFERENCE           YOD5_EPILOGUE
+LANG_ENGLISH        "Agree with you the Council does."
+LANG_CZECH	   "Rada rozhodla se vyhovet ti."
+
+REFERENCE           YOD6_EPILOGUE
+LANG_ENGLISH        "Your apprentice, Skywalker will be."
+LANG_CZECH	   "Tvym ucednikem, Skywalker bude."
+
+ENDMARKER

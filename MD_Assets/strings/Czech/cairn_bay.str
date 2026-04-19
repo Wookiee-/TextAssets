@@ -1,0 +1,116 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           15IO2001
+LANG_ENGLISH        "Automated transport one-dash-one-three-eighth on final approach to Cairn installation.  Cortosis removal unit please stand by to board transport ship."
+LANG_CZECH 	   "Automaticky transport jedna-pomlcka-jedna-tri-osm na konecnem priblizeni k zarizeni Cairn. Jednotka odklizeni cortosis prosim, at zustane na palube transportni lodi."
+
+REFERENCE           15SO2001
+LANG_ENGLISH        "Affirmative sir.  Cortosis removal team standing by."
+LANG_CZECH 	   "Rozkaz, pane. Tym odklizeni cortosis zustava."
+
+REFERENCE           15KJO001
+LANG_ENGLISH        "Hmmm.  This may require some stealth."
+LANG_CZECH 	   "Hmmm. To bude vyzadovat utajeni."
+
+REFERENCE           15LUK001
+LANG_ENGLISH        "Kyle!"
+LANG_CZECH 	   "#same" 
+
+REFERENCE           15KJO002
+LANG_ENGLISH        "Skywalker!  What are you doing here?"
+LANG_CZECH 	   "Skywalkere! Co tady delas?"
+
+REFERENCE           15LUK002
+LANG_ENGLISH        "Lando told me where you were going."
+LANG_CZECH 	   "Lando mi rekl, kam jsi sel."
+
+REFERENCE           15KJO003
+LANG_ENGLISH        "Then why aren't you at the Valley of the Jedi?"
+LANG_CZECH 	   "Proc tedy nejsi v Udoli Jediu?"
+
+REFERENCE           15LUK003
+LANG_ENGLISH        "I went to the Valley right after you left Yavin-4, Kyle.  Desann--"
+LANG_CZECH 	   "Dorazil jsem do Udoli hned potom, co jsi opustil Yavin-4, Kyle. Desann--"
+
+REFERENCE           15KJO004
+LANG_ENGLISH        "Followed me, I know.  Does this mean we have a new Emperor on our hands?  "
+LANG_CZECH 	   "Me sledoval, ja vim. Znamena to, ze mame co do cineni s novym Cisarem?"
+
+REFERENCE           15LUK004
+LANG_ENGLISH        "It may be worse than that.  Remember those experiments on Kejim, with the Artusian crystals?   With the Valley of the Jedi's power coursing through those crystals, Desann has succeeded in infusing his troops with the power of the Force!"
+LANG_CZECH 	   "Muze to byt jeste horsi. Pamatujes na ty experimenty na Kejimu s Artusianskymi krystaly?"
+
+REFERENCE           15KJO005
+LANG_ENGLISH        "Aw, sithspit... I think I ran into one of them on Bespin.  Are they still in the Valley?"
+LANG_CZECH 	   "Aa, do Sithu... Myslim, ze jsem na jeden narazil na Bespinu. Jsou stale v Udoli?"
+
+REFERENCE           15LUK005
+LANG_ENGLISH        "Not anymore.  I managed to scatter Desann and his Reborn troops, and Rogue Squadron chased away their ships.  For now the Valley's effectively sealed off, but we have no idea how many troops Desann managed to empower before we got there.  It could be dozens...but it could be thousands."
+LANG_CZECH 	   "Uz ne. Podarilo se mi rozehnat Desanna a jeho Znovuzrozenecke vojaky a letka Rogue Squadron pronasledovala jejich lode. Prozatim je Udoli perfektne uzavrene, ale nemame tuseni, kolik vojaku se podarilo Desanni naplnit silou, nez jsme se tam dostali. Mohou jich byt desitky...ale take tisice."
+
+REFERENCE           15KJO007
+LANG_ENGLISH        "And all of them will have Force powers...?"
+LANG_CZECH 	   "A vsichni maji schopnosti Sily...?"
+
+REFERENCE           15LUK006
+LANG_ENGLISH        "Yes, but we've got an advantage due to our training and...discipline."
+LANG_CZECH 	   "Ano, ale mame vyhodu diky nasemu treningu a...discipline."
+
+REFERENCE           15KJO008
+LANG_ENGLISH        "And what?"
+LANG_CZECH 	   "Takze?"
+
+REFERENCE           15LUK007
+LANG_ENGLISH        "Look out!"
+LANG_CZECH 	   "Pozor!"
+
+REFERENCE           15LUK008
+LANG_ENGLISH        "Something's changed in you.  You seem less...angry."
+LANG_CZECH 	   "Neco se v tobe zmenilo. Jsi mene...rozhnevany."
+
+REFERENCE           15KJO009
+LANG_ENGLISH        "Maybe.  There's a chance Jan may still be alive on the Doomgiver."
+LANG_CZECH 	   "Mozna. Je tu sance, ze Jan muze byt stale nazivu na Doomgiveru."
+
+REFERENCE           15LUK009
+LANG_ENGLISH        "Sometimes even a small hope is enough to defeat the Dark Side, Kyle."
+LANG_CZECH 	   "Nekdy dokonce i mala nadeje staci k porazeni Temne strany, Kyle."
+
+REFERENCE           15KJO010
+LANG_ENGLISH        "Listen, Skywalker, there's even more to this than you think.  Desann's working with a Remnant scientist named Galak Fyyar.  They're smuggling something called "Cortosis" here from Bespin."
+LANG_CZECH 	   "Poslys, Skywalkere, je toho jeste vice nez tusis. Desann spolupracuje s vedcem zbytku Imperia jmenem Galak Fyyar. Pasuji neco, co se nazyva "Cortosis", sem z Bespinu."
+
+REFERENCE           15LUK010
+LANG_ENGLISH        "Damn.  That's not good."
+LANG_CZECH 	   "Sakra. To neni dobre."
+
+REFERENCE           15KJO011
+LANG_ENGLISH        "Why?"
+LANG_CZECH 	   "Proc?"
+
+REFERENCE           15LUK011
+LANG_ENGLISH        "Well, Cortosis is a rare mineral that resists lightsabers."
+LANG_CZECH 	   "No, Cortosis je vzacny nerost, ktery odolava svetelnym mecum."
+
+REFERENCE           15KJO012
+LANG_ENGLISH        "Great."
+LANG_CZECH 	   "Vyborne."
+
+REFERENCE           15LUK012
+LANG_ENGLISH        "I'll try and find out what they're doing with the Cortosis; you find the Doomgiver.  If you run into Desann, don't try to take him on alone; now that he's been through the Valley of the Jedi, he'll be more powerful than ever."
+LANG_CZECH 	   "Pokusim se zjistit, co s cortosis delaji; ty najdi Doomgiver. Pokud narazis na Desanna, nepokousej se ho porazit sam; ted kdyz prosel Udolim Jediu bude mocnejsi, nez kdy predtim."
+
+REFERENCE           15KJO013
+LANG_ENGLISH        "Don't worry; I'm not totally crazy."
+LANG_CZECH 	   "Neboj se; nejsem uplny blazen."
+
+REFERENCE           15LUK013
+LANG_ENGLISH        "May the Force be With You, Kyle."
+LANG_CZECH 	   "At te provazi Sila, Kyle."
+
+REFERENCE           15KJO014
+LANG_ENGLISH        "Yeah, you too, Luke"
+LANG_CZECH 	   "Jo, tebe taky Luku."
+
+ENDMARKER

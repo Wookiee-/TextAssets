@@ -1,0 +1,2310 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           ""
+
+//----------------------------------------------------------
+// 		CHARACTERS/NPCS MENUS
+//----------------------------------------------------------
+
+//----------------------------------------------------------
+// 	PREQUELS 1
+//----------------------------------------------------------
+
+REFERENCE           YODA
+LANG_ENGLISH        "Master Yoda"
+LANG_CZECH        "Mistr Yoda"
+
+REFERENCE           YODA_EP2
+LANG_ENGLISH        "Yoda [Episode I-II]"
+LANG_CZECH        "Yoda [Epizoda I-II]"
+
+REFERENCE           YODA_EP3
+LANG_ENGLISH        "Yoda [Episode III]"
+LANG_CZECH        "Yoda [Epizoda III]"
+
+REFERENCE           YODA_HR
+LANG_ENGLISH        "Yoda [High Republic]"
+LANG_CZECH        "Yoda [Vrcholna Republika]"
+
+REFERENCE           YODA_CW
+LANG_ENGLISH        "Yoda [Clone Wars]"
+LANG_CZECH        "Yoda [Klonove Valky]"
+
+REFERENCE           YODA_GHOST
+LANG_ENGLISH        "Yoda [Force Ghost]"
+LANG_CZECH        "Yoda [Duch Sily]"
+
+REFERENCE           MACE
+LANG_ENGLISH        "Mace Windu"
+LANG_CZECH        "#same"
+
+REFERENCE           MACE_ROBE
+LANG_ENGLISH        "Mace Windu [Robed]"
+LANG_CZECH        "Mace Windu [Roucho]"
+
+REFERENCE           MACE_HOOD
+LANG_ENGLISH        "Mace Windu [Hooded]"
+LANG_CZECH        "Mace Windu [Roucho s kapuci]"
+
+REFERENCE           MACE_GHOST
+LANG_ENGLISH        "Mace Windu [Force Ghost]"
+LANG_CZECH        "Mace Windu [Duch Sily]"
+
+REFERENCE           OBI
+LANG_ENGLISH        "Obi-Wan Kenobi"
+LANG_CZECH        "#same"
+
+REFERENCE           OBI_EP1
+LANG_ENGLISH        "Obi-Wan [Episode I]"
+LANG_CZECH        "Obi-Wan [Epizoda I]"
+
+REFERENCE           OBI_EP1_ROBE
+LANG_ENGLISH        "Obi-Wan [Episode I - Robed]"
+LANG_CZECH        "Obi-Wan [Epizoda I - Roucho]"
+
+REFERENCE           OBI_EP1_HOOD
+LANG_ENGLISH        "Obi-Wan [Episode I - Hooded]"
+LANG_CZECH        "Obi-Wan [Epizoda I - Roucho s kapuci]"
+
+REFERENCE           OBI_EP2
+LANG_ENGLISH        "Obi-Wan [Episode II]"
+LANG_CZECH        "Obi-Wan [Epizoda II]"
+
+REFERENCE           OBI_EP2_ROBE
+LANG_ENGLISH        "Obi-Wan [Episode II - Robed]"
+LANG_CZECH        "Obi-Wan [Epizoda II - Roucho]"
+
+REFERENCE           OBI_EP2_HOOD
+LANG_ENGLISH        "Obi-Wan [Episode II - Hooded]"
+LANG_CZECH        "Obi-Wan [Epizoda II - Roucho s kapuci]"
+
+REFERENCE           OBI_EP3
+LANG_ENGLISH        "Obi-Wan [Episode III]"
+LANG_CZECH        "Obi-Wan [Epizoda III]"
+
+REFERENCE           OBI_EP3_ROBE
+LANG_ENGLISH        "Obi-Wan [Episode III - Robed]"
+LANG_CZECH        "Obi-Wan [Epizoda III - Roucho]"
+
+REFERENCE           OBI_EP3_HOOD
+LANG_ENGLISH        "Obi-Wan [Episode III - Hooded]"
+LANG_CZECH        "Obi-Wan [Epizoda III - Roucho s kapuci]"
+
+REFERENCE           OBI_EP3_MUS
+LANG_ENGLISH        "Obi-Wan [Episode III - Mustafar Worn]"
+LANG_CZECH        "Obi-Wan [Epizoda III - Mustafar]"
+
+REFERENCE           ANAKIN
+LANG_ENGLISH        "Anakin Skywalker"
+LANG_CZECH        "#same"
+
+REFERENCE           ANAKIN_EP2
+LANG_ENGLISH        "Anakin [Episode II]"
+LANG_CZECH        "Anakin [Epizoda II]"
+
+REFERENCE           ANAKIN_EP2_ROBE
+LANG_ENGLISH        "Anakin [Episode II - Robed]"
+LANG_CZECH        "Anakin [Epizoda II - Roucho]"
+
+REFERENCE           ANAKIN_EP2_DUAL
+LANG_ENGLISH        "Anakin [Episode II - Dual Lightsabers]"
+LANG_CZECH        "Anakin [Epizoda II - Dva mece]"
+
+REFERENCE           ANAKIN_EP3
+LANG_ENGLISH        "Anakin [Episode III]"
+LANG_CZECH        "Anakin [Epizoda III]"
+
+REFERENCE           ANAKIN_EP3_ROBE
+LANG_ENGLISH        "Anakin [Episode III - Robed]"
+LANG_CZECH        "Anakin [Epizoda III - Roucho]"
+
+REFERENCE           ANAKIN_EP3_HOOD
+LANG_ENGLISH        "Anakin [Episode III - Hooded]"
+LANG_CZECH        "Anakin [Epizoda III - Roucho s kapuci]"
+
+REFERENCE           QUI
+LANG_ENGLISH        "Qui-Gon Jinn"
+LANG_CZECH        "#same"
+
+REFERENCE           QUI_ROBE
+LANG_ENGLISH        "Qui-Gon [Robed]"
+LANG_CZECH        "Qui-Gon [Roucho]"
+
+REFERENCE           QUI_PONCHO
+LANG_ENGLISH        "Qui-Gon [Poncho]"
+LANG_CZECH        "Qui-Gon [Ponco]"
+
+REFERENCE           QUI_GHOST
+LANG_ENGLISH        "Qui-Gon [Force Ghost]"
+LANG_CZECH        "Qui-Gon [Duch Sily]"
+
+REFERENCE           KIT
+LANG_ENGLISH        "Kit Fisto"
+LANG_CZECH        "#same"
+
+REFERENCE           KIT_ROBE
+LANG_ENGLISH        "Kit Fisto [Robed]"
+LANG_CZECH        "Kit Fisto [Roucho]"
+
+REFERENCE           CIN
+LANG_ENGLISH        "Cin Drallig"
+LANG_CZECH        "#same"
+
+REFERENCE           CIN_LEGENDS
+LANG_ENGLISH        "Cin Drallig [Legends]"
+LANG_CZECH        "Cin Drallig [Legendy]"
+
+REFERENCE           SAESEE
+LANG_ENGLISH        "Saesee Tiin"
+LANG_CZECH        "#same"
+
+REFERENCE           SAESEE_ROBE
+LANG_ENGLISH        "Saesee Tiin [Robed]"
+LANG_CZECH        "Saesee Tiin [Roucho]"
+
+REFERENCE           KI
+LANG_ENGLISH        "Ki-Adi Mundi"
+LANG_CZECH        "#same"
+
+REFERENCE           DEPA
+LANG_ENGLISH        "Depa Billaba"
+LANG_CZECH        "#same"
+
+REFERENCE           AAYLA
+LANG_ENGLISH        "Aayla Secura"
+LANG_CZECH        "#same"
+
+REFERENCE           LUMINARA
+LANG_ENGLISH        "Luminara Unduli"
+LANG_CZECH        "#same"
+
+REFERENCE           PLO
+LANG_ENGLISH        "Plo Koon"
+LANG_CZECH        "#same"
+
+REFERENCE           PLO_JPB
+LANG_ENGLISH        "Plo Koon [Jedi Power Battles]"
+LANG_CZECH        "#same"
+
+REFERENCE           SHAAK
+LANG_ENGLISH        "Shaak Ti"
+LANG_CZECH        "#same"
+
+REFERENCE           ADI
+LANG_ENGLISH        "Adi Gallia"
+LANG_CZECH        "#same"
+
+REFERENCE           YARAEL
+LANG_ENGLISH        "Yarael Poof"
+LANG_CZECH        "#same"
+
+REFERENCE           YADDLE
+LANG_ENGLISH        "Yaddle"
+LANG_CZECH        "#same"
+
+REFERENCE           COLEMAN
+LANG_ENGLISH        "Coleman Trebor"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	PREQUELS 2
+//----------------------------------------------------------
+
+REFERENCE           JOCASTA
+LANG_ENGLISH        "Jocasta Nu"
+LANG_CZECH        "#same"
+
+REFERENCE           BULTAR
+LANG_ENGLISH        "Bultar Swan"
+LANG_CZECH        "#same"
+
+REFERENCE           BULTAR_ROBE
+LANG_ENGLISH        "Bultar Swan [Robed]"
+LANG_CZECH        "Bultar Swan [Roucho]"
+
+REFERENCE           AGEN
+LANG_ENGLISH        "Agen Kolar"
+LANG_CZECH        "#same"
+
+REFERENCE           AGEN_ROBE
+LANG_ENGLISH        "Agen Kolar [Robed]"
+LANG_CZECH        "Agen Kolar [Roucho]"
+
+REFERENCE           BARRISS
+LANG_ENGLISH        "Barriss Offee"
+LANG_CZECH        "#same"
+
+REFERENCE           BARRISS_ROBE
+LANG_ENGLISH        "Barriss Offee [Robed]"
+LANG_CZECH        "Barriss Offee [Roucho]"
+
+REFERENCE           PABLO
+LANG_ENGLISH        "Pablo Jill"
+LANG_CZECH        "#same"
+
+REFERENCE           SORA
+LANG_ENGLISH        "Sora Bulq"
+LANG_CZECH        "#same"
+
+REFERENCE           SERRA
+LANG_ENGLISH        "Serra Keto"
+LANG_CZECH        "#same"
+
+REFERENCE           STASS_ALLIE
+LANG_ENGLISH        "Stass Allie"
+LANG_CZECH        "#same"
+
+REFERENCE           STASS_ALLIE_ROBE
+LANG_ENGLISH        "Stass Allie [Robed]"
+LANG_CZECH        "Stass Allie [Roucho]"
+
+REFERENCE           TARADOS
+LANG_ENGLISH        "Tarados Gon"
+LANG_CZECH        "#same"
+
+REFERENCE           JEDI_PREQ
+LANG_ENGLISH        "Jedi Order [Prequel Era]"
+LANG_CZECH        "Rad Jediu [Era Prequelu]"
+
+REFERENCE           MAKIS
+LANG_ENGLISH        "Ma'kis'shaalas"
+LANG_CZECH        "#same"
+
+REFERENCE           MAKIS_ROBE
+LANG_ENGLISH        "Ma'kis'shaalas [Robed]"
+LANG_CZECH        "Ma'kis'shaalas [Roucho]"
+
+REFERENCE           SARISSA_JENG
+LANG_ENGLISH        "Sarissa Jeng"
+LANG_CZECH        "#same"
+
+REFERENCE           KOFFI_ARANA
+LANG_ENGLISH        "Koffi Arana"
+LANG_CZECH        "#same"
+
+REFERENCE           JOOPI_SHE
+LANG_ENGLISH        "J'oopi She"
+LANG_CZECH        "#same"
+
+REFERENCE           MICAH_GIIETT
+LANG_ENGLISH        "Micah Giiett"
+LANG_CZECH        "#same"
+
+REFERENCE           TSUI_CHOI
+LANG_ENGLISH        "Tsui Choi"
+LANG_CZECH        "#same"
+
+REFERENCE           REDATH_GOM
+LANG_ENGLISH        "Que-Mars Redath-Gom"
+LANG_CZECH        "#same"
+
+REFERENCE           ZETT_JUKASSA
+LANG_ENGLISH        "Zett Jukassa"
+LANG_CZECH        "#same"
+
+REFERENCE           SIRCH
+LANG_ENGLISH        "Fi-Ek Sirch"
+LANG_CZECH        "#same"
+
+REFERENCE           KELLERAN
+LANG_ENGLISH        "Kelleran Beq"
+LANG_CZECH        "#same"
+
+REFERENCE           KELLERAN_DUAL
+LANG_ENGLISH        "Kelleran Beq [Dual Lightsabers]"
+LANG_CZECH        "Kelleran Beq [Dva Mece]"
+
+REFERENCE           JEDI
+LANG_ENGLISH        "Jedi [Episodes I-III]"
+LANG_CZECH        "Jedi [Epizody I-III]"
+
+REFERENCE           JEDI_PADAWAN
+LANG_ENGLISH        "Jedi Padawan"
+LANG_CZECH        "Padawan"
+
+REFERENCE           JEDI_KNIGHT
+LANG_ENGLISH        "Jedi Knight"
+LANG_CZECH        "Rytir Jedi"
+
+REFERENCE           JEDI_KNIGHT_DUAL
+LANG_ENGLISH        "Jedi Knight [Dual Lightsabers]"
+LANG_CZECH        "Rytir Jedi [Dva mece]"
+
+REFERENCE           JEDI_VETERAN
+LANG_ENGLISH        "Jedi Veteran"
+LANG_CZECH        "Veteran Jedi"
+
+REFERENCE           JEDI_MASTER
+LANG_ENGLISH        "Jedi Master"
+LANG_CZECH        "Mistr Jedi"
+
+REFERENCE           JEDI_BRUTE
+LANG_ENGLISH        "Jedi Brute"
+LANG_CZECH        "Jedi Surovec"
+
+REFERENCE           YOUNGLINGS
+LANG_ENGLISH        "Younglings"
+LANG_CZECH        "Mladi zaci"
+
+REFERENCE           YOUNGLING
+LANG_ENGLISH        "Youngling"
+LANG_CZECH        "Mlady zak"
+
+REFERENCE           FOUL
+LANG_ENGLISH        "Foul Moudama"
+LANG_CZECH        "#same"
+
+REFERENCE           PADME
+LANG_ENGLISH        "Padme Amidala"
+LANG_CZECH        "#same"
+
+REFERENCE           PADME_QUEEN
+LANG_ENGLISH        "Queen Amidala"
+LANG_CZECH        "Kralovna Amidala"
+
+REFERENCE           PADME_GEONOSIS
+LANG_ENGLISH        "Padme [Geonosis]"
+LANG_CZECH        "#same"
+
+REFERENCE           PADME_PREGNANT
+LANG_ENGLISH        "Padme [Pregnant]"
+LANG_CZECH        "Padme [Tehotna]"
+
+REFERENCE           JARJAR
+LANG_ENGLISH        "Jar Jar Binks"
+LANG_CZECH        "#same"
+
+REFERENCE           GUNGAN
+LANG_ENGLISH        "Gungan Warrior"
+LANG_CZECH        "Gungansky Valecnik"
+
+REFERENCE           CLONE_COMMANDERS
+LANG_ENGLISH        "Clone Commanders"
+LANG_CZECH        "Klonovi Velitele"
+
+REFERENCE           CODY
+LANG_ENGLISH        "Commander Cody"
+LANG_CZECH        "Velitel Cody"
+
+REFERENCE           REX
+LANG_ENGLISH        "Captain Rex"
+LANG_CZECH        "Kapitan Rex"
+
+REFERENCE           FOX
+LANG_ENGLISH        "Commander Fox"
+LANG_CZECH        "Velitel Fox"
+
+REFERENCE           FIVES
+LANG_ENGLISH        "Fives"
+LANG_CZECH        "#same"
+
+REFERENCE           NEYO
+LANG_ENGLISH        "Commander Neyo"
+LANG_CZECH        "Velitel Neyo"
+
+REFERENCE           VAUGHN
+LANG_ENGLISH        "Commander Vaughn"
+LANG_CZECH        "Velitel Vaughn"
+
+REFERENCE           CLONES
+LANG_ENGLISH        "Clone Troopers"
+LANG_CZECH        "Klonovi Vojaci"
+
+REFERENCE           CLONE_EP2
+LANG_ENGLISH        "Clone Trooper [Phase 1]"
+LANG_CZECH        "Klonovy Vojak [Faze 1]"
+
+REFERENCE           CLONE_212
+LANG_ENGLISH        "Clone Trooper [212th Battalion]"
+LANG_CZECH        "Klonovy Vojak [212. Prapor]"
+
+REFERENCE           CLONE_PARA_212
+LANG_ENGLISH        "Clone Paratrooper [212th Battalion]"
+LANG_CZECH        "Klonovy Vysadkar [212. Prapor]"
+
+REFERENCE           CLONE_13
+LANG_ENGLISH        "Clone Trooper [13th Battalion]"
+LANG_CZECH        "Klonovy Vojak [13. Prapor]"
+
+REFERENCE           CLONE_SNIPER
+LANG_ENGLISH        "Clone Sharpshooter"
+LANG_CZECH        "Klonovy Odstrelovac"
+
+REFERENCE           CLONE_501
+LANG_ENGLISH        "Clone Trooper [501st Legion]"
+LANG_CZECH        "Klonovy Vojak [501. Legie]"
+
+REFERENCE           CLONE_COMMANDER_501
+LANG_ENGLISH        "Clone Commander [501st Legion]"
+LANG_CZECH        "Klonovy Velitel [501. Legie]"
+
+REFERENCE           CLONE_SHOCK
+LANG_ENGLISH        "Clone Shock Trooper"
+LANG_CZECH        "Klonovy Sokovy Vojak"
+
+REFERENCE           DEVISS
+LANG_ENGLISH        "Commander Deviss"
+LANG_CZECH        "Velitel Deviss"
+
+REFERENCE           CLONE_HEAVY
+LANG_ENGLISH        "Clone Heavy Trooper"
+LANG_CZECH        "Klonovy Tezky Vojak"
+
+REFERENCE           CLONE_332
+LANG_ENGLISH        "Clone Trooper [332nd Company]"
+LANG_CZECH        "Klonovy Vojak [332. Kompanie]"
+
+REFERENCE           CLONE_327
+LANG_ENGLISH        "Clone Trooper [327th Star Corps]"
+LANG_CZECH        "Klonovy Vojak [327. Hvezdny Sbor]"
+
+REFERENCE           CLONE_SHADOW
+LANG_ENGLISH        "Clone Shadow Trooper"
+LANG_CZECH        "Klonovy Stinovy Vojak"
+
+REFERENCE           CLONE_MARINE
+LANG_ENGLISH        "Galactic Marine [21st Nova Corps]"
+LANG_CZECH        "Galakticky Marinak [21. Nova Sbor]"
+
+REFERENCE           TI
+LANG_ENGLISH        "Ti'Ori"
+LANG_CZECH        "#same"
+
+REFERENCE           CLONE_CRC
+LANG_ENGLISH        "Clone Republic Commandos"
+LANG_CZECH        "Klonova Republikova Komanda"
+
+REFERENCE           CLONE_RC
+LANG_ENGLISH        "Republic Commando"
+LANG_CZECH        "Republikove Komando"
+
+REFERENCE           CLONE_RC2
+LANG_ENGLISH        "Republic Commando [Night Ops Armor]"
+LANG_CZECH        "Republikove Komando [Brneni Nocnich Operaci]"
+
+REFERENCE           CLONE_BOSS
+LANG_ENGLISH        "Boss"
+LANG_CZECH        "#same"
+
+REFERENCE           CLONE_FIXER
+LANG_ENGLISH        "Fixer"
+LANG_CZECH        "#same"
+
+REFERENCE           CLONE_SCORCH
+LANG_ENGLISH        "Scorch"
+LANG_CZECH        "#same"
+
+REFERENCE           CLONE_SEV
+LANG_ENGLISH        "Sev"
+LANG_CZECH        "#same"
+
+REFERENCE           CLONE_GREGOR
+LANG_ENGLISH        "Gregor"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	h1: PREQUELS 3
+//----------------------------------------------------------
+
+REFERENCE           SIDIOUS
+LANG_ENGLISH        "Darth Sidious"
+LANG_CZECH        "#same"
+
+REFERENCE           SHEEV
+LANG_ENGLISH        "Sheev Palpatine"
+LANG_CZECH        "#same"
+
+REFERENCE           SIDIOUS_EP1
+LANG_ENGLISH        "Darth Sidious [EPI - EPII]"
+LANG_CZECH        "#same"
+
+REFERENCE           SIDIOUS_EP3
+LANG_ENGLISH        "Darth Sidious [Episode III]"
+LANG_CZECH        "Darth Sidious [Epizoda III]"
+
+REFERENCE           SIDIOUS_SENATE
+LANG_ENGLISH        "Darth Sidious [Emperor]"
+LANG_CZECH        "Darth Sidious [Cisar]"
+
+REFERENCE           SIDIOUS_EP3_ROBED
+LANG_ENGLISH        "Darth Sidious [Episode III - Robed]"
+LANG_CZECH        "Darth Sidious [Epizoda III - Roucho]"
+
+REFERENCE           VADER_LORD
+LANG_ENGLISH        "Lord Vader"
+LANG_CZECH        "#same"
+
+REFERENCE           VADER_LORD_MUS
+LANG_ENGLISH        "Lord Vader [Mustafar]"
+LANG_CZECH        "#same"
+
+REFERENCE           DOOKU
+LANG_ENGLISH        "Count Dooku"
+LANG_CZECH        "Hrabe Dooku"
+
+REFERENCE           MAUL
+LANG_ENGLISH        "Darth Maul"
+LANG_CZECH        "#same"
+
+REFERENCE           MAUL_ROBE
+LANG_ENGLISH        "Darth Maul [Robed]"
+LANG_CZECH        "Darth Maul [Roucho]"
+
+REFERENCE           MAUL_HOOD
+LANG_ENGLISH        "Darth Maul [Hooded]"
+LANG_CZECH        "Darth Maul [Roucho s kapuci]"
+
+REFERENCE           MAUL_WARRIOR
+LANG_ENGLISH        "Darth Maul [Warrior]"
+LANG_CZECH        "Darth Maul [Valecnik]"
+
+REFERENCE           GRIEVOUS
+LANG_ENGLISH        "General Grievous"
+LANG_CZECH        "#same"
+
+REFERENCE           GRIEVOUS_ARMS
+LANG_ENGLISH        "General Grievous [Four Arms]"
+LANG_CZECH        "General Grievous [Ctyri Ruce]"
+
+REFERENCE           GRIEVOUS_CAPE
+LANG_ENGLISH        "General Grievous [Robed]"
+LANG_CZECH        "General Grievous [Roucho]"
+
+REFERENCE           MAGNA
+LANG_ENGLISH        "Magnaguard"
+LANG_CZECH        "#same"
+
+REFERENCE           JANGO
+LANG_ENGLISH        "Jango Fett"
+LANG_CZECH        "#same"
+
+REFERENCE           JANGO_GEONOSIS
+LANG_ENGLISH        "Jango Fett [Geonosis]"
+LANG_CZECH        "#same"
+
+REFERENCE           JANGO_DUAL
+LANG_ENGLISH        "Jango Fett [Dual Pistols]"
+LANG_CZECH        "Jango Fett [Dve Pistole]"
+
+REFERENCE           CLONE_ASSASSIN
+LANG_ENGLISH        "Clone Assassin"
+LANG_CZECH        "Klonovy Vrah"
+
+REFERENCE           TUSKENS
+LANG_ENGLISH        "Tusken Raiders"
+LANG_CZECH        "Tuskensti Najezdnici"
+
+REFERENCE           TUSKEN
+LANG_ENGLISH        "Tusken Raider"
+LANG_CZECH        "Tuskensky Najezdnik"
+
+REFERENCE           TUSKEN_SNIPER
+LANG_ENGLISH        "Tusken Sniper"
+LANG_CZECH        "Tuskensky Odstrelovac"
+
+REFERENCE           TUSKEN_CHIEFTAIN
+LANG_ENGLISH        "Tusken Chieftain"
+LANG_CZECH        "Tuskensky Nacelnik"
+
+REFERENCE           NEIMOIDIAN_GUARDS
+LANG_ENGLISH        "Neimoidian Guards"
+LANG_CZECH        "Neimoidianske Straze"
+
+REFERENCE           NEIMOIDIAN_GUARD
+LANG_ENGLISH        "Neimoidian Guard"
+LANG_CZECH        "Neimoidiansky Strazce"
+
+REFERENCE           NEIMOIDIAN_BRUTE
+LANG_ENGLISH        "Neimoidian Brute"
+LANG_CZECH        "Neimoidiansky Surovec"
+
+REFERENCE           NUTE
+LANG_ENGLISH        "Nute Gunray"
+LANG_CZECH        "#same"
+
+REFERENCE           SHU
+LANG_ENGLISH        "Shu Mai"
+LANG_CZECH        "#same"
+
+REFERENCE           WAT
+LANG_ENGLISH        "Wat Tambor"
+LANG_CZECH        "#same"
+
+REFERENCE           BDS
+LANG_ENGLISH        "B1 Battle Droids"
+LANG_CZECH        "B1 Bitevni Droidi"
+
+REFERENCE           BD
+LANG_ENGLISH        "B1 Battle Droid"
+LANG_CZECH        "B1 Bitevni Droid"
+
+REFERENCE           BD_SECURITY
+LANG_ENGLISH        "B1 Battle Droid [Security]"
+LANG_CZECH        "B1 Bitevni Droid [Ochranka]"
+
+REFERENCE           BD_PILOT
+LANG_ENGLISH        "B1 Battle Droid [Pilot]"
+LANG_CZECH        "B1 Bitevni Droid [Pilot]"
+
+REFERENCE           BD_COMMANDER
+LANG_ENGLISH        "B1 Battle Droid [Commander]"
+LANG_CZECH        "B1 Bitevni Droid [Velitel]"
+
+REFERENCE           BD_SNIPER
+LANG_ENGLISH        "B1 Battle Droid [Sniper]"
+LANG_CZECH        "B1 Bitevni Droid [Odstrelovac]"
+
+REFERENCE           BD_GEONOSIS
+LANG_ENGLISH        "B1 Battle Droid [Geonosis]"
+LANG_CZECH        "B1 Bitevni Droid [Geonosis]"
+
+REFERENCE           SBD
+LANG_ENGLISH        "B2 Super Battle Droid"
+LANG_CZECH        "B2 Super Bitevni Droid"
+
+REFERENCE           DEKA
+LANG_ENGLISH        "Droideka"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	CLONE WARS 1
+//----------------------------------------------------------
+
+REFERENCE           OBI_GENERAL
+LANG_ENGLISH        "Obi-Wan Kenobi [TCW - General]"
+LANG_CZECH        "#same"
+
+REFERENCE           OBI_CW
+LANG_ENGLISH        "Obi-Wan Kenobi [CW - General]"
+LANG_CZECH        "#same"
+
+REFERENCE           ANAKIN_GENERAL
+LANG_ENGLISH        "Anakin Skywalker [TCW - General]"
+LANG_CZECH        "#same"
+
+REFERENCE           ANAKIN_CW
+LANG_ENGLISH        "Anakin Skywalker [CW - General]"
+LANG_CZECH        "#same"
+
+REFERENCE           ANAKIN_CW_NELVAAN
+LANG_ENGLISH        "Anakin Skywalker [CW - Nelvaan Trials]"
+LANG_CZECH        "Anakin Skywalker [CW - Nelvaanske zkousky]"
+
+REFERENCE           AHSOKA
+LANG_ENGLISH        "Ahsoka Tano"
+LANG_CZECH        "#same"
+
+REFERENCE           AHSOKA_ADVISOR
+LANG_ENGLISH        "Ahsoka Tano [Mandalore]"
+LANG_CZECH        "#same"
+
+REFERENCE           PLO_GENERAL
+LANG_ENGLISH        "Plo Koon [General]"
+LANG_CZECH        "#same"
+
+REFERENCE           MACE_GENERAL
+LANG_ENGLISH        "Mace Windu [TCW - General]"
+LANG_CZECH        "#same"
+
+REFERENCE           MACE_CW
+LANG_ENGLISH        "Mace Windu [CW - General]"
+LANG_CZECH        "#same"
+
+REFERENCE           MACE_TOTJ
+LANG_ENGLISH        "Mace Windu [Tales of the Jedi]"
+LANG_CZECH        "Mace Windu [Pribehy Jediu]"
+
+REFERENCE           KIT_GENERAL
+LANG_ENGLISH        "Kit Fisto [General]"
+LANG_CZECH        "#same"
+
+REFERENCE           KIT_NOSHIRT
+LANG_ENGLISH        "Kit Fisto [Shirtless]"
+LANG_CZECH        "Kit Fisto [Bez trika]"
+
+REFERENCE           ADI_GENERAL
+LANG_ENGLISH        "Adi Gallia [General]"
+LANG_CZECH        "#same"
+
+REFERENCE           EETH_GENERAL
+LANG_ENGLISH        "Eeth Koth [General]"
+LANG_CZECH        "#same"
+
+REFERENCE           EVEN
+LANG_ENGLISH        "Even Piell"
+LANG_CZECH        "#same"
+
+REFERENCE           QUINLAN
+LANG_ENGLISH        "Quinlan Vos"
+LANG_CZECH        "#same"
+
+REFERENCE           CIN_TCW
+LANG_ENGLISH        "Cin Drallig [TCW]"
+LANG_CZECH        "#same"
+
+REFERENCE           PONG
+LANG_ENGLISH        "Pong Krell"
+LANG_CZECH        "#same"
+
+REFERENCE           TIPLEE
+LANG_ENGLISH        "Tiplee"
+LANG_CZECH        "#same"
+
+REFERENCE           TIPLAR
+LANG_ENGLISH        "Tiplar"
+LANG_CZECH        "#same"
+
+REFERENCE           JT_GUARDS
+LANG_ENGLISH        "Jedi Temple Guards"
+LANG_CZECH        "Strazci Chramu Jediu"
+
+REFERENCE           JT_GUARD
+LANG_ENGLISH        "Jedi Temple Guard"
+LANG_CZECH        "Strazce Chramu Jediu"
+
+REFERENCE           SHAKKRA
+LANG_ENGLISH        "Shakkra Kien"
+LANG_CZECH        "#same"
+
+REFERENCE           SATINE
+LANG_ENGLISH        "Satine Kryze"
+LANG_CZECH        "#same"
+
+REFERENCE           DEPA_TCW
+LANG_ENGLISH        "Depa Billaba [TCW]"
+LANG_CZECH        "#same"
+
+REFERENCE           DEPA_TCW_ROBE
+LANG_ENGLISH        "Depa Billaba [TCW - Robed]"
+LANG_CZECH        "Depa Billaba [TCW - Roucho]"
+
+REFERENCE           DEPA_TCW_HOOD
+LANG_ENGLISH        "Depa Billaba [TCW - Hooded]"
+LANG_CZECH        "Depa Billaba [TCW - Roucho s kapuci]"
+
+REFERENCE           JEDI_TCW
+LANG_ENGLISH        "Jedi Order [TCW Era]"
+LANG_CZECH        "Rad Jediu [Era Klonovych valek]"
+
+REFERENCE           TERA_SINUBE
+LANG_ENGLISH        "Tera Sinube"
+LANG_CZECH        "#same"
+
+REFERENCE           THONGLA_JUR
+LANG_ENGLISH        "Thongla Jur"
+LANG_CZECH        "#same"
+
+REFERENCE           OPPO_RANCISIS
+LANG_ENGLISH        "Oppo Rancisis"
+LANG_CZECH        "#same"
+
+REFERENCE           HALSEY
+LANG_ENGLISH        "Halsey"
+LANG_CZECH        "#same"
+
+REFERENCE           KNOX
+LANG_ENGLISH        "Knox"
+LANG_CZECH        "#same"
+
+REFERENCE           BOLLA_ROPAL
+LANG_ENGLISH        "Bolla Ropal"
+LANG_CZECH        "#same"
+
+REFERENCE           IMA_GUN_DI
+LANG_ENGLISH        "Ima-Gun Di"
+LANG_CZECH        "#same"
+
+REFERENCE           NAHDAR_VEBB
+LANG_ENGLISH        "Nahdar Vebb"
+LANG_CZECH        "#same"
+
+REFERENCE           NAHDAR_VEBB_ROBE
+LANG_ENGLISH        "Nahdar Vebb [Robed]"
+LANG_CZECH        "Nahdar Vebb [Roucho]"
+
+REFERENCE           EEKAR_OKI
+LANG_ENGLISH        "Eekar Oki"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	CLONE WARS 2
+//----------------------------------------------------------
+
+REFERENCE           SIDIOUS_TCW
+LANG_ENGLISH        "Darth Sidious [TCW]"
+LANG_CZECH        "#same"
+
+REFERENCE           DOOKU_TCW
+LANG_ENGLISH        "Count Dooku [TCW]"
+LANG_CZECH        "Hrabe Dooku [TCW]"
+
+REFERENCE           DOOKU_TCW_ROBE
+LANG_ENGLISH        "Dooku [TCW - Robed]"
+LANG_CZECH        "Dooku [TCW - Roucho]"
+
+REFERENCE           DOOKU_TOTJ
+LANG_ENGLISH        "Dooku [Tales of the Jedi]"
+LANG_CZECH        "Dooku [Pribehy Jediu]"
+
+REFERENCE           MAUL_TCW
+LANG_ENGLISH        "Darth Maul [TCW]"
+LANG_CZECH        "#same"
+
+REFERENCE           MAUL_TCW_LEGS
+LANG_ENGLISH        "Maul [TCW - Reborn]"
+LANG_CZECH        "Maul [TCW - Znovuzrozeny]"
+
+REFERENCE           MAUL_TCW_DARK
+LANG_ENGLISH        "Maul [TCW - Darksaber]"
+LANG_CZECH        "Maul [TCW - Temny mec]"
+
+REFERENCE           MAUL_TCW_STAFF
+LANG_ENGLISH        "Maul [TCW - Staff]"
+LANG_CZECH        "Maul [TCW - Dvojity mec]"
+
+REFERENCE           SAVAGE
+LANG_ENGLISH        "Savage Opress"
+LANG_CZECH        "#same"
+
+REFERENCE           ASAJJ
+LANG_ENGLISH        "Asajj Ventress"
+LANG_CZECH        "#same"
+
+REFERENCE           ASAJJ_STAFF
+LANG_ENGLISH        "Asajj Ventress [Staff]"
+LANG_CZECH        "Asajj Ventress [Dvojity Mec]"
+
+REFERENCE           ASAJJ_NIGHT
+LANG_ENGLISH        "Asajj [Nightsister]"
+LANG_CZECH        "Asajj Ventress [Nocni Sestra]"
+
+REFERENCE           ASAJJ_BH
+LANG_ENGLISH        "Asajj [Bounty Hunter]"
+LANG_CZECH        "Asajj Ventress [Namezdni Lovkyne]"
+
+REFERENCE           ASAJJ_DISGUISE
+LANG_ENGLISH        "Asajj [Disguised]"
+LANG_CZECH        "Asajj Ventress [Prevlek]"
+
+REFERENCE           TALZIN
+LANG_ENGLISH        "Mother Talzin"
+LANG_CZECH        "Matka Talzin"
+
+REFERENCE           MAGNA_TCW
+LANG_ENGLISH        "Magnaguard TCW [Ochranka hrabete Dooku]"
+
+REFERENCE           HONDO
+LANG_ENGLISH        "Hondo Ohnaka"
+LANG_CZECH        "#same"
+
+REFERENCE           CAD
+LANG_ENGLISH        "Cad Bane"
+LANG_CZECH        "#same"
+
+REFERENCE           EMBO
+LANG_ENGLISH        "Embo"
+LANG_CZECH        "#same"
+
+REFERENCE           DURGE
+LANG_ENGLISH        "Durge"
+LANG_CZECH        "#same"
+
+REFERENCE           DURGE_JET
+LANG_ENGLISH        "Durge [Jetpack]"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	ORIGINAL TRILOGY 1
+//----------------------------------------------------------
+
+REFERENCE           BEN
+LANG_ENGLISH        "Ben Kenobi"
+LANG_CZECH        "#same"
+
+REFERENCE           BEN_ROBE
+LANG_ENGLISH        "Ben [Robed]"
+LANG_CZECH        "Ben [Roucho]"
+
+REFERENCE           BEN_HOOD
+LANG_ENGLISH        "Ben [Hooded]"
+LANG_CZECH        "Ben [Roucho s kapuci]"
+
+REFERENCE           OBI_EXILE
+LANG_ENGLISH        "Obi-Wan [Exiled]"
+LANG_CZECH        "Obi-Wan [V Exilu]"
+
+REFERENCE           BEN_GHOST
+LANG_ENGLISH        "Ben [Force Ghost]"
+LANG_CZECH        "Ben [Duch Sily]"
+
+REFERENCE           KENOBI
+LANG_ENGLISH        "Obi-Wan [Jabiim]"
+LANG_CZECH        "#same"
+
+REFERENCE           KENOBI_ROBE
+LANG_ENGLISH        "Obi-Wan [Jabiim - Robed]"
+LANG_CZECH        "Obi-Wan [Jabiim - Roucho]"
+
+REFERENCE           KENOBI_PREANH
+LANG_ENGLISH        "Obi-Wan [Pre-ANH]"
+LANG_CZECH        "#same"
+
+REFERENCE           KENOBI_PREANH_DESERT
+LANG_ENGLISH        "Obi-Wan [Pre-ANH - Desert]"
+LANG_CZECH        "Obi-Wan [Pred-EPIV - V Pousti]"
+
+REFERENCE           LUKE
+LANG_ENGLISH        "Luke Skywalker"
+LANG_CZECH        "#same"
+
+REFERENCE           LUKE_ANH
+LANG_ENGLISH        "Luke Skywalker [A New Hope]"
+LANG_CZECH        "Luke Skywalker [Nova Nadeje]"
+
+REFERENCE           LUKE_FARM
+LANG_ENGLISH        "Luke [Farm Boy]"
+LANG_CZECH        "Luke [Farmarsky Chlapec]"
+
+REFERENCE           LUKE_YAVIN
+LANG_ENGLISH        "Luke [Yavin Ceremony]"
+LANG_CZECH        "Luke [Ceremonial Na Yavinu]"
+
+REFERENCE           LUKE_ESB
+LANG_ENGLISH        "Luke Skywalker [The Empire Strikes Back]"
+LANG_CZECH        "Luke Skywalker [Imperium Vraci Uder]"
+
+REFERENCE           LUKE_HOTH
+LANG_ENGLISH        "Luke [Hoth]"
+LANG_CZECH        "#same"
+
+REFERENCE           LUKE_PILOT
+LANG_ENGLISH        "Luke [Pilot]"
+LANG_CZECH        "#same"
+
+REFERENCE           LUKE_DAGO
+LANG_ENGLISH        "Luke [Dagobah]"
+LANG_CZECH        "#same"
+
+REFERENCE           LUKE_DAGO_BACKPACK
+LANG_ENGLISH        "Luke [Dagobah - Yoda In Backpack]"
+LANG_CZECH        "Luke [Dagobah - Yoda v batohu na zadech]"
+
+REFERENCE           LUKE_BESPIN
+LANG_ENGLISH        "Luke [Bespin]"
+LANG_CZECH        "#same"
+
+REFERENCE           LUKE_ROTJ
+LANG_ENGLISH        "Luke Skywalker [Return of the Jedi]"
+LANG_CZECH        "Luke Skywalker [Navrat Jediho]"
+
+REFERENCE           LUKE_ROTJ_HOOD
+LANG_ENGLISH        "Luke [Jedi - Hooded]"
+LANG_CZECH        "Luke [Jedi - Roucho s kapuci]"
+
+REFERENCE           LUKE_ROTJ_ROBE
+LANG_ENGLISH        "Luke [Jedi - Robed]"
+LANG_CZECH        "Luke [Jedi - Roucho]"
+
+REFERENCE           LUKE_ROTJ_TUNIC
+LANG_ENGLISH        "Luke [Jedi - Tunic]"
+LANG_CZECH        "Luke [Jedi - Tunika]"
+
+REFERENCE           LUKE_ENDOR
+LANG_ENGLISH        "Luke [Endor Camouflage]"
+LANG_CZECH        "Luke [Maskovani na Endoru]"
+
+REFERENCE           LUKE_ENDOR2
+LANG_ENGLISH        "Luke [Endor Camo, Helmetless]"
+LANG_CZECH        "Luke [Maskovani na Endoru, Bez helmy]"
+
+REFERENCE           LUKE_JEDI
+LANG_ENGLISH        "Luke [Jedi Knight]"
+LANG_CZECH        "Luke [Rytir Jedi]"
+
+REFERENCE           LUKE_JEDI_FLAP
+LANG_ENGLISH        "Luke [Jedi - Exposed Flap]"
+LANG_CZECH        "Luke [Jedi - Odkryta klopa]"
+
+REFERENCE           LEIA
+LANG_ENGLISH        "Leia Organa"
+LANG_CZECH        "#same"
+
+REFERENCE           LEIA_PRINCESS
+LANG_ENGLISH        "Princess Leia"
+LANG_CZECH        "Princezna Leia"
+
+REFERENCE           LEIA_HOTH
+LANG_ENGLISH        "Leia [Hoth]"
+LANG_CZECH        "#same"
+
+REFERENCE           LEIA_BESPIN
+LANG_ENGLISH        "Leia [Bespin]"
+LANG_CZECH        "#same"
+
+REFERENCE           LEIA_SLAVE
+LANG_ENGLISH        "Leia [Jabba's Slave]"
+LANG_CZECH        "Leia [Jabbova Otrokyne]"
+
+REFERENCE           LEIA_ENDOR
+LANG_ENGLISH        "Leia [Endor]"
+LANG_CZECH        "#same"
+
+REFERENCE           LEIA_PONCHO
+LANG_ENGLISH        "Leia [Endor - Poncho]"
+LANG_CZECH        "Leia [Endor - Ponco]"
+
+REFERENCE           HAN
+LANG_ENGLISH        "Han Solo"
+LANG_CZECH        "#same"
+
+REFERENCE           HAN_ESB
+LANG_ENGLISH        "Han [Empire Strikes Back]"
+LANG_CZECH        "Han [Imperium Vraci Uder]"
+
+REFERENCE           HAN_ROTJ
+LANG_ENGLISH        "Han [Return of the Jedi]"
+LANG_CZECH        "Han [Navrat Jediho]"
+
+REFERENCE           HAN_YOUNG
+LANG_ENGLISH        "Han [Young]"
+LANG_CZECH        "Han [Mlady]"
+
+REFERENCE           CHEWIE
+LANG_ENGLISH        "Chewbacca"
+LANG_CZECH        "#same"
+
+REFERENCE           CHEWIE_BESPIN
+LANG_ENGLISH        "Chewbacca [Bespin]"
+LANG_CZECH        "#same"
+
+REFERENCE           DROIDS
+LANG_ENGLISH        "Droids"
+LANG_CZECH        "Droidi"
+
+REFERENCE           R2D2
+LANG_ENGLISH        "R2-D2"
+LANG_CZECH        "#same"
+
+REFERENCE           C3PO
+LANG_ENGLISH        "C-3PO"
+LANG_CZECH        "#same"
+
+REFERENCE           GONK
+LANG_ENGLISH        "GNK Droid"
+LANG_CZECH        "#same"
+
+REFERENCE           LANDO
+LANG_ENGLISH        "Lando Calrissian"
+LANG_CZECH        "#same"
+
+REFERENCE           LANDO_BESPIN
+LANG_ENGLISH        "Lando [Bespin Administrator]"
+LANG_CZECH        "Lando [Spravce Bespinu]"
+
+REFERENCE           LANDO_GENERAL
+LANG_ENGLISH        "Lando [Alliance General]"
+LANG_CZECH        "Lando [General Aliance]"
+
+REFERENCE           LANDO_GUARD
+LANG_ENGLISH        "Lando [Jabba's Palace Disguise]"
+LANG_CZECH        "Lando [Prevlek z Jabbova Palace]"
+
+REFERENCE           NIEN
+LANG_ENGLISH        "Nien Nunb"
+LANG_CZECH        "#same"
+
+REFERENCE           BAIL
+LANG_ENGLISH        "Bail Organa"
+LANG_CZECH        "#same"
+
+REFERENCE           MON
+LANG_ENGLISH        "Mon Mothma"
+LANG_CZECH        "#same"
+
+REFERENCE           MON_YOUNG
+LANG_ENGLISH        "Mon Mothma [Young]"
+LANG_CZECH        "Mon Mothma [Mlada]"
+
+REFERENCE           ACKBAR
+LANG_ENGLISH        "Admiral Ackbar"
+LANG_CZECH        "#same"
+
+REFERENCE           REBELS
+LANG_ENGLISH        "Rebel Alliance Personnel"
+LANG_CZECH        "Clenove Povstalecke Aliance"
+
+REFERENCE           REBEL
+LANG_ENGLISH        "Rebel Alliance Trooper"
+LANG_CZECH        "Vojak Povstalecke Aliance"
+
+REFERENCE           MILITIA
+LANG_ENGLISH        "Kota's Militia [Saboteur]"
+LANG_CZECH        "Kotova Milice [Saboter]"
+
+REFERENCE           MILITIA_TROOP
+LANG_ENGLISH        "Kota's Militia [Trooper]"
+LANG_CZECH        "Kotova Milice [Vojak]"
+
+REFERENCE           REBEL_PILOT
+LANG_ENGLISH        "Rebel Alliance Pilot"
+LANG_CZECH        "Pilot Povstalecke Aliance"
+
+REFERENCE           BESPIN_COP
+LANG_ENGLISH        "Bespin Security"
+LANG_CZECH        "Ochranka Bespinu"
+
+REFERENCE           ROGUE_ONE
+LANG_ENGLISH        "Rogue One"
+LANG_CZECH        "#same"
+
+REFERENCE           JYN
+LANG_ENGLISH        "Jyn Erso"
+LANG_CZECH        "#same"
+
+REFERENCE           CASSIAN
+LANG_ENGLISH        "Cassian Andor"
+LANG_CZECH        "#same"
+
+REFERENCE           CASSIAN_PARKA
+LANG_ENGLISH        "Cassian [Parka Jacket]"
+LANG_CZECH        "Cassian [Parka Bunda]"
+
+REFERENCE           CASSIAN_VEST
+LANG_ENGLISH        "Cassian [Protective Vest]"
+LANG_CZECH        "Cassian [Ochranna Vesta]"
+
+REFERENCE           CASSIAN_SCARIF
+LANG_ENGLISH        "Cassian [Scarif]"
+LANG_CZECH        "#same"
+
+REFERENCE           BODHI
+LANG_ENGLISH        "Bodhi Rook"
+LANG_CZECH        "#same"
+
+REFERENCE           CHIRRUT
+LANG_ENGLISH        "Chirrut Imwe"
+LANG_CZECH        "#same"
+
+REFERENCE           BAZE
+LANG_ENGLISH        "Baze Malbus"
+LANG_CZECH        "#same"
+
+REFERENCE           K2SO
+LANG_ENGLISH        "K-2SO"
+LANG_CZECH        "#same"
+
+REFERENCE           CAL
+LANG_ENGLISH        "Cal Kestis"
+LANG_CZECH        "#same"
+
+REFERENCE           CAL_PONCHO
+LANG_ENGLISH        "Cal [Poncho]"
+LANG_CZECH        "Cal [Ponco]"
+
+REFERENCE           CAL_STAFF
+LANG_ENGLISH        "Cal [Staff]"
+LANG_CZECH        "Cal [Dvojity mec]"
+
+REFERENCE           CAL_JEDI
+LANG_ENGLISH        "Cal [Padawan]"
+LANG_CZECH        "#same"
+
+REFERENCE           CAL_SURVIVOR
+LANG_ENGLISH        "Cal [Jedi: Survivor]"
+LANG_CZECH        "#same"
+
+REFERENCE           CAL_INQUISITOR
+LANG_ENGLISH        "Inquisitor Kestis"
+LANG_CZECH        "Inkvizitor Kestis"
+
+REFERENCE           JARO_TAPAL
+LANG_ENGLISH        "Jaro Tapal"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	ORIGINAL TRILOGY 2
+//----------------------------------------------------------
+
+REFERENCE           VADER
+LANG_ENGLISH        "Darth Vader"
+LANG_CZECH        "#same"
+
+REFERENCE           VADER_EP3
+LANG_ENGLISH        "Darth Vader [Episode III]"
+LANG_CZECH        "Darth Vader [Epizoda III]"
+
+REFERENCE           VADER_DAMAGED
+LANG_ENGLISH        "Darth Vader [Battle Damaged]"
+LANG_CZECH        "Darth Vader [Bitevni poskozeni]"
+
+REFERENCE           VADER_EP4
+LANG_ENGLISH        "Darth Vader [Episode IV]"
+LANG_CZECH        "Darth Vader [Epizoda IV]"
+
+REFERENCE           VADER_EP5
+LANG_ENGLISH        "Darth Vader [Episode V-VI]"
+LANG_CZECH        "Darth Vader [Epizoda V-VI]"
+
+REFERENCE           EMPEROR
+LANG_ENGLISH        "Emperor Palpatine"
+LANG_CZECH        "Cisar Palpatine"
+
+REFERENCE           EMPEROR_SABER
+LANG_ENGLISH        "Emperor Palpatine [Lightsaber]"
+LANG_CZECH        "Cisar Palpatine [Svetelny mec]"
+
+REFERENCE           IMP_GUARDS
+LANG_ENGLISH        "Imperial Guards"
+LANG_CZECH        "Imperialni Straze"
+
+REFERENCE           ROYAL_GUARD
+LANG_ENGLISH        "Imperial Royal Guard"
+LANG_CZECH        "Imperialni Kralovsky Strazce"
+
+REFERENCE           SHADOW_GUARD
+LANG_ENGLISH        "Imperial Shadow Guard"
+LANG_CZECH        "Imperialni Stinovy Strazce"
+
+REFERENCE           ROYAL_GUARD_COMBAT
+LANG_ENGLISH        "Royal Combat Guard"
+LANG_CZECH        "Kralovsky Bojovy Strazce"
+
+REFERENCE           TARKIN
+LANG_ENGLISH        "Grand Moff Tarkin"
+LANG_CZECH        "Velky Moff Tarkin"
+
+REFERENCE           BOBA
+LANG_ENGLISH        "Boba Fett"
+LANG_CZECH        "#same"
+
+REFERENCE           BOBA_EP5
+LANG_ENGLISH        "Boba Fett [The Empire Strikes Back]"
+LANG_CZECH        "Boba Fett [Imperium Vraci Uder]"
+
+REFERENCE           BOBA_EP6
+LANG_ENGLISH        "Boba Fett [Return of the Jedi]"
+LANG_CZECH        "Boba Fett [Navrat Jediho]"
+
+REFERENCE           IMPERIALS
+LANG_ENGLISH        "Imperial Army"
+LANG_CZECH        "Imperialni Armada"
+
+REFERENCE           STORMTROOP
+LANG_ENGLISH        "Stormtrooper"
+LANG_CZECH        "#same"
+
+REFERENCE           STORM_OFFICER
+LANG_ENGLISH        "Stormtrooper [Officer]"
+LANG_CZECH        "Stormtrooper [Dustojnik]"
+
+REFERENCE           SCOUTTROOP
+LANG_ENGLISH        "Scout Trooper"
+LANG_CZECH        "Odstrelovac"
+
+REFERENCE           SCOUTTROOP_COMMANDER
+LANG_ENGLISH        "Scout Trooper Commander"
+LANG_CZECH        "Scout Trooper [Velitel]"
+
+REFERENCE           SHOCKTROOP
+LANG_ENGLISH        "Shock Trooper"
+LANG_CZECH        "Sokovy Vojak"
+
+REFERENCE           SHOCK_COMMANDER
+LANG_ENGLISH        "Shock Trooper Commander"
+LANG_CZECH        "Sokovy Vojak [Velitel]"
+
+REFERENCE           STORM_501
+LANG_ENGLISH        "Stormtrooper [Vader's Fist]"
+LANG_CZECH        "Stormtrooper [Vaderova Pest]"
+
+REFERENCE           STORM_501_OFFICER
+LANG_ENGLISH        "Stormtrooper [Officer - Vader's Fist]"
+LANG_CZECH        "Stormtrooper [Dustojnik - Vaderova Pest]"
+
+REFERENCE           SHADOWTROOP
+LANG_ENGLISH        "Shadow Trooper"
+LANG_CZECH        "Stinovy Vojak"
+
+REFERENCE           EVOTROOP
+LANG_ENGLISH        "Imperial EVO Trooper"
+LANG_CZECH        "Imperialni EVO Vojak"
+
+REFERENCE           EVO_SHADOW
+LANG_ENGLISH        "Shadow EVO Trooper"
+LANG_CZECH        "Stinovy EVO Vojak"
+
+REFERENCE           JUMPTROOP
+LANG_ENGLISH        "Imperial Jumptrooper"
+LANG_CZECH        "Imperialni Jumptrooper"
+
+REFERENCE           BOSSK
+LANG_ENGLISH        "Bossk"
+LANG_CZECH        "#same"
+
+REFERENCE           GREEDO
+LANG_ENGLISH        "Greedo"
+LANG_CZECH        "#same"
+
+REFERENCE           JABBA_GUARDS
+LANG_ENGLISH        "Jabba's Henchmen"
+LANG_CZECH        "Jabbovi Prisluhovaci"
+
+REFERENCE           GAMORREAN
+LANG_ENGLISH        "Gamorrean Guard"
+LANG_CZECH        "Gamorreansky Strazce"
+
+REFERENCE           VIZAM
+LANG_ENGLISH        "Vizam"
+LANG_CZECH        "#same"
+
+REFERENCE           WEEQUAY_STAFF
+LANG_ENGLISH        "Weequay [Staff]"
+LANG_CZECH        "Weequay [Tyc]"
+
+REFERENCE           WEEQUAY_AXE
+LANG_ENGLISH        "Weequay [Axe]"
+LANG_CZECH        "Weequay [Sekera]"
+
+REFERENCE           WEEQUAY_GUNNER
+LANG_ENGLISH        "Weequay [Gunner]"
+LANG_CZECH        "Weequay [Pistolnik]"
+
+REFERENCE           KRENNIC
+LANG_ENGLISH        "Director Orson Krennic"
+LANG_CZECH        "Reditel Orson Krennic"
+
+REFERENCE           DEATHTROOP
+LANG_ENGLISH        "Death Trooper"
+LANG_CZECH        "#same"
+
+REFERENCE           DEATH_COMMANDER
+LANG_ENGLISH        "Death Trooper [Commander]"
+LANG_CZECH        "Death Trooper [Velitel]"
+
+REFERENCE           SHORETROOP
+LANG_ENGLISH        "Shoretrooper"
+LANG_CZECH        "#same"
+
+REFERENCE           SHORE_ELITE
+LANG_ENGLISH        "Shoretrooper Elite"
+LANG_CZECH        "Shoretrooper Elitni"
+
+REFERENCE           TANKTROOP
+LANG_ENGLISH        "Tank Trooper"
+LANG_CZECH        "#same"
+
+REFERENCE           SECONDSISTER
+LANG_ENGLISH        "Second Sister"
+LANG_CZECH        "Druha Sestra"
+
+REFERENCE           NINTHSISTER
+LANG_ENGLISH        "Ninth Sister"
+LANG_CZECH        "Devata Sestra"
+
+REFERENCE           REVA
+LANG_ENGLISH        "Reva Sevander"
+LANG_CZECH        "Treti Sestra / Reva Sevander"
+
+REFERENCE           MALICOS
+LANG_ENGLISH        "Taron Malicos"
+LANG_CZECH        "#same"
+
+REFERENCE           PURGETROOP
+LANG_ENGLISH        "Purge Trooper"
+LANG_CZECH        "#same"
+
+REFERENCE           PURGE_COMMANDER
+LANG_ENGLISH        "Purge Trooper [Commander]"
+LANG_CZECH        "Purge Trooper [Velitel]"
+
+REFERENCE           ATST
+LANG_ENGLISH        "All Terrain Scout Transport [AT-ST]"
+LANG_CZECH        "Terenni Pruzkumny Transporter [AT-ST]"
+
+//----------------------------------------------------------
+// 	REBELS
+//----------------------------------------------------------
+
+REFERENCE           KANAN
+LANG_ENGLISH        "Kanan Jarrus"
+LANG_CZECH        "#same"
+
+REFERENCE           KANAN_BLIND
+LANG_ENGLISH        "Kanan Jarrus [Blind]"
+LANG_CZECH        "Kanan Jarrus [Oslepeny]"
+
+REFERENCE           CALEB
+LANG_ENGLISH        "Caleb Dume"
+LANG_CZECH        "#same"
+
+REFERENCE           CALEB_ROBE
+LANG_ENGLISH        "Caleb Dume [Robed]"
+LANG_CZECH        "Caleb Dume [Roucho]"
+
+REFERENCE           CALEB_HOOD
+LANG_ENGLISH        "Caleb Dume [Hooded]"
+LANG_CZECH        "Caleb Dume [Roucho s kapuci]"
+
+REFERENCE           EZRA
+LANG_ENGLISH        "Ezra Bridger"
+LANG_CZECH        "#same"
+
+REFERENCE           EZRA_S1
+LANG_ENGLISH        "Ezra Bridger [Seasons 1-2]"
+LANG_CZECH        "Ezra Bridger [Sezony 1-2]"
+
+REFERENCE           EZRA_S3
+LANG_ENGLISH        "Ezra Bridger [Seasons 3-4]"
+LANG_CZECH        "Ezra Bridger [Sezony 3-4]"
+
+REFERENCE           SABINE
+LANG_ENGLISH        "Sabine Wren"
+LANG_CZECH        "#same"
+
+REFERENCE           HERA
+LANG_ENGLISH        "Hera Syndulla"
+LANG_CZECH        "#same"
+
+REFERENCE           AHSOKA_REBELS
+LANG_ENGLISH        "Ahsoka Tano [Rebels]"
+LANG_CZECH        "Ahsoka Tano [Povstalci]"
+
+REFERENCE           REX_OLD
+LANG_ENGLISH        "Captain Rex [Old]"
+LANG_CZECH        "Kapitan Rex [Stary]"
+
+REFERENCE           REX_ENDOR
+LANG_ENGLISH        "Captain Rex [Endor - Old]"
+LANG_CZECH        "Kapitan Rex [Endor - Stary]"
+
+REFERENCE           THRAWN
+LANG_ENGLISH        "Grand Admiral Thrawn"
+LANG_CZECH        "Velky Admiral Thrawn"
+
+REFERENCE           GRAND_INQUISITOR
+LANG_ENGLISH        "The Grand Inquisitor"
+LANG_CZECH        "Nejvyssi Inkvizitor"
+
+REFERENCE           SEVENTHSISTER
+LANG_ENGLISH        "The Seventh Sister"
+LANG_CZECH        "Sedma Sestra"
+
+REFERENCE           FIFTHBROTHER
+LANG_ENGLISH        "The Fifth Brother"
+LANG_CZECH        "Paty Bratr"
+
+REFERENCE           EIGHTHBROTHER
+LANG_ENGLISH        "The Eighth Brother"
+LANG_CZECH        "Osmy Bratr"
+
+REFERENCE           MAUL_REBELS
+LANG_ENGLISH        "Maul [Rebels]"
+LANG_CZECH        "Maul [Povstalci]"
+
+REFERENCE           MAUL_REBELS_HOOD
+LANG_ENGLISH        "Maul [Hooded]"
+LANG_CZECH        "Maul [V kapuci]"
+
+REFERENCE           MAUL_REBELS_COWEL
+LANG_ENGLISH        "Maul [Cowel]"
+LANG_CZECH        "Maul [Sala kolem krku]"
+
+REFERENCE           MAUL_REBELS_SHIRTLESS
+LANG_ENGLISH        "Maul [Coweless]"
+LANG_CZECH        "Maul [Bez saly]"
+
+REFERENCE           MAUL_REBELS_DESERT
+LANG_ENGLISH        "Maul [Tatooine]"
+LANG_CZECH        "#same"
+
+REFERENCE           MAUL_REBELS_TWINSUNS
+LANG_ENGLISH        "Maul [Twin Suns Duel]"
+LANG_CZECH        "Maul [Duel s Obi-Wanem]"
+
+//----------------------------------------------------------
+// 	SEQUELS 1
+//----------------------------------------------------------
+
+REFERENCE           DIN
+LANG_ENGLISH        "Din Djarin"
+LANG_CZECH        "#same"
+
+REFERENCE           DIN_S3
+LANG_ENGLISH        "Din Djarin [Jetpack]"
+LANG_CZECH        "#same"
+
+REFERENCE           GROGU
+LANG_ENGLISH        "Grogu"
+LANG_CZECH        "#same"
+
+REFERENCE           GREEF
+LANG_ENGLISH        "Greef Karga"
+LANG_CZECH        "#same"
+
+REFERENCE           CARA
+LANG_ENGLISH        "Cara Dune"
+LANG_CZECH        "#same"
+
+REFERENCE           KUIIL
+LANG_ENGLISH        "Kuiil"
+LANG_CZECH        "#same"
+
+REFERENCE           NRP
+LANG_ENGLISH        "New Republic Personnel"
+LANG_CZECH        "Clenove Nove Republiky"
+
+REFERENCE           NRS
+LANG_ENGLISH        "New Republic Soldier"
+LANG_CZECH        "Vojak Nove Republiky"
+
+REFERENCE           NRSD
+LANG_ENGLISH        "New Republic Security Droid"
+LANG_CZECH        "Bezpecnostni Droid Nove Republiky"
+
+REFERENCE           AHSOKA_TM
+LANG_ENGLISH        "Ahsoka Tano [The Mandalorian]"
+LANG_CZECH        "#same"
+
+REFERENCE           LUKE_TM
+LANG_ENGLISH        "Luke Skywalker [Post-ROTJ]"
+LANG_CZECH        "Luke Skywalker [Po EPVI]"
+
+REFERENCE           LUKE_BF2
+LANG_ENGLISH        "Luke [Battlefront 2, 2017]"
+LANG_CZECH        "#same"
+
+REFERENCE           LUKE_TM_HOOD
+LANG_ENGLISH        "Luke [Jedi Master - Hooded]"
+LANG_CZECH        "Luke [Mistr Jedi - Roucho s kapuci]"
+
+REFERENCE           LUKE_TM_ROBE
+LANG_ENGLISH        "Luke [Jedi Master - Robed]"
+LANG_CZECH        "Luke [Mistr Jedi - Roucho]"
+
+REFERENCE           LUKE_TBOBF
+LANG_ENGLISH        "Luke [Jedi Master]"
+LANG_CZECH        "Luke [Mistr Jedi]"
+
+REFERENCE           LUKE_TROKR
+LANG_ENGLISH        "Luke [Jedi Master - TROKR]"
+LANG_CZECH        "Luke [Mistr Jedi - TROKR]"
+
+REFERENCE           BOBA_TM
+LANG_ENGLISH        "Boba Fett [TM & TBOBF]"
+LANG_CZECH        "#same"
+
+REFERENCE           BOBA_WORN
+LANG_ENGLISH        "Boba [Worn Armor]"
+LANG_CZECH        "Boba [Onosene brneni]"
+
+REFERENCE           BOBA_WORN_NOHELMET
+LANG_ENGLISH        "Boba [Worn Armor - No Helmet]"
+LANG_CZECH        "Boba [Onosene brneni - Bez helmy]"
+
+REFERENCE           BOBA_REARMORED
+LANG_ENGLISH        "Boba Fett [Re-armored]"
+LANG_CZECH        "Boba Fett [Nove brneni]"
+
+REFERENCE           BOBA_REARMORED_NH
+LANG_ENGLISH        "Boba Fett [Re-armored - No Helmet]"
+LANG_CZECH        "Boba Fett [Nove brneni - Bez helmy]"
+
+REFERENCE           FENNEC
+LANG_ENGLISH        "Fennec Shand"
+LANG_CZECH        "#same"
+
+REFERENCE           FENNEC_NOHELMET
+LANG_ENGLISH        "Fennec Shand [No Helmet]"
+LANG_CZECH        "Fennec Shand [Bez helmy]"
+
+REFERENCE           KRRSANTAN
+LANG_ENGLISH        "Black Krrsantan"
+LANG_CZECH        "Cerny Krrsantan"
+
+REFERENCE           BOKATAN
+LANG_ENGLISH        "Bo-Katan Kryze"
+LANG_CZECH        "#same"
+
+REFERENCE           BOKATAN_NOHELMET
+LANG_ENGLISH        "Bo-Katan Kryze [No Helmet]"
+LANG_CZECH        "Bo-Katan Kryze [Bez helmy]"
+
+REFERENCE           MANDO_CLANS
+LANG_ENGLISH        "Mandalorian Clans"
+LANG_CZECH        "Mandalorianske Klany"
+
+REFERENCE           ARMORER
+LANG_ENGLISH        "The Armorer"
+LANG_CZECH        "Zbrojirka"
+
+REFERENCE           ARMORER_JETPACK
+LANG_ENGLISH        "The Armorer [Jetpack]"
+LANG_CZECH        "Zbrojirka [Jetpack]"
+
+REFERENCE           PAZ_VIZSLA
+LANG_ENGLISH        "Paz Vizsla"
+LANG_CZECH        "#same"
+
+REFERENCE           LUKE_OLD
+LANG_ENGLISH        "Luke Skywalker [Old]"
+LANG_CZECH        "Luke Skywalker [Stary]"
+
+REFERENCE           LUKE_ACHTO_ROBE
+LANG_ENGLISH        "Luke Skywalker [Ach-to - Robed]"
+LANG_CZECH        "Luke Skywalker [Ach-to - Roucho]"
+
+REFERENCE           LUKE_ACHTO_HOOD
+LANG_ENGLISH        "Luke Skywalker [Ach-to - Hooded]"
+LANG_CZECH        "Luke Skywalker [Ach-to - Roucho s kapuci]"
+
+REFERENCE           LUKE_CRAIT
+LANG_ENGLISH        "Luke Skywalker [Crait Illusion]"
+LANG_CZECH        "Luke Skywalker [Iluze na Craitu]"
+
+REFERENCE           REY
+LANG_ENGLISH        "Rey"
+LANG_CZECH        "#same"
+
+REFERENCE           REY_EP7
+LANG_ENGLISH        "Rey [Jakku]"
+LANG_CZECH        "#same"
+
+REFERENCE           REY_RESISTANCE
+LANG_ENGLISH        "Rey [Resistance Scout]"
+LANG_CZECH        "Rey [Pruzkumnik Odboje]"
+
+REFERENCE           REY_EP8
+LANG_ENGLISH        "Rey [Grey Jedi Wrap]"
+LANG_CZECH        "Rey [Sede Obleceni Jediu]"
+
+REFERENCE           REY_EP9
+LANG_ENGLISH        "Rey [White Jedi Wrap]"
+LANG_CZECH        "Rey [Bile Obleceni Jediu]"
+
+REFERENCE           REY_EP9_HOOD
+LANG_ENGLISH        "Rey [White Jedi Wrap - Hooded]"
+LANG_CZECH        "Rey [Bile Obleceni Jediu - V kapuci]"
+
+REFERENCE           REY_SKYWALKER
+LANG_ENGLISH        "Rey Skywalker"
+LANG_CZECH        "#same"
+
+REFERENCE           FINN
+LANG_ENGLISH        "Finn"
+LANG_CZECH        "#same"
+
+REFERENCE           POE
+LANG_ENGLISH        "Poe Dameron"
+LANG_CZECH        "#same"
+
+REFERENCE           POE_PILOT
+LANG_ENGLISH        "Poe Dameron [Pilot]"
+LANG_CZECH        "#same"
+
+REFERENCE           POE_PILOT_HELM
+LANG_ENGLISH        "Poe Dameron [Pilot - Helmet]"
+LANG_CZECH        "Poe Dameron [Pilot - V helme]"
+
+REFERENCE           POE_OFFICER
+LANG_ENGLISH        "Poe Dameron [Officer]"
+LANG_CZECH        "Poe Dameron [Dustojnik]"
+
+REFERENCE           ROSE
+LANG_ENGLISH        "Rose Tico"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	SEQUELS 2
+//----------------------------------------------------------
+
+REFERENCE           GIDEON
+LANG_ENGLISH        "Moff Gideon"
+LANG_CZECH        "#same"
+
+REFERENCE           DARKTROOPER_TM
+LANG_ENGLISH        "Dark Trooper [The Mandalorian]"
+LANG_CZECH        "#same"
+
+REFERENCE           BAYLAN
+LANG_ENGLISH        "Baylan Skoll"
+LANG_CZECH        "#same"
+
+REFERENCE           BAYLAN_ROBE
+LANG_ENGLISH        "Baylan Skoll [Robed]"
+LANG_CZECH        "Baylan Skoll [Roucho]"
+
+REFERENCE           BAYLAN_HOOD
+LANG_ENGLISH        "Baylan Skoll [Hooded]"
+LANG_CZECH        "Baylan Skoll [Roucho s kapuci]"
+
+REFERENCE           SHIN
+LANG_ENGLISH        "Shin Hati"
+LANG_CZECH        "#same"
+
+REFERENCE           SHIN_ROBE
+LANG_ENGLISH        "Shin Hati [Robed]"
+LANG_CZECH        "Shin Hati [Roucho]"
+
+REFERENCE           SHIN_HOOD
+LANG_ENGLISH        "Shin Hati [Hooded]"
+LANG_CZECH        "Shin Hati [Roucho s kapuci]"
+
+REFERENCE           KYLO
+LANG_ENGLISH        "Kylo Ren"
+LANG_CZECH        "#same"
+
+REFERENCE           KYLO_EP7_NOHELMET
+LANG_ENGLISH        "Kylo Ren [TFA - No Helmet]"
+LANG_CZECH        "Kylo Ren [TFA - Bez helmy]"
+
+REFERENCE           KYLO_EP7_HELMET
+LANG_ENGLISH        "Kylo Ren [TFA - Helmet]"
+LANG_CZECH        "Kylo Ren [TFA - V helme]"
+
+REFERENCE           KYLO_EP7_HOOD
+LANG_ENGLISH        "Kylo Ren [TFA - Hooded]"
+LANG_CZECH        "Kylo Ren [TFA - V kapuci]"
+
+REFERENCE           KYLO_EP8_NOHELMET
+LANG_ENGLISH        "Kylo Ren [TLJ - No Helmet]"
+LANG_CZECH        "Kylo Ren [TLJ - Bez helmy]"
+
+REFERENCE           KYLO_EP8_HELMET
+LANG_ENGLISH        "Kylo Ren [TLJ - Helmet]"
+LANG_CZECH        "Kylo Ren [TLJ - V helme]"
+
+REFERENCE           KYLO_EP8_ROBE
+LANG_ENGLISH        "Kylo Ren [TLJ - Robed]"
+LANG_CZECH        "Kylo Ren [TLJ - V rouchu]"
+
+REFERENCE           KYLO_EP8_SHIRTLESS
+LANG_ENGLISH        "Kylo Ren [TLJ - Shirtless]"
+LANG_CZECH        "Kylo Ren [TLJ - Bez trika]"
+
+REFERENCE           KYLO_EP9_ROBE
+LANG_ENGLISH        "Kylo Ren [TROS - Robed]"
+LANG_CZECH        "Kylo Ren [TROS - V rouchu]"
+
+REFERENCE           KYLO_EP9_HELMET
+LANG_ENGLISH        "Kylo Ren [TROS - Helmet]"
+LANG_CZECH        "Kylo Ren [TROS - V helme]"
+
+REFERENCE           KYLO_EP9_HOOD
+LANG_ENGLISH        "Kylo Ren [TROS - Hooded]"
+LANG_CZECH        "Kylo Ren [TROS - V kapuci]"
+
+REFERENCE           BEN_SOLO
+LANG_ENGLISH        "Ben Solo [TROS - Redeemed]"
+LANG_CZECH        "Ben Solo [TROS - Vykoupeny]"
+
+REFERENCE           HUX
+LANG_ENGLISH        "Armitage Hux"
+LANG_CZECH        "#same"
+
+REFERENCE           HUX_COAT
+LANG_ENGLISH        "Armitage Hux [Coat]"
+LANG_CZECH        "Armitage Hux [V kabatu]"
+
+REFERENCE           HUX_COAT_HAT
+LANG_ENGLISH        "Armitage Hux [Coat & Hat]"
+LANG_CZECH        "Armitage Hux [V kabatu a cepici]"
+
+REFERENCE           PHASMA
+LANG_ENGLISH        "Captain Phasma"
+LANG_CZECH        "Kapitanka Phasma"
+
+REFERENCE           SNOKE
+LANG_ENGLISH        "Supreme Leader Snoke"
+LANG_CZECH        "Nejvyssi Vudce Snoke"
+
+REFERENCE           SHEEV_EP9
+LANG_ENGLISH        "Emperor Palpatine [Clone]"
+LANG_CZECH        "Cisar Palpatine [Klon]"
+
+REFERENCE           SHEEV_EP9_BLIND
+LANG_ENGLISH        "Emperor Palpatine [Clone - Blind]"
+LANG_CZECH        "Cisar Palpatine [Klon - Slepy]"
+
+REFERENCE           SHEEV_EP9_REBORN
+LANG_ENGLISH        "Emperor Palpatine [Clone - Reborn]"
+LANG_CZECH        "Cisar Palpatine [Klon - Znovuzrozeny]"
+
+REFERENCE           PRAETORIANS
+LANG_ENGLISH        "Praetorian Guards"
+LANG_CZECH        "Praetorianske Straze"
+
+REFERENCE           PRAETORIAN_LANCE
+LANG_ENGLISH        "Praetorian Guard [Lance]"
+LANG_CZECH        "Praetoriansky Strazce [Kopi]"
+
+REFERENCE           PRAETORIAN_AXE
+LANG_ENGLISH        "Praetorian Guard [Axe]"
+LANG_CZECH        "Praetoriansky Strazce [Sekera]"
+
+REFERENCE           PRAETORIAN_SWORD
+LANG_ENGLISH        "Praetorian Guard [Sword]"
+LANG_CZECH        "Praetoriansky Strazce [Mec]"
+
+REFERENCE           PRAETORIAN_VIBROAXE
+LANG_ENGLISH        "Praetorian Guard [Vibroaxe]"
+LANG_CZECH        "Praetoriansky Strazce [Vibrosekera]"
+
+REFERENCE           PRAETORIAN_VIBROSTAFF
+LANG_ENGLISH        "Praetorian Guard [Vibrostaff]"
+LANG_CZECH        "Praetoriansky Strazce [Vibrotyc]"
+
+REFERENCE           STORMTROOPERS_FO
+LANG_ENGLISH        "Stormtroopers [First Order]"
+LANG_CZECH        "Stormtrooperi [Prvni Rad]"
+
+REFERENCE           STORMTROOPER_FO
+LANG_ENGLISH        "Stormtrooper [First Order]"
+LANG_CZECH        "Stormtrooper [Prvni Rad]"
+
+REFERENCE           STORM_OFFICER_FO
+LANG_ENGLISH        "Stormtrooper [Officer - First Order]"
+LANG_CZECH        "Stormtrooper [Dustojnik - Prvni Rad]"
+
+REFERENCE           STORM_RIOT_FO
+LANG_ENGLISH        "Riot Stormtrooper [First Order]"
+LANG_CZECH        "Riot Stormtrooper [Prvni Rad]"
+
+REFERENCE           SITHTROOPER_EP9
+LANG_ENGLISH        "Sith Trooper [Final Order]"
+LANG_CZECH        "Sithsky Trooper [Konecny Rad]"
+
+REFERENCE           SITH_COMMANDER_EP9
+LANG_ENGLISH        "Sith Trooper [Commander - Final Order]"
+LANG_CZECH        "Sithsky Trooper [Velitel - Konecny Rad]"
+
+REFERENCE           REN
+LANG_ENGLISH        "Ren"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	LEGENDS 1
+//----------------------------------------------------------
+
+REFERENCE           KYLE
+LANG_ENGLISH        "Kyle Katarn"
+LANG_CZECH        "#same"
+
+REFERENCE           KYLE_MERC
+LANG_ENGLISH        "Kyle Katarn [Mercenary]"
+LANG_CZECH        "Kyle Katarn [Zoldner]"
+
+REFERENCE           KYLE_DF2_COAT
+LANG_ENGLISH        "Kyle Katarn [Dark Forces 2 - Coat]"
+LANG_CZECH        "Kyle Katarn [Dark Forces 2 - Kabat]"
+
+REFERENCE           KYLE_DF2
+LANG_ENGLISH        "Kyle Katarn [Dark Forces 2]"
+LANG_CZECH        "#same"
+
+REFERENCE           KYLE_MOTS
+LANG_ENGLISH        "Kyle Katarn [Mysteries of the Sith]"
+LANG_CZECH        "#same"
+
+REFERENCE           KYLE_JK2
+LANG_ENGLISH        "Kyle Katarn [Jedi Outcast / Academy]"
+LANG_CZECH        "#same"
+
+REFERENCE           KYLE_ALT
+LANG_ENGLISH        "Kyle Katarn [Dark]"
+LANG_CZECH        "Kyle Katarn [Alternativni oblek]"
+
+REFERENCE           KYLE_STEALTH
+LANG_ENGLISH        "Kyle Katarn [Stealth Jedi Gear]"
+LANG_CZECH        "Kyle Katarn [Tajne Jedi Vybaveni]"
+
+REFERENCE           KYLE_MASTER
+LANG_ENGLISH        "Kyle Katarn [Jedi Master]"
+LANG_CZECH        "Kyle Katarn [Mistr Jedi]"
+
+REFERENCE           KYLE_EMPEROR
+LANG_ENGLISH        "Emperor Katarn"
+LANG_CZECH        "Cisar Katarn"
+
+REFERENCE           KYLE_DF2_INGAME
+LANG_ENGLISH        "Kyle Katarn [DF2 In-Game]"
+LANG_CZECH        "Kyle Katarn [DF2 Ve hre]"
+
+REFERENCE           KYLE_OFFICER
+LANG_ENGLISH        "Kyle Katarn [Imperial Officer]"
+LANG_CZECH        "Kyle Katarn [Imperialni Dustojnik]"
+
+REFERENCE           KYLE_DF2_LOWPOLY
+LANG_ENGLISH        "Kyle Katarn [1997 Low-Poly]"
+LANG_CZECH        "#same"
+
+REFERENCE           KYLE_OLD
+LANG_ENGLISH        "Kyle Katarn [Old]"
+LANG_CZECH        "Kyle Katarn [Stary]"
+
+REFERENCE           JAN
+LANG_ENGLISH        "Jan Ors"
+LANG_CZECH        "#same"
+
+REFERENCE           JAN_DF2
+LANG_ENGLISH        "Jan Ors [Dark Forces 2]"
+LANG_CZECH        "#same"
+
+REFERENCE           MARA
+LANG_ENGLISH        "Mara Jade"
+LANG_CZECH        "#same"
+
+REFERENCE           MARA_MOTS
+LANG_ENGLISH        "Mara Jade [Mysteries of the Sith]"
+LANG_CZECH        "#same"
+
+REFERENCE           QU
+LANG_ENGLISH        "Qu Rahn"
+LANG_CZECH        "#same"
+
+REFERENCE           YUN
+LANG_ENGLISH        "Yun"
+LANG_CZECH        "#same"
+
+REFERENCE           NJO
+LANG_ENGLISH        "New Jedi Order"
+LANG_CZECH        "Novy Rad Jedi"
+
+REFERENCE           LUKE_GM
+LANG_ENGLISH        "Luke [Grand Master]"
+LANG_CZECH        "Luke [Nejvyssi Mistr]"
+
+REFERENCE           JEDI
+LANG_ENGLISH        "Jedi"
+LANG_CZECH        "#same"
+
+REFERENCE           JEDI2
+LANG_ENGLISH        "Jedi 2"
+LANG_CZECH        "#same"
+
+REFERENCE           JEDIMASTER
+LANG_ENGLISH        "Jedi Master"
+LANG_CZECH        "Mistr Jedi"
+
+REFERENCE           JEDITRAINER
+LANG_ENGLISH        "Jedi Trainer"
+LANG_CZECH        "Trener Jedi"
+
+REFERENCE           ROSH
+LANG_ENGLISH        "Rosh Penin"
+LANG_CZECH        "#same"
+
+REFERENCE           JEREC
+LANG_ENGLISH        "Jerec"
+LANG_CZECH        "#same"
+
+REFERENCE           JEREC_NOCAPE
+LANG_ENGLISH        "Jerec [No Cape]"
+LANG_CZECH        "Jerec [Bez plaste]"
+
+REFERENCE           JEREC_CLASSIC
+LANG_ENGLISH        "Jerec [DF2 In-Game]"
+LANG_CZECH        "Jerec [DF2 Ve hre]"
+
+REFERENCE           JEREC_LOWPOLY
+LANG_ENGLISH        "Jerec [1997 Low Poly]"
+LANG_CZECH        "#same"
+
+REFERENCE           SARISS
+LANG_ENGLISH        "Sariss"
+LANG_CZECH        "#same"
+
+REFERENCE           SARISS_CLOAK
+LANG_ENGLISH        "Sariss [Cloaked]"
+LANG_CZECH        "Sariss [V plasti]"
+
+REFERENCE           BOC 
+LANG_ENGLISH        "Boc"
+LANG_CZECH        "#same"
+
+REFERENCE           MAW
+LANG_ENGLISH        "Maw"
+LANG_CZECH        "#same"
+
+REFERENCE           MAW_HALF
+LANG_ENGLISH        "Maw [Dismembered]"
+LANG_CZECH        "Maw [Rozpuleny]"
+
+REFERENCE           PIC
+LANG_ENGLISH        "Pic"
+LANG_CZECH        "#same"
+
+REFERENCE           GORC
+LANG_ENGLISH        "Gorc"
+LANG_CZECH        "#same"
+
+REFERENCE           DESANN
+LANG_ENGLISH        "Desann"
+LANG_CZECH        "#same"
+
+REFERENCE           DESANN_CAPE
+LANG_ENGLISH        "Lord Desann"
+LANG_CZECH        "#same"
+
+REFERENCE           TAVION
+LANG_ENGLISH        "Tavion Axmis"
+LANG_CZECH        "#same"
+
+REFERENCE           TAVION_JKA
+LANG_ENGLISH        "Tavion [Cult of Ragnos]"
+LANG_CZECH        "Tavion [Kult Ragnose]"
+
+REFERENCE           TAVION_JKA_SCEPTER
+LANG_ENGLISH        "Tavion [Ragnos' Scepter]"
+LANG_CZECH        "Tavion [Ragnosovo Zezlo]"
+
+REFERENCE           TAVION_ALT
+LANG_ENGLISH        "Tavion [Alternate]"
+LANG_CZECH        "Tavion [Alternativni]"
+
+REFERENCE           ALORA
+LANG_ENGLISH        "Alora"
+LANG_CZECH        "#same"
+
+REFERENCE           REBORN
+LANG_ENGLISH        "Reborn"
+LANG_CZECH        "Znovuzrozenec"
+
+REFERENCE           REBORN_FORCE
+LANG_ENGLISH        "Reborn [Force User]"
+LANG_CZECH        "Znovuzrozenec [Uzivatel Sily]"
+
+REFERENCE           REBORN_ACROBAT
+LANG_ENGLISH        "Reborn [Acrobat]"
+LANG_CZECH        "Znovuzrozenec [Akrobat]"
+
+REFERENCE           REBORN_FENCER
+LANG_ENGLISH        "Reborn [Fencer]"
+LANG_CZECH        "Znovuzrozenec [Sermir]"
+
+REFERENCE           REBORN_BOSS
+LANG_ENGLISH        "Reborn [Boss]"
+LANG_CZECH        "Znovuzrozenec [Velitel]"
+
+REFERENCE           REBORN_DUAL
+LANG_ENGLISH        "Reborn [Dual Lightsabers]"
+LANG_CZECH        "Znovuzrozenec [Dva mece]"
+
+REFERENCE           REBORN_STAFF
+LANG_ENGLISH        "Reborn [Lightsaber Staff]"
+LANG_CZECH        "Znovuzrozenec [Dvojity mec]"
+
+REFERENCE           REBORN_MASTER
+LANG_ENGLISH        "Reborn [Master]"
+LANG_CZECH        "Znovuzrozenec [Mistr]"
+
+REFERENCE           REMNANT
+LANG_ENGLISH        "Imperial Remnant"
+LANG_CZECH        "Zbytky Imperia"
+
+REFERENCE           GALAK
+LANG_ENGLISH        "Galak Fyyar"
+LANG_CZECH        "#same"
+
+REFERENCE           SHADOWTROOPER
+LANG_ENGLISH        "Reborn Shadowtrooper"
+LANG_CZECH        "Stinovy Vojak Znovuzrozencu"
+
+REFERENCE           SWAMPTROOPER
+LANG_ENGLISH        "Swamptrooper"
+LANG_CZECH        "#same"
+
+REFERENCE           IMPWORKER
+LANG_ENGLISH        "Imperial Worker"
+LANG_CZECH        "Imperialni Delnik"
+
+REFERENCE           RAX
+LANG_ENGLISH        "Rax Joris"
+LANG_CZECH        "#same"
+
+REFERENCE           SABOTEUR
+LANG_ENGLISH        "Saboteur"
+LANG_CZECH        "Saboter"
+
+REFERENCE           ROCKETTROOPER
+LANG_ENGLISH        "Rockettrooper"
+LANG_CZECH        "#same"
+
+REFERENCE           HAZARDTROOPER
+LANG_ENGLISH        "Hazardtrooper"
+LANG_CZECH        "#same"
+
+//----------------------------------------------------------
+// 	LEGENDS 2
+//----------------------------------------------------------
+
+REFERENCE           GALEN
+LANG_ENGLISH        "Galen Marek"
+LANG_CZECH        "#same"
+
+REFERENCE           GALEN_ADVENTURE
+LANG_ENGLISH        "Galen [Jedi Adventure Robes]"
+LANG_CZECH        "Galen [Roucho Jedi Objevitele]"
+
+REFERENCE           GALEN_TEMPLE
+LANG_ENGLISH        "Galen [Temple Exploration Gear]"
+LANG_CZECH        "Galen [Odev z pruzkumu Chramu Jediu]"
+
+REFERENCE           GALEN_CORELLIAN
+LANG_ENGLISH        "Galen [Corellian Flight Suit]"
+LANG_CZECH        "Galen [Corellianska Kombineza Pilota]"
+
+REFERENCE           GALEN_CEREMONIAL
+LANG_ENGLISH        "Galen [Ceremonial Jedi Robes]"
+LANG_CZECH        "Galen [Obradni Roucho Jediu]"
+
+REFERENCE           GALEN_KAMINO
+LANG_ENGLISH        "Galen [Test Subject Garments]"
+LANG_CZECH        "Galen [Odev Testovaciho Subjektu]"
+
+REFERENCE           GALEN_TIE
+LANG_ENGLISH        "Galen [Tie Flightsuit]"
+LANG_CZECH        "Galen [Kombineza Pilota Stihacky Tie]"
+
+REFERENCE           GALEN_ARENA
+LANG_ENGLISH        "Galen [Arena Combat Gear]"
+LANG_CZECH        "Galen [Bojovy Odev z Areny]"
+
+REFERENCE           GALEN_HERO
+LANG_ENGLISH        "Galen [Hero's Armor]"
+LANG_CZECH        "Galen [Brneni Hrdiny]"
+
+REFERENCE           STARKILLER
+LANG_ENGLISH        "Starkiller"
+LANG_CZECH        "#same"
+
+REFERENCE           SITHSTALKER
+LANG_ENGLISH        "Starkiller [Sith Stalker Armor]"
+LANG_CZECH        "Starkiller [Brneni Sithskeho Stopare]"
+
+REFERENCE           LORD_STARKILLER
+LANG_ENGLISH        "Lord Starkiller"
+LANG_CZECH        "#same"
+
+REFERENCE           LORD_STARKILLER_DESERT
+LANG_ENGLISH        "Lord Starkiller [Tatooine]"
+LANG_CZECH        "#same"
+
+REFERENCE           STARKILLER_JHUNTER
+LANG_ENGLISH        "Starkiller [Jedi Hunter]"
+LANG_CZECH        "Starkiller [Lovec Jediu]"
+
+REFERENCE           RAHM
+LANG_ENGLISH        "Rahm Kota"
+LANG_CZECH        "#same"
+
+REFERENCE           RAHM_DRUNK
+LANG_ENGLISH        "Rahm Kota [Drunken]"
+LANG_CZECH        "Rahm Kota [Opily]"
+
+REFERENCE           RAHM_ALLIANCE
+LANG_ENGLISH        "Rahm Kota [Alliance General]"
+LANG_CZECH        "Rahm Kota [General Aliance]"
+
+REFERENCE           SHAAK_TFU
+LANG_ENGLISH        "Shaak Ti [Exiled - Felucia]"
+LANG_CZECH        "Shaak Ti [V Exilu - Felucia]"
+
+REFERENCE           KENTO
+LANG_ENGLISH        "Kento Marek"
+LANG_CZECH        "#same"
+
+REFERENCE           KENTO_KROME
+LANG_ENGLISH        "Kento Marek [Alternate Design]"
+LANG_CZECH        "Kento Marek [Alternativni kostym]"
+
+REFERENCE           PHOBOS
+LANG_ENGLISH        "Darth Phobos"
+LANG_CZECH        "#same"
+
+REFERENCE           DESOLOUS
+LANG_ENGLISH        "Darth Desolous"
+LANG_CZECH        "#same"
+
+REFERENCE           TRAININGDROIDS_TFU
+LANG_ENGLISH        "Jedi Training Droids [TFU]"
+LANG_CZECH        "Vycvikovi Droidi Jediu [TFU]"
+
+REFERENCE           TRAININGDROID_SABER
+LANG_ENGLISH        "Saber Training Droid"
+LANG_CZECH        "Sermirsky Vycvikovy Droid"
+
+REFERENCE           TRAININGDROID_FORCE
+LANG_ENGLISH        "Force Training Droid"
+LANG_CZECH        "Silovy Vycvikovy Droid"
+
+REFERENCE           ASHARAD
+LANG_ENGLISH        "A'Sharad Hett"
+LANG_CZECH        "#same"
+
+REFERENCE           ASHARAD_TUSKEN
+LANG_ENGLISH        "A'Sharad Hett [Tusken Mask]"
+LANG_CZECH        "A'Sharad Hett [Tuskenska Maska]"
+
+REFERENCE           MAUL_CYBER
+LANG_ENGLISH        "Darth Maul [Old Wounds]"
+LANG_CZECH        "#same"
+
+REFERENCE           MAUL_CYBER_ROBE
+LANG_ENGLISH        "Darth Maul [Robed - Old Wounds]"
+LANG_CZECH        "Darth Maul [Roucho - Old Wounds]"
+
+REFERENCE           MAUL_CYBER_HOOD
+LANG_ENGLISH        "Darth Maul [Hooded - Old Wounds]"
+LANG_CZECH        "Darth Maul [Roucho s kapuci - Old Wounds]"
+
+REFERENCE           PLAGUEIS
+LANG_ENGLISH        "Darth Plagueis [The Wise]"
+LANG_CZECH        "Darth Plagueis [Moudry]"
+
+REFERENCE           REVAN
+LANG_ENGLISH        "Darth Revan"
+LANG_CZECH        "#same"
+
+REFERENCE           REVAN_DUAL
+LANG_ENGLISH        "Darth Revan [Dual Lightsabers]"
+LANG_CZECH        "Darth Revan [Dva mece]"
+
+REFERENCE           REVAN_JEDI
+LANG_ENGLISH        "Revan [Redeemed Jedi]"
+LANG_CZECH        "Revan [Vykoupeny Jedi]"
+
+REFERENCE           BASTILA
+LANG_ENGLISH        "Bastila Shan"
+LANG_CZECH        "#same"
+
+REFERENCE           KRAYT
+LANG_ENGLISH        "Darth Krayt [Emperor]"
+LANG_CZECH        "Darth Krayt [Cisar]"
+
+REFERENCE           KRAYT_REBORN
+LANG_ENGLISH        "Darth Krayt [Reborn]"
+LANG_CZECH        "Darth Krayt [Znovuzrozeny]"
+
+REFERENCE           TALON
+LANG_ENGLISH        "Darth Talon"
+LANG_CZECH        "#same"
+
+REFERENCE           CADE
+LANG_ENGLISH        "Cade Skywalker"
+LANG_CZECH        "#same"
+
+ENDMARKER
+
+
+

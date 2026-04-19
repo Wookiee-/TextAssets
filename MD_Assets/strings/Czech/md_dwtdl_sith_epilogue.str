@@ -1,0 +1,72 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           EMP100
+LANG_ENGLISH        "Lord Vader. What news of Skywalker?"
+LANG_CZECH        "Lorde Vadere. Jake jsou novinky o Skywalkerovi?"
+
+REFERENCE           EMP101
+LANG_ENGLISH        "Unfortunate... yet inevitable. The boy was weak - too much of his father in him."
+LANG_CZECH        "Nestastne... ale nevyhnutelne. Chlapec byl slaby - prilis se podobal svemu otci."
+
+REFERENCE           EMP102
+LANG_ENGLISH        "Return to me, Lord Vader. There is... other work to be done."
+LANG_CZECH        "Vrat se ke mne, Lorde Vadere. Je tu... jeste dalsi prace, kterou je treba vykonat."
+
+REFERENCE           LUKE100
+LANG_ENGLISH        "What happens now... Father? Am I your prisoner?"
+LANG_CZECH        "Co se stane ted... Otce? Jsem tvuj vezen?"
+
+REFERENCE           LUKE101
+LANG_ENGLISH        "I won't serve the Emperor."
+LANG_CZECH        "Nebudu slouzit Cisari."
+
+REFERENCE           LUKE102
+LANG_ENGLISH        "And my friends? Leia... Han? Are they safe?"
+LANG_CZECH        "A moji pratele? Leia... Han? Jsou v bezpeci?"
+
+REFERENCE           LUKE103
+LANG_ENGLISH        "Mustafar?"
+LANG_CZECH        "Mustafar?"
+
+REFERENCE           VADER100
+LANG_ENGLISH        "The boy resisted... and fell. There is no trace. He is gone."
+LANG_CZECH        "Chlapec se branil... a spadl. Neni po nem ani stopy. Je pryc."
+
+REFERENCE           VADER101
+LANG_ENGLISH        "As you wish, my master."
+LANG_CZECH        "Jak si prejes, muj pane."
+
+REFERENCE           VADER102
+LANG_ENGLISH        "I will complete what Obi-Wan could not. Your training begins now."
+LANG_CZECH        "Dokoncim to, co Obi-Wan nedokazal. Tvuj vycvik zacina prave ted."
+
+REFERENCE           VADER103
+LANG_ENGLISH        "Your survival is known only to me. And it will stay that way. You will serve me - as my apprentice... and as my son."
+LANG_CZECH        "O tvem preziti vim jen ja. A tak to i zustane. Budes mi slouzit - jako muj ucednik... a jako muj syn."
+
+REFERENCE           VADER104
+LANG_ENGLISH        "Their destiny is in your hands now, my son. Through me... you will gain the power to save your friends from certain death."
+LANG_CZECH        "Jejich osud je nyni ve tvych rukou, muj synu. Skrze me... ziskas silu, abys zachranil sve pratele pred jistou smrti."
+
+REFERENCE           VADER105
+LANG_ENGLISH        "Admiral. Set course for Mustafar."
+LANG_CZECH        "Admirale. Nastavte kurz na Mustafar."
+
+REFERENCE           VADER106
+LANG_ENGLISH        "It is where I was broken... and where your true path begins."
+LANG_CZECH        "Je to misto, kde jsem byl zlomeny... a kde zacina tva prava cesta."
+
+ENDMARKER

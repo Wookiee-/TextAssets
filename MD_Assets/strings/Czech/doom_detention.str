@@ -1,0 +1,152 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           21KJO007
+LANG_ENGLISH        "Jan!"
+LANG_CZECH 	   "#same"
+
+REFERENCE           21JAO001
+LANG_ENGLISH        "Well, you certainly took your sweet time..."
+LANG_CZECH 	   "No, to sis dal na cas..."
+
+REFERENCE           21JAO003
+LANG_ENGLISH        "H-hey!  It's okay.  I'm happy to see you, too..."
+LANG_CZECH 	   "H-hej! To je v poradku. Taky jsem rada, ze te znovu vidim..."
+
+REFERENCE           21KJO008
+LANG_ENGLISH        "I, I thought you were dead!"
+LANG_CZECH 	   "Ja, ja myslel, ze jsi mrtva!"
+
+REFERENCE           21JAO004
+LANG_ENGLISH        "Dead?  No.  In pain, yes.  Desann and his thugs must've burned out a half-dozen interrogation Droids trying to get me to crack."
+LANG_CZECH 	   "Mrtva? Ne. V bolestech, ano. Desann a jeho kriminalnici museli zavarit pul tuctu vyslychacich droidu, kdyz se me snazili zlomit."
+
+REFERENCE           21KJO009
+LANG_ENGLISH        "They wanted to know about the Valley of the Jedi, right?"
+LANG_CZECH 	   "Chteli informace o Udoli Jediu, mam pravdu?"
+
+REFERENCE           21JAO005
+LANG_ENGLISH        "For the first few hours.  Then they just dropped the subject, and started asking me about the layout of the Jedi Academy."
+LANG_CZECH 	   "Prvnich par hodin. Potom tema zmenili a zacali se vyptavat na usporadani Akademie Jediu."
+
+REFERENCE           21KJO010
+LANG_ENGLISH        "The Jedi Academy?"
+LANG_CZECH 	   "Akademii Jediu?"
+
+REFERENCE           21JAO006
+LANG_ENGLISH        "Yeah.  Desann seemed obsessed with it."
+LANG_CZECH 	   "Jo. Desann se tim zdal primo posedly."
+
+REFERENCE           21KJO011
+LANG_ENGLISH        "Oh no."
+LANG_CZECH 	   "Ale ne."
+
+REFERENCE           21JAO007
+LANG_ENGLISH        "What?"
+LANG_CZECH 	   "Co je?"
+
+REFERENCE           21IO1001
+LANG_ENGLISH        "All crew members prepare to drop out of hyperspace."
+LANG_CZECH 	   "Vsichni clenove posadky, pripravte se na vyskoceni z hyperprostoru."
+
+REFERENCE           21KJO012
+LANG_ENGLISH        "Quick, grab something!"
+LANG_CZECH 	   "Rychle, chytni se neceho!"
+
+REFERENCE           21KJO013
+LANG_ENGLISH        "I've got a bad feeling about this."
+LANG_CZECH 	   "Mam z toho spatny pocit."
+
+REFERENCE           21KJO014
+LANG_ENGLISH        "I think I know where we're going."
+LANG_CZECH 	   "Myslim, ze vim, kam letime."
+
+REFERENCE           21WEA006
+LANG_ENGLISH        "Rogue Leader, the Remnant ship has returned to normal space, and is nearing its apparent target...Yavin-4?"
+LANG_CZECH 	   "Velitel Rogue, lod zbytku Imperia vyskocila z hyperprostoru a priblizuje se ke svemu zdnalivemu cili...Yavin-4?"
+
+REFERENCE           21JAO008
+LANG_ENGLISH        "Kyle, what's going on?"
+LANG_CZECH 	   "Kyle, co se deje?"
+
+REFERENCE           21KJO015
+LANG_ENGLISH        "I think Desann's invading the Jedi Academy!  We've got to destroy the Doomgiver's shields before he can deploy his troops!"
+LANG_CZECH 	   "Myslim si, ze Desann utoci na Akademii Jediu! Musime znicit stity na Doomgiveru drive, nez bude moci vysadit svoje vojaky!"
+
+REFERENCE           21JAO009
+LANG_ENGLISH        "I think I know where it is.  Let's go!"
+LANG_CZECH 	   "Myslim, ze vim, kde to je. Pojdme!"
+
+REFERENCE           21JAO010
+LANG_ENGLISH        "I'm pretty sure the shield generators are through there."
+LANG_CZECH 	   "Jsem si jisty, ze generatory stitu jsou tamhle."
+
+REFERENCE           21KJO016
+LANG_ENGLISH        "I know.  You get an escape pod ready and wait for me.  This shouldn't take long."
+LANG_CZECH 	   "Ja vim. Ty priprav unikovy modul a cekej na me. Nemelo by to trvat dlouho."
+
+REFERENCE           21KJO017
+LANG_ENGLISH        "I'm on it."
+LANG_CZECH 	   "Jdu na to."
+
+REFERENCE           21JAO011
+LANG_ENGLISH        "Don't do something stupid like die on me."
+LANG_CZECH 	   "Neudelej nic hloupeho jako umrit kvuli mne."
+
+REFERENCE           21KJO018
+LANG_ENGLISH        "And put you through the same misery I've been through?  Not on your life."
+LANG_CZECH 	   "A privest ti stejne utrpeni, kterym jsem prosel ja? Za tveho zivota nikdy."
+
+REFERENCE           22IW2001
+LANG_ENGLISH        "He shut the bay doors!"
+LANG_CZECH 	   "Zavrel dvere hangaru!"
+
+REFERENCE           22IW1001
+LANG_ENGLISH        "Get them open, quick!"
+LANG_CZECH 	   "Otevrete je, rychle!"
+
+REFERENCE           22JAO003
+LANG_ENGLISH        "I'll make sure the way is clear to the escape pods. You take care of those shields!"
+LANG_CZECH 	   "Ujistim se, ze je volna cesta k unikovym modulum. Ty se postarej o ty stity!"
+
+REFERENCE           22KJO014
+LANG_ENGLISH        "This shouldn't take too long. I'll see you soon."
+LANG_CZECH 	   "To by nemelo prilis dlouho trvat. Brzy se uvidime."
+
+REFERENCE           22KJO001
+LANG_ENGLISH        "Someone could do some damage if a gun like this got into the wrong hands. Heh heh."
+LANG_CZECH 	   "Nekdo by mohl udelat poradnou paseku, kdyby se zbran jako je tahle dostala do spatnych rukou. Ha ha."
+
+REFERENCE           22KJO006
+LANG_ENGLISH        "Force wall. Without it, the vaccuum would suck everything out of here. Hmmm."
+LANG_CZECH 	   "Silove pole. Bez neho by vzduchoprazdno odsud vysalo vsechno do vesmiru. Hmmm. "
+
+REFERENCE           22KJO007
+LANG_ENGLISH        "It's locked. There must be another way in."
+LANG_CZECH 	   "Je to zamcene. Musi tu byt jina cesta dovnitr."
+
+REFERENCE           22KJO008
+LANG_ENGLISH        "Lets see 'em fly through that!"
+LANG_CZECH 	   "Podivejme se, jak tim proleti!"
+
+REFERENCE           22KJO011
+LANG_ENGLISH        "Another one? What can I shoot with this?"
+LANG_CZECH 	   "Dalsi? Co s tim muzu zastrelit?"
+
+REFERENCE           22KJO012
+LANG_ENGLISH        "I can't just walk out into the vaccuum of space."
+LANG_CZECH 	   "Nemuzu jen tak vbehnout do vzduchoprazdna vesmiru."
+
+REFERENCE           22KJO013
+LANG_ENGLISH        "I don't suppose he'll open the doors for me if I just ask nicely."
+LANG_CZECH 	   "Nemyslim si, ze mi jen tak otevre dvere, kdyz ho pekne pozadam."
+
+REFERENCE           22JAO001
+LANG_ENGLISH        "Dual switches. We're going to have to work together to get out of here."
+LANG_CZECH 	   "Dvojite vypinace. Musime spolupracovat spolecne, abychom se odsud dostali."
+
+REFERENCE           22JAO002
+LANG_ENGLISH        "Hold the switch down, Kyle!"
+LANG_CZECH 	   "Sepni vypinac, Kyle!"
+
+ENDMARKER

@@ -1,0 +1,75 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           16ST3001
+LANG_ENGLISH        "Must be another power failure."
+LANG_CZECH 	   "To musi byt dalsi selhani energie."
+
+REFERENCE           16ST1001
+LANG_ENGLISH        "Hold your positions."
+LANG_CZECH 	   "Drzte sve pozice."
+
+REFERENCE           16ST3002
+LANG_ENGLISH        "Systems will be back on line."
+LANG_CZECH 	   "System budou zpatky v provozu."
+
+REFERENCE           16KJO001
+LANG_ENGLISH        "The weak minded are easily influenced by the Force."
+LANG_CZECH 	   "Jedinci se slabou mysli jsou lehce ovlivnovani Silou."
+
+REFERENCE           16KJO002
+LANG_ENGLISH        "There're too many of them. I'll never get through this using firepower."
+LANG_CZECH 	   "Je jich tu prilis moc. Pouzitim palebne sily se skrz nikdy nedostanu."
+
+REFERENCE           16KJO003
+LANG_ENGLISH        "I better think of a way to get through without being noticed."
+LANG_CZECH 	   "Radeji bych mel premyslet o ceste skrz bez toho, aby si mne vsimli."
+
+REFERENCE           16KJO004A
+LANG_ENGLISH        "I need to distract these guys"
+LANG_CZECH 	   "Potrebuji odvrazit pozornost techto hosanu."
+
+REFERENCE           16KJO004B
+LANG_ENGLISH        "I need to distract this guy."
+LANG_CZECH 	   "Musim nejak odlakat jeho pozornost."
+
+REFERENCE           16KJO005
+LANG_ENGLISH        "I think a distraction is in order. "
+LANG_CZECH 	   "Myslim, ze je na rade rozptyleni pozornosti."
+
+REFERENCE           16KJO006
+LANG_ENGLISH        "Stealth may be a wiser choice here. "
+LANG_CZECH 	   "Proplizeni muze byt rozumnejsi volbou."
+
+REFERENCE           16KJO007
+LANG_ENGLISH        "I better try not to attract too much attention."
+LANG_CZECH 	   "Radeji se pokusim nevzbudit prilis mnoho pozornosti."
+
+REFERENCE           16KJO008
+LANG_ENGLISH        "What was I thinking? I should have used the Force!"
+LANG_CZECH 	   "Co jsem si myslel? Mel jsem pouzit Silu!"
+
+REFERENCE           16KJO009
+LANG_ENGLISH        "There were too many. I never should have tried to shoot my way through."
+LANG_CZECH 	   "Bylo jich tam prilis moc. Nikdy jsem se nemel pokouset prostrilet si cestu skrz."
+
+REFERENCE           16KJO010
+LANG_ENGLISH        "This is an alarm control. I Don't want anyone turning this on."
+LANG_CZECH 	   "Tohle je ovladani alarmu. Nechci, aby ho nekdo zapnul."
+
+REFERENCE           16KJO011
+LANG_ENGLISH        "There's an alarm control.  Don't want anyone getting near that."
+LANG_CZECH 	   "Tady je ovladani alarmu. Nechci, aby se k tomu nekdo priblizil."
+
+REFERENCE           03KJO002
+LANG_ENGLISH        "Spast!"
+LANG_CZECH 	   "Do hajzlu!"
+
+REFERENCE           20KJO001
+LANG_ENGLISH        "That's Luke! And Desann!"
+LANG_CZECH 	   "To je Luke! A Desann!"
+
+REFERENCE           20KJO002
+LANG_ENGLISH        "What the?! We're moving!"
+LANG_CZECH 	   "Co to?! Jdeme dal!"
+ENDMARKER

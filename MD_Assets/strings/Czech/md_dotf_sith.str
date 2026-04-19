@@ -1,0 +1,54 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           OBI1
+LANG_ENGLISH        "No!"
+LANG_CZECH        "Ne!"
+
+REFERENCE           OBI4
+LANG_ENGLISH        "No."
+LANG_CZECH        "Ne."
+
+REFERENCE           MAUL1
+LANG_ENGLISH        "I am not finished Lord Sidious."
+LANG_CZECH        "Jeste jsem neskoncil Lorde Sidiousi."
+
+REFERENCE           MAUL2
+LANG_ENGLISH        "No one will escape my slaughter."
+LANG_CZECH        "Nikdo neunikne memu zabijeni."
+
+REFERENCE           MAUL3
+LANG_ENGLISH        "I seek your wisdom as always master."
+LANG_CZECH        "Jako vzdy hledam tvoji moudrost, mistre."
+
+REFERENCE           MAUL4
+LANG_ENGLISH        "They will fall, my master."
+LANG_CZECH        "Vsichni padnou, muj mistre."
+
+REFERENCE           PALP1
+LANG_ENGLISH        "You have done well, my apprentice."
+LANG_CZECH        "Vedl sis dobre, muj ucedniku."
+
+REFERENCE           PALP2
+LANG_ENGLISH        "Do not doubt that you still have much to learn."
+LANG_CZECH        "Nepochybuj o tom, ze se stale mas hodne co ucit."
+
+REFERENCE           PALP3
+LANG_ENGLISH        "Our opponents are no match for you."
+LANG_CZECH        "Nasi nepratele se s tebou nemohou merit."
+
+ENDMARKER
+
+

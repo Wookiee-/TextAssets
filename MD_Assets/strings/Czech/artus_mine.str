@@ -1,0 +1,104 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           03KJO007
+LANG_ENGLISH        "All right, I'm clear."
+LANG_CZECH        "Jsem v poradku na pozici."
+
+REFERENCE           03JAO005
+LANG_ENGLISH        "Good, the colony should be a few clicks out.  I'll scout things out from the air, while you head into the mine.  Give me a shout when you find out what's going on."
+LANG_CZECH        "Dobre, kolonie by mela byt blizko.  Prozkoumam situaci ze vzduchu, zatimco ty se vydas do dolu.  Zavolej mi, az zjistis, co se deje."
+
+REFERENCE           03KJO008
+LANG_ENGLISH        "Will do."
+LANG_CZECH        "Jasne."
+
+REFERENCE           03JAO006
+LANG_ENGLISH        "Watch yourself, Kyle."
+LANG_CZECH        "Dej na sebe pozor, Kyle."
+
+REFERENCE           03KJO010
+LANG_ENGLISH        "What's this...? Looks like the Remnant have created a slave labor camp."
+LANG_CZECH        "Co je to...? Vypada to, ze zbytky Imperia vytvorily pracovni tabor pro otroky."
+
+REFERENCE           03KJO011
+LANG_ENGLISH        "And they're using the colonists!!!"
+LANG_CZECH        "A pouzivaji k tomu kolonisty!!!"
+
+REFERENCE           03KJO012
+LANG_ENGLISH        "Mon Mothma was right, Jan.  Remnant troops are crawling all over this place, and they've taken prisoners."
+LANG_CZECH        "Mon Mothma mela pravdu Jan. Imperialni vojaci jsou vsude kolem a berou si sebou zajatce."
+
+REFERENCE           03JAO007
+LANG_ENGLISH        "Well, that should bring the Republic running.  I'll alert the fleet and pick you up."
+LANG_CZECH        "Dobre, to by melo prinutit Republiku jednat. Upozornim flotilu a vyzvednu te."
+
+REFERENCE           03KJO013
+LANG_ENGLISH        "Go ahead and call in the reinforcements, but I've got a mine to blow up and prisoners to rescue."
+LANG_CZECH        "Dej se do toho a zavolej posily, ale ja musim nejdrive vyhodit dul do povetri a zachranit vezne."
+
+REFERENCE           03JAO008
+LANG_ENGLISH        "Are you trying to justify your fee?"
+LANG_CZECH        "Snazis se zaslouzit si svou odmenu?"
+
+REFERENCE           03KJO014
+LANG_ENGLISH        "Be ready for a quick pickup; I've got a feeling that things are about to get pretty nasty around here."
+LANG_CZECH        "Bud pripravena na rychle vyzvednuti. Mam pocit, ze se to tu brzy obrati k horsimu."
+
+REFERENCE           03JAO009
+LANG_ENGLISH        "Who needs the Valley of the Jedi when you're already gifted with such amazing intuitive powers?"
+LANG_CZECH        "Kdo potrebuje Udoli Jediu, kdyz uz jsi obdaren takovymi uzasnymi intuitivnimi schopnostmi?" 
+
+REFERENCE           03KJO015
+LANG_ENGLISH        "Just be ready to pick me up."
+LANG_CZECH        "Jen bud pripravena me vyzvednout." 
+
+REFERENCE           03JAO010
+LANG_ENGLISH        "As you wish, oh Jedi Master."
+LANG_CZECH        "Jak si prejes, o Mistre Jedi." 
+
+REFERENCE           03KJO016
+LANG_ENGLISH        "Isn't it a little crazy to be doing this during one of Artus's famous meteor storms?"
+LANG_CZECH        "Neni to trochu silene, poustet se do toho behem jedne z proslulych meteorickych bouri na Artusu?" 
+
+REFERENCE           03KJO017
+LANG_ENGLISH        "This meteor storm gives us great cover. Everything's closed up. They'll never see us coming."
+LANG_CZECH        "Ta meteoricka boure nam poskytne kryti. Vse je uzavreno. Nikdy nas nemohou videt prichazet." 
+
+REFERENCE           03JAO011
+LANG_ENGLISH        "Yeah, We should be so lucky."
+LANG_CZECH        "Jo, pokud budeme mit stesti." 
+
+REFERENCE           03JAO013
+LANG_ENGLISH        "The remnant usually has pretty tight security. Make sure you search any officers for key cards."
+LANG_CZECH        "Zbytky Imperia maji obvykle dost tesne zabezpeceni. Ujisti se, ze prohledas dustojniky kvuli vstupnim kartam." 
+
+REFERENCE           03KJO018
+LANG_ENGLISH        "Thanks for the reminder."
+LANG_CZECH        "Diky za pripomenuti." 
+
+REFERENCE           03KJO022
+LANG_ENGLISH        "Jan, this place is about to fall apart. If I don't find a way out, you'll have to get help."
+LANG_CZECH        "Jan, tohle misto se cele hrouti. Pokud nenajdu cestu ven, tak budes muset zavolat pomoc." 
+
+REFERENCE           03JAO014
+LANG_ENGLISH        "Just get out of there, Kyle!"
+LANG_CZECH        "Proste se odtamtud dostan, Kyle!" 
+
+REFERENCE           03IO1001
+LANG_ENGLISH        "Get security!"
+LANG_CZECH        "Zavolejte ochranku!" 
+
+REFERENCE           03KJO019
+LANG_ENGLISH        "Looks like the tram station, but no tram car. Wonder where this leads?"
+LANG_CZECH        "Vypada to jako stanice vlaku, ale zadny vlak tu neni. Kam to muze vest?" 
+
+REFERENCE           03KJO020
+LANG_ENGLISH        "What was that?"
+LANG_CZECH        "Co to bylo?" 
+
+REFERENCE           03KJO021
+LANG_ENGLISH        "I have a bad feeling about this."
+LANG_CZECH        "Mam z toho spatny pocit." 
+
+ENDMARKER

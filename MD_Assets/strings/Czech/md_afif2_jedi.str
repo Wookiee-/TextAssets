@@ -1,0 +1,76 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           ANI1
+LANG_ENGLISH        "You underestimate my power!"
+LANG_CZECH        "Podcenujes moje schopnosti!"
+
+REFERENCE           ANI2
+LANG_ENGLISH        "Anakin: I should have known the Jedi were plotting to take over."
+LANG_CZECH        "Anakin: Mel jsem tusit, ze Jediove chystaji prevrat."
+
+REFERENCE           ANI3
+LANG_ENGLISH        "Anakin: From my point of view, the Jedi are evil!"
+LANG_CZECH        "Anakin: Ja poznal, ze zli jsou Jediove!"
+
+REFERENCE           ANI4
+LANG_ENGLISH        "Anakin: This is the end for you, my Master."
+LANG_CZECH        "Anakin: Tohle je tvuj konec, muj Mistre."
+
+REFERENCE           ANI6
+LANG_ENGLISH        "I HATE YOU!"
+LANG_CZECH        "JA TE NENAVIDIM!"
+
+REFERENCE           OBI1
+LANG_ENGLISH        "It's over, Anakin!\nI have the high ground."
+LANG_CZECH        "Je po vsem Anakine!\nMam ted vyhodu."
+
+REFERENCE           OBI2
+LANG_ENGLISH        "Don't try it!"
+LANG_CZECH        "Nezkousej to!"
+
+REFERENCE           OBI3
+LANG_ENGLISH        "Obi-Wan: I have failed you, Anakin.. I have failed you."
+LANG_CZECH        "Obi-Wan: Spatne jsem te vychoval.. je to ma vina."
+
+REFERENCE           OBI4
+LANG_ENGLISH        "Obi-Wan: Anakin, Chancellor Palpatine is evil!"
+LANG_CZECH        "Obi-Wan: Anakine, Kancler Palpatine je zlo!"
+
+REFERENCE           OBI5
+LANG_ENGLISH        "Obi-Wan: Well, then you are lost!"
+LANG_CZECH        "Obi-Wan: Pak jsi ztracen!"
+
+REFERENCE           OBI6
+LANG_ENGLISH        "You were the Chosen One!"
+LANG_CZECH        "Vzdyt jsi byl Vyvoleny!"
+
+REFERENCE           OBI6B
+LANG_ENGLISH        "It was said that you would destroy the Sith, not join them!"
+LANG_CZECH        "Mel jsi Sithy znicit, ne se k nim pridat!" 
+
+REFERENCE           OBI6C
+LANG_ENGLISH        "Bring balance to the Force,\nnot leave it in darkness!"
+LANG_CZECH        "Obnovit rovnovahu Sily,\nne uvrhnout do temnoty!"
+
+REFERENCE           OBI7
+LANG_ENGLISH        "You were my brother, Anakin."
+LANG_CZECH        "Byl jsi muj bratr, Anakine."
+
+REFERENCE           OBI7B
+LANG_ENGLISH        "I loved you."
+LANG_CZECH        "Mel jsem te rad."
+
+ENDMARKER

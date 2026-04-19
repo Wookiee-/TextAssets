@@ -1,0 +1,280 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           EMP1
+LANG_ENGLISH        "Welcome, young Skywalker. I have been expecting you."
+LANG_CZECH        "Vitej, mlady Skywalkere. Ocekaval jsem te."
+
+REFERENCE           EMP2
+LANG_ENGLISH        "You no longer need those."
+LANG_CZECH        "Pouta uz nepotrebujes."
+
+REFERENCE           EMP3
+LANG_ENGLISH        "Guards, leave us."
+LANG_CZECH        "Straze, nechte nas."
+
+REFERENCE           EMP4
+LANG_ENGLISH        "I'm looking forward to completing your training."
+LANG_CZECH        "Tesim se, az dokoncim tvuj vycvik."
+
+REFERENCE           EMP5
+LANG_ENGLISH        "In time you will call me Master."
+LANG_CZECH        "Casem me budes nazyvat Mistrem."
+
+REFERENCE           EMP6
+LANG_ENGLISH        "Oh, no, my young Jedi."
+LANG_CZECH        "Ach, ne, muj mlady Jedi."
+
+REFERENCE           EMP7
+LANG_ENGLISH        "You will find that it is you who are mistaken.."
+LANG_CZECH        "Uvidis, ze to ty se mylis.."
+
+REFERENCE           EMP8
+LANG_ENGLISH        ".. about a great many things."
+LANG_CZECH        ".. mylis se totiz v mnoha vecech."
+
+REFERENCE           EMP9
+LANG_ENGLISH        "Ah, yes, a Jedi's weapon."
+LANG_CZECH        "Ach, ano, zbran rytire Jedi."
+
+REFERENCE           EMP10
+LANG_ENGLISH        "Much like your father's. By now you must know your father can never be turned from the dark side. So will it be with you."
+LANG_CZECH        "Stejny jako tveho otce. Ted uz jiste vis, ze tveho otce nelze odvratit od temne strany. Stejne tak to bude i s tebou."
+
+REFERENCE           EMP11
+LANG_ENGLISH        "[Laughs] Perhaps you refer to the imminent attack of your Rebel fleet."
+LANG_CZECH        "[Smeje se] Mozna mas na mysli blizici se utok vasi Povstalecke flotily."
+
+REFERENCE           EMP12
+LANG_ENGLISH        "Yes.. I assure you we are quite safe from your friends here."
+LANG_CZECH        "Ano.. Ujistuji te, ze jsme tu pred tvymi prateli v bezpeci."
+
+REFERENCE           EMP13
+LANG_ENGLISH        "Your faith in your friends is yours."
+LANG_CZECH        "Tva vira v pratele je ta tvoje."
+
+REFERENCE           EMP14
+LANG_ENGLISH        "Everything that has transpired has done so according to my design. Your friends up there on the Sanctuary Moon are walking into a trap. As is your Rebel fleet!"
+LANG_CZECH        "Vsechno, co se dosud stalo, bylo podle meho planu. Tvy pratele, tam nahore na mesici Endor, prave kraceji do pasti. Stejne jako vase Povstalecka flotila!"
+
+REFERENCE           EMP15
+LANG_ENGLISH        "It was I who allowed the Alliance to know the location of the shield generator. It is quite safe from your pitiful little band."
+LANG_CZECH        "Byl jsem to ja, kdo Alianci umoznil zjistit polohu generatoru stitu. Pred vasi malou ubohou bandou je v bezpeci."
+
+REFERENCE           EMP16
+LANG_ENGLISH        "An entire legion of my best troops awaits them. Oh.. I'm afraid the deflector shield will be quite operational when your friends arrive."
+LANG_CZECH        "Ceka na ne cela legie mych nejlepsich vojaku. Ach.. Obavam se, ze az tvoji pratele dorazi, bude deflektorovy stit zcela funkcni."
+
+REFERENCE           EMP17
+LANG_ENGLISH        "Come, boy. See for yourself."
+LANG_CZECH        "Pojd chlapce. Presvedc se sam."
+
+REFERENCE           EMP18
+LANG_ENGLISH        "From here you will witness the final destruction of the Alliance, and the end of your insignificant Rebellion."
+LANG_CZECH        "Odtud budes svedkem finalniho zniceni Aliance a konce vaseho bezvyznamneho Povstani."
+
+REFERENCE           EMP19
+LANG_ENGLISH        "You want this, don't you?"
+LANG_CZECH        "Chces to, ze ano?"
+
+REFERENCE           EMP20
+LANG_ENGLISH        "The hate is swelling in you now. Take your Jedi weapon. Use it. I am unarmed. Strike me down with it. Give in to your anger. With each passing moment, you make yourself more my servant."
+LANG_CZECH        "Nenavist v tobe ted roste. Vezmi si svou zbran. Pouzij ji. Jsem neozbrojeny. Zabij me s ni. Poddej se svemu hnevu. S kazdym dalsim okamzikem se stavas mym sluzebnikem."
+
+REFERENCE           EMP21
+LANG_ENGLISH        "It is unavoidable. It is your destiny. You, like your father, are now mine!"
+LANG_CZECH        "Je to nevyhnutelne. Je to tvuj osud. Stejne jako tvuj otec, jsi nyni muj!"
+
+REFERENCE           EMP22
+LANG_ENGLISH        "As you can see, my young apprentice, your friends have failed."
+LANG_CZECH        "Jak muzes videt, muj mlady ucedniku, tvy pratele selhali."
+
+REFERENCE           EMP23
+LANG_ENGLISH        "Now witness the firepower of this fully armed and operational battle station."
+LANG_CZECH        "Nyni se presvedcis o palebne sile teto plne vyzbrojene a funkcni bojove stanice."
+
+REFERENCE           EMP24
+LANG_ENGLISH        "(into comlink) Fire at will, Commander!"
+LANG_CZECH        "(do comlinku) Strilejte dle libosti, veliteli!"
+
+REFERENCE           EMP25
+LANG_ENGLISH        "Your fleet has lost. And your friends on the Endor moon will not survive."
+LANG_CZECH        "Vase flotila prohrala. A tvy pratele na mesici Endoru nepreziji."
+
+REFERENCE           EMP26
+LANG_ENGLISH        "There is no escape, my young apprentice."
+LANG_CZECH        "Neni uniku, muj mlady ucedniku."
+
+REFERENCE           EMP27
+LANG_ENGLISH        "The Alliance will die.. as will your friends."
+LANG_CZECH        "Aliance bude znicena.. stejne jako tvoji pratele."
+
+REFERENCE           EMP28
+LANG_ENGLISH        "Good. I can feel your anger. I am defenseless. Take your weapon! Strike me down with all your hatred, and your journey towards the Dark Side will be complete."
+LANG_CZECH        "Dobre. Citim tvuj hnev. Jsem bezbranny. Vezmi si svou zbran! Zabij me s celou tvou nenavisti a tva cesta k Temne strane bude dokoncena."
+
+REFERENCE           EMP29
+LANG_ENGLISH        "[Laughs]."
+LANG_CZECH        "[Smeje se]."
+
+REFERENCE           EMP30
+LANG_ENGLISH        "Good. Use your aggressive feelings, boy! Let the hate flow through you."
+LANG_CZECH        "Vyborne. Pouzij svoje agresivni pocity, chlapce! Nech v sobe proudit nenavist."
+
+REFERENCE           EMP31
+LANG_ENGLISH        "[Laughs]."
+LANG_CZECH        "[Smeje se]."
+
+REFERENCE           EMP32
+LANG_ENGLISH        "Good. Good."
+LANG_CZECH        "Dobre. Dobre."
+
+REFERENCE           EMP33
+LANG_ENGLISH        "Good! Your hate has made you powerful."
+LANG_CZECH        "Dobre! Tva nenavist te posilila."
+
+REFERENCE           EMP34
+LANG_ENGLISH        "Now, fulfill your destiny and take your father's place at my side!"
+LANG_CZECH        "Nyni napln svuj osud a zaujmi otcovo misto po mem boku!"
+
+REFERENCE           EMP35
+LANG_ENGLISH        "So be it.. Jedi."
+LANG_CZECH        "Budiz.. Jedi."
+
+REFERENCE           EMP36
+LANG_ENGLISH        "If you will not be turned, you will be destroyed."
+LANG_CZECH        "Neobratis-li se, tak budes znicen."
+
+REFERENCE           EMP37
+LANG_ENGLISH        "Young fool.. only now, at the end, do you understand."
+LANG_CZECH        "Mlady blazne.. teprve ted, na konci, to chapes."
+
+REFERENCE           EMP38
+LANG_ENGLISH        "Your feeble skills are no match for the power of the Dark Side."
+LANG_CZECH        "Tve chabe schopnosti se nemohou rovnat sile Temne strany."
+
+REFERENCE           EMP39
+LANG_ENGLISH        "You have paid the price for your lack of vision."
+LANG_CZECH        "Zaplatil jsi cenu za svoji absenci proziravosti."
+
+REFERENCE           EMP40
+LANG_ENGLISH        "Now, young Skywalker...you will die."
+LANG_CZECH        "Nyni, mlady Skywalkere.. zemres."
+
+REFERENCE           LUK1
+LANG_ENGLISH        "You're gravely mistaken. You won't convert me as you did my father."
+LANG_CZECH        "Hluboce se mylite. Me nepresvedcite tak, jako meho otce."
+
+REFERENCE           LUK2
+LANG_ENGLISH        "You're wrong. Soon I'll be dead.. and you with me."
+LANG_CZECH        "Mylite se. Brzy budu mrtvy.. a vy se mnou."
+
+REFERENCE           LUK3
+LANG_ENGLISH        "Your overconfidence is your weakness."
+LANG_CZECH        "Vase prehnana sebeduvera je Vasi slabinou."
+
+REFERENCE           LUK4
+LANG_ENGLISH        "No!"
+LANG_CZECH        "Ne!"
+
+REFERENCE           LUK5
+LANG_ENGLISH        "I will not fight you, father."
+LANG_CZECH        "Nebudu s tebou bojovat, otce."
+
+REFERENCE           LUK6
+LANG_ENGLISH        "Your thoughts betray you, father. I feel the good in you.. the conflict."
+LANG_CZECH        "Tve myslenky te zrazuji, otce. Citim v tobe dobro.. konflikt."
+
+REFERENCE           LUK7
+LANG_ENGLISH        "You couldn't bring yourself to kill me before, and I don't believe you'll destroy me now."
+LANG_CZECH        "Nedokazal ses primet k tomu, abys me predtim zabil a neverim, ze me znicis ted."
+
+REFERENCE           LUK8
+LANG_ENGLISH        "I will not fight you."
+LANG_CZECH        "Nebudu s tebou bojovat."
+
+REFERENCE           LUK9
+LANG_ENGLISH        "[Screams in anger]."
+LANG_CZECH        "[Krici vztekem]."
+
+REFERENCE           LUK10
+LANG_ENGLISH        "Never! I'll never turn to the dark side."
+LANG_CZECH        "Nikdy! Nikdy neprejdu na temnou stranu."
+
+REFERENCE           LUK11
+LANG_ENGLISH        "You've failed, Your Highness. I am a Jedi, like my father before me.."
+LANG_CZECH        "Selhal jste, Vase Vysosti. Jsem Jedi, stejne jako muj otec predemnou.."
+
+REFERENCE           LUK12
+LANG_ENGLISH        "[Screams in unbearable pain]."
+LANG_CZECH        "[Krici nesnesitelnou bolesti]."
+
+REFERENCE           VAD1
+LANG_ENGLISH        "His lightsaber."
+LANG_CZECH        "Jeho svetelny mec."
+
+REFERENCE           VAD2
+LANG_ENGLISH        "It is pointless to resist, my son."
+LANG_CZECH        "Nema smysl vzdorovat, muj synu."
+
+REFERENCE           VAD3
+LANG_ENGLISH        "Aaah!"
+LANG_CZECH        "Aaah!"
+
+REFERENCE           VAD5
+LANG_ENGLISH        "Obi-Wan has taught you well."
+LANG_CZECH        "Obi-Wan te vycvicil dobre."
+
+REFERENCE           VAD6
+LANG_ENGLISH        "You are unwise to lower your defenses."
+LANG_CZECH        "Nejsi moudry, pokud se nechces branit."
+
+REFERENCE           VAD7
+LANG_ENGLISH        "There is no conflict."
+LANG_CZECH        "Neexistuje zadny konflikt."
+
+REFERENCE           VAD8
+LANG_ENGLISH        "You underestimate the power of the dark side. If you will not fight, then you will meet your destiny."
+LANG_CZECH        "Podcenujes silu temne strany. Pokud nebudes bojovat, tak se setkas se svym osudem."
+
+REFERENCE           VAD9
+LANG_ENGLISH        "You cannot hide forever, Luke."
+LANG_CZECH        "Nemuzes se vecne skryvat, Luku."
+
+REFERENCE           VAD10
+LANG_ENGLISH        "Give yourself to the Dark Side."
+LANG_CZECH        "Odevzdej se Temne Strane."
+
+REFERENCE           VAD11
+LANG_ENGLISH        "Give yourself to the Dark Side. It is the only way you can save your friends. Yes, your thoughts betray you. Your feelings for them are strong. Especially for.. Sister! So.. you have a twin sister. Your feelings have now betrayed her, too. Obi-Wan was wise to hide her from me. Now his failure is complete. If you will not turn to the Dark Side, then perhaps she will."
+LANG_CZECH        "Odevzdej se Temne Strane. Je to jedina cesta, jak zachranit sve pratele. Ano, tve myslenky te zrazuji. Tvoje city k nim jsou silne. Zejmena pro.. Sestru! Takze.. mas sestru dvojce. Tve city ted zradily i ji. Obi-Wan byl moudry, ze ji prede mnou schoval. Ted je jeho selhani uplne. Pokud se k Temne Strane neobratis ty, pak to mozna udela ona."
+
+REFERENCE           VAD14
+LANG_ENGLISH        "Aaah!"
+LANG_CZECH        "Aaah!"
+
+REFERENCE           VAD15
+LANG_ENGLISH        "No. No!"
+LANG_CZECH        "Ne. Ne!"
+
+REFERENCE           VAD16
+LANG_ENGLISH        "[Breathes heavily].
+LANG_CZECH        "[Tezce dycha]."
+
+REFERENCE           CHOICE
+LANG_ENGLISH        "Deactivate your lightsaber to remain on the light side.\n\nKill Darth Vader to join the dark side."
+LANG_CZECH        "Vypnete svuj svetelny mec, abyste zustal na svetle strane.\n\nZabijte Dartha Vadera, abyste se pridal k temne strane."
+
+ENDMARKER

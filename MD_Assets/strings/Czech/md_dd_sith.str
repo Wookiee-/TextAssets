@@ -1,0 +1,155 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           LUKE1
+LANG_ENGLISH        "C3P0, do you copy?"
+LANG_CZECH        "C3P0, slysis me?"
+
+REFERENCE           LUKE1B
+LANG_ENGLISH        "Luke: Are you safe?"
+LANG_CZECH        "Luke: Jsi v bezpeci?"
+
+REFERENCE           LUKE2
+LANG_ENGLISH        "Luke: We're right above you, stand by."
+LANG_CZECH        "Luke: Jsme primo nad vami, priprav se."
+
+REFERENCE           LUKE3
+LANG_ENGLISH        "Ben?"
+LANG_CZECH        "Bene?"
+
+REFERENCE           LUKE4
+LANG_ENGLISH        "NOOOO!"
+LANG_CZECH        "NEEEE!"
+
+REFERENCE           LUKE5
+LANG_ENGLISH        "Can't believe he's gone.."
+LANG_CZECH        "Nemohu uverit, ze zemrel.."
+
+REFERENCE           C3PO1
+LANG_ENGLISH        "C3PO: Yes Sir."
+LANG_CZECH        "C3PO: Ano pane."
+
+REFERENCE           C3PO1B
+LANG_ENGLISH        "C3PO: For the moment."
+LANG_CZECH        "C3PO: Zatim ano."
+
+REFERENCE           C3PO1C
+LANG_ENGLISH        "We're in the main hangar across from the ship."
+LANG_CZECH        "Jsme v hlavnim hangaru na druhe strane lodi."
+
+REFERENCE           HAN1
+LANG_ENGLISH        "There she is."
+LANG_CZECH        "Tady je."
+
+REFERENCE           HAN2
+LANG_ENGLISH        "Nice, come on!"
+LANG_CZECH        "No jo, jdeme!"
+
+REFERENCE           HAN_COMEON
+LANG_ENGLISH        "Han: Come on!"
+LANG_CZECH        "Han: Bezte!"
+
+REFERENCE           HAN_COMEON2
+LANG_ENGLISH        "Han: Blast the door, kid!"
+LANG_CZECH        "Han: Znic dvere kluku, slysis!"
+
+REFERENCE           HAN_ESCAPE
+LANG_ENGLISH        "I hope the old man got that tractor beam out of commision or this is gonna be a real short trip, okay HIT IT!"
+LANG_CZECH        "Jestli deda nestacil vypnout magneticky pole bude katastrofa. Zvejku JED!"
+
+REFERENCE           HAN_ESCAPE2
+LANG_ENGLISH        "Come up on their sentry ships.\nHold them off, angle the deflector shields while I charge up the main guns!"
+LANG_CZECH        "Blizime se k hlidkovym lodim.\nDrz si je od tela, zkus deflektory, ja zatim nabiju hlavni dela!"
+
+REFERENCE           LEIA1
+LANG_ENGLISH        "You came in that thing?"
+LANG_CZECH        "To je vase?"
+
+REFERENCE           LEIA1B
+LANG_ENGLISH        "You're braver than I thought."
+LANG_CZECH        "Odvazni letci."
+
+REFERENCE           LEIA2
+LANG_ENGLISH        "There wasn't anything you could have done."
+LANG_CZECH        "Nemohl jsi nic delat."
+
+REFERENCE           LEIA_COMEON
+LANG_ENGLISH        "Leia: Luke, come on! Come on!"
+LANG_CZECH        "Leia: Luku, pojd! Musis utect!"
+
+REFERENCE           LEIA_COMEON2
+LANG_ENGLISH        "Leia: Luke, it's too late!"
+LANG_CZECH        "Leia: Luku, uz je pozde!"
+
+REFERENCE           OBI1
+LANG_ENGLISH        "Only a master of evil, Darth."
+LANG_CZECH        "Jen mistr zla, Vadere."
+
+REFERENCE           OBI2
+LANG_ENGLISH        "You can't win, Darth."
+LANG_CZECH        "Neporazis me, Darthe."
+
+REFERENCE           OBI2B
+LANG_ENGLISH        "If you strike me down,\nI shall become more powerful than you can possibly imagine."
+LANG_CZECH        "A i kdyby, stanu se mnohem silnejsim, nez si sam dovedes predstavit."
+
+REFERENCE           OBI3
+LANG_ENGLISH        "[Obi-Wan's Voice]\nRun Luke Run!"
+LANG_CZECH        "[Obi-Wanuv hlas]\nUtec Luku, utec!"
+
+REFERENCE           OBI4
+LANG_ENGLISH        "You must do what you feel is right, of course."
+LANG_CZECH        "Musis udelat to, co citis, ze je spravne."
+
+REFERENCE           VADER1
+LANG_ENGLISH        "I've been waiting for you, Obi-Wan.\nWe meet again at last."
+LANG_CZECH        "Cekam na Vas, Obi-Wane.\nKonecne jsme se opet setkali."
+
+REFERENCE           VADER1B
+LANG_ENGLISH        "The circle is now complete.\nWhen I left you, I was but the learner. Now I am the master."
+LANG_CZECH        "Kruh se uzavira.\nKdyz jsem Vas opoustel byl jsem ucednik, nyni jsem Mistr."
+
+REFERENCE           VADER2
+LANG_ENGLISH        "Your powers are weak old man!"
+LANG_CZECH        "Uz nemate tolik sily, starce!"
+
+REFERENCE           VADER3
+LANG_ENGLISH        "Vader: You should not have come back!"
+LANG_CZECH        "Vader: Nemel jste se vracet!"
+
+REFERENCE           VADER4
+LANG_ENGLISH        "No.."
+LANG_CZECH        "Ne.."
+
+REFERENCE           STORM1
+LANG_ENGLISH        "Pokracujte."
+
+REFERENCE           EMP1
+LANG_ENGLISH        "You have forgotten your place, Lord Vader."
+LANG_CZECH        "Zapomnel jsi, kde je tve misto, Lorde Vadere."
+
+REFERENCE           EMP2
+LANG_ENGLISH        "You have betrayed me. Now you will be destroyed."
+LANG_CZECH        "Zradil jsi me."
+
+REFERENCE           EMP2B
+LANG_ENGLISH        "Now you will be destroyed."
+LANG_CZECH        "Ted budes znicen."
+
+REFERENCE           EMP3
+LANG_ENGLISH        "You had such promise.\nYou could have been my successor, my equal. But now..."
+LANG_CZECH        "Mel jsi takovy potencial.\nMohl jsi byt mym nastupcem, vyrovnat se mi. Ale nyni..."
+
+ENDMARKER

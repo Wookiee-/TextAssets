@@ -1,0 +1,140 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           05KJO002
+LANG_ENGLISH        "I'm all done here, Jan.  How about a lift?"
+LANG_CZECH        "Jstem tu hotov, Jan. Co treba me vyzvednout?"
+
+REFERENCE           05JAO001
+LANG_ENGLISH        "Great.  New Republic Troops are on their way to mop up this mess.  I'll meet you on the far side of the courtyard."
+LANG_CZECH        "Skvele. Vojaci Nove Republiky jsou na ceste, aby tu uklidili ten neporadek. Sejdu se s tebou na vzdalenejsi strane nadvori."
+
+REFERENCE           05JAO002
+LANG_ENGLISH        "Kyle, I've got some trouble here...hey!"
+LANG_CZECH        "Kyle, mam tu nejake potize...hej!"
+
+REFERENCE           05KJO003
+LANG_ENGLISH        "Jan?
+LANG_CZECH        "#same"
+
+REFERENCE           05JAO003
+LANG_ENGLISH        "Kyle, get over here!"
+LANG_CZECH        "Kyle, rychle se sem dostan!"
+
+REFERENCE           05KJO004
+LANG_ENGLISH        "What's wrong?!"
+LANG_CZECH        "Co se deje?!"
+
+REFERENCE           05KJO005
+LANG_ENGLISH        "Jan!!!"
+LANG_CZECH        "#same"
+
+REFERENCE           05TAA001
+LANG_ENGLISH        "A prisoner for you, Master Desann!"
+LANG_CZECH        "Vezen pro Vas, Mistre Desanne!"
+
+REFERENCE           05DES001
+LANG_ENGLISH        "Well done, Tavion.  Secure her in the cargo hold, and prepare her for processing."
+LANG_CZECH        "Vyborne, Tavion. Zavri ji do nakladoveho prostoru a priprav ji na cestu."
+
+REFERENCE           05TAA002
+LANG_ENGLISH        "At once, Master."
+LANG_CZECH        "Hned, Mistre."
+
+REFERENCE           05JAO004
+LANG_ENGLISH        "Blast them, Kyle! "
+LANG_CZECH        "Zastrel je, Kyle! "
+
+REFERENCE           05DES002
+LANG_ENGLISH        "Kyle?  Kyle Katarn?  You're the legendary hero who destroyed Jerec at the Valley of the Jedi? You look like nothing more than a Bantha herder."
+LANG_CZECH        "Kyle? Kyle Katarn? Ty ze jsi ten legendarni hrdina, ktery znicil Jereca v Udoli Jediu? Nevypadas na nic vic, nez na pasaka Banthu."
+
+REFERENCE           05KJO006
+LANG_ENGLISH        "Well, you look like an overgrown Kowakian monkey-lizard, so I guess looks don't count for much.  Hand her over."
+LANG_CZECH        "Zatimco ty vypadas jako prerostla Kowakianska opici jesterka, takze hadam, ze na vzhledu moc nezalezi. Predej mi ji zpet."
+
+REFERENCE           05DES003
+LANG_ENGLISH        "You desire this woman?  Come, take her."
+LANG_CZECH        "Touzis po tehle zene? Tak pojd, vezmi si ji."
+
+REFERENCE           05KJO007
+LANG_ENGLISH        "Aww, sithspit..."
+LANG_CZECH        "Aww, do Sithu..."
+
+REFERENCE           05DES004
+LANG_ENGLISH        "Enough of this charade."
+LANG_CZECH        "Dost te sarady."
+
+REFERENCE           05DES005
+LANG_ENGLISH        "You're pathetic, Katarn.  As a Jedi, you might have proven a worthy adversary.  But without the power of the Force, you're not worth the effort it would take to strike you down.  Perhaps your woman will prove to be of heartier stock...she certainly couldn't be any weaker than these colonists..."
+LANG_CZECH        "Jsi ubohy, Katarne. Kdyz jsi byl Jedi, tak ses osvedcil jako uctihodny protivnik. Ale bez moci Sily nejsi hoden te namahy, kterou me bude stat, abych te srazil k zemi. Mozna se tva zena ukaze jako odolnejsi...urcite nemuze byt slabsi nez tihle koloniste... "
+
+REFERENCE           05KJO008
+LANG_ENGLISH        "Don't you touch her..."
+LANG_CZECH        "Nedotykej se ji..."
+
+REFERENCE           05DES006
+LANG_ENGLISH        "On second thought, kill her."
+LANG_CZECH        "Rozmyslel jsem si to, zabij ji."
+
+REFERENCE           05DES007
+LANG_ENGLISH        "On second thought Tavion, kill her."
+LANG_CZECH        "Rozmyslel jsem si to Tavion, zabij ji."
+
+REFERENCE           05JAO005
+LANG_ENGLISH        "Kyle!"
+LANG_CZECH        "#same"   
+
+REFERENCE           05KJO009
+LANG_ENGLISH        "Jaaaaaaaaan!"
+LANG_CZECH        "#same"
+
+REFERENCE           05KJO012
+LANG_ENGLISH        "You want a worthy adversary? I'll give you a worthy adversary."
+LANG_CZECH        "Chces uctihodneho protivnika? Dam ti uctihodneho protivnika."   
+
+REFERENCE           05JAO006
+LANG_ENGLISH        "Kyle, the evac ships are standing by. Just keep those prisoners alive!"
+LANG_CZECH        "Kyle, evakuacni lode se priblizuji. Jenom udrz ty vezne nazivu!"   
+
+REFERENCE           05JAO007
+LANG_ENGLISH        "Kyle, the perimeter defenses are too strong. You have to do something about those Ion cannons"
+LANG_CZECH        "Kyle, obrana perimetru je prilis silna. Musis neco udelat s temi iontovymi kanony!" 
+
+REFERENCE           05KJO024
+LANG_ENGLISH        "I'll see what I can do."
+LANG_CZECH        "Uvidim, co muzu udelat." 
+
+REFERENCE           05KJO025
+LANG_ENGLISH        "I'm on it."
+LANG_CZECH        "Jdu na to." 
+
+REFERENCE           05KJO027
+LANG_ENGLISH        "Ok, it's all clear"
+LANG_CZECH        "Ok, je to tu ciste." 
+
+REFERENCE           05RS1002
+LANG_ENGLISH        "Thanks Commander! We're on our way down for the prisoners."
+LANG_CZECH        "Diky Veliteli! Jsme na ceste dolu vyzvednout vezne." 
+
+REFERENCE           05KJO026
+LANG_ENGLISH        "My blasters are too weak against an AT-ST. I'll need something stronger."
+LANG_CZECH        "Moje blastery jsou prilis slabe proti AT-ST. Potrebuji neco silnejsiho." 
+
+REFERENCE           05PR1001
+LANG_ENGLISH        "Thanks Commander! We'll wait here for the evac."
+LANG_CZECH        "Diky Velitely! Pockame tu na evakuaci." 
+
+REFERENCE           05JAO008
+LANG_ENGLISH        "Kyle, I can't land yet. The Ion cannons are still active. You need to destroy them."
+LANG_CZECH        "Kyle, jeste nemuzu pristat. Iontove kanony jsou stale aktivni. Musis je znicit." 
+
+REFERENCE           05JAO009
+LANG_ENGLISH        "Good work, Kyle! I'll set down in that small canyon. See you soon."
+LANG_CZECH        "Dobra prace, Kyle! Pristanu v tom malem kanonu. Brzy se uvidime." 
+
+REFERENCE           05RS1001
+LANG_ENGLISH        "Evac leader to Commander Katarn. I'm still a little nervous about landing with those AT-STs active. A clean shot from one of those could cause us some real trouble. Any chance you can help us out?"
+LANG_CZECH        "Evakuacni vedouci Veliteli Katarnovi. Stale jsem trochu nervozni ohledne pristani, kdyz jsou AT-ST aktivni. Primy zasah jednoho z nich nam muze zpusobit velke potize. Je tu sance, ze nam muzete pomoct?" 
+
+ENDMARKER

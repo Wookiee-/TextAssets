@@ -1,0 +1,36 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           "XMAKE-auto-generated from "w:\documents\script\jedi academy script2.txt""
+
+REFERENCE           PICGORCINFO1
+LANG_ENGLISH        "It is a mystery why one would call Gorc and Pic twins."
+LANG_CZECH        "Je zahadou, proc nekdo nazyva Gorca a Pica dvojcaty."
+
+REFERENCE           PICGORCINFO2
+LANG_ENGLISH        "Even though one is miniature version of the other, they look nothing alike."
+LANG_CZECH        "I kdyz je jeden miniaturni verzi druheho, nevypadaji vubec stejne."
+
+REFERENCE           PICGORCINFO3
+LANG_ENGLISH        "They also don't battle alike. Pic is the energy, and Gorc , the counter."
+LANG_CZECH        "Ani stejne nebojuji. Pic je energicky a Gorc jeho protikladem."
+
+REFERENCE           PICGORCINFO4
+LANG_ENGLISH        "They are the clashing balance of opposites: one, the voice, the other, the body."
+LANG_CZECH        "Jsou stretem protikladu: jeden je hlas, druhy telo."
+
+REFERENCE           PICGORCINFO5
+LANG_ENGLISH        "This combination.. is deadly."
+LANG_CZECH        "Tato kombinace.. je smrtelna."
+
+ENDMARKER
