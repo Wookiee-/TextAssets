@@ -1,0 +1,91 @@
+repeatDelay				300
+
+Line
+{
+	life				10
+
+	origin2				24 0 0 30 0 0
+
+	alpha
+	{
+		start			0.5 0.6
+		end				0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			6.75 8.5
+		end				5
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/cloneSideFlash
+	]
+}
+
+Particle
+{
+	life				30
+
+	origin				5 0 0
+
+	rotation			0 360
+
+	alpha
+	{
+		start			0.8 1
+		end				0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			8 10.5
+		end				7
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/cloneFrontFlash
+	]
+}
+
+Light
+{
+	rgb
+	{
+		start			0.502 0.502 1
+	}
+
+	size
+	{
+		start			100 150
+	}
+}
+
+Sound
+{
+	sounds
+	[
+		sound/weapons/z6/fire.mp3
+	]
+}
+
+CameraShake
+{
+	intensity			2
+
+	radius				60
+}
+
+forcefeedback
+{
+	forces
+	[
+		fffx/weapons/repeater/fire
+	]
+}

@@ -1,0 +1,123 @@
+repeatDelay				300
+
+Particle
+{
+	count				1 2
+
+	life				300
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	rgb
+	{
+		start			0.6 0.6 1
+	}
+
+	alpha
+	{
+		end				0
+		parm			40
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			3 4.5
+		end				6 8
+		flags			random linear
+	}
+
+	shaders
+	[
+		gfx/misc/lightningFlash
+	]
+}
+
+Particle
+{
+	count				1 4
+
+	life				150 300
+
+	origin				-2 -7 -7 2 7 7
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	rgb
+	{
+		start			0.6 0.6 1
+	}
+
+	alpha
+	{
+		end				0
+		parm			40
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			2
+		end				4 5
+		flags			random linear
+	}
+
+	shaders
+	[
+		gfx/misc/lightningFlash
+	]
+}
+
+Particle
+{
+	life				300
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	rgb
+	{
+		start			0.7 0.7 1
+	}
+
+	alpha
+	{
+		end				0
+		parm			40
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			4 6
+		end				10 12
+		flags			random linear
+	}
+
+	shaders
+	[
+		gfx/misc/lightningFlash
+	]
+}
+
+Sound
+{
+	sounds
+	[
+		sound/weapons/baton/flesh_impact.wav
+	]
+}
+
+CameraShake
+{
+	life				125
+
+	intensity			3.2
+
+	radius				70
+}

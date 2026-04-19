@@ -1,0 +1,72 @@
+Line
+{
+	origin2				24 0 0 30 0 0
+
+	alpha
+	{
+		start			0.5 0.6
+		end				0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			5 7
+		end				6
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/greenSideFlash
+	]
+}
+
+Particle
+{
+	origin				5 0 0
+
+	rotation			0 360
+
+	alpha
+	{
+		start			0.8 1
+		end				0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			5 7
+		end				6
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/GREEN_FRONTFLASH
+	]
+}
+
+Light
+{
+	life				150
+
+	rgb
+	{
+		start			0.2 1 0.2
+	}
+
+	size
+	{
+		start			75
+	}
+}
+
+Sound
+{
+	sounds
+	[
+		sound/weapons/turret/fire.wav
+	]
+}

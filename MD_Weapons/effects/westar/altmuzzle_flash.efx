@@ -1,0 +1,90 @@
+Line
+{
+	origin2				24 0 0 30 0 0
+
+	alpha
+	{
+		start			0.5 0.6
+		end				0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			5 7
+		end				6
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/blasterSideFlash
+	]
+}
+
+Particle
+{
+	origin				5 0 0
+
+	rotation			0 360
+
+	alpha
+	{
+		start			0.8 1
+		end				0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			5 7
+		end				6
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/blasterFrontFlash
+	]
+}
+
+Light
+{
+	life				300
+
+	rgb
+	{
+		start			0.502 0 0 0.698 0 0
+	}
+
+	size
+	{
+		start			80 100
+		flags			linear
+	}
+}
+
+Sound
+{
+	sounds
+	[
+		sound/weapons/westar/alt_fire.mp3
+	]
+}
+
+CameraShake
+{
+	flags				usePhysics
+
+	bounce				2
+
+	radius				60
+}
+
+forcefeedback
+{
+	forces
+	[
+		fffx/weapons/blaster/alt_fire
+	]
+}

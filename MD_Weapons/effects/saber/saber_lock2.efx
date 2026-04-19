@@ -1,0 +1,28 @@
+Particle
+{
+	count	6
+	life	20	30
+	delay	0	50
+
+
+
+	size
+	{
+		start 	12.0	21.0
+		end	14.0	41.0
+		flags	linear
+	}
+
+	alpha
+	{
+		start	0.93	0.04
+		end 	0.0
+		flags	linear
+	}
+
+	shader
+	[
+		gfx/effects/saberlockflare
+	]
+}
+
