@@ -1,0 +1,3581 @@
+//----------------------------------------------------------------------------------------------
+// INGAME FORCE LOADOUT MENU
+//
+//	Allows user to customize their Force Power selection and levels.
+//----------------------------------------------------------------------------------------------
+{
+	menuDef 
+	{
+		name					"ingameforceloadout"
+		fullScreen				1		
+		rect					0 0 640 480	
+		visible					1
+		focusColor				1 1 1 1
+		descX					320
+		descY					384
+		descScale				0.82
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1	
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				25						// how often fade happens in milliseconds
+		fadeAmount				0.05						// amount to adjust alpha per cycle	
+
+		onOpen 
+		{
+ 		}							
+ 		
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav"
+			close				all
+			open				ingameMainMenu
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MENU BACKGROUND
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/ingameforcemenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				commandsbar
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 418 640 30
+			background			"gfx/menus/ingame/ingamemenubar2"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 32 640 532
+			background			"gfx/menus/sp/saber/ingamehiltpanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_SHADER
+			rect				151 -5 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Panels
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		// Sub Buttons
+
+
+		itemDef
+		{
+			name				commandsteam
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				23 421 130 25
+			text				@MD_MENU_MAIN_COMMANDS
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			30
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingamecommandsMenu
+			}
+		}
+
+		itemDef
+		{
+			name				commandssaber
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				153 421 150 25
+			text				@MD_MENU_SABER_LIGHTSABER_CREATION
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			7
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingamesabercustomizationMenu
+			}
+		}
+
+		itemDef
+		{
+			name				commandsforce
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				320 421 150 25
+			text				@MD_MENU_MAIN_FORCE_SELECTION
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			12
+			textaligny			3
+			visible			1
+			action
+			{
+				//play				"sound/interface/button1.wav" 
+				//close				all
+				//open				ingameforceloadout
+			}
+		}
+
+		itemDef
+		{
+			name				commandsweapons
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				470 421 148 25
+			text				@MD_MENU_MAIN_WEAPON_LOADOUT
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingameweaponloadout
+			}
+		}
+
+		//////
+
+		itemDef
+		{
+			name				title
+			group				commands
+			type				ITEM_TYPE_TEXT
+			textalign			ITEM_ALIGN_CENTER
+			rect				320 103 100 20
+			text				@MD_MENU_MAIN_FORCE_SELECTION
+			font				5
+			textscale			0.19
+			textstyle			1
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+
+		// Force powers
+
+		itemDef
+		{
+			name				npcforceabsorb
+			group				npcforcelight
+			type				ITEM_TYPE_BUTTON
+			rect				55 140 95 24
+			text				@MD_MENU_MAIN_FORCE_ABSORB
+			descText			@MD_MENU_MAIN_SET_FORCE_ABSORB_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforceabsorbsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforceabsorb forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceheal
+			group				npcforcelight
+			type				ITEM_TYPE_BUTTON
+			rect				55 165 95 24
+			text				@MD_MENU_MAIN_FORCE_HEAL
+			descText			@MD_MENU_MAIN_SET_FORCE_HEAL_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcehealsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforceheal forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceprotect
+			group				npcforcelight
+			type				ITEM_TYPE_BUTTON
+			rect				55 190 95 24
+			text				@MD_MENU_MAIN_FORCE_PROTECT
+			descText			@MD_MENU_MAIN_SET_FORCE_PROTECT_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforceprotectsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforceprotect forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcemindtrick
+			group				npcforcelight
+			type				ITEM_TYPE_BUTTON
+			rect				55 215 95 24
+			text				@MD_MENU_MAIN_FORCE_MIND_TRICK
+			descText			@MD_MENU_MAIN_SET_FORCE_MIND_TRICK_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcemindtricksub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcemindtrick forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceblast
+			group				npcforcelight
+			type				ITEM_TYPE_BUTTON
+			rect				55 240 95 24
+			text				@MD_MENU_MAIN_FORCE_BLAST
+			descText			@MD_MENU_MAIN_SET_FORCE_BLAST_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforceblastsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforceblast forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceprojection
+			group				npcforcelight
+			type				ITEM_TYPE_BUTTON
+			rect				55 265 95 24
+			text				@MD_MENU_MAIN_FORCE_PROJECTION
+			descText			@MD_MENU_MAIN_SET_FORCE_PROJECTION_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforceprojectionsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforceprojection forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceelectricjudgement
+			group				npcforcelight
+			type				ITEM_TYPE_BUTTON
+			rect				55 290 95 24
+			text				@MD_MENU_MAIN_FORCE_ELECTRIC_JUDGEMENT
+			descText			@MD_MENU_MAIN_SET_FORCE_ELECTRIC_JUDGEMENT_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforceelectricjudgementsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforceelectricjudgement forecolor 1 1 1 0.9
+			}
+		}
+
+		//////
+
+		itemDef
+		{
+			name				npcforcelightning
+			group				npcforcedark
+			type				ITEM_TYPE_BUTTON
+			rect				165 140 95 24
+			text				@MD_MENU_MAIN_FORCE_LIGHTNING
+			descText			@MD_MENU_MAIN_SET_FORCE_LIGHTNING_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcelightningsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcelightning forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcerage
+			group				npcforcedark
+			type				ITEM_TYPE_BUTTON
+			rect				165 165 95 24
+			text				@MD_MENU_MAIN_FORCE_RAGE
+			descText			@MD_MENU_MAIN_SET_FORCE_RAGE_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforceragesub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcerage forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedrain
+			group				npcforcedark
+			type				ITEM_TYPE_BUTTON
+			rect				165 190 95 24
+			text				@MD_MENU_MAIN_FORCE_DRAIN
+			descText			@MD_MENU_MAIN_SET_FORCE_DRAIN_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcedrainsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcedrain forecolor 1 1 1 0.9
+			}
+		}
+		
+		itemDef
+		{
+			name				npcforcegrip
+			group				npcforcedark
+			type				ITEM_TYPE_BUTTON
+			rect				165 215 95 24
+			text				@MD_MENU_MAIN_FORCE_GRIP
+			descText			@MD_MENU_MAIN_SET_FORCE_GRIP_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcegripsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcegrip forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedestruction
+			group				npcforcedark
+			type				ITEM_TYPE_BUTTON
+			rect				165 240 95 24
+			text				@MD_MENU_MAIN_FORCE_DESTRUCTION
+			descText			@MD_MENU_MAIN_SET_FORCE_DESTRUCTION_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcedestructionsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcedestruction forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedeadlysight
+			group				npcforcedark
+			type				ITEM_TYPE_BUTTON
+			rect				165 265 95 24
+			text				@MD_MENU_MAIN_FORCE_DEADLYSIGHT
+			descText			@MD_MENU_MAIN_SET_FORCE_DEADLYSIGHT_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcedeadlysightsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcedeadlysight forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcefear
+			group				npcforcedark
+			type				ITEM_TYPE_BUTTON
+			rect				165 290 95 24
+			text				@MD_MENU_MAIN_FORCE_FEAR
+			descText			@MD_MENU_MAIN_SET_FORCE_FEAR_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcefearsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcefear forecolor 1 1 1 0.9
+			}
+		}
+
+		/////
+
+		itemDef
+		{
+			name				npcforcelevitation
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				275 140 95 24
+			text				@MD_MENU_MAIN_FORCE_JUMP
+			descText			@MD_MENU_MAIN_SET_FORCE_JUMP_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcelevitationsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcelevitation forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcepull
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				275 165 95 24
+			text				@MD_MENU_MAIN_FORCE_PULL
+			descText			@MD_MENU_MAIN_SET_FORCE_PULL_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcepullsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcepull forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcepush
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				275 190 95 24
+			text				@MD_MENU_MAIN_FORCE_PUSH
+			descText			@MD_MENU_MAIN_SET_FORCE_PUSH_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcepushsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcepush forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcespeed
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				275 215 95 24
+			text				@MD_MENU_MAIN_FORCE_SPEED
+			descText			@MD_MENU_MAIN_SET_FORCE_SPEED_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcespeedsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcespeed forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcesense
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				275 240 95 24
+			text				@MD_MENU_MAIN_FORCE_SENSE
+			descText			@MD_MENU_MAIN_SET_FORCE_SENSE_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcesensesub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcesense forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcestasis
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				275 265 95 24
+			text				@MD_MENU_MAIN_FORCE_STASIS
+			descText			@MD_MENU_MAIN_SET_FORCE_STASIS_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcestasissub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcestasis forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcegrasp
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				275 290 95 24
+			text				@MD_MENU_MAIN_FORCE_GRASP
+			descText			@MD_MENU_MAIN_SET_FORCE_GRASP_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcegraspsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcegrasp forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcerepulse
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				275 315 95 24
+			text				@MD_MENU_MAIN_FORCE_REPULSE
+			descText			@MD_MENU_MAIN_SET_FORCE_REPULSE_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcerepulsesub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcerepulse forecolor 1 1 1 0.9
+			}
+		}
+
+		///
+
+		itemDef
+		{
+			name				npcforcethrow
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				385 140 105 20
+			text				@MD_MENU_MAIN_FORCE_SABER_THROW
+			descText			@MD_MENU_MAIN_SET_FORCE_SABER_THROW_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcethrowsub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcethrow forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceoffense
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				385 165 105 20
+			text				@MD_MENU_MAIN_FORCE_SABER_OFFENSE
+			descText			@MD_MENU_MAIN_SET_FORCE_SABER_OFFENSE_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforceoffensesub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforceoffense forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedefense
+			group				npcforceneutral
+			type				ITEM_TYPE_BUTTON
+			rect				385 190 105 20
+			text				@MD_MENU_MAIN_FORCE_SABER_DEFENSE
+			descText			@MD_MENU_MAIN_SET_FORCE_SABER_DEFENSE_LEVEL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				hide			npcforcesub
+				show			npcforcedefensesub
+
+				setitemcolor	force forecolor 1 1 1 0.9
+				setitemcolor	npcforcelight forecolor 0 1 0 0.9
+				setitemcolor	npcforcedark forecolor 1 0 0 0.9
+				setitemcolor	npcforceneutral forecolor 1 1 0 0.9
+				setitemcolor	npcforcedefense forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceall3
+			group				npcforceall
+			type				ITEM_TYPE_BUTTON
+			rect				385 215 115 20
+			text				@MD_MENU_MAIN_MAX_ALL_FORCE_POWERS
+			descText			@MD_MENU_MAIN_MAX_ALL_FORCE_POWERS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 0.3 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				exec			"setforceall 3"
+				exec			"echo ^8Given ^8All ^8Force ^8Powers"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceall3light
+			group				npcforceall
+			type				ITEM_TYPE_BUTTON
+			rect				385 240 115 20
+			text				@MD_MENU_MAIN_MAX_ALL_LIGHT_FORCE_POWERS
+			descText			@MD_MENU_MAIN_MAX_ALL_LIGHT_FORCE_POWERS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 0.3 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				exec			"setforceheal 3"
+				exec			"setMindTrick 3"
+				exec			"setforceprojection 3"
+				exec			"setforceprotect 3"
+				exec			"setforceabsorb 3"
+				exec			"setforcelightningstrike 3"
+				exec			"setforceblast 3"
+				exec			"echo ^8Given ^8All ^8Light ^8Force ^8Powers"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceall3dark
+			group				npcforceall
+			type				ITEM_TYPE_BUTTON
+			rect				385 265 115 20
+			text				@MD_MENU_MAIN_MAX_ALL_DARK_FORCE_POWERS
+			descText			@MD_MENU_MAIN_MAX_ALL_DARK_FORCE_POWERS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 0.3 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				exec			"setforcegrip 3"
+				exec			"setforcelightning 3"
+				exec			"setforcedestruction 3"
+				exec			"setforcerage 3"
+				exec			"setforcedrain 3"
+				exec			"setforcefear 3"
+				exec			"setforcedeadlysight 3"
+				exec			"echo ^8Given ^8All ^8Dark ^8Force ^8Powers"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceall3neutral
+			group				npcforceall
+			type				ITEM_TYPE_BUTTON
+			rect				385 290 115 20
+			text				@MD_MENU_MAIN_MAX_ALL_NEUTRAL_FORCE_POWERS
+			descText			@MD_MENU_MAIN_MAX_ALL_NEUTRAL_FORCE_POWERS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 0.3 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				exec			"setforcejump 3"
+				exec			"setsaberthrow 3"
+				exec			"setsaberoffense 3"
+				exec			"setsaberdefense 3"
+				exec			"setforcepull 3"
+				exec			"setforcepush 3"
+				exec			"setforcespeed 3"
+				exec			"setForceSight 3"
+				exec			"setforcestasis 3"
+				exec			"setforcerepulse 3"
+				exec			"setforcegrasp 3"
+				exec			"echo ^8Given ^8All ^8Neutral ^8Force ^8Powers"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceall0
+			group				npcforceall
+			type				ITEM_TYPE_BUTTON
+			rect				385 315 115 20
+			text				@MD_MENU_MAIN_REMOVE_ALL_FORCE_POWERS
+			descText			@MD_MENU_MAIN_REMOVE_ALL_FORCE_POWERS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 0.3 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				exec			"setforceall 0"
+				exec			"echo ^8Removed ^8All ^8Force ^8Powers"
+			}
+		}
+		
+
+		// Sub forcer Power button
+
+		itemDef
+		{
+			name				npcforceselected
+			group				force
+			type				ITEM_TYPE_TEXT
+			rect				55 352 95 25
+			text				@MD_MENU_MAIN_FORCE_POWER
+			descText			@MD_MENU_MAIN_FORCE_POWER_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+		}
+
+
+
+		// Force jump sub
+
+		itemDef
+		{
+			name				npcforcelevitationsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_JUMP_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcejump 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcelevitationsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_JUMP_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcejump 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcelevitationsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_JUMP_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcejump 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcelevitationsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_JUMP_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcejump 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force throw sub
+
+		itemDef
+		{
+			name				npcforcethrowsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_THROW_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberthrow 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcethrowsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_THROW_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberthrow  1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcethrowsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_THROW_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberthrow 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcethrowsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_THROW_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberthrow 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force offense sub
+
+		itemDef
+		{
+			name				npcforceoffensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_OFFENSE_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberoffense 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceoffensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_OFFENSE_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberoffense 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceoffensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_OFFENSE_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberoffense 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceoffensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_OFFENSE_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberoffense 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force defense sub
+
+		itemDef
+		{
+			name				npcforcedefensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_DEFENSE_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberdefense 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedefensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_DEFENSE_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberdefense 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedefensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_DEFENSE_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberdefense 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedefensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SABER_DEFENSE_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setsaberdefense 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force pull sub
+
+		itemDef
+		{
+			name				npcforcepullsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PULL_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcepull 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcepullsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PULL_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcepull 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcepullsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PULL_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcepull 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcepullsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PULL_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcepull 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+
+		// Force push sub
+
+		itemDef
+		{
+			name				npcforcepushsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PUSH_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcepush 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcepushsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PUSH_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcepush 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcepushsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PUSH_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcepush 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcepushsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PUSH_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcepush 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force speed sub
+
+		itemDef
+		{
+			name				npcforcespeedsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SPEED_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcespeed 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcespeedsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SPEED_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcespeed 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcespeedsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SPEED_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcespeed 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcespeedsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SPEED_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcespeed 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force grip sub
+
+		itemDef
+		{
+			name				npcforcegripsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_GRIP_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcegrip 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcegripsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_GRIP_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcegrip 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcegripsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_GRIP_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcegrip 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcegripsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_GRIP_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcegrip 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force lightning sub
+
+		itemDef
+		{
+			name				npcforcelightningsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_LIGHTNING_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcelightning 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcelightningsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_LIGHTNING_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcelightning 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcelightningsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_LIGHTNING_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcelightning 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcelightningsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_LIGHTNING_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcelightning 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force heal sub
+
+		itemDef
+		{
+			name				npcforcehealsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_HEAL_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceheal 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcehealsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_HEAL_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceheal 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcehealsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_HEAL_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceheal 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcehealsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_HEAL_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceheal 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force DESTRUCTION sub
+
+		itemDef
+		{
+			name				npcforcedestructionsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DESTRUCTION_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedestruction 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedestructionsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DESTRUCTION_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedestruction 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedestructionsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DESTRUCTION_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedestruction 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedestructionsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DESTRUCTION_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedestruction 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force Sense sub
+
+		itemDef
+		{
+			name				npcforcesensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SENSE_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setForceSight 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcesensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SENSE_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setForceSight 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcesensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SENSE_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setForceSight 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcesensesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_SENSE_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setForceSight 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force Mind Trick sub
+
+		itemDef
+		{
+			name				npcforceMindTricksub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_MIND_TRICK_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setMindTrick 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceMindTricksub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_MIND_TRICK_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setMindTrick 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceMindTricksub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_MIND_TRICK_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setMindTrick 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceMindTricksub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_MIND_TRICK_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setMindTrick 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force blast sub
+
+		itemDef
+		{
+			name				npcforceblastsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_BLAST_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceblast 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceblastsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_BLAST_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceblast 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceblastsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_BLAST_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceblast 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceblastsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_BLAST_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceblast 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force projection sub
+
+		itemDef
+		{
+			name				npcforceprojectionsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PROJECTION_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceprojection 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceprojectionsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PROJECTION_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceprojection 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceprojectionsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PROJECTION_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceprojection 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceprojectionsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PROJECTION_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceprojection 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force stasis sub
+
+		itemDef
+		{
+			name				npcforcestasissub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_STASIS_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcestasis 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcestasissub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_STASIS_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcestasis 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcestasissub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_STASIS_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcestasis 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcestasissub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_STASIS_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcestasis 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force grasp sub
+
+		itemDef
+		{
+			name				npcforcegraspsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_GRASP_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcegrasp 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcegraspsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_GRASP_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcegrasp 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcegraspsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_GRASP_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcegrasp 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcegraspsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_GRASP_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcegrasp 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force repulse sub
+
+		itemDef
+		{
+			name				npcforcerepulsesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_REPULSE_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcerepulse 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcerepulsesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_REPULSE_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcerepulse 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcerepulsesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_REPULSE_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcerepulse 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcerepulsesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_REPULSE_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcerepulse 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force rage sub
+
+		itemDef
+		{
+			name				npcforceragesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_RAGE_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcerage 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceragesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_RAGE_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcerage 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceragesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_RAGE_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcerage 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceragesub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_RAGE_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcerage 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force protect sub
+
+		itemDef
+		{
+			name				npcforceprotectsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PROTECT_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceprotect 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceprotectsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PROTECT_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceprotect 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceprotectsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PROTECT_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceprotect 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceprotectsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_PROTECT_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceprotect 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force absorb sub
+
+		itemDef
+		{
+			name				npcforceabsorbsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_ABSORB_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceabsorb 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceabsorbsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_ABSORB_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceabsorb 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceabsorbsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_ABSORB_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceabsorb 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceabsorbsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_ABSORB_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforceabsorb 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force drain sub
+
+		itemDef
+		{
+			name				npcforcedrainsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DRAIN_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedrain 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedrainsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DRAIN_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedrain 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedrainsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DRAIN_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedrain 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedrainsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DRAIN_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedrain 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force fear sub
+
+		itemDef
+		{
+			name				npcforcefearsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_FEAR_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcefear 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcefearsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_FEAR_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcefear 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcefearsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_FEAR_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcefear 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcefearsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_FEAR_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcefear 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force deadlysight sub
+
+		itemDef
+		{
+			name				npcforcedeadlysightsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DEADLYSIGHT_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedeadlysight 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedeadlysightsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DEADLYSIGHT_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedeadlysight 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedeadlysightsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DEADLYSIGHT_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedeadlysight 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforcedeadlysightsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_DEADLYSIGHT_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcedeadlysight 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+		// Force electricjudgement sub
+
+		itemDef
+		{
+			name				npcforceelectricjudgementsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				165 352 95 25
+			text				@MD_MENU_MAIN_FORCE_ELECTRIC_JUDGEMENT_LEVEL_0
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_0
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcelightningstrike 0"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^80"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceelectricjudgementsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				275 352 95 25
+			text				@MD_MENU_MAIN_FORCE_ELECTRIC_JUDGEMENT_LEVEL_1
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_1
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcelightningstrike 1"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^81"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceelectricjudgementsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				385 352 95 25
+			text				@MD_MENU_MAIN_FORCE_ELECTRIC_JUDGEMENT_LEVEL_2
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcelightningstrike 2"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^82"
+			}
+		}
+
+		itemDef
+		{
+			name				npcforceelectricjudgementsub
+			group				npcforcesub
+			type				ITEM_TYPE_BUTTON
+			rect				495 352 95 25
+			text				@MD_MENU_MAIN_FORCE_ELECTRIC_JUDGEMENT_LEVEL_3
+			descText			@MD_MENU_MAIN_SET_FORCE_LEVEL_3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				exec			"setforcelightningstrike 3"
+				exec			"echo ^8Set ^8Force ^8Power ^8To ^8Level ^83"
+			}
+		}
+
+
+
+//----------------------------------------------------------------------------------------------
+//	BOTTOM ROW OF BUTTONS
+//----------------------------------------------------------------------------------------------
+	
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingameMainMenu 
+			}
+		}
+
+		itemDef 
+		{
+			name				NPCfreeze
+			group				comm
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_MULTI
+			rect				170 458 301 24 
+			text				@MD_MENU_MAIN_FREEZE_NPC
+			descText			@MD_MENU_MAIN_FREEZE_NPC_DESC
+			cvar				"d_npcfreeze"	
+			cvarFloatList		{ @MD_MENU_MAIN_OFF 0 @MD_MENU_MAIN_ON 1 }
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			135
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 316 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 316 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 316 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 463 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+			} 
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MD_MENU_MAIN_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+	}
+}

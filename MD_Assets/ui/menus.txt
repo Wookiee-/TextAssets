@@ -1,0 +1,138 @@
+// menu defs
+ 
+{
+	loadMenu { "ui/main.menu"						}
+	loadMenu { "ui/main2.menu"						}
+	loadmenu { "ui/mdnewgame.menu"						}
+	loadMenu { "ui/newgame.menu"						}
+	loadMenu { "ui/newgamejko.menu"						}
+	loadMenu { "ui/loadgame.menu"						}
+	loadMenu { "ui/quit.menu"						}
+	loadMenu { "ui/credits.menu"						}
+	loadMenu { "ui/welcome.menu"						}
+
+	loadMenu { "ui/duelmaps.menu"						}
+	loadMenu { "ui/challengemaps.menu"					}
+	loadMenu { "ui/jkaspmaps.menu"						}
+	loadMenu { "ui/jkospmaps.menu"						}
+	loadMenu { "ui/controls.menu"						}
+	loadMenu { "ui/setup.menu"						}
+	
+	loadMenu { "ui/challengecharacter.menu"					}
+	loadMenu { "ui/challengesaber.menu"					}
+	//loadMenu { "ui/challengeforceselect.menu"				}
+	//loadMenu { "ui/challengewpnselect.menu"				}
+
+	loadMenu { "ui/character.menu"						}
+	loadMenu { "ui/saber.menu"						}
+	loadMenu { "ui/saberstyle.menu"						}
+	//loadMenu { "ui/forceselect.menu"					}
+	//loadMenu { "ui/ingameForceHelp.menu"					}
+	//loadMenu { "ui/wpnselect.menu"					}
+	//loadMenu { "ui/ingameWpnSelectHelp.menu"				}
+
+	loadMenu { "ui/episode.menu"						}
+	loadMenu { "ui/episode1.menu"						}
+	loadMenu { "ui/episode2.menu"						}
+	loadMenu { "ui/episode3.menu"						}
+	loadMenu { "ui/episode4.menu"						}
+	loadMenu { "ui/episode5.menu"						}
+	loadMenu { "ui/episode6.menu"						}
+	loadMenu { "ui/episode7.menu"						}
+	loadMenu { "ui/episode8.menu"						}
+	loadMenu { "ui/episode9.menu"						}
+	loadMenu { "ui/episodecw.menu"						}
+	loadMenu { "ui/episoderebels.menu"					}
+
+//Episode I
+
+	loadMenu { "ui/sn.menu"							}
+	loadMenu { "ui/eitd.menu"						}
+	loadMenu { "ui/dotf.menu"						}
+
+//Episode II
+	
+	loadMenu { "ui/ail.menu"						}
+	loadMenu { "ui/ejf.menu"						}
+	loadMenu { "ui/tc.menu"							}
+	loadMenu { "ui/ga.menu"							}
+	loadMenu { "ui/gb.menu"							}
+	loadMenu { "ui/gh.menu"							}
+
+//Episode III
+
+	loadMenu { "ui/roc.menu"						}
+	loadMenu { "ui/egg.menu"						}
+	loadMenu { "ui/po.menu"							}
+	loadMenu { "ui/jt.menu"							}
+	loadMenu { "ui/am.menu"							}
+	loadMenu { "ui/rt.menu"							}
+	loadMenu { "ui/mof.menu"						}
+	loadMenu { "ui/mus.menu"						}
+
+//CW
+
+	//loadMenu { "ui/oll.menu"						}
+
+//REBELS
+	
+	loadMenu { "ui/tfoaj.menu"						}
+	loadMenu { "ui/ts.menu"							}
+	loadMenu { "ui/lod.menu"						}
+
+
+//Episode IV
+	
+	loadMenu { "ui/aottiv.menu"						}
+	loadMenu { "ui/ols.menu"						}
+
+//Episode V
+
+	loadMenu { "ui/toaj.menu"						}
+	loadMenu { "ui/dwtdl.menu"						}
+
+//Episode VI
+
+	loadMenu { "ui/tgpoc.menu"						}
+	loadMenu { "ui/fas.menu"						}
+
+//Episode VII
+
+	loadMenu { "ui/acc.menu"						}
+
+
+//Episode VIII
+
+	loadMenu { "ui/sf.menu"						}
+	loadMenu { "ui/ft.menu"							}
+
+//Episode IX
+
+
+// TALES OF THE GALAXY
+
+	loadMenu { "ui/totg.menu"						}
+	loadMenu { "ui/totg_rote.menu"						}
+	loadMenu { "ui/totg_tfu.menu"						}
+	loadMenu { "ui/totg_df2.menu"						}
+
+//ROTE
+
+	loadMenu { "ui/vr.menu"							}
+	loadMenu { "ui/aoe.menu"						}
+
+//TFU
+	
+	loadMenu { "ui/slt.menu"						}
+	loadMenu { "ui/fh.menu"							}
+	loadMenu { "ui/rtr.menu"						}
+	loadMenu { "ui/afh.menu"						}
+	loadMenu { "ui/wote.menu"						}
+
+//Other
+
+	loadMenu { "ui/error.menu" 						}
+	loadMenu { "ui/vid_warning.menu"					}
+	loadMenu { "ui/videodriver.menu"					}
+
+}

@@ -1,0 +1,3276 @@
+//----------------------------------------------------------------------------------------------
+//
+// Weapon Select Menu
+//
+// The player is allowed to choose from a list of weapons. The weapons in the list are
+// based on the value in tier_storyinfo
+//   
+//  Weapon index values 
+//     SABER          - 1
+//     BLASTER PISTOL - 2
+//     BLASTER        - 3
+//     DISRUPTOR      - 4
+//     BOWCASTER      - 5
+//     REPEATER       - 6
+//     DEMP           - 7
+//     FLECHETTE      - 8
+//     ROCKET LAUNCHER - 9 
+//     THERMAL DET.    - 10
+//     TRIP MINE       - 11
+//     DET PACK        - 12
+//     CONCUSSION      - 13
+//
+//                             Ammo index values     amounts to give
+//     SABER           - FORCE       - 1             - 100
+//     BLASTER PISTOL  - BLASTER     - 2             - 300
+//     BLASTER         - BLASTER     - 2             - 300
+//     DISRUPTOR       - POWER CELL  - 3             - 300
+//     BOWCASTER       - POWER CELL  - 3             - 300
+//     REPEATER        - METAL BOLTS - 4             - 400
+//     DEMP            - POWER CELL  - 3             - 300
+//     FLECHETTE       - METAL BOLTS - 4             - 400
+//     ROCKET LAUNCHER - ROCKETS     - 5             - 10
+//     THERMAL DET.    - THERMAL     - 7             - 10
+//     TRIP MINE       - TRIP MINE   - 8             - 5
+//     DET. PACK       - DETPACK     - 9             - 5
+//     CONCUSSION      - METAL BOLTS - 4             - 400
+//     
+//----------------------------------------------------------------------------------------------
+{
+					   
+	menuDef 
+	{
+		name					"challengeWpnSelect"
+		fullScreen				1		
+		rect					0 0 640 480	
+		visible					1
+		focusColor				1 1 1 1
+		descX					320
+		descY					362
+		descScale				0.8
+		descColor				1 1 1 0
+		descAlignment			ITEM_ALIGN_CENTER
+		descTextStyle			1
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				25						// how often fade happens in milliseconds
+		fadeAmount				0.05						// amount to adjust alpha per cycle	
+
+		onOpen 
+		{
+			uiScript  			"initweaponselect"		// Perform screen init
+			uiScript  			"clearweapons"			// Get rid of any weapons
+			uiScript  			"clearinventory"		// Get rid of any inventory
+			uiScript  			"giveweapon"	"1"		// Give saber
+			//uiScript  			"giveweapon"	"2"		// Give blaster
+			uiScript			"equipweapon"	"1"		// start with saber
+
+ 		}							
+ 		
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav"
+			close				all
+			open				challengeforceselect
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MENU BACKGROUND
+//----------------------------------------------------------------------------------------------
+		
+		itemDef 
+		{
+			name				background_mainvideo
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/challengevideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/sp/weapon/weaponmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				choose_weapons_text // panel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/sp/weapon/weapontextpanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				weaponmenupanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/sp/weapon/weaponmenupanel"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	TEXT - Choose weapons/Weapons chosen.
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				choose_weapons_text
+			type				ITEM_TYPE_TEXT
+			rect				256 32 200 24
+			text				@MD_MENU_MAIN_NEXT_WEAPON_LOADOUT
+			font				5
+			textscale			0.5
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				weapons_chosen_text
+			type				ITEM_TYPE_TEXT
+			rect				256 34 200 24
+			text				@MENUS_WEAPONSCHOSEN
+			font				5
+			textscale			0.5
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			forecolor			1 1 1 0.9
+			visible				0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	INSTRUCTIONS
+//----------------------------------------------------------------------------------------------
+/*		itemDef 
+		{
+			name				setup_background
+			group				inst_stuff
+			style				WINDOW_STYLE_FILLED
+			rect				40 195 455 145
+			backcolor			0 0 .35 .9
+			forecolor			1 1 1 1
+			border				1
+			bordercolor			0 0 .8 1
+			visible				0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				instruction_title
+			group				inst_stuff
+			type				ITEM_TYPE_TEXT
+			rect				50 195 470 18
+			text				@MENUS_INSTRUCTIONS
+			font				2
+			forecolor			.549 .854 1 1
+			textscale			.8
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			230
+			visible				0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				instruction_text
+			group				inst_stuff
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				45 220 475 130			
+			text				@MENUS_WEAPON_SELECTION_HELP
+			font				4
+			forecolor			1 1 1 1
+			textscale			1.0
+			textalign			ITEM_ALIGN_LEFT
+			visible				0
+			decoration			autowrapped
+			textaligny			0
+			lineHeight			13			
+
+		}
+
+		itemDef 
+		{
+			name				inst_done_button
+			group				inst_stuff
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				495 255 130 64
+			text				@MENUS_DONE_CAPS
+			descText			@MENUS_HELP_DESC
+			font				3
+			textscale			1
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			1
+			textalignx			65
+			forecolor			.79 .64 .22 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			button_glow 
+				setitemrect		button_glow	490 255 140 25
+			}
+			mouseExit 
+			{ 
+				hide			button_glow 
+			}	  	  
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			button_glow
+				hide			inst_stuff
+				
+				show			weapon_button
+			}
+		}
+
+		itemDef 
+		{
+			name				button_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/menu_buttonback"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+*/
+
+//----------------------------------------------------------------------------------------------
+//	SABER BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				saber_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				28 40 88 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				saber_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				24 30 80 80
+			background			"gfx/hud/w_icon_lightsaber_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				saber_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				24 30 80 80
+			background			"gfx/hud/w_icon_lightsaber"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				saber_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				28 40 79 64
+			forecolor			1 1 1 1
+			visible				0
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			saber_icon
+				show			saber_icon_lit
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_lightsaber_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_SABER_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			saber_icon
+				hide			saber_icon_lit
+			}
+			action
+			{
+			}
+		}
+			
+//----------------------------------------------------------------------------------------------
+//	BLASTER PISTOL BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				bpistol_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				60 235 88 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				bpistol_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				60 235 80 80
+			background			"gfx/hud/w_icon_blaster_pistol_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				bpistol_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				60 235 80 80
+			background			"gfx/hud/w_icon_blaster_pistol"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				bpistol_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				60 235 100 100
+			background			"gfx/menus/sp/weapon/DL44"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				bpistol_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				60 235 100 100
+			background			"gfx/menus/sp/weapon/DL44_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				bpistol_button
+			group				weaponpistol_button
+			type				ITEM_TYPE_BUTTON
+			rect				68 243 40 37
+			forecolor			1 1 1 1
+			desctext			@MENU_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			bpistol_icon_table
+				show			bpistol_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_blaster_pistol_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_NEW_BLASTER_PISTOL_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			bpistol_icon_table
+				hide			bpistol_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addpistolselection" "2" "2" "300"	"bpistol_icon"	"bpistol_icon_lit"	"bpistol_hex_background"  "sound/weapons/demp2/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	BLASTER RIFLE BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				blaster_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				228 202 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				blaster_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				228 202 80 80
+			background			"gfx/hud/w_icon_blaster_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				blaster_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				228 202 80 80
+			background			"gfx/hud/w_icon_blaster"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				blaster_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				228 202 100 100
+			background			"gfx/menus/sp/weapon/E11"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				blaster_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				228 202 100 100
+			background			"gfx/menus/sp/weapon/E11_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				blaster_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				242 202 70 30
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			blaster_icon_table
+				show			blaster_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_blaster_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_BLASTER_RIFLE_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			blaster_icon_table
+				hide			blaster_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addweaponselection" "3" "2" "300"	"blaster_icon"	"blaster_icon_lit"	"blaster_hex_background"	"sound/weapons/blaster/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	DISRUPTOR RIFLE BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				disruptor_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				410 270 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				disruptor_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				410 270 80 80
+			background			"gfx/hud/w_icon_disruptor_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				disruptor_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				410 270 80 80
+			background			"gfx/hud/w_icon_disruptor"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				disruptor_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				410 270 100 135
+			background			"gfx/menus/sp/weapon/DXR6"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				disruptor_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				410 270 100 135
+			background			"gfx/menus/sp/weapon/DXR6_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				disruptor_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				422 270 28 100
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			disruptor_icon_table
+				show			disruptor_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_disruptor_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_DISRUPTOR_RIFLE_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			disruptor_icon_table
+				hide			disruptor_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addweaponselection" "4" "3" "300"	"disruptor_icon"	"disruptor_icon_lit"	"disruptor_hex_background"  "sound/weapons/disruptor/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	BOWCASTER BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				BOWCASTER_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				285 234 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				BOWCASTER_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				285 234 80 80
+			background			"gfx/hud/w_icon_BOWCASTER_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				BOWCASTER_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				285 234 80 80
+			background			"gfx/hud/w_icon_BOWCASTER"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				BOWCASTER_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				285 234 100 113
+			background			"gfx/menus/sp/weapon/BOWCASTER"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				BOWCASTER_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				285 234 100 113
+			background			"gfx/menus/sp/weapon/BOWCASTER_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				BOWCASTER_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				290 234 38 110
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			BOWCASTER_icon_table
+				show			BOWCASTER_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_BOWCASTER_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_BOWCASTER_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			BOWCASTER_icon_table
+				hide			BOWCASTER_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addweaponselection" "5" "3" "300"	"bowcaster_icon"	"bowcaster_icon_lit"	"bowcaster_hex_background" "sound/weapons/bowcaster/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	DEMP BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				DEMP_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 114 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DEMP_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 114 80 80
+			background			"gfx/hud/w_icon_demp2_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DEMP_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 114 80 80
+			background			"gfx/hud/w_icon_demp2"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DEMP_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 114 100 135
+			background			"gfx/menus/sp/weapon/EMPulse2"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DEMP_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 114 100 135
+			background			"gfx/menus/sp/weapon/EMPulse2_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				DEMP_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				445 114 32 77
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			DEMP_icon_table
+				show			DEMP_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_demp2_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_DEMP2_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			DEMP_icon_table
+				hide			DEMP_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addweaponselection" "7" "3" "300"	"demp_icon"	"demp_icon_lit"	"demp_hex_background"  "sound/weapons/demp2/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	REPEATER BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				repeater_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				381 248 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				repeater_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				381 248 80 80
+			background			"gfx/hud/w_icon_repeater_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				repeater_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				381 248 80 80
+			background			"gfx/hud/w_icon_repeater"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				repeater_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				381 248 100 138
+			background			"gfx/menus/sp/weapon/IMPHeavyRepeater"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				repeater_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				381 248 100 138
+			background			"gfx/menus/sp/weapon/IMPHeavyRepeater_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				repeater_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				390 248 30 118
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			repeater_icon_table
+				show			repeater_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_repeater_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_HEAVYREPEATER_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			repeater_icon_table
+				hide			repeater_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addweaponselection" "6" "4" "400" "repeater_icon" "repeater_icon_lit"	"repeater_hex_background"  "sound/weapons/repeater/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	FLECHETTE BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				flechette_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				358 213 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				flechette_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				358 213 80 80
+			background			"gfx/hud/w_icon_flechette_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				flechette_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				358 213 80 80
+			background			"gfx/hud/w_icon_flechette"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				flechette_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				358 213 100 100
+			background			"gfx/menus/sp/weapon/FC1"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				flechette_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				358 213 100 100
+			background			"gfx/menus/sp/weapon/FC1_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				flechette_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				368 217 60 28
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			flechette_icon_table
+				show			flechette_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_flechette_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_FLECHETTE_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			flechette_icon_table
+				hide			flechette_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addweaponselection" "8" "4" "400"	"flechette_icon"	"flechette_icon_lit"	"flechette_hex_background"  "sound/weapons/flechette/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	ROCKET BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				rocket_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				426 189 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rocket_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				426 189 80 80
+			background			"gfx/hud/w_icon_merrsonn_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rocket_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				426 189 80 80
+			background			"gfx/hud/w_icon_merrsonn"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rocket_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				426 189 100 130
+			background			"gfx/menus/sp/weapon/PLX2M"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rocket_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				426 189 100 130
+			background			"gfx/menus/sp/weapon/PLX2M_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				rocket_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				432 216 35 40
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			rocket_icon_table
+				show			rocket_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_merrsonn_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_MERR_SONN_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			rocket_icon_table
+				hide			rocket_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addweaponselection" "9" "5" "10"	"rocket_icon"	"rocket_icon_lit"	"rocket_hex_background"  "sound/weapons/rocket/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	CONCUSSION BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				concussion_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				462 182 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				concussion_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				462 182 80 80
+			background			"gfx/hud/w_icon_c_rifle_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				concussion_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				462 182 80 80
+			background			"gfx/hud/w_icon_c_rifle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				concussion_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				462 182 105 105
+			background			"gfx/menus/sp/weapon/Stouker"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				concussion_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				462 182 105 105
+			background			"gfx/menus/sp/weapon/Stouker_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				concussion_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				471 192 38 50
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			concussion_icon_table
+				show			concussion_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_c_rifle_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_CONCUSSION_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			concussion_icon_table
+				hide			concussion_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add this weapon from player selection (weapon index, ammo index, ammo amount, menu item with graphic)
+				uiScript  		"addweaponselection" "13" "4" "400"	"concussion_icon"	"concussion_icon_lit"	"concussion_hex_background"   "sound/weapons/concussion/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	THERMAL DETONATOR BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				thermal_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				425 194 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 0 .5 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				thermal_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				425 194 80 80
+			background			"gfx/hud/w_icon_thermal_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				thermal_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				425 194 80 80
+			background			"gfx/hud/w_icon_thermal"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				thermal_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				425 194 100 100
+			background			"gfx/menus/sp/weapon/ThermalDetonator"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				thermal_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				425 194 100 100
+			background			"gfx/menus/sp/weapon/ThermalDetonator_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				thermal_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				429 195 20 20
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible			1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			thermal_icon_table
+				show			thermal_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_thermal_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_THERMAL_DETONATOR_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			thermal_icon_table
+				hide			thermal_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addthrowweaponselection" "10" "7" "10"	"thermal_icon" "thermal_icon_lit"	"thermal_hex_background"  "sound/weapons/thermal/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	DETPACK BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				detpack_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				409 192 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 0 .5 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				detpack_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				409 192 80 80
+			background			"gfx/hud/w_icon_detpack_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				detpack_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				409 192 80 80
+			background			"gfx/hud/w_icon_detpack"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				detpack_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				409 192 100 100
+			background			"gfx/menus/sp/weapon/DetonationPack"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				detpack_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				409 192 100 100
+			background			"gfx/menus/sp/weapon/DetonationPack_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				detpack_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				409 195 20 20
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			detpack_icon_table
+				show			detpack_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_detpack_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_DET_PACK_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			detpack_icon_table
+				hide			detpack_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addthrowweaponselection" "12" "9" "5"	"detpack_icon"	"detpack_icon_lit" "detpack_hex_background"  "sound/weapons/detpack/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	TRIP MINE BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				tripmine_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				390 193 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 0 .5 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tripmine_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				390 193 80 80
+			background			"gfx/hud/w_icon_tripmine_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tripmine_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				390 193 80 80
+			background			"gfx/hud/w_icon_tripmine"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tripmine_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				390 193 100 100
+			background			"gfx/menus/sp/weapon/tripmine"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tripmine_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				390 193 100 100
+			background			"gfx/menus/sp/weapon/tripmine_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				tripmine_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				389 196 20 20
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			tripmine_icon_table
+				show			tripmine_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_tripmine_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_TRIP_MINE_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			tripmine_icon_table
+				hide			tripmine_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addthrowweaponselection" "11" "8" "5" "tripmine_icon"	"tripmine_icon_lit" "tripmine_hex_background"  "sound/weapons/detpack/select.wav"
+			}
+		}
+
+
+
+		// Additional Weapons
+//----------------------------------------------------------------------------------------------
+//	A280 BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				A280_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				357 220 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				A280_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				357 220 80 80
+			background			"gfx/hud/w_icon_A280_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				A280_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				357 220 80 80
+			background			"gfx/hud/w_icon_A280"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				A280_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				357 220 100 166 
+			background			"gfx/menus/sp/weapon/A280"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				A280_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				357 220 100 166
+			background			"gfx/menus/sp/weapon/A280_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				A280_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				362 248 25 125
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			A280_icon_table
+				show			A280_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_A280_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_REBELRIFLE_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			A280_icon_table
+				hide			A280_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addweaponselection" "38" "3" "300"	"A280_icon"	"A280_icon_lit"	"A280_hex_background"	"sound/weapons/blaster/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	DC15A BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				DC15A_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 193 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC15A_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 193 80 80
+			background			"gfx/hud/w_icon_CLONERIFLE_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC15A_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 193 80 80
+			background			"gfx/hud/w_icon_CLONERIFLE"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC15A_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 193 150 218
+			background			"gfx/menus/sp/weapon/DC15A"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC15A_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				440 193 150 218
+			background			"gfx/menus/sp/weapon/DC15A_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				DC15A_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				456 257 50 120
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			DC15A_icon_table
+				show			DC15A_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_CLONERIFLE_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_CLONERIFLE_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			DC15A_icon_table
+				hide			DC15A_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addweaponselection" "36" "4" "400"	"DC15A_icon"	"DC15A_icon_lit"	"DC15A_hex_background"	"sound/weapons/blaster/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	DH17 BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				DH17_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				141 163 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DH17_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				141 163 80 80
+			background			"gfx/hud/w_icon_dh-17_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DH17_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				141 163 80 80
+			background			"gfx/hud/w_icon_dh-17"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DH17_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				141 163 100 100
+			background			"gfx/menus/sp/weapon/DH17"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DH17_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				141 163 100 100
+			background			"gfx/menus/sp/weapon/DH17_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				DH17_button
+			group				weaponpistol_button
+			type				ITEM_TYPE_BUTTON
+			rect				141 163 40 30
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			DH17_icon_table
+				show			DH17_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_dh-17_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_REBELBLASTER_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			DH17_icon_table
+				hide			DH17_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addpistolselection" "35" "2" "300"	"DH17_icon"	"DH17_icon_lit"	"DH17_hex_background"	"sound/weapons/blaster/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	DC15S BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				DC15S_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				173 182 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC15S_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				173 182 80 80
+			background			"gfx/hud/w_icon_dc-15s_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC15S_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				173 182 80 80
+			background			"gfx/hud/w_icon_dc-15s"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC15S_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				173 182 100 100
+			background			"gfx/menus/sp/weapon/DC15S"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC15S_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				173 182 100 100
+			background			"gfx/menus/sp/weapon/DC15S_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				DC15S_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				185 184 58 33
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			DC15S_icon_table
+				show			DC15S_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_dc-15s_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_CLONECARBINE_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			DC15S_icon_table
+				hide			DC15S_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addweaponselection" "34" "4" "400"	"DC15S_icon"	"DC15S_icon_lit"	"DC15S_hex_background"	"sound/weapons/dc15/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	DC17 BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				DC17_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				125 194 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC17_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				125 194 80 80
+			background			"gfx/hud/w_icon_clonepistol_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC17_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				125 194 80 80
+			background			"gfx/hud/w_icon_clonepistol"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC17_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				125 194 100 100
+			background			"gfx/menus/sp/weapon/DC17"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC17_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				125 194 100 100
+			background			"gfx/menus/sp/weapon/DC17_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				DC17_button
+			group				weaponpistol_button
+			type				ITEM_TYPE_BUTTON
+			rect				130 194 35 20
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			DC17_icon_table
+				show			DC17_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_clonepistol_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_CLONEPISTOL_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			DC17_icon_table
+				hide			DC17_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  	"addpistolselection" "42" "4" "400"	"DC17_icon"	"DC17_icon_lit"	"DC17_hex_background"	"sound/weapons/bryar/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	DC17M BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				DC17M_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				260 148 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC17M_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				260 148 80 80
+			background			"gfx/hud/w_icon_dc-17m_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC17M_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				260 148 80 80
+			background			"gfx/hud/w_icon_dc-17m"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC17M_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				260 148 100 100
+			background			"gfx/menus/sp/weapon/DC17M"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				DC17M_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				260 148 100 100
+			background			"gfx/menus/sp/weapon/DC17M_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				DC17M_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				266 154 70 30
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			DC17M_icon_table
+				show			DC17M_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_dc-17m_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_CLONECOMMANDO_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			DC17M_icon_table
+				hide			DC17M_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addweaponselection" "37" "4" "400"	"DC17M_icon"	"DC17M_icon_lit"	"DC17M_hex_background"	"sound/weapons/blaster/select.wav"			
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	Z6 ROTARY CANNON BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				Z6RotaryCannon_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				238 241 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				Z6RotaryCannon_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				238 241 80 80
+			background			"gfx/hud/w_icon_z6_rotary_cannon_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				Z6RotaryCannon_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				238 241 80 80
+			background			"gfx/hud/w_icon_z6_rotary_cannon"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				Z6RotaryCannon_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				238 231 100 155
+			background			"gfx/menus/sp/weapon/Z6RotaryCannon"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				Z6RotaryCannon_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				238 231 100 155
+			background			"gfx/menus/sp/weapon/Z6RotaryCannon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				Z6RotaryCannon_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				246 245 41 120
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			Z6RotaryCannon_icon_table
+				show			Z6RotaryCannon_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_z6_rotary_cannon_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_Z6_ROTARY_CANNON_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			Z6RotaryCannon_icon_table
+				hide			Z6RotaryCannon_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addweaponselection" "40" "4" "400"	"Z6RotaryCannon_icon"	"Z6RotaryCannon_icon_lit"	"Z6RotaryCannon_hex_background"	"sound/weapons/blaster/select.wav"			
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	E5 BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				E5_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				330 182 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				E5_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				330 182 80 80
+			background			"gfx/hud/w_icon_droidblaster_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				E5_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				330 182 80 80
+			background			"gfx/hud/w_icon_droidblaster"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				E5_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				330 182 100 100
+			background			"gfx/menus/sp/weapon/E5"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				E5_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				330 182 100 100
+			background			"gfx/menus/sp/weapon/E5_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				E5_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				337 184 51 30
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			E5_icon_table
+				show			E5_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_droidblaster_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_BATTLEDROID_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			E5_icon_table
+				hide			E5_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addweaponselection" "32" "2" "300"	"E5_icon"	"E5_icon_lit"	"E5_hex_background"	"sound/weapons/blaster/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	EE3 BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				EE3_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				316 246 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				EE3_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				316 246 80 80
+			background			"gfx/hud/w_icon_ee-3_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				EE3_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				316 246 80 80
+			background			"gfx/hud/w_icon_ee-3"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				EE3_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				316 246 100 135
+			background			"gfx/menus/sp/weapon/EE3"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				EE3_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				316 246 100 135
+			background			"gfx/menus/sp/weapon/EE3_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				EE3_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				330 246 28 120
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			EE3_icon_table
+				show			EE3_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_ee-3_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_BOBA_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			EE3_icon_table
+				hide			EE3_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addweaponselection" "41" "3" "300"	"EE3_icon"	"EE3_icon_lit"	"EE3_hex_background"	"sound/weapons/blaster/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	F11D BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				F11D_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				185 146 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				F11D_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				185 146 80 80
+			background			"gfx/hud/w_icon_F11D_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				F11D_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				185 146 80 80
+			background			"gfx/hud/w_icon_F11D"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				F11D_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				185 146 110 110
+			background			"gfx/menus/sp/weapon/F11D"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				F11D_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				185 146 110 110
+			background			"gfx/menus/sp/weapon/F11D_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				F11D_button
+			group				weapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				185 149 65 33
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			F11D_icon_table
+				show			F11D_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_F11D_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_THEFIRSTORDER_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			F11D_icon_table
+				hide			F11D_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addweaponselection" "33" "2" "300"	"F11D_icon"	"F11D_icon_lit"	"F11D_hex_background"	"sound/weapons/blaster/select.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	LPANN14 BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				LPANN14_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				103 236 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				LPANN14_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				103 236 80 80
+			background			"gfx/hud/w_icon_lpa_nn-14_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				LPANN14_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				103 236 80 80
+			background			"gfx/hud/w_icon_lpa_nn-14"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				LPANN14_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				103 236 95 95
+			background			"gfx/menus/sp/weapon/LPANN14"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				LPANN14_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				103 236 95 95
+			background			"gfx/menus/sp/weapon/LPANN14_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				LPANN14_button
+			group				weaponpistol_button
+			type				ITEM_TYPE_BUTTON
+			rect				113 240 55 23
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			LPANN14_icon_table
+				show			LPANN14_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_lpa_nn-14_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_REY_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			LPANN14_icon_table
+				hide			LPANN14_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addpistolselection" "39" "2" "300"	"LPANN14_icon"	"LPANN14_icon_lit"	"LPANN14_hex_background"	"sound/weapons/bryar/select.wav"
+				
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	Westar34 BUTTONS AND BUTTON GRAPHICS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				Westar34_hex_background
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				110 214 60 120
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 .5 0 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				Westar34_icon
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				110 214 80 80
+			background			"gfx/hud/w_icon_westar_na"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				Westar34_icon_lit
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				110 214 80 80
+			background			"gfx/hud/w_icon_westar"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				Westar34_icon_table
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				110 214 100 100
+			background			"gfx/menus/sp/weapon/Westar34"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				Westar34_icon_table_glow
+			group				normal_icon
+			style				WINDOW_STYLE_SHADER
+			rect				110 214 100 100
+			background			"gfx/menus/sp/weapon/Westar34_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				Westar34_button
+			group				weaponpistol_button
+			type				ITEM_TYPE_BUTTON
+			rect				110 217 60 20
+			forecolor			1 1 1 1
+			desctext			@MENUS_CLICKSELECT
+			visible				1
+			mouseEnter 
+			{ 
+				hide			choose_weapons_text
+				show			weaponmenupanel
+				hide			Westar34_icon_table
+				show			Westar34_icon_table_glow
+
+				// Show big icon
+				show			weapon_icon
+				setitembackground	weapon_icon	"gfx/hud/w_icon_westar_na"
+
+				// Show weapon description
+				show			weapon_desc
+				setitemtext		weapon_desc	@SP_INGAME_JANGO_DESC
+			}
+			mouseExit 
+			{ 
+				show			choose_weapons_text
+				hide			weaponmenupanel
+				show			Westar34_icon_table
+				hide			Westar34_icon_table_glow
+				hide			weapon_icon
+				hide			weapon_desc
+			}
+			action
+			{	// Add/remove this weapon from player selection (weapon #, menu item with graphic)
+				uiScript  		"addpistolselection" "40" "2" "300"	"Westar34_icon"	"Westar34_icon_lit"	"Westar34_hex_background"	"sound/weapons/blaster/select.wav"
+			}
+		}
+
+
+//----------------------------------------------------------------------------------------------
+//	CHOSEN WEAPONS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				chosensaber_hex_background
+			style				WINDOW_STYLE_SHADER
+			rect				65 380 70 107
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 1 1 1
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				chosen_sabericon
+			group				chosenicons
+			style				WINDOW_STYLE_SHADER
+			rect				67 380 60 60
+			background			"gfx/hud/w_icon_lightsaber_na"
+			forecolor			1 1 1 1
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				chosenblaster_hex_background
+			style				WINDOW_STYLE_SHADER
+			rect				152 380 70 107
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				chosenpistol1_icon
+			group				chosenicons
+			style				WINDOW_STYLE_SHADER
+			rect				154 380 60 60
+			background			"gfx/hud/w_icon_blaster_pistol_na"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name				chosenpistol1_button
+			type				ITEM_TYPE_BUTTON
+			rect				154 380 52 64
+			forecolor			1 1 1 1
+			visible			0
+			desctext			@MENUS_CLICKREMOVE
+			mouseEnter 
+			{ 
+				uiScript		highlightpistolselection
+			}
+			mouseExit 
+			{ 
+				uiScript		normalpistolselection
+			}
+			action
+			{
+				uiScript  		"removepistolselection"
+			}
+		}
+
+		itemDef 
+		{
+			name				chosenweapon1_hex_background
+			style				WINDOW_STYLE_SHADER
+			rect				280 380 70 107
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 1 0 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				chosenweapon1_icon
+			group				chosenicons
+			style				WINDOW_STYLE_SHADER
+			rect				282 380 60 60
+			background			"gfx/hud/w_icon_blaster_pistol_na"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name				chosenweapon1_button
+			type				ITEM_TYPE_BUTTON
+			rect				282 380 52 64
+			forecolor			0 1 0 1
+			visible			0
+			desctext			@MENUS_CLICKREMOVE
+			mouseEnter 
+			{ 
+				uiScript		highlightweaponselection "1"
+			}
+			mouseExit 
+			{ 
+				uiScript		normalweaponselection "1"
+			}
+			action
+			{
+				uiScript  		"removeweaponselection"	"1"
+			}
+		}
+
+		itemDef 
+		{
+			name				chosenweapon2_hex_background
+			style				WINDOW_STYLE_SHADER
+			rect				367 380 70 107
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 1 0 1
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				chosenweapon2_icon
+			group				chosenicons
+			style				WINDOW_STYLE_SHADER
+			rect				369 380 60 60
+			background			"gfx/hud/w_icon_blaster_pistol_na"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name				chosenweapon2_button
+			type				ITEM_TYPE_BUTTON
+			rect				369 380 52 64
+			forecolor			1 1 1 1
+			visible			0
+			desctext			@MENUS_CLICKREMOVE
+			mouseEnter 
+			{ 
+				uiScript		highlightweaponselection	 "2"
+			}
+			mouseExit 
+			{ 
+				uiScript		normalweaponselection "2"
+			}
+			action
+			{
+				uiScript  		"removeweaponselection"	"2"
+			}
+		}
+
+		itemDef 
+		{
+			name				chosenthrowweapon_hex_background
+			style				WINDOW_STYLE_SHADER
+			rect				500 380 70 107
+			background			"gfx/menus/hex_pattern_gray"
+			forecolor			0 0 1 1
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				chosenthrowweapon_icon
+			group				chosenicons
+			style				WINDOW_STYLE_SHADER
+			rect				500 380 60 60
+			background			"gfx/hud/w_icon_blaster_pistol_na"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name				chosenthrowweapon_button
+			type				ITEM_TYPE_BUTTON
+			rect				500 380 52 64
+			forecolor			1 1 1 1
+			visible			0
+			desctext			@MENUS_CLICKREMOVE
+			mouseEnter 
+			{ 
+				uiScript		highlightthrowselection	
+			}
+			mouseExit 
+			{ 
+				uiScript		normalthrowselection 
+			}
+			action
+			{
+				uiScript  		"removethrowweaponselection"	
+			}
+		}
+
+
+
+//----------------------------------------------------------------------------------------------
+//	BIG WEAPON ICON
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				weapon_icon
+			group				bigicons
+			style				WINDOW_STYLE_SHADER
+			rect				18 24 60 60
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	WEAPON DESCRIPTION TEXT
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				weapon_desc
+			group				none
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				82 10 560 100
+			font				5
+			forecolor			1 1 1 0.9
+			textscale			0.3
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			0
+			textaligny			0
+			lineHeight			14		
+			visible				0
+			autowrapped
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	BOTTOM ROW OF BUTTONS
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				helpbut
+			group				none
+			text				@MD_MENU_MAIN_HELP
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				30 435 130 40 
+			font				5
+			textscale			0.5
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+			// If we're backing up then we have to reset levels to what they were
+			action
+			{
+				play			"sound/interface/menuroam.wav"
+				open			ingameWpnSelectHelp
+			}
+		}
+
+		itemDef
+		{
+			name				backbutton
+			group				exit
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 441 130 40
+			font				5
+			textscale			0.5
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+
+			action
+			{
+				play			"sound/interface/esc.wav"
+				close			all
+				open			challengeforceselect
+			}
+		}
+
+		itemDef 
+		{
+			name				NextButton
+			group				none
+			text				@MD_MENU_MAIN_NEXT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				476 441 130 40   
+			font				5
+			textscale			0.5
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+		    action 
+			{  
+				exec			"soundstop"
+				exec			"music music/mainMenu/sp/challengemenu"
+				uiScript 		"updatesabercvars"
+				uiScript 		"updatefightingstyle"
+				play			"sound/interface/button1.wav"
+				close			all 
+				open			ChallengeMapsmenu
+
+				// Old challenge start section
+				setcvar		g_spskill 3
+				//exec 			"setsaberstyle medium"
+				//exec 			"addsaberstyle strong"
+				//exec 			"addsaberstyle fast"
+				//exec			"map md2_bd_ch" ; 			
+			}
+		}
+		
+/*
+		// Don't change the name of this, code looks for this name to turn it on and off
+		itemDef
+		{
+			name				beginmission
+			type				ITEM_TYPE_BUTTON
+			rect				400 447 220 24
+			text				@MENUS_BEGIN_MISSION
+			font				2
+			forecolor			1 .682 0 1
+			textscale			1
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			0
+			textaligny			-1
+			desctext			@MENUS_BEGIN_MISSION_DESC
+			visible			1
+			cvartest			"weapon_menu"
+			hidecvar
+			{
+				"1" ; "2" ; "3" 
+			}
+			mouseEnter 
+			{ 
+			}
+			mouseExit 
+			{ 
+			}
+			action
+			{
+				play		"sound/interface/menuroam.wav"
+				exec		"vstr tier_mapname"
+			}
+		}
+
+		// Don't change the name of this, code looks for this name to turn it on and off
+		// This is a big hack so that from Academy2 it will only bring up the weapon select menu 
+		// and then go right to HOTH2. 
+		itemDef
+		{
+			name				beginmission
+			type				ITEM_TYPE_BUTTON
+			rect				400 447 220 24
+			text				@MENUS_BEGIN_MISSION
+			font				2
+			forecolor			1 .682 0 1
+			textscale			1
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			0
+			textaligny			-1
+			desctext			@MENUS_BEGIN_MISSION_DESC
+			visible			1
+			cvartest			"weapon_menu"
+			showcvar
+			{
+				"1" 
+			}
+			mouseEnter 
+			{ 
+			}
+			mouseExit 
+			{ 
+			}
+			action
+			{
+				play		"sound/interface/menuroam.wav"
+				exec "maptransition hoth2"
+			}
+		}
+
+		// Don't change the name of this, code looks for this name to turn it on and off
+		// This is a big hack so that from Academy4 it will only bring up the weapon select menu 
+		// and then go right to VJUN1. 
+		itemDef
+		{
+			name				beginmission
+			type				ITEM_TYPE_BUTTON
+			rect				400 447 220 24
+			text				@MENUS_BEGIN_MISSION
+			font				2
+			forecolor			1 .682 0 1
+			textscale			1
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			0
+			textaligny			-1
+			desctext			@MENUS_BEGIN_MISSION_DESC
+			visible			1
+			cvartest			"weapon_menu"
+			showcvar
+			{
+				"2"
+			}
+			mouseEnter 
+			{ 
+			}
+			mouseExit 
+			{ 
+			}
+			action
+			{
+				play		"sound/interface/menuroam.wav"
+				exec "maptransition vjun1"
+			}
+		}
+
+		// Don't change the name of this, code looks for this name to turn it on and off
+		// This is a big hack so that from Academy6 it will only bring up the weapon select menu 
+		// and then go right to TASPIN1. 
+		itemDef
+		{
+			name				beginmission
+			type				ITEM_TYPE_BUTTON
+			rect				400 447 220 24
+			text				@MENUS_BEGIN_MISSION
+			font				2
+			forecolor			1 .682 0 1
+			textscale			1
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			0
+			textaligny			-1
+			desctext			@MENUS_BEGIN_MISSION_DESC
+			visible			1
+			cvartest			"weapon_menu"
+			showcvar
+			{
+				"3"
+			}
+			mouseEnter 
+			{ 
+			}
+			mouseExit 
+			{ 
+			}
+			action
+			{
+				play		"sound/interface/menuroam.wav"
+				exec "maptransition taspir1"
+			}
+		}
+*/
+	}
+}

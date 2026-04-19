@@ -1,0 +1,615 @@
+//-----------------------------------------------------------------------
+//	CHARACTERSELECT MENU
+//
+//	Called only from main menu. Has the transition of fields from main menu 
+//	to new game menu
+//
+//-----------------------------------------------------------------------
+{
+						   
+	menuDef 
+	{
+		name					"fhMenu"
+		fullScreen				1						// MENU_TRUE				
+		rect					0 0 640 480					// Size and position of the menu
+		visible					1						// Visible on open
+		focusColor				1 1 1 1						// Focus color for text and items
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 .8
+		descAlignment				ITEM_ALIGN_CENTER		
+
+		onOpen
+		{ 
+				setcvar			g_spskill 1
+				setcvar			cg_crosshairForceHint 1
+				setcvar			handicap 100
+		}
+									
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav" 
+			show				description ; 
+			show				galenselect ;
+			show				rightarrow ; 
+			show				leftarrow ; 
+			show				backbutton ; 
+			hide				background2 ; 
+			hide				diff_light
+			hide				backbutton2 ; 
+			hide				gal2_icon_diff ;
+			close				all ; 
+			open				totg_tfuMenu
+		}
+		
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+	
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/mission/tfu/tfu_fh"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				description
+			group				none
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/desc_panel"
+			rect				184.5 95.25 271 360.5
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef
+		{
+			name				description
+			type				ITEM_TYPE_TEXT
+			rect				189 132 260 26
+			text				@MD_MENU_MAIN_FH
+			font				5
+			forecolor			1 1 1 1
+			textscale			0.245
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			131
+			textaligny			1
+			visible				1
+			decoration
+		}
+		
+		itemDef
+		{
+			name				description
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				190 170 277 255
+			text				@MD_BRIEFINGS_TFU_FH_DESC
+			font				5
+			forecolor			1 1 1 1
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			1
+			textaligny			0
+			lineHeight			13
+			visible				1
+			autowrapped
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/tfu/TFULogo"
+			rect				236 16 171 113
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background2
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				149 174 342 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background2
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				149 201.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background2
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				149 229 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background2
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				149 256.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background2
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				149 284 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		// Menu panels
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				15.1 224.5 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				15.1 252 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//   NEW GAME MENU specific stuff
+		//
+		//----------------------------------------------------------------------------------------------		
+
+		//Arrows In Right Corner
+
+		itemDef 
+		{
+			name				forward_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/forward_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				back_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/back_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				galenselect
+			group				none
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				25 169 150 150
+			background			"gfx/menus/charactericons/gal2_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+
+			mouseEnter 
+			{ 
+				show			gal2_glow
+				setitemrect		gal2_glow	25 169 150 150
+			}
+
+			mouseExit 
+			{ 
+				hide			gal2_glow
+			}	 
+ 	  
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			description ; 
+				hide			rightarrow ; 
+				hide			leftarrow ; 
+				hide			backbutton ; 
+				show			background2 ; 
+				show			diff_light ;
+				show			backbutton2 ; 
+				show			gal2_icon_diff ;
+				exec			"set ui_mission_credits_music tfuFHj"
+			}
+		}
+
+		itemDef 
+		{
+			name				gal2_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/gal2_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				gal2_icon_diff
+			group				none
+			style				WINDOW_STYLE_SHADER
+			background			"gfx/menus/charactericons/gal2_icon_glow"
+			rect				25 169 150 150
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+//Arrows In Right Corner
+
+		itemDef 
+		{
+			name				rightarrow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				550 430 30 30
+			background			"gfx/menus/forward_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+
+			mouseEnter 
+			{ 
+				show			forward_glow
+				setitemrect		forward_glow	550 430 30 30
+			}
+
+			mouseExit 
+			{ 
+				hide			forward_glow
+			}	 
+ 	  
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			rtrmenu
+			}
+		}
+
+		itemDef 
+		{
+			name				leftarrow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				490 430 30 30
+			background			"gfx/menus/back_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+
+			mouseEnter 
+			{ 
+				show			back_glow
+				setitemrect		back_glow	490 430 30 30
+			}
+
+			mouseExit 
+			{ 
+				hide			back_glow
+			}	 
+ 	  
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			sltmenu
+			}
+		}
+		
+		//----------------------------------------------------------------------------------------------
+		//
+		//   LIGHT SIDE MENU specific stuff
+		//
+		//----------------------------------------------------------------------------------------------		
+	
+		// Difficulty text
+
+		itemDef 
+		{
+			name				DifficultyButton
+			group				diff_light
+			style				WINDOW_STYLE_EMPTY
+			rect				201 175 240 24 
+			text				@MD_MENU_MAIN_SELECT_DIFFICULTY
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			decoration
+		}
+
+		// Big button Padawan
+		itemDef 
+		{
+			name				easy_light
+			group				diff_light
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				201 202 240 24 
+			text				@MD_MENU_MAIN_PADAWAN
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemrect		background_MDMenuPanelGoldMiddle	158.5 200.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  	  
+			mouseExit
+			{ 
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec 			"devmap md_fh1_jedi"	// Start the new game
+                setcvar         helpusobi 1
+                exec            "wait 5"
+                setcvar         g_spskill 0
+				setcvar			handicap 100
+                exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+			}
+		}
+
+		// Big button Jedi
+		itemDef 
+		{
+			name				normal_light
+			group				diff_light
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				201 229 240 24
+			text				@MD_MENU_MAIN_JEDI
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+ 	  
+			mouseEnter 
+			{ 
+				setitemrect		background_MDMenuPanelGoldMiddle	158.5 228 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  	  
+			mouseExit
+			{ 
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec 			"devmap md_fh1_jedi"	// Start the new game
+                setcvar         helpusobi 1
+                exec            "wait 5"
+                setcvar         g_spskill 1
+				setcvar			handicap 100
+                exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+			}
+		}
+
+		// Big button Jedi Knight
+		itemDef 
+		{
+			name				hard_light
+			group				diff_light
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				201 257 240 24 
+			text				@MD_MENU_MAIN_JEDI_KNIGHT
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  
+			mouseEnter 
+			{ 
+				setitemrect		background_MDMenuPanelGoldMiddle	158.5 255.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  	  
+			mouseExit
+			{ 
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec 			"devmap md_fh1_jedi"	// Start the new game
+                setcvar         helpusobi 1
+                exec            "wait 5"
+                setcvar         g_spskill 2
+				setcvar			handicap 100
+                exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+			}
+		}
+		
+		// Big button Jedi Master
+		itemDef 
+		{
+			name				vhard_light
+			group				diff_light
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				201 284 240 24 
+			text				@MD_MENU_MAIN_JEDI_MASTER
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  
+			mouseEnter 
+			{ 
+				setitemrect		background_MDMenuPanelGoldBottom	159 282.5 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}  	  
+			mouseExit
+			{ 
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec 			"devmap md_fh1_jedi"	// Start the new game
+                setcvar         helpusobi 1
+                exec            "wait 5"
+                setcvar         g_spskill 2
+				setcvar			handicap 50
+                exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				backbutton
+			group				fade_buttons
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 435 130 30 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+	  
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 
+				close			all ; 
+				open			totg_tfuMenu 
+			}
+		}
+		
+		itemDef 
+		{
+			name				backbutton2
+			group				fade_buttons
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 435 130 30  
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				0
+ 	  
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 
+				show			description ; 
+				show			galenselect ;
+				show			rightarrow ; 
+				show			leftarrow ; 
+				show			backbutton ; 
+				hide			background2 ; 
+				hide			diff_light
+				hide			backbutton2 ; 
+				hide			gal2_icon_diff ;
+				setfocus		backbutton
+			}
+		}
+
+	}
+}

@@ -1,0 +1,7089 @@
+//----------------------------------------------------------------------------------------------
+//
+//	Ingame Effect menu
+//
+//----------------------------------------------------------------------------------------------
+
+	menuDef 
+	{
+		name					"ingameeffects"
+		fullScreen				1				// MENU_TRUE				
+		rect					0 0 640 480			// Size and position of the menu
+		visible					0				// Visible on open
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					440
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1		
+
+		onOpen 
+		{
+			setfocus			resume ;
+		}
+
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav" 					
+			close				all
+			open				ingameMainMenu
+		}
+												
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background4
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/effectsmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background4
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/musicmenupanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_SHADER
+			rect				151 -5 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Effects
+
+		itemDef 
+		{
+			name				effects1
+			group				none
+			rect				170 415 80 18
+			text				@MD_MENU_MAIN_EFFECT_ONE
+			descText			@MD_MENU_MAIN_EFFECT_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				show effect1
+				hide effect2
+				hide effect3
+
+				setitemcolor	effects1 forecolor 1 1 1 0.9
+				setitemcolor	effects2 forecolor 0.5 0.5 0.5 0.9
+				setitemcolor	effects3 forecolor 0.5 0.5 0.5 0.9
+			} 
+		}
+
+		itemDef 
+		{
+			name				effects2
+			group				none
+			rect				250 415 80 18
+			text				@MD_MENU_MAIN_EFFECT_TWO
+			descText			@MD_MENU_MAIN_EFFECT_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.5 0.5 0.5 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				hide effect1
+				show effect2
+				hide effect3
+
+				setitemcolor	effects1 forecolor 0.5 0.5 0.5 0.9
+				setitemcolor	effects2 forecolor 1 1 1 0.9
+				setitemcolor	effects3 forecolor 0.5 0.5 0.5 0.9
+			} 
+		}
+
+		itemDef 
+		{
+			name				effects3
+			group				none
+			rect				330 415 80 18
+			text				@MD_MENU_MAIN_EFFECT_THREE
+			descText			@MD_MENU_MAIN_EFFECT_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.5 0.5 0.5 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				hide effect1
+				hide effect2
+				show effect3
+
+				setitemcolor	effects1 forecolor 0.5 0.5 0.5 0.9
+				setitemcolor	effects2 forecolor 0.5 0.5 0.5 0.9
+				setitemcolor	effects3 forecolor 1 1 1 0.9
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 415 80 18
+			text				@MD_MENU_MAIN_EFFECT_STOP
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx stop" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 415 80 18
+			text				@MD_MENU_MAIN_EFFECT_STOP
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 stop" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 415 80 18
+			text				@MD_MENU_MAIN_EFFECT_STOP
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 stop"
+			} 
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	EFFECTS 1 LIST
+		//
+		//----------------------------------------------------------------------------------------------
+
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play env/small_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/small_fire" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play env/fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play jakku/hut_fire_small"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play jakku/hut_fire_small"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_FIRE
+			descText			"play env/fire_wall"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/fire_wall"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_FIRE
+			descText			"play am-korriban/jk_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play am-korriban/jk_fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_FIRE
+			descText			"play jakku/hut_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play jakku/hut_fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_FLAME_JET
+			descText			"play env/flame_jet"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/flame_jet"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SMOKE
+			descText			"play volumetric/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play volumetric/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SMOKE
+			descText			"play md2/smoke1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play md2/smoke1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_SMOKE
+			descText			"play volumetric/black_smoke2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play volumetric/black_smoke2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_BLACK_SMOKE
+			descText			"play epiii_boc/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play epiii_boc/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				10 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_BLACK_SMOKE
+			descText			"play volumetric/droid_smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play volumetric/droid_smoke" 
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_BLACK_SMOKE
+			descText			"play crait/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play crait/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_BLACK_SMOKE
+			descText			"play am-korriban/black_smoke_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play am-korriban/black_smoke_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMOKE_ELECTRICITY
+			descText			"play ships/heavydmg"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play ships/heavydmg"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMOKE_EXPLOSION
+			descText			"play epiii_boc/smoke_explo"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play epiii_boc/smoke_explo"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_STEAM
+			descText			"play volumetric/steam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play volumetric/steam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_STEAM
+			descText			"play volumetric/cc_steam_carbonite"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play volumetric/cc_steam_carbonite"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/t3_rift_steam1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play volumetric/t3_rift_steam1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/cc_steam_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play volumetric/cc_steam_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/cc_steam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play volumetric/cc_steam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play env/lavacool"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/lavacool"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SPARKS
+			descText			"play epiii_boc/sparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play epiii_boc/sparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				90 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SPARKS
+			descText			"play sparks/spark"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play sparks/spark"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_SPARKS
+			descText			"play emperor/emperorsparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play emperor/emperorsparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_SPARKS
+			descText			"play cinematics/hugesparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play cinematics/hugesparks" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_SPARKS
+			descText			"play sparks/bluesparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play sparks/bluesparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play env/small_explode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/small_explode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play env/med_explode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/med_explode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play chunks/metalexplode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play chunks/metalexplode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play chunks/sparkexplode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play chunks/sparkexplode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play explosions/explosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play explosions/explosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play epiii_boc/explosion_small"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play epiii_boc/explosion_small"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/droidexplosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play explosions/droidexplosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/hugeexplosion3"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play explosions/hugeexplosion3"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				170 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/hugeexplosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play explosions/hugeexplosion1" 
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/fighter_explosion2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play explosions/fighter_explosion2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play ships/dest_destroyed"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play ships/dest_destroyed"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play epiii_boc/explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play epiii_boc/explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play kamino/explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play kamino/explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_HUGE_EXPLOSION
+			descText			"play explosions/wedge_explosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play explosions/wedge_explosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_HUGE_EXPLOSION
+			descText			"play ships/sd_explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play ships/sd_explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/electricity"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/electricity"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/small_electricity"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/small_electricity" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/veryelectric"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/veryelectric"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_LIGHTNING
+			descText			"play force/lightningwide_md"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play force/lightningwide_md"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_LIGHTNING
+			descText			"play env/huge_lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/huge_lightning"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				250 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_LIGHTNING
+			descText			"play kamino/lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play kamino/lightning"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play exegol/exegol_lightning"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_rift_bounce1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play exegol/exegol_lightning_rift_bounce1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_strikes_cuts"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play exegol/exegol_lightning_strikes_cuts" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_strikes_rift"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play exegol/exegol_lightning_strikes_rift"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play md2/lava_shot"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play md2/lava_shot"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play mustafar/volcano_enhanced2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play mustafar/volcano_enhanced2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play mustafar/volcano1_enhanced2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play mustafar/volcano1_enhanced2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_FLOW
+			descText			"play env/lava_flow2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/lava_flow2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_DUST
+			descText			"play mustafar/lavadust"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play mustafar/lavadust"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_ACID_SPLASH
+			descText			"play env/acid_splash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/acid_splash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/powerbolt_long"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/powerbolt_long"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				330 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/hevil_bolt"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/hevil_bolt"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/tasbolt1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/tasbolt1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_BREATH
+			descText			"play misc/breath"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play misc/breath"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_BUBBLE
+			descText			"play md2/bubble"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play md2/bubble"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_DOME
+			descText			"play env/dome"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/dome"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_DUST_FALL
+			descText			"play chunks/dustfall"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play chunks/dustfall"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_EMPEROR_DEATH
+			descText			"play emperor/emperordeath"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play emperor/emperordeath"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_FOG
+			descText			"play exegol/fogsprites_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play exegol/fogsprites_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_GENERATOR_RINGS
+			descText			"play misc/genrings"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play misc/genrings" 
+			} 
+		}
+		
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_GREEN_BEAM
+			descText			"play env/beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_GREEN_LASER
+			descText			"play env/vbolt"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/vbolt"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_FORCE_HEAL
+			descText			"play force/heal2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play force/heal2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				410 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_FORCE_RAGE
+			descText			"play force/rage2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play force/rage2"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_HYPERSPACE_STARS
+			descText			"play ships/hyperspace_stars"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play ships/hyperspace_stars"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_IMPACT_DUST
+			descText			"play env/impact_dust"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/impact_dust"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_ION_CANNON
+			descText			"play md2/ion_cannon"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play md2/ion_cannon"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_ION_CANNON_EXPLOSION
+			descText			"play env/ion_cannon_explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/ion_cannon_explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_POSSESSION
+			descText			"play misc/possession"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play misc/possession"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_PROTON_IMPACT
+			descText			"play ships/proton_impact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play ships/proton_impact" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_QUAKE
+			descText			"play env/quake_smaller"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/quake_smaller"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_RED_CYC
+			descText			"play env/red_cyc"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/red_cyc"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_RED_SHOT
+			descText			"play env/red_shot_spray"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/red_shot_spray"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_FALL
+			descText			"play env/rockfall_noshake"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/rockfall_noshake"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_FALL
+			descText			"play chunks/rockfalling"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play chunks/rockfalling"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				490 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_IMPACT
+			descText			"play chunks/rockimpact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play chunks/rockimpact"
+			} 
+		}
+
+		/////
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_SMASH
+			descText			"play env/rock_smash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/rock_smash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_SABER_CUT
+			descText			"play md2/saber_cut"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play md2/saber_cut"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SAND_SPRAY
+			descText			"play env/sand_spray"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/sand_spray"
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SONIC
+			descText			"play howler/sonic"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play howler/sonic"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_TARGET_BEAM
+			descText			"play env/targ_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/targ_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_TRACTOR_BEAM
+			descText			"play cinematics/tiny_tractor_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play cinematics/tiny_tractor_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_TRACTOR_BEAM
+			descText			"play env/tractor_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/tractor_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_VOTJ_POOL
+			descText			"play votj/poolvotj"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play votj/poolvotj"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_WALL_BREAK
+			descText			"play explosions/wall_break"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play explosions/wall_break"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATER_IMPACT
+			descText			"play env/water_impact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play env/water_impact"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATER_SPLASH
+			descText			"play kamino/watersplash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play kamino/watersplash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect1
+			rect				570 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATERFALL
+			descText			"play world/waterfall3"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx play world/waterfall3"
+			} 
+		}
+
+		//////
+
+
+		// Delay
+
+		itemDef 
+		{
+			name				delay1
+			group				effect1
+			rect				10 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_1
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx delay 1" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay100
+			group				effect1
+			rect				90 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_100
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx delay 100" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay250
+			group				effect1
+			rect				170 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_250
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx delay 250" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay500
+			group				effect1
+			rect				250 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_500
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx delay 500" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay1000
+			group				effect1
+			rect				330 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_1000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx delay 1000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay2000
+			group				effect1
+			rect				410 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_2000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx delay 2000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay5000
+			group				effect1
+			rect				490 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_5000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx delay 5000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay10000
+			group				effect1
+			rect				570 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_10000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx delay 10000" 
+			} 
+		}
+
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	EFFECTS 2 LIST
+		//
+		//----------------------------------------------------------------------------------------------
+
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play env/small_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/small_fire" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play env/fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play jakku/hut_fire_small"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play jakku/hut_fire_small"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_FIRE
+			descText			"play env/fire_wall"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/fire_wall"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_FIRE
+			descText			"play am-korriban/jk_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play am-korriban/jk_fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_FIRE
+			descText			"play jakku/hut_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play jakku/hut_fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_FLAME_JET
+			descText			"play env/flame_jet"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/flame_jet"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SMOKE
+			descText			"play volumetric/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play volumetric/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SMOKE
+			descText			"play md2/smoke1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play md2/smoke1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_SMOKE
+			descText			"play volumetric/black_smoke2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play volumetric/black_smoke2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_BLACK_SMOKE
+			descText			"play epiii_boc/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play epiii_boc/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				10 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_BLACK_SMOKE
+			descText			"play volumetric/droid_smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play volumetric/droid_smoke" 
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_BLACK_SMOKE
+			descText			"play crait/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play crait/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_BLACK_SMOKE
+			descText			"play am-korriban/black_smoke_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play am-korriban/black_smoke_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMOKE_ELECTRICITY
+			descText			"play ships/heavydmg"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play ships/heavydmg"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMOKE_EXPLOSION
+			descText			"play epiii_boc/smoke_explo"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play epiii_boc/smoke_explo"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_STEAM
+			descText			"play volumetric/steam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play volumetric/steam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_STEAM
+			descText			"play volumetric/cc_steam_carbonite"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play volumetric/cc_steam_carbonite"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/t3_rift_steam1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play volumetric/t3_rift_steam1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/cc_steam_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play volumetric/cc_steam_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/cc_steam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play volumetric/cc_steam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play env/lavacool"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/lavacool"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SPARKS
+			descText			"play epiii_boc/sparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play epiii_boc/sparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				90 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SPARKS
+			descText			"play sparks/spark"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play sparks/spark"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_SPARKS
+			descText			"play emperor/emperorsparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play emperor/emperorsparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_SPARKS
+			descText			"play cinematics/hugesparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play cinematics/hugesparks" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_SPARKS
+			descText			"play sparks/bluesparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play sparks/bluesparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play env/small_explode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/small_explode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play env/med_explode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/med_explode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play chunks/metalexplode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play chunks/metalexplode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play chunks/sparkexplode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play chunks/sparkexplode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play explosions/explosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play explosions/explosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play epiii_boc/explosion_small"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play epiii_boc/explosion_small"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/droidexplosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play explosions/droidexplosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/hugeexplosion3"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play explosions/hugeexplosion3"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				170 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/hugeexplosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play explosions/hugeexplosion1" 
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/fighter_explosion2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play explosions/fighter_explosion2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play ships/dest_destroyed"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play ships/dest_destroyed"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play epiii_boc/explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play epiii_boc/explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play kamino/explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play kamino/explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_HUGE_EXPLOSION
+			descText			"play explosions/wedge_explosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play explosions/wedge_explosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_HUGE_EXPLOSION
+			descText			"play ships/sd_explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play ships/sd_explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/electricity"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/electricity"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/small_electricity"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/small_electricity" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/veryelectric"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/veryelectric"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_LIGHTNING
+			descText			"play force/lightningwide_md"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play force/lightningwide_md"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_LIGHTNING
+			descText			"play env/huge_lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/huge_lightning"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				250 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_LIGHTNING
+			descText			"play kamino/lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play kamino/lightning"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play exegol/exegol_lightning"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_rift_bounce1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play exegol/exegol_lightning_rift_bounce1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_strikes_cuts"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play exegol/exegol_lightning_strikes_cuts" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_strikes_rift"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play exegol/exegol_lightning_strikes_rift"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play md2/lava_shot"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play md2/lava_shot"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play mustafar/volcano_enhanced2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play mustafar/volcano_enhanced2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play mustafar/volcano1_enhanced2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play mustafar/volcano1_enhanced2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_FLOW
+			descText			"play env/lava_flow2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/lava_flow2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_DUST
+			descText			"play mustafar/lavadust"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play mustafar/lavadust"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_ACID_SPLASH
+			descText			"play env/acid_splash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/acid_splash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/powerbolt_long"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/powerbolt_long"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				330 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/hevil_bolt"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/hevil_bolt"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/tasbolt1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/tasbolt1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_BREATH
+			descText			"play misc/breath"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play misc/breath"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_BUBBLE
+			descText			"play md2/bubble"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play md2/bubble"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_DOME
+			descText			"play env/dome"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/dome"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_DUST_FALL
+			descText			"play chunks/dustfall"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play chunks/dustfall"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_EMPEROR_DEATH
+			descText			"play emperor/emperordeath"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play emperor/emperordeath"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_FOG
+			descText			"play exegol/fogsprites_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play exegol/fogsprites_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_GENERATOR_RINGS
+			descText			"play misc/genrings"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play misc/genrings" 
+			} 
+		}
+		
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_GREEN_BEAM
+			descText			"play env/beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_GREEN_LASER
+			descText			"play env/vbolt"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/vbolt"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_FORCE_HEAL
+			descText			"play force/heal2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play force/heal2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				410 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_FORCE_RAGE
+			descText			"play force/rage2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play force/rage2"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_HYPERSPACE_STARS
+			descText			"play ships/hyperspace_stars"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play ships/hyperspace_stars"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_IMPACT_DUST
+			descText			"play env/impact_dust"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/impact_dust"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_ION_CANNON
+			descText			"play md2/ion_cannon"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play md2/ion_cannon"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_ION_CANNON_EXPLOSION
+			descText			"play env/ion_cannon_explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/ion_cannon_explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_POSSESSION
+			descText			"play misc/possession"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play misc/possession"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_PROTON_IMPACT
+			descText			"play ships/proton_impact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play ships/proton_impact" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_QUAKE
+			descText			"play env/quake_smaller"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/quake_smaller"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_RED_CYC
+			descText			"play env/red_cyc"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/red_cyc"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_RED_SHOT
+			descText			"play env/red_shot_spray"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/red_shot_spray"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_FALL
+			descText			"play env/rockfall_noshake"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/rockfall_noshake"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_FALL
+			descText			"play chunks/rockfalling"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play chunks/rockfalling"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				490 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_IMPACT
+			descText			"play chunks/rockimpact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play chunks/rockimpact"
+			} 
+		}
+
+		/////
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_SMASH
+			descText			"play env/rock_smash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/rock_smash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_SABER_CUT
+			descText			"play md2/saber_cut"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play md2/saber_cut"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SAND_SPRAY
+			descText			"play env/sand_spray"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/sand_spray"
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SONIC
+			descText			"play howler/sonic"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play howler/sonic"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_TARGET_BEAM
+			descText			"play env/targ_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/targ_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_TRACTOR_BEAM
+			descText			"play cinematics/tiny_tractor_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play cinematics/tiny_tractor_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_TRACTOR_BEAM
+			descText			"play env/tractor_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/tractor_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_VOTJ_POOL
+			descText			"play votj/poolvotj"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play votj/poolvotj"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_WALL_BREAK
+			descText			"play explosions/wall_break"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play explosions/wall_break"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATER_IMPACT
+			descText			"play env/water_impact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play env/water_impact"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATER_SPLASH
+			descText			"play kamino/watersplash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play kamino/watersplash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect2
+			rect				570 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATERFALL
+			descText			"play world/waterfall3"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 play world/waterfall3"
+			} 
+		}
+
+		//////
+
+
+		// Delay
+
+		itemDef 
+		{
+			name				delay1
+			group				effect2
+			rect				10 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_1
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 delay 1" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay100
+			group				effect2
+			rect				90 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_100
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 delay 100" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay250
+			group				effect2
+			rect				170 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_250
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 delay 250" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay500
+			group				effect2
+			rect				250 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_500
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 delay 500" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay1000
+			group				effect2
+			rect				330 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_1000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 delay 1000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay2000
+			group				effect2
+			rect				410 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_2000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 delay 2000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay5000
+			group				effect2
+			rect				490 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_5000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 delay 5000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay10000
+			group				effect2
+			rect				570 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_10000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx2 delay 10000" 
+			} 
+		}
+
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	EFFECTS 3 LIST
+		//
+		//----------------------------------------------------------------------------------------------
+
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play env/small_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/small_fire" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play env/fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_FIRE
+			descText			"play jakku/hut_fire_small"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play jakku/hut_fire_small"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_FIRE
+			descText			"play env/fire_wall"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/fire_wall"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_FIRE
+			descText			"play am-korriban/jk_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play am-korriban/jk_fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_FIRE
+			descText			"play jakku/hut_fire"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play jakku/hut_fire"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_FLAME_JET
+			descText			"play env/flame_jet"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.35 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/flame_jet"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SMOKE
+			descText			"play volumetric/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play volumetric/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SMOKE
+			descText			"play md2/smoke1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play md2/smoke1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_SMOKE
+			descText			"play volumetric/black_smoke2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play volumetric/black_smoke2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_BLACK_SMOKE
+			descText			"play epiii_boc/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play epiii_boc/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				10 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_BLACK_SMOKE
+			descText			"play volumetric/droid_smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play volumetric/droid_smoke" 
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_BLACK_SMOKE
+			descText			"play crait/smoke"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play crait/smoke"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_BLACK_SMOKE
+			descText			"play am-korriban/black_smoke_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play am-korriban/black_smoke_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMOKE_ELECTRICITY
+			descText			"play ships/heavydmg"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play ships/heavydmg"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMOKE_EXPLOSION
+			descText			"play epiii_boc/smoke_explo"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.4 0.4 0.4 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play epiii_boc/smoke_explo"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_STEAM
+			descText			"play volumetric/steam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play volumetric/steam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_STEAM
+			descText			"play volumetric/cc_steam_carbonite"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play volumetric/cc_steam_carbonite"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/t3_rift_steam1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play volumetric/t3_rift_steam1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/cc_steam_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play volumetric/cc_steam_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play volumetric/cc_steam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play volumetric/cc_steam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_STEAM
+			descText			"play env/lavacool"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0.71 0.69 0.67 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/lavacool"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SPARKS
+			descText			"play epiii_boc/sparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play epiii_boc/sparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				90 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_SPARKS
+			descText			"play sparks/spark"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play sparks/spark"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_SPARKS
+			descText			"play emperor/emperorsparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play emperor/emperorsparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_SPARKS
+			descText			"play cinematics/hugesparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play cinematics/hugesparks" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_SPARKS
+			descText			"play sparks/bluesparks"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.81 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play sparks/bluesparks"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play env/small_explode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/small_explode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play env/med_explode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/med_explode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play chunks/metalexplode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play chunks/metalexplode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play chunks/sparkexplode"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play chunks/sparkexplode"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play explosions/explosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play explosions/explosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_EXPLOSION
+			descText			"play epiii_boc/explosion_small"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play epiii_boc/explosion_small"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/droidexplosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play explosions/droidexplosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/hugeexplosion3"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play explosions/hugeexplosion3"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				170 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/hugeexplosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play explosions/hugeexplosion1" 
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_MEDIUM_EXPLOSION
+			descText			"play explosions/fighter_explosion2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play explosions/fighter_explosion2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play ships/dest_destroyed"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play ships/dest_destroyed"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play epiii_boc/explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play epiii_boc/explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_EXPLOSION
+			descText			"play kamino/explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play kamino/explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_HUGE_EXPLOSION
+			descText			"play explosions/wedge_explosion1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play explosions/wedge_explosion1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_HUGE_EXPLOSION
+			descText			"play ships/sd_explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.61 0.2 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play ships/sd_explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/electricity"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/electricity"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/small_electricity"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/small_electricity" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_ELECTRICITY
+			descText			"play env/veryelectric"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.67 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/veryelectric"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_SMALL_LIGHTNING
+			descText			"play force/lightningwide_md"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play force/lightningwide_md"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_LIGHTNING
+			descText			"play env/huge_lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/huge_lightning"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				250 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_LARGE_LIGHTNING
+			descText			"play kamino/lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play kamino/lightning"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play exegol/exegol_lightning"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_rift_bounce1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play exegol/exegol_lightning_rift_bounce1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_strikes_cuts"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play exegol/exegol_lightning_strikes_cuts" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_EXEGOL_LIGHTNING
+			descText			"play exegol/exegol_lightning_strikes_rift"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			0 0.47 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play exegol/exegol_lightning_strikes_rift"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play md2/lava_shot"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play md2/lava_shot"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play mustafar/volcano_enhanced2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play mustafar/volcano_enhanced2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_ERUPTION
+			descText			"play mustafar/volcano1_enhanced2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play mustafar/volcano1_enhanced2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_FLOW
+			descText			"play env/lava_flow2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/lava_flow2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_LAVA_DUST
+			descText			"play mustafar/lavadust"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 0.16 0.07 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play mustafar/lavadust"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_ACID_SPLASH
+			descText			"play env/acid_splash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/acid_splash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/powerbolt_long"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/powerbolt_long"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				330 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/hevil_bolt"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/hevil_bolt"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_BLUE_BEAM
+			descText			"play env/tasbolt1"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/tasbolt1"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_BREATH
+			descText			"play misc/breath"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play misc/breath"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_BUBBLE
+			descText			"play md2/bubble"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play md2/bubble"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_DOME
+			descText			"play env/dome"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/dome"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_DUST_FALL
+			descText			"play chunks/dustfall"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play chunks/dustfall"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_EMPEROR_DEATH
+			descText			"play emperor/emperordeath"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play emperor/emperordeath"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_FOG
+			descText			"play exegol/fogsprites_big"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play exegol/fogsprites_big"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_GENERATOR_RINGS
+			descText			"play misc/genrings"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play misc/genrings" 
+			} 
+		}
+		
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_GREEN_BEAM
+			descText			"play env/beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_GREEN_LASER
+			descText			"play env/vbolt"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/vbolt"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_FORCE_HEAL
+			descText			"play force/heal2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play force/heal2"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				410 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_FORCE_RAGE
+			descText			"play force/rage2"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play force/rage2"
+			} 
+		}
+
+		//////
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_HYPERSPACE_STARS
+			descText			"play ships/hyperspace_stars"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play ships/hyperspace_stars"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_IMPACT_DUST
+			descText			"play env/impact_dust"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/impact_dust"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_ION_CANNON
+			descText			"play md2/ion_cannon"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play md2/ion_cannon"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_ION_CANNON_EXPLOSION
+			descText			"play env/ion_cannon_explosion"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/ion_cannon_explosion"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_POSSESSION
+			descText			"play misc/possession"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play misc/possession"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_PROTON_IMPACT
+			descText			"play ships/proton_impact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play ships/proton_impact" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_QUAKE
+			descText			"play env/quake_smaller"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/quake_smaller"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_RED_CYC
+			descText			"play env/red_cyc"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/red_cyc"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_RED_SHOT
+			descText			"play env/red_shot_spray"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/red_shot_spray"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_FALL
+			descText			"play env/rockfall_noshake"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/rockfall_noshake"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_FALL
+			descText			"play chunks/rock_falling"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play chunks/rock_falling"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				490 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_IMPACT
+			descText			"play chunks/rockimpact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play chunks/rockimpact"
+			} 
+		}
+
+		/////
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 107 80 18
+			text				@MD_MENU_MAIN_EFFECT_ROCK_SMASH
+			descText			"play env/rock_smash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/rock_smash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 130 80 18
+			text				@MD_MENU_MAIN_EFFECT_SABER_CUT
+			descText			"play md2/saber_cut"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play md2/saber_cut"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 153 80 18
+			text				@MD_MENU_MAIN_EFFECT_SAND_SPRAY
+			descText			"play env/sand_spray"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/sand_spray"
+			} 
+		}
+				
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 176 80 18
+			text				@MD_MENU_MAIN_EFFECT_SONIC
+			descText			"play howler/sonic"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play howler/sonic"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 199 80 18
+			text				@MD_MENU_MAIN_EFFECT_TARGET_BEAM
+			descText			"play env/targ_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/targ_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 222 80 18
+			text				@MD_MENU_MAIN_EFFECT_TRACTOR_BEAM
+			descText			"play cinematics/tiny_tractor_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play cinematics/tiny_tractor_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 245 80 18
+			text				@MD_MENU_MAIN_EFFECT_TRACTOR_BEAM
+			descText			"play env/tractor_beam"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/tractor_beam"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 268 80 18
+			text				@MD_MENU_MAIN_EFFECT_VOTJ_POOL
+			descText			"play votj/poolvotj"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play votj/poolvotj"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 291 80 18
+			text				@MD_MENU_MAIN_EFFECT_WALL_BREAK
+			descText			"play explosions/wall_break"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play explosions/wall_break"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 314 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATER_IMPACT
+			descText			"play env/water_impact"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play env/water_impact"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 337 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATER_SPLASH
+			descText			"play kamino/watersplash"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play kamino/watersplash"
+			} 
+		}
+
+		itemDef 
+		{
+			name				effect
+			group				effect3
+			rect				570 360 80 18
+			text				@MD_MENU_MAIN_EFFECT_WATERFALL
+			descText			"play world/waterfall3"
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 play world/waterfall3"
+			} 
+		}
+
+		//////
+
+
+		// Delay
+
+		itemDef 
+		{
+			name				delay1
+			group				effect3
+			rect				10 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_1
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 delay 1" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay100
+			group				effect3
+			rect				90 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_100
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 delay 100" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay250
+			group				effect3
+			rect				170 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_250
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 delay 250" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay500
+			group				effect3
+			rect				250 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_500
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 delay 500" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay1000
+			group				effect3
+			rect				330 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_1000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 delay 1000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay2000
+			group				effect3
+			rect				410 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_2000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 delay 2000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay5000
+			group				effect3
+			rect				490 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_5000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 delay 5000" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				delay10000
+			group				effect3
+			rect				570 388 80 18
+			text				@MD_MENU_MAIN_EFFECT_DELAY_10000
+			descText			@MD_MENU_MAIN_EFFECT_DELAY_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"fx3 delay 10000" 
+			} 
+		}
+
+
+
+
+		// BACK button in lower left corner
+
+		itemDef 
+		{
+			name				backbutton
+			group				none
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 					
+				close			all
+				open			ingameMainMenu
+			}
+		}
+
+
+		itemDef
+		{
+			name				weather
+			group				none
+			type				ITEM_TYPE_MULTI
+			rect				170 458.2 301 24
+			text				@MD_MENU_SETTINGS_WEATHER
+			descText			@MD_MENU_SETTINGS_WEATHER_DESC
+			cvar				"r_weather"
+			cvarFloatList		
+			{  
+				@MD_MENU_SETTINGS_CLEAR           0
+				@MD_MENU_SETTINGS_SNOW            1
+				@MD_MENU_SETTINGS_RAIN            2
+				@MD_MENU_SETTINGS_LAVA            3
+				@MD_MENU_SETTINGS_SANDSTORM       4
+				@MD_MENU_SETTINGS_HEAVY_RAIN_FOG    5
+				@MD_MENU_SETTINGS_FOG             6
+				@MD_MENU_SETTINGS_ACID_RAIN        7
+			}
+	   		textalign			ITEM_ALIGN_CENTER
+			textalignx			100
+			textaligny			0
+			font 				5
+			textscale			0.19
+			forecolor			1 1 1 0.9
+			visible			1
+
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 316 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 316 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 316 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 463 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action
+			{
+				play			"sound/interface/button1.wav"
+                exec            "weather clear; wait 100; r_weather";
+			}
+		}
+
+		// RESUME button in the lower right corner
+
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MENUS_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+
+  			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

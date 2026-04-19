@@ -1,0 +1,5781 @@
+//----------------------------------------------------------------------------------------------
+//
+// SETUP MENU
+//
+//----------------------------------------------------------------------------------------------
+{
+	menuDef 
+	{
+		name					"ingamesetupMenu"
+		fullScreen				1						
+		rect					0 0 640 480					
+		visible					0						
+		focusColor				1 1 1 1					
+		descX					467
+		descY					437
+		descScale				0.6
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER
+
+		onOpen 
+		{
+			setfocus			advancedmenubutton
+			uiScript			getvideosetup ;			
+			hide				applyChanges ;
+			hide				video2 ;
+			hide				rend2 ;
+			hide				vidrestart	;
+			hide				sound	;
+			hide				options ;
+			hide				ui_lang ;
+			hide				mods	;
+			hide				ui ;
+			show				advanced ;
+			hide				defaults ;
+			hide				video ;
+			hide				highlights ;
+			setitemrect			background_MDMenuPanelGoldMiddleCurrent	14.75 177.5 320 30.75
+			show				background_MDMenuPanelGoldMiddleCurrent
+			hide				button_glow
+			hide				crosshairs
+		}
+			
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav" 		
+
+			defer				VideoSetup	videowarningMenu ;
+
+			close				all ;
+			open				ingamemainmenu
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MENU BACKGROUND
+//----------------------------------------------------------------------------------------------
+				
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_mainvideoRight
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				220 0 640 480
+			background			"gfx/menus/SettingsVideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/settingsbk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 23 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				297 153 342 301
+			background			"gfx/menus/main/settingspanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				setuppanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5.5 151 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				combatoptionspanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 179 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				optionspanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 207 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				uioptionspanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 235 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				videopanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 262.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				morevideopanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 290 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rend2panel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 318 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				soundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 346 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				defaultspanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 374 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				controlspanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 402 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 430 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+
+		// Panels
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				161 202 320 30.75
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				161 257 320 30.75
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddleCurrent
+			group				mainpanelgoldcurrent
+			style				WINDOW_STYLE_SHADER
+			rect				14.75 178 320 30.75
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	SECOND ROW MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+		// Setup Options title
+		itemDef 
+		{
+			name				setup_title
+			group				title
+			style				WINDOW_STYLE_EMPTY
+			rect				56 152 240 24
+			text				@MD_MENU_SETTINGS_SETUP_OPTIONS
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			119
+			textaligny			2
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		// mdmode  button
+		itemDef 
+		{
+			name				advancedmenubutton
+			group				none
+			text				@MD_MENU_SETTINGS_COMBAT_OPTIONS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 180 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 177.5 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+
+				defer			VideoSetup	videowarningMenu ;
+
+				hide 			video ;
+				hide			applyChanges ;
+				hide			video2 ;
+				hide			rend2 ;
+				hide			vidrestart	;
+				hide			sound	;
+				hide			options ;
+				hide			ui_lang ;
+				hide			ui ;
+				show			advanced ;
+				hide			mods	;
+				hide			defaults ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 177.5 320 30.75
+			}
+		}
+
+		// gameoptions  button
+		itemDef 
+		{
+			name				gameoptionmenubutton
+			group				none
+			text				@MD_MENU_SETTINGS_GAMEPLAY_OPTIONS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 208 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 205.75 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				defer			VideoSetup	videowarningMenu ;
+
+				play			"sound/interface/button1.wav"
+				hide 			video ;
+				hide			applyChanges ;
+				hide			video2 ;
+				hide			rend2 ;
+				hide			vidrestart	;
+				hide			sound	;
+				show			options ;
+				hide			ui_lang ;
+				hide			ui ;
+				hide			advanced ;
+				hide			mods	;
+				hide			defaults ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 205.75 320 30.75
+			}
+		}
+
+		// interface  button
+		itemDef 
+		{
+			name				interfacemenubutton
+			group				none
+			text				@MD_MENU_SETTINGS_INTERFACE_OPTIONS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 236 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 233.75 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+
+				defer			VideoSetup	videowarningMenu ;
+
+				hide 			video ;
+				hide			applyChanges ;
+				hide			video2 ;
+				hide			rend2 ;
+				hide			vidrestart	;
+				hide			sound	;
+				hide			options ;
+				hide			ui_lang ;
+				show			ui ;
+				hide			advanced ;
+				hide			mods	;
+				hide			defaults ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 233.75 320 30.75
+			}
+		}
+
+		itemDef 
+		{
+			name				video1menubutton
+			group				none
+			text				@MENUS_VIDEO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 264 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textstyle			3
+			textalign			ITEM_ALIGN_CENTER
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 261.25 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+
+				defer			VideoSetup	videowarningMenu ;
+
+				uiScript		getvideosetup ;		// Get video settings
+
+				show 			video ;
+				hide			applyChanges ;
+				hide			video2 ;
+				hide			rend2 ;
+				hide			vidrestart	;
+				hide			sound	;
+				hide			options ;
+				hide			ui_lang ;
+				hide			ui ;
+				hide			advanced ;
+				hide			mods	;
+				hide			defaults ;
+				setfocus		graphics ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 261.25 320 30.75
+			}
+		}
+
+		itemDef 
+		{
+			name				video2menubutton
+			group				none
+			text				@MENUS_MORE_VIDEO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 291 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 288.75 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+
+				defer			VideoSetup	videowarningMenu ;
+
+				hide 			video ;
+				hide			applyChanges ;
+				show			video2 ;
+				hide			rend2 ;
+				hide			vidrestart	;
+				hide			sound	;
+				hide			options ;
+				hide			ui_lang ;
+				hide			ui ;
+				hide			advanced ;
+				hide			mods	;
+				hide			defaults ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 288.75 320 30.75
+			}
+		}
+
+		itemDef 
+		{
+			name				rend2menubutton
+			group				none
+			text				@MD_MENU_SETTINGS_REND2
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 319 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 317 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+
+				defer			VideoSetup	videowarningMenu ;
+
+				hide 			video ;
+				hide			applyChanges ;
+				hide			video2 ;
+				show			rend2 ;
+				hide			vidrestart	;
+				hide			sound	;
+				hide			options ;
+				hide			ui_lang ;
+				hide			ui ;
+				hide			advanced ;
+				hide			mods	;
+				hide			defaults ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 317 320 30.75
+			}
+		}
+
+		itemDef 
+		{
+			name				soundmenubutton
+			group				none
+			text				@MENUS_SOUND
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 347 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 345 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+
+				defer			VideoSetup	videowarningMenu ;
+
+				hide 			video ;
+				hide			applyChanges ;
+				hide			video2 ;
+				hide			rend2 ;
+				hide			vidrestart ;
+				show			sound	;
+				hide			options ;
+				hide			ui_lang ;
+				hide			ui ;
+				hide			advanced ;
+				hide			mods	;
+				hide			defaults ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 345 320 30.75
+			}
+		}
+
+		// gamedefaults button
+		itemDef 
+		{
+			name				gamedefaultsmenubutton
+			group				none
+			text				@MENUS_DEFAULTS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 375 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 373 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+
+				defer			VideoSetup	videowarningMenu ;
+
+				hide 			video ;
+				hide			applyChanges ;
+				hide			video2 ;
+				hide			rend2 ;
+				hide			vidrestart	;
+				hide			sound	;
+				hide			options ;
+				hide			ui_lang ;
+				hide			ui ;
+				hide			advanced ;
+				hide			mods	;
+				show			defaults ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 373 320 30.75
+			}
+		}
+
+/*
+		// mods  button
+		itemDef 
+		{
+			name				modsmenubutton
+			group				none
+			text				@MENUS_MODS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				80 263 170 24
+			font				5
+			textscale			0.7
+			textalignx			170
+			textaligny			2
+			textalign			ITEM_ALIGN_RIGHT
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 316.5 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+
+				defer			VideoSetup	videowarningMenu ;
+				uiScript		loadMods ;
+
+				hide 			video ;
+				hide			applyChanges ;
+				hide			video2 ;
+				hide			rend2 ;
+				hide			vidrestart	;
+				hide			sound	;
+				hide			options ;
+				hide			ui_lang ;
+				show			mods	;
+				hide			ui ;
+				hide			advanced ;
+				hide			defaults ;
+				setitemrect		background_MDMenuPanelGoldMiddleCurrent		14.75 316.5 320 30.75
+			}
+		}
+*/
+
+//----------------------------------------------------------------------------------------------
+//	OTHER MAIN MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				controlsbutton
+			group				control
+			text				@MENUS_CONTROLS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 403 240 24  
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1	
+			
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	14.75 401 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				defer			VideoSetup	videowarningMenu ;
+				close			all ; 
+				open			ingamecontrolsMenu 
+			}
+		}
+
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 431 240 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1 	  
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	15.25 428 320 30.75
+				show			background_MDMenuPanelGoldBottom
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 	
+				close			all ; 
+				open			ingamemainmenu
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	HIGHLIGHT BARS
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				highlight1
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 145 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight2
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 159 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight3
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 173 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight4
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 187 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight5
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 201 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight6
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 215 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight7
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 229 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight8
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 243 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight9
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 257 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight10
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 271 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight11
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 285 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight12
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 299 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlight13
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 313 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlight14
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 327 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlight15
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 341 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlight16
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 355 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlight17
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 369 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlight18
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 383 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlight19
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 397 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlight20
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 411 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlight21
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 425 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				highlightdam
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 270 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				highlightloc
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				315 284 305 14
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	VIDEO 1 MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+		   	name 				graphics				
+			group 				video
+			text				@MENUS_VIDEO_QUALITY
+	   		type 				ITEM_TYPE_MULTI	
+			rect				315 158 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			style				WINDOW_STYLE_FILLED
+			forecolor			1 1 1 0.9
+			descText			@MENUS_SELECT_PRESET_GRAPHIC
+
+	   		visible 			0
+
+			cvar 				"ui_r_glCustom"
+			cvarFloatList 
+			{ 
+				@MENUS_HIGH_QUALITY	0 
+				@MENUS_NORMAL		1 
+				@MENUS_FAST		2 
+				@MENUS_FASTEST		3 
+				@MENUS_CUSTOM		4 
+			}
+
+			mouseenter 
+			{ 
+				show			highlight2
+			}
+			mouseexit 
+			{ 
+				hide			highlight2
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript 		update "ui_r_glCustom" ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{	
+			name				video_mode
+			group				video
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_VIDEO_MODE
+			cvarFloatList		
+                       {                    "Custom" -1
+                                            "Desktop Resolution" -2
+					    "640 x 480" 3
+                                            "800 x 600" 4
+                                            "856 x 480" 5
+                                            "960 x 720" 6
+                                            "1024 x 768" 7
+                                            "1152 x 864" 8 
+                                            "1280 x 720" 9  
+                                            "1280 x 1024" 10 
+                                            "1366 x 768" 11
+                                            "1440 x 900" 12
+                                            "1600 x 900" 13
+                                            "1600 x 1200" 14
+                                            "1680 x 1050" 15
+                                            "1920 x 1080" 16
+                                            "2048 x 1536" 17
+                                            "2400 x 600"  18
+                                            "2560 x 1440" 19
+                                            "3840 x 2160" 20
+                        }
+                        cvar				"ui_r_mode"
+			rect				315 172 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight3
+			}
+			mouseexit 
+			{ 
+				hide			highlight3
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript		glCustom ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef
+		{
+			name				widthxheight
+			group				video
+			text				@MD_MENU_SETTINGS_CUSTOM_RESOLUTION
+			cvartest			ui_r_mode
+			showcvar			{ "-1" }
+			rect				315 186 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				customWidth
+			group				video
+			type				ITEM_TYPE_EDITFIELD
+			text				" "
+			descText			@MD_MENU_SETTINGS_CUSTOM_WIDTH_DESC
+			cvar				"r_customWidth"
+			rect				470 186 35 14
+			textalignx			-5
+			textaligny			0
+			font				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			maxchars			4
+			maxPaintChars		4
+			visible				0
+			cvarTest			ui_r_mode
+			showcvar			{ "-1" }
+			
+			mouseenter 
+			{ 
+				show			highlight4
+			}
+			mouseexit 
+			{ 
+				hide			highlight4
+			} 
+			action
+			{
+				play			"sound/interface/button1.wav" 
+				uiScript		glCustom
+				setcvar			ui_r_modified	1
+				show			applyChanges
+			}
+		
+		}
+		
+		itemDef
+		{
+			name				x
+			group				video
+			text				"X"
+			cvartest			ui_r_mode
+			showcvar			{ "-1" }
+			rect				510 186 0 0
+			textalignx			0
+			textaligny			0
+			font				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			decoration
+		}
+		
+		itemDef
+		{
+			name				customHeight
+			group				video
+			type				ITEM_TYPE_EDITFIELD
+			text				" "
+			descText			@MD_MENU_SETTINGS_CUSTOM_HEIGHT_DESC
+			cvar				"r_customHeight"
+			rect				520 186 35 14
+			textalignx			-5
+			textaligny			0
+			font				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			maxchars			4
+			maxPaintChars		4
+			visible				0
+			cvarTest			ui_r_mode
+			showcvar			{ "-1" }
+			
+			mouseenter 
+			{ 
+				show			highlight4
+			}
+			mouseexit 
+			{ 
+				hide			highlight4
+			} 
+			action
+			{
+				play			"sound/interface/button1.wav" 
+				uiScript		glCustom
+				setcvar			ui_r_modified	1
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{	
+			name				fullscreen
+			group				video
+			type				ITEM_TYPE_MULTI
+			text				@MENUS_FULL_SCREEN
+			rect				315 200 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			descText			@MENUS_TOGGLE_BETWEEN_FULL_SCREEN
+			cvar				"ui_r_fullscreen"
+
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight5
+			}
+			mouseexit 
+			{ 
+				hide			highlight5
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript		glCustom ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{			
+			name				widescreen_fov
+			group				video
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_WIDESCREEN_FOV
+			cvar				"cg_fovaspectadjust"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 214 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_WIDESCREEN_FOV_DESC
+
+			mouseenter 
+			{ 
+				show			highlight6
+			}
+			mouseexit 
+			{ 
+				hide			highlight6
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+
+			} 
+		}
+
+		itemDef 
+		{			
+			name				video_sync
+			group				video
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_VIDEO_SYNC
+			cvar				"r_swapInterval"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 228 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_VIDEO_SYNC_DESC
+
+			mouseenter 
+			{ 
+				show			highlight7
+			}
+			mouseexit 
+			{ 
+				hide			highlight7
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+
+			} 
+		}
+
+/*		// This resets so removed for now
+		itemDef 
+		{			
+			name				widescreen_hud
+			group				video
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_WIDESCREEN_HUD
+			cvar				"r_ratiofix"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 242 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_WIDESCREEN_HUD_DESC
+
+			mouseenter 
+			{ 
+				show			highlight8
+			}
+			mouseexit 
+			{ 
+				hide			highlight8
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+
+			} 
+		}*/
+
+		itemDef 
+		{			
+			name				widescreen_cutscenes
+			group				video
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_CINEMATIC_BARS
+			cvar				"cg_drawwidescreenmode"	
+			cvarFloatList			{  @MENUS_OFF 1 @MENUS_ON 0 }
+			rect				315 256 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_CINEMATIC_BARS_DESC
+
+			mouseenter 
+			{ 
+				show			highlight9
+			}
+			mouseexit 
+			{ 
+				hide			highlight9
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+
+			} 
+		}
+
+		itemDef 
+		{	
+			name				color_depth
+			group				video
+			type				ITEM_TYPE_MULTI
+			text				@MENUS_COLOR_DEPTH
+			rect				315 270 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+
+			cvarFloatList			{  @MENUS_DEFAULT 0 @MENUS_16_BIT 16 @MENUS_32_BIT 32 }
+			descText			@MENUS_CHANGE_THE_NUMBER_OF
+			cvar				"ui_r_colorbits"
+
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight10
+			}
+			mouseexit 
+			{ 
+				hide			highlight10
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript		glCustom ;
+				uiScript update 	"ui_r_colorbits" ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{	
+			name				geometric_detail
+			group				video
+			type				ITEM_TYPE_MULTI
+			text				@MENUS_GEOMETRIC_DETAIL
+			rect				315 284 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			cvarFloatList			{  @MENUS_LOW 2 @MENUS_MEDIUM 1 @MENUS_HIGH 0 }
+			descText			@MENUS_ADJUST_THE_NUMBER_OF
+			cvar				"ui_r_lodbias"
+
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight11
+			}
+			mouseexit 
+			{ 
+				hide			highlight11
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript		glCustom ;
+				uiScript update 	"ui_r_lodbias" ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{	
+			name				texture_detail
+			group				video
+			type				ITEM_TYPE_MULTI
+			text				@MENUS_TEXTURE_DETAIL
+			rect				315 298 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			cvarFloatList			{  @MENUS_LOW 3 @MENUS_MEDIUM 2 @MENUS_HIGH 1 @MENUS_VERY_HIGH 0 }
+			descText			@MENUS_SELECT_THE_RESOLUTION
+			cvar				"ui_r_picmip"
+
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight12
+			}
+			mouseexit 
+			{ 
+				hide			highlight12
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript		glCustom ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{	
+			name				texture_quality
+			group				video
+			type				ITEM_TYPE_MULTI
+			text				@MENUS_TEXTURE_QUALITY
+			rect				315 312 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			cvarFloatList			{  @MENUS_DEFAULT 0 @MENUS_16_BIT 16 @MENUS_32_BIT 32 }
+			descText			@MENUS_SELECT_THE_NUMBER_OF
+			cvar				"ui_r_texturebits"
+
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight13
+			}
+			mouseexit 
+			{ 
+				hide			highlight13
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript		glCustom ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{	
+			name				texture_filter
+			group				video
+			type				ITEM_TYPE_MULTI
+			text				@MENUS_TEXTURE_FILTER
+			rect				315 326 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			cvarStrList			{  @MENUS_BILINEAR , "GL_LINEAR_MIPMAP_NEAREST" , @MENUS_TRILINEAR , "GL_LINEAR_MIPMAP_LINEAR" }
+			descText			@MENUS_ADJUST_HOW_WELL_THE_TEXTURES
+			cvar				"ui_r_texturemode"
+
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight14
+			}
+			mouseexit 
+			{ 
+				hide			highlight14
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript		glCustom ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{	
+			name				simple_shaders
+			group				video
+			type				ITEM_TYPE_MULTI
+			text				@MENUS_DETAILED_SHADERS
+			rect				315 340 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			descText			@MENUS_HIDE_OR_UNHIDE_TEXTURES
+			cvar				"ui_r_detailtextures"
+
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight15
+			}
+			mouseexit 
+			{ 
+				hide			highlight15
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+				uiScript		glCustom ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		itemDef 
+		{	
+			name				footsteps
+			group				video
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_FOOTSTEPS
+			desctext			@MENUS_FOOTSTEPS_DESC
+			cvar				"cg_footsteps"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF 			0  
+				@MENUS_SOUNDS	 		1 
+				@MENUS_SOUNDS_AND_EFFECTS	2
+				@MENUS_SOUNDS_EFFECTS_GRAPHICS	3
+			}
+			rect				315 354 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5					
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight16
+			}
+			mouseexit 
+			{ 
+				hide			highlight16
+			} 
+		}
+
+		itemDef 
+		{	
+			name				lod
+			group				video
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_ADVANCED_LOD
+			rect				315 368 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			descText			@MD_MENU_SETTINGS_ADVANCED_LOD_DESC
+			cvar				"r_advancedlod"
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight17
+			}
+			mouseexit 
+			{ 
+				hide			highlight17
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	REND2 MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+	
+		// rend2 addition
+		itemDef 
+		{
+		   	name 				Newrenderer				
+			group 				rend2
+	   		type 				ITEM_TYPE_MULTI	
+			text				@MD_MENU_SETTINGS_RENDERER_REND2
+			rect				315 158 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			style				WINDOW_STYLE_FILLED
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_RENDERER_REND2_DESC
+	   		visible 			0
+
+			cvar				"cl_renderer"
+			cvarStrList	
+			{  
+			    @MENUS_OFF ,
+				"MovieDuels-rdsp" ,
+				@MENUS_ON , 
+				"MovieDuels-rdsp-rend2"
+			}
+
+			mouseenter 
+			{ 
+				show			highlight2
+			}
+			mouseexit 
+			{ 
+				hide			highlight2
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav" ;
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				hdr
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_HDR
+			rect				315 172 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_HDR_DESC
+			cvar				"r_hdr"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				1
+			
+			mouseenter 
+			{ 
+				show			highlight3
+			}
+			mouseexit 
+			{ 
+				hide			highlight3
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+		
+		// rend2 addition
+		itemDef 
+		{	
+			name				hdrlightmap
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_HDR_LIGHTING_SUPPORT
+			rect				315 186 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_HDR_LIGHTING_SUPPORT_DESC
+			cvar				"r_floatLightmap"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				0
+			cvarTest			"r_hdr"
+			hideCvar			{ 0 }
+			
+			mouseenter 
+			{ 
+				show			highlight4
+			}
+			mouseexit 
+			{ 
+				hide			highlight4
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				ssao
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SSAO
+			rect				315 200 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_SSAO_DESC
+			cvar				"r_ssao"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight5
+			}
+			mouseexit 
+			{ 
+				hide			highlight5
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				tonemapping
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_TONEMAPPING
+			rect				315 214 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_TONEMAPPING_DESC
+			cvar				"r_tonemap"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				1
+			
+			mouseenter 
+			{ 
+				show			highlight6
+			}
+			mouseexit 
+			{ 
+				hide			highlight6
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+		
+		// rend2 addition
+		itemDef 
+		{	
+			name				deluxemap
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_DELUXEMAPPING
+			rect				315 228 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_DELUXEMAPPING_DESC
+			cvar				"r_deluxemapping"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				1
+			
+			mouseenter 
+			{ 
+				show			highlight7
+			}
+			mouseexit 
+			{ 
+				hide			highlight7
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+		
+		// rend2 addition
+		itemDef 
+		{
+			name				deluxeSpec
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_DELUXEMAPPING_SPECULAR
+			rect				315 242 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_DELUXEMAPPING_SPECULAR_DESC
+			cvar				"r_deluxeSpecular"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_LOW 0.33
+				@MENUS_MEDIUM 0.66
+				@MENUS_HIGH 1
+			}			
+			cvarTest			"r_deluxemapping"
+			hideCvar			{ 0 }
+			visible				1
+
+			action
+			{ 
+				play			"sound/interface/button1.wav" ; 
+			}
+			mouseenter 
+			{ 
+				show			highlight8
+			}
+			mouseexit 
+			{ 
+				hide			highlight8
+			} 
+		}
+		
+		// rend2 addition
+		itemDef 
+		{	
+			name				cubemap
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_CUBEMAPPING
+			rect				315 256 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_CUBEMAPPING_DESC
+			cvar				"r_cubemapping"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				1
+			
+			mouseenter 
+			{ 
+				show			highlight9
+			}
+			mouseexit 
+			{ 
+				hide			highlight9
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+		
+		// rend2 addition
+		itemDef 
+		{	
+			name				cubemapbounces
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_CUBEMAPPING_BOUNCES
+			rect				315 270 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_CUBEMAPPING_BOUNCES_DESC
+			cvar				"r_cubemappingBounces"
+			cvarFloatList		
+			{  
+				"0" 	0 
+				"1" 	1 
+				"2" 	2 
+			}
+			visible				1
+			
+			mouseenter 
+			{ 
+				show			highlight10
+			}
+			mouseexit 
+			{ 
+				hide			highlight10
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+		
+		// rend2 addition
+		itemDef 
+		{	
+			name				parallax
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_PARALLAX_OCCLUSION_MAPPING
+			rect				315 284 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_PARALLAX_OCCLUSION_MAPPING_DESC
+			cvar				"r_parallaxmapping"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				1
+			
+			mouseenter 
+			{ 
+				show			highlight11
+			}
+			mouseexit 
+			{ 
+				hide			highlight11
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+		
+		// rend2 addition
+		itemDef 
+		{	
+			name				genNormals
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_GENERATE_NORMALMAPS
+			rect				315 298 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_GENERATE_NORMALMAPS_DESC
+			cvar				"r_genNormalMaps"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				1
+			
+			mouseenter 
+			{ 
+				show			highlight12
+			}
+			mouseexit 
+			{ 
+				hide			highlight12
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				smaa
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SMAA
+			rect				315 312 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_SMAA_DESC
+			cvar				"r_smaa"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight13
+			}
+			mouseexit 
+			{ 
+				hide			highlight13
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				smaa_quality
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SMAA_QUALITY
+			rect				315 326 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_SMAA_QUALITY_DESC
+			cvar				"r_smaa_quality"
+			cvarFloatList		
+			{  
+				@MENUS_LOW 	0 
+				@MENUS_MEDIUM 	1
+				@MENUS_HIGH 	2
+				@MENUS_VERY_HIGH 	3  
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight14
+			}
+			mouseexit 
+			{ 
+				hide			highlight14
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		// rend2 (base antialiasing)
+		itemDef 
+		{	
+			name				msaa
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_MSAA
+			rect				315 340 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_MSAA_DESC
+			cvar				"r_ext_multisample"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0
+				@MENUS_ON	8  
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight15
+			}
+			mouseexit 
+			{ 
+				hide			highlight15
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+/*
+		// rend2 addition
+		itemDef 
+		{	
+			name				volumetricFog
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_VOLUMETRIC_FOG
+			rect				315 340 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_VOLUMETRIC_FOG_DESC
+			cvar				"r_volumetricFog"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1   
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight15
+			}
+			mouseexit 
+			{ 
+				hide			highlight15
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+*/
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				dynamiclights
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_DYNAMIC_LIGHTS
+			rect				315 354 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_DYNAMIC_LIGHTS_DESC
+			cvar				"r_dlightmode"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MD_MENU_SETTINGS_DYNAMIC_LIGHTS_ON 	1   
+				@MD_MENU_SETTINGS_DYNAMIC_LIGHTS_ON2 	2    
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight16
+			}
+			mouseexit 
+			{ 
+				hide			highlight16
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_r_modified	1 ;
+				show			applyChanges
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				dynamicGlowBloom
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_DYNAMIC_GLOW_BLOOM
+			rect				315 368 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_DYNAMIC_GLOW_BLOOM_DESC
+			cvar				"r_dynamicGlowBloom"
+			cvarFloatList	
+			{	
+				@MENUS_OFF 	0 
+				@MENUS_LOW 0.2
+				@MENUS_MEDIUM 0.4
+				@MENUS_HIGH 0.6
+				@MENUS_VERY_HIGH 0.8
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight17
+			}
+			mouseexit 
+			{ 
+				hide			highlight17
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				autoexp
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_AUTOEXPOSURE
+			rect				315 382 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_AUTOEXPOSURE_DESC
+			cvar				"r_autoexposure"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight18
+			}
+			mouseexit 
+			{ 
+				hide			highlight18
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				cameraexposure
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_CAMERA_EXPOSURE
+			rect				315 396 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_CAMERA_EXPOSURE_DESC
+			cvar				"r_cameraexposure"
+			cvarFloatList		
+			{  
+				@MENUS_DEFAULT 	0
+				@MENUS_LOW 		0.2 
+				@MENUS_MEDIUM 	0.4
+				@MENUS_HIGH 	0.6
+				@MENUS_VERY_HIGH 0.8   
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight19
+			}
+			mouseexit 
+			{ 
+				hide			highlight19
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+			}
+		}
+
+		// rend2 addition
+		itemDef 
+		{	
+			name				forcesun
+			group				rend2
+			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_FORCE_SUN
+			rect				315 410 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			descText			@MD_MENU_SETTINGS_FORCE_SUN_DESC
+			cvar				"r_forcesun"
+			cvarFloatList		
+			{  
+				@MENUS_OFF 	0 
+				@MENUS_ON 	1 
+			}
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight20
+			}
+			mouseexit 
+			{ 
+				hide			highlight20
+			} 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+			}
+		}
+
+
+		// APPLY CHANGES BUTTON
+		itemDef 
+		{
+			name				applybutton_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				315 424 305 14
+			background			"gfx/menus/menu_blendbox"			// Frame around button
+			forecolor			1 0.5 0.5 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				applyChanges
+			group				none
+			text				@MENUS_APPLY_CHANGES
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				315 424 305 14
+			textaligny			0
+			font 				5
+			textscale			0.14
+			textalignx			150
+			textalign			ITEM_ALIGN_CENTER
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			applybutton_glow
+			}
+			mouseExit 
+			{ 
+				hide			applybutton_glow
+			}	  	  
+			action
+			{
+				play			"sound/interface/button1.wav" ; 
+				show			vidrestart ;
+				setfocus 		vidrestart_no ;
+				hide			video ;
+				hide			video2 ;
+				hide			rend2 ;
+				hide			advanced ;
+				hide			applybutton_glow ;
+				hide 			applyChanges ;
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	VIDEO RESTART
+//----------------------------------------------------------------------------------------------
+		// Faint red box
+/*		itemDef 
+		{
+			name				vidrestart_background
+			group				vidrestart
+			style				WINDOW_STYLE_SHADER
+			rect				315 155 360 250
+			background			"gfx/menus/menu_boxred"					// Frame
+			forecolor			1 1 1 0.5
+			visible			0
+			decoration
+		} */
+		itemDef 
+		{
+			name				vidrestart_background
+			group				vidrestart
+			style				WINDOW_STYLE_FILLED
+			rect				315 155 360 250
+			backcolor			0 0 .6 0
+			forecolor			1 1 1 0
+			border				1
+			bordercolor			0 0 .6 0
+			visible				0
+			decoration
+		}
+		
+
+		itemDef 
+		{
+			name				vidrestart_text1
+			group				vidrestart
+			text				@MENUS_THIS_WILL_APPLY_VIDEO
+			text2				@MENUS_AND_RETURN_TO_THE_MAIN
+			rect				325 214 305 14
+			textalign			ITEM_ALIGN_CENTER
+			text2aligny			18
+			textalignx			145
+			font				5
+			textscale			0.19        
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				vidrestart_text2
+			group				vidrestart
+			text				@MENUS_VID_RESTART3
+			rect				325 284 305 14
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			145
+			font				5
+			textscale			0.19        
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible				0
+			decoration
+		}
+
+
+		// YES button
+		itemDef 
+		{
+			name				vidrestart_yes
+			group				vidrestart
+			text				@MENUS_YES
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				485 370 100 18 
+			font				5
+			textscale			0.19        
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0
+			descText			@MENUS_APPLY_CHANGES_AND_THEN
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible			-1
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close		all ; 
+				uiScript	updatevideosetup ;
+			}  	  
+
+		}
+
+		// CANCEL button
+		itemDef 
+		{
+			name				vidrestart_no
+			group				vidrestart
+			text				@MENUS_NO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				335 370 100 18
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19        
+			textalignx			60
+			textaligny			-1
+			descText			@MENUS_DO_NOT_APPLY_CHANGES
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible			0
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 					
+				setfocus		video1menubutton ;
+				hide 			vidrestart ;
+				show			video ;
+				hide			video2 ;
+				hide			rend2 ;
+				show			applyChanges ;
+			}	  	  
+
+		}
+
+//----------------------------------------------------------------------------------------------
+//	VIDEO 2
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				gamma_text
+			group				video2
+			style				WINDOW_STYLE_SHADER
+			rect				332 174 270 34
+			background			"gfx/menus/greyscale"					// greyscale
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			
+		}
+
+		itemDef 
+		{
+			name				bright_text
+			group				video2
+			text				@MENUS_ADJUST_BRIGHTNESS_SLIDER
+			text2				@MENUS_THE_NUMBER_6_CAN_BARELY
+			text2aligny			14
+			textalignx			163
+			textaligny			0
+			font 				5
+			textscale			0.14
+			rect				305 209 305 20
+			textalign			ITEM_ALIGN_CENTER
+			forecolor			.549 .854 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				brightness
+			group				video2
+			type				ITEM_TYPE_SLIDER
+			text				@MENUS_VIDEO_BRIGHTNESS
+			cvarfloat			"r_gamma" 1 .5 3
+			rect				315 251 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_ADJUST_THE_BRIGHTNESS
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+			}
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 252 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			} 
+		}
+
+		itemDef 
+		{			
+			name				shadows
+			group				video2
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_SHADOWS
+			descText			@MENUS_SHADOWS_DESC
+			cvar				"cg_shadows"
+			cvarFloatList		
+			{  
+				@MENUS_NONE				0 
+				@MENUS_SHADOWS_SIMPLE		1 
+				@MENUS_SHADOWS_VOLUMETRIC	2
+				@MD_MENU_SETTINGS_SHADOWS_PROJECTED 3
+				"Rend2"  4
+			}
+			rect				315 271 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+			} 
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 272 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+
+		}
+
+
+		itemDef 
+		{			
+			name				dynamic_light
+			group				video2
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_DYNAMIC_LIGHTS
+			cvar				"r_dynamiclight"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 285 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_TOGGLE_TO_TURN_ON_MOVING
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 286 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+
+			} 
+		}
+
+		itemDef 
+		{			
+			name				dynamic_glow
+			group				video2
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_DYNAMIC_GLOW
+			cvar				"r_dynamicglow"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 299 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_DYNAMIC_GLOW_DESC
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 300 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav" ; 
+
+			} 
+		}
+
+		itemDef 
+		{			
+			name				light_flares
+			group				video2
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_LIGHT_FLARES
+			cvar				"r_flares"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 313 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_TOGGLE_TO_SHOW_HALOS
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 314 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+			} 
+		}
+
+		itemDef 
+		{			
+			name				wall_marks
+			group				video2
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_WALL_MARKS
+			cvar				"cg_marks"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 327 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_TOGGLE_TO_DISPLAY_SCORCH
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 328 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+			} 
+		}
+
+		itemDef 
+		{			
+			name				body_marks
+			group				video2
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_BODY_MARKS
+			cvar				"cg_g2marks"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 341 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_BODY_MARKS_DESC
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 342 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+			} 
+		}
+
+		itemDef 
+		{			
+			name				fastsky
+			group				video2
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_FAST_SKY
+			cvar				"r_fastsky"	
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 355 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_FAST_SKY_DESC
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 356 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+			} 
+		}
+
+		
+		itemDef 
+		{			
+			name				drawfog
+			group				video2
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_FOG_LEVEL
+			cvar				"r_drawfog"	
+			cvarFloatList			{  @MENUS_OFF 0 "1" 1 "2" 2 "3" 3 }
+			rect				315 369 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_FOG_LEVEL_DESC
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 370 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+			} 
+		}
+
+		itemDef 
+		{	
+			name				video_mode
+			group				video2
+			type				ITEM_TYPE_SLIDER
+			text				@MENUS_ANISOTROPIC_FILTERING
+			cvarTest			r_ext_texture_filter_anisotropic_avail
+			hideCvar			{ 0 }     
+			cvarfloat			"r_ext_texture_filter_anisotropic" 2 0 16
+			rect				315 383 305 14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+
+			descText			@MENUS_TOGGLE_ADVANCED_TEXTURE
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 384 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+			} 
+		}
+
+		itemDef 
+		{	
+			name				advancedvideo
+			group				video2
+      			type				ITEM_TYPE_BUTTON
+			text				@MENUS_SHOW_DRIVER_INFO
+			rect				315 410 305 14
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			1
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 .682 0 1
+			visible				0
+			descText			@MENUS_SHOW_ADVANCED_INFORMATION
+
+			mouseenter 
+			{ 
+				show			button_glow
+				setitemrect		button_glow	315 411 305 14
+			}
+			mouseexit 
+			{ 
+				hide			button_glow
+			} 
+			action
+			{
+				play			"sound/interface/button1.wav"
+				setfocus		video2menubutton
+				hide			button_glow
+				open 			videodriverMenu
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	SOUND FIELDS
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				effects_volume
+			group				sound
+			type				ITEM_TYPE_SLIDER
+			text				@MENUS_EFFECTS_VOLUME
+			cvarfloat			"s_volume" 0 0 1
+			rect				315 158 305 18
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_ADJUST_VOLUME_FOR_SOUND
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+			}
+
+			mouseenter 
+			{ 
+				show			highlight2
+			}
+			mouseexit 
+			{ 
+				hide			highlight2
+			} 
+		}
+
+		itemDef 
+		{
+			name				music_volume
+			group				sound
+			type				ITEM_TYPE_SLIDER
+			text				@MENUS_MUSIC_VOLUME
+			cvarfloat			"s_musicvolume" 0 0 1
+			rect				315 186 305 18
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_ADJUST_VOLUME_FOR_MUSIC
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+			}
+
+			mouseenter 
+			{ 
+				show			highlight4
+			}
+			mouseexit 
+			{ 
+				hide			highlight4
+			} 
+		}
+
+		itemDef 
+		{
+			name				voice_volume
+			group				sound
+			type				ITEM_TYPE_SLIDER
+			text				@MENUS_VOICE_VOLUME
+			cvarfloat			"s_volumevoice" 0 0 1
+			rect				315 214 305 18
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_ADJUST_VOLUME_FOR_SPEECH
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+			}
+
+			mouseenter 
+			{ 
+				show			highlight6
+			}
+			mouseexit 
+			{ 
+				hide			highlight6
+			} 
+		}
+
+		itemDef 
+		{	
+			name				sound_quality
+			group				sound
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_SOUND_QUALITY
+			cvar				"s_khz"
+			cvarFloatList		
+			{ 
+				@MENUS_LOW 	11  
+				@MENUS_HIGH 	22  
+				@MD_MENU_SETTINGS_ENHANCED 	44  
+			}
+			rect				315 242 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_TRADE_CLARITY_OF_SOUND
+			cvarTest			"s_UseOpenAL"
+			hideCvar			{ 1 }
+
+
+			mouseenter 
+			{ 
+				show			highlight8
+			}
+			mouseexit 
+			{ 
+				hide			highlight8
+			} 
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				uiScript		update s_khz
+			}
+		}
+/*
+		itemDef 
+		{
+			name				eax
+			group				sound
+			type				ITEM_TYPE_MULTI
+			cvar				"s_UseOpenAL"
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			text				@MENUS_EAX
+			rect				315 270 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_EAX_DESC
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+				uiScript		update s_khz
+			}
+
+			mouseenter 
+			{ 
+				show			highlight10
+			}
+			mouseexit 
+			{ 
+				hide			highlight10
+			} 
+		}
+*/
+		itemDef 
+		{	
+			name				subtitles
+			group				sound
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_SUBTITLES
+			cvar				"g_subtitles"
+			cvarFloatList		
+			{ 
+				@MENUS_NONE		0  
+				@MENUS_IN_CINEMATICS	2 
+				@MENUS_ALL_VOICEOVERS	1 
+			}
+			rect				315 298 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible			0
+			descText			@MENUS_TOGGLE_WHETHER_SUBTITLES
+
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight12
+			}
+			mouseexit 
+			{ 
+				hide			highlight12
+			} 
+		}
+
+		itemDef 
+		{	
+			name				rollsound
+			group				sound
+      		type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_ROLL_SOUND
+			cvar				"cg_rollSounds"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MD_MENU_SETTINGS_PLAY_ALL	1
+				@MD_MENU_SETTINGS_OTHER_PLAYERS_ONLY 2
+				@MD_MENU_SETTINGS_PLAYER_ONLY 3
+			}
+			rect				315 326 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_ROLL_SOUND_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight14
+			}
+			mouseexit 
+			{ 
+				hide			highlight14
+			} 
+		}
+
+		itemDef 
+		{	
+			name				jumpsound
+			group				sound
+      		type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_JUMP_SOUND
+			cvar				"cg_jumpSounds"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MD_MENU_SETTINGS_PLAY_ALL	1
+				@MD_MENU_SETTINGS_OTHER_PLAYERS_ONLY 2
+				@MD_MENU_SETTINGS_PLAYER_ONLY 3
+			}
+			rect				315 340 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_JUMP_SOUND_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight15
+			}
+			mouseexit 
+			{ 
+				hide			highlight15
+			} 
+		}
+
+		itemDef
+		{
+			name				eax_icon
+			group				sound
+			style				WINDOW_STYLE_SHADER
+			rect				435 390 64 32
+			background			"gfx/menus/eax"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+			cvarTest			"s_UseOpenAL"
+			hideCvar			{ 0 }
+		}
+
+//----------------------------------------------------------------------------------------------
+//	OPTION FIELDS
+//----------------------------------------------------------------------------------------------
+		
+		itemDef 
+		{	
+			name				mdmodehud
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_HUD_MODE
+			cvar				"g_SerenityJediEngineHudMode"
+			cvarFloatList		
+			{ 
+				@MD_MENU_SETTINGS_MD_CLASSIC 		0
+				//@MD_MENU_SETTINGS_MD_MODERN 		1
+				@MD_MENU_SETTINGS_MD_JO 		2
+				//@MD_MENU_SETTINGS_MD_VINTAGE 		3
+				@MD_MENU_SETTINGS_MD_HUD_VERTICAL 		4
+				@MD_MENU_SETTINGS_MD_HUD_HORIZONTAL		5
+			}
+			rect				315 158 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_HUD_MODE_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight2
+			}
+			mouseexit 
+			{ 
+				hide			highlight2
+			} 
+		}
+
+		itemDef 
+		{	
+			name				selectionbar
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SHOW_SELECTION_BAR
+			cvar				"cg_drawSelectionScrollBar"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON	1	
+			}
+			rect				315 186 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SHOW_SELECTION_BAR_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight4
+			}
+			mouseexit 
+			{ 
+				hide			highlight4
+			} 
+		}
+
+		itemDef 
+		{	
+			name				slowmoselection
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SLOWMO_SELECTION
+			cvar				"g_iconbackgroundslow"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 200 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SLOWMO_SELECTION_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight5
+			}
+			mouseexit 
+			{ 
+				hide			highlight5
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmoderadar
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SHOW_RADAR
+			cvar				"cg_drawradar"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON	1	
+			}
+			rect				315 214 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SHOW_RADAR_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight6
+			}
+			mouseexit 
+			{ 
+				hide			highlight6
+			} 
+		}
+
+		itemDef 
+		{	
+			name				draw_crosshair
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_DRAW_CROSSHAIR
+			cvar				"cg_drawcrosshair"
+			cvarFloatList
+			{  
+				@MENUS_OFF 0 
+				"1" 1 
+				"2" 2
+				"3" 3
+				"4" 4
+				"5" 5
+				"6" 6
+				"7" 7
+				"8" 8
+			}
+			rect				315 228 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_TOGGLE_TO_SHOW_OR_HIDE
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight7
+				show			crosshairs
+			}
+			mouseexit 
+			{ 
+				hide			highlight7
+				hide			crosshairs
+			} 
+		}
+
+		itemDef 
+		{	
+			name				identifytarget
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_IDENTIFY_TARGET
+			cvar				"cg_crosshairIdentifyTarget"
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 242 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_TOGGLE_TO_HAVE_THE_CROSSHAIR
+
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight8
+			}
+			mouseexit 
+			{ 
+				hide			highlight8
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmodehealthbars
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SHOW_HEALTH_BAR
+			cvar				"cg_debugHealthBars"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 270 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SHOW_HEALTH_BAR_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight10
+			}
+			mouseexit 
+			{ 
+				hide			highlight10
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmodeBPbar
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SHOW_BLOCKPOINT_BAR
+			cvar				"cg_drawblockpointbar"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 284 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SHOW_BLOCKPOINT_BAR_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight11
+			}
+			mouseexit 
+			{ 
+				hide			highlight11
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmodeStaminabar
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SHOW_STAMINA_BAR
+			cvar				"cg_drawfatiguepointbar"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 298 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SHOW_STAMINA_BAR_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight12
+			}
+			mouseexit 
+			{ 
+				hide			highlight12
+			} 
+		}
+
+		itemDef 
+		{	
+			name				draw_fps
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_DRAW_FPS
+			cvar				"cg_drawfps"
+			cvarFloatList
+			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 326 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_DRAW_FPS_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight14
+			}
+			mouseexit 
+			{ 
+				hide			highlight14
+			} 
+		}
+
+		itemDef 
+		{	
+			name				draw_cursor
+			group				ui
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_CURSOR
+			cvar				"g_cursor"
+			cvarFloatList
+			{  
+				"Anakin Skywalker" 1 
+				"JKA" 2 
+				"Kyle Katarn" 3
+				"Kylo Ren" 4
+				"Luke Skywalker" 5
+				"Obi-Wan" 6
+				"Old Republic" 7
+				"Qui-Gon" 8
+				"Rey" 9
+				"Darth Vader" 10
+				"Mace Windu" 11
+			}
+			rect				315 354 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_CURSOR_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight16
+			}
+			mouseexit 
+			{ 
+				hide			highlight16
+			} 
+		}
+
+		itemDef 
+		{	
+			name				Language_options
+			group				ui
+      			type				ITEM_TYPE_BUTTON
+			text				@MD_MENU_SETTINGS_LANGUAGE
+			rect				315 382 305 14
+	   		textalign			ITEM_ALIGN_CENTER
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_LANGUAGE_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+				hide			ui
+				show			ui_lang
+				setfocus		Language_options_back
+			}
+			mouseenter 
+			{ 
+				show			highlight18
+			}
+			mouseexit 
+			{ 
+				hide			highlight18
+			} 
+		}
+
+		itemDef 
+		{	
+			name				text
+			group				ui_lang
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_TEXT
+			cvar				"se_language"
+			feeder				23	//FEEDER_PLAYER_SPECIES
+			cvarStrList			feeder
+			rect				315 158 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible			0
+			descText			@MENUS_CHOOSE_THE_LANGUAGE_FOR
+
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight2
+			}
+			mouseexit 
+			{ 
+				hide			highlight2
+			} 
+		}
+
+		itemDef 
+		{	
+			name				voice
+			group				ui_lang
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_VOICE
+			cvarTest			com_demo
+			hideCvar			{ 1 }     
+			cvar				"s_language"
+			cvarStrList		
+			{ 
+				@MENUS_MYLANGUAGE	"english"
+				@MENUS_LANG_FRENCH 	"francais"
+				@MD_MENU_SETTINGS_LANG_DEUTSCH	"deutsch"
+				@MD_MENU_SETTINGS_LANG_ESPANYOL "espanyol"
+				@MD_MENU_SETTINGS_LANG_CZECH "czech"
+			}
+			rect				315 172 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible			0
+			descText			@MENUS_CHOOSE_THE_LANGUAGE_TO
+
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight3
+			}
+			mouseexit 
+			{ 
+				hide			highlight3
+			} 
+		}
+
+		itemDef 
+		{	
+			name				Language_options_back
+			group				ui_lang
+      			type				ITEM_TYPE_BUTTON
+			text				@MD_MENU_MAIN_BACK
+			rect				315 382 305 14
+	   		textalign			ITEM_ALIGN_CENTER
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			action
+			{
+				play			"sound/interface/button1.wav"
+				show			ui
+				hide			ui_lang
+				hide			defaults
+				setfocus		Language_options
+			}
+			mouseenter 
+			{ 
+				show			highlight18
+			}
+			mouseexit 
+			{ 
+				hide			highlight18
+			} 
+		}
+
+
+		// gameplay
+
+		itemDef 
+		{	
+			name				dismemberment
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_DISMEMBERMENT
+			cvar				"g_dismemberment"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF 		0
+				@MENUS_LOW 		1
+				@MENUS_MEDIUM 		2
+				@MENUS_HIGH 		3
+			}
+			cvarTest			ui_iscensored
+			hideCvar			{ 1 }
+			rect				315 158 305 14 
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_SELECT_WHAT_LIGHTSABER
+
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight2
+			}
+			mouseexit 
+			{ 
+				hide			highlight2
+			} 
+		}
+
+		itemDef 
+		{	
+			name				weapondismemberment
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_WEAPON_DISMEMBERMENT
+			cvar				"g_gundismemberment"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF 		0
+				@MENUS_ON  		1
+			}
+			cvarTest			ui_iscensored
+			hideCvar			{ 1 }
+			rect				315 172 305 14 
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_WEAPON_DISMEMBERMENT_DESC
+
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight3
+			}
+			mouseexit 
+			{ 
+				hide			highlight3
+			} 
+		}
+
+		itemDef 
+		{	
+			name				corpse_removal
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_CORPSE_REMOVAL
+			descText			@MD_MENU_SETTINGS_CORPSE_REMOVAL_DESC
+			cvar				"g_corpseRemovalTime"
+			cvarFloatList		
+			{  
+				@MD_MENU_SETTINGS_10SEC 	10
+				@MD_MENU_SETTINGS_30SEC 	30
+				@MD_MENU_SETTINGS_1MIN		60
+				@MD_MENU_SETTINGS_2MIN 		120
+				@MD_MENU_SETTINGS_5MIN 		300
+				@MD_MENU_SETTINGS_NEVER 	0
+			}
+			rect				315 186 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight4
+			}
+			mouseexit 
+			{ 
+				hide			highlight4
+			}
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+		}	
+/*
+		itemDef 
+		{	
+			name				weapon_removal
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_WEAPON_REMOVAL
+			descText			@MD_MENU_SETTINGS_WEAPON_REMOVAL_DESC
+			cvar				"g_WeaponRemovalTime"
+			cvarFloatList		
+			{  
+				@MD_MENU_SETTINGS_10SEC 	10
+				@MD_MENU_SETTINGS_30SEC 	30
+				@MD_MENU_SETTINGS_1MIN		60
+				@MD_MENU_SETTINGS_2MIN 		120
+				@MD_MENU_SETTINGS_5MIN 		300
+				@MD_MENU_SETTINGS_NEVER 	0
+			}
+			rect				315 200 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight5
+			}
+			mouseexit 
+			{ 
+				hide			highlight5
+			}
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+		}	
+*/
+		itemDef 
+		{	
+			name				slowmo
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_SLOW_MOTION_DEATH
+			cvar				"d_slowmodeath"
+			cvarFloatList		
+			{ 
+				@MENUS_NEVER 			0  
+				@MENUS_ON_DEATH	 		1 
+				@MENUS_RARELY		 	2
+				@MENUS_SLOW_MO_NORMAL	 	3
+				@MENUS_OFTEN 			4
+				@MENUS_FREQUENTLY		5
+				@MENUS_EXCESSIVELY		6
+			}
+			rect				315 200 305 14 
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_SELECT_THE_FREQUENCY
+
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight5
+			}
+			mouseexit 
+			{ 
+				hide			highlight5
+			} 
+		}
+
+		itemDef 
+		{	
+			name				sabertwirl
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_IGNITION_TWIRL
+			cvar				"g_noignitetwirl"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	 1
+				@MENUS_ON	 0
+			}
+			rect				315 228 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_IGNITION_TWIRL_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight7
+			}
+			mouseexit 
+			{ 
+				hide			highlight7
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmodeignition
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SINGLE_IGNITION_SPEED
+			cvar				"cg_ignitionSpeed"
+			cvarFloatList		
+			{   
+				@MD_MENU_SETTINGS_SLOW			0.8 
+				@MENUS_NORMAL		1 
+				@MENUS_FAST          	1.5
+				@MD_MENU_SETTINGS_VERY_FAST  		2
+				@MD_MENU_SETTINGS_INSTANT  		3
+			}
+			rect				315 242 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SINGLE_IGNITION_SPEED_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight8
+			}
+			mouseexit 
+			{ 
+				hide			highlight8
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmodeignitionstaff
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_STAFF_IGNITION_SPEED
+			cvar				"cg_ignitionSpeedstaff"
+			cvarFloatList		
+			{   
+				@MD_MENU_SETTINGS_SLOW			0.8 
+				@MENUS_NORMAL		1 
+				@MENUS_FAST          	1.5
+				@MD_MENU_SETTINGS_VERY_FAST  		2
+				@MD_MENU_SETTINGS_INSTANT  		3
+			}
+			rect				315 256 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_STAFF_IGNITION_SPEED_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight9
+			}
+			mouseexit 
+			{ 
+				hide			highlight9
+			} 
+		}
+
+		itemDef 
+		{	
+			name				autohealthregen
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_AUTO_HEALTH_REGEN
+			cvar				"g_autoHealthRegen"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 284 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_AUTO_HEALTH_REGEN_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight11
+			}
+			mouseexit 
+			{ 
+				hide			highlight11
+			} 
+		}
+
+		itemDef 
+		{	
+			name				autopickup
+			group				options
+      			type			ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_AUTO_PICK_UP
+			cvar				"g_AdvancedWeaponPickup"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	1
+				@MENUS_ON	0	
+			}
+			rect				315 298 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_AUTO_PICK_UP_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight12
+			}
+			mouseexit 
+			{ 
+				hide			highlight12
+			} 
+		}
+
+		itemDef 
+		{	
+			name				ledgeclimb
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_LEDGE_GRAB
+			cvar				"g_allowledgegrab"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON	1	
+			}
+			rect				315 312 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_LEDGE_GRAB_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight13
+			}
+			mouseexit 
+			{ 
+				hide			highlight13
+			} 
+		}
+
+		itemDef 
+		{	
+			name				blood
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_BLOOD
+			descText			@MD_MENU_SETTINGS_BLOOD_DESC
+			cvar				"g_bloodmist"
+			cvarFloatList		
+			{  
+				@MENUS_OFF           0
+				@MENUS_ON            1
+			}
+			rect				315 326 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight14
+			}
+			mouseexit 
+			{ 
+				hide			highlight14
+			}
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+		}
+		
+		itemDef 
+		{	
+			name				forcepusheffect
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_PUSH_EFFECT
+			descText			@MD_MENU_SETTINGS_PUSH_EFFECT_DESC
+			cvar				"cg_outcastpusheffect"
+			cvarFloatList		
+			{  
+				@MD_MENU_SETTINGS_PUSH_EFFECT_JKA           0
+				@MD_MENU_SETTINGS_PUSH_EFFECT_JKO           1
+				@MD_MENU_SETTINGS_PUSH_EFFECT_NONE          2
+			}
+			rect				315 340 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight15
+			}
+			mouseexit 
+			{ 
+				hide			highlight15
+			}
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+		}
+
+		itemDef 
+		{	
+			name				force1st
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_1ST_PERSON_GUNS
+			cvar				"cg_gunAutoFirst"
+			cvarFloatList			{  @MENUS_OFF 0 @MENUS_ON 1 }
+			rect				315 354 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MENUS_WHEN_PUTTING_AWAY_SABER
+
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight16
+			}
+			mouseexit 
+			{ 
+				hide			highlight16
+			} 
+		}
+
+// Weapon Sway.  Yes, this is nutty.  Two cvars here, one removes weapon sway, the other adds it.
+		itemDef 
+		{	
+			name				weaponswayon
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_VIEW_SWAYING
+			descText			@MENUS_VIEW_SWAYING_DESC
+			cvar				"ui_disableWeaponSway"
+			cvarFloatList		
+			{ 
+				@MENUS_ON	 	0
+				@MENUS_OFF 	1
+			}
+			cvarTest			"ui_disableWeaponSway"
+			showCvar
+			{
+				"0"
+			}
+			rect				315 368 305 14 
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible			0
+
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"exec noMotion.cfg" ;
+				show			weaponswayoff ;
+				setfocus		weaponswayoff
+			}
+			mouseenter 
+			{ 
+				show			highlight17
+			}
+			mouseexit 
+			{ 
+				hide			highlight17
+			} 
+		}
+
+		itemDef 
+		{	
+			name				weaponswayoff
+			group				options
+      			type				ITEM_TYPE_MULTI
+			text				@MENUS_VIEW_SWAYING
+			descText			@MENUS_VIEW_SWAYING_DESC
+			cvar				"ui_disableWeaponSway"
+			cvarFloatList		
+			{ 
+				@MENUS_ON	 	0
+				@MENUS_OFF 	1
+			}
+			cvarTest			"ui_disableWeaponSway"
+			hideCvar
+			{
+				"0"
+			}
+			rect				315 368 305 14 
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"exec restoreMotion.cfg" ;
+				show			weaponswayon ;
+				setfocus		weaponswayon
+			}
+			mouseenter 
+			{ 
+				show			highlight17
+			}
+			mouseexit 
+			{ 
+				hide			highlight17
+			} 
+		}
+
+		itemDef 
+		{	
+			name				saberlockcam
+			group				options
+      		type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_LOCK_CAM
+			descText			@MD_MENU_SETTINGS_SABER_LOCK_CAM_DESC
+			cvar				"g_saberLockCinematicCamera"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON	1	
+			}
+			rect				315 382 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseenter 
+			{ 
+				show			highlight18
+			}
+			mouseexit 
+			{ 
+				hide			highlight18
+			}
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+		}
+
+
+		// Crosshair images
+
+		itemDef
+		{
+			name				crosshair1
+			group				crosshairs
+			style				WINDOW_STYLE_SHADER
+			rect				540 251 25 25
+			background			"gfx/2d/crosshairb"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvarTest			"cg_drawcrosshair"
+			showCvar
+			{
+				"1"
+			}
+		}
+
+		itemDef
+		{
+			name				crosshair2
+			group				crosshairs
+			style				WINDOW_STYLE_SHADER
+			rect				540 251 25 25
+			background			"gfx/2d/crosshairc"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvarTest			"cg_drawcrosshair"
+			showCvar
+			{
+				"2"
+			}
+		}
+
+		itemDef
+		{
+			name				crosshair3
+			group				crosshairs
+			style				WINDOW_STYLE_SHADER
+			rect				540 251 25 25
+			background			"gfx/2d/crosshaird"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvarTest			"cg_drawcrosshair"
+			showCvar
+			{
+				"3"
+			}
+		}
+
+		itemDef
+		{
+			name				crosshair4
+			group				crosshairs
+			style				WINDOW_STYLE_SHADER
+			rect				540 251 25 25
+			background			"gfx/2d/crosshaire"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvarTest			"cg_drawcrosshair"
+			showCvar
+			{
+				"4"
+			}
+		}
+
+		itemDef
+		{
+			name				crosshair5
+			group				crosshairs
+			style				WINDOW_STYLE_SHADER
+			rect				540 251 25 25
+			background			"gfx/2d/crosshairf"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvarTest			"cg_drawcrosshair"
+			showCvar
+			{
+				"5"
+			}
+		}
+
+		itemDef
+		{
+			name				crosshair6
+			group				crosshairs
+			style				WINDOW_STYLE_SHADER
+			rect				540 251 25 25
+			background			"gfx/2d/crosshairg"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvarTest			"cg_drawcrosshair"
+			showCvar
+			{
+				"6"
+			}
+		}
+
+		itemDef
+		{
+			name				crosshair7
+			group				crosshairs
+			style				WINDOW_STYLE_SHADER
+			rect				540 251 25 25
+			background			"gfx/2d/crosshairh"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvarTest			"cg_drawcrosshair"
+			showCvar
+			{
+				"7"
+			}
+		}
+
+		itemDef
+		{
+			name				crosshair8
+			group				crosshairs
+			style				WINDOW_STYLE_SHADER
+			rect				540 251 25 25
+			background			"gfx/2d/crosshairi"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvarTest			"cg_drawcrosshair"
+			showCvar
+			{
+				"8"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//   MOD GAME MENU specific stuff
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				serverinfo
+			group				mods
+			rect				315 155 360 250
+			type				ITEM_TYPE_LISTBOX
+			style				WINDOW_STYLE_FILLED
+			elementwidth			120
+			elementheight			16
+			font				2
+			textscale			1
+			border				1
+			bordersize			1
+			bordercolor			.5 .5 .5 .5
+			forecolor			.79 .64 .22 1			
+			backcolor			0 0 .5 .25
+			outlinecolor			.5 .5 .5 .5
+			elementtype			LISTBOX_TEXT
+			feeder				9
+			notselectable
+			visible				0
+			columns 			1	2 40 280
+		}
+
+		itemDef 
+		{
+			name				loadmod_button
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				310 368 240 24
+			background			"gfx/menus/menu_buttonback"			// Frame around button
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				loadmod
+			group				mods
+			text				@MENUS_LOAD_MOD
+			descText			@MENUS_LOAD_CHOSEN_MOD
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				315 368 305 24
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			163
+			textaligny			-2
+			font 				2
+			textscale			0.14
+			forecolor			1 .682 0 1
+			visible				0
+			action 
+			{ 
+				play			"sound/interface/button1.wav"
+				uiScript		RunMod ;
+			}
+
+		}
+
+		itemDef 
+		{
+			name				button_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+
+//----------------------------------------------------------------------------------------------
+//   mdmode GAME MENU specific stuff
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{	
+			name				mdmode
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_IMPACT
+			cvar				"g_SerenityJediEngineMode"
+			cvarFloatList		
+			{ 				
+				@MD_MENU_SETTINGS_JKA_MODE 0
+				@MD_MENU_SETTINGS_MD_MODE 1
+				@MD_MENU_SETTINGS_MDA_MODE 2
+			}
+			rect				315 158 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SABER_IMPACT_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight2
+			}
+			mouseexit 
+			{ 
+				hide			highlight2
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmodesaberstance
+			group				advanced
+      		type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_STANCE
+			cvar				"g_realisticblockingmode"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF 		1
+				@MENUS_ON  		0
+			}
+			rect				315 186 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SABER_STANCE_DESC
+			cvarTest			g_SerenityJediEngineMode
+			showCvar			{ 2 }
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight4
+			}
+			mouseexit 
+			{ 
+				hide			highlight4
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdslowmoaction
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_MDA_SLOWMO
+			cvar				"d_slowmoaction"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 200 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_MDA_SLOWMO_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight5
+			}
+			mouseexit 
+			{ 
+				hide			highlight5
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmodeattackwarning
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_UNBLOCKABLE_ATTACK_WARNING
+			cvar				"g_SaberInnonblockableAttackWarning"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 214 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_UNBLOCKABLE_ATTACK_WARNING_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight6
+			}
+			mouseexit 
+			{ 
+				hide			highlight6
+			} 
+		}
+
+		itemDef 
+		{	
+			name				mdmodeswingspeed
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_ATTACK_SPEED
+			cvar				"g_SaberAttackSpeedMD"
+			cvarFloatList		
+			{ 
+				@MD_MENU_SETTINGS_JKA_MODE 		0
+				@MD_MENU_SETTINGS_MD_MODE 		1
+			}
+			rect				315 242 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SABER_ATTACK_SPEED_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+				//uiScript		glCustom ;
+				//setcvar			ui_r_modified	1 ;
+				//show			applyChanges
+			}
+			mouseenter 
+			{ 
+				show			highlight8
+			}
+			mouseexit 
+			{ 
+				hide			highlight8
+			} 
+		}
+
+		itemDef 
+		{	
+			name				saber_realistic
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_REALISTIC
+			descText			@MD_MENU_SETTINGS_SABER_REALISTIC_DESC
+			cvar				"g_sabermorerealistic"
+			cvarFloatList		
+			{ 
+				@MENUS_LOW 		0
+				@MENUS_MEDIUM 		1
+				@MENUS_HIGH 		2
+				@MENUS_VERY_HIGH 	3
+			}
+			cvarTest			ui_iscensored
+			rect				315 256 305 14 
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseenter 
+			{ 
+				show			highlight9 // highlightdam
+			}
+			mouseexit 
+			{ 
+				hide			highlight9 // highlightdam
+			}
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+		}
+
+		itemDef 
+		{	
+			name				saberlock
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_LOCK_BREAK		
+			descText			@MD_MENU_SETTINGS_SABER_LOCK_BREAK_DESC	
+			cvar				"g_allowSuperSaberLockBreaks"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 270 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight10 // highlightloc
+			}
+			mouseexit 
+			{ 
+				hide			highlight10 // highlightloc
+			} 
+		}
+
+		itemDef 
+		{	
+			name				saberlock
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_LOCK		
+			descText			@MD_MENU_SETTINGS_SABER_LOCK_DESC	
+			cvar				"g_saberLockRandomNess"
+			cvarFloatList		
+			{ 
+				@MENUS_NEVER	  				0
+				@MD_MENU_SETTINGS_RARELY	  	1
+				@MD_MENU_SETTINGS_SOMETIMES		2
+				@MD_MENU_SETTINGS_OFTEN	   		3
+			}
+			rect				315 284 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight11 // highlightloc
+			}
+			mouseexit 
+			{ 
+				hide			highlight11 // highlightloc
+			} 
+		}
+
+		itemDef 
+		{	
+			name				saberreturn
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_RETURN		
+			descText			@MD_MENU_SETTINGS_SABER_RETURN_DESC	
+			cvar				"g_sabermustreturn"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1
+			}
+			rect				315 298 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight12 // highlightloc
+			}
+			mouseexit 
+			{ 
+				hide			highlight12 // highlightloc
+			} 
+		}
+
+		itemDef 
+		{	
+			name				saberbounceonwalls
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABER_BOUNCE_ON_WALLS	
+			descText			@MD_MENU_SETTINGS_SABER_BOUNCE_ON_WALLS_DESC	
+			cvar				"g_saberbounceonwalls"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1
+			}
+			rect				315 312 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight13 // highlightloc
+			}
+			mouseexit 
+			{ 
+				hide			highlight13 // highlightloc
+			} 
+		}
+
+		itemDef 
+		{	
+			name				overpoweredsaberthrow
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_SABERTHROW_TYPE
+			cvar				"g_overpoweredsaberthrow"
+			cvarFloatList		
+			{ 
+				@MD_MENU_SETTINGS_VERTICAL	0
+				@MD_MENU_SETTINGS_HORIZONTAL 	1	
+			}
+			rect				315 326 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_SABERTHROW_TYPE_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight14
+			}
+			mouseexit 
+			{ 
+				hide			highlight14
+			} 
+		}
+
+		itemDef 
+		{	
+			name				gunnerbashaction
+			group				advanced
+      			type				ITEM_TYPE_MULTI
+			text				@MD_MENU_SETTINGS_GUNNER_BASH
+			cvar				"g_allowgunnerbash"
+			cvarFloatList		
+			{ 
+				@MENUS_OFF	0
+				@MENUS_ON 	1	
+			}
+			rect				315 340 305 14
+	   		textalign			ITEM_ALIGN_RIGHT
+			textalignx			150
+			textaligny			0
+			font 				5
+			textscale			0.14
+			forecolor			1 1 1 0.9
+			visible				0
+			descText			@MD_MENU_SETTINGS_GUNNER_BASH_DESC
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+			mouseenter 
+			{ 
+				show			highlight15
+			}
+			mouseexit 
+			{ 
+				hide			highlight15
+			} 
+		}
+
+
+//----------------------------------------------------------------------------------------------
+//	RESET DEFAULTS
+//----------------------------------------------------------------------------------------------
+		// Faint red box
+		itemDef 
+		{
+			name				vidrestart_background
+			group				defaults
+			style				WINDOW_STYLE_FILLED
+			rect				295 155 360 250
+			backcolor			0 0 .6 0
+			forecolor			.5  0 0 0
+			border				1
+			bordersize			3
+			bordercolor			1 0 0 0
+			visible				0
+			decoration
+		}
+
+
+		itemDef 
+		{
+			name				options
+			group				defaults
+			text				@MENUS_WARNING
+			rect				325 200 305 20
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			145
+			font				5
+			textscale			0.2 
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				options
+			group				defaults
+			text				@MENUS_THIS_WILL_SET_ALL_GAME
+			text2				@MENUS_TO_THEIR_FACTORY_SETTINGS
+			rect				325 250 305 20
+			textalign			ITEM_ALIGN_CENTER
+			text2aligny			18
+			textalignx			145
+			font				5
+			textscale			0.19    
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				options
+			group				defaults
+			text				@MENUS_VID_RESTART3
+			rect				325 310 305 20
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			145
+			font				5
+			textscale			0.19    
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible				0
+			decoration
+		}
+	
+		// YES button - lose reset defaults
+		itemDef 
+		{
+			name				default_yes
+			group				defaults
+			text				@MENUS_YES
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				480 356 100 18  
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			-2
+			descText			@MENUS_USE_DEFAULT_SETTINGS
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible				0
+			
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				hide			highlights ;
+				close			all ; 
+				uiscript		resetdefaults
+			}
+
+		}
+
+		// NO button - return to Main Menu
+		itemDef 
+		{
+			name				default_no
+			group				defaults
+			text				@MENUS_NO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				335 356 100 18 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			-2
+			descText			@MENUS_DO_NOT_RESET_DEFAULT
+			forecolor			1 0 0 1
+			backcolor			0 0 1 0
+			visible				0
+
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 		
+				hide			highlights ;
+				uiscript 		clearmouseover	default_no ;
+				close			all ; 
+				open			ingamemainmenu ;
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				exit
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 456 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"
+				defer				VideoSetup	videowarningMenu ;
+				close			all ; 
+				open			ingamemainMenu 
+			}
+		}
+
+		// LOAD button
+        itemDef
+		{
+			name				load
+			group				pause
+			type				ITEM_TYPE_BUTTON
+			rect				170 456 101 24
+			text				@MD_MENU_MAIN_LOAD
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 216 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 216 468 0 0 263 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 216 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 263 465 22 12 216 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action
+			{
+				close			all
+				play			"sound/interface/button1.wav" ; 
+			    open			ingameloadMenu
+			}
+		}
+
+		// Big button "SETTINGS"
+		itemDef 
+		{
+			name				settingmenu
+			group				pause
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				270 456 101 24
+			text				@MD_MENU_MAIN_SETTINGS
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 316 468 0 0 270 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 316 468 0 0 363 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 270 465 22 12 316 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 363 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			ingamesetupmenu
+			}
+		}
+
+		// SAVE button
+        	itemDef
+		{
+			name				save
+			group				pause
+			type				ITEM_TYPE_BUTTON
+			text				@MD_MENU_MAIN_SAVE
+			rect				370 456 101 24 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		4background_MDIngameMenuPanelGolddivider1 416 468 0 0 370 465 22 12 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 416 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		4background_MDIngameMenuPanelGolddivider1 370 465 22 12 416 468 0 0 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 463 465 22 12 416 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action
+			{
+				close			all
+				play			"sound/interface/button1.wav" ; 
+				open			ingamesaveMenu
+			}
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 456 101 24
+			text				@MENUS_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				defer				VideoSetup	videowarningMenu ;
+				uiScript		closeingame			// Close menu				
+			}
+		}
+	}
+}

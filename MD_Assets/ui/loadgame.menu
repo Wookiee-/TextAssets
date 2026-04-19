@@ -1,0 +1,405 @@
+//------------------------------------------------------------------------------------------------
+// LOADGAME MENU 
+//
+//	Load save games screen called from main menu.
+//
+//------------------------------------------------------------------------------------------------
+{
+	menuDef 
+	{
+		// ***IMPORTANT*** This name can not change, code looks for it.
+		// If it must change, change it in UI_AdjustSaveGameListBox() also
+		//
+		name					"loadgameMenu"
+		visible					0
+		fullScreen				1					// MENU_TRUE				
+		rect					0 0 640 480				// Size and position of the menu
+		focusColor				1 1 1 1					// Focus color for text and items
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 0
+		descAlignment			ITEM_ALIGN_CENTER		
+		disablecolor			.7 .7 .7 1
+
+		onOpen
+		{
+			uiScript			ReadSaveDirectory ;
+			hide				background_MDMenuPanelGoldMiddle
+		}
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav" 
+			close				all
+			open				main2Menu
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MENU BACKGROUND
+//----------------------------------------------------------------------------------------------
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}	
+
+		itemDef 
+		{
+			name				background_mainvideo
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/mdmainmenuvideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/loadmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 51 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				1 166 352 261
+			background			"gfx/menus/main/settingspanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				loadpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				318 347.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				deletepanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				318 375.25 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				deletepanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				318 403 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Panels
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				328.6 374 320 30.75
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				328 401.5 320 30.75
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//   LOAD GAME MENU specific stuff
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			// ***IMPORTANT*** This name can not change, code looks for it.
+			// If it must change, change it in UI_AdjustSaveGameListBox() also
+			//
+			name				loadgamelist
+			group				loadscreen
+			rect				18 180 315 232
+			type				ITEM_TYPE_LISTBOX
+			style				WINDOW_STYLE_FILLED
+			elementwidth		120
+			elementheight		16
+			font				5
+			textaligny			8 
+			textscale			0.16
+			bordercolor			0 0 .8 0
+			forecolor			.7 .7 .7 1
+			
+			
+			backcolor			0 0 .5 0
+			outlinecolor		1 .682 0 0
+			elementtype			LISTBOX_TEXT
+			feeder				FEEDER_SAVEGAMES
+			notselectable
+			visible				1
+			columns				2 	2 55 140   145 0 175		//#of col., x loc. of 1st column, 2 number doesn't seem to do anything, third is width of column
+			
+			doubleclick
+			{
+				play			sound/interface/button1.wav
+				uiScript		loadgame
+			}
+			action 
+			{
+				play			sound/interface/sub_select 
+			}
+		}
+
+		itemDef 
+		{
+			name				loadgamepic
+			group				loadscreen
+			style				WINDOW_STYLE_EMPTY	
+			ownerdraw			236					//UI_ALLMAPS_SELECTION
+			//font				5
+			//textscale			0.19
+			forecolor			1 1 1 1
+			rect				368 165 238 179
+			border				1
+			bordercolor			0 0 .8 0
+			visible				1
+  	    	decoration 
+		}
+
+		// loadgame button
+
+		itemDef 
+		{
+			name				loadgameaction
+			group				actionbutton
+			text				@MENUS_LOAD_GAME
+			descText			@MENUS_LOAD_CHOSEN_GAME
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				369 348 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			cvarTest			ui_SelectionOK
+			enableCvar			{ "1" }
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	327.7 346.4 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			sound/interface/button1.wav ;
+				hide			background_MDMenuPanelGoldMiddle
+				uiScript		loadgame
+			}
+		}
+
+		// deletegame button
+
+		itemDef 
+		{
+			name				deletegamebutton
+			group				actionbutton
+			text				@MENUS_DELETE_GAME
+			descText			@MENUS_DELETE_CHOSEN_GAME
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				369 376 240 24 
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			cvarTest			ui_SelectionOK
+			enableCvar			{ "1" }
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	327.7 374 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action
+			{ 
+				play			sound/interface/button1.wav ;
+				uiScript		deletegame
+			}
+		}
+
+		itemDef 
+		{
+			name				resumeautobutton
+			group				actionbutton
+			text				@MENUS_RESUME_MISSION
+			descText			@MENUS_RESUME_LAST_MISSION_ENTERED
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				369 404 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1					// This button isn't used when not in game.
+			cvarTest			ui_ResumeOK
+			enableCvar			{ "1" }
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	328.2 401.4 320 30.75
+				show			background_MDMenuPanelGoldBottom
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			background_MDMenuPanelGoldBottom
+				uiScript		loadAuto
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+		// BACK button 
+
+		itemDef 
+		{
+			name				backbutton
+			group				exit
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 433 130 40 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+  	  
+			action 
+			{ 
+				play			"sound/interface/esc.wav"
+				close			all ; 
+				open			main2Menu 
+			}
+		}	
+
+		itemDef 
+		{
+			name				loadpanelbox
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				329 135 320 240
+			background			"gfx/menus/main/loadpanelbox"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

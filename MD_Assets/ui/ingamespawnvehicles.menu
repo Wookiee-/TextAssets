@@ -1,0 +1,1054 @@
+//----------------------------------------------------------------------------------------------
+//
+//	VEHICLES MENU
+//
+//----------------------------------------------------------------------------------------------
+{
+	menuDef
+	{
+		name					"ingamespawnvehiclesMenu"
+		fullScreen				1									// MENU_TRUE
+		rect					0 0 640 480							// Size and position of the menu
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					440
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1
+		visible					0								// Visible on open
+
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				10						// how often fade happens in milliseconds
+		fadeAmount				0.1					// amount to adjust alpha per cycle
+
+		onOpen
+		{
+			setfocus			resume ;
+		}
+
+		onESC
+		{
+			play				"sound/interface/esc.wav" 
+			close				all
+			open				ingamecharacter
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/characternpcspawn/background_ot"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		//Arrows In Right Corner
+
+		itemDef 
+		{
+			name				forward_glow
+			group				arrowsglow
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/forward_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				back_glow
+			group				arrowsglow
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/back_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//------------------------
+		//  Vehicles
+		//------------------------	
+
+		itemDef 
+		{
+			name				atst
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				38 110 85 85
+			background			"gfx/menus/charactericons/atst_veh_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_ATST
+
+			mouseEnter 
+			{ 
+				show			atst_veh_glow
+				setitemrect		atst_veh_glow	38 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			atst_veh_glow
+			}	 
+ 	  
+			action 
+			{  
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle atst_vehicle"
+			}
+		}
+
+		itemDef 
+		{
+			name				tiefighter
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				134 110 85 85
+			background			"gfx/menus/charactericons/tiefighter_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TIEFIGHTER
+
+			mouseEnter 
+			{ 
+				show			tiefighter_glow
+				setitemrect		tiefighter_glow	134 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			tiefighter_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle tie-fighter"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				tiebomber
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				230 110 85 85
+			background			"gfx/menus/charactericons/tiebomber_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TIEBOMBER
+
+			mouseEnter 
+			{ 
+				show			tiebomber_glow
+				setitemrect		tiebomber_glow	230 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			tiebomber_glow
+			}	 
+ 	  
+			action 
+			{  
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle tie-bomber"
+			}
+		}	
+
+		itemDef 
+		{
+			name				lambdashuttle
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				326 110 85 85
+			background			"gfx/menus/charactericons/lambdashuttle_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_IMPERIALSHUTTLE
+
+			mouseEnter 
+			{ 
+				show			lambdashuttle_glow
+				setitemrect		lambdashuttle_glow	326 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			lambdashuttle_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle lambdashuttle"	
+
+			}
+		}
+
+		itemDef 
+		{
+			name				sithspeeder
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				422 110 85 85
+			background			"gfx/menus/charactericons/sithspeeder_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_SITHSPEEDER
+
+			mouseEnter 
+			{ 
+				show			sithspeeder_glow
+				setitemrect		sithspeeder_glow	422 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			sithspeeder_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle sithspeeder_mst"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				rancor_veh
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				518 110 85 85
+			background			"gfx/menus/charactericons/rancor_veh_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_RANCOR
+
+			mouseEnter 
+			{ 
+				show			rancor_veh_glow
+				setitemrect		rancor_veh_glow	518 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			rancor_veh_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle rancor_vehicle"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				swoop
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				38 206 85 85
+			background			"gfx/menus/charactericons/swoop_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_SWOOP
+
+			mouseEnter 
+			{ 
+				show			swoop_glow
+				setitemrect		swoop_glow	38 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			swoop_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle swoop"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				z95
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				134 206 85 85
+			background			"gfx/menus/charactericons/z95_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_Z95
+
+			mouseEnter 
+			{ 
+				show			z95_glow
+				setitemrect		z95_glow	134 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			z95_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle z-95"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				xwing
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				230 206 85 85
+			background			"gfx/menus/charactericons/xwing_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_XWING
+
+			mouseEnter 
+			{ 
+				show			xwing_glow
+				setitemrect		xwing_glow	230 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			xwing_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle x-wing"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				falcon
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				326 206 85 85
+			background			"gfx/menus/charactericons/falcon_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_MILLENNIUMFALCON
+
+			mouseEnter 
+			{ 
+				show			falcon_glow
+				setitemrect		falcon_glow	326 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			falcon_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle YT-1300"
+
+			}
+		}
+	
+		itemDef 
+		{
+			name				Bantha
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				422 206 85 85
+			background			"gfx/menus/charactericons/bantha_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_BANTHA
+
+			mouseEnter 
+			{ 
+				show			bantha_glow
+				setitemrect		bantha_glow	422 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			bantha_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle bantha"
+			}
+		}
+
+		itemDef 
+		{
+			name				wampa
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				518 206 85 85
+			background			"gfx/menus/charactericons/wampa_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_WAMPA
+
+			mouseEnter 
+			{ 
+				show			wampa_glow
+				setitemrect		wampa_glow	518 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			wampa_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle wampa_vehicle"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				tauntaun
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				230 302 85 85
+			background			"gfx/menus/charactericons/tauntaun_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TAUNTAUN
+
+			mouseEnter 
+			{ 
+				show			tauntaun_glow
+				setitemrect		tauntaun_glow	230 302 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			tauntaun_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle tauntaun"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				wildtauntaun
+			group				vehicles
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				326 302 85 85
+			background			"gfx/menus/charactericons/wildtauntaun_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_WILDTAUNTAUN
+
+			mouseEnter 
+			{ 
+				show			wildtauntaun_glow
+				setitemrect		wildtauntaun_glow	326 302 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			wildtauntaun_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"npc spawn vehicle wildtauntaun"
+
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//   Glow Icons
+		//
+		//----------------------------------------------------------------------------------------------		
+
+		itemDef 
+		{
+			name				atst_veh_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/atst_veh_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				bantha_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/bantha_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				falcon_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/falcon_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				lambdashuttle_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/lambdashuttle_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rancor_veh_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/rancor_veh_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				sithspeeder_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/sithspeeder_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				swoop_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/swoop_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tauntaun_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/tauntaun_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				wildtauntaun_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/wildtauntaun_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tiebomber_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/tiebomber_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tiefighter_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/tiefighter_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				wampa_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/wampa_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				xwing_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/xwing_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				z95_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/z95_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+  			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingamecharacter 
+			}
+		}
+
+		// Big button "VEHICLES"
+		itemDef 
+		{
+			name				objects
+			group				pause
+			text				@MD_MENU_MAIN_VEHICLES
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				170 458 101 24
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 216 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 216 468 0 0 263 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 216 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 263 465 22 12 216 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}  			
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;  
+				close			all ; 
+				open			ingamespawnvehiclesMenu 
+			}
+		}
+
+		// Big button "JKA"
+		itemDef 
+		{
+			name				npcspawnmenu
+			group				pause
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				270 458 101 24 
+			text				@MD_MENU_MAIN_JKA
+			descText			@MD_MENU_MAIN_JKA_DESC
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 316 468 0 0 270 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 316 468 0 0 363 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 270 465 22 12 316 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 363 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			ingamespcharacterMenu
+			}
+		}
+
+		// Big button "OBJECTS"
+		itemDef 
+		{
+			name				objects
+			group				pause
+			text				@MD_MENU_MAIN_OBJECTS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				370 458 101 24 
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		4background_MDIngameMenuPanelGolddivider1 416 468 0 0 370 465 22 12 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 416 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		4background_MDIngameMenuPanelGolddivider1 370 465 22 12 416 468 0 0 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 463 465 22 12 416 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}			
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;  
+				close			all ; 
+				open			ingamespawnobjectsMenu 
+			}
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MD_MENU_MAIN_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+	}
+}

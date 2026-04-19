@@ -1,0 +1,1385 @@
+//-----------------------------------------------------------------------
+//	CHARACTERSELECT MENU
+//
+//	Called only from main menu. Has the transition of fields from main menu 
+//	to new game menu
+//
+//-----------------------------------------------------------------------
+{
+						   
+	menuDef 
+	{
+		name					"episodeMenu"
+		fullScreen				1						// MENU_TRUE				
+		rect					0 0 640 480					// Size and position of the menu
+		visible					1						// Visible on open
+		focusColor				1 1 1 1						// Focus color for text and items
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 .8
+		descAlignment				ITEM_ALIGN_CENTER		
+
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.05				// amount to adjust alpha per cycle	
+
+		onOpen
+		{
+				setcvar			g_spskill 1
+				setcvar			cg_crosshairForceHint 1
+				setcvar			handicap 100
+
+				setfocus			backbutton
+				setitemcolor		backgroundfadecurrent backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+		}				
+
+		onESC 
+		{ 
+				exec			"soundstop"
+				play			"sound/interface/esc.wav" 
+				exec			"menumusic"
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP4
+				show			background_anh
+				show			md_anh_poster
+				show			small_poster
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_anh_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_rebels_poster_small 196.8 347 49.2 90
+				setitemrect		md_esb_poster_small 394 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_anh_poster_small
+				close			all ; 
+				open			mdnewgameMenu
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU VIDEOS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef //Stop white flash when video changes
+		{
+			name				black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP1
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				275 -55 512 384
+			background			"gfx/menus/EP1Video"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP2
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				270 -55 512 384
+			background			"gfx/menus/EP2Video"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP3
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-140 -80 512 384
+			background			"gfx/menus/EP3Video"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_cw
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				265 -95 448 336
+			background			"gfx/menus/ROTEVideo"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_rebels
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				300 -35 448 336
+			background			"gfx/menus/TFUVideo"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP4
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				180 -90 512 384
+			background			"gfx/menus/EP4Video"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP5
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 -60 619 464
+			background			"gfx/menus/EP5Video"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP6
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-90 -78 448 336
+			background			"gfx/menus/EP6Video"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP7
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				300 -110 704 528 // 325 -85 512 384
+			background			"gfx/menus/EP7Video"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP8
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-70 -50 448 336
+			background			"gfx/menus/EP8Video"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_video_EP9
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				160 -110 640 480
+			background			"gfx/menus/EP9Video"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				backgroundfadecurrent
+			group				backgroundfade
+			style				WINDOW_STYLE_FILLED
+			rect				-6 -5 652 490
+			background			"gfx/menus/main/black"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_tpm
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_tpm_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_aotc
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_aotc_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_rots
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_rots_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_cw
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_cw_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_rebels
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_rebels_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_anh
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_anh_poster_background"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_esb
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_esb_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_rotj
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_rotj_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_tfa
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_tfa_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_tlj
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_tlj_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_tros
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/episode/md_tros_poster_background"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//   NEW GAME MENU specific stuff
+		//
+		//----------------------------------------------------------------------------------------------		
+	
+		// Select Episode
+
+		// TPM poster image small
+		itemDef 
+		{
+			name				md_tpm_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				0 347 49.2 90
+			background			"gfx/menus/episode/md_tpm_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_tpm_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_tpm_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP1
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP1VideoMusic"
+				show			background_tpm
+				show			md_tpm_poster
+				show			small_poster
+				setitemrect		md_aotc_poster_small 148 347 49.2 90
+				setitemrect		md_cw_poster_small 197.2 347 49.2 90
+				setitemrect		md_rots_poster_small 246.4 347 49.2 90
+				setitemrect		md_rebels_poster_small 295.6 347 49.2 90
+				setitemrect		md_anh_poster_small 344.8 347 49.2 90
+				setitemrect		md_esb_poster_small 394 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_tpm_poster_small
+				setitemcolor	md_tpm_poster forecolor 1 1 1 1
+				setfocus		md_tpm_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_tpm_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// TPM poster image button
+		itemDef 
+		{
+			name				md_tpm_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				0 347 148 90
+			background			"gfx/menus/episode/md_tpm_poster"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_tpm_poster forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_tpm_poster forecolor 1 1 1 0.6
+			}	 
+			action 
+			{ 
+				exec			"soundstop"
+				exec			"music music/missionMenu/menu_ep1"
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	md_tpm_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode1menu
+			}
+		}
+
+		// AOTC poster image small
+		itemDef 
+		{
+			name				md_aotc_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				49.2 347 49.2 90
+			background			"gfx/menus/episode/md_aotc_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_aotc_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_aotc_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP2
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP2VideoMusic"
+				show			background_aotc
+				show			md_aotc_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_cw_poster_small 197.2 347 49.2 90
+				setitemrect		md_rots_poster_small 246.4 347 49.2 90
+				setitemrect		md_rebels_poster_small 295.6 347 49.2 90
+				setitemrect		md_anh_poster_small 344.8 347 49.2 90
+				setitemrect		md_esb_poster_small 394 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_aotc_poster_small
+				setitemcolor	md_aotc_poster forecolor 1 1 1 1
+				setfocus		md_aotc_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_aotc_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// AOTC poster image button
+		itemDef 
+		{
+			name				md_aotc_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				49.2 347 148 90
+			background			"gfx/menus/episode/md_aotc_poster"
+			forecolor			1 1 1 0.6
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_aotc_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_aotc_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				exec			"music music/missionMenu/menu_ep2"
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	md_aotc_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode2menu
+			}
+		}
+
+		// cw poster image small
+		itemDef 
+		{
+			name				md_cw_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				98.4 347 49.2 90
+			background			"gfx/menus/episode/md_cw_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_cw_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_cw_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_cw
+				exec			"soundstop"
+				exec			"music music/episodeMenu/cwVideoMusic"
+				show			background_cw
+				show			md_cw_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_rots_poster_small 246.4 347 49.2 90
+				setitemrect		md_rebels_poster_small 295.6 347 49.2 90
+				setitemrect		md_anh_poster_small 344.8 347 49.2 90
+				setitemrect		md_esb_poster_small 394 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_cw_poster_small
+				setitemcolor	md_cw_poster forecolor 1 1 1 1
+				setfocus		md_cw_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_cw_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// cw poster image button
+		itemDef 
+		{
+			name				md_cw_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				98.4 347 148 90
+			background			"gfx/menus/episode/md_cw_poster"
+			forecolor			1 1 1 0.6
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_cw_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_cw_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				exec			"music music/missionMenu/menu_cw"
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	md_cw_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episodecwmenu
+			}
+		}
+
+		// ROTS poster image small
+		itemDef 
+		{
+			name				md_rots_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				147.6 347 49.2 90
+			background			"gfx/menus/episode/md_rots_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_rots_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_rots_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP3
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP3VideoMusic"
+				show			background_rots
+				show			md_rots_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rebels_poster_small 295.6 347 49.2 90
+				setitemrect		md_anh_poster_small 344.8 347 49.2 90
+				setitemrect		md_esb_poster_small 394 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_rots_poster_small
+				setitemcolor	md_rots_poster forecolor 1 1 1 1
+				setfocus		md_rots_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_rots_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// ROTS poster image button
+		itemDef 
+		{
+			name				md_rots_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				147.6 347 148 90
+			background			"gfx/menus/episode/md_rots_poster"
+			forecolor			1 1 1 0.6
+			visible				0 
+ 	  
+	  		mouseEnter 
+			{ 
+				setitemcolor	md_rots_poster forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_rots_poster forecolor 1 1 1 0.6
+			}
+			action 
+			{ 
+				exec			"soundstop"
+				exec			"music music/missionMenu/menu_ep3"
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	md_rots_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode3menu
+			}
+		}
+
+		// rebels poster image small
+		itemDef 
+		{
+			name				md_rebels_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				196.8 347 49.2 90
+			background			"gfx/menus/episode/md_rebels_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_rebels_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_rebels_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_rebels
+				exec			"soundstop"
+				exec			"music music/episodeMenu/rebelsVideoMusic"
+				show			background_rebels
+				show			md_rebels_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_anh_poster_small 344.8 347 49.2 90
+				setitemrect		md_esb_poster_small 394 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_rebels_poster_small
+				setitemcolor	md_rebels_poster forecolor 1 1 1 1
+				setfocus		md_rebels_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_rebels_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// rebels poster image button
+		itemDef 
+		{
+			name				md_rebels_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				196.8 347 148 90
+			background			"gfx/menus/episode/md_rebels_poster"
+			forecolor			1 1 1 0.6
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_rebels_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_rebels_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				exec			"music music/missionMenu/menu_rebels"
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	md_rebels_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episoderebelsmenu
+			}
+		}
+
+		// ANH poster image small
+		itemDef 
+		{
+			name				md_anh_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				344.8 347 49.2 90
+			background			"gfx/menus/episode/md_anh_poster_small"
+			forecolor			1 1 1 0.6
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_anh_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_anh_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP4
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP4VideoMusic"
+				show			background_anh
+				show			md_anh_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_rebels_poster_small 196.8 347 49.2 90
+				setitemrect		md_esb_poster_small 394 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_anh_poster_small
+				setitemcolor	md_anh_poster forecolor 1 1 1 1
+				setfocus		md_anh_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_anh_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// ANH poster image button
+		itemDef 
+		{
+			name				md_anh_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				246 347 148 90
+			background			"gfx/menus/episode/md_anh_poster"
+			forecolor			1 1 1 0.6
+			visible				1
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_anh_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_anh_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/button1.wav" ; 
+				exec			"music music/missionMenu/menu_ep4"
+				setitemcolor	md_anh_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode4menu
+			}
+		}
+
+		// ESB poster image small
+		itemDef 
+		{
+			name				md_esb_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				394 347 49.2 90
+			background			"gfx/menus/episode/md_esb_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_esb_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_esb_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP5
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP5VideoMusic"
+				show			background_esb
+				show			md_esb_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_rebels_poster_small 196.8 347 49.2 90
+				setitemrect		md_anh_poster_small 246 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_esb_poster_small
+				setitemcolor	md_esb_poster forecolor 1 1 1 1
+				setfocus		md_esb_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_esb_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// ESB poster image button
+		itemDef 
+		{
+			name				md_esb_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				295.2 347 148 90
+			background			"gfx/menus/episode/md_esb_poster"
+			forecolor			1 1 1 0.6
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_esb_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_esb_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/button1.wav" ; 
+				exec			"music music/missionMenu/menu_ep5"
+				setitemcolor	md_esb_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode5menu
+			}
+		}
+
+		// ROTJ poster image small
+		itemDef 
+		{
+			name				md_rotj_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				443.2 347 49.2 90
+			background			"gfx/menus/episode/md_rotj_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_rotj_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_rotj_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP6
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP6VideoMusic"
+				show			background_rotj
+				show			md_rotj_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_rebels_poster_small 196.8 347 49.2 90
+				setitemrect		md_anh_poster_small 246 347 49.2 90
+				setitemrect		md_esb_poster_small 295.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_rotj_poster_small
+				setitemcolor	md_rotj_poster forecolor 1 1 1 1
+				setfocus		md_rotj_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_rotj_poster"	
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// ROTJ poster image button
+		itemDef 
+		{
+			name				md_rotj_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				344.4 347 148 90
+			background			"gfx/menus/episode/md_rotj_poster"
+			forecolor			1 1 1 0.6
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_rotj_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_rotj_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/button1.wav" ; 
+				exec			"music music/missionMenu/menu_ep6"
+				setitemcolor	md_rotj_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode6menu
+			}
+		}
+
+		// TFA poster image small
+		itemDef 
+		{
+			name				md_tfa_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				492.4 347 49.2 90
+			background			"gfx/menus/episode/md_tfa_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_tfa_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_tfa_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP7
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP7VideoMusic"
+				show			background_tfa
+				show			md_tfa_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_rebels_poster_small 196.8 347 49.2 90
+				setitemrect		md_anh_poster_small 246 347 49.2 90
+				setitemrect		md_esb_poster_small 295.2 347 49.2 90
+				setitemrect		md_rotj_poster_small 344.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_tfa_poster_small
+				setitemcolor	md_tfa_poster forecolor 1 1 1 1
+				setfocus		md_tfa_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_tfa_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// TFA poster image button
+		itemDef 
+		{
+			name				md_tfa_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				393.6 347 148 90
+			background			"gfx/menus/episode/md_tfa_poster"
+			forecolor			1 1 1 0.6
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_tfa_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_tfa_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/button1.wav" ; 
+				exec			"music music/missionMenu/menu_ep7"
+				setitemcolor	md_tfa_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode7menu
+			}
+		}
+
+		// TLJ poster image small
+		itemDef 
+		{
+			name				md_tlj_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				541.6 347 49.2 90
+			background			"gfx/menus/episode/md_tlj_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_tlj_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_tlj_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP8
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP8VideoMusic"
+				show			background_tlj
+				show			md_tlj_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_rebels_poster_small 196.8 347 49.2 90
+				setitemrect		md_anh_poster_small 246 347 49.2 90
+				setitemrect		md_esb_poster_small 295.2 347 49.2 90
+				setitemrect		md_rotj_poster_small 344.4 347 49.2 90
+				setitemrect		md_tfa_poster_small 393.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_tlj_poster_small
+				setitemcolor	md_tlj_poster forecolor 1 1 1 1
+				setfocus		md_tlj_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_tlj_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// TLJ poster image button
+		itemDef 
+		{
+			name				md_tlj_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				442.8 347 148 90
+			background			"gfx/menus/episode/md_tlj_poster"
+			forecolor			1 1 1 0.6
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_tlj_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_tlj_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/button1.wav" ; 
+				exec			"music music/missionMenu/menu_ep8"
+				setitemcolor	md_tlj_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode8menu
+			}
+		}
+
+		// TROS poster image small
+		itemDef 
+		{
+			name				md_tros_poster_small
+			group				small_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				590.8 347 49.2 90
+			background			"gfx/menus/episode/md_tros_poster_small"
+			forecolor			1 1 1 0.6
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemcolor	md_tros_poster_small forecolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	md_tros_poster_small forecolor 1 1 1 0.6
+			}
+			action
+			{
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP9
+				exec			"soundstop"
+				exec			"music music/episodeMenu/EP9VideoMusic"
+				show			background_tros
+				show			md_tros_poster
+				show			small_poster
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_rebels_poster_small 196.8 347 49.2 90
+				setitemrect		md_anh_poster_small 246 347 49.2 90
+				setitemrect		md_esb_poster_small 295.2 347 49.2 90
+				setitemrect		md_rotj_poster_small 344.4 347 49.2 90
+				setitemrect		md_tfa_poster_small 393.6 347 49.2 90
+				setitemrect		md_tlj_poster_small 442.8 347 49.2 90
+				hide			md_tros_poster_small
+				setitemcolor	md_tros_poster forecolor 1 1 1 1
+				setfocus		md_tros_poster
+
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_tros_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemcolor		backgroundfadecurrent	backcolor 1 1 1 1
+				show				backgroundfadecurrent
+				fadeout				backgroundfadecurrent
+			}
+		}
+
+		// TROS poster image button
+		itemDef 
+		{
+			name				md_tros_poster
+			group				large_poster
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				492 347 148 90
+			background			"gfx/menus/episode/md_tros_poster"
+			forecolor			1 1 1 0.6
+			visible				0
+
+			mouseEnter 
+			{ 
+				setitemcolor	md_tros_poster forecolor 1 1 1 1
+			}
+
+			mouseExit 
+			{ 
+				setitemcolor	md_tros_poster forecolor 1 1 1 0.6
+			}	 
+ 	  
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/button1.wav" ; 
+				exec			"music music/missionMenu/menu_ep9"
+				setitemcolor	md_tros_poster forecolor 1 1 1 0.6
+				close			all ; 
+				open			episode9menu
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				backbutton
+			group				fade_buttons
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 439 130 30  
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/esc.wav" 
+				exec			"menumusic"
+				setitemcolor	small_poster forecolor 1 1 1 0.6
+				hide			background
+				hide			small_poster
+				hide			large_poster
+				show			background_video_EP4
+				show			background_anh
+				show			md_anh_poster
+				show			small_poster
+				//setitembackground	backgroundfadecurrent	"gfx/menus/episode/md_anh_poster"
+				setitemrect			backgroundfadecurrent	-6 -5 652 490
+				setitemrect		md_tpm_poster_small 0 347 49.2 90
+				setitemrect		md_aotc_poster_small 49.2 347 49.2 90
+				setitemrect		md_cw_poster_small 98.4 347 49.2 90
+				setitemrect		md_rots_poster_small 147.6 347 49.2 90
+				setitemrect		md_rebels_poster_small 196.8 347 49.2 90
+				setitemrect		md_esb_poster_small 394 347 49.2 90
+				setitemrect		md_rotj_poster_small 443.2 347 49.2 90
+				setitemrect		md_tfa_poster_small 492.4 347 49.2 90
+				setitemrect		md_tlj_poster_small 541.6 347 49.2 90
+				setitemrect		md_tros_poster_small 590.8 347 49.2 90
+				hide			md_anh_poster_small
+				close			all ; 
+				open			mdnewgameMenu
+			}
+		}
+
+	}
+}

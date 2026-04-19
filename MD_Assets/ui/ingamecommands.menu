@@ -1,0 +1,1079 @@
+//----------------------------------------------------------------------------------------------
+//
+//	COMMANDS MENU
+//
+//----------------------------------------------------------------------------------------------
+{
+	menuDef
+	{
+		name					"ingamecommandsMenu"
+		fullScreen				1									// MENU_TRUE
+		rect					0 0 640 480							// Size and position of the menu
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					384
+		descScale				0.82
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1	
+		visible					0								// Visible on open
+
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.05				// amount to adjust alpha per cycle	
+
+		onOpen
+		{
+			exec				"helpUsObi 1"
+			setfocus			resume ;
+		}
+
+		onESC
+		{
+			play				"sound/interface/esc.wav" 
+			close				all
+			open				ingameMainMenu
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Main Menu
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/commandsmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				commandsbar
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 418 640 30
+			background			"gfx/menus/ingame/ingamemenubar2"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 32 640 532
+			background			"gfx/menus/sp/saber/ingamehiltpanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_SHADER
+			rect				151 -5 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		// Panels
+		
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Sub Buttons
+
+
+		itemDef
+		{
+			name				commandsteam
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				23 421 130 25
+			text				@MD_MENU_MAIN_COMMANDS
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			30
+			textaligny			3
+			visible			1
+			action
+			{
+				//play				"sound/interface/button1.wav" 
+				//close				all
+				//open				ingamecommandsMenu
+			}
+		}
+
+		itemDef
+		{
+			name				commandssaber
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				153 421 150 25
+			text				@MD_MENU_SABER_LIGHTSABER_CREATION
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			7
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingamesabercustomizationMenu
+			}
+		}
+
+		itemDef
+		{
+			name				commandsforce
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				320 421 150 25
+			text				@MD_MENU_MAIN_FORCE_SELECTION
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			12
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingameforceloadout
+			}
+		}
+
+		itemDef
+		{
+			name				commandsweapons
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				470 421 148 25
+			text				@MD_MENU_MAIN_WEAPON_LOADOUT
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingameweaponloadout
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	COMMANDS BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+		
+		// Text "COMMANDS"
+		itemDef 
+		{
+			name				CommandsText
+			group				team
+			type				ITEM_TYPE_TEXT
+			rect				320 103 100 20
+			text				@MD_MENU_MAIN_COMMANDS_MENU
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		// Commands
+
+		itemDef
+		{
+			name				team
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				55 350 95 25
+			text				@MD_MENU_MAIN_TEAM
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				teamlight
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				165 350 95 25
+			text				@MD_MENU_MAIN_LIGHT_SIDE
+			descText			@MD_MENU_MAIN_LIGHT_SIDE_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/chars/side/light.mp3"
+				exec			"helpusobi 1"
+				exec			"playerteam player"
+				exec			"echo ^2JOINED ^2LIGHT ^2SIDE ^2TEAM"
+			}
+		}
+
+		itemDef
+		{
+			name				teamenemy
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				275 350 95 25
+			text				@MD_MENU_MAIN_DARK_SIDE
+			descText			@MD_MENU_MAIN_DARK_SIDE_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/chars/side/dark.mp3"
+			    exec			"helpusobi 1"
+				exec			"playerteam enemy"
+				exec			"echo ^1JOINED ^1DARK ^1SIDE ^1TEAM"
+			}
+		}
+
+		itemDef
+		{
+			name				npcteamfree
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				385 350 95 25
+			text				@MD_MENU_MAIN_SOLO
+			descText			@MD_MENU_MAIN_SOLO_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 1 0 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				exec			"helpusobi 1"
+				exec			"playerteam free"
+				exec			"echo ^3JOINED ^3SOLO ^3TEAM"
+			}
+		}
+
+		itemDef
+		{
+			name				npcteamneutral
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				495 350 95 25
+			text				@MD_MENU_MAIN_NEUTRAL
+			descText			@MD_MENU_MAIN_NEUTRAL_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			0 0.3 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				exec			"helpusobi 1"
+				exec			"playerteam neutral"
+				exec			"echo ^4JOINED ^4NEUTRAL ^4TEAM"
+			}
+		}
+
+		itemDef
+		{
+			name				invincible
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				55 165 95 24
+			text				@MD_MENU_MAIN_INVINCIBLE	
+			descText			@MD_MENU_MAIN_INVINCIBLE_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"god"
+				exec			"echo ^8Toggled ^8invincibility"
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				Noclip
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				55 190 95 24
+			text				@MD_MENU_MAIN_NOCLIP	
+			descText			@MD_MENU_MAIN_NOCLIP_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         		"noclip"
+				exec			"echo ^8Toggled ^8noclip"
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				Notarget
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				55 215 95 24
+			text				@MD_MENU_MAIN_NOTARGET
+			descText			@MD_MENU_MAIN_NOTARGET_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         		"notarget"
+				exec			"echo ^8Toggled ^8notarget"
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				InvisibleOff
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				55 240 95 24
+			text				@MD_MENU_MAIN_INVISIBLE_OFF
+			descText			@MD_MENU_MAIN_INVISIBLE_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"runscript npc_invisible_on"
+				exec			"echo ^8Toggled ^8Invisibility"
+				hide			InvisibleOff
+				show 			InvisibleOn
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				InvisibleOn
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				55 240 95 24
+			text				@MD_MENU_MAIN_INVISIBLE_ON
+			descText			@MD_MENU_MAIN_INVISIBLE_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"runscript npc_invisible_off"
+				exec			"echo ^8Toggled ^8Invisibility"
+				show			InvisibleOff
+				hide 			InvisibleOn
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				moreLightOff
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				55 265 95 24
+			text				@MD_MENU_MAIN_MORELIGHT_OFF
+			descText			@MD_MENU_MAIN_MORELIGHT_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"runscript player_morelight_on"
+				exec			"echo ^8Toggled ^8More ^8Light"
+				hide			moreLightOff
+				show 			moreLightOn
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				moreLightOn
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				55 265 95 24
+			text				@MD_MENU_MAIN_MORELIGHT_ON
+			descText			@MD_MENU_MAIN_MORELIGHT_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			0
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"runscript player_morelight_off"
+				exec			"echo ^8Toggled ^8More ^8Light"
+				show			moreLightOff
+				hide 			moreLightOn
+				//close			all ; 
+			}
+		}
+
+
+
+		itemDef
+		{
+			name				giveall
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				165 165 115 24
+			text				@MD_MENU_MAIN_GIVE_ALL_WEAPONS	
+			descText			@MD_MENU_MAIN_GIVE_ALL_WEAPONS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"give all"
+				exec			"echo ^8Given ^8all ^8weapons"
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				allforcepowers
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				165 190 115 24
+			text				@MD_MENU_MAIN_GIVE_ALL_FORCE_POWERS	
+			descText			@MD_MENU_MAIN_GIVE_ALL_FORCE_POWERS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"setforceall 3"
+				exec			"setsaberall 3"
+				exec			"echo ^8Given ^8all ^8force ^8powers ^8at ^8max ^8level"
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				givehealtharmor
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				165 215 115 24
+			text				@MD_MENU_MAIN_GIVE_HEALTH_AND_ARMOR	
+			descText			@MD_MENU_MAIN_GIVE_HEALTH_AND_ARMOR_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"give health"
+				exec         	"give armor"
+				exec			"give force"
+				exec			"echo ^8Given ^8health ^8and ^8armor"
+				//close			all ;  
+			}
+		}
+
+		itemDef
+		{
+			name				forceregen
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				165 240 115 24
+			text				@MD_MENU_MAIN_FORCE_REGEN
+			descText			@MD_MENU_MAIN_FORCE_REGEN_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec			"give force 999"
+				exec         	"unlimitedpower"
+				exec			"echo ^8Toggled ^8Fast ^8Force ^8Points ^8Regen"
+				//close			all ; 
+			}
+		}
+
+		itemDef
+		{
+			name				blockregen
+			group				team
+			type				ITEM_TYPE_BUTTON
+			rect				165 265 115 24
+			text				@MD_MENU_MAIN_BLOCK_REGEN
+			descText			@MD_MENU_MAIN_BLOCK_REGEN_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec         	"thisweaponisyourlife"
+				exec			"echo ^8Toggled ^8Fast ^8Block ^8Points ^8Regen"
+				//close			all ;  
+			}
+		}
+
+		itemDef
+		{
+			name				difficulty
+			group				team
+			type				ITEM_TYPE_MULTI
+			rect				385 165 115 24
+			text				@MD_MENU_MAIN_GAME_DIFFICULTY	
+			descText			@MD_MENU_MAIN_GAME_DIFFICULTY_DESC
+			cvar				"g_spskill"	
+			cvarFloatList		
+			{ 
+				@MD_MENU_MAIN_EASY			0
+				@MD_MENU_MAIN_NORMAL 		1	
+				@MD_MENU_MAIN_HARD			2
+			}
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+			}
+		}
+
+		itemDef
+		{
+			name				weather
+			group				team
+			type				ITEM_TYPE_MULTI
+			rect				385 190 115 24
+			text				@MD_MENU_SETTINGS_WEATHER
+			descText			@MD_MENU_SETTINGS_WEATHER_DESC
+			cvar				"r_weather"
+			cvarFloatList		
+			{  
+				@MD_MENU_SETTINGS_CLEAR           0
+				@MD_MENU_SETTINGS_SNOW            1
+				@MD_MENU_SETTINGS_RAIN            2
+				@MD_MENU_SETTINGS_LAVA            3
+				@MD_MENU_SETTINGS_SANDSTORM       4
+				@MD_MENU_SETTINGS_HEAVY_RAIN_FOG    5
+				@MD_MENU_SETTINGS_FOG             6
+				@MD_MENU_SETTINGS_ACID_RAIN        7
+				@MD_MENU_SETTINGS_WIND           8
+				@MD_MENU_SETTINGS_SPACEDUST       9
+			}
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+                exec            "weather clear; wait 100; r_weather";
+			}
+		}
+
+		itemDef
+		{
+			name				noText
+			group				team
+			type				ITEM_TYPE_MULTI
+			rect				385 215 115 24
+			text				@MD_MENU_MAIN_NOPRINT
+			descText			@MD_MENU_MAIN_NOPRINT_DESC
+			cvar				"cl_noprint"	
+			cvarFloatList		{  @MD_MENU_MAIN_ON 0 @MD_MENU_MAIN_OFF 1 }
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+			}
+		}
+
+		itemDef
+		{
+			name				Sabertype
+			group				team
+			type				ITEM_TYPE_MULTI
+			rect				385 240 115 24
+			text				@MD_MENU_MAIN_LIGHTSABER_BLADE
+			descText			@MD_MENU_MAIN_LIGHTSABER_BLADE_DESC
+			cvar				"cg_sfxsabers"
+			cvarStrList		
+			{
+				JKA	  	0
+				TPM 	1
+				AOTC	2
+				ROTS	3
+				ANH	    4
+				ESB     5 
+				ROTJ	6
+				TFA	  	7
+				UNSTABLE	8
+				REBELS		9
+			}	
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+				exec  			"cg_SFXSabersGlowSize 1 ; cg_SFXSabersCoreSize 1"
+				exec 			"cg_SFXSabersGlowSizeEP1 1 ; cg_SFXSabersCoreSizeEP1 1"
+				exec			"cg_SFXSabersGlowSizeEP2 1 ; cg_SFXSabersCoreSizeEP2 1"
+				exec			"cg_SFXSabersGlowSizeEP3 1 ; cg_SFXSabersCoreSizeEP3 1"
+				exec			"cg_SFXSabersGlowSizeSFX 1 ; cg_SFXSabersCoreSizeSFX 1"
+				exec			"cg_SFXSabersGlowSizeOT 1 ; cg_SFXSabersCoreSizeOT 1"
+				exec			"cg_SFXSabersGlowSizeROTJ 1 ; cg_SFXSabersCoreSizeROTJ 1"
+ 				exec			"cg_SFXSabersGlowSizeTFA 1 ; cg_SFXSabersCoreSizeTFA 1"
+				exec	  		"cg_SFXSabersGlowSizeUSB 1 ; cg_SFXSabersCoreSizeUSB 1"
+				exec	  		"cg_SFXSabersGlowSizeRebels 0.6 ; cg_SFXSabersCoreSizeRebels 0.6"
+			}
+		}
+
+		itemDef
+		{
+			name				NPCfreeze
+			group				team
+			type				ITEM_TYPE_MULTI
+			rect				385 265 115 24
+			text				@MD_MENU_MAIN_FREEZE_NPCS
+			descText			@MD_MENU_MAIN_FREEZE_NPCS_DESC
+			cvar				"d_npcfreeze"	
+			cvarFloatList		{  @MD_MENU_MAIN_OFF 0 @MD_MENU_MAIN_ON 1 }
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingameMainMenu 
+			}
+		}
+
+		itemDef 
+		{
+			name				NPCfreeze
+			group				comm
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_MULTI
+			rect				170 458 301 24 
+			text				@MD_MENU_MAIN_FREEZE_NPC
+			descText			@MD_MENU_MAIN_FREEZE_NPC_DESC
+			cvar				"d_npcfreeze"	
+			cvarFloatList		{ @MD_MENU_MAIN_OFF 0 @MD_MENU_MAIN_ON 1 }
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			135
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 316 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 316 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 316 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 463 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+			} 
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MD_MENU_MAIN_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+
+	}
+}

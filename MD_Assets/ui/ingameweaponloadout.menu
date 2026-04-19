@@ -1,0 +1,1873 @@
+//----------------------------------------------------------------------------------------------
+//
+// Weapon Select Menu
+//
+// The player is allowed to choose from a list of weapons. The weapons in the list are
+// based on the value in tier_storyinfo
+//   
+//  Weapon index values 
+//     SABER          - 1
+//     BLASTER PISTOL - 2
+//     BLASTER        - 3
+//     DISRUPTOR      - 4
+//     BOWCASTER      - 5
+//     REPEATER       - 6
+//     DEMP           - 7
+//     FLECHETTE      - 8
+//     ROCKET LAUNCHER - 9 
+//     THERMAL DET.    - 10
+//     TRIP MINE       - 11
+//     DET PACK        - 12
+//     CONCUSSION      - 13
+//
+//                             Ammo index values     amounts to give
+//     SABER           - FORCE       - 1             - 100
+//     BLASTER PISTOL  - BLASTER     - 2             - 300
+//     BLASTER         - BLASTER     - 2             - 300
+//     DISRUPTOR       - POWER CELL  - 3             - 300
+//     BOWCASTER       - POWER CELL  - 3             - 300
+//     REPEATER        - METAL BOLTS - 4             - 400
+//     DEMP            - POWER CELL  - 3             - 300
+//     FLECHETTE       - METAL BOLTS - 4             - 400
+//     ROCKET LAUNCHER - ROCKETS     - 5             - 10
+//     THERMAL DET.    - THERMAL     - 7             - 10
+//     TRIP MINE       - TRIP MINE   - 8             - 5
+//     DET. PACK       - DETPACK     - 9             - 5
+//     CONCUSSION      - METAL BOLTS - 4             - 400
+//     
+//----------------------------------------------------------------------------------------------
+{
+					   
+	menuDef 
+	{
+		name					"ingameweaponloadout"
+		fullScreen				1		
+		rect					0 0 640 480	
+		visible					1
+		focusColor				1 1 1 0.9
+		descX					320
+		descY					384
+		descScale				0.82
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1	
+		
+		onOpen 
+		{
+ 		}							
+ 		
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav"
+			close				all
+			open				ingameMainMenu
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MENU BACKGROUND
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/sp/weapon/weaponmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				commandsbar
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 418 640 30
+			background			"gfx/menus/ingame/ingamemenubar2"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 32 640 532
+			background			"gfx/menus/sp/saber/ingamehiltpanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_SHADER
+			rect				151 -5 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Panels
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Sub Buttons
+
+
+		itemDef
+		{
+			name				commandsteam
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				23 421 130 25
+			text				@MD_MENU_MAIN_COMMANDS
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			30
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingamecommandsMenu
+			}
+		}
+
+		itemDef
+		{
+			name				commandssaber
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				153 421 150 25
+			text				@MD_MENU_SABER_LIGHTSABER_CREATION
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			7
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingamesabercustomizationMenu
+			}
+		}
+
+		itemDef
+		{
+			name				commandsforce
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				320 421 150 25
+			text				@MD_MENU_MAIN_FORCE_SELECTION
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			0.5 0.5 0.5 0.9
+			textalignx			12
+			textaligny			3
+			visible			1
+			action
+			{
+				play				"sound/interface/button1.wav" 
+				close				all
+				open				ingameforceloadout
+			}
+		}
+
+		itemDef
+		{
+			name				commandsweapons
+			group				subbuttoncommands
+			type				ITEM_TYPE_BUTTON
+			rect				470 421 148 25
+			text				@MD_MENU_MAIN_WEAPON_LOADOUT
+			font				5
+			textscale			0.16
+			textstyle			1
+			forecolor			1 1 1 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+			action
+			{
+				//play				"sound/interface/button1.wav" 
+				//close				all
+				//open				ingameweaponloadout
+			}
+		}
+
+		// Weapon icons
+
+		itemDef 
+		{
+			name				saber_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_lightsaber"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				baton_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_stunbaton"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				briar_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_briar"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				blaster_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_blaster"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				disruptor_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_disruptor"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				bowcaster_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_bowcaster"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				repeater_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_repeater"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				demp2_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_demp2"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				flechette_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_flechette"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rocket_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_merrsonn"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				concussion_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_c_rifle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				thermal_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_thermal"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tripmine_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_tripmine"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				detpack_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_detpack"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				melee_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_melee"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				blasterpistol_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_blaster_pistol"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				firstorder_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_f11d"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				clonecarbine_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_dc-15s"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rebelblaster_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_dh-17"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				clonerifle_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_clonerifle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				commando_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_dc-17m"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				z6rotarycannon_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_z6_rotary_cannon"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rebelrifle_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_A280"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				battledroid_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_droidblaster"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				rey_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_lpa_nn-14"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				jango_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_westar"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				boba_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_ee-3"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				clonepistol_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_clonepistol"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				noghristick_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_noghri"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				tuskenrifle_icon
+			group				weapon_icon
+			style				WINDOW_STYLE_SHADER
+			rect				55 315 80 80
+			background			"gfx/hud/w_icon_tusken"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+
+
+//----------------------------------------------------------------------------------------------
+//	TEXT - Choose weapons/Weapons chosen.
+//----------------------------------------------------------------------------------------------
+		
+		itemDef
+		{
+			name				title
+			group				commands
+			type				ITEM_TYPE_TEXT
+			textalign			ITEM_ALIGN_CENTER
+			rect				320 105 100 20
+			text				@MD_MENU_MAIN_WEAPON_SELECTION
+			font				5
+			textscale			0.19
+			textstyle			1
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+
+		// Weapon Commands
+
+
+		itemDef
+		{
+			name				removeweapons
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				55 165 95 24
+			text				@MD_MENU_MAIN_ALL_WEAPONS
+			descText			@MD_MENU_MAIN_ALL_WEAPONS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			action
+			{
+				exec			"give all"
+				exec			"echo ^8Given ^8All ^8Weapons"
+			}
+		}
+
+		itemDef
+		{
+			name				removeweapons
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				55 190 95 24
+			text				@MD_MENU_MAIN_NO_WEAPONS
+			descText			@MD_MENU_MAIN_NO_WEAPONS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			action
+			{
+				uiScript		"clearsabers"
+				uiScript		"clearweapons"
+				exec			"give weapon WP_MELEE"
+				exec			"echo ^8Removed ^8All ^8Weapons"
+			}
+		}
+
+		itemDef
+		{
+			name				disabledualpistols
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				55 215 95 24
+			text				@MD_MENU_MAIN_SINGLE_PISTOL
+			descText			@MD_MENU_MAIN_SINGLE_PISTOL_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			action
+			{
+				exec			"g_allowdualpistols 0"
+				exec			"echo ^8Enabled ^8Single ^8Pistol"
+			}
+		}
+
+		itemDef
+		{
+			name				enabledualpistols
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				55 240 95 24
+			text				@MD_MENU_MAIN_DUAL_PISTOLS
+			descText			@MD_MENU_MAIN_DUAL_PISTOLS_DESC
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			action
+			{
+				exec			"g_allowdualpistols 1"
+				exec			"echo ^8Enabled ^8Dual ^8Pistols"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponmelee
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				55 265 95 24
+			text				@MD_MENU_MAIN_MELEE
+			descText			@MD_MENU_MAIN_GIVE_MELEE
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			melee_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_MELEE"
+				exec			"echo ^8Given ^8Melee"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponstunbaton
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				55 290 95 24
+			text				@MD_MENU_MAIN_STUN_BATON
+			descText			@MD_MENU_MAIN_GIVE_STUN_BATON
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			baton_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_STUN_BATON"
+				exec			"echo ^8Given ^8Stun ^8Baton"
+			}
+		}
+
+		///
+
+
+		itemDef
+		{
+			name				npcweaponbrynar
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				165 165 95 24
+			text				@MD_MENU_MAIN_BRYAR_PISTOL
+			descText			@MD_MENU_MAIN_GIVE_BRYAR_PISTOL
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			briar_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_BRYAR_PISTOL"
+				exec			"echo ^8Given ^8Bryar ^8Pistol"
+			}
+		}
+
+
+		itemDef
+		{
+			name				npcweaponblaster
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				165 190 95 24
+			text				@MD_MENU_MAIN_BLASTER
+			descText			@MD_MENU_MAIN_GIVE_BLASTER
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			blaster_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_BLASTER"
+				exec			"echo ^8Given ^8Blaster"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweapondisruptor
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				165 215 95 24
+			text				@MD_MENU_MAIN_DISRUPTOR
+			descText			@MD_MENU_MAIN_GIVE_DISRUPTOR
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			disruptor_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_DISRUPTOR"
+				exec			"echo ^8Given ^8Disruptor"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponBowcaster
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				165 240 95 24
+			text				@MD_MENU_MAIN_BOWCASTER
+			descText			@MD_MENU_MAIN_GIVE_BOWCASTER
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Bowcaster_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_BOWCASTER"
+				exec			"echo ^8Given ^8Bowcaster"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponRepeater
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				165 265 95 24
+			text				@MD_MENU_MAIN_REPEATER
+			descText			@MD_MENU_MAIN_GIVE_REPEATER
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Repeater_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_REPEATER"
+				exec			"echo ^8Given ^8Repeater"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponDemp2
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				165 290 95 24
+			text				@MD_MENU_MAIN_DEMP2
+			descText			@MD_MENU_MAIN_GIVE_DEMP2
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Demp2_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_DEMP2"
+				exec			"echo ^8Given ^8Demp2"
+			}
+		}
+
+
+		////
+
+
+		itemDef
+		{
+			name				npcweaponFlechette
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				275 165 95 24
+			text				@MD_MENU_MAIN_FLECHETTE
+			descText			@MD_MENU_MAIN_GIVE_FLECHETTE
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Flechette_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_FLECHETTE"
+				exec			"echo ^8Given ^8Flechette"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponRocketLauncher
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				275 190 95 24
+			text				@MD_MENU_MAIN_ROCKET_LAUNCHER
+			descText			@MD_MENU_MAIN_GIVE_ROCKET_LAUNCHER
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Rocket_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_ROCKET_LAUNCHER"
+				exec			"echo ^8Given ^8Rocket ^8Launcher"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponConcussion
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				275 215 95 24
+			text				@MD_MENU_MAIN_CONCUSSION
+			descText			@MD_MENU_MAIN_GIVE_CONCUSSION
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Concussion_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_CONCUSSION"
+				exec			"echo ^8Given ^8Concussion"
+			}
+		}
+		
+		itemDef
+		{
+			name				npcweaponThermalDetonator
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				275 240 95 24
+			text				@MD_MENU_MAIN_THERMAL_DETONATOR
+			descText			@MD_MENU_MAIN_GIVE_THERMAL_DETONATOR
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Thermal_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_THERMAL"
+				exec			"echo ^8Given ^8Thermal ^8Detonator"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponTripMine
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				275 265 95 24
+			text				@MD_MENU_MAIN_TRIP_MINE
+			descText			@MD_MENU_MAIN_GIVE_TRIP_MINE
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			TripMine_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_TRIP_MINE"
+				exec			"echo ^8Given ^8Trip ^8Mine"
+			}
+		}
+		
+		itemDef
+		{
+			name				npcarmorDetPack
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				275 290 95 24
+			text				@MD_MENU_MAIN_DET_PACK
+			descText			@MD_MENU_MAIN_GIVE_DET_PACK
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			DetPack_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_DET_PACK"
+				exec			"echo ^8Given ^8Det ^8Pack"
+			}
+		}
+
+		itemDef
+		{
+			name				npcarmorZ6RotaryCannon
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				275 315 95 24
+			text				@MD_MENU_MAIN_Z6_ROTARY_CANNON
+			descText			@MD_MENU_MAIN_GIVE_Z6_ROTARY_CANNON
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			z6rotarycannon_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_Z6_ROTARY_CANNON"
+				exec			"echo ^8Given ^8Z6 ^8Rotary ^8Cannon"
+			}
+		}
+
+
+		///
+
+
+		itemDef
+		{
+			name				npcarmorTuskenRifle
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				385 165 95 24
+			text				@MD_MENU_MAIN_TUSKEN_RIFLE
+			descText			@MD_MENU_MAIN_GIVE_TUSKEN_RIFLE
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{
+				show			tuskenrifle_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_TUSKEN_RIFLE"
+				exec			"echo ^8Given ^8Tusken ^8Rifle"
+			}
+		}
+		
+		itemDef
+		{
+			name				npcarmornoghristick
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				385 190 95 24
+			text				@MD_MENU_MAIN_NOGHRI_STICK
+			descText			@MD_MENU_MAIN_GIVE_NOGHRI_STICK
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{
+				show			noghristick_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_NOGHRI_STICK"
+				exec			"echo ^8Given ^8Noghri ^8Stick"
+			}
+		}
+		
+		itemDef
+		{
+			name				npcarmorBlasterPistol
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				385 215 95 24
+			text				@MD_MENU_MAIN_DL44
+			descText			@MD_MENU_MAIN_GIVE_DL44
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			BlasterPistol_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_BLASTER_PISTOL"
+				exec			"echo ^8Given ^8DL-44"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponBattledroid
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				385 240 95 24
+			text				@MD_MENU_MAIN_E5
+			descText			@MD_MENU_MAIN_GIVE_E5
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Battledroid_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_BATTLEDROID"
+				exec			"echo ^8Given ^8E5"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponclonepistol
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				385 265 95 24
+			text				@MD_MENU_MAIN_DC17
+			descText			@MD_MENU_MAIN_GIVE_DC17
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			clonepistol_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_CLONEPISTOL"
+				exec			"echo ^8Given ^8DC-17"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponClonetrooper
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				385 290 95 24
+			text				@MD_MENU_MAIN_DC15S
+			descText			@MD_MENU_MAIN_GIVE_DC15S
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			CLONECARBINE_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_CLONECARBINE"
+				exec			"echo ^8Given ^8DC-15s"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponClonetrooper2
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				385 315 95 24
+			text				@MD_MENU_MAIN_DC15A
+			descText			@MD_MENU_MAIN_GIVE_DC15A
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			CloneRifle_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_CLONERIFLE"
+				exec			"echo ^8Given ^8DC-15a"
+			}
+		}
+
+		///
+
+		itemDef
+		{
+			name				npcweaponclonecommando
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				495 165 95 24
+			text				@MD_MENU_MAIN_DC17M
+			descText			@MD_MENU_MAIN_GIVE_DC17M
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			COMMANDO_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_CLONECOMMANDO"
+				exec			"echo ^8Given ^8DC-17m"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponrebelblaster
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				495 190 95 24
+			text				@MD_MENU_MAIN_DH17
+			descText			@MD_MENU_MAIN_GIVE_DH17
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			rebelblaster_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_REBELBLASTER
+				exec			"echo ^8Given ^8DH-17"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponrebelRifle
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				495 215 95 24
+			text				@MD_MENU_MAIN_A280
+			descText			@MD_MENU_MAIN_GIVE_A280
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			rebelRifle_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_REBELRIFLE"
+				exec			"echo ^8Given ^8A280"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponF11D
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				495 240 95 24
+			text				@MD_MENU_MAIN_F11D
+			descText			@MD_MENU_MAIN_GIVE_F11D
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			FirstOrder_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_THEFIRSTORDER"
+				exec			"echo ^8Given ^8F11D"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponrey
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				495 265 95 24
+			text				@MD_MENU_MAIN_LPANN14
+			descText			@MD_MENU_MAIN_GIVE_LPANN14
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			rey_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_REY"
+				exec			"echo ^8Given ^8LPANN14"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponBoba
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				495 290 95 24
+			text				@MD_MENU_MAIN_EE3
+			descText			@MD_MENU_MAIN_GIVE_EE3
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Boba_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_BOBA"
+				exec			"echo ^8Given ^8EE3"
+			}
+		}
+
+		itemDef
+		{
+			name				npcweaponjango
+			group				weapon
+			type				ITEM_TYPE_BUTTON
+			rect				495 315 95 24
+			text				@MD_MENU_MAIN_WESTAR
+			descText			@MD_MENU_MAIN_GIVE_WESTAR
+			font				5
+			textscale			0.14
+			textstyle			1
+			forecolor			1 0.75 0.4 0.9
+			textalignx			5
+			textaligny			3
+			visible			1
+
+			mouseEnter
+			{		
+				show			Jango_icon
+			}
+			mouseExit
+			{
+				hide			weapon_icon
+			}
+			action
+			{
+				exec			"give weapon WP_JANGO"
+				exec			"echo ^8Given ^8Westar"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	BOTTOM ROW OF BUTTONS
+//----------------------------------------------------------------------------------------------
+	
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingameMainMenu 
+			}
+		}
+
+		itemDef 
+		{
+			name				NPCfreeze
+			group				comm
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_MULTI
+			rect				170 458 301 24 
+			text				@MD_MENU_MAIN_FREEZE_NPC
+			descText			@MD_MENU_MAIN_FREEZE_NPC_DESC
+			cvar				"d_npcfreeze"	
+			cvarFloatList		{ @MD_MENU_MAIN_OFF 0 @MD_MENU_MAIN_ON 1 }
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			135
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 316 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 316 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 316 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 463 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+			} 
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MD_MENU_MAIN_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+	}
+}

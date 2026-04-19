@@ -1,0 +1,105 @@
+//--------------------------------------------------------------
+//
+// ERROR MENU
+//
+//	Displays error messages
+//
+//--------------------------------------------------------------
+{
+	menuDef 
+	{
+		name					"ingameForceHelp"
+	   	visible					0
+	   	fullscreen				0
+	   	rect					100 80 440 320
+		focusColor				1 1 1 1					   	
+		style					WINDOW_STYLE_FILLED
+		popup
+		outOfBoundsClick
+		descX					320
+		descY					350
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment				ITEM_ALIGN_CENTER
+	
+		itemDef 
+		{
+			name				window
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 440 320
+			background			"gfx/menus/main/infobox"					// Frame
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef
+		{
+			name				instruction_title
+			group				inst_stuff
+			type				ITEM_TYPE_TEXT
+			text				@MENUS_HELP
+			font				5
+			textscale			0.19
+			rect				195 33 40 20
+			forecolor			1 .682 0 1
+			textalign			ITEM_ALIGN_CENTER
+			textaligny			0
+			textalignx			20
+			visible				1
+			decoration
+		}
+		
+		itemDef
+		{
+			name				instruction_text
+			group				inst_stuff
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				80 90 310 135
+			text				@MENUS_FORCE_UPGRADE_HELP
+			font				5
+			forecolor			1 .682 0 1
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			5
+			visible				1
+			decoration	
+			autowrapped
+			textaligny			0
+			lineHeight			13	
+		}
+
+
+//--------------------------------------------------------------------------------
+//	BUTTON	
+//--------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				inst_done_button
+			group				inst_stuff
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			text				@MENUS_OKAY
+			rect				190 288 48 20
+			forecolor			1 .682 0 1
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			23
+			textaligny			0
+			font				5
+			textscale			0.19
+			forecolor			1 1 1 0.9
+			visible				1
+ 	  
+			action 
+			{ 
+				play			"sound/misc/nomenu.wav"  
+				close			ingameForceHelp
+			}
+		}
+
+
+	}
+}
+
+

@@ -1,0 +1,57 @@
+// menu defs
+// 
+{
+	loadMenu { "ui/ingame.menu"						}
+
+	loadMenu { "ui/ingamesave.menu"						}
+	loadMenu { "ui/ingameload.menu"						}
+	loadMenu { "ui/ingamecontrols.menu"					}
+	loadMenu { "ui/ingamesetup.menu"					}
+	loadMenu { "ui/ingamequit.menu"						}
+
+	loadMenu { "ui/ingameduelmaps.menu"					}
+	loadMenu { "ui/ingamecommands.menu"					}
+	loadMenu { "ui/ingamecamera.menu"					}
+	loadMenu { "ui/ingamemusic.menu"					}
+	loadMenu { "ui/ingameeffects.menu"					}
+
+	loadMenu { "ui/ingamecharacter.menu"					}
+
+	loadMenu { "ui/ingamesabercustomization.menu"				}
+	loadMenu { "ui/ingameweaponloadout.menu"				}
+	loadMenu { "ui/ingameforceloadout.menu"					}
+
+	loadMenu { "ui/ingamespawncommands.menu"				}
+	loadMenu { "ui/ingamespawnobjects.menu"					}
+	loadMenu { "ui/ingamespawnvehicles.menu"				}
+
+	loadMenu { "ui/creditsingame.menu"					}
+	loadMenu { "ui/ingamespcharacter.menu"					}
+	loadMenu { "ui/ingamespsaber.menu"					}
+	loadMenu { "ui/ingameMissionSelect.menu"				}
+	loadMenu { "ui/ingameGotoTier.menu"					}
+	loadMenu { "ui/ingameForceSelect.menu"					}
+	loadMenu { "ui/ingameWpnSelect.menu"					}
+	loadMenu { "ui/ingameForceStatus.menu"					}
+	loadMenu { "ui/ingameForceHelp.menu"					}
+	loadMenu { "ui/ingameWpnSelectHelp.menu"				}
+
+	loadMenu { "ui/ingameweaponwheel.menu"					}
+	loadMenu { "ui/ingameforcewheel.menu"					}
+
+	loadMenu { "ui/datapadforcepowers.menu"					}
+	loadMenu { "ui/datapadmission.menu"					}
+	loadMenu { "ui/datapadweapons.menu"					}
+	loadMenu { "ui/datapadmoves.menu"					}
+	loadMenu { "ui/datapadinventory.menu"				        }
+
+	loadMenu { "ui/saber.menu"						}
+	loadMenu { "ui/saberstyle.menu"						}
+
+	loadMenu { "ui/missionfailed.menu"					}
+	loadMenu { "ui/loadscreen.menu"						}
+	
+	loadMenu { "ui/vid_warning.menu"					}
+	loadMenu { "ui/videodriver.menu"					}
+
+}

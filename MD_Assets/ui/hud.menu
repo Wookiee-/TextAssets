@@ -1,0 +1,3710 @@
+
+// In Game HUD 
+// 
+// defines from ui_shared.h
+
+assetGlobalDef 
+{
+	bigFont					"fonts/reallybigfont" 20		// font
+	small2Font				"arialnb" 	14	
+}
+
+{
+	menuDef 
+	{
+		name					"mainhud"
+		fullScreen				0						// MENU_FALSE
+		rect					0 0 640 480					// Size and position of the menu
+		visible					1					// Visible on open
+		focusColor				1 1 1 1					// Focus color for text and items
+		descX					320
+		descY					434
+		descColor				.96 .933 .40 1				// Focus color for text and items
+	}
+
+	//	LEFT SIDE HUD - contains the armor and health
+	//
+	menuDef 
+	{
+		name					"lefthud"
+		fullScreen				0						// MENU_FALSE
+		rect					0 368 112 112				// Size and position of the menu
+		visible				1						// Visible on open
+
+		// Metal Frame
+		itemDef 
+		{
+			name				"frame"
+			forecolor			1 1 1 1
+			background			"gfx/hud/hudleft"
+			rect				0 0 112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+
+		itemDef 
+		{
+			name				"frame_classic"
+			forecolor			1 1 1 1
+			background			"gfx/hud/classichudleft"
+			rect				0 0 112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+//////////////////////////////////////////// md mode start///////////////////////////////////////////////////////
+
+		itemDef 
+		{
+			name				armoramount_df
+			group				none
+			forecolor			.282 .486 .388 1
+			rect				41 81 3 6				// (these positions are relative to the initial position of the menu) 
+			type				ITEM_TYPE_TEXT
+			textalign			ITEM_ALIGN_LEFT
+			visible			1
+		}
+		
+        itemDef 
+		{
+			name				healthamount_df
+			group				none
+			forecolor			.580 .163 .163 1
+			rect				8 81 3 6				// (these positions are relative to the initial position of the menu) 
+			type				ITEM_TYPE_TEXT
+			textalign			ITEM_ALIGN_RIGHT										// X pos, Y pos, char size, char height
+		}
+
+		itemDef 
+		{
+			name				healthamountalt
+			group				none
+			forecolor			.835 .015 .015 1
+			rect				35 67 4 8				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+		// Numeric counter for blockpoints
+		itemDef 
+		{
+			name				blockpointamount
+			group				none
+			forecolor			85 0.0 85 1
+			rect				35 57 4 8				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+			visible			1
+		}
+		itemDef 
+		{
+			name				JK2blockpointamount
+			group				none
+			forecolor			85 0.0 85 1
+			rect				13 69 4 7				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+			visible			1
+		}
+		itemDef 
+		{
+			name				Classicblockpointamount
+			group				none
+			forecolor			85 0.0 85 1
+			rect				122 70 4 8				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+			visible			1
+		}			
+
+////////////////////////////////////////end md mode ///////////////////////////////////////////////////////////		
+
+
+		// Health tics
+		itemDef 
+		{
+			name				health_tic1
+			background			"gfx/hud/health_tic_1"
+			forecolor			1 1 1 1
+			rect				0 0 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				health_tic2
+			background			"gfx/hud/health_tic_2"
+			forecolor			1 1 1 1
+			rect				0 0 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				health_tic3
+			background			"gfx/hud/health_tic_3"
+			forecolor			1 1 1 1
+			rect				0 0 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				health_tic4
+			background			"gfx/hud/health_tic_4"
+			forecolor			1 1 1 1
+			rect				0 0 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		// new df hud
+
+		itemDef 
+		{
+			name				left_frame_df
+			background			"gfx/hud/DF-Left-Hud"
+			forecolor			1 1 1 1
+			rect				10 -73 44 185		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				left_center_df
+			background			"gfx/hud/DF-Inner-Ring"
+			forecolor			1 1 1 1
+			rect				8 34 48 48		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				left_ring_df
+			background			"gfx/hud/DF-Outer-Ring"
+			forecolor			1 1 1 1
+			rect				8 34 48 48		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				left_frame_df2
+			background			"gfx/hud/DF2-Left-Hud"
+			forecolor			1 1 1 1
+			rect				-8 54 185 44		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		// tics
+
+		itemDef 
+		{
+			name				DF-Health-Tic1
+			background			"gfx/hud/DF-Health-Tic-End"
+			forecolor			1 1 1 1
+			rect				14 -55 13 9		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-Health-Tic2
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 -46 13 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-Health-Tic3
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 -40 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-Health-Tic4
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 -34 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-Health-Tic5
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 -28 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-Health-Tic6
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 -22 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-Health-Tic7
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 -16 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-Health-Tic8
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 -10 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-Health-Tic9
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 -4 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-Health-Tic10
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 2 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-Health-Tic11
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 8 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-Health-Tic12
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 14 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-Health-Tic13
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 20 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-Health-Tic14
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 26 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-Health-Tic15
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 32 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-Health-Tic16
+			background			"gfx/hud/DF-Health-Tic"
+			forecolor			1 1 1 1
+			rect				14 38 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				health_icon_df
+			background			"gfx/hud/DF-Health-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				17 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-stamina_tic1
+			background			"gfx/hud/DF-Stamina-Tic-End"
+			forecolor			1 1 1 1
+			rect				25 -52 14 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-stamina_tic2
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 -46 14 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-stamina_tic3
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 -40 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-stamina_tic4
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 -34 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-stamina_tic5
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 -28 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-stamina_tic6
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 -22 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-stamina_tic7
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 -16 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-stamina_tic8
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 -10 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-stamina_tic9
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 -4 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-stamina_tic10
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 2 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-stamina_tic11
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 8 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-stamina_tic12
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 14 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-stamina_tic13
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 20 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-stamina_tic14
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 26 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-stamina_tic15
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 32 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-stamina_tic16
+			background			"gfx/hud/DF-Stamina-Tic"
+			forecolor			1 1 1 1
+			rect				25 38 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				stamina_icon_df
+			background			"gfx/hud/DF-Stamina-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				28 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				DF-fuel_tic1
+			background			"gfx/hud/DF-Fuel-Tic-End"
+			forecolor			1 1 1 1
+			rect				25 -52 14 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-fuel_tic2
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 -46 14 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-fuel_tic3
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 -40 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-fuel_tic4
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 -34 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-fuel_tic5
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 -28 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-fuel_tic6
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 -22 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-fuel_tic7
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 -16 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-fuel_tic8
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 -10 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-fuel_tic9
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 -4 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-fuel_tic10
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 2 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-fuel_tic11
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 8 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-fuel_tic12
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 14 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-fuel_tic13
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 20 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-fuel_tic14
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 26 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-fuel_tic15
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 32 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-fuel_tic16
+			background			"gfx/hud/DF-Fuel-Tic"
+			forecolor			1 1 1 1
+			rect				25 38 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				fuel_icon_df
+			background			"gfx/hud/DF-Fuel-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				28 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-cloak_tic1
+			background			"gfx/hud/DF-Cloak-Tic-End"
+			forecolor			1 1 1 1
+			rect				25 -52 14 6 	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-cloak_tic2
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 -46 14 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-cloak_tic3
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 -40 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-cloak_tic4
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 -34 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-cloak_tic5
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 -28 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-cloak_tic6
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 -22 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-cloak_tic7
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 -16 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-cloak_tic8
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 -10 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-cloak_tic9
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 -4 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-cloak_tic10
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 2 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-cloak_tic11
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 8 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-cloak_tic12
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 14 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-cloak_tic13
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 20 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-cloak_tic14
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 26 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-cloak_tic15
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 32 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-cloak_tic16
+			background			"gfx/hud/DF-Cloak-Tic"
+			forecolor			1 1 1 1
+			rect				25 38 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				cloak_icon_df
+			background			"gfx/hud/DF-Cloak-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				28 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-barrier_tic1
+			background			"gfx/hud/DF-Barrier-Tic-End"
+			forecolor			1 1 1 1
+			rect				25 -52 14 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-barrier_tic2
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 -46 14 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-barrier_tic3
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 -40 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-barrier_tic4
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 -34 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-barrier_tic5
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 -28 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-barrier_tic6
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 -22 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-barrier_tic7
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 -16 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-barrier_tic8
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 -10 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-barrier_tic9
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 -4 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-barrier_tic10
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 2 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-barrier_tic11
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 8 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-barrier_tic12
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 14 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-barrier_tic13
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 20 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-barrier_tic14
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 26 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-barrier_tic15
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 32 14 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-barrier_tic16
+			background			"gfx/hud/DF-Barrier-Tic"
+			forecolor			1 1 1 1
+			rect				25 38 14 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				barrier_icon_df
+			background			"gfx/hud/DF-Barrier-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				28 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-armor_tic1
+			background			"gfx/hud/DF-Armour-Tic-End"
+			forecolor			1 1 1 1
+			rect				37 -55 13 9		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-armor_tic2
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 -46 13 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-armor_tic3
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 -40 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-armor_tic4
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 -34 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-armor_tic5
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 -28 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-armor_tic6
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 -22 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-armor_tic7
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 -16 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-armor_tic8
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 -10 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-armor_tic9
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 -4 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-armor_tic10
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 2 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-armor_tic11
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 8 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-armor_tic12
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 14 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-armor_tic13
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 20 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-armor_tic14
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 26 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-armor_tic15
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 32 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-armor_tic16
+			background			"gfx/hud/DF-Armour-Tic"
+			forecolor			1 1 1 1
+			rect				37 38 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				armor_icon_df
+			background			"gfx/hud/DF-Armour-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				40 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+////////////////////////////////////////// blockpoint tics ////////////////////////////////////////////////////////////		
+		
+
+
+		// Health tics
+		itemDef 
+		{
+			name				block_tic1
+			background			"gfx/hud/block_tic_1"
+			forecolor			1 1 1 1
+			rect				6 -9 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				block_tic2
+			background			"gfx/hud/block_tic_2"
+			forecolor			1 1 1 1
+			rect				6 -9 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				block_tic3
+			background			"gfx/hud/block_tic_3"
+			forecolor			1 1 1 1
+			rect				6 -9 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				block_tic4
+			background			"gfx/hud/block_tic_4"
+			forecolor			1 1 1 1
+			rect				6 -9 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		// Armor tics
+		itemDef 
+		{
+			name				armor_tic1
+			background			"gfx/hud/armor_tic_1"
+			forecolor			1 1 1 1
+			rect				0 0 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				armor_tic2
+			background			"gfx/hud/armor_tic_2"
+			forecolor			1 1 1 1
+			rect				0 0 112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				armor_tic3
+			background			"gfx/hud/armor_tic_3"
+			forecolor			1 1 1 1
+			rect				0 0 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				armor_tic4
+			background			"gfx/hud/armor_tic_4"
+			forecolor			1 1 1 1
+			rect				0 0 112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		// Numeric counter for armor
+		itemDef 
+		{
+			name				armoramount
+			group				none
+			forecolor			0.0 .613 .097 1
+			rect				105 98 4 8				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+			visible			1
+		}		
+
+		// Numeric counter for health
+		itemDef 
+		{
+			name				healthamount
+			group				none
+			forecolor			.835 .015 .015 1
+			rect				115 85 4 8				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+		// Vehicle HUD (Swoop bike)
+		itemDef 
+		{
+			name				vehicleHUD
+			group				none
+			rect				0 -145 60 120			// (these positions are relative to the initial position of the menu) 
+											// X pos, Y pos, char size, char height
+		}		
+
+		// Vehicle HUD (Swoop bike)
+		itemDef 
+		{
+			name				vehicleHUDbackground
+			group				none
+			rect				20 -135 30 90			// (these positions are relative to the initial position of the menu) 
+											// X pos, Y pos, char size, char height
+		}		
+
+		// Vehicle HUD (Swoop bike)
+		itemDef 
+		{
+			name				vehicleHUDhealthbar
+			group				none
+			rect				20 15 30 74			// (these positions are relative to the initial position of the menu) 
+											// X pos, Y pos, char size, char height
+		}		
+
+	}
+
+	//	RIGHT SIDE HUD - contains force and ammo amounts
+	//
+	menuDef 
+	{
+		name					"righthud"
+		fullScreen				0						// MENU_FALSE
+		rect					640 368 -112 112				// Size and position of the menu
+		visible				1						// Visible on open
+		focusColor				1 1 1 1					// Focus color for text and items
+		appearanceIncrement		75						// In miliseconds
+		descX					320
+		descY					434
+		descColor				.96 .933 .40 1				// Focus color for text and items
+
+		// Metal Frame
+		itemDef 
+		{
+			name				"frame"
+			forecolor			1 1 1 1
+			background			"gfx/hud/hudleft"
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{
+			name				"frame_classic"
+			forecolor			1 1 1 1
+			background			"gfx/hud/classichudleft"
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+           
+                //mishap tics
+                itemDef
+       	        {
+		      name		                mishap_tic1
+		      background		        "gfx/hud/mishap_tic1"
+		      forecolor		                1 1 1 1
+		      rect		                -44 53 -35 35			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+                itemDef
+       	        {
+		      name		                mishap_tic2
+		      background		        "gfx/hud/mishap_tic2"
+		      forecolor		                1 1 1 1
+		      rect		                -44 53 -35 35			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+                itemDef
+         	{
+		      name		                mishap_tic3
+		      background		        "gfx/hud/mishap_tic3"
+		      forecolor		                1 1 1 1
+		      rect		                -44 53 -35 35			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+                itemDef
+       	        {
+		      name		                mishap_tic4
+		      background		        "gfx/hud/mishap_tic4"
+		      forecolor		                1 1 1 1
+		      rect		                -44 53 -35 35			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		//sabfatticS gauge ticks
+		//saberAttackChainCount Ticks
+		itemDef 
+		{
+			name				sabfat_tic1
+			background			"gfx/hud/JK2_sabfat_tic15"
+			forecolor			1 1 1 1
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu)
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				sabfat_tic2
+			background			"gfx/hud/JK2_sabfat_tic14"
+			forecolor			1 1 1 1
+			rect				-85 24 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				sabfat_tic3
+			background			"gfx/hud/JK2_sabfat_tic13"
+			forecolor			1 1 1 1	
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				sabfat_tic4
+			background			"gfx/hud/JK2_sabfat_tic12"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				sabfat_tic5
+			background			"gfx/hud/JK2_sabfat_tic11"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic6
+			background			"gfx/hud/JK2_sabfat_tic10"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic7
+			background			"gfx/hud/JK2_sabfat_tic9"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic8
+			background			"gfx/hud/JK2_sabfat_tic8"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic9
+			background			"gfx/hud/JK2_sabfat_tic7"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic10
+			background			"gfx/hud/JK2_sabfat_tic6"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic11
+			background			"gfx/hud/JK2_sabfat_tic5"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic12
+			background			"gfx/hud/JK2_sabfat_tic4"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic13
+			background			"gfx/hud/JK2_sabfat_tic3"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic14
+			background			"gfx/hud/JK2_sabfat_tic2"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				sabfat_tic15
+			background			"gfx/hud/JK2_sabfat_tic1"
+			forecolor			1 1 1 1
+							
+			rect				-85 24 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+//////////////////////////////////////////// end md mode //////////////////////////////////////////		
+
+		// new df hud 
+
+		itemDef 
+		{
+			name				right_frame_df
+			background			"gfx/hud/DF-Right-Hud"
+			forecolor			1 1 1 1
+			rect				-54 -73 44 185		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				right_center_df
+			background			"gfx/hud/DF-Inner-Ring"
+			forecolor			1 1 1 1
+			rect				-56 34 48 48		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				right_ring_df
+			background			"gfx/hud/DF-Outer-Ring"
+			forecolor			1 1 1 1
+			rect				-56 34 48 48		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				block_df
+			background			"gfx/hud/DF-Block"
+			forecolor			1 1 1 1
+			rect				-45 37 26 42		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				mblock_df
+			background			"gfx/hud/DF-MBlock"
+			forecolor			1 1 1 1
+			rect				-45 37 26 42	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				hilt_df
+			background			"gfx/hud/DF-Hilt"
+			forecolor			1 1 1 1
+			rect				-45 37 26 42	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				right_frame_df2
+			background			"gfx/hud/DF2-Right-Hud"
+			forecolor			1 1 1 1
+			rect				-177 54 185 44		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+		// tics 
+
+		itemDef 
+		{
+			name				DF-force_tic1
+			background			"gfx/hud/DF-Force-Tic-End"
+			forecolor			1 1 1 1
+			rect				-50 -55 13 9		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-force_tic2
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 -46 13 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-force_tic3
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 -40 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-force_tic4
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 -34 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-force_tic5
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 -28 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-force_tic6
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 -22 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-force_tic7
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 -16 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-force_tic8
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 -10 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-force_tic9
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 -4 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-force_tic10
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 2 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-force_tic11
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 8 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-force_tic12
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 14 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-force_tic13
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 20 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-force_tic14
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 26 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-force_tic15
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 32 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-force_tic16
+			background			"gfx/hud/DF-Force-Tic"
+			forecolor			1 1 1 1
+			rect				-50 38 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+		
+		itemDef 
+		{
+			name				force_icon_df
+			background			"gfx/hud/DF-Force-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				-47 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-block_tic1
+			background			"gfx/hud/DF-Block-Tic-End"
+			forecolor			1 1 1 1
+			rect				-27 -55 13 9		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-block_tic2
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -46 13 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-block_tic3
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -40 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-block_tic4
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -34 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-block_tic5
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -28 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-block_tic6
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -22 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-block_tic7
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -16 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-block_tic8
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -10 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-block_tic9
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -4 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-block_tic10
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 2 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-block_tic11
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 8 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-block_tic12
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 14 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-block_tic13
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 20 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-block_tic14
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 26 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-block_tic15
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 32 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-block_tic16
+			background			"gfx/hud/DF-Block-Tic"
+			forecolor			1 1 1 1
+			rect				-27 38 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				block_icon_df
+			background			"gfx/hud/DF-Block-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				-24 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-ammo_tic1
+			background			"gfx/hud/DF-Ammo-Tic-End"
+			forecolor			1 1 1 1
+			rect				-27 -55 13 9		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-ammo_tic2
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -46 13 6		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-ammo_tic3
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -40 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-ammo_tic4
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -34 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-ammo_tic5
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -28 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-ammo_tic6
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -22 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-ammo_tic7
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -16 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-ammo_tic8
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -10 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-ammo_tic9
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 -4 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-ammo_tic10
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 2 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-ammo_tic11
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 8 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-ammo_tic12
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 14 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-ammo_tic13
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 20 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				DF-ammo_tic14
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 26 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}			
+
+		itemDef 
+		{
+			name				DF-ammo_tic15
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 32 13 6 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				DF-ammo_tic16
+			background			"gfx/hud/DF-Ammo-Tic"
+			forecolor			1 1 1 1
+			rect				-27 38 13 6			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}	
+
+		itemDef 
+		{
+			name				ammo_icon_df
+			background			"gfx/hud/DF-Ammo-Tic-Icon"
+			forecolor			1 1 1 1
+			rect				-24 29 7 7 		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		//////////////////////////////////////////weapon type icons
+		itemDef 
+		{//w_icon_sbdarm
+			name				weapontype_sbd_blaster
+			background			"gfx/hud/w_icon_sbdarm.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{//w_icon_sbdarm
+			name				weapontype_wrist
+			background			"gfx/hud/w_icon_wrist.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{//w_icon_stunbaton
+			name				weapontype_stun_baton
+			background			"gfx/hud/w_icon_stunbaton.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+
+		itemDef 
+		{//w_icon_briar
+			name				weapontype_briar_pistol
+			background			"gfx/hud/w_icon_briar.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+
+		itemDef 
+		{//w_icon_blaster_pistol
+			name				weapontype_blaster_pistol
+			background			"gfx/hud/w_icon_blaster_pistol.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_blaster
+			name				weapontype_blaster
+			background			"gfx/hud/w_icon_blaster.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_bowcaster
+			name				weapontype_bowcaster
+			background			"gfx/hud/w_icon_bowcaster.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_c_rifle
+			name				weapontype_concussion
+			background			"gfx/hud/w_icon_c_rifle.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_demp2
+			name				weapontype_demp2
+			background			"gfx/hud/w_icon_demp2.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_detpack
+			name				weapontype_detpack
+			background			"gfx/hud/w_icon_detpack.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_disruptor
+			name				weapontype_disruptor
+			background			"gfx/hud/w_icon_disruptor.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_flechette
+			name				weapontype_flachette
+			background			"gfx/hud/w_icon_flechette.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_repeater
+			name				weapontype_repeater
+			background			"gfx/hud/w_icon_repeater.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_thermal
+			name				weapontype_thermal
+			background			"gfx/hud/w_icon_thermal.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_merrsonn
+			name				weapontype_rocket
+			background			"gfx/hud/w_icon_merrsonn.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_tripmine
+			name				weapontype_tripmine
+			background			"gfx/hud/w_icon_tripmine.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_melee
+			name				weapontype_melee
+			background			"gfx/hud/w_icon_melee.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_droidblaster
+			name				weapontype_battledroid
+			background			"gfx/hud/w_icon_droidblaster.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_f11d
+			name				weapontype_thefirstorder
+			background			"gfx/hud/w_icon_f11d.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_dc-15s
+			name				weapontype_clonecarbine
+			background			"gfx/hud/w_icon_dc-15s.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_dh-17
+			name				weapontype_rebelblaster
+			background			"gfx/hud/w_icon_dh-17.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_clonerifle
+			name				weapontype_clonerifle
+			background			"gfx/hud/w_icon_clonerifle.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_dc-17m
+			name				weapontype_clonecommando
+			background			"gfx/hud/w_icon_dc-17m.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_A280
+			name				weapontype_rebelrifle
+			background			"gfx/hud/w_icon_A280.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_lpa_nn-14
+			name				weapontype_rey
+			background			"gfx/hud/w_icon_lpa_nn-14.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_westar
+			name				weapontype_jango
+			background			"gfx/hud/w_icon_westar.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_ee-3
+			name				weapontype_boba
+			background			"gfx/hud/w_icon_ee-3.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_clonepistol
+			name				weapontype_clonepistol
+			background			"gfx/hud/w_icon_clonepistol.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_z6rotarycannon
+			name				weapontype_z6rotarycannon
+			background			"gfx/hud/w_icon_z6_rotary_cannon.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+
+		itemDef 
+		{//w_icon_westar_dual
+			name				weapontype_jangodual
+			background			"gfx/hud/w_icon_westar_dual.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_droideka
+			name				weapontype_droideka
+			background			"gfx/hud/w_icon_droideka.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_noghri
+			name				weapontype_nogri
+			background			"gfx/hud/w_icon_noghri.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_tusken
+			name				weapontype_tusken
+			background			"gfx/hud/w_icon_tusken.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+
+            //////////////////////////////////////// KOTOR ////////////////////////////////
+		
+		itemDef 
+		{//w_icon_kotor_bowcaster2
+			name				weapontype_kotor_bowcaster2
+			background			"gfx/hud/w_icon_kotor_bowcaster2.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_bpistol2
+			name				weapontype_kotor_bpistol2
+			background			"gfx/hud/w_icon_kotor_bpistol2.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_bpistol3
+			name				weapontype_kotor_bpistol3
+			background			"gfx/hud/w_icon_kotor_bpistol3.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_brifle1
+			name				weapontype_kotor_brifle1
+			background			"gfx/hud/w_icon_kotor_brifle1.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_brifle2
+			name				weapontype_kotor_brifle2
+			background			"gfx/hud/w_icon_kotor_brifle2.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_brifle3
+			name				weapontype_kotor_brifle3
+			background			"gfx/hud/w_icon_kotor_brifle3.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_carbine
+			name				weapontype_kotor_carbine
+			background			"gfx/hud/w_icon_kotor_carbine.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_drifle
+			name				weapontype_kotor_drifle
+			background			"gfx/hud/w_icon_kotor_drifle.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_hobpistol
+			name				weapontype_kotor_hobpistol
+			background			"gfx/hud/w_icon_kotor_hobpistol.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_hpistol
+			name				weapontype_kotor_hpistol
+			background			"gfx/hud/w_icon_kotor_hpistol.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_ionrifle
+			name				weapontype_kotor_ionrifle
+			background			"gfx/hud/w_icon_kotor_ionrifle.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_pistol1
+			name				weapontype_kotor_pistol1
+			background			"gfx/hud/w_icon_kotor_pistol1.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_repeater
+			name				weapontype_kotor_repeater
+			background			"gfx/hud/w_icon_kotor_repeater.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//w_icon_kotor_reprifle
+			name				weapontype_kotor_reprifle
+			background			"gfx/hud/w_icon_kotor_reprifle.tga"
+			forecolor			1 1 1 1
+			rect				-22 46 -22 22		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}  
+
+
+            ////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+		//Vanilla HUD Saber Fatigue
+		itemDef 
+		{
+			name				classicsabfat_tic1
+			background			"gfx/hud/saber_strong"
+			forecolor			1 1 1 1
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu)
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				classicsabfat_tic2
+			background			"gfx/hud/saber_strong"
+			forecolor			1 1 1 1
+			rect				-11 -7 -112 98	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				classicsabfat_tic3
+			background			"gfx/hud/saber_strong"
+			forecolor			1 1 1 1	
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				classicsabfat_tic4
+			background			"gfx/hud/saber_desann"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				classicsabfat_tic5
+			background			"gfx/hud/saber_desann"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic6
+			background			"gfx/hud/saber_desann"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic7
+			background			"gfx/hud/saber_fast"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic8
+			background			"gfx/hud/saber_fast"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic9
+			background			"gfx/hud/saber_fast"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic10
+			background			"gfx/hud/saber_tavion"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic11
+			background			"gfx/hud/saber_tavion"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic12
+			background			"gfx/hud/saber_tavion"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic13
+			background			"gfx/hud/saber_med"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic14
+			background			"gfx/hud/saber_med"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				classicsabfat_tic15
+			background			"gfx/hud/saber_med"
+			forecolor			1 1 1 1							
+			rect				-11 -7 -112 98	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+/////////////////////////////////////////////////// classic hud ////////////////////////////////////////	
+
+
+		itemDef 
+		{
+			name				newsabfat_tic1
+			background			"gfx/hud/sabfat_tic15"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu)
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				newsabfat_tic2
+			background			"gfx/hud/sabfat_tic14"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				newsabfat_tic3
+			background			"gfx/hud/sabfat_tic13"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				newsabfat_tic4
+			background			"gfx/hud/sabfat_tic12"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+		itemDef 
+		{
+			name				newsabfat_tic5
+			background			"gfx/hud/sabfat_tic11"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic6
+			background			"gfx/hud/sabfat_tic10"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic7
+			background			"gfx/hud/sabfat_tic9"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic8
+			background			"gfx/hud/sabfat_tic8"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic9
+			background			"gfx/hud/sabfat_tic7"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic10
+			background			"gfx/hud/sabfat_tic6"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic11
+			background			"gfx/hud/sabfat_tic5"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic12
+			background			"gfx/hud/sabfat_tic4"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic13
+			background			"gfx/hud/sabfat_tic3"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic14
+			background			"gfx/hud/sabfat_tic2"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+		
+		itemDef 
+		{
+			name				newsabfat_tic15
+			background			"gfx/hud/sabfat_tic1"
+			forecolor			1 1 1 1							
+			rect				0 0 -112 112	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}
+
+   //////////////////////////// new //////////////////////////////////////////////////
+
+
+		// Ammo tics
+		itemDef 
+		{
+			name				ammo_tic1
+			background			"gfx/hud/ammo_tic_1"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				ammo_tic2
+			background			"gfx/hud/ammo_tic_2"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				ammo_tic3
+			background			"gfx/hud/ammo_tic_3"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				ammo_tic4
+			background			"gfx/hud/ammo_tic_4"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		// Force tics
+		itemDef 
+		{
+			name				force_tic1
+			background			"gfx/hud/force_tic_1"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				force_tic2
+			background			"gfx/hud/force_tic_2"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				force_tic3
+			background			"gfx/hud/force_tic_3"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+		itemDef 
+		{
+			name				force_tic4
+			background			"gfx/hud/force_tic_4"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, graphic size, graphic height
+		}		
+
+
+		// Numeric counter for force
+		itemDef 
+		{
+			name				forceamount
+			group				none
+			rect				-130 85 4 8				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+			forecolor			.359 .524 .722 1
+		}
+
+        itemDef 
+		{
+             	name	forceamount_DF
+	            group	none
+	            rect	-56 81 3 6
+	            forecolor	.196 .380 .501 1
+				type		ITEM_TYPE_TEXT
+				textalign	ITEM_ALIGN_RIGHT	
+		}
+
+		itemDef 
+		{
+			name	blockpointamount_df
+			group	none
+			forecolor .352 .129 .380 1
+	        rect	-23 81 3 6
+			type		ITEM_TYPE_TEXT
+			textalign	ITEM_ALIGN_LEFT	
+		}
+           
+
+         	itemDef 
+		{
+             	name	JK2forceamount
+	            group	none
+	            rect	-49 77 4 8
+	            forecolor	.359 .524 .722 1
+		}		
+
+		itemDef 
+		{
+	            name		ammoamount_df
+	            group		none
+	            rect		-40 81 3 6
+	            forecolor	1 1 1 1
+				type		ITEM_TYPE_TEXT
+				textalign	ITEM_ALIGN_CENTER
+		}		
+
+		// Numeric counter for ammo
+		itemDef 
+		{
+			name				ammoamount
+			group				none
+			rect				-120 98 4 8				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+			forecolor			1.0 .658 .062 1
+		}		
+
+		// When ammo is infinite (used in MP)
+		itemDef 
+		{
+			name				ammoinfinite
+			group				none
+			rect				-75 87 6 12				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+			forecolor			1.0 .658 .062 1
+		}				
+
+		itemDef 
+		{
+			name				saberstyle_strongDF
+			background			"gfx/hud/DF-Saber-Style3.tga"
+			forecolor			1 1 1 1
+			rect				-51 -56 37 106			// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+		itemDef 
+		{
+			name				saberstyle_mediumDF
+			background			"gfx/hud/DF-Saber-Style2.tga"
+			forecolor			1 1 1 1
+			rect				-51 -56 37 106				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+		itemDef 
+		{
+			name				saberstyle_fastDF
+			background			"gfx/hud/DF-Saber-Style1.tga"
+			forecolor			1 1 1 1
+			rect				-51 -56 37 106				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{//Juyo
+			name				saberstyle_desannDF
+			background			"gfx/hud/DF-Saber-Style5.tga"
+			forecolor			1 1 1 1
+			rect				-51 -56 37 106	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}	
+
+		itemDef 
+		{//Makashi
+			name				saberstyle_tavionDF
+			background			"gfx/hud/DF-Saber-Style4.tga"
+			forecolor			1 1 1 1
+			rect				-51 -56 37 106	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		
+		itemDef 
+		{//Staff
+			name				saberstyle_staffDF
+			background			"gfx/hud/DF-Saber-Style7.tga"
+			forecolor			1 1 1 1
+			rect				-51 -56 37 106	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+		itemDef 
+		{//Dual
+			name				saberstyle_dualDF
+			background			"gfx/hud/DF-Saber-Style6.tga"
+			forecolor			1 1 1 1
+			rect				-51 -56 37 106		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+		itemDef 
+		{//Blaster
+			name				blasterstyle_DF
+			background			"gfx/hud/DF-Blaster-Style.tga"
+			forecolor			1 1 1 1
+			rect				-47 -58 29 112		// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}			
+
+
+		// Saber style graphics
+		itemDef 
+		{
+			name				saberstyle_strong
+			background			"gfx/hud/saber_strong"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+		itemDef 
+		{
+			name				saberstyle_medium
+			background			"gfx/hud/saber_med"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+		itemDef 
+		{
+			name				saberstyle_fast
+			background			"gfx/hud/saber_fast"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+
+		itemDef 
+		{
+			name				saberstyle_desann
+			background			"gfx/hud/saber_desann"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{
+			name				saberstyle_tavion
+			background			"gfx/hud/saber_tavion"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{
+			name				saberstyle_staff
+			background			"gfx/hud/saber_staff"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{
+			name				saberstyle_dual
+			background			"gfx/hud/saber_dual"
+			forecolor			1 1 1 1
+			rect				0 0 -112 112				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+
+		///////////////////////////////////////// JK2BlockingMode
+		itemDef 
+		{//JK2BlockingMode
+			name				JK2BlockingMode
+			background			"gfx/hud/JK2_Hilt_Block.tga"
+			forecolor			1 1 1 1
+			rect				-80 30 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{//JK2MBlockingMode
+			name				JK2MBlockingMode
+			background			"gfx/hud/JK2_Hilt_MBlock.tga"
+			forecolor			1 1 1 1
+			rect				-80 30 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+		itemDef 
+		{//JK2NotBlocking
+			name				JK2NotBlocking
+			background			"gfx/hud/JK2_Hilt.tga"
+			forecolor			1 1 1 1
+			rect				-80 30 80 40	// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}
+
+
+		// Tells current score of game
+		itemDef 
+		{
+			name				score_line
+			forecolor			1 1 1 1
+			rect				-150 92 6 12				// (these positions are relative to the initial position of the menu) 
+												// X pos, Y pos, char size, char height
+		}		
+
+	}
+
+	menuDef 
+	{
+		name					"weaponselecthud"
+		fullScreen				0						// MENU_FALSE
+		rect					30 410 0 0					// Size and position of the menu
+		visible				1						// Visible on open
+		focusColor				1 1 1 1					// Focus color for text and items
+	}
+
+	menuDef 
+	{
+		name					"forceselecthud"
+		fullScreen				0						// MENU_FALSE
+		rect					30 410 0 0					// Size and position of the menu
+		visible				1						// Visible on open
+		focusColor				1 1 1 1					// Focus color for text and items
+	}
+
+	menuDef 
+	{
+		name					"inventoryselecthud"
+		fullScreen				0						// MENU_FALSE
+		rect					30 410 0 0					// Size and position of the menu
+		visible				1						// Visible on open
+		focusColor				1 1 1 1					// Focus color for text and items
+	}
+
+
+	// Used as background for the Weapon, Force Powers, and Inventory HUDs
+	menuDef 
+	{
+		name					"iconbackground"
+		fullScreen				0						// MENU_FALSE
+		rect					136 440 368 48				// Size and position of the menu was 90 440 460 60
+		visible				1						// Visible on open
+		focusColor				1 1 1 1					// Focus color for text and items
+	}
+	
+	//////////////////////////////////////////
+	// Taun Taun 
+	//////////////////////////////////////////
+	menuDef
+	{
+		name					"tauntaunhud"
+		rect					70 400 640 80
+		focusColor				1 1 1 1
+
+		//////////////////////////////////////////
+		// Vehicle Speed meter
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"speedbackground"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid2"
+			rect				215 55 115 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic1"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				216 55 14 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic2"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				228 55 14 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic3"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				240 55 14 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic4"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				252 55 14 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic5"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				264 55 14 16
+		}
+	}
+	
+	//////////////////////////////////////////
+	// ATST Specific
+	//////////////////////////////////////////
+	menuDef
+	{
+		name					"atsthud"
+		fullScreen				0						// MENU_FALSE
+		rect					0 368 112 112				// Size and position of the menu
+
+		//////////////////////////////////////////
+		// Vehicle Speed meter
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"background"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/circle_base"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"outer_frame"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/circle_base_frame"
+			rect				5 10 100 100
+		}
+		
+		itemDef
+		{
+			name				"left_pic"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/atst_dam"
+			rect				10 20 90 80			
+		}
+	}
+		
+	menuDef
+	{
+		name					"swoopvehiclehud"
+		rect					0 400 640 80
+		focusColor				1 1 1 1
+
+		itemDef
+		{
+			name				"leftframe"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_frame"
+			rect				200 30 16 64
+		}
+
+		itemDef
+		{
+			name				"rightframe"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_frame"
+			rect				436 30 -16 64
+		}
+
+		//////////////////////////////////////////
+		// Vehicle Shield meter
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"shieldbackground"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid"
+			rect				190 32 256 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic1"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				203 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic2"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				221 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic3"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				239 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic4"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				257 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic5"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				275 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic6"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				293 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic7"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				311 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic8"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				329 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic9"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				347 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic10"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				365 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic11"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				383 32 31 16
+		}
+
+		itemDef
+		{
+			name				"shield_tic12"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_health_tick"
+			rect				401 32 31 16
+		}
+
+
+		//////////////////////////////////////////
+		// Vehicle Linked Weapons Indicator
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"weaponslinked"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid2"
+			rect				426 56 3 14
+		}
+
+		//////////////////////////////////////////
+		// Vehicle Turbo Recharge meter
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"turborecharge"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid2"
+			rect				207 70 3 -14
+		}
+		
+		//////////////////////////////////////////
+		// Vehicle Speed meter
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"speedbackground"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid2"
+			rect				215 55 115 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic1"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				216 55 14 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic2"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				228 55 14 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic3"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				240 55 14 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic4"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				252 55 14 16
+		}
+
+		itemDef
+		{
+			name				"speed_tic5"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_turbo_tick"
+			rect				264 55 14 16
+		}
+
+		//////////////////////////////////////////
+		// Vehicle Armor meter
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"armorbackground"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid2"
+			rect				286 55 115 16
+		}
+
+		itemDef
+		{
+			name				"armor_tic1"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_armor_tick"
+			rect				287 55 14 16
+		}
+
+		itemDef
+		{
+			name				"armor_tic2"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_armor_tick"
+			rect				299 55 14 16
+		}
+
+		itemDef
+		{
+			name				"armor_tic3"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_armor_tick"
+			rect				311 55 14 16
+		}
+
+		itemDef
+		{
+			name				"armor_tic4"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_armor_tick"
+			rect				323 55 14 16
+		}
+
+		itemDef
+		{
+			name				"armor_tic5"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_armor_tick"
+			rect				335 55 14 16
+		}
+
+		//////////////////////////////////////////
+		// Vehicle Ammo meter  (normal)
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"ammobackground"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid2"
+			rect				357 55 115 16
+		}
+
+		itemDef
+		{
+			name				"ammo_tic1"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				358 55 14 16
+		}
+
+		itemDef
+		{
+			name				"ammo_tic2"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				370 55 14 16
+		}
+
+		itemDef
+		{
+			name				"ammo_tic3"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				382 55 14 16
+		}
+
+		itemDef
+		{
+			name				"ammo_tic4"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				394 55 14 16
+		}
+
+		itemDef
+		{
+			name				"ammo_tic5"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				406 55 14 16
+		}
+
+		//////////////////////////////////////////
+		// Vehicle Ammo Upper meter  (for vehicles with two type of ammo)
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"ammoupperbackground"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid2"
+			rect				357 55 115 10
+		}
+
+		itemDef
+		{
+			name				"ammoupper_tic1"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				358 55 14 10
+		}
+
+		itemDef
+		{
+			name				"ammoupper_tic2"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				370 55 14 10
+		}
+
+		itemDef
+		{
+			name				"ammoupper_tic3"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				382 55 14 10
+		}
+
+		itemDef
+		{
+			name				"ammoupper_tic4"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				394 55 14 10
+		}
+
+		itemDef
+		{
+			name				"ammoupper_tic5"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				406 55 14 10
+		}
+
+		//////////////////////////////////////////
+		// Vehicle Ammo Lower meter  (for vehicles with two type of ammo)
+		//////////////////////////////////////////
+		itemDef
+		{
+			name				"ammolowerbackground"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_grid2"
+			rect				357 67 115 10
+		}
+
+		itemDef
+		{
+			name				"ammolower_tic1"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				358 67 14 10
+		}
+
+		itemDef
+		{
+			name				"ammolower_tic2"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				370 67 14 10
+		}
+
+		itemDef
+		{
+			name				"ammolower_tic3"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				382 67 14 10
+		}
+
+		itemDef
+		{
+			name				"ammolower_tic4"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				394 67 14 10
+		}
+
+		itemDef
+		{
+			name				"ammolower_tic5"
+			forecolor			1 1 1 1
+			background			"gfx/hud/vehicle_ammo_tick"
+			rect				406 67 14 10
+		}
+	}
+
+	menuDef
+	{
+		name					"mp_timer"
+		rect					560 160 60 30
+		focusColor				1 1 1 1
+
+		itemDef
+		{
+			name				"frame"
+			forecolor			1 1 1 1
+			background			"gfx/mp/count"
+			rect				0 15 80 40
+		}
+
+		itemDef
+		{
+			name				"deathtimer"
+			forecolor			0 .6 0 1
+			rect				15 22 64 32
+		}
+
+		itemDef
+		{
+			name				"timer"
+			forecolor			0 .6 0 1
+			rect				15 22 64 32
+		}
+	}
+
+	menuDef 
+	{
+		name					"vehicledamagehud"
+		fullScreen				0						// MENU_FALSE
+		rect					0 368 112 112				// Size and position of the menu
+		visible				1						// Visible on open
+
+		itemDef
+		{
+			name				"background"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/circle_base"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"outer_frame"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/circle_base_frame"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"shields"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"vehicle_front"
+			forecolor			1 1 1 1
+			// background is determined by vehicle
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"vehicle_back"
+			forecolor			1 1 1 1
+			// background is determined by vehicle
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"vehicle_left"
+			forecolor			1 1 1 1
+			// background is determined by vehicle
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"vehicle_right"
+			forecolor			1 1 1 1
+			// background is determined by vehicle
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+	}
+
+	menuDef 
+	{
+		name					"enemyvehicledamagehud"
+		fullScreen				0						// MENU_FALSE
+		rect					530 368 112 112				// Size and position of the menu
+		visible				1						// Visible on open
+
+		itemDef
+		{
+			name				"background"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/circle_base"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"outer_frame"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/circle_base_frame"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"shields"
+			forecolor			1 1 1 1
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"vehicle_front"
+			forecolor			1 1 1 1
+			// background is determined by vehicle
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"vehicle_back"
+			forecolor			1 1 1 1
+			// background is determined by vehicle
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"vehicle_left"
+			forecolor			1 1 1 1
+			// background is determined by vehicle
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+
+		itemDef
+		{
+			name				"vehicle_right"
+			forecolor			1 1 1 1
+			// background is determined by vehicle
+			background			"gfx/menus/radar/circle_base_shield"
+			rect				5 10 100 100
+		}
+	}
+}

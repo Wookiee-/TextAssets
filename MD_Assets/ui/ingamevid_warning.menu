@@ -1,0 +1,156 @@
+//------------------------------------------------------------------------------------------------
+// INGAME VIDEO WARNING
+//------------------------------------------------------------------------------------------------
+{
+	menuDef 
+	{
+		name					"ingamevideowarningMenu"
+		visible					0
+		fullScreen				1					// MENU_TRUE			
+		rect					100 120 440 320
+		focusColor				1 1 1 1					// Focus color for text and items
+		outOfBoundsClick								// this closes the window if it gets a click out of the rectangle
+		descX					320
+		descY					350
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment				ITEM_ALIGN_CENTER		
+		popup
+										
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav" 					
+			close				all ; 
+			open				ingameSetupMenu ;
+		}
+
+		onClose
+		{
+		}
+
+		itemDef 
+		{
+			name				warn_background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				100 120 440 300
+			background			"gfx/menus/main/infobox"					// Frame
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	VIDEO WARNING
+//----------------------------------------------------------------------------------------------
+		// Video Warning title
+		itemDef 
+		{
+			name				vidwarn_title
+			group				vidwarn
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			text				@MENUS_UNAPPLIED_VIDEO_CHANGES
+      			rect				120 128 400 20
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER		
+			textalignx			200
+			textaligny			-3
+			forecolor			1 .682 0 1
+      		visible				1 
+      		decoration 
+		}
+
+
+		itemDef 
+		{
+			name				vidwarn_text1
+			group				vidwarn
+			text				@MENUS_YOU_HAVE_MADE_CHANGES
+			rect				210 238 220 20
+			textalign			ITEM_ALIGN_CENTER
+			text2aligny			18
+			textalignx			110
+			font				5
+			textscale			0.19     
+			forecolor			1 .682 0 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				vidwarn_text2
+			group				vidwarn
+			text				@MENUS_APPLY_THESE_CHANGES_OR
+			rect				210 258 220 20
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			110
+			font				5
+			textscale			0.19      
+			forecolor			1 .682 0 1
+			visible				1
+			decoration
+		}
+
+		// DISCARD button - return to Video Data screen
+		itemDef 
+		{
+			name				vidwarn_no
+			group				vidwarn
+			text				@MENUS_DISCARD
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				180 378 120 24 
+			font				5
+			textscale			0.19      
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			-3
+			descText			@MENUS_DO_NOT_APPLY_CHANGES
+			forecolor			1 .682 0 1
+			visible				1
+
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 					
+				close			"ingamevideowarningMenu" ;
+				uiScript		getvid1data	;					// Get video settings
+			}	  	  
+		}
+
+		// APPLY button, use settings
+		itemDef 
+		{
+			name				vidwarn_yes
+			group				vidwarn
+			text				@MENUS_APPLY
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				340 378 120 24 
+			font				5
+			textscale			0.19      
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			-3
+			descText			@MENUS_APPLY_CHANGES_AND_THEN
+			forecolor			1 .682 0 1
+			visible				1
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		setvid1data	ingameSetupMenu ;		// Set video settings
+				close			all
+			}
+ 	  
+		}
+	}
+}
+
+
+
+
+
+

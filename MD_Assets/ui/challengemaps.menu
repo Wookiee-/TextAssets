@@ -1,0 +1,1665 @@
+//-----------------------------------------------------------------------
+//	CHALLENGE MAPS MENU
+//
+//	Called only from main menu. Has the transition of fields from main menu 
+//	to new game menu
+//
+//-----------------------------------------------------------------------
+{
+						   
+	menuDef 
+	{
+		name					"challengemapsMenu"
+		fullScreen				1						// MENU_TRUE				
+		rect					0 0 640 480					// Size and position of the menu
+		visible					1						// Visible on open
+		focusColor				1 1 1 1						// Focus color for text and items
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 .8
+		descAlignment				ITEM_ALIGN_CENTER		
+
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.05				// amount to adjust alpha per cycle	
+
+		onOpen
+		{ 
+			setitemrect		page1 641 0 640 480
+			setitemrect		page2 641 0 640 480
+			setitemrect		page3 641 0 640 480
+			setitemrect		page4 641 0 640 480
+			fadeout			page1
+			fadeout			page2
+			fadeout			page3
+			fadeout			page4
+		}
+
+		onESC 
+		{ 
+			exec			"soundstop"
+			play			"sound/interface/esc.wav" 
+			exec			"menumusic"
+			close			all ;
+			open			mdnewgameMenu
+		}
+
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_mainvideo
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/challengevideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Page 1
+		
+		itemDef 
+		{
+			name				background_ch1
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge1"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch2
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge2"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch3
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge3"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_ch4
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge4"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch5
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge5"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch6
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge6"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch7
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge7"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Page 2
+
+		itemDef 
+		{
+			name				background_ch8
+			group				page2
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge8"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch9
+			group				page2
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge9"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch10
+			group				page2
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge10"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_ch11
+			group				page2
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge11"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_ch12
+			group				page2
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge12"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch13
+			group				page2
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge13"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch14
+			group				page2
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge14"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Page 3
+
+		itemDef 
+		{
+			name				background_ch15
+			group				page3
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge15"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_ch16
+			group				page3
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge16"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch17
+			group				page3
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge17"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch18
+			group				page3
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge18"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch19
+			group				page3
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge19"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch20
+			group				page3
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge20"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch21
+			group				page3
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge21"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Page 4
+
+		itemDef 
+		{
+			name				background_ch22
+			group				page4
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge22"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ch23
+			group				page4
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challenge23"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/challenge/challengebk"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 51 341.5 115.5
+			background			"gfx/menus/main/MDLogo_CH"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				firstpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				6 202.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				secondpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				6 230 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				thirdpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				6 258 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				fourthpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				6 285.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				fifthpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				6 313.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				sixthpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				6 341.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				sixthpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				6 369.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Panels
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 230 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 230 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 285 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Arrows
+		
+		itemDef 
+		{
+			name				arrowup
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				16 178 320 30.25
+			background			"gfx/menus/main/buttons/arrowup"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_arrowup_glow
+			group				arrowgold
+			style				WINDOW_STYLE_SHADER
+			rect				16 178 320 30.25
+			background			"gfx/menus/main/buttons/arrowup_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				arrowdown
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				16 393 320 30.25
+			background			"gfx/menus/main/buttons/arrowdown"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_arrowdown_glow
+			group				arrowgold
+			style				WINDOW_STYLE_SHADER
+			rect				16 393 320 30.25
+			background			"gfx/menus/main/buttons/arrowdown_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//   Map List
+		//
+		//----------------------------------------------------------------------------------------------		
+
+		// Page 1
+
+		itemDef
+		{			
+			name				ch1
+			group				page1text
+			rect				56 203 240 28
+			text				@MD_MENU_MAIN_CHAL1
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch1 0 0 640 480
+				fadein	 		background_ch1
+				setitemrect		background_MDMenuPanelGoldTop	16.25 201.5 320 30.25
+				show			background_MDMenuPanelGoldTop 
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldTop
+				fadeout			background_ch1
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_battledroids"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch2
+			group				page1text
+			rect				56 231 240 28
+			text				@MD_MENU_MAIN_CHAL2
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch2 0 0 640 480
+				fadein	 		background_ch2
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 228.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout			background_ch2
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_jinn"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch3
+			group				page1text
+			rect				56 258 240 24
+			text				@MD_MENU_MAIN_CHAL3
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch3 0 0 640 480
+				fadein	 		background_ch3
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 256.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch3
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_gri"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch4
+			group				page1text
+			rect				56 286 240 24
+			text				@MD_MENU_MAIN_CHAL4
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch4 0 0 640 480
+				fadein	 		background_ch4
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 284.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch4
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_dooku"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch5
+			group				page1text
+			rect				56 314 240 24
+			text				@MD_MENU_MAIN_CHAL5
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch5 0 0 640 480
+				fadein	 		background_ch5
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 312.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch5
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_drallig"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch6
+			group				page1text
+			rect				56 342 240 24
+			text				@MD_MENU_MAIN_CHAL6
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch6 0 0 640 480
+				fadein	 		background_ch6
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 340.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch6
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_windu"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch7
+			group				page1text
+			rect				56 369 240 24
+			text				@MD_MENU_MAIN_CHAL7
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch7 0 0 640 480
+				fadein	 		background_ch7
+				setitemrect		background_MDMenuPanelGoldBottom	15.75 368 320 30.25
+				show			background_MDMenuPanelGoldBottom
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+				fadeout	 		background_ch7
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_yoda"
+			}	
+		}
+
+		// Page 2
+
+		itemDef
+		{			
+			name				ch8
+			group				page2text
+			rect				56 203 240 28
+			text				@MD_MENU_MAIN_CHAL8
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch8 0 0 640 480
+				fadein	 		background_ch8
+				setitemrect		background_MDMenuPanelGoldTop	16.25 201.5 320 30.25
+				show			background_MDMenuPanelGoldTop
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldTop
+				fadeout	 		background_ch8
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_palp"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch9
+			group				page2text
+			rect				56 231 240 28
+			text				@MD_MENU_MAIN_CHAL9
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch9 0 0 640 480
+				fadein	 		background_ch9
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 228.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch9
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_kota"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch10
+			group				page2text
+			rect				56 258 240 24
+			text				@MD_MENU_MAIN_CHAL10
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch10 0 0 640 480
+				fadein	 		background_ch10
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 256.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch10
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_starkiller"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch11
+			group				page2text
+			rect				56 286 240 24
+			text				@MD_MENU_MAIN_CHAL11
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch11 0 0 640 480
+				fadein	 		background_ch11
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 284.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch11
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_vader"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch12
+			group				page2text
+			rect				56 314 240 24
+			text				@MD_MENU_MAIN_CHAL12
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch12 0 0 640 480
+				fadein	 		background_ch12
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 312.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch12
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_ben"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch13
+			group				page2text
+			rect				56 342 240 24
+			text				@MD_MENU_MAIN_CHAL13
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch13 0 0 640 480
+				fadein	 		background_ch13
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 340.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch13
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_ahsoka"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch14
+			group				page2text
+			rect				56 369 240 24
+			text				@MD_MENU_MAIN_CHAL14
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch14 0 0 640 480
+				fadein	 		background_ch14
+				setitemrect		background_MDMenuPanelGoldBottom	15.75 368 320 30.25
+				show			background_MDMenuPanelGoldBottom
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+				fadeout	 		background_ch14
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_rancor"
+			}	
+		}
+
+		// Page 3
+
+		itemDef
+		{			
+			name				ch15
+			group				page3text
+			rect				56 203 240 28
+			text				@MD_MENU_MAIN_CHAL15
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch15 0 0 640 480
+				fadein	 		background_ch15
+				setitemrect		background_MDMenuPanelGoldTop	16.25 201.5 320 30.25
+				show			background_MDMenuPanelGoldTop 
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldTop
+				fadeout	 		background_ch15
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_kyle_luke"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch16
+			group				page3text
+			rect				56 231 240 28
+			text				@MD_MENU_MAIN_CHAL16
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch16 0 0 640 480
+				fadein	 		background_ch16
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 228.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch16
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_tavion"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch17
+			group				page3text
+			rect				56 258 240 24
+			text				@MD_MENU_MAIN_CHAL17
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch17 0 0 640 480
+				fadein	 		background_ch17
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 256.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch17
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_rey"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch18
+			group				page3text
+			rect				56 286 240 24
+			text				@MD_MENU_MAIN_CHAL18
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch18 0 0 640 480
+				fadein	 		background_ch18
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 284.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch18
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_kylo"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch19
+			group				page3text
+			rect				56 314 240 24
+			text				@MD_MENU_MAIN_CHAL19
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch19 0 0 640 480
+				fadein	 		background_ch19
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 312.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch19
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_luke_ep8"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch20
+			group				page3text
+			rect				56 342 240 24
+			text				@MD_MENU_MAIN_CHAL20
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch20 0 0 640 480
+				fadein	 		background_ch20
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 340.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch20
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_snoke"
+			}	
+		}
+		
+		itemDef
+		{			
+			name				ch21
+			group				page3text
+			rect				56 369 240 24
+			text				@MD_MENU_MAIN_CHAL21
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch21 0 0 640 480
+				fadein	 		background_ch21
+				setitemrect		background_MDMenuPanelGoldBottom	15.75 368 320 30.25
+				show			background_MDMenuPanelGoldBottom
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+				fadeout	 		background_ch21
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_jedi"
+			}	
+		}
+
+		// Page 4
+
+		itemDef
+		{			
+			name				ch22
+			group				page4text
+			rect				56 203 240 28
+			text				@MD_MENU_MAIN_CHAL22
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch22 0 0 640 480
+				fadein	 		background_ch22
+				setitemrect		background_MDMenuPanelGoldTop	16.25 201.5 320 30.25
+				show			background_MDMenuPanelGoldTop 
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldTop
+				fadeout	 		background_ch22
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_sith"
+			}	
+		}
+
+		itemDef
+		{			
+			name				ch23
+			group				page4text
+			rect				56 231 240 28
+			text				@MD_MENU_MAIN_CHAL23
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_CENTER
+			font				5
+			textscale			0.19
+			textstyle			3
+			textaligny			2
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				setitemrect		background_ch23 0 0 640 480
+				fadein	 		background_ch23
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 228.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+				hide			arrowgold
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout	 		background_ch23
+			}
+			action
+			{
+				close			all
+				exec			"devmap md_ch_palp_ep9"
+			}	
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	ARROW BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------		
+
+		itemDef 
+		{
+			name				Page1UpArrow
+			group				page1text
+			style				WINDOW_STYLE_FILLED
+			type				ITEM_TYPE_BUTTON
+			rect				64 182 224 21
+			forecolor			0 0 0 0
+			visible				1
+			
+			mouseEnter 
+			{  
+				show			background_arrowup_glow
+			}
+			mouseExit
+			{
+				hide			background_arrowup_glow
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			page1
+				hide			page1text
+				show			page4text	
+				setfocus		Page4UpArrow
+			}
+		}
+
+		itemDef 
+		{
+			name				Page1DownArrow
+			group				page1text
+			style				WINDOW_STYLE_FILLED
+			type				ITEM_TYPE_BUTTON
+			rect				64 398 224 22
+			forecolor			0 0 0 0
+			visible				1
+			
+			mouseEnter 
+			{  
+				show			background_arrowdown_glow
+			}
+			mouseExit
+			{
+				hide			background_arrowdown_glow
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			page1
+				hide			page1text
+				show			page2text
+				setfocus		Page2DownArrow
+			}
+		}
+
+		itemDef 
+		{
+			name				Page2UpArrow
+			group				page2text
+			style				WINDOW_STYLE_FILLED
+			type				ITEM_TYPE_BUTTON
+			rect				64 182 224 21
+			forecolor			0 0 0 0
+			visible				0
+			
+			mouseEnter 
+			{  
+				show			background_arrowup_glow
+			}
+			mouseExit
+			{
+				hide			background_arrowup_glow
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			page2
+				hide			page2text
+				show			page1text
+				setfocus		Page1UpArrow
+			}
+		}
+
+		itemDef 
+		{
+			name				Page2DownArrow
+			group				page2text
+			style				WINDOW_STYLE_FILLED
+			type				ITEM_TYPE_BUTTON
+			rect				64 398 224 22
+			forecolor			0 0 0 0
+			visible				0
+			
+			mouseEnter 
+			{  
+				show			background_arrowdown_glow
+			}
+			mouseExit
+			{
+				hide			background_arrowdown_glow
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			page2
+				hide			page2text
+				show			page3text
+				setfocus		Page3DownArrow
+			}
+		}
+
+		itemDef 
+		{
+			name				Page3UpArrow
+			group				page3text
+			style				WINDOW_STYLE_FILLED
+			type				ITEM_TYPE_BUTTON
+			rect				64 182 224 21
+			forecolor			0 0 0 0
+			visible				0
+			
+			mouseEnter 
+			{  
+				show			background_arrowup_glow
+			}
+			mouseExit
+			{
+				hide			background_arrowup_glow
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			page3
+				hide			page3text
+				show			page2text		
+				setfocus		Page2UpArrow
+			}
+		}
+
+		itemDef 
+		{
+			name				Page3DownArrow
+			group				page3text
+			style				WINDOW_STYLE_FILLED
+			type				ITEM_TYPE_BUTTON
+			rect				64 398 224 22
+			forecolor			0 0 0 0
+			visible				0
+			
+			mouseEnter 
+			{  
+				show			background_arrowdown_glow
+			}
+			mouseExit
+			{
+				hide			background_arrowdown_glow
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			page3
+				hide			page3text
+				show			page4text
+				setfocus		Page4DownArrow
+			}
+		}
+
+		itemDef 
+		{
+			name				Page4UpArrow
+			group				page4text
+			style				WINDOW_STYLE_FILLED
+			type				ITEM_TYPE_BUTTON
+			rect				64 182 224 21
+			forecolor			0 0 0 0
+			visible				0
+			
+			mouseEnter 
+			{  
+				show			background_arrowup_glow
+			}
+			mouseExit
+			{
+				hide			background_arrowup_glow
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			page4
+				hide			page4text
+				show			page3text		
+				setfocus		Page3UpArrow
+			}
+		}
+
+		itemDef 
+		{
+			name				Page4DownArrow
+			group				page4text
+			style				WINDOW_STYLE_FILLED
+			type				ITEM_TYPE_BUTTON
+			rect				64 398 224 22
+			forecolor			0 0 0 0
+			visible				0
+			
+			mouseEnter 
+			{  
+				show			background_arrowdown_glow
+			}
+			mouseExit
+			{
+				hide			background_arrowdown_glow
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				hide			page4
+				hide			page4text
+				show			page1text
+				setfocus		Page1DownArrow
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------	
+
+		itemDef 
+		{
+			name				backbutton
+			group				fade_buttons
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 435 130 40 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/esc.wav"
+				exec			"menumusic"
+				close			all ; 
+				open			mdnewgameMenu
+			}
+		}
+
+	}
+}

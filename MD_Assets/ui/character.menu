@@ -1,0 +1,2193 @@
+//----------------------------------------------------------------------------------------------
+// CHARACTER CREATION MENU
+//
+//	
+//
+//----------------------------------------------------------------------------------------------
+{						   
+	menuDef 
+	{
+		name					"characterMenu"
+		fullScreen				1			
+		rect					0 0 640 480	
+		visible					1		
+		focusColor				1 1 1 1
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 .8
+		descAlignment			ITEM_ALIGN_CENTER
+	
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.05				// amount to adjust alpha per cycle	
+
+		onOpen
+		{ 
+			uiScript 		 	"getcharcvars"
+			uiScript 		 	"character"
+			//setcvar             "g_char_skin_head" "head_a1"
+			//setcvar				"g_char_skin_torso" "torso_a1"
+			//setcvar 			"g_char_skin_legs" "lower_a1"
+			//exec				"set g_char_skin_head head_a1"
+			//exec				"set g_char_skin_legs lower_a1"
+			//exec                "set g_char_skin_torso torso_a1"
+			setitemrect			character 98 79 700 800
+			setitemrect			background 0 0 640 480
+			hide				heads
+			hide				colour
+			hide				tints2
+			hide				torso
+			hide				lower
+			hide				glow
+			hide				charmenubuttonhide
+			hide				charmenubuttonshow
+			setitemcolor		colorrgbbut forecolor 0.5 0.5 0.5 0.9
+			setitemcolor		colorpresetbut forecolor 1 1 1 0.9
+
+			hide				charmenu
+			show				speciemenu
+			hide				femalespecie
+			show				malespecie
+			setitemcolor		specie_male forecolor 1 1 1 0.6
+			setitemcolor		specie_female forecolor 0.5 0.5 0.5 0.6
+		}
+									
+		onESC 
+		{ 
+			uiScript 			"updatecharcvars"
+			exec				"soundstop"
+			play				"sound/interface/esc.wav" 	
+			exec				"menumusic"
+			setitemrect			character 98 79 700 800
+			setitemrect			background 0 0 640 480
+			hide				heads
+			hide				colour
+			hide				tints2
+			hide				torso
+			hide				lower
+			close				all
+			open				mdnewgameMenu
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MENU BACKGROUND
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background
+			group				charmenu
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/sp/character/charmenu_light"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Character Menu Panels And Glow
+		
+		itemDef 
+		{
+			name				creation_panel
+			group				charmenu
+			style				WINDOW_STYLE_SHADER
+			rect				150.5 26 342 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelTopGlow"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				charmenu_species
+			group				charmenu
+			style				WINDOW_STYLE_SHADER
+			rect				150.5 69 342 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				charmenu_speciesglow
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				150.5 69 342 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddleGlow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				charmenu_head
+			group				charmenu
+			style				WINDOW_STYLE_SHADER
+			rect				5 130 160 120
+			background			"gfx/menus/sp/character/charmenuhead"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				charmenu_headglow
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				5 130 160 120
+			background			"gfx/menus/sp/character/charmenuheadglow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				charmenu_headglowaction
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				5 130 160 120
+			background			"gfx/menus/sp/character/charmenuheadglow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				charmenu_colour
+			group				charmenu
+			style				WINDOW_STYLE_SHADER
+			rect				5 297 160 120
+			background			"gfx/menus/sp/character/charmenucolour"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				charmenu_colourglow
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				5 297 160 120
+			background			"gfx/menus/sp/character/charmenucolourglow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				charmenu_colourglowaction
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				5 297 160 120
+			background			"gfx/menus/sp/character/charmenucolourglow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				charmenu_torso
+			group				charmenu
+			style				WINDOW_STYLE_SHADER
+			rect				475 130 160 120
+			background			"gfx/menus/sp/character/charmenutorso"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				charmenu_torsoglow
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				475 130 160 120
+			background			"gfx/menus/sp/character/charmenutorsoglow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				charmenu_torsoglowaction
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				475 130 160 120
+			background			"gfx/menus/sp/character/charmenutorsoglow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				charmenu_legs
+			group				charmenu
+			style				WINDOW_STYLE_SHADER
+			rect				475 297 160 120
+			background			"gfx/menus/sp/character/charmenulegs"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+	    itemDef 
+		{
+			name				charmenu_legsglow
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				475 297 160 120
+			background			"gfx/menus/sp/character/charmenulegsglow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				charmenu_legsglowaction
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				475 297 160 120
+			background			"gfx/menus/sp/character/charmenulegsglow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				charmenu_panelleft
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				-40 213 320 120
+			background			"gfx/menus/sp/SPmenuItempanel"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				charmenu_panelright
+			group				glow
+			style				WINDOW_STYLE_SHADER
+			rect				360 213 320 120
+			background			"gfx/menus/sp/SPmenuItempanel"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Specie
+
+		itemDef 
+		{
+			name				background_Specie2
+			group				speciemenu
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/sp/character/SpecieBKnew"
+			backcolor			1 1 1 1
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				scan
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 640
+			background			"gfx/menus/scanlines2"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				speciemenu
+			style				WINDOW_STYLE_SHADER
+			rect				151 -9 341.5 115.5
+			background			"gfx/menus/main/MDLogo_JKA_G"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_Specie
+			group				speciemenu
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/sp/character/SpecieBK_panel"
+			backcolor			1 1 1 1
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				specieselectpanel
+			group				speciemenu
+			style				WINDOW_STYLE_SHADER
+			rect				25 110 261 21
+			background			"gfx/menus/main/buttons/MDMenuPanelTopGlow"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				specieselectpanel
+			group				speciemenu
+			style				WINDOW_STYLE_SHADER
+			rect				25 394 261 21
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//   CHARACTER MENU specific stuff
+//----------------------------------------------------------------------------------------------
+		// CREATION title
+
+		itemDef 
+		{
+			name				creation_title
+			group				charmenu
+			style				WINDOW_STYLE_EMPTY
+			rect				235 30 170 20
+			text				@MD_MENU_MAIN_CHARACTER_CREATION
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			85
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				character
+			group				none
+			type 				ITEM_TYPE_MODEL
+			rect				154 79 125 50
+			
+			model_g2anim 		"BOTH_MENUIDLE1"
+			asset_model			"ui_char_model"
+			model_angle			180
+			model_g2mins		-26 -31 -26
+			model_g2maxs		20 15 30
+			model_fovx			50
+			model_fovy			50
+			cvar				ui_char_model_angle
+			//isSaber			1
+			//isSaber2			1
+			isCharacter			1
+			visible				1
+			decoration	
+		}
+	
+//----------------------------------------------------------------------------------------------
+// SPECIES MENU
+//----------------------------------------------------------------------------------------------
+		
+		itemDef 
+		{
+			name				background_Specie
+			group				speciemenu
+			style				WINDOW_STYLE_FILLED
+			rect				320 240 320 240
+			background			"gfx/menus/sp/character/SpecieBK_bottom"
+			backcolor			1 1 1 1
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_Specie
+			group				speciemenu
+			style				WINDOW_STYLE_FILLED
+			rect				343 31 320 480
+			background			"gfx/menus/sp/character/SpecieBK_charpanel"
+			backcolor			1 1 1 1
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Male
+
+		itemDef 
+		{
+			name				icon_human
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				63 140 55 55
+			background			"gfx/menus/sp/character/human"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_human forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_human forecolor 1 1 1 0.8
+			}
+			action
+			{
+				setcvar			"ui_char_model" "jedi_hm"
+				setcvar 		"g_char_model" "jedi_hm"
+				exec	 		"set g_char_model jedi_hm"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_twilek
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				128 140 55 55
+			background			"gfx/menus/sp/character/twilek2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_twilek forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_twilek forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_zabrak
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				193 140 55 55
+			background			"gfx/menus/sp/character/zabrak"
+			forecolor			1 1 1 0.8
+			visible				0
+
+			mouseEnter
+			{
+				setitemcolor	icon_zabrak forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_zabrak forecolor 1 1 1 0.8
+			}
+			action
+			{
+				setcvar			"ui_char_model" "jedi_zm"
+				setcvar 		"g_char_model" "jedi_zm"
+				exec	 		"set g_char_model jedi_zm"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_togruta
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				63 200 55 55
+			background			"gfx/menus/sp/character/togruta2"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_togruta forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_togruta forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_bith
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				128 200 55 55
+			background			"gfx/menus/sp/character/bith2"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_bith forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_bith forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_mirialan
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				193 200 55 55
+			background			"gfx/menus/sp/character/mirialan2"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_mirialan forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_mirialan forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_chiss
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				63 260 55 55
+			background			"gfx/menus/sp/character/chiss2"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_chiss forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_chiss forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_nautolan
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				128 260 55 55
+			background			"gfx/menus/sp/character/nautolan2"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_nautolan forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_nautolan forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_keldor
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				193 260 55 55
+			background			"gfx/menus/sp/character/keldor"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_keldor forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_keldor forecolor 1 1 1 0.8
+			}
+			action
+			{
+				setcvar			"ui_char_model" "jedi_kdm"
+				setcvar 		"g_char_model" "jedi_kdm"
+				exec	 		"set g_char_model jedi_kdm"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_rodian
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				63 320 55 55
+			background			"gfx/menus/sp/character/rodian"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_rodian forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_rodian forecolor 1 1 1 0.8
+			}
+			action
+			{
+				setcvar			"ui_char_model" "jedi_rm"
+				setcvar 		"g_char_model" "jedi_rm"
+				exec	 		"set g_char_model jedi_rm"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_ongree
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				128 320 55 55
+			background			"gfx/menus/sp/character/ongree2"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_ongree forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_ongree forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_carean
+			group				malespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				193 320 55 55
+			background			"gfx/menus/sp/character/carean2"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_carean forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_carean forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		// Female
+
+		itemDef 
+		{
+			name				icon_human
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				63 140 55 55
+			background			"gfx/menus/sp/character/human"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_human forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_human forecolor 1 1 1 0.8
+			}
+			action
+			{
+				setcvar			"ui_char_model" "jedi_hf"
+				setcvar 		"g_char_model" "jedi_hf"
+				exec	 		"set g_char_model jedi_hf"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_twilek
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				128 140 55 55
+			background			"gfx/menus/sp/character/twilek"
+			forecolor			1 1 1 0.8
+			visible				1
+			
+			mouseEnter
+			{
+				setitemcolor	icon_twilek forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_twilek forecolor 1 1 1 0.8
+			}
+			action
+			{
+				setcvar			"ui_char_model" "jedi_tf"
+				setcvar 		"g_char_model" "jedi_tf"
+				exec	 		"set g_char_model jedi_tf"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_zabrak
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				193 140 55 55
+			background			"gfx/menus/sp/character/zabrak"
+			forecolor			1 1 1 0.8
+			visible				1
+
+			mouseEnter
+			{
+				setitemcolor	icon_zabrak forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_zabrak forecolor 1 1 1 0.8
+			}
+			action
+			{
+				setcvar			"ui_char_model" "jedi_zf"
+				setcvar 		"g_char_model" "jedi_zf"
+				exec	 		"set g_char_model jedi_zf"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_togruta
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				63 200 55 55
+			background			"gfx/menus/sp/character/togruta2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_togruta forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_togruta forecolor 1 1 1 0.8
+			}
+			action
+			{
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_bith
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				128 200 55 55
+			background			"gfx/menus/sp/character/bith2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_bith forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_bith forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_mirialan
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				193 200 55 55
+			background			"gfx/menus/sp/character/mirialan2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_mirialan forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_mirialan forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_chiss
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				63 260 55 55
+			background			"gfx/menus/sp/character/chiss2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_chiss forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_chiss forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_nautolan
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				128 260 55 55
+			background			"gfx/menus/sp/character/nautolan2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_nautolan forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_nautolan forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_keldor
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				193 260 55 55
+			background			"gfx/menus/sp/character/keldor2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_keldor forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_keldor forecolor 1 1 1 0.8
+			}
+			action
+			{
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_rodian
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				63 320 55 55
+			background			"gfx/menus/sp/character/rodian2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_rodian forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_rodian forecolor 1 1 1 0.8
+			}
+			action
+			{
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_ongree
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				128 320 55 55
+			background			"gfx/menus/sp/character/ongree2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_ongree forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_ongree forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				icon_carean
+			group				femalespecie
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				193 320 55 55
+			background			"gfx/menus/sp/character/carean2"
+			forecolor			1 1 1 0.8
+			visible				0
+			
+			mouseEnter
+			{
+				setitemcolor	icon_carean forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor	icon_carean forecolor 1 1 1 0.8
+			}
+			action
+			{
+			
+			}
+		}
+
+		// Text and buttons
+
+		itemDef 
+		{
+			name				choose_specie_title
+			group				speciemenu
+			style				WINDOW_STYLE_EMPTY
+			rect				75 113 160 15
+			text				@MD_MENU_MAIN_CHOOSE_FROM_THE_SPECIES
+			font				5
+			textscale			0.14
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			80
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				speciesname
+			group				speciemenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_MULTI
+			rect				468 375 65 14
+			text				" "
+			font				5
+			textscale			0.12
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.6
+			visible				1
+			feeder				16	//FEEDER_PLAYER_SPECIES
+			cvar				"ui_char_model"
+			cvarStrList			feeder
+			decoration
+			
+			mouseEnter
+			{
+			
+			}
+			mouseExit
+			{
+			
+			}
+			action
+			{
+			
+			}
+		}
+
+		itemDef 
+		{
+			name				specie_male
+			group				speciemenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				400 392 70 24
+			text				@MD_MENU_MAIN_MALE
+			font				5
+			textscale			0.24
+			textaligny			-1
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			35
+			forecolor			1 1 1 0
+			visible				1
+
+			mouseEnter
+			{
+			
+			}
+			mouseExit
+			{
+				setfocus		speciesname
+			}
+			action
+			{
+				hide			femalespecie
+				show			malespecie
+				setitemcolor	specie_male forecolor 1 1 1 0.6
+				setitemcolor	specie_female forecolor 0.5 0.5 0.5 0.6
+				setcvar			"ui_char_model" "jedi_hm"
+				setcvar 		"g_char_model" "jedi_hm"
+				exec	 		"set g_char_model jedi_hm"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+
+		itemDef 
+		{
+			name				specie_female
+			group				speciemenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				532 391 70 24
+			text				@MD_MENU_MAIN_FEMALE
+			font				5
+			textscale			0.24
+			textaligny			-1
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			35
+			forecolor			1 1 1 0
+			visible				1
+
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+				setfocus		speciesname
+			}
+			action
+			{
+				show			femalespecie
+				hide			malespecie
+				setitemcolor	specie_female forecolor 1 1 1 0.6
+				setitemcolor	specie_male forecolor 0.5 0.5 0.5 0.6
+				setcvar			"ui_char_model" "jedi_hf"
+				setcvar 		"g_char_model" "jedi_hf"
+				exec	 		"set g_char_model jedi_hf"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+				uiScript 		"updatecharcvars"
+				uiScript 		"getcharcvars"
+				setitemrect		character 98 79 700 800
+			}
+		}
+		
+		itemDef
+		{
+			name				species2
+			group				speciemenu
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				83 396 70 18
+			text				@MD_MENU_MAIN_CHARACTER2
+			font				5
+			textscale			0.14
+			textaligny			0
+			textalign			ITEM_ALIGN_RIGHT
+			textstyle			3
+			textalignx			65
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				speciesbut2
+			group				speciemenu
+			text				" "
+			type				ITEM_TYPE_MULTI
+			style				WINDOW_STYLE_EMPTY
+			rect				85 396 160 18
+			font				5
+			textscale			0.14
+			textaligny			0
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			65
+			forecolor			1 1 1 0.9
+			feeder				16	//FEEDER_PLAYER_SPECIES
+			cvar				"ui_char_model"
+			cvarStrList			feeder
+			visible				1
+			
+			mouseEnter 
+			{ 
+				show			charmenu_speciesglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_speciesglow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+			}
+		}
+
+		// BACK button
+		itemDef 
+		{
+			name				speciebackbutton
+			group				speciemenu
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 423 130 30 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+ 	  
+			action 
+			{ 
+				uiScript 		"updatecharcvars"
+				exec			"soundstop"
+				play			"sound/interface/esc.wav" 
+				exec			"menumusic"
+				close			all
+				open			mdnewgamemenu		
+			}
+		}
+
+		itemDef 
+		{
+			name				specienext
+			group				speciemenu
+			text				@MENUS_NEXT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				489 423 130 30  
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+
+			feeder				16	//FEEDER_PLAYER_SPECIES
+			cvar				"ui_char_model"
+
+	      	action 
+			{
+				play			"sound/interface/button1.wav" 
+				hide			speciemenu
+				hide			femalespecie
+				hide			malespecie
+				show			charmenu
+				setitemrect		character 145 146 300 340
+				setitemrect		background 0 0 640 480
+				hide			charmenubuttonhide
+				show			charmenubuttonshow
+				setfocus		next
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+// SPECIES BUTTON FOR CHAR MENU
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				species
+			group				charmenu
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				212 73 80 20
+			text				@MD_MENU_MAIN_CHARACTER2
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.19
+			textaligny			0
+			textstyle			3
+			textalignx			0
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				speciesbut
+			group				charmenu
+			text				" "
+			type				ITEM_TYPE_MULTI
+			style				WINDOW_STYLE_EMPTY
+			rect				202 71 240 24
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalignx			91
+			textstyle			3
+			textalign			ITEM_ALIGN_LEFT
+			backcolor			0 0 0 0
+			forecolor			1 1 1 0.9
+			feeder				16	//FEEDER_PLAYER_SPECIES
+			cvar				"ui_char_model"
+			cvarStrList			feeder
+			visible				1
+			
+			mouseEnter 
+			{ 
+				show			charmenu_speciesglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_speciesglow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				uiScript 		"characterchanged"
+				uiScript		"resetcharacterlistboxes"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+// COLOR TINT AREA
+//----------------------------------------------------------------------------------------------
+
+		//RGBPlayer
+		itemDef 
+		{
+			name				colorpresetbut
+			group				colour
+			text				@MD_MENU_MAIN_PRESETS
+			//descText			@MD_MENU_MAIN_PRESETS_DESC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				38 225 75 24
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			10
+			backcolor			0 0 0 0
+			forecolor			1 1 1 0.9
+			visible				0
+ 	  
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			tints2
+				show			colorbox
+				setitemcolor	colorrgbbut forecolor 0.5 0.5 0.5 0.9
+				setitemcolor	colorpresetbut forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef 
+		{
+			name				colorrgbbut
+			group				colour
+			text				@MD_MENU_MAIN_RGB
+			//descText			@MD_MENU_MAIN_RGB_DESC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				143 225 45 24
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			10
+			backcolor			0 0 0 0
+			forecolor			0.5 0.5 0.5 0.9
+			visible				0
+  	  
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			colorbox
+				show			tints2
+				setitemcolor	colorpresetbut forecolor 0.5 0.5 0.5 0.9
+				setitemcolor	colorrgbbut forecolor 1 1 1 0.9
+			}
+		}
+
+		itemDef 
+		{
+			name				charred
+			group				tints2
+			type				ITEM_TYPE_SLIDER
+			text				@MD_MENU_SABER_RED
+			cvarfloat			"ui_char_color_red" 50 0 255
+			rect				47 248 120 18
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			10
+			textaligny			0
+			font				5
+			textscale			0.19
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+			// appearance_slot		3
+			//descText			"Red Channel"
+			
+			action 
+			{ 
+				play			"sound/interface/button1"
+			}
+		}
+
+		itemDef 
+		{
+			name				chargreen
+			group				tints2
+			type				ITEM_TYPE_SLIDER
+			text				@MD_MENU_SABER_GREEN
+			cvarfloat			"ui_char_color_green" 50 0 255
+			rect				47 268 120 18
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			10
+			textaligny			0
+			font				5
+			textscale			0.19
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+			// appearance_slot		3
+			//descText			"Green Channel"
+
+			action 
+			{ 
+				play			"sound/interface/button1"
+			}
+		}
+
+		itemDef 
+		{
+			name				charblue
+			group				tints2
+			type				ITEM_TYPE_SLIDER
+			text				@MD_MENU_SABER_BLUE
+			cvarfloat			"ui_char_color_blue" 50 0 255
+			rect				47 288 120 18
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			10
+			textaligny			0
+			font				5
+			textscale			0.19
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				0
+			// appearance_slot		3
+			//descText			"Blue Channel"
+			
+			action 
+			{ 
+				play			"sound/interface/button1"
+			}
+		}
+
+		//RGB float values
+		itemDef 
+		{
+			name				charred_value
+			group				tints2
+			type 				ITEM_TYPE_EDITFIELD		
+			text				"R:"
+			cvar 				"ui_char_color_red"
+			maxchars 			10
+			maxPaintChars 		10 
+			rect 				185 246 34 18
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx 			0
+			textaligny 			0
+			font				5
+			textscale			0.19
+			textstyle			3
+			forecolor			1 1 1 0.9
+			outlinecolor 			1 .5 .5 .5
+			backcolor 			0 0 0 0
+			border 				1
+			bordercolor 			0 0 0 0
+			visible 			0
+			//descText			"Red Channel Float Value (0-255)"
+
+			action 
+			{ 
+				play			"sound/interface/button1"
+			}
+		}
+
+		itemDef 
+		{
+			name				chargreen_value
+			group				tints2
+			type 				ITEM_TYPE_EDITFIELD		
+			text				"G:"
+			cvar 				"ui_char_color_green"
+			maxchars 			10
+			maxPaintChars 		10 
+			rect 				185 266 34 18
+			textalign			ITEM_ALIGN_RIGHT		
+			textalignx 			0
+			textaligny 			0
+			font				5
+			textscale			0.19
+			textstyle			3
+			forecolor			1 1 1 0.9
+			outlinecolor 		1 .5 .5 .5
+			backcolor 			0 0 0 0
+			border 				1
+			bordercolor 			0 0 0 0
+			visible 			0
+			//descText			"Green Channel Float Value (0-255)"
+
+			action 
+			{ 
+				play			"sound/interface/button1"
+			}
+		}
+
+		itemDef 
+		{
+			name				charblue_value
+			group				tints2
+			type 				ITEM_TYPE_EDITFIELD		
+			text				"B:"
+			cvar 				"ui_char_color_blue"
+			maxchars 			10
+			maxPaintChars 		10 
+			rect 				185 286 34 18
+			textalign			ITEM_ALIGN_RIGHT		
+			textalignx 			0
+			textaligny 			0
+			font				5
+			textscale			0.19
+			textstyle			3
+			forecolor			1 1 1 0.9
+			outlinecolor 		1 .5 .5 .5
+			backcolor 			0 0 0 0
+			border 				1
+			bordercolor 		0 0 0 0
+			visible 			0
+			//descText			"Blue Channel Float Value (0-255)"
+
+			action 
+			{ 
+				play			"sound/interface/button1"
+			}
+		}
+
+		//RGBPlayer
+
+		itemDef
+		{
+			name				colorbox
+			group				colour
+			type				ITEM_TYPE_LISTBOX
+			style				WINDOW_STYLE_FILLED
+			//desctext			@MENUS_CHANGE_PLAYER_TINT
+			elementwidth		24
+			elementheight		24
+			elementtype			1 			//LISTBOX_IMAGE
+			feeder				20			//FEEDER_COLORCHOICES
+			horizontalscroll
+			border				1
+			bordersize			1
+			backcolor			.66 .66 1 0
+			bordercolor			.66 .66 1 0
+			rect				10 250 219 37
+			visible				0
+			action 
+			{
+				play			"sound/interface/choose_color.wav"
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	APPEARANCE TABS
+//----------------------------------------------------------------------------------------------
+
+		// HEAD BUTTON SHOW
+
+		itemDef 
+		{
+			name				headbut
+			group				charmenubuttonshow
+			text				@MENUS_HEAD
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				25 152 120 70
+			textalign			ITEM_ALIGN_RIGHT
+			font				5
+			textscale			0.19
+			textaligny			27
+			textstyle			3
+			textalignx			110
+			backcolor			0 0 0 0
+			forecolor			1 1 1 0.9
+			visible				1
+			 
+			mouseEnter 
+			{ 
+				show			charmenu_headglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_headglow
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			charmenu_colourglowaction
+				show			charmenu_headglowaction
+				show			charmenu_panelleft
+				show			heads
+				hide			colour
+				hide			tints2
+				setitemcolor	colorrgbbut forecolor 0.5 0.5 0.5 0.9
+				setitemcolor	colorpresetbut forecolor 1 1 1 0.9
+				transition2		character -204 114 900 1000 20 25
+				transition2		background -640 -260 1920 1440 20 25
+				hide			headbut
+				show			headbuthide
+				hide			charmenu_headglow
+				show			colourbut
+				hide			colourbuthide
+				setfocus		headbuthide
+			}
+		}
+
+		// HEAD BUTTON HIDE
+
+		itemDef 
+		{
+			name				headbuthide
+			group				charmenubuttonhide
+			text				@MENUS_HEAD
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				25 152 120 70
+			textalign			ITEM_ALIGN_RIGHT
+			font				5
+			textscale			0.19
+			textaligny			27
+			textstyle			3
+			textalignx			110
+			backcolor			0 0 0 0
+			forecolor			1 1 1 0.9
+			visible				0
+			
+			mouseEnter 
+			{ 
+				show			charmenu_headglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_headglow	
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			charmenu_colourglowaction
+				hide			charmenu_headglowaction
+				hide			charmenu_panelleft
+				hide			heads
+				hide			colour
+				hide			tints2
+				show			headbut
+				hide			headbuthide
+				setfocus		headbut
+			}
+		}
+
+		// COLOUR BUTTON SHOW
+		
+		itemDef
+		{
+			name				colourbut
+			group				charmenubuttonshow
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				25 319 120 70
+			text				@MENUS_COLOR
+			textalign			ITEM_ALIGN_RIGHT
+			font				5
+			textscale			0.19
+			textaligny			27
+			textstyle			3
+			textalignx			110
+			forecolor			1 1 1 0.9
+			visible 			1
+			
+			mouseEnter 
+			{ 
+				show			charmenu_colourglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_colourglow	
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			charmenu_headglowaction
+				show			charmenu_colourglowaction
+				show			charmenu_panelleft
+				hide			heads
+				show			colour
+				transition2		character 145 146 300 340 20 25
+				transition2		background 0 0 640 480 20 25
+				hide			colourbut
+				show			colourbuthide
+				hide			charmenu_colourglow
+				show			headbut
+				hide			headbuthide
+				setfocus		colourbuthide
+			}
+		}
+
+		// COLOUR BUTTON HIDE
+		
+		itemDef
+		{
+			name				colourbuthide
+			group				charmenubuttonhide
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				25 319 120 70
+			text				@MENUS_COLOR
+			textalign			ITEM_ALIGN_RIGHT
+			font				5
+			textscale			0.19
+			textaligny			27
+			textstyle			3
+			textalignx			110
+			forecolor			1 1 1 0.9
+			visible 			0
+			
+			mouseEnter 
+			{ 
+				show			charmenu_colourglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_colourglow	
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			charmenu_headglowaction
+				hide			charmenu_colourglowaction
+				hide			charmenu_panelleft
+				hide			heads
+				hide			colour
+				hide			tints2
+				show			colourbut
+				hide			colourbuthide
+				setitemcolor		colorrgbbut forecolor 0.5 0.5 0.5 0.9
+				setitemcolor		colorpresetbut forecolor 1 1 1 0.9
+				setfocus		colourbut
+			}
+		}
+
+		// TORSO BUTTON
+
+		itemDef 
+		{
+			name				torsobut
+			group				charmenubuttonshow
+			text				@MENUS_TORSO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				495 152 120 70
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.19
+			textaligny			27
+			textstyle			3
+			textalignx			10
+			backcolor			0 0 0 0
+			forecolor			1 1 1 0.9
+			visible				1
+  			
+			mouseEnter 
+			{ 
+				show			charmenu_torsoglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_torsoglow	
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			charmenu_legsglowaction
+				show			charmenu_torsoglowaction
+				show			charmenu_panelright
+				show			torso
+				hide			lower
+				transition2		character 145 146 300 340 20 25
+				transition2		background 0 0 640 480 20 25
+				hide			torsobut
+				show			torsobuthide
+				hide			charmenu_torsoglow
+				show			legsbut
+				hide			legsbuthide
+				setfocus		torsobuthide
+			}
+		}
+
+		// TORSO BUTTON HIDE
+
+		itemDef 
+		{
+			name				torsobuthide
+			group				charmenubuttonhide
+			text				@MENUS_TORSO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				495 152 120 70
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.19
+			textaligny			27
+			textstyle			3
+			textalignx			10
+			backcolor			0 0 0 0
+			forecolor			1 1 1 0.9
+			visible				0
+  			
+			mouseEnter 
+			{ 
+				show			charmenu_torsoglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_torsoglow	
+			}
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			charmenu_legsglowaction
+				hide			charmenu_torsoglowaction
+				hide			charmenu_panelright
+				hide			torso
+				hide			lower
+				show			torsobut
+				hide			torsobuthide
+				setfocus		torsobut
+			}
+		}
+
+		// LEGS BUTTON
+
+		itemDef 
+		{
+			name				legsbut
+			group				charmenubuttonshow
+			text				@MENUS_LEGS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				495 319 120 70
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.19
+			textaligny			27
+			textstyle			3
+			textalignx			10
+			backcolor			0 0 0 0
+			forecolor			1 1 1 0.9
+			visible				1
+			  
+			mouseEnter 
+			{ 
+				show			charmenu_legsglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_legsglow	
+			}  
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			charmenu_torsoglowaction
+				show			charmenu_legsglowaction
+				show			charmenu_panelright
+				show			lower
+				hide			torso
+				transition2		character 145 146 300 340 20 25
+				transition2		background 0 0 640 480 20 25
+				hide			legsbut
+				show			legsbuthide
+				hide			charmenu_legsglow	
+				show			torsobut
+				hide			torsobuthide
+				setfocus		legsbuthide
+			}
+		}
+
+		// LEGS BUTTON HIDE
+
+		itemDef 
+		{
+			name				legsbuthide
+			group				charmenubuttonhide
+			text				@MENUS_LEGS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				495 319 120 70
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.19
+			textaligny			27
+			textstyle			3
+			textalignx			10
+			backcolor			0 0 0 0
+			forecolor			1 1 1 0.9
+			visible				0
+			  
+			mouseEnter 
+			{ 
+				show			charmenu_legsglow
+			}
+			mouseExit 
+			{ 
+				hide			charmenu_legsglow	
+			}  
+			action 
+			{
+				play			"sound/interface/button1.wav"
+				hide			charmenu_torsoglowaction
+				hide			charmenu_legsglowaction
+				hide			charmenu_panelright
+				hide			lower
+				hide			torso
+				show			legsbut
+				hide			legsbuthide
+				setfocus		legsbut
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	APPEARANCE LISTBOXES
+//----------------------------------------------------------------------------------------------
+		
+		itemDef
+		{
+			name				headlistbox
+			group				heads
+			type				ITEM_TYPE_LISTBOX
+			style				WINDOW_STYLE_FILLED
+			//descText			@MENUS_SELECT_HEAD
+			elementwidth		72
+			elementheight		72
+			elementtype			1 			//LISTBOX_IMAGE
+			feeder				17 			//FEEDER_PLAYER_SKIN_HEAD
+			horizontalscroll
+			border				1
+			bordersize			1
+			backcolor			.66 .66 1 0
+			bordercolor			.66 .66 1 0
+			forecolor			-1			//use playercolor
+			rect				10 225 219 93
+			visible				0
+			action
+			{
+				play			"sound/interface/choose_head.wav"
+				uiScript 		"char_skin"
+			}
+		}
+
+		itemDef
+		{
+			name				torsolistbox
+			group				torso
+			type				ITEM_TYPE_LISTBOX
+			style				WINDOW_STYLE_FILLED
+			elementwidth		72
+			elementheight		72
+			elementtype			1 			//LISTBOX_IMAGE
+			feeder				18 			//FEEDER_PLAYER_SKIN_TORSO
+			horizontalscroll
+			border				1
+			bordersize			1
+			backcolor			.66 .66 1 0
+			bordercolor			.66 .66 1 0
+			forecolor			-1			//use playercolor
+			rect				410 225 219 93
+			visible				0
+			action
+			{
+				play			"sound/interface/choose_torso.wav"
+				uiScript 		"char_skin"
+			}
+		}
+
+		itemDef
+		{
+			name				lowerlistbox
+			group				lower
+			type				ITEM_TYPE_LISTBOX
+			style				WINDOW_STYLE_FILLED
+			elementwidth			72
+			elementheight			72
+			elementtype			1 			//LISTBOX_IMAGE
+			feeder				19 			//FEEDER_PLAYER_SKIN_LEGS
+			horizontalscroll
+			border				1
+			bordersize			1
+			backcolor			.66 .66 1 0
+			bordercolor			.66 .66 1 0
+			forecolor			-1			//use playercolor
+			rect				410 225 219 93
+			visible				0
+			action
+			{
+				play			"sound/interface/choose_head.wav"
+				uiScript 		"char_skin"
+			}
+		}
+
+		itemDef
+		{
+			name				character_rotate
+			group				charmenu
+			type 				ITEM_TYPE_SLIDER_ROTATE
+			rect				251 170 138 250
+			cvar				ui_char_model_angle
+			isCharacter			1
+			visible				1			
+		}
+
+//----------------------------------------------------------------------------------------------
+//	LOWER MAIN MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+		
+		// BACK button in lower left corner
+		itemDef 
+		{
+			name				backbutton
+			group				charmenu
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 433 130 30
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				0
+ 	  
+			action 
+			{
+				uiScript 		"updatecharcvars"
+				play			"sound/interface/esc.wav" 
+				setitemrect		character 98 79 700 800
+				setitemrect		background 0 0 640 480
+				hide			heads
+				hide			colour
+				hide			tints2
+				hide			torso
+				hide			lower
+				hide			glow
+				hide			charmenubuttonhide
+				hide			charmenubuttonshow
+				hide			charmenu
+				show			speciemenu
+				hide			femalespecie
+				show			malespecie
+				setfocus		speciebackbutton
+			}
+		}
+
+		itemDef 
+		{
+			name				next
+			group				charmenu
+			text				@MENUS_NEXT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				489 433 130 30
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				0
+	      	action 
+			{ 
+				play			"sound/interface/button1.wav" 
+				close			all 
+				uiScript 		"updatecharcvars"
+				setcvar			saber_menu  0
+				exec				"set ui_saber_type single"
+				open			saberMenu 
+			}
+		}
+	}
+}

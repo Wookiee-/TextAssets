@@ -1,0 +1,418 @@
+//-----------------------------------------------------------------------
+// NEWGAME MENU FOR MD
+//
+//	Called from all other menus other than main menu. This has no transition in it.
+//
+//-----------------------------------------------------------------------
+{						   
+	menuDef 
+	{
+		name					"creditsMenu"
+		fullScreen				1						// MENU_TRUE				
+		rect					0 0 640 480					// Size and position of the menu
+		visible					1						// Visible on open
+		focusColor				1 1 1 1			// Focus color for text and items
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 .8
+		descAlignment				ITEM_ALIGN_CENTER		
+				
+		onOpen
+		{
+		}
+
+		onESC 
+		{ 
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background_credits
+			group				creditsvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/creditsbk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				151 11 341.5 115.5
+			background			"gfx/menus/main/MDLogo_Team"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo_yt
+			group				creditsvideo
+			style				WINDOW_STYLE_SHADER
+			rect				3 449 75 25
+			background			"gfx/menus/main/logo_youtube"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo_discord
+			group				creditsvideo
+			style				WINDOW_STYLE_SHADER
+			rect				70 449 83 27
+			background			"gfx/menus/main/logo_discord"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo_jkhub
+			group				creditsvideo
+			style				WINDOW_STYLE_SHADER
+			rect				148 449 38 25
+			background			"gfx/menus/main/logo_jkhub"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo_moddb
+			group				creditsvideo
+			style				WINDOW_STYLE_SHADER
+			rect				173 449 75 25
+			background			"gfx/menus/main/logo_moddb"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	CREDITS + CHANGELOG
+//----------------------------------------------------------------------------------------------
+
+
+		itemDef 
+		{
+			name				creditsTeamText
+			group				credits
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				0 125 640 305
+			text				@MD_MENU_CREDITS_MDTEAM
+			font				5
+			textscale			0.12
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			1
+			textalignx			0
+			forecolor			1 1 1 0.9
+			visible				1
+			lineHeight			10	
+			autowrapped
+		}
+
+		
+
+		itemDef 
+		{
+			name				changelogText
+			group				changelog
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				0 125 640 305
+			text				@MD_MENU_CREDITS_CHANGELOG
+			font				5
+			textscale			0.12
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			1
+			textalignx			0
+			forecolor			1 1 1 0.9
+			visible				0
+			lineHeight			10	
+			autowrapped
+		}
+
+		itemDef 
+		{
+			name				saberblockingText
+			group				saberblockingaddon
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				0 125 640 305
+			text				@MD_MENU_CREDITS_SABERBLOCKINGADDON
+			font				5
+			textscale			0.12
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			1
+			textalignx			0
+			forecolor			1 1 1 0.9
+			visible				0
+			lineHeight			10	
+			autowrapped
+		}
+
+		// NEXT buttons
+
+		// Big next button "CHANGELOG"
+		itemDef 
+		{
+			name				creditsbutton
+			group				credits
+			text				@MD_MENU_MAIN_VIEW_CHANGELOG
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				490 442 100 30 
+			font				5
+			textscale			0.16
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			45
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			g_update7firststartup
+			showcvar	
+			{
+				"0"
+			}
+
+			action 
+			{ 						
+				play			"sound/interface/button1.wav" 
+				hide			credits
+				show			changelog
+				setfocus		changelogbutton
+			}
+		}
+
+		// Big next button "CHANGELOG" FIRST STARTUP
+		itemDef 
+		{
+			name				creditsbutton
+			group				credits
+			text				@MD_MENU_MAIN_NEXT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				490 442 100 30 
+			font				5
+			textscale			0.16
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			45
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			g_update7firststartup
+			showcvar	
+			{
+				"1"
+			}
+
+			action 
+			{ 						
+				play			"sound/interface/button1.wav" 
+				hide			credits
+				show			changelog
+				setfocus		changelogbutton1
+			}
+		}
+
+		// Big next button "SABER BLOCKING ADDON"
+		itemDef 
+		{
+			name				changelogbutton
+			group				changelog
+			text				@MD_MENU_MAIN_VIEW_COMBAT_ADDON
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				490 442 100 30
+			font				5
+			textscale			0.16
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			45
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				0
+			cvartest			g_update7firststartup
+			showcvar	
+			{
+				"0"
+			}
+
+			action 
+			{ 						
+				play			"sound/interface/button1.wav" 
+				hide			changelog
+				show			saberblockingaddon
+				setfocus		saberblockingaddonbutton
+			}
+		}
+
+		// Big next button "SABER BLOCKING ADDON" FIRST STARTUP
+		itemDef 
+		{
+			name				changelogbutton1
+			group				changelog
+			text				@MD_MENU_MAIN_NEXT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				490 442 100 30
+			font				5
+			textscale			0.16
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			45
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				0
+			cvartest			g_update7firststartup
+			showcvar	
+			{
+				"1"
+			}
+
+			action 
+			{ 						
+				play			"sound/interface/button1.wav" 
+				hide			changelog
+				show			saberblockingaddon
+				setfocus		saberblockingaddonbutton
+				exec			"seta g_update7firststartup 0"
+				hide			saberblockingaddonbutton
+				hide			backbutton
+				show			closebutton
+				setfocus		closebutton
+			}
+		}
+
+		// Big next button "CREDITS"
+		itemDef 
+		{
+			name				saberblockingaddonbutton
+			group				saberblockingaddon
+			text				@MD_MENU_MAIN_VIEW_CREDITS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				490 442 100 30
+			font				5
+			textscale			0.16
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			45
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				0
+
+			action 
+			{ 						
+				play			"sound/interface/button1.wav" 
+				hide			saberblockingaddon
+				show			creditsbutton
+				show			creditsTeamText	
+				setfocus		creditsbutton
+				setitemcolor	creditsTeamText forecolor 1 1 1 0.9
+			}
+		}
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				none
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				275 442 100 30  
+			font				5
+			textscale			0.16
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			45
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			g_update7firststartup
+			showcvar	
+			{
+				"0"
+			}
+
+			action 
+			{ 	
+				exec			"soundstop"
+				exec			"menumusic" ;
+				play			"sound/interface/esc.wav" 
+				close			all ; 
+				open			main2Menu ;
+			}
+		}
+
+		// Big button "CLOSE" FIRST STARTUP
+		itemDef 
+		{
+			name				closebutton
+			group				none
+			text				@MD_MENU_MAIN_CLOSE
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				275 442 100 30  
+			font				5
+			textscale			0.16
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			45
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				0
+
+			action 
+			{ 	
+				exec			"soundstop"
+				exec			"music music/mainMenu/main/md_menu"
+				play			"sound/interface/esc.wav" 
+				show			saberblockingaddonbutton
+				show			backbutton
+				hide			closebutton
+				close			all ; 
+				open			main2Menu ;
+			}
+		}
+
+		itemDef 
+		{
+			name				FollowText
+			group				none
+			type				ITEM_TYPE_TEXT
+			rect				13 435 100 20
+			text				@MD_MENU_MAIN_FOLLOW_THE_MOD
+			font				5
+			textscale			0.08
+			textaligny			0
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			1
+			textalignx			0
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+	}
+}
+

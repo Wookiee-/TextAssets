@@ -1,0 +1,1215 @@
+//-----------------------------------------------------------------------
+// NEWGAME MENU FOR MD
+//
+//	Called from all other menus other than main menu. This has no transition in it.
+//
+//-----------------------------------------------------------------------
+{						   
+	menuDef 
+	{
+		name					"mdnewgameMenu"
+		fullScreen				1						// MENU_TRUE				
+		rect					0 0 640 480					// Size and position of the menu
+		visible					1						// Visible on open
+		focusColor				1 1 1 1			// Focus color for text and items
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 .8
+		descAlignment				ITEM_ALIGN_CENTER		
+		
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.05				// amount to adjust alpha per cycle	
+
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav" 
+			close				all ; 
+			open				main2Menu ;
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+	
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+
+		itemDef 
+		{
+			name				background_mainvideo
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/mdmainmenuvideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_arena1
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"levelshots/bg_arena1"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_arena2
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"levelshots/bg_votj"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_arena3
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"levelshots/bg_kor"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_arena4
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"levelshots/bg_jt_training"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_arena5
+			group				page1
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"levelshots/bg_supremacy"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef //Stop white flash when video loads
+		{
+			name				background_blackfade
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/newgamebk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				newgamepanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 174 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				missionspanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 202.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				duelmapspanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 230 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				challengepanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 258 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				arenapanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 285.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				extraspanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 313.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				totgpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 346.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				jk2panel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 374.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				jkapanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 403 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				quitpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 437 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				newarenapanel
+			group				arenamenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 174 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				arena1panel
+			group				arenamenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 202.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				arena2panel
+			group				arenamenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 230 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				arena3panel
+			group				arenamenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 258 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				arena4panel
+			group				arenamenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 285.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				arena5panel
+			group				arenamenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 313.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				arenabackpanel
+			group				arenamenu
+			style				WINDOW_STYLE_SHADER
+			rect				6 341.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Panels
+		
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				5 51 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				enterarenapanel
+			group				confirmenter
+			style				WINDOW_STYLE_SHADER
+			rect				6 202.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				yespanel
+			group				confirmenter
+			style				WINDOW_STYLE_SHADER
+			rect				6 230 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				nopanel
+			group				confirmenter
+			style				WINDOW_STYLE_SHADER
+			rect				6 258 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 230 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 285 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	NEW GAME MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+	
+		// Text "Choose Your Destiny..."
+		itemDef 
+		{
+			name				newgameText
+			group				newgamemenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 175 240 24
+			text				@MD_MENU_MAIN_CHOOSE_YOUR_DESTINY
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+			
+		// Big button "MISSIONS"
+		itemDef 
+		{
+			name				missionsbutton
+			group				newgamemenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 203 240 24
+			text				@MD_MENU_MAIN_MISSIONS
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 201.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/button1.wav" ; 
+				exec			"music music/episodeMenu/EP4VideoMusic"
+				close			all ; 
+				open			episodeMenu
+				setitemcolor	background_blackfade backcolor 1 1 1 1	
+				fadeout			background_blackfade
+			}
+		}
+
+		// Big button "DUEL MAPS"
+		itemDef 
+		{
+			name				duelmapsbutton
+			group				newgamemenu
+			text				@MD_MENU_MAIN_DUEL_MAPS
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 231 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 228.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+                exec            "seta  com_outcast 0" 
+				close			all ; 
+				open			duelmapsMenu 
+				setitemcolor	background_blackfade backcolor 1 1 1 1	
+				fadeout			background_blackfade
+			}
+		}
+
+		// Big button "CHALLENGE"
+		itemDef 
+		{
+			name				chalbutton
+			group				newgamemenu
+			text				@MD_MENU_MAIN_CHALLENGE
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 259 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 256.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+                exec			"seta  com_outcast 0" 
+				setcvar			g_spskill 1
+				close			all ; 
+				open			challengecharactermenu
+				setitemcolor	background_blackfade backcolor 1 1 1 1	
+				fadeout			background_blackfade
+			}
+		}
+
+		// Big button "ARENA"
+		itemDef 
+		{
+			name				arenabutton
+			group				newgamemenu
+			text				@MD_MENU_MAIN_ARENA
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 286 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 284.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+                exec            "seta  com_outcast 0"  
+				setcvar			g_spskill 1
+				hide			newgamemenu
+				hide			mainpanelgold
+				show			arenamenu
+			}
+		}
+
+		// Big button "EXTRAS"
+		itemDef 
+		{
+			name				extrasbutton
+			group				newgamemenu
+			text				@MD_MENU_MAIN_EXTRAS
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 314 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 312.25 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+                exec            "seta  com_outcast 0" 
+				setcvar			g_spskill 1
+				hide			newgamemenu
+				hide			mainpanelgold
+				show			confirmenter
+				show			confirmextras
+			}
+		}
+
+		// Big button "JEDI KNIGHT: DARK FORCES"
+		itemDef 
+		{
+			name				totgbutton
+			group				newgamemenu
+			text				@MD_MENU_MAIN_TALES_OF_THE_GALAXY
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 347 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 345.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec            "seta  com_outcast 0" 
+				close			all ; 
+				open			totgMenu
+			}
+		}
+
+		// Big button "JEDI KNIGHT: JEDI OUTCAST"
+		itemDef 
+		{
+			name				jkobutton
+			group				newgamemenu
+			text				@MD_MENU_MAIN_JEDI_KNIGHT_JEDI_OUTCAST
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 375 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 373.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			newgamejkoMenu
+			}
+		}
+
+		// Big button "JEDI KNIGHT: JEDI ACADEMY"
+		itemDef 
+		{
+			name				jkabutton
+			group				newgamemenu
+			text				@MD_MENU_MAIN_JEDI_KNIGHT_JEDI_ACADEMY
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 404 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 402 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+                exec            "seta  com_outcast 0" 
+				close			all ; 
+				open			newgameMenu 
+			}
+		}
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				newgamemenu
+			text				@MD_MENU_MAIN_BACK
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 437 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+ 			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	15.75 435.4 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  ; 
+                exec            "seta  com_outcast 0" 
+				close			all ;
+				open			main2menu
+			}
+		}
+		
+//----------------------------------------------------------------------------------------------
+//	CHALLENGE ARENA SELECTION
+//----------------------------------------------------------------------------------------------
+
+// Text "Choose Your Destiny..."
+		itemDef 
+		{
+			name				newgameText
+			group				arenamenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 175 240 24
+			text				@MD_MENU_MAIN_CHALLENGE_ARENAS
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+			decoration
+		}
+			
+		// Arena Level 1-1B-1C
+		itemDef 
+		{
+			name				arenalvl1button
+			group				arenamenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 203 240 24
+			text				@MD_MENU_MAIN_ARENA1
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_arena1 200 0 640 480
+				fadein	 		background_arena1
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 201.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout			background_arena1
+			}
+
+			action 
+			{ 
+				// Reset SP character
+				//uiScript 		"getcharcvars"
+				/setcvar			"ui_char_model" "jedi_hm"
+				//setcvar 		"g_char_model" "jedi_hm"
+				//exec	 		"set g_char_model jedi_hm"
+				//uiScript 		"getcharcvars"
+				//uiScript 		"updatecharcvars"
+
+				play			"sound/interface/button1.wav" ; 
+				setcvar			g_spskill 1
+				exec			"devmap md_arena1"
+			}
+		}
+
+		// Arena Level 2
+		itemDef 
+		{
+			name				arenalvl2button
+			group				arenamenu
+			text				@MD_MENU_MAIN_ARENA2
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 231 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_arena2 200 0 640 480
+				fadein	 		background_arena2
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 228.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout			background_arena2
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			g_spskill 1
+				exec			"devmap md_ladder_votj"
+			}
+		}
+
+		// Arena Level 3
+		itemDef 
+		{
+			name				arenalvl3button
+			group				arenamenu
+			text				@MD_MENU_MAIN_ARENA3
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 259 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_arena3 200 0 640 480
+				fadein	 		background_arena3
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 256.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout			background_arena3
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			g_spskill 1
+				exec			"devmap md_ladder_kor"
+			}
+		}
+
+		// Arena Level 4
+		itemDef 
+		{
+			name				arenalvl4button
+			group				arenamenu
+			text				@MD_MENU_MAIN_ARENA4
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 286 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_arena4 200 0 640 480
+				fadein	 		background_arena4
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 284.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout			background_arena4
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			g_spskill 1
+				exec			"devmap md_ladder_jt"
+			}
+		}
+
+		// Arena Level 5
+		itemDef 
+		{
+			name				arenalvl5button
+			group				arenamenu
+			text				@MD_MENU_MAIN_ARENA5
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 314 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_arena5 200 0 640 480
+				fadein	 		background_arena5
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 312.25 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+				fadeout			background_arena5
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			g_spskill 1
+				exec			"devmap md_ladder_supremacy"
+			}
+		}
+
+		// Big button "EXTRAS"
+		itemDef 
+		{
+			name				backbutton_arena
+			group				arenamenu
+			text				@MD_MENU_MAIN_BACK
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				56 342 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	15.75 340 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  ; 
+				hide			confirmenter
+				hide			confirmarena
+				hide			confirmextras
+				hide			arenamenu
+				hide			mainpanelgold
+				show			newgamemenu
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	CONFIRM ENTER BUTTONS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name 				confirmExtras
+			group				confirmextras
+			text                @MD_MENU_MAIN_ENTER_EXTRAS_ARENA
+			rect 				56 203 240 24
+			font				5
+			textscale 			0.19
+			textalign 			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx 			119
+			textaligny	 		2
+			forecolor			1 1 1 0.9
+			visible 			0
+			decoration
+		}
+
+		itemDef 
+		{
+			name 				confirmArena
+			group				confirmarena
+			text                @MD_MENU_MAIN_ENTER_CHALLENGE_ARENA
+			rect 				56 203 240 24
+			font				5
+			textscale 			0.19
+			textalign 			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx 			119
+			textaligny	 		2
+			forecolor			1 1 1 0.9
+			visible 			0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				extras_yes
+			group				confirmextras
+			text				@MD_MENU_MAIN_YES
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 231 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 228.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+		    action 
+			{ 
+				play			"sound/interface/button1.wav" ;  
+				setcvar			g_spskill 1
+				exec 			"devmap md_extra"			
+			} 	  
+		}
+
+		itemDef 
+		{
+			name				arena_yes
+			group				confirmarena
+			text				@MD_MENU_MAIN_YES
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 231 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	15.1 228.7 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+		    action 
+			{ 
+				// Reset SP character
+				//uiScript 		"getcharcvars"
+				//setcvar			"ui_char_model" "jedi_hm"
+				//setcvar 		"g_char_model" "jedi_hm"
+				//exec	 		"set g_char_model jedi_hm"
+				//uiScript 		"getcharcvars"
+				//uiScript 		"updatecharcvars"
+
+				play			"sound/interface/button1.wav" ; 
+				setcvar			g_spskill 1
+				exec			"devmap md_arena1"		
+			} 	  
+		}
+
+		itemDef 
+		{
+			name				extrasarena_no
+			group				confirmenter
+			text				@MD_MENU_MAIN_NO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				56 258 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	15.75 256.25 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  ; 
+				hide			confirmenter
+				hide			confirmarena
+				hide			confirmextras
+				hide			mainpanelgold
+				show			newgamemenu
+			} 	  
+		}
+
+	}
+}
+

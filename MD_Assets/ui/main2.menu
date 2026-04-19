@@ -1,0 +1,376 @@
+//----------------------------------------------------------------------------------------------
+//
+// MAIN MENU - called when game is first started
+//
+//----------------------------------------------------------------------------------------------
+						   
+	menuDef 
+	{
+		name					"main2Menu"
+		fullScreen					1		
+		rect					0 0 640 480	
+		visible					1
+		focusColor					1 1 1 1
+		descX					320
+		descY					426
+		descScale					1
+		descColor					1 .682 0 .8
+		descAlignment				ITEM_ALIGN_CENTER	
+
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.05				// amount to adjust alpha per cycle	
+
+		onOpen 
+		{
+            exec                "seta  com_outcast 0"
+		}							
+		onESC 
+		{ 
+			play				"sound/interface/menuroam.wav" ; 
+			play				"sound/interface/menuquit.mp3" 
+            exec                "seta  com_outcast 0"
+			close				mainMenu ; 
+			open				quitMenu ;
+		}
+
+//----------------------------------------------------------------------------------------------
+//
+//	MENU BACKGROUND
+//
+//----------------------------------------------------------------------------------------------
+
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+	// Main Menu
+
+		itemDef 
+		{
+			name				background_mainvideo
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/mdmainmenuvideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				background_blackfade
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_mainmenubk
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/mainmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Menu panels
+		
+		itemDef 
+		{
+			name				newpanel
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				151 185 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				loadpanel
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				151 212 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				settingspanel
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				151 240 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				exitpanel
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				151 267.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				151 51 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 203 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 230 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 285 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MAIN MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+
+		// Big button "NEW GAME"
+		itemDef 
+		{
+			name				newgamebutton
+			group				mainmenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				201 186 240 24
+			text				@MD_MENU_MAIN_NEW_GAME
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldTop	161.7 183.7 320 30.25
+				show			background_MDMenuPanelGoldTop
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldTop
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ;
+				open			mdnewgameMenu
+			}
+		}
+
+		// Big button "LOAD GAME"
+		itemDef 
+		{
+			name				loadbutton
+			group				mainmenu
+			text				@MD_MENU_MAIN_LOAD_GAME
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				201 213 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	160.7 211 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" 
+				close			all ;
+				open			loadgameMenu
+			}
+		}
+
+		// Big button "SETTINGS"
+		itemDef 
+		{
+			name				setupbutton
+			group				mainmenu
+			text				@MD_MENU_MAIN_SETTINGS
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				201 241 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	160.7 238.8 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" 
+				close			all ; 
+				open			setupMenu
+				setitemcolor	background_blackfade backcolor 1 1 1 1
+				fadeout			background_blackfade
+			}
+		}
+
+		// Big button "EXIT"
+		itemDef 
+		{
+			name				exitgamebutton
+			group				mainmenu
+			text				@MD_MENU_MAIN_EXIT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				201 268 240 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+ 
+ 			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	160.8 266 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/menuquit.mp3" 
+				close			all ; 
+				open			quitMenu 
+			}
+		}
+
+		// Big button "CREDITS"
+		itemDef 
+		{
+			name				creditsbutton
+			group				mainmenu
+			background			"gfx/menus/main/mdicon"					
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				310 455 18 18
+			backcolor			1 1 1 0.5
+			visible				1
+ 
+ 			mouseEnter
+			{
+				setitemcolor	creditsbutton backcolor 1 1 1 0.8
+			}
+
+			mouseExit
+			{
+				setitemcolor	creditsbutton backcolor 1 1 1 0.5
+			}
+			action 
+			{ 
+				exec			"soundstop"
+				exec			"music music/musicMenu/VictoryCelebration"
+				play			"sound/interface/button1.wav" 
+				setitemcolor	creditsbutton backcolor 1 1 1 0.5
+				close			all ; 
+				open			creditsmenu 
+			}
+		}
+
+	}
+}

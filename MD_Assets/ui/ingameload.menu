@@ -1,0 +1,871 @@
+//----------------------------------------------------------------------------------------------
+// INGAME MAIN MENU
+//
+//	Allows user to load from saved games. Called from in game main menu.
+//----------------------------------------------------------------------------------------------
+{
+	menuDef 
+	{
+		// ***IMPORTANT*** This name can not change, code looks for it.
+		// If it must change, change it in UI_AdjustSaveGameListBox() also
+		//
+		name					"ingameloadMenu"
+		fullScreen				1							// MENU_TRUE				
+		rect					0 0 640 480						// Size and position of the menu
+		visible					1							// Visible on open
+		focusColor				1 1 1 1						// Focus color for text and items
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 0
+		descAlignment				ITEM_ALIGN_CENTER		
+		disablecolor			.7 .7 .7 1
+
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				50						// how often fade happens in milliseconds
+		fadeAmount				50				// amount to adjust alpha per cycle
+
+		onOpen 
+		{
+			uiScript			ReadSaveDirectory
+			hide				background_MDIngameMenuPanelGold
+			hide				background_MDMenuPanelGoldMiddle
+		}
+
+		onESC 
+		{ 
+				play			"sound/interface/esc.wav" 					
+				close				all
+				open				ingamemainmenu				
+		}
+												
+//----------------------------------------------------------------------------------------------
+//	MENU BACKGROUND
+//----------------------------------------------------------------------------------------------
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}	
+
+		itemDef 
+		{
+			name				background_mainvideo
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/mdmainmenuvideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/loadmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 51 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				1 166 352 261
+			background			"gfx/menus/main/settingspanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				loadpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				318 347.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				deletepanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				318 375.25 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				deletepanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				318 403 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Panels
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				328.6 374 320 30.75
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				328 401.5 320 30.75
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 456 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+
+  			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"
+				close			all ; 
+				open			ingamemainMenu 
+			}
+		}
+
+		// LOAD button
+        itemDef
+		{
+			name				load
+			group				pause
+			type				ITEM_TYPE_BUTTON
+			rect				170 456 101 24
+			text				@MD_MENU_MAIN_LOAD
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 216 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 216 468 0 0 263 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 216 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 263 465 22 12 216 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action
+			{
+				play			"sound/interface/button1.wav" ; 
+				close			all
+			    open			ingameloadMenu
+			}
+		}
+
+		// Big button "SETTINGS"
+		itemDef 
+		{
+			name				settingmenu
+			group				pause
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				270 456 101 24
+			text				@MD_MENU_MAIN_SETTINGS
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+	  		cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 316 468 0 0 270 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 316 468 0 0 363 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 270 465 22 12 316 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 363 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			ingamesetupmenu
+			}
+		}
+
+		// SAVE button
+        itemDef
+		{
+			name				save
+			group				pause
+			type				ITEM_TYPE_BUTTON
+			text				@MD_MENU_MAIN_SAVE
+			rect				370 456 101 24 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	 
+
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		4background_MDIngameMenuPanelGolddivider1 416 468 0 0 370 465 22 12 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 416 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		4background_MDIngameMenuPanelGolddivider1 370 465 22 12 416 468 0 0 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 463 465 22 12 416 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action
+			{
+				play			"sound/interface/button1.wav" ; 
+				close			all
+				open			ingamesaveMenu
+			}
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 456 101 24
+			text				@MENUS_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible			1
+  			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"0"
+			}	  
+
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				uiScript		closeingame			// Close menu				
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	OTHER MAIN MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+		// BACK button in lower left corner
+		/*
+		// Only displayed when the mission failure screen is up		
+		itemDef 
+		{
+			name				backbutton
+			group				exit
+			text				@MD_MENU_MAIN_BACK
+			descText			@MENUS_BACKTOMAIN
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 430 130 40  
+			font				5
+			textscale			0.6
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			ui_missionfailed
+			showcvar	
+			{
+				"1"
+			}	  	  
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 					
+				close			all ; 
+				open			missionfailed_menu 
+			}
+		}
+		*/
+
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				270 456 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			2
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			loadgameafterdeath
+			showcvar	
+			{
+				"1"
+			}	 
+
+  			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 316 468 0 0 270 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 316 468 0 0 363 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 270 465 22 12 316 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 363 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"
+				close			all ; 
+				open			missionfailed_menu 
+			}
+		}
+//----------------------------------------------------------------------------------------------
+//   LOAD GAME MENU specific stuff
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			// ***IMPORTANT*** This name can not change, code looks for it.
+			// If it must change, change it in UI_AdjustSaveGameListBox() also
+			//
+			name				loadgamelist
+			group				loadscreen
+			rect				18 180 315 232
+			type				ITEM_TYPE_LISTBOX
+			style				WINDOW_STYLE_FILLED
+			elementwidth			120
+			elementheight			16
+			font				5
+			textaligny			8 
+			textscale			0.16
+			bordercolor			0 0 .8 0
+			forecolor			.7 .7 .7 1
+			
+			
+			backcolor			0 0 .5 0
+			outlinecolor		1 .682 0 0
+			elementtype			LISTBOX_TEXT
+			feeder				FEEDER_SAVEGAMES
+			notselectable
+			visible				1
+			columns				2 	2 55 140   145 0 175		//#of col., x loc. of 1st column, 2 number doesn't seem to do anything, third is width of column
+
+			doubleclick
+			{
+				play			sound/interface/button1.wav
+				uiScript		loadgame
+			}
+			action 
+			{
+				play			sound/interface/sub_select
+			}
+		}
+
+		itemDef 
+		{
+			name				loadgamepic
+			group				loadscreen
+			style				WINDOW_STYLE_EMPTY	
+			ownerdraw			236					//UI_ALLMAPS_SELECTION
+			//font				5
+			//textscale			0.19
+			forecolor			1 1 1 1		
+			rect				368 165 238 179
+			border				1
+			bordercolor			0 0 .8 0
+			visible				1
+			decoration
+		}
+
+		// loadgame button
+
+		itemDef 
+		{
+			name				loadgameaction
+			group				actionbutton
+			text				@MENUS_LOAD_GAME
+			descText			@MENUS_LOAD_CHOSEN_GAME
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				369 348 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			cvarTest			ui_SelectionOK
+			enableCvar			{ "1" }
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	327.7 346.4 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			sound/interface/button1.wav ;
+				hide			background_MDMenuPanelGoldMiddle
+				uiScript		loadgame
+			}
+		}
+
+		// deletegame button
+
+		itemDef 
+		{
+			name				deletegamebutton
+			group				actionbutton
+			text				@MENUS_DELETE_GAME
+			descText			@MENUS_DELETE_CHOSEN_GAME
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				369 376 240 24 
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			cvarTest			ui_SelectionOK
+			enableCvar			{ "1" }
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	327.7 374 320 30.75
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action
+			{ 
+				play			sound/interface/button1.wav ;
+				uiScript		deletegame
+			}
+		}
+
+		
+		// resumegame button
+
+		itemDef 
+		{
+			name				resumeautobutton
+			group				actionbutton
+			text				@MENUS_RESUME_MISSION
+			descText			@MENUS_RESUME_LAST_MISSION_ENTERED
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				369 404 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1					// This button isn't used when not in game.
+			cvarTest			ui_ResumeOK
+			enableCvar			{ "1" }
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	328.2 401.5 320 30.75
+				show			background_MDMenuPanelGoldBottom
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action
+			{ 
+				play			"sound/interface/button1.wav" ;
+				hide			background_MDMenuPanelGoldBottom
+				uiScript		loadAuto
+			}
+		}
+
+		itemDef 
+		{
+			name				loadpanelbox
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				329 135 320 240
+			background			"gfx/menus/main/loadpanelbox"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

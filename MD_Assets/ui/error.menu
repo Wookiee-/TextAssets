@@ -1,0 +1,117 @@
+//--------------------------------------------------------------
+//
+// ERROR MENU
+//
+//	Displays error messages
+//
+//--------------------------------------------------------------
+{
+	menuDef 
+	{
+		name					"error_popmenu"
+	   	visible					0
+	   	fullscreen				1
+	   	rect					100 120 440 320
+		focusColor				1 1 1 1					   	
+		style					WINDOW_STYLE_FILLED
+	   	border					1
+		popup
+		outOfBoundsClick
+
+		onClose 
+		{ 
+			uiScript			clearError 
+		}
+		
+		onOpen 
+		{ 
+			exec			"soundstop"
+			exec			"menumusic"
+			setfocus		exit
+		}
+		
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav" 	
+			close				error_popmenu ; 
+			open				mainMenu 
+		}
+	
+		itemDef 
+		{
+			name				warn_background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				100 120 440 300
+			background			"gfx/menus/main/infobox"					// Frame
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				errorinfo
+			text 				@MENUS_ERROR
+			type				ITEM_TYPE_TEXT
+			rect				210 138 220 50
+			textalign			ITEM_ALIGN_CENTER
+			text2aligny			18
+			textalignx			110
+			font				5
+			textscale			0.19        
+			forecolor			1 .682 0 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				errorinfo
+			type				ITEM_TYPE_TEXT
+			style				WINDOW_STYLE_FILLED
+			textstyle			3
+			autowrapped
+			cvar 				"com_errorMessage"
+			rect				90 260 190 100
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			90
+			font				5
+			textscale			0.14      
+			forecolor			1 .682 0 1
+			visible				1
+			decoration
+		}
+	 	
+//--------------------------------------------------------------------------------
+//	BUTTON	
+//--------------------------------------------------------------------------------
+
+
+		itemDef 
+		{
+			name				exit
+			group				grpControlbutton
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			text				@MENUS_OKAY
+			rect				210 378 220 24
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			110
+			textaligny			0
+			font				5
+			textscale			0.19
+			forecolor			1 .682 0 1
+			visible				1	
+			action 
+			{ 
+				play			"sound/misc/nomenu.wav"  
+				close			all 
+				open			main2Menu 
+			}
+		}	
+	}
+}
+
+

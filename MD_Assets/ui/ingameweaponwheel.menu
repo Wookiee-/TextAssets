@@ -1,0 +1,1248 @@
+//----------------------------------------------------------------------------------------------
+//
+//	CUSTOM CAMERA MENU
+//
+//----------------------------------------------------------------------------------------------
+{
+	menuDef
+	{
+		name					"ingameWeaponWheelMenu"
+		fullScreen				0									// MENU_TRUE
+		rect					0 0 640 480							// Size and position of the menu
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					440
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1
+		visible					0									// Visible on open
+
+		onOpen
+		{
+			uiScript			md_viewweaponwheel
+			hide				weapon_desc
+		}
+
+		onESC
+		{
+			uiScript			closeingame			// Close menu	
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+		
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/WeaponWheelPanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				closebutton
+			group				none
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 180 480
+			forecolor			1 1 1 0
+			visible				1
+			
+			action 
+			{ 
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				closebutton
+			group				none
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				460 0 180 480
+			forecolor			1 1 1 0
+			visible				1
+			
+			action 
+			{ 
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				weapon_desc_t
+			group				weapon_desc
+			type				ITEM_TYPE_TEXT
+			text				" "
+			rect				260 120 120 20
+			font				5
+			forecolor			1 1 1 0.4
+			textscale			0.11
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0	
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				weapon_desc_t2
+			group				weapon_desc
+			type				ITEM_TYPE_TEXT
+			text				" "
+			rect				258 120 120 20
+			font				5
+			forecolor			1 1 1 0.4
+			textscale			0.11
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0	
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				weapon_desc_tr
+			group				weapon_desc
+			type				ITEM_TYPE_TEXT
+			text				" "
+			rect				354 193 120 20
+			font				5
+			forecolor			1 1 1 0.4
+			textscale			0.11
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0	
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				weapon_desc_br
+			group				weapon_desc
+			type				ITEM_TYPE_TEXT
+			text				" "
+			rect				354 338 120 20
+			font				5
+			forecolor			1 1 1 0.4
+			textscale			0.11
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0	
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				weapon_desc_b
+			group				weapon_desc
+			type				ITEM_TYPE_TEXT
+			text				" "
+			rect				260 410 120 20
+			font				5
+			forecolor			1 1 1 0.4
+			textscale			0.11
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0	
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				weapon_desc_b2
+			group				weapon_desc
+			type				ITEM_TYPE_TEXT
+			text				" "
+			rect				262 410 120 20
+			font				5
+			forecolor			1 1 1 0.4
+			textscale			0.11
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0	
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				weapon_desc_bl
+			group				weapon_desc
+			type				ITEM_TYPE_TEXT
+			text				" "
+			rect				166 338 120 20
+			font				5
+			forecolor			1 1 1 0.4
+			textscale			0.11
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0	
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				weapon_desc_tl
+			group				weapon_desc
+			type				ITEM_TYPE_TEXT
+			text				" "
+			rect				166 193 120 20
+			font				5
+			forecolor			1 1 1 0.4
+			textscale			0.11
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			60
+			textaligny			0	
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	CATEGORY WEAPON ICONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				melee_icon_cat
+			group				category_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				305 165 30 30
+			background			"gfx/hud/w_icon_melee"
+			forecolor			1 1 1 1
+			visible				1
+
+			mouseEnter 
+			{ 
+				//show			weapon_desc
+				//setitemtext		weapon_desc	@SP_INGAME_MELEE_DESC
+			}
+			mouseExit 
+			{ 
+				//hide			weapon_desc
+			}
+			action
+			{
+				setitemcolor	category_icons forecolor 1 1 1 0.4
+				setitemcolor	melee_icon_cat forecolor 1 1 1 1
+
+				show			melee_icons
+				hide			pistol_icons
+				hide			blaster_icons
+				hide			blaster2_icons
+				hide			heavy_icons
+				hide			detonator_icons
+			}
+		}
+
+		itemDef 
+		{
+			name				blaster_pistol_icon_cat
+			group				category_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				344 198 30 30
+			background			"gfx/hud/w_icon_blaster_pistol"
+			forecolor			1 1 1 0.4
+			visible				1
+
+			mouseEnter 
+			{ 
+				//show			weapon_desc
+				//setitemtext		weapon_desc	@MD_MENU_MAIN_DL44
+			}
+			mouseExit 
+			{ 
+				//hide			weapon_desc
+			}
+			action
+			{
+				setitemcolor	category_icons forecolor 1 1 1 0.4
+				setitemcolor	blaster_pistol_icon_cat forecolor 1 1 1 1
+
+				hide			melee_icons
+				show			pistol_icons
+				hide			blaster_icons
+				hide			blaster2_icons
+				hide			heavy_icons
+				hide			detonator_icons
+			}
+		}
+
+		itemDef 
+		{
+			name				blaster_icon_cat
+			group				category_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				344 252 30 30
+			background			"gfx/hud/w_icon_blaster"
+			forecolor			1 1 1 0.4
+			visible				1
+
+			mouseEnter 
+			{ 
+				//show			weapon_desc
+				//setitemtext		weapon_desc	@MD_MENU_MAIN_BLASTER
+			}
+			mouseExit 
+			{ 
+				//hide			weapon_desc
+			}
+			action
+			{
+				setitemcolor	category_icons forecolor 1 1 1 0.4
+				setitemcolor	blaster_icon_cat forecolor 1 1 1 1
+
+				hide			melee_icons
+				hide			pistol_icons
+				show			blaster_icons
+				hide			blaster2_icons
+				hide			heavy_icons
+				hide			detonator_icons
+			}
+		}
+
+		itemDef 
+		{
+			name				ee3_icon_cat
+			group				category_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				305 285 30 30
+			background			"gfx/hud/w_icon_ee-3"
+			forecolor			1 1 1 0.4
+			visible				1
+
+			mouseEnter 
+			{ 
+				//show			weapon_desc
+				//setitemtext		weapon_desc	@MD_MENU_MAIN_EE3
+			}
+			mouseExit 
+			{ 
+				//hide			weapon_desc
+			}
+			action
+			{
+				setitemcolor	category_icons forecolor 1 1 1 0.4
+				setitemcolor	ee3_icon_cat forecolor 1 1 1 1
+				
+				hide			melee_icons
+				hide			pistol_icons
+				hide			blaster_icons
+				show			blaster2_icons
+				hide			heavy_icons
+				hide			detonator_icons
+			}
+		}
+
+		itemDef 
+		{
+			name				rocket_launcher_icon_cat
+			group				category_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				266 252 30 30
+			background			"gfx/hud/w_icon_merrsonn"
+			forecolor			1 1 1 0.4
+			visible				1
+
+			mouseEnter 
+			{ 
+				//show			weapon_desc
+				//setitemtext		weapon_desc	@MD_MENU_MAIN_ROCKET_LAUNCHER
+			}
+			mouseExit 
+			{ 
+				//hide			weapon_desc
+			}
+			action
+			{
+				setitemcolor	category_icons forecolor 1 1 1 0.4
+				setitemcolor	rocket_launcher_icon_cat forecolor 1 1 1 1
+
+				hide			melee_icons
+				hide			pistol_icons
+				hide			blaster_icons
+				hide			blaster2_icons
+				show			heavy_icons
+				hide			detonator_icons
+			}
+		}
+
+		itemDef 
+		{
+			name				thermal_icon_cat
+			group				category_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				266 198 30 30
+			background			"gfx/hud/w_icon_thermal"
+			forecolor			1 1 1 0.4
+			visible				1
+
+			mouseEnter 
+			{ 
+				//show			weapon_desc
+				//setitemtext		weapon_desc	@MD_MENU_MAIN_THERMAL_DETONATOR
+			}
+			mouseExit 
+			{ 
+				//hide			weapon_desc
+			}
+			action
+			{
+				setitemcolor	category_icons forecolor 1 1 1 0.4
+				setitemcolor	thermal_icon_cat forecolor 1 1 1 1
+
+				hide			melee_icons
+				hide			pistol_icons
+				hide			blaster_icons
+				hide			blaster2_icons
+				hide			heavy_icons
+				show			detonator_icons
+			}
+		}
+		
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MELEE WEAPON ICONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				melee_icon
+			group				melee_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 65 60 60
+			background			"gfx/hud/w_icon_melee"
+			forecolor			1 1 1 1
+			visible				1
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_t
+				setitemtext		weapon_desc_t	@MD_MENU_MAIN_MELEE
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 14"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				saber_icon
+			group				melee_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 138 60 60
+			background			"gfx/hud/w_icon_lightsaber"
+			forecolor			1 1 1 1
+			visible				1
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_tr
+				setitemtext		weapon_desc_tr	@SP_INGAME_WEAPON_SABER
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 1"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				stun_baton_icon
+			group				melee_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 283 60 60
+			background			"gfx/hud/w_icon_stunbaton"
+			forecolor			1 1 1 1
+			visible				1
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_br
+				setitemtext		weapon_desc_br	@MD_MENU_MAIN_STUN_BATON
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 17"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				noghristick_icon
+			group				melee_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 355 60 60
+			background			"gfx/hud/w_icon_noghri"
+			forecolor			1 1 1 1
+			visible				1
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_b
+				setitemtext		weapon_desc_b	@MD_MENU_MAIN_NOGHRI_STICK
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 33"
+				uiScript		closeingame
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	PISTOL WEAPON ICONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				blaster_pistol_icon
+			group				pistol_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 65 60 60
+			background			"gfx/hud/w_icon_blaster_pistol"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_t
+				setitemtext		weapon_desc_t	@MD_MENU_MAIN_DL44
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 2"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				clone_pistol_icon
+			group				pistol_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 138 60 60
+			background			"gfx/hud/w_icon_clonepistol"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_tr
+				setitemtext		weapon_desc_tr	@MD_MENU_MAIN_DC17
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 45"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				lpann14_icon
+			group				pistol_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 283 60 60
+			background			"gfx/hud/w_icon_lpa_nn-14"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_br
+				setitemtext		weapon_desc_br	@MD_MENU_MAIN_LPANN14
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 42"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				westar_icon
+			group				pistol_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 355 60 60
+			background			"gfx/hud/w_icon_westar"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_b2
+				setitemtext		weapon_desc_b2	@MD_MENU_MAIN_WESTAR
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 43"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				briar_icon
+			group				pistol_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				196 283 60 60
+			background			"gfx/hud/w_icon_briar"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_bl
+				setitemtext		weapon_desc_bl	@MD_MENU_MAIN_BRYAR_PISTOL
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 18"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				dh17_icon
+			group				pistol_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				196 138 60 60
+			background			"gfx/hud/w_icon_dh-17"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_tl
+				setitemtext		weapon_desc_tl	@MD_MENU_MAIN_DH17
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 37"
+				uiScript		closeingame
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	RIFLE WEAPON ICONS
+		//
+		//----------------------------------------------------------------------------------------------
+		
+		itemDef 
+		{
+			name				blaster_icon
+			group				blaster_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 65 60 60
+			background			"gfx/hud/w_icon_blaster"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_t
+				setitemtext		weapon_desc_t	@MD_MENU_MAIN_BLASTER
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 3"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				a280_icon
+			group				blaster_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 138 60 60
+			background			"gfx/hud/w_icon_A280"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_tr
+				setitemtext		weapon_desc_tr	@MD_MENU_MAIN_A280
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 41"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				clone_rifle_icon
+			group				blaster_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 283 60 60
+			background			"gfx/hud/w_icon_clonerifle"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_br
+				setitemtext		weapon_desc_br	@MD_MENU_MAIN_DC15A
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 38"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				dc15s_icon
+			group				blaster_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 355 60 60
+			background			"gfx/hud/w_icon_dc-15s"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_b2
+				setitemtext		weapon_desc_b2	@MD_MENU_MAIN_DC15S
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 36"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				dc17m_icon
+			group				blaster_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				196 283 60 60
+			background			"gfx/hud/w_icon_dc-17m"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_bl
+				setitemtext		weapon_desc_bl	@MD_MENU_MAIN_DC17M
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 39"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				e5_icon
+			group				blaster_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				196 138 60 60
+			background			"gfx/hud/w_icon_droidblaster"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_tl
+				setitemtext		weapon_desc_tl	@MD_MENU_MAIN_E5
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 34"
+				uiScript		closeingame
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	BLASTER2 WEAPON ICONS
+		//
+		//----------------------------------------------------------------------------------------------
+		
+		itemDef 
+		{
+			name				ee3_icon
+			group				blaster2_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 65 60 60
+			background			"gfx/hud/w_icon_ee-3"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_t
+				setitemtext		weapon_desc_t	@MD_MENU_MAIN_EE3
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 44"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				f11d_icon
+			group				blaster2_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 138 60 60
+			background			"gfx/hud/w_icon_F11D"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_tr
+				setitemtext		weapon_desc_tr	@MD_MENU_MAIN_F11D
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 35"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				repeater_icon
+			group				blaster2_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 283 60 60
+			background			"gfx/hud/w_icon_repeater"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_br
+				setitemtext		weapon_desc_br	@MD_MENU_MAIN_REPEATER
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 6"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				rotary_cannon_icon
+			group				blaster2_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 355 60 60
+			background			"gfx/hud/w_icon_z6_rotary_cannon"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_b
+				setitemtext		weapon_desc_b	@MD_MENU_MAIN_Z6_ROTARY_CANNON
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 40"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				bowcaster_icon
+			group				blaster2_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				196 283 60 60
+			background			"gfx/hud/w_icon_bowcaster"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_bl
+				setitemtext		weapon_desc_bl	@MD_MENU_MAIN_BOWCASTER
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 5"
+				uiScript		closeingame
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	HEAVY WEAPON ICONS
+		//
+		//----------------------------------------------------------------------------------------------
+		
+		itemDef 
+		{
+			name				rocket_launcher_icon
+			group				heavy_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 65 60 60
+			background			"gfx/hud/w_icon_merrsonn"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_t2
+				setitemtext		weapon_desc_t2	@MD_MENU_MAIN_ROCKET_LAUNCHER
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 9"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				demp2_icon
+			group				heavy_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 138 60 60
+			background			"gfx/hud/w_icon_demp2"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_tr
+				setitemtext		weapon_desc_tr	@MD_MENU_MAIN_DEMP2
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 7"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				concussion_icon
+			group				heavy_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 283 60 60
+			background			"gfx/hud/w_icon_c_rifle"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_br
+				setitemtext		weapon_desc_br	@MD_MENU_MAIN_CONCUSSION
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 13"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				flechette_icon
+			group				heavy_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 355 60 60
+			background			"gfx/hud/w_icon_flechette"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_b2
+				setitemtext		weapon_desc_b2	@MD_MENU_MAIN_FLECHETTE
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 8"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				disruptor_icon
+			group				heavy_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				196 283 60 60
+			background			"gfx/hud/w_icon_disruptor"
+			forecolor			1 1 1 1
+			visible				0
+			
+			mouseEnter 
+			{ 
+				show			weapon_desc_bl
+				setitemtext		weapon_desc_bl	@MD_MENU_MAIN_DISRUPTOR
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 4"
+				uiScript		closeingame
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	EXPLOSIVE WEAPON ICONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				thermal_icon
+			group				detonator_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				290 65 60 60
+			background			"gfx/hud/w_icon_thermal"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_t2
+				setitemtext		weapon_desc_t2	@MD_MENU_MAIN_THERMAL_DETONATOR
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 1010"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				trip_mine_icon
+			group				detonator_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 138 60 60
+			background			"gfx/hud/w_icon_tripmine"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_tr
+				setitemtext		weapon_desc_tr	@MD_MENU_MAIN_TRIP_MINE
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 1011"
+				uiScript		closeingame
+			}
+		}
+
+		itemDef 
+		{
+			name				det_pack_icon
+			group				detonator_icons
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				384 283 60 60
+			background			"gfx/hud/w_icon_detpack"
+			forecolor			1 1 1 1
+			visible				0
+
+			mouseEnter 
+			{ 
+				show			weapon_desc_br
+				setitemtext		weapon_desc_br	@MD_MENU_MAIN_DET_PACK
+			}
+			mouseExit 
+			{ 
+				hide			weapon_desc
+			}
+			action
+			{
+				exec			"weapon 1012"
+				uiScript		closeingame
+			}
+		}
+
+	}
+}

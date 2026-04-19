@@ -1,0 +1,739 @@
+//-----------------------------------------------------------------------
+//	CHARACTERSELECT MENU
+//
+//	Called only from main menu. Has the transition of fields from main menu 
+//	to new game menu
+//
+//-----------------------------------------------------------------------
+{
+						   
+	menuDef 
+	{
+		name					"episode3Menu"
+		fullScreen				1						// MENU_TRUE				
+		rect					0 0 640 480					// Size and position of the menu
+		visible					1						// Visible on open
+		focusColor				1 1 1 1						// Focus color for text and items
+		descX					320
+		descY					426
+		descScale				1
+		descColor				1 .682 0 .8
+		descAlignment			ITEM_ALIGN_CENTER		
+
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.1				// amount to adjust alpha per cycle	
+
+
+		onOpen
+		{ 
+				play			"sound/interface/transition.wav" 
+				setcvar			g_spskill 1
+				setcvar			cg_crosshairForceHint 1
+				setcvar			handicap 100
+				exec			"set ui_episode_credits ep3"
+		}
+
+		onESC 
+		{ 
+				exec			"soundstop"
+				play			"sound/interface/esc.wav" 
+				close			all ; 
+				open			episodeMenu
+				exec			"music music/episodeMenu/EP3VideoMusic" ;
+		}
+
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+	
+		itemDef // Stop video in episode menu so video restarts and music is in sync
+		{
+			name				background_video_ROTE
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 128 90
+			background			"gfx/menus/ROTEVideo"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef // Need solid background for fade 
+		{
+			name				black
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_episode3
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/mission/ep3/background_episode3"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_roc
+			group				mods
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/episode3_roc"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_egg
+			group				mods
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/episode3_egg"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_po
+			group				mods
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/episode3_po"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_jt
+			group				mods
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/episode3_jt"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_am
+			group				mods
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/episode3_am"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_rt
+			group				mods
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/episode3_rt"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_mof
+			group				mods
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/episode3_motf"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_mus
+			group				mods
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/episode3_both"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/Ep3Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				firstpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				7 128 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				firstpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				7 156 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				secondpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				7 184 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				thirdpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				7 212 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				fourthpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				7 240 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				fifthpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				7 268 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				sixthpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				7 296 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				sixthpanel
+			group				newgamemenu
+			style				WINDOW_STYLE_SHADER
+			rect				7 324 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Menu panels
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				18.1 197 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				18.1 224.5 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				18.1 252 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Fade in/out background only around buttons (not inbetween)
+
+		itemDef 
+		{
+			name				fadebutton
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				57 133 240 215
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+
+			mouseEnter
+			{
+				fadeout			background_episode3
+				setitemrect		mods	0 0 640 480
+			}
+			mouseExit
+			{
+				fadein			background_episode3
+			}
+			action 
+			{ 
+			}
+		}
+
+		// Fix pop in when entering the menu the first time (using OnOpen leads to other pop ins)
+
+		itemDef 
+		{
+			name				fadeenterbutton
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				147.6 347 148 90
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+
+			mouseEnter
+			{
+				setitemrect		mods	641 0 640 480
+				fadeout			mods
+				hide			fadeenterbutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//   NEW GAME MENU specific stuff
+		//
+		//----------------------------------------------------------------------------------------------		
+		//Buttons - Missions
+
+		// Big button "ROC"
+		itemDef 
+		{
+			name				challenge_begin1
+			group				none
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				57 132 240 26
+			text				@MD_MENU_MAIN_ROC
+			textaligny			-1
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter 
+			{ 
+				fadein			background_roc
+				setitemrect		background_MDMenuPanelGoldTop	17.5 127 320 30.25
+				show			background_MDMenuPanelGoldTop
+			}	 
+			
+			mouseExit 
+			{ 
+				fadeout			background_roc
+				hide			background_MDMenuPanelGoldTop
+			}	
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	background_roc backcolor 1 1 1 1
+				close			all ; 
+				open			rocmenu
+			}
+		}
+
+		// Big button EGG"
+		itemDef 
+		{
+			name				challenge_begin1
+			group				none
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				57 158 240 28
+			text				@MD_MENU_MAIN_EGG
+			textaligny			1
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter 
+			{ 
+				fadein			background_egg
+				setitemrect		background_MDMenuPanelGoldMiddle	16.5 155 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  	  
+
+			mouseExit
+			{ 
+				fadeout			background_egg
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	background_egg backcolor 1 1 1 1
+				close			all ; 
+				open			eggmenu
+			}
+		}
+
+
+		// Big button "PO"
+		itemDef 
+		{
+			name				challenge_begin3
+			group				none
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				57 186 240 28 
+			text				@MD_MENU_MAIN_PO
+			textaligny			1
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter 
+			{ 
+				fadein			background_po
+				setitemrect		background_MDMenuPanelGoldMiddle	16.5 183 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  
+			
+			mouseExit
+			{ 
+				fadeout			background_po
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	background_po backcolor 1 1 1 1
+				close			all ; 
+				open			pomenu
+			}
+		}
+
+		// Big button "JT"
+		itemDef 
+		{
+			name				challenge_begin3
+			group				none
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				57 213 240 29
+			text				@MD_MENU_MAIN_JT
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter 
+			{ 
+				fadein			background_jt
+				setitemrect		background_MDMenuPanelGoldMiddle	16.5 211 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  	  
+
+			mouseExit
+			{ 
+				fadeout			background_jt
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	background_jt backcolor 1 1 1 1
+				close			all ; 
+				open			jtmenu
+			}
+		}
+
+		// Big button "AM"
+		itemDef 
+		{
+			name				challenge_begin3
+			group				none
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				57 242 240 28
+			text				@MD_MENU_MAIN_AM
+			textaligny			1
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter 
+			{ 
+				fadein			background_am
+				setitemrect		background_MDMenuPanelGoldMiddle	16.5 239 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  	  
+
+			mouseExit
+			{ 
+				fadeout			background_am
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	background_am backcolor 1 1 1 1
+				close			all ; 
+				open			ammenu
+			}
+		}
+
+		// Big button "RT"
+		itemDef 
+		{
+			name				challenge_begin3
+			group				none
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				57 270 240 28
+			text				@MD_MENU_MAIN_RT
+			textaligny			1
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter 
+			{ 
+				fadein			background_rt
+				setitemrect		background_MDMenuPanelGoldMiddle	16.5 267 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  	  
+
+			mouseExit
+			{ 
+				fadeout			background_rt
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	background_rt backcolor 1 1 1 1
+				close			all ; 
+				open			rtmenu
+			}
+		}
+
+		// Big button "MOF"
+		itemDef 
+		{
+			name				challenge_begin3
+			group				none
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				57 298 240 28
+			text				@MD_MENU_MAIN_MOF
+			textaligny			1
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter 
+			{ 
+				fadein			background_mof
+				setitemrect		background_MDMenuPanelGoldMiddle	16.5 295 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}  	
+			
+			mouseExit
+			{ 
+				fadeout			background_mof
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	background_mof backcolor 1 1 1 1
+				close			all ; 
+				open			mofmenu
+			}
+		}
+
+		// Big button "MUS"
+		itemDef 
+		{
+			name				challenge_begin3
+			group				none
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				57 325.5 240 25
+			text				@MD_MENU_MAIN_MUS
+			textaligny			1
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter 
+			{ 
+				fadein			background_mus
+				setitemrect		background_MDMenuPanelGoldBottom	17 322.5 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}  	  
+
+			mouseExit
+			{ 
+				fadeout			background_mus
+				hide			background_MDMenuPanelGoldBottom
+			}
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setitemcolor	background_mus backcolor 1 1 1 1
+				close			all ; 
+				open			musmenu
+			}
+		}
+
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+		// BACK button in lower left corner
+
+		itemDef 
+		{
+			name				backbutton
+			group				fade_buttons
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 435 130 40  
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+  	  
+			action 
+			{ 
+				exec			"soundstop"
+				play			"sound/interface/esc.wav" 
+				close			all ; 
+				open			episodeMenu 
+				exec			"music music/episodeMenu/EP3VideoMusic" ;
+			}
+		}
+
+	}
+}

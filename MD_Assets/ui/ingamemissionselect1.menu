@@ -1,0 +1,1447 @@
+//------------------------------------------------------------------------------------------------
+// Mission Select 1 Menu
+//
+//	Select missions from the 1st tier.
+//
+//------------------------------------------------------------------------------------------------
+{					   
+	menuDef 
+	{
+		name					"ingameMissionSelect1"
+		fullScreen				1		
+		rect					0 0 640 480	
+		visible					1
+		focusColor				1 1 1 1
+		descX					200
+		descY					444
+		descScale				1
+		descColor				1 .682 0 0
+		descAlignment				ITEM_ALIGN_CENTER	
+		disablecolor				.5 .5 .5 1
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.05					// amount to adjust alpha per cycle	
+		onOpen 
+		{
+			show				mission_button
+			stopVoice
+			//play		"sound/interface/x-wingJKA"
+		}							
+		onESC 
+		{ 
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MENU BACKGROUND
+//----------------------------------------------------------------------------------------------
+		/*
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/mission_back"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				eyecandy1
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				17 309 357 153
+			background			"gfx/menus/mission_bottomleft_grid"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				botlf
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 300 80 180
+			background			"gfx/menus/mission_bottom_left"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				starfield
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				20 20 600 256
+			background			"gfx/menus/star_field"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				stars_close
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				20 20 600 256
+			background			"gfx/menus/star_field_zoom"
+			backcolor			1 1 1 0
+			visible				1
+			decoration
+		}
+		*/ //////////////////
+
+		itemDef 
+		{
+			name				background_hyperspace
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/hyperspace"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_jkamissionenterhyperspacebk
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/jkamissionenterhyperspacebk"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_space
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/jkamissionspacebk"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_holo
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/jkamissionholobk"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_galaxy
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				160 0 320 480
+			background			"gfx/menus/ingame/jkamissiongalaxybk"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_ship
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/jkamissionshipbk"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_screen_c3po
+			group				background_screens
+			style				WINDOW_STYLE_FILLED
+			rect				266 326 140 96
+			background			"gfx/menus/ingame/jkamissionc3pobk"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_screen_luke
+			group				background_screens
+			style				WINDOW_STYLE_FILLED
+			rect				266 326 140 96
+			background			"gfx/menus/ingame/jkamissionlukebk"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_screen_wedge
+			group				background_screens
+			style				WINDOW_STYLE_FILLED
+			rect				266 326 140 96
+			background			"gfx/menus/ingame/jkamissionwedgebk"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_screen_kyle
+			group				background_screens
+			style				WINDOW_STYLE_FILLED
+			rect				266 326 140 96
+			background			"gfx/menus/ingame/jkamissionkylebk"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+//----------------------------------------------------------------------------------------------	
+// BIG PLANET GRAPHICS
+//----------------------------------------------------------------------------------------------	
+		itemDef 
+		{
+			name				tatooine
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 148 0 0
+			background			"gfx/menus/planets/tatooine"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				bakura
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 148 0 0
+			background			"gfx/menus/planets/bakura"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				blenjeel
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 148 0 0
+			background			"gfx/menus/planets/blenjeel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				corellia
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 148 0 0
+			background			"gfx/menus/planets/core"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+// GALAXY MAP
+//----------------------------------------------------------------------------------------------
+		/*
+		itemDef 
+		{
+			name				galaxy
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				64 20 512 256
+			background			"gfx/menus/mission_galaxy"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				map_title
+			type				ITEM_TYPE_TEXT
+			rect				40 14 600 18
+			text				@MENUS_GALACTIC_MAP
+			font				2
+			forecolor			.549 .854 1 1
+			textscale			1
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			300
+			textaligny			-1
+			visible				1
+			decoration
+		}
+		*/		
+//----------------------------------------------------------------------------------------------
+//	TIER 1 LOCATION MARKERS ON GALAXY MAP
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				loc_but01_off
+			group				location_marker_off
+			style				WINDOW_STYLE_SHADER
+			rect				384 133 25 25
+			background			"gfx/menus/mission_loc_but_off"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_sour"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but01_on
+			group				location_marker_on
+			style				WINDOW_STYLE_SHADER
+			rect				384 133 25 25
+			background			"gfx/menus/mission_loc_but_on"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar
+			{
+				"t1_sour"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but02_off
+			group				location_marker_off
+			style				WINDOW_STYLE_SHADER
+			rect				234 173 25 25
+			background			"gfx/menus/mission_loc_but_off"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_surprise"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but02_on
+			group				location_marker_on
+			style				WINDOW_STYLE_SHADER
+			rect				234 173 25 25
+			background			"gfx/menus/mission_loc_but_on"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_surprise"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but03_off
+			group				location_marker_off
+			style				WINDOW_STYLE_SHADER
+			rect				320 28 13 13
+			background			"gfx/menus/mission_loc_but_off"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_fatal"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but03_on
+			group				location_marker_on
+			style				WINDOW_STYLE_SHADER
+			rect				320 28 13 13
+			background			"gfx/menus/mission_loc_but_on"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_fatal"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but04_off
+			group				location_marker_off
+			style				WINDOW_STYLE_SHADER
+			rect				395 51 19 19
+			background			"gfx/menus/mission_loc_but_off"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_danger"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but04_on
+			group				location_marker_on
+			style				WINDOW_STYLE_SHADER
+			rect				395 51 19 19
+			background			"gfx/menus/mission_loc_but_on"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_danger"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but05_off
+			group				location_marker_off
+			style				WINDOW_STYLE_SHADER
+			rect				233 100 21 21
+			background			"gfx/menus/mission_loc_but_off"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_rail"
+			}
+			cvarSubString
+		}
+
+		itemDef 
+		{
+			name				loc_but05_on
+			group				location_marker_on
+			style				WINDOW_STYLE_SHADER
+			rect				233 100 21 21
+			background			"gfx/menus/mission_loc_but_on"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_rail"
+			}
+			cvarSubString
+		}
+		
+//----------------------------------------------------------------------------------------------
+//  TIER 1 MISSION BUTTONS
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				map_title
+			type				ITEM_TYPE_TEXT
+			rect				324 330 45 15
+			text				@MENUS_MISSIONS
+			font				5
+			forecolor			1 .682 0 0.9
+			textscale			0.085
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			8
+			textaligny			2
+			visible				1
+			decoration
+		}
+		
+		itemDef
+		{
+			name				miss1
+			group				mission_button
+			type				ITEM_TYPE_BUTTON
+			rect				265 344 137 15
+			text				@MENUS_T1_SOUR_TITLE
+			desctext			@MENUS_CLICK_BRIEFING
+			font				5
+			forecolor			1 .682 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			2
+			visible				1
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_sour"
+			}
+			cvarSubString
+
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				hide			loc_but01_off
+				show			loc_but01_on
+				
+				show			planet_name
+				setitemtext		planet_name	@MENUS_TATOOINE
+				setitemrect		planet_name	380 152 50 20
+
+				show			button_glow
+				setitemrect		button_glow	258 341 153 17
+				
+			}
+
+			mouseExit 
+			{ 
+				hide			loc_but01_on
+				show			loc_but01_off
+				
+				hide			planet_name
+				hide			button_glow
+			}
+
+			action
+			{
+				play			"sound/interface/buttonjka" 
+				transition2		background_holo 0 0 640 480 20 25
+				transition2		background_galaxy 160 0 320 480 20 25
+
+				transition2		loc_but01_off 410 149 0 0 20 25
+				transition2		loc_but02_off 250 189 0 0 20 25
+				transition2		loc_but03_off 330 38 0 0 20 25
+				transition2		loc_but04_off 408 64 0 0 20 25
+				transition2		loc_but05_off 247 114 0 0 20 25
+
+				setitemrect		tatooine 139 228 70 70
+				fadein			tatooine
+				hide			mission_button				
+				hide			location_marker_on
+				
+				fadeout			background_holo
+				fadeout			background_galaxy				
+				show			backbut
+				show			accbut1
+				
+				fadein			briefing_text
+				setitemtext		briefing_text @BRIEFINGS_T1_SOUR
+
+				setitemcolor	planet_name	forecolor 1 .682 0 0.9
+				setitemrect		planet_name	316 330 50 15
+				fadein			planet_name
+				hide			button_glow
+				hide			map_title					
+			}
+		}
+
+		itemDef
+		{
+			name				miss2
+			group				mission_button
+			type				ITEM_TYPE_BUTTON
+			rect				265 358 137 15
+			text				@MENUS_T1_SURPRISE_TITLE
+			desctext			@MENUS_CLICK_BRIEFING
+			font				5
+			forecolor			1 .682 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			2
+			visible				1
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_surprise"
+			}
+			cvarSubString
+
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				hide			loc_but02_off
+				show			loc_but02_on
+
+				show			planet_name
+				setitemtext		planet_name	@MENUS_TATOOINE
+				setitemrect		planet_name	230 192.5 50 20
+
+				show			button_glow
+				setitemrect		button_glow	258 355 153 17		
+			}
+
+			mouseExit 
+			{ 
+				hide			loc_but02_on
+				show			loc_but02_off
+
+				hide			planet_name
+				hide			button_glow
+			}
+			
+			action
+			{
+				play			"sound/interface/buttonjka" 
+				transition2		background_holo 0 0 640 480 20 25
+				transition2		background_galaxy 160 0 320 480 20 25
+
+				transition2		loc_but01_off 410 149 0 0 20 25
+				transition2		loc_but02_off 250 189 0 0 20 25
+				transition2		loc_but03_off 330 38 0 0 20 25
+				transition2		loc_but04_off 408 64 0 0 20 25
+				transition2		loc_but05_off 247 114 0 0 20 25
+				
+				setitemrect		tatooine 139 228 70 70
+				fadein			tatooine
+				hide			mission_button
+				hide			location_marker_on
+				
+				fadeout			background_holo
+				fadeout			background_galaxy
+				show			backbut
+				show			accbut2
+				
+				fadein			briefing_text
+				setitemtext		briefing_text @BRIEFINGS_T1_SURPRISE
+				
+				setitemcolor	planet_name	forecolor 1 .682 0 0.9
+				setitemrect		planet_name	316 330 50 15
+				fadein			planet_name
+				hide			button_glow
+				hide			map_title					
+			}
+		}
+
+		itemDef
+		{
+			name				miss3
+			group				mission_button
+			type				ITEM_TYPE_BUTTON
+			rect				265 372 137 15
+			text				@MENUS_T1_FATAL_TITLE
+			desctext			@MENUS_CLICK_BRIEFING
+			font				5
+			forecolor			1 .682 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			2
+			visible				1
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_fatal"
+			}
+			cvarSubString
+
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				hide			loc_but03_off
+				show			loc_but03_on
+				
+				show			planet_name
+				setitemtext		planet_name	@MENUS_BAKURA
+				setitemrect		planet_name	311 38 50 20
+				
+				show			button_glow
+				setitemrect		button_glow	258 369 153 17		
+			}
+			mouseExit 
+			{ 
+				hide			loc_but03_on
+				show			loc_but03_off
+				
+				hide			planet_name
+				hide			button_glow
+			}
+			action
+			{
+				play			"sound/interface/buttonjka" 
+				transition2		background_holo 0 0 640 480 20 25
+				transition2		background_galaxy 160 0 320 480 20 25
+
+				transition2		loc_but01_off 410 149 0 0 20 25
+				transition2		loc_but02_off 250 189 0 0 20 25
+				transition2		loc_but03_off 330 38 0 0 20 25
+				transition2		loc_but04_off 408 64 0 0 20 25
+				transition2		loc_but05_off 247 114 0 0 20 25
+
+				setitemrect		bakura 139 228 70 70
+				fadein			bakura
+				hide			mission_button
+				hide			location_marker_on
+
+				fadeout			background_holo
+				fadeout			background_galaxy
+				show			backbut
+				show			accbut3
+	
+				fadein			briefing_text
+				setitemtext		briefing_text @BRIEFINGS_T1_FATAL	
+				
+				setitemcolor	planet_name	forecolor 1 .682 0 0.9
+				setitemrect		planet_name	316 330 50 15
+				fadein			planet_name
+				hide			button_glow
+				hide			map_title					
+			}
+		}
+
+		itemDef
+		{
+			name				miss4
+			group				mission_button
+			type				ITEM_TYPE_BUTTON
+			rect				265 386 137 15
+			text				@MENUS_T1_DANGER_TITLE
+			desctext			@MENUS_CLICK_BRIEFING
+			font				5
+			forecolor			1 .682 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			2
+			visible				1
+			cvartest			"tiers_complete"
+			disablecvar		
+			{
+				"t1_danger"
+			}
+			cvarSubString
+
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				hide			loc_but04_off
+				show			loc_but04_on
+				
+				show			planet_name
+				setitemtext		planet_name	@MENUS_BLENJEEL
+				setitemrect		planet_name	389 65 50 20
+				
+				show			button_glow
+				setitemrect		button_glow	258 383 153 17	
+			}
+			mouseExit 
+			{ 
+				hide			loc_but04_on
+				show			loc_but04_off
+				
+				hide			planet_name
+				hide			button_glow
+			}
+
+			action
+			{
+				play			"sound/interface/buttonjka" 
+				transition2		background_holo 0 0 640 480 20 25
+				transition2		background_galaxy 160 0 320 480 20 25
+
+				transition2		loc_but01_off 410 149 0 0 20 25
+				transition2		loc_but02_off 250 189 0 0 20 25
+				transition2		loc_but03_off 330 38 0 0 20 25
+				transition2		loc_but04_off 408 64 0 0 20 25
+				transition2		loc_but05_off 247 114 0 0 20 25
+
+				setitemrect		blenjeel 139 228 70 70
+				fadein			blenjeel				
+				hide			mission_button
+				hide			location_marker_on
+				
+				fadeout			background_holo
+				fadeout			background_galaxy
+				show			backbut
+				show			accbut4
+				
+				fadein			briefing_text
+				setitemtext		briefing_text @BRIEFINGS_T1_DANGER	
+				
+				setitemcolor	planet_name	forecolor 1 .682 0 0.9
+				setitemrect		planet_name	316 330 50 15
+				fadein			planet_name
+				hide			button_glow
+				hide			map_title					
+			}
+		}
+
+		itemDef
+		{
+			name				miss5
+			group				mission_button
+			type				ITEM_TYPE_BUTTON
+			rect				265 400 137 15
+			text				@MENUS_T1_RAIL_TITLE
+			desctext			@MENUS_CLICK_BRIEFING
+			font				5
+			forecolor			1 .682 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			2
+			visible				1
+			cvartest			"tiers_complete"
+			disablecvar			
+			{
+				"t1_rail"
+			}
+			cvarSubString
+
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				hide			loc_but05_off
+				show			loc_but05_on
+				
+				show			planet_name
+				setitemtext		planet_name	@MENUS_CORELLIA
+				setitemrect		planet_name	227 116 50 20
+				
+				show			button_glow
+				setitemrect		button_glow	258 397 153 17	
+			}
+			mouseExit 
+			{ 
+				hide			loc_but05_on
+				show			loc_but05_off
+				
+				hide			planet_name
+				hide			button_glow
+			}
+			action
+			{
+				play			"sound/interface/buttonjka" 
+				transition2		background_holo 0 0 640 480 20 25
+				transition2		background_galaxy 160 0 320 480 20 25
+
+				transition2		loc_but01_off 410 149 0 0 20 25
+				transition2		loc_but02_off 250 189 0 0 20 25
+				transition2		loc_but03_off 330 38 0 0 20 25
+				transition2		loc_but04_off 408 64 0 0 20 25
+				transition2		loc_but05_off 247 114 0 0 20 25
+
+				setitemrect		corellia 139 228 70 70
+				fadein			corellia
+				hide			mission_button
+				hide			location_marker_on
+				
+				fadeout			background_holo
+				fadeout			background_galaxy
+				show			backbut
+				show			accbut5
+
+				show			briefing_text
+				setitemtext		briefing_text @BRIEFINGS_T1_RAIL
+				
+				setitemcolor	planet_name	forecolor 1 .682 0 0.9
+				setitemrect		planet_name	316 330 50 15
+				fadein			planet_name
+				hide			button_glow
+				hide			map_title					
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MISSION BRIEF TEXT
+//----------------------------------------------------------------------------------------------
+		
+		itemDef
+		{
+			name				briefing_text
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				259 341 155 99
+			text				@BRIEFINGS_T1_SOUR
+			font				5
+			forecolor			1 .682 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			2
+			lineHeight			6
+			visible				0
+			autowrapped
+			decoration
+		}
+		
+//----------------------------------------------------------------------------------------------
+//	GENERAL BACK BUTTON - if you don't want this mission		
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				backbut
+			type				ITEM_TYPE_BUTTON
+			rect				272 434 50 20
+			text				@MENUS_BACK_CAPS
+			desctext			@MENUS_DIFF_MISSION
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.085
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			13
+			textaligny			2
+			visible				0
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				show			button_glow
+				setitemrect		button_glow	261 431 70 20
+			}
+			mouseExit 
+			{ 
+				hide			button_glow
+			}
+			action
+			{
+				play			"sound/interface/buttonjka"  					
+				fadein			background_holo
+				fadein			background_galaxy
+				transition2		loc_but01_off 384 133 25 25 20 25
+				transition2		loc_but02_off 234 173 25 25 20 25
+				transition2		loc_but03_off 320 28 13 13 20 25
+				transition2		loc_but04_off 395 51 19 19 20 25
+				transition2		loc_but05_off 233 100 21 21 20 25
+				hide			backbut
+				show			mission_button
+				hide			accbuttons
+
+				hide			tatooine
+				hide			bakura
+				hide			blenjeel
+				hide			corellia
+				
+				setitemcolor	planet_name	forecolor .549 .854 1 0.7
+				hide			planet_name
+				show			map_title					
+				
+				hide 			briefing_text
+
+				hide			button_glow				
+			}
+		}
+
+		itemDef
+		{
+			name				planet_name
+			type				ITEM_TYPE_TEXT
+			rect				52 316 288 24
+			font				5
+			forecolor			.549 .854 1 0.7
+			textscale			0.085
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			8
+			textaligny			2
+			visible				0
+			autowrapped
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+// ACCEPT BUTTONS - IF YOU CHOOSE A PARTICULAR MISSION
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				accbut1
+			group				accbuttons
+			type				ITEM_TYPE_BUTTON
+			rect				333 434 50 20
+			text				@MENUS_ACCEPT
+			desctext			@MENUS_ACCEPT_MISSION
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.085
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			13
+			textaligny			2
+			visible				0
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				show			button_glow
+				setitemrect		button_glow	325 431 70 20
+			}
+			mouseExit 
+			{ 
+				hide			button_glow
+			}
+			
+			action
+			{
+				play			"sound/interface/hyperstartjka.wav"
+				show			background_nextpanel
+				hide			background_screens
+				show			background_screen_kyle
+				fadeout			background_space
+				fadeout			background_jkamissionenterhyperspacebk
+				fadeout			background_screen_black
+				hide			planet_name
+				hide			backbut
+				hide			briefing_text
+				show			kyle
+				show			nextscreen_button
+				show			accept1text
+				playVoice		"sound/chars/kyle/07kyk001.mp3"
+				hide 			accbuttons
+				setcvar 		tier_mapname "maptransition t1_sour"
+				hide			button_glow
+			}
+		}
+
+		itemDef
+		{
+			name				accbut2
+			group				accbuttons
+			type				ITEM_TYPE_BUTTON
+			rect				333 434 50 20
+			text				@MENUS_ACCEPT
+			desctext			@MENUS_ACCEPT_MISSION
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.085
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			13
+			textaligny			2
+			visible				0
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				show			button_glow
+				setitemrect		button_glow	325 431 70 20
+			}
+			mouseExit 
+			{ 
+				hide			button_glow
+			}
+			action
+			{
+				play			"sound/interface/hyperstartjka.wav"
+				show			background_nextpanel
+				hide			background_screens
+				show			background_screen_kyle
+				fadeout			background_space
+				fadeout			background_jkamissionenterhyperspacebk
+				fadeout			background_screen_black
+				hide			planet_name
+				hide			backbut
+				hide			briefing_text
+				show			kyle
+				show			nextscreen_button
+				show			accept2text
+				playVoice		"sound/chars/kyle/04kyk001.mp3"
+				hide 			accbuttons
+				setcvar 		tier_mapname "maptransition t1_surprise"
+				hide			button_glow
+			}
+		}
+
+		itemDef
+		{
+			name				accbut3
+			group				accbuttons
+			type				ITEM_TYPE_BUTTON
+			rect				333 434 50 20
+			text				@MENUS_ACCEPT
+			desctext			@MENUS_ACCEPT_MISSION
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.085
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			13
+			textaligny			2
+			visible				0
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				show			button_glow
+				setitemrect		button_glow	325 431 70 20
+			}
+			mouseExit 
+			{ 
+				hide			button_glow
+			}
+			action
+			{
+				play			"sound/interface/hyperstartjka.wav"
+				show			background_nextpanel
+				hide			background_screens
+				show			background_screen_luke
+				fadeout			background_space
+				fadeout			background_jkamissionenterhyperspacebk
+				fadeout			background_screen_black
+				hide			planet_name
+				hide			backbut
+				hide			briefing_text
+				show			luke
+				show			nextscreen_button
+				show			accept3text
+				playVoice		"sound/chars/luke/08luk001.mp3"
+				hide 			accbuttons
+				setcvar 		tier_mapname "maptransition t1_fatal"
+				hide			button_glow
+			}
+		}
+
+		itemDef
+		{
+			name				accbut4
+			group				accbuttons
+			type				ITEM_TYPE_BUTTON
+			rect				333 434 50 20
+			text				@MENUS_ACCEPT
+			desctext			@MENUS_ACCEPT_MISSION
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.085
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			13
+			textaligny			2
+			visible				0
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				show			button_glow
+				setitemrect		button_glow	325 431 70 20
+			}
+			mouseExit 
+			{ 
+				hide			button_glow
+			}
+			action
+			{
+				play			"sound/interface/hyperstartjka.wav"
+				show			background_nextpanel
+				hide			background_screens
+				show			background_screen_luke
+				fadeout			background_space
+				fadeout			background_jkamissionenterhyperspacebk
+				fadeout			background_screen_black
+				hide			planet_name
+				hide			backbut
+				hide			briefing_text
+				show			luke
+				show			nextscreen_button
+				show			accept4text
+				playVoice		"sound/chars/luke/06luk001.mp3"
+				hide 			accbuttons
+				setcvar 		tier_mapname "maptransition t1_danger"
+				hide			button_glow
+			}
+		}
+
+		itemDef
+		{
+			name				accbut5
+			group				accbuttons
+			type				ITEM_TYPE_BUTTON
+			rect				333 434 50 20
+			text				@MENUS_ACCEPT
+			desctext			@MENUS_ACCEPT_MISSION
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.085
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			13
+			textaligny			2
+			visible				0
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				show			button_glow
+				setitemrect		button_glow	325 431 70 20
+			}
+			mouseExit 
+			{ 
+				hide			button_glow
+			}
+			action
+			{
+				play			"sound/interface/hyperstartjka.wav"
+				show			background_nextpanel
+				hide			background_screens
+				show			background_screen_c3po
+				fadeout			background_space
+				fadeout			background_jkamissionenterhyperspacebk
+				fadeout			background_screen_black
+				hide			planet_name
+				hide			backbut
+				hide			briefing_text
+				show			kyle
+				show			nextscreen_button
+				show			accept5text
+				playVoice		"sound/chars/kyle/05kyk001.mp3"
+				hide 			accbuttons
+				setcvar 		tier_mapname "maptransition t1_rail"
+				hide			button_glow
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MODELS FOR V-O
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				luke
+			group				models
+			type 				ITEM_TYPE_MODEL
+			rect				278 310 110 110
+			model_g2anim			"BOTH_STAND1_TALK2"
+			model_g2skin			"models/players/luke/model_menu.skin"
+			asset_model			"models/players/luke/model.glm"
+			model_angle			180
+			//mins maxs format is apparently z x y (hmmm... y x z?)
+			model_g2mins			15 -20 18
+			model_g2maxs			60 20 55
+			model_rotation			0
+			model_fovx			10
+			model_fovy			10
+			isCharacter			1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				kyle
+			group				models
+			type 				ITEM_TYPE_MODEL
+			rect				278 310 110 110
+			model_g2anim 			"BOTH_STAND1_TALK2"
+			model_g2skin			"models/players/kyle/model_menu.skin"
+			asset_model			"models/players/kyle/model.glm"
+			model_angle			180
+			model_g2mins			15 -20 18
+			model_g2maxs			60 20 55
+			model_rotation			0
+			model_fovx			10
+			model_fovy			10
+			isCharacter			1
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				prot
+			group				models
+			type 				ITEM_TYPE_MODEL
+			rect				278 310 110 110
+			model_g2anim 			"BOTH_STAND1_TALK2"
+			model_g2skin			"models/players/protocol/model_menu.skin"
+			asset_model			"models/players/protocol/model.glm"
+			model_angle			180
+			model_g2mins			15 -20 14
+			model_g2maxs			60 20 55
+			model_rotation			0
+			model_fovx			10
+			model_fovy			10
+			isCharacter			1
+			visible				0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+// BRIEFING SUBTITLES 
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				accept1text
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				246 434 170 80
+			text				@T1_SOUR_07KYK001
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			-1
+			lineHeight			6
+			visible			0
+			autowrapped
+			decoration
+		}
+
+		itemDef
+		{
+			name				accept2text
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				246 434 170 80
+			text				@T1_SURPRISE_04KYK001
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			-1
+			lineHeight			6
+			visible			0
+			autowrapped
+			decoration
+		}
+
+		itemDef
+		{
+			name				accept3text
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				246 434 170 80
+			text				@T1_FATAL_08LUK001
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			-1
+			lineHeight			6
+			visible			0
+			autowrapped
+			decoration
+		}
+
+		itemDef
+		{
+			name				accept4text
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				246 434 170 80
+			text				@T1_DANGER_06LUK001
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			-1
+			lineHeight			6
+			visible			0
+			autowrapped
+			decoration
+		}
+
+		itemDef
+		{
+			name				accept5text
+			type				ITEM_TYPE_TEXTSCROLL
+			rect				246 434 170 80
+			text				@T1_RAIL_05KYK001
+			font				5
+			forecolor			1 0 0 0.9
+			textscale			0.08
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			8
+			textaligny			-1
+			lineHeight			6
+			visible			0
+			autowrapped
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+// NEXT BUTTONS - to go to next screen
+//----------------------------------------------------------------------------------------------
+		itemDef
+		{
+			name				nextscreen_button
+			type				ITEM_TYPE_BUTTON
+			rect				430 312 55 73	
+			forecolor			1 1 1 0
+			visible				0
+
+			mouseEnter 
+			{ 
+				play			"sound/interface/menuroamjka"
+				setitemcolor	background_nextpanel backcolor 1 1 1 1
+			}
+			mouseExit 
+			{ 
+				setitemcolor	background_nextpanel backcolor 1 1 1 0.8
+			}
+			action
+			{
+				play			"sound/interface/buttonjka"
+				close			all
+				open			ingameForceSelect
+			}
+		}
+		
+//----------------------------------------------------------------------------------------------
+//	SCANLINES OVER WHOLE MENU
+//----------------------------------------------------------------------------------------------
+		itemDef 
+		{
+			name				button_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/menu_buttonback"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_ship_panel
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				255.7 313 160 120
+			background			"gfx/menus/ingame/jkamissionshippanelbk"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_nextpanel
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				417 289 80 120
+			background			"gfx/menus/ingame/jkamissiongreenpanelbk"
+			backcolor			1 1 1 0.8
+			visible				0
+			decoration
+		}
+
+	}
+}

@@ -1,0 +1,4932 @@
+//-----------------------------------------------------------------------
+// MISSION STATS MENU FOR MD
+//
+//	Called from all other menus other than main menu. This has no transition in it.
+//
+//-----------------------------------------------------------------------
+{						   
+	menuDef 
+	{
+		name					"creditsingame"
+		fullScreen				1						// MENU_TRUE				
+		rect					0 0 640 480					// Size and position of the menu
+		visible					0						// Visible on open
+		focusColor				1 1 1 1			// Focus color for text and items
+		descX					252
+		descY					438
+		descScale				0.6
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER		
+		
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				50						// how often fade happens in milliseconds
+		fadeAmount				0.05					// amount to adjust alpha per cycle
+
+		onOpen
+		{
+			exec			"soundstop"
+			setfocus		musicbutton
+			fadeout			black
+			transition2		musicbutton 0 0 640 480 5 5
+		}
+
+		onESC 
+		{ 
+			uiscript		leave
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background_ep1
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP1BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep1" }
+		}
+
+		itemDef 
+		{
+			name				background_ep2
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP2BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep2" }
+		}
+
+		itemDef 
+		{
+			name				background_cw
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/CWBK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "cw" }
+		}
+
+		itemDef 
+		{
+			name				background_ep3
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP3BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep3" }
+		}
+
+		itemDef 
+		{
+			name				background_rebels
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/RebelsBK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "rebels" }
+		}
+
+		itemDef 
+		{
+			name				background_ep4
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP4BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep4" }
+		}
+
+		itemDef 
+		{
+			name				background_ep5
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP5BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep5" }
+		}
+
+		itemDef 
+		{
+			name				background_ep6
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP6BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep6" }
+		}
+
+		itemDef 
+		{
+			name				background_ep7
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP7BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep7" }
+		}
+
+		itemDef 
+		{
+			name				background_ep8
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP8BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep8" }
+		}
+
+		itemDef 
+		{
+			name				background_ep9
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP9BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep9" }
+		}
+
+		itemDef 
+		{
+			name				background_tfu
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/TFUBK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "tfu" }
+		}
+
+		itemDef 
+		{
+			name				background_rote
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/ROTEBK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "rote" }
+		}
+
+		itemDef 
+		{
+			name				background_df2
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP7BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "df2" }
+		}
+
+		itemDef 
+		{
+			name				background_mots
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/EP7BK"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "mots" }
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//	CREDITS 
+		//----------------------------------------------------------------------------------------------
+
+		itemDef
+        {
+            name                background_credits
+            group               none
+            style               WINDOW_STYLE_SHADER
+            rect                327 10 320 804
+            background          "gfx/menus/ingamecredits/MDcredits"
+            forecolor           1 1 1 1
+            visible             1
+            decoration
+        }
+
+		//----------------------------------------------------------------------------------------------
+		//	MENU BACKGROUND2 
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				2background_ep1
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP1BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep1" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep1/Ep1Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep1" }
+		}
+
+		itemDef 
+		{
+			name				2background_ep2
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP2BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep2" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep2/Ep2Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep2" }
+		}
+
+		itemDef 
+		{
+			name				2background_cw
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/CWBK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "cw" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/cw/cwLogo"
+			rect				93 10 163 108
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "cw" }
+		}
+
+		itemDef 
+		{
+			name				2background_ep3
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP3BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep3" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep3/Ep3Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep3" }
+		}
+
+		itemDef 
+		{
+			name				2background_rebels
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/REBELSBK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "rebels" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/rebels/rebelsLogo"
+			rect				93 10 163 108
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "rebels" }
+		}
+
+		itemDef 
+		{
+			name				2background_ep4
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP4BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep4" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep4/Ep4Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep4" }
+		}
+
+		itemDef 
+		{
+			name				2background_ep5
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP5BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep5" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep5/Ep5Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep5" }
+		}
+
+		itemDef 
+		{
+			name				2background_ep6
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP6BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep6" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep6/Ep6Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep6" }
+		}
+
+		itemDef 
+		{
+			name				2background_ep7
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP7BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep7" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep7/Ep7Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep7" }
+		}
+
+		itemDef 
+		{
+			name				2background_ep8
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP8BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep8" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep8/Ep8Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep8" }
+		}
+
+		itemDef 
+		{
+			name				2background_ep9
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/EP9BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep9" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/ep9/Ep9Logo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "ep9" }
+		}
+
+		itemDef 
+		{
+			name				2background_tfu
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/TFUBK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "tfu" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/tfu/TFULogo"
+			rect				93 10 171 113
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "tfu" }
+		}
+
+		itemDef 
+		{
+			name				2background_rote
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				320 0 320 480
+			background			"gfx/menus/ingamecredits/ROTEBK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "rote" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/mission/rote/ROTELogo"
+			rect				56 24 246 82
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "rote" }
+		}
+
+		itemDef 
+		{
+			name				2background_df2
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/DF2BK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "df2" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/ingamecredits/DF2Logo"
+			rect				53 -17 246 164
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "df2" }
+		}
+
+		itemDef 
+		{
+			name				2background_mots
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingamecredits/MOTSBK2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "mots" }
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			background			"gfx/menus/ingamecredits/MOTSLogo"
+			rect				43 -23 266 184
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+			cvartest			"ui_episode_credits"
+			showcvar			{ "mots" }
+		}
+		
+		itemDef 
+		{
+			name				background_panel
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				22 77 310 390
+			background			"gfx/menus/mission/desc_panel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	Killed, Secrets
+//----------------------------------------------------------------------------------------------	
+		
+		itemDef
+		{
+			name				Stats
+			type				ITEM_TYPE_TEXT
+			rect				177 118 200 32
+			text				@MD_MENU_MAIN_MISSION_STATS_OVERVIEW
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			0
+			textaligny			0
+			visible				1
+			decoration
+		}
+
+		
+//----------------------------------------------------------------------------------------------
+//	Saber use data
+//----------------------------------------------------------------------------------------------	
+		itemDef
+		{
+			name				saberuse
+			type				ITEM_TYPE_TEXT
+			rect				177 138 200 32
+			text				@MD_MENU_MAIN_LIGHTSABER_USE
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				killed
+			group				stats
+			rect				100 158 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_KILLS
+			cvar				"ui_stats_enemieskilled"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible				1
+			decoration
+		}
+		
+		itemDef
+		{
+			name				saber_blocks
+			rect				200 158 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_BLOCKS
+			cvar				"ui_stats_blocks"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				saber_thrown
+			rect				300 158 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_THROWN
+			cvar				"ui_stats_thrown"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+
+		itemDef
+		{
+			name				arm_attacks
+			rect				100 178 200 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_ARM_ATTACKS
+			cvar				"ui_stats_armattacks"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				body_attacks
+			rect				200 178 200 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_BODY_ATTACKS
+			cvar				"ui_stats_bodyattacks"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				leg_attacks
+			rect				300 178 200 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_LEG_ATTACKS
+			cvar				"ui_stats_legattacks"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible				1
+			decoration
+		}
+
+
+
+		itemDef
+		{
+			name				forceuse
+			type				ITEM_TYPE_TEXT
+			rect				177 208 200 32
+			text				@MD_MENU_MAIN_FORCE_USE
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+		/*
+		itemDef
+		{
+			name				LightandDark
+			type				ITEM_TYPE_TEXT
+			rect				177 288 200 32
+			text				@MD_MENU_MAIN_LIGHT_DARK
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+		*/
+//----------------------------------------------------------------------------------------------
+//	Lower 2nd column of force stats (neutral powers)
+//----------------------------------------------------------------------------------------------	
+		
+		itemDef
+		{
+			name				defense
+			rect				100 228 300 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_DEFENSE
+			cvar				"ui_stats_defense"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				offense
+			rect				200 228 300 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_OFFENSE
+			cvar				"ui_stats_offense"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				throw
+			rect				300 228 300 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_THROW
+			cvar				"ui_stats_throw"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+		
+		itemDef
+		{
+			name				jump
+			rect				100 248 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_JUMP
+			cvar				"ui_stats_jump"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				pull
+			rect				100 268 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_PULL
+			cvar				"ui_stats_pull"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				push
+			rect				100 288 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_PUSH
+			cvar				"ui_stats_push"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				sense
+			rect				100 308 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_SENSE
+			cvar				"ui_stats_sense"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}	
+		itemDef
+		{
+			name				speed
+			rect				100 328 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_SPEED
+			cvar				"ui_stats_speed"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				stasis
+			rect				100 348 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_STASIS
+			cvar				"ui_stats_stasis"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				repulse
+			rect				100 368 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_REPULSE
+			cvar				"ui_stats_repulse"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				grasp
+			rect				100 388 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_GRASP
+			cvar				"ui_stats_grasp"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+
+
+		itemDef
+		{
+			name				heal
+			rect				200 248 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_HEAL
+			cvar				"ui_stats_heal"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				absorb
+			rect				200 268 150 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_ABSORB
+			cvar				"ui_stats_absorb"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				mindtrick
+			rect				200 288 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_MIND_TRICK
+			cvar				"ui_stats_mindtrick"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				protection
+			rect				200 308 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_PROTECTION
+			cvar				"ui_stats_protect"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				blast
+			rect				200 328 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_BLAST
+			cvar				"ui_stats_blast"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				projection
+			rect				200 348 150 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_PROJECTION
+			cvar				"ui_stats_projection"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				judgement
+			rect				200 368 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_JUDGEMENT
+			cvar				"ui_stats_lightning_strike"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		
+
+
+		itemDef
+		{
+			name				drain
+			rect				300 248 150 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_DRAIN
+			cvar				"ui_stats_drain"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				grip
+			rect				300 268 150 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_GRIP
+			cvar				"ui_stats_grip"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				lightning
+			rect				300 288 150 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_LIGHTNING
+			cvar				"ui_stats_lightning"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				rage
+			rect				300 308 150 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_RAGE
+			cvar				"ui_stats_rage"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				destruction
+			rect				300 328 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_DESTRUCTION
+			cvar				"ui_stats_destruction"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				deadlysight
+			rect				300 348 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_DEADLYSIGHT
+			cvar				"ui_stats_deadlysight"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name				fear
+			rect				300 368 160 32
+			type				ITEM_TYPE_EDITFIELD
+			text				@MD_MENU_MAIN_FEAR
+			cvar				"ui_stats_fear"
+			font				5
+			forecolor			0.8 0.8 0.8 0.9
+			textscale			0.14
+			textalign			ITEM_ALIGN_RIGHT
+			textalignx			0
+			textaligny			0
+			visible			1
+			decoration
+		}
+
+		// BUTTONS
+
+		// Big button "CONTINUE"
+		itemDef 
+		{
+			name				continuebutton
+			group				none
+			text				@MD_MENU_MAIN_QUIT_TO_MAIN_MENU
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				37 408 140 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			70
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+
+			action 
+			{ 	
+				uiscript		leave
+			}
+		}
+		
+		// Load auto save button
+		itemDef 
+		{
+			name				checkpointbutton
+			group				none
+			text				@MD_MENU_MAIN_RESTART_LEVEL
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				171 388 140 28
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			81
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep6FASj", "ep6FASs" }
+
+			action 
+			{ 	
+				uiScript  		"load_auto"		// Perform screen init		
+                exec              "helpusobi 1"
+				setcvar			loadgameafterdeath "0"
+			}
+		}
+
+		// Bonus level button for DF2
+		itemDef 
+		{
+			name				bonusbutton
+			group				none
+			text				@MD_MENU_MAIN_PLAY_BONUS_LEVEL
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				171 408 140 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			70
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_episode_credits"
+			showcvar			{ "df2" }
+
+			action 
+			{ 	
+				exec			"devmap md_df2_lvl8"
+			}
+		}
+
+		// Next level text
+		itemDef 
+		{
+			name				nextbutton
+			group				none
+			text				@MD_MENU_MAIN_NEXT_LEVEL
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				152 408 140 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			70
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvarTest			"ui_mission_credits_music"
+			hideCvar			{ "extras", "df2music", "motsmusic", "ep8FTj", "ep8FTs", "tfuWOTEs", "roteVRj", "roteVRs", "roteAOEj", "roteAOEs" }
+			decoration
+		}
+
+		// Mission buttons
+
+// EP1
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_EITD
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1SNj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music ep1EITDj"
+				exec			"devmap md_eitd_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_EITD
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1SNj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music ep1EITDs"
+				exec			"devmap md_eitd_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_DOTF
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1EITDj", "ep1EITDs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music ep1DOFj"
+				exec			"devmap md_dotf_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_DOTF
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1EITDj", "ep1EITDs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music ep1DOFs"
+				exec			"devmap md_dotf_sith"
+			}
+		}
+
+// EP2
+
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_AIL
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1DOFj", "ep1DOFs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2AILj"
+				exec			"devmap md_ail_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_AIL
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1DOFj", "ep1DOFs" }
+			decoration
+
+			action 
+			{ 	
+			}
+		}
+
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_EJF
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2AILj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2EJFj"
+				exec			"devmap md_ka_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_EJF
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2AILj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2EJFs"
+				exec			"devmap md_ka_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_TC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2EJFj", "ep2EJFs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2TCj"
+				exec			"devmap md_tc_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_TC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2EJFj", "ep2EJFs" }
+			decoration
+
+			action 
+			{ 	
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_PA
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2TCj", "ep2TCs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2GAs"
+				exec			"devmap md_ga_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_PA
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2TCj", "ep2TCs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2GAs"
+				exec			"devmap md_ga_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_BOG
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2GAj", "ep2GAs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2GBj"
+				exec			"devmap md_gb_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_BOG
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2GAj", "ep2GAs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2GBs"
+				exec			"devmap md_gb_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_TCR
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2GBj", "ep2GBs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2TCRj"
+				exec			"devmap md_gd_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_TCR
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2GBj", "ep2GBs"  }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 2"
+				exec			"set ui_mission_credits_music ep2TCRs"
+				exec			"devmap md_gd_sith"
+			}
+		}
+
+// EP3
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_ROC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2TCRj", "ep2TCRs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3ROCj"
+				exec			"devmap md_roc_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_ROC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2TCRj", "ep2TCRs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3ROCs"
+				exec			"devmap md_roc_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_EGG
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3ROCj", "ep3ROCs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3EGGj"
+				exec			"devmap md_egg_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_EGG
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3ROCj", "ep3ROCs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3EGGs"
+				exec			"devmap md_egg_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_PO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3EGGj", "ep3EGGs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3POj"
+				exec			"devmap md_po_prologue_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_PO
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3EGGj", "ep3EGGs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3POs"
+				exec			"devmap md_po_prologue_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_JT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3POj", "ep3POs" }
+			decoration
+
+			action 
+			{
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_JT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3POj", "ep3POs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3JTs"
+				exec			"devmap md_jt_prologue"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_AM
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3JTj", "ep3JTs" }
+			decoration
+
+			action 
+			{
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_AM
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3JTj", "ep3JTs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3AMs"
+				exec			"devmap md_amintro_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_RT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3AMj", "ep3AMs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3RTj"
+				exec			"devmap md_rt_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_RT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3AMj", "ep3AMs" }
+			decoration
+
+			action 
+			{
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_MOF
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3RTj", "ep3RTs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3MOFj"
+				exec			"devmap md_mof_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_MOF
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3RTj", "ep3RTs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3MOFs"
+				exec			"devmap md_mof_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_MUS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3MOFj", "ep3MOFs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3MUSj"
+				exec			"devmap md_afif_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_MUS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3MOFj", "ep3MOFs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music ep3MUSs"
+				exec			"devmap md_afif_sith"
+			}
+		}
+
+// REBELS
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_TFOAJ
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3MUSj", "ep3MUSs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 9"
+				exec			"set ui_mission_credits_music rebelsTFOAJj"
+				exec			"devmap md_tfoaj_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_TFOAJ
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3MUSj", "ep3MUSs" }
+			decoration
+
+			action 
+			{
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_TS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsTFOAJj" }
+			
+			action 
+			{
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 9"
+				exec			"set ui_mission_credits_music rebelsTSj"
+				exec			"devmap md_ts_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_TS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsTFOAJj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 9"
+				exec			"set ui_mission_credits_music rebelsTSs"
+				exec			"devmap md_ts_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_LOD
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsTSj", "rebelsTSs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 3"
+				exec			"set ui_mission_credits_music rebelsLODj"
+				exec			"devmap md_lod_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_LOD
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsTSj", "rebelsTSs" }
+			decoration
+
+			action 
+			{
+			}
+		}
+
+// EP4
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_AOTTIV
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsLODj" }
+			decoration
+			
+			action 
+			{
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_AOTTIV
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsLODj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 4"
+				exec			"set ui_mission_credits_music ep4TAs"
+				exec			"devmap md_ep4_intro"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_OLS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep4TAj", "ep4TAs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 4"
+				exec			"set ui_mission_credits_music ep4OLSj"
+				exec			"devmap md_dd_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_OLS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep4TAj", "ep4TAs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 4"
+				exec			"set ui_mission_credits_music ep4OLSs"
+				exec			"devmap md_dd_sith"
+			}
+		}
+
+// EP5
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_TOAJ
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep4OLSj", "ep4OLSs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 5"
+				exec			"set ui_mission_credits_music ep5TOAJj"
+				exec			"devmap md_toaj_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_TOAJ
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep4OLSj", "ep4OLSs" }
+			decoration
+
+			action 
+			{
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_DWTDL
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep5TOAJj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 5"
+				exec			"set ui_mission_credits_music ep5DWTDLj"
+				exec			"devmap md_agditf_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_DWTDL
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep5TOAJj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 5"
+				exec			"set ui_mission_credits_music ep5DWTDLs"
+				exec			"devmap md_agditf_sith"
+			}
+		}
+
+// EP6
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_TGPOC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep5DWTDLj", "ep5DWTDLs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 6"
+				exec			"set ui_mission_credits_music ep6TGPOCj"
+				exec			"devmap md_tgpoc_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_TGPOC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep5DWTDLj", "ep5DWTDLs" }
+			decoration
+
+			action 
+			{
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_FAS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep6TGPOCj", "ep6TGPOCs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 6"
+				exec			"set ui_mission_credits_music ep6FASj"
+				exec			"devmap md_fas_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_FAS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep6TGPOCj", "ep6TGPOCs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 6"
+				exec			"set ui_mission_credits_music ep6FASs"
+				exec			"devmap md_fas_sith"
+			}
+		}
+
+// Ep7
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_ACC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep6FASj", "ep6FASs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 7"
+				exec			"set ui_mission_credits_music ep7ACCj"
+				exec			"devmap md_acc_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_ACC
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep6FASj", "ep6FASs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 7"
+				exec			"set ui_mission_credits_music ep7ACCs"
+				exec			"devmap md_acc_sith"
+			}
+		}
+
+// Ep8
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_SF
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep7ACCj", "ep7ACCs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 7"
+				exec			"set ui_mission_credits_music ep8SFj"
+				exec			"devmap md_sf_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_SF
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep7ACCj", "ep7ACCs" }
+			decoration
+
+			action 
+			{
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_FT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep8SFj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 7"
+				exec			"set ui_mission_credits_music ep8FTj"
+				exec			"devmap md_ft_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_FT
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep8SFj" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 7"
+				exec			"set ui_mission_credits_music ep8FTs"
+				exec			"devmap md_ft_sith"
+			}
+		}
+
+// TFU
+
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_FH
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuSLTj", "tfuSLTs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music tfuFHj"
+				exec			"devmap md_fh1_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_FH
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuSLTj", "tfuSLTs" }
+			decoration
+
+			action 
+			{ 
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_RTR
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuFHj", "tfuFHs" }
+
+			action 
+			{ 	
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music tfuRTRj"
+				exec			"devmap md_tfu_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_RTR
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuFHj", "tfuFHs" }
+
+			action 
+			{ 
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music tfuRTRs"
+				exec			"devmap md_tfu_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_AFH
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuRTRj", "tfuRTRs" }
+
+			action 
+			{ 
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music tfuAFhs"
+				exec			"devmap md_afh_jedi"
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_AFH
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuRTRj", "tfuRTRs" }
+
+			action 
+			{ 
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music tfuAFhs"
+				exec			"devmap md_afh_sith"
+			}
+		}
+//
+		itemDef 
+		{
+			name				jedibutton
+			group				none
+			text				@MD_MENU_MAIN_JEDI
+			desctext			@MD_MENU_MAIN_WOTE
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				258 408 27 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.5
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuAFHj", "tfuAFHs" }
+			decoration
+
+			action 
+			{ 	
+			}
+		}
+
+		itemDef 
+		{
+			name				sithbutton
+			group				none
+			text				@MD_MENU_MAIN_SITH
+			desctext			@MD_MENU_MAIN_WOTE
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				285 408 33 32
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			textalignx			0
+			textaligny			4
+			forecolor			1 1 1 0.9
+			visible				1
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuAFHj", "tfuAFHs" }
+
+			action 
+			{ 
+				exec			"setforceall 0"
+				exec			"cg_sfxsabers 1"
+				exec			"set ui_mission_credits_music tfuWOTEs"
+				exec			"devmap md_wote_sith"
+			}
+		}
+
+
+	//----------------------------------------------------------------------------------------------
+	//	SET MUSIC
+	//----------------------------------------------------------------------------------------------
+	
+		// EP1
+
+		itemDef 
+		{
+			name				ep1SNj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1SNj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep1_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep1EITDj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1EITDj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep1_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep1EITDs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1EITDs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep1_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep1DOFj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1DOFj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_dotf/dotf_credits_jedi"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep1DOFs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep1DOFs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_dotf/dotf_credits_sith"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// EP2
+
+		itemDef 
+		{
+			name				ep2AILj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2AILj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep2EJFj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2EJFj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep2EJFs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2EJFs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep2TCj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2TCj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep2GAj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2GAj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep2GAs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2GAs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep2GBj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2GBj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+		
+		itemDef 
+		{
+			name				ep2GBs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2GBs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep2TCRj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2TCRj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_tcr/tcr_credits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep2TCRs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep2TCRs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_tcr/tcr_credits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// EP3
+
+		itemDef 
+		{
+			name				ep3ROCj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3ROCj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3ROCs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3ROCs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3EGGj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3EGGj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3EGGs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3EGGs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3POj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3POj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3POs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3POs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3JTs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3JTs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3RTj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3RTj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3RTj2
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3RTj2" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3AMs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3AMs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_am/am_credits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3MOFj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3MOFj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3MOFs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3MOFs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep3_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3MUSj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3MUSj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_afif/mus_credits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep3MUSs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep3MUSs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_extras"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// ROTE
+
+		itemDef 
+		{
+			name				roteOLLj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "roteOLLj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/extras_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				roteOLLs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "roteOLLs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/extras_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				roteVRj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "roteVRj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/extras_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				roteVRs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "roteVRs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/extras_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				rebelsTFOAJj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsTFOAJj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/rebels_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				rebelsTSj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsTSj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/rebels_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				rebelsTSs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsTSs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/rebels_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				rebelsLODj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "rebelsLODj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/rebels_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				roteAOEj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "roteAOEj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/extras_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				roteAOEs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "roteAOEs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/extras_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// TFU
+
+		itemDef 
+		{
+			name				tfuSLTs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuSLTs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_extras"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				tfuFHj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuFHj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_extras"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				tfuRTRj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuRTRj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_tfu/endcredits_ls"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				tfuRTRs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuRTRs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_tfu/endcredits_ds"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				tfuWOTEs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuWOTEs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_tfu/endcredits_ds"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				tfuAFHs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "tfuAFHs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_tfu/endcredits_ds"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// EP4
+		
+		itemDef 
+		{
+			name				ep4TAs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep4TAs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep4_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep4OLSj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep4OLSj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_dd/ep4_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep4OLSs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep4OLSs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_dd/ep4_endcredits_alt"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// EP5
+		
+		itemDef 
+		{
+			name				ep5TOAJj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep5TOAJj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_toaj/forest2"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep5DWTDLj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep5DWTDLj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep5_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep5DWTDLs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep5DWTDLs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep5_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// EP6
+
+		itemDef 
+		{
+			name				ep6TGPOCj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep6TGPOCj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep6_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep6FASj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep6FASj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_fas/fas_credits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep6FASs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep6FASs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_fas/fas_credits_dark"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// EP7
+
+		itemDef 
+		{
+			name				ep7ACCj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep7ACCj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep7_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep7ACCs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep7ACCs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep7_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// EP8
+
+		itemDef 
+		{
+			name				ep8SFj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep8SFj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep8_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep8FTj
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep8FTj" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep8_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef 
+		{
+			name				ep8FTs
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "ep8FTs" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/ep8_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// DF2
+
+		itemDef 
+		{
+			name				df2
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "df2music" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/df2/df2_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		// Mots
+
+		itemDef 
+		{
+			name				mots
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "motsmusic" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/df2/mots_endcredits"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+
+		// DEFAULT
+
+		itemDef 
+		{
+			name				EXTRAS
+			group				musicbutton
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			cvartest			"ui_mission_credits_music"
+			showcvar			{ "extras" }
+			mouseEnter
+			{
+				exec			"soundstop"
+				exec			"music music/md_extras"
+				hide			musicbutton
+				setfocus		continuebutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+
+		itemDef
+		{
+			name				black
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				black
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				black
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+	}
+}
+

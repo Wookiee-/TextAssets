@@ -1,0 +1,1700 @@
+//----------------------------------------------------------------------------------------------
+//
+//	CUSTOM CAMERA MENU
+//
+//----------------------------------------------------------------------------------------------
+{
+	menuDef
+	{
+		name					"ingamecameraMenu"
+		fullScreen				0									// MENU_TRUE
+		rect					0 0 640 480							// Size and position of the menu
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					440
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1
+		visible					0									// Visible on open
+
+		onOpen
+		{
+			exec				"helpUsObi 1"
+			setfocus			resume ;
+			show				background
+			show				cam
+			show				camera_options
+			show				pause
+			show				backgroundpanel
+			show 				background_logo
+		}
+
+		onESC
+		{
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingameMainMenu 
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+		
+		itemDef 
+		{
+			name				fix_panel_color // idk why or how
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 -116 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				camerazoom_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 116 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				zoomfov_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 144 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				zoomrange_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 172 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				camerapan_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 199 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				panvertical_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 228 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				panhorizontal_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 256 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				cameramove_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 282 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				movevertical_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 312 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				movehorizontal_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 340 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				cameradamp_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 365 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				displayhud_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				-42 392 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				camerapresets_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 116 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBlueTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				presetsnormal_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 144 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				presetsclose_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 172 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				presetsfar_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 200 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				presetsveryfar_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 228 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				presetsbf_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 256 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				presetsbm_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 284 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				presetsfront_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 312 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				presetslock_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 340 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				tptoggle_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 365 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				truefp_panel
+			group				background
+			style				WINDOW_STYLE_SHADER
+			rect				342 392 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_FILLED
+			rect				151 -5 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				163.7 230 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				163.7 230 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				163.7 285 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottomFP
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				354 336.1 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			cvarTest			cg_trueguns
+			hideCvar			{ "0" }
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	CAMERA BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				presetcameraTextHideAll
+			group				camHideAll
+			style				WINDOW_STYLE_FILLED
+			rect				393 119 240 24
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+			mouseEnter
+			{
+				hide			background
+				hide			cam
+				hide			camera_options	
+				hide			pause
+				hide			backgroundpanel
+				hide			background_logo
+			}
+			mouseExit
+			{
+				show			background
+				show			cam
+				show			camera_options
+				show			pause
+				show			backgroundpanel
+				show			background_logo
+			}
+		}
+
+		// Text "Presets"
+		itemDef 
+		{
+			name				presetcameraText
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 120 240 24
+			text				@MD_MENU_MAIN_CAMERA_PRESETS
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+		
+		// Big button "NORMAL"
+		itemDef 
+		{
+			name				challenge_begin1
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 147 240 24 
+			text				@MD_MENU_MAIN_NORMAL2
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	351 143 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				exec			"seta cg_thirdPersoncameradamp 1"
+				play			"sound/interface/button1.wav" ; 
+				exec			"cg_fov 80" 			
+				exec			"seta cg_thirdPersonrange 80"
+				exec			"seta cg_thirdPersonpitchoffset 0"
+				exec			"seta cg_thirdPersonvertoffset 16"
+				exec			"seta cg_thirdPersonhorzoffset 0"
+				exec			"seta cg_thirdPersontargetdamp 0.5"
+				exec			"seta cg_thirdPersonangle 0"
+				exec			"cm_noAreas 0"
+				exec			"wait 100"
+				exec			"seta cg_thirdPersoncameradamp 0.4"
+			}
+		}
+
+		// Big button "CLOSE"
+		itemDef 
+		{
+			name				challenge_begin1
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 175 240 24 
+			text				@MD_MENU_MAIN_CLOSE_CAM
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	351 171 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec			"cg_fov 64.453125" 
+				exec			"seta cg_thirdPersonrange 85.937500"
+				exec			"seta cg_thirdPersonpitchoffset 9.765625"
+				exec			"seta cg_thirdPersonvertoffset -3.125000"
+				exec			"seta cg_thirdPersonhorzoffset 0"
+				exec			"seta cg_thirdPersontargetdamp 1"
+				exec			"seta cg_thirdPersoncameradamp 1"
+				exec			"seta cg_thirdPersonangle 0"
+				exec			"cm_noAreas 0"
+				//close			all ; 
+			}
+		}
+
+		// Big button "FAR"
+		itemDef 
+		{
+			name				challenge_begin3
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 203 240 24 
+			text				@MD_MENU_MAIN_FAR
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+		  	mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	351 199 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				exec			"cg_fov 80"  
+				exec			"seta cg_thirdPersonrange 200"
+				exec			"seta cg_thirdPersonpitchoffset 0"
+				exec			"seta cg_thirdPersonvertoffset 16"
+				exec			"seta cg_thirdPersonhorzoffset 0"
+				exec			"seta cg_thirdPersontargetdamp 1"
+				exec			"seta cg_thirdPersoncameradamp 1"
+				exec			"seta cg_thirdPersonangle 0"
+				exec			"cm_noAreas 0"
+				//close			all ; 
+			}
+		}
+
+		// Big button "VERY FAR"
+		itemDef 
+		{
+			name				challenge_begin3
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 231 240 24
+			text				@MD_MENU_MAIN_VERY_FAR
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	351 227 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec			"cg_fov 80" 
+				exec			"seta cg_thirdPersonrange 300"
+				exec			"seta cg_thirdPersonpitchoffset 0"
+				exec			"seta cg_thirdPersonvertoffset 20"
+				exec			"seta cg_thirdPersonhorzoffset 0"
+				exec			"seta cg_thirdPersontargetdamp 1"
+				exec			"seta cg_thirdPersoncameradamp 1"
+				exec			"seta cg_thirdPersonangle 0"
+				exec			"cm_noAreas 0"
+				//close			all ;
+			}
+		}
+		
+		// Big button "BATTLEFRONT"
+		itemDef 
+		{
+			name				challenge_begin5
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 259 240 24 
+			text				@MD_MENU_MAIN_BATTLEFRONT
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	351 254.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				exec			"cg_fov 80" 
+				exec			"seta cg_thirdPersonrange 80"
+				exec			"seta cg_thirdPersonvertoffset 4"
+				exec			"seta cg_thirdPersonhorzoffset -20"
+				exec			"seta cg_thirdPersontargetdamp 1"
+				exec			"seta cg_thirdPersoncameradamp 1"
+				exec			"seta cg_thirdPersonangle 0"
+				exec			"cm_noAreas 1"
+				//close			all ;
+			}
+		}
+		
+
+		
+		// Big button "KOTOR"
+		itemDef 
+		{
+			name				view3
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 286.5 240 24
+			text				@MD_MENU_MAIN_KOTOR
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	351 282.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				exec			"cg_fov 80"
+				exec			"seta cg_thirdPersonrange 83.33"
+				exec			"seta cg_thirdPersonpitchoffset 7.5"
+				exec			"seta cg_thirdPersonvertoffset -6.25"
+				exec			"seta cg_thirdPersonhorzoffset 0"
+				exec			"seta cg_thirdPersontargetdamp 1"
+				exec			"seta cg_thirdPersoncameradamp 1"
+				exec			"seta cg_thirdPersonangle 0"
+				exec			"cm_noAreas 0"
+				//close			all ; 
+			}
+		}
+
+		// Big button "IN FRONT"
+		itemDef 
+		{
+			name				challenge_begin4
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 315 240 24 
+			text				@MD_MENU_MAIN_IN_FRONT
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	351 310.5 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec			"cg_fov 80" 
+				exec			"seta cg_thirdPersonrange 100"
+				exec			"seta cg_thirdPersonpitchoffset 0"
+				exec			"seta cg_thirdPersonvertoffset 10"
+				exec			"seta cg_thirdPersonhorzoffset 0"
+				exec			"seta cg_thirdPersontargetdamp 1"
+				exec			"seta cg_thirdPersoncameradamp 1"
+				exec			"seta cg_thirdPersonangle 180"
+				exec			"cm_noAreas 0"
+				//close			all ;
+			}
+		}
+
+		// Big button "LOCK"
+		itemDef 
+		{
+			name				challenge_begin4
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 342 240 24 
+			text				@MD_MENU_MAIN_LOCK_CAMERA
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	351.5 338 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				exec			"seta cg_thirdPersoncameradamp 0"
+				//close			all ;
+			}
+		}
+
+		/*
+		// Big button "FREECAM"
+		itemDef 
+		{
+			name				freecam
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 341 240 24 
+			text				@MD_MENU_MAIN_FREECAM
+			descText			@MD_MENU_MAIN_FREECAM_DESC
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	351 336.25 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				exec			"weapon"
+				exec			"seta cg_thirdPerson !"
+				exec			"god"
+				exec			"notarget"
+				close			all ; 
+				exec			"wait 100"
+				exec			"noclip ; echo ^8FREECAM ^8- ^8Toggled ^8noclip, ^8god, ^8notarget, ^8first ^8person. ^8Click ^8again ^8to ^8toggle ^8off ^8and ^8switch ^8to ^8your ^8lightsaber"
+			}
+		}
+		
+		// Big button "FREECAM"
+		itemDef 
+		{
+			name				freecamoff
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 341 240 24 
+			text				@MD_MENU_MAIN_FREECAM_OFF
+			descText			@MD_MENU_MAIN_FREECAM_DESC
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+
+	  		cvartest			"freecammode"
+			showcvar
+			{
+				freecammode 0
+			}
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	351 336.25 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				setfocus		freecamon
+				exec			"set freecammode 1"
+				hide			background_MDMenuPanelGoldBottom
+				exec			"weapon"
+				exec			"seta cg_thirdPerson 0"
+				exec			"god 1"
+				exec			"notarget 1"
+				close			all ; 
+				exec			"wait 100"
+				exec			"noclip 1; echo ^8FREECAM ON^8- ^8Toggled ^8noclip, ^8god, ^8notarget, ^8first ^8person. ^8Click ^8again ^8to ^8toggle ^8off ^8and ^8switch ^8to ^8your ^8lightsaber"
+				exec			"seta cg_drawhud 0"
+			}
+		}
+
+
+
+		// Big button "FREECAM"
+		itemDef 
+		{
+			name				freecamon
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				393 341 240 24 
+			text				@MD_MENU_MAIN_FREECAM_ON
+			descText			@MD_MENU_MAIN_FREECAM_DESC
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  		
+			cvartest			"freecammode"
+			showcvar
+			{
+				freecammode 1
+			}
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	351 336.25 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+				setfocus		freecamoff
+				exec			"set freecammode 0"
+				hide			background_MDMenuPanelGoldBottom
+				exec			"seta cg_thirdPerson 1"
+				exec			"god 0"
+				exec			"notarget 0"
+				close			all ; 
+				exec			"wait 100"
+				exec			"noclip 0; echo ^8FREECAM OFF^8- ^8Toggled ^8noclip, ^8god, ^8notarget, ^8first ^8person. ^8Switch ^8to ^8your ^8lightsaber"
+				exec			"seta cg_drawhud 1"
+			}
+		}
+		*/
+
+		itemDef 
+		{
+			name				thirdpersontoggle
+			group				cam
+			type				ITEM_TYPE_BIND
+			text				@MD_MENU_MAIN_THIRD_PERSON_TOGGLE
+			cvar				"cg_thirdperson !"
+			rect				392.9 368 240 24 
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			descText			@MENUS_CHANGES_VIEW_BETWEEN
+			mouseenter 
+			{ 
+				setitemrect		background_MDMenuPanelGoldTop	352.5 364 320 30.25
+				show			background_MDMenuPanelGoldTop
+				show			keybindstatus
+			}
+			mouseexit 
+			{ 
+				hide			background_MDMenuPanelGoldTop
+				hide			keybindstatus
+			}
+			action 
+			{ 
+				play			"sound/interface/button1"
+			}
+		}
+
+		// Big button "FIRST PERSON ON"
+		itemDef 
+		{
+			name				firstpersoncamon
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				392.9 394 240 24 
+			text				@MD_MENU_MAIN_TRUE_FIRST_PERSON_ON
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  		cvartest			"cg_fpls"
+			showcvar
+			{
+				cg_fpls 1
+			}
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	352 390.5 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+
+				exec			"cg_trueguns 0"		// This one turns saber fps on/off
+				exec			"cg_fpls 0"			// This one turns saber fps on/off
+				//exec			"cg_trueroll 1"
+				//exec			"cg_trueflip 1"
+				//exec			"cg_truespin 1"
+				//exec			"cg_truemoveroll 0"
+				//exec			"cg_truesaberonly 0"
+				//exec			"cg_trueeyeposition 0.0"
+				exec			"cg_trueinvertsaber 1"		// This one allows Saber fps to be turned on/off (leave it on)
+				//exec			"cg_truefov 80"
+				//exec			"cg_truebobbing 1"
+
+				exec			"cg_gunMomentumDamp 0.001"
+				exec			"cg_gunMomentumFall 0.5"
+				exec			"cg_gunMomentumEnable 0"
+				exec			"cg_gunMomentumInterval 75"
+
+				setfocus		firstpersoncamoff
+
+				exec			"echo ^8Trueview ^8Disabled"
+			}
+		}
+
+		// Big button "FIRST PERSON OFF"
+		itemDef 
+		{
+			name				firstpersoncamoff
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				392.9 394 240 24 
+			text				@MD_MENU_MAIN_TRUE_FIRST_PERSON_OFF
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+	  		cvartest			"cg_fpls"
+			showcvar
+			{
+				cg_fpls 0
+			}
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	352 390.5 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+
+				exec			"cg_trueguns 1"		// This one turns saber fps on/off
+				exec			"cg_fpls 1"			// This one turns saber fps on/off
+				//exec			"cg_trueroll 1"
+				//exec			"cg_trueflip 1"
+				//exec			"cg_truespin 1"
+				//exec			"cg_truemoveroll 0"
+				//exec			"cg_truesaberonly 0"
+				//exec			"cg_trueeyeposition 0.0"
+				exec			"cg_trueinvertsaber 1"		// This one allows Saber fps to be turned on/off (leave it on)
+				//exec			"cg_truefov 80"
+				//exec			"cg_truebobbing 1"
+
+				exec			"cg_gunMomentumDamp 0.001"
+				exec			"cg_gunMomentumFall 0.5"
+				exec			"cg_gunMomentumEnable 0"
+				exec			"cg_gunMomentumInterval 75"
+
+				setfocus		firstpersoncamon
+
+				exec			"echo ^8Trueview ^8Enabled ^8- ^8Enter ^8'cg_true *press TAB*' ^8To ^8Customize ^8Settings"
+				exec			"echo ^8Note: ^8May ^8Need ^8To ^8Toggle ^8Third ^8Person ^8(Check ^8Key ^8Bind ^8In ^8Controls) ^8To ^8Work"
+			}
+		}
+
+		itemDef 
+		{
+			name				keyBindStatus
+			group				cam
+			ownerdraw			250		// UI_KEYBINDSTATUS
+			text				@MENUS_BLANK_1      
+			rect				375 395 0 0
+			textStyle			0
+			font				5
+			textscale			0.14
+			textalign			ITEM_ALIGN_CENTER
+			forecolor			1 1 0 1
+			visible				0
+			decoration 
+		}
+
+		// Camera damp slider
+		itemDef
+		{
+			name				camera_damp
+			group				camera_options
+			rect				3 368 240 24
+			text				@MD_MENU_MAIN_CAMERA_DAMP
+			descText			@MD_MENU_MAIN_CAMERA_DAMP_DESC
+			type				ITEM_TYPE_SLIDER
+	 		textalign			ITEM_ALIGN_RIGHT
+			textalignx			119
+			textaligny			0
+			textscale			0.19
+			textstyle			3
+			font				5
+			forecolor			1 1 1 0.9
+			visible				1
+							  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldTop	-31.5 364 320 30.25
+				show			background_MDMenuPanelGoldTop
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldTop
+			}
+			cvarfloat			"cg_thirdPersoncameradamp" 0.5 0 1
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"seta cg_thirdPersontargetdamp 1"
+			}
+		}
+
+		itemDef
+		{
+			name				draw_hud
+			group				camera_options
+			rect				11 394 240 24
+			text				@MD_MENU_MAIN_DISPLAY_HUD
+			type				ITEM_TYPE_MULTI
+	 		textalign			ITEM_ALIGN_CENTER
+			textalignx			100
+			textaligny			0
+			textscale			0.19
+			textstyle			3
+			font				5
+			forecolor			1 1 1 0.9
+			visible				1
+				  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	-31.5 390 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			cvar				"cg_drawhud"
+			cvarFloatList
+			{
+				@MD_MENU_MAIN_OFF	0
+				@MD_MENU_MAIN_ON	1
+			}
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	CUSTOM CAMERA MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Text "Custom Camera"
+		itemDef 
+		{
+			name				customcameraText
+			group				cam
+			type				ITEM_TYPE_TEXT
+			rect				9 120 240 24
+			text				@MD_MENU_MAIN_CAMERA_ZOOM
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		// Fov slider
+		itemDef
+		{
+			name				fov
+			group				camera_options
+			rect				3 147.9 240 24
+			text				@MD_MENU_MAIN_FOV
+			type				ITEM_TYPE_SLIDER
+	 		textalign			ITEM_ALIGN_RIGHT
+			textalignx			119
+			textaligny			0
+			textscale			0.19
+			textstyle			3
+			font				5
+			forecolor			1 1 1 0.9
+			visible				1
+			  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	-32.5 143 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			cvarfloat			"cg_Fov" 0 0 200
+			action
+			{
+				play			"sound/interface/button1.wav"
+			}
+		}
+
+		// Range slider
+		itemDef
+		{
+			name				range
+			group				camera_options
+			rect				3 175 240 24
+			text				@MD_MENU_MAIN_RANGE
+			type				ITEM_TYPE_SLIDER
+	 		textalign			ITEM_ALIGN_RIGHT
+			textalignx			119
+			textaligny			0
+			font				5
+			textscale			0.19
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+							  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	-32 170.5 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			cvarfloat			"cg_thirdPersonrange" 0 -500 500
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"seta cg_thirdPersoncameradamp 1"
+			}
+		}
+
+		// Text "Panning"
+		itemDef 
+		{
+			name				PanningText
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_TEXT
+			rect				9 203 240 24
+			text				@MD_MENU_MAIN_CAMERA_PAN
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		// Pitch slider
+		itemDef
+		{
+			name				pitch
+			group				camera_options
+			rect				3 231 240 24
+			text				@MD_MENU_MAIN_VERTICAL
+			type				ITEM_TYPE_SLIDER
+	 		textalign			ITEM_ALIGN_RIGHT
+			textalignx			119
+			textaligny			0
+			textscale			0.19
+			textstyle			3
+			font				5
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	-32.5 227 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			cvarfloat			"cg_thirdPersonpitchoffset" 0 -180 180
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"seta cg_thirdPersoncameradamp 1"
+			}
+		}
+
+		// Angle slider
+		itemDef
+		{
+			name				angle
+			group				camera_options
+			rect				3 259 240 24
+			text				@MD_MENU_MAIN_HORIZONTAL
+			type				ITEM_TYPE_SLIDER
+	 		textalign			ITEM_ALIGN_RIGHT
+			textalignx			119
+			textaligny			0
+			font				5
+			textscale			0.19
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+							  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	-32 254 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			cvarfloat			"cg_thirdPersonangle" 0 -180 180
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"seta cg_thirdPersoncameradamp 1"
+			}
+		}
+
+		// Text "Move"
+		itemDef 
+		{
+			name				MoveText
+			group				cam
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_TEXT
+			rect				9 286.7 240 24
+			text				@MD_MENU_MAIN_CAMERA_MOVE
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		// Vertical move slider
+		itemDef
+		{
+			name				vertical_move
+			group				camera_options
+			rect				3 315 240 24
+			text				@MD_MENU_MAIN_VERTICAL
+			type				ITEM_TYPE_SLIDER
+	 		textalign			ITEM_ALIGN_RIGHT
+			textalignx			119
+			textaligny			0
+			textscale			0.19
+			textstyle			3
+			font				5
+			forecolor			1 1 1 0.9
+			visible				1
+							  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	-32.5 311 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			cvarfloat			"cg_thirdPersonvertoffset" 0 -100 100
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"seta cg_thirdPersoncameradamp 1"
+			}
+		}
+
+		// Horizontal move slider
+		itemDef
+		{
+			name				horizontal_move
+			group				camera_options
+			rect				3 343 240 24
+			text				@MD_MENU_MAIN_HORIZONTAL
+			type				ITEM_TYPE_SLIDER
+	 		textalign			ITEM_ALIGN_RIGHT
+			textalignx			119
+			textaligny			0
+			textscale			0.19
+			textstyle			3
+			font				5
+			forecolor			1 1 1 0.9
+			visible				1
+							  	  
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	-32 338 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			cvarfloat			"cg_thirdPersonhorzoffset" 0 -100 100
+			action
+			{
+				play			"sound/interface/button1.wav"
+				exec			"seta cg_thirdPersoncameradamp 1"
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				pause
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+  			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingameMainMenu 
+			}
+		}
+
+		itemDef 
+		{
+			name				NPCfreeze
+			group				pause
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_MULTI
+			rect				170 458 301 24 
+			text				@MD_MENU_MAIN_FREEZE_NPC
+			descText			@MD_MENU_MAIN_FREEZE_NPC_DESC
+			cvar				"d_npcfreeze"	
+			cvarFloatList		{ @MD_MENU_MAIN_OFF 0 @MD_MENU_MAIN_ON 1 }
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			135
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 316 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 316 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 316 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 463 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"helpusobi 1"
+			} 
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				pause
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MD_MENU_MAIN_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+
+	}
+}

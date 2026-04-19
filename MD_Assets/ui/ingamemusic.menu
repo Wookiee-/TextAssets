@@ -1,0 +1,1523 @@
+//----------------------------------------------------------------------------------------------
+// INGAME MAIN MENU
+//
+//	Ingame music menu
+//
+//----------------------------------------------------------------------------------------------
+
+	menuDef 
+	{
+		name					"ingamemusic"
+		fullScreen				1				// MENU_TRUE				
+		rect					0 0 640 480			// Size and position of the menu
+		visible					0				// Visible on open
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					440
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1		
+
+		onOpen 
+		{
+			setfocus			resume ;
+		}
+
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav" 					
+			close				all
+			open				ingameMainMenu
+		}
+												
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background4
+			group				music
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/musicmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background4
+			group				music
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/musicmenupanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_SHADER
+			rect				151 -5 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MUSIC LIST
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				TDImusic
+			group				music
+			rect				10 107 145 18
+			text				@MD_MENU_MAIN_TDIMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_ch/ch_droids" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				FTDmusic
+			group				music
+			rect				10 130 145 18
+			text				@MD_MENU_MAIN_FTDMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_sn/md_sn" 
+			} 
+		}
+		
+		itemDef 
+		{
+			name				QAMMmusic
+			group				music
+			rect				10 153 145 18
+			text				@MD_MENU_MAIN_QAMMMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_eitd/md_eitd" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				QPmusic
+			group				music
+			rect				10 176 145 18
+			text				@MD_MENU_MAIN_QPMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/cot1" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				DOTFmusic
+			group				music
+			rect				10 199 145 18
+			text				@MD_MENU_MAIN_DOTFMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/dotf" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				QFmusic
+			group				music
+			rect				10 222 145 18
+			text				@MD_MENU_MAIN_QFMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_dotf/dotf_end" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				ATSmusic
+			group				music
+			rect				10 245 145 18
+			text				@MD_MENU_MAIN_ATSMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/ep2_lovetheme" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				JEmusic
+			group				music
+			rect				10 268 145 18
+			text				@MD_MENU_MAIN_JEMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_ka/md_ka" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				CWBOCmusic
+			group				music
+			rect				10 291 145 18
+			text				@MD_MENU_MAIN_CWBOCMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/BattleOfChristophsis" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				MDmusic
+			group				music
+			rect				10 314 145 18
+			text				@MD_MENU_MAIN_MDMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/MandaloreDuel" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				DITJTmusic
+			group				music
+			rect				10 337 145 18
+			text				@MD_MENU_MAIN_DITJTMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/DuelJediTemple" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Clonesmusic
+			group				music
+			rect				10 360 145 18
+			text				@MD_MENU_MAIN_ClonesMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/TheClones" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Ahsokamusic
+			group				music
+			rect				10 383 145 18
+			text				@MD_MENU_MAIN_AhsokaMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/AhsokaTheme" 
+			} 
+		}
+
+		///
+
+		itemDef 
+		{
+			name				BOCmusic
+			group				music
+			rect				170 107 145 18
+			text				@MD_MENU_MAIN_BOCMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/epiii_boc/siege_boc" 
+			} 
+		}
+
+
+		itemDef 
+		{
+			name				GSTSmusic
+			group				music
+			rect				170 130 145 18
+			text				@MD_MENU_MAIN_GSTSMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/GrievousSpeaksToLordSidious" 
+			} 
+		}
+			
+		itemDef 
+		{
+			name				JTMmusic
+			group				music
+			rect				170 153 145 18
+			text				@MD_MENU_MAIN_JTMMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_jt/jt_intro2" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				ABmusic
+			group				music
+			rect				170 176 145 18
+			text				@MD_MENU_MAIN_ABMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_jt/md_jt" 
+			} 
+		}
+		
+		itemDef 
+		{
+			name				ADDmusic
+			group				music
+			rect				170 199 145 18
+			text				@MD_MENU_MAIN_ADDMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/AnakinsDarkDeeds" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				AVOmusic
+			group				music
+			rect				170 222 145 18
+			text				@MD_MENU_MAIN_AVOMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_afif/both_action" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				BOTHmusic
+			group				music
+			rect				170 245 145 18
+			text				@MD_MENU_MAIN_BOTHMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_afif/both_action3" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				JEmusic
+			group				music
+			rect				170 268 145 18
+			text				@MD_MENU_MAIN_JEHSMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/JynErsoHopeSuite" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				TIS2music
+			group				music
+			rect				170 291 145 18
+			text				@MD_MENU_MAIN_TIS2MUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/TheImperialSuite" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				Hmusic
+			group				music
+			rect				170 314 145 18
+			text				@MD_MENU_MAIN_HMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_ch/ch_vader" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				MTmusic
+			group				music
+			rect				170 337 145 18
+			text				@MD_MENU_MAIN_MTMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/MainTitle"  
+			} 
+		}
+		
+		itemDef 
+		{
+			name				IAmusic
+			group				music
+			rect				170 360 145 18
+			text				@MD_MENU_MAIN_IAMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/duel_tantiveiv"
+			} 
+		}
+
+		itemDef 
+		{
+			name				BSmusic
+			group				music
+			rect				170 383 145 18
+			text				@MD_MENU_MAIN_BSMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/yavin_trial/yavtrial_explore"
+			} 
+		}
+
+		///
+
+		itemDef 
+		{
+			name				CBmusic
+			group				music
+			rect				330 107 145 18
+			text				@MD_MENU_MAIN_CBMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/CantinaBand" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				TFAmusic
+			group				music
+			rect				330 130 145 18
+			text				@MD_MENU_MAIN_TFAMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/BensDeathAndTieFighterAttack" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				TTRmusic
+			group				music
+			rect				330 153 145 18
+			text				@MD_MENU_MAIN_TTRMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/TheThroneRoomEndTitle" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				AFmusic
+			group				music
+			rect				330 176 145 18
+			text				@MD_MENU_MAIN_AFMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/kor_lite/final_battle"
+			} 
+		}
+		
+		itemDef 
+		{
+			name				YATFmusic
+			group				music
+			rect				330 199 145 18
+			text				@MD_MENU_MAIN_YATFMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_ch/ch_yoda" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				IMmusic
+			group				music
+			rect				330 222 145 18
+			text				@MD_MENU_MAIN_IMMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/imperialmarch" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				COLSmusic
+			group				music
+			rect				330 245 145 18
+			text				@MD_MENU_MAIN_COLSMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/VaderDefeatsLuke" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				ROTJmusic
+			group				music
+			rect				330 268 145 18
+			text				@MD_MENU_MAIN_ROTJMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/sarlacc/sarlacc_music" 
+			}  
+		}
+				
+		itemDef 
+		{
+			name				ITTmusic
+			group				music
+			rect				330 291 145 18
+			text				@MD_MENU_MAIN_ITTMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_ch/ch_kyle" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				TEmusic
+			group				music
+			rect				330 314 145 18
+			text				@MD_MENU_MAIN_TEMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/emperor/emperor" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				Victorymusic
+			group				music
+			rect				330 337 145 18
+			text				@MD_MENU_MAIN_VICTORYMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/victorycelebration"  
+			} 
+		}
+				
+		itemDef 
+		{
+			name				EP7Tmusic
+			group				music
+			rect				330 360 145 18
+			text				@MD_MENU_MAIN_EP7TMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/ForceAwakensTrailer" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				MOTRmusic
+			group				music
+			rect				330 383 145 18
+			text				@MD_MENU_MAIN_MOTRMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/MarchOfTheResistance" 
+			} 
+		}
+
+		///
+
+		itemDef 
+		{
+			name				RTmusic
+			group				music
+			rect				490 107 145 18
+			text				@MD_MENU_MAIN_RTMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/ReysTheme" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				KRAmusic
+			group				music
+			rect				490 130 145 18
+			text				@MD_MENU_MAIN_KRAMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/KyloRenArrivesAtTheBattle" 
+			} 
+		}
+		
+		itemDef 
+		{
+			name				WOTFmusic
+			group				music
+			rect				490 153 145 18
+			text				@MD_MENU_MAIN_WOTFMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/skb_duel" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				ANAmusic
+			group				music
+			rect				490 176 145 18
+			text				@MD_MENU_MAIN_ANAMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/sup_duel"
+			} 
+		}
+				
+		itemDef 
+		{
+			name				TSmusic
+			group				music
+			rect				490 199 145 18
+			text				@MD_MENU_MAIN_TSMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/crt_duel" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				TMmusic
+			group				music
+			rect				490 222 145 18
+			text				@MD_MENU_MAIN_TMMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/TheMandalorian" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Bf2music
+			group				music
+			rect				490 245 145 18
+			text				@MD_MENU_MAIN_BF2MUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/mainmenu/sp/challengemenu" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				STmusic
+			group				music
+			rect				490 268 145 18
+			text				@MD_MENU_MAIN_STMUSIC			
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_tfu/md_tfu"
+			} 
+		}
+				
+		itemDef 
+		{
+			name				TCRmusic
+			group				music
+			rect				490 291 145 18
+			text				@MD_MENU_MAIN_TCRMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/md_ch/ch_kota" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				CODmusic
+			group				music
+			rect				490 314 145 18
+			text				@MD_MENU_MAIN_CODMUSIC		
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/ClashOfDestiny" 
+			} 
+		}
+				
+		itemDef 
+		{
+			name				RT2music
+			group				music
+			rect				490 337 145 18
+			text				@MD_MENU_MAIN_RT2MUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/RevanTheme" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				DMTmusic
+			group				music
+			rect				490 360 145 18
+			text				@MD_MENU_MAIN_DMTMUSIC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/DarthMalakTheme" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				RCmusic
+			group				music
+			rect				490 383 145 18
+			text				@MD_MENU_MAIN_RCMUSIC	
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music music/musicMenu/RepublicCommando" 
+			} 
+		}
+
+
+		// Custom music
+
+		itemDef 
+		{
+			name				Custom1music
+			group				music
+			rect				10 415 80 18
+			text				@MD_MENU_MAIN_CUSTOM1MUSIC
+			descText			@MD_MENU_MAIN_CUSTOMMUSIC_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music MyMusic/Custom1" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Custom2music
+			group				music
+			rect				90 415 80 18
+			text				@MD_MENU_MAIN_CUSTOM2MUSIC
+			descText			@MD_MENU_MAIN_CUSTOMMUSIC_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music MyMusic/Custom2" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Custom3music
+			group				music
+			rect				170 415 80 18
+			text				@MD_MENU_MAIN_CUSTOM3MUSIC
+			descText			@MD_MENU_MAIN_CUSTOMMUSIC_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music MyMusic/Custom3" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Custom4music
+			group				music
+			rect				250 415 80 18
+			text				@MD_MENU_MAIN_CUSTOM4MUSIC	
+			descText			@MD_MENU_MAIN_CUSTOMMUSIC_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music MyMusic/Custom4" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Custom5music
+			group				music
+			rect				330 415 80 18
+			text				@MD_MENU_MAIN_CUSTOM5MUSIC	
+			descText			@MD_MENU_MAIN_CUSTOMMUSIC_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music MyMusic/Custom5" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Custom6music
+			group				music
+			rect				410 415 80 18
+			text				@MD_MENU_MAIN_CUSTOM6MUSIC	
+			descText			@MD_MENU_MAIN_CUSTOMMUSIC_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music MyMusic/Custom6" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Custom7music
+			group				music
+			rect				490 415 80 18
+			text				@MD_MENU_MAIN_CUSTOM7MUSIC	
+			descText			@MD_MENU_MAIN_CUSTOMMUSIC_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music MyMusic/Custom7" 
+			} 
+		}
+
+		itemDef 
+		{
+			name				Custom8music
+			group				music
+			rect				570 415 80 18
+			text				@MD_MENU_MAIN_CUSTOM8MUSIC	
+			descText			@MD_MENU_MAIN_CUSTOMMUSIC_DESC
+			type				ITEM_TYPE_BUTTON
+			textalign			ITEM_ALIGN_LEFT
+			font				5
+			textscale			0.14
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  	action 
+			{
+				play			"sound/interface/button1.wav"
+				exec			"music MyMusic/Custom8" 
+			} 
+		}
+
+		// BACK button in lower left corner
+
+		itemDef 
+		{
+			name				backbutton
+			group				music
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav" 					
+				close			all
+				open			ingameMainMenu
+			}
+		}
+
+		itemDef 
+		{
+			name				music_volume
+			group				sound
+			type				ITEM_TYPE_SLIDER
+			text				@MENUS_MUSIC_VOLUME
+			cvarfloat			"s_musicvolume" 0 0 1
+			rect				170 458.2 301 24
+	   		textalign			ITEM_ALIGN_CENTER
+			textalignx			100
+			textaligny			0
+			font 				5
+			textscale			0.19
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 316 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 316 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 316 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 463 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;
+			}
+
+		}
+
+		// RESUME button in the lower right corner
+
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MENUS_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+
+  			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

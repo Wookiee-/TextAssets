@@ -1,0 +1,836 @@
+//----------------------------------------------------------------------------------------------
+//
+//	CUSTOM CAMERA MENU
+//
+//----------------------------------------------------------------------------------------------
+{
+	menuDef
+	{
+		name					"ingamespawneraMenu"
+		fullScreen				1									// MENU_TRUE
+		rect					0 0 640 480							// Size and position of the menu
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					442
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1
+		visible					0								// Visible on open
+
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				10						// how often fade happens in milliseconds
+		fadeAmount				0.1					// amount to adjust alpha per cycle
+
+		onOpen
+		{
+			setfocus			resume ;
+			//setitemrect			goldpanel 168 133 163.5 30.25
+			//setitemrect			eratitle 251.5 146 100 24
+			//setitemrect			eratext 251.5 346 100 24
+		}
+
+		onESC
+		{
+			play				"sound/interface/esc.wav" 
+			close				all
+			open				ingameMainMenu
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/characternpcspawn/eraselectbk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_SHADER
+			rect				151 -5 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				erapanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				174 415 291 28
+			background			"gfx/menus/main/buttons/MDMenuPanelTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop
+			group				goldpanel
+			style				WINDOW_STYLE_FILLED
+			rect				168 133 163.5 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				goldpanel
+			style				WINDOW_STYLE_FILLED
+			rect				168 133 163.5 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop2
+			group				goldpanel
+			style				WINDOW_STYLE_FILLED
+			rect				168 133 163.5 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom2
+			group				goldpanel
+			style				WINDOW_STYLE_FILLED
+			rect				168 133 163.5 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop3
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				183.25 414 273 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	ERA SELECT TEXT
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name				NPC_TITLE
+			group				title
+			type				ITEM_TYPE_BUTTON
+			text				@MD_MENU_MAIN_NPC_SPAWN_MENU
+			descText			@MD_MENU_MAIN_NPC_SPAWN_MENU_DESC
+			rect				221 418 200 24 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			99
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			mouseEnter
+			{
+				show			background_MDMenuPanelGoldTop3
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldTop3
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			ingamecharactereramenu
+			}
+		}
+
+        itemDef
+		{
+			name				PREQUEL_TITLE
+			group				eratitle
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_PREQUEL_TITLE
+			rect				251.5 146 100 24
+			font				5
+			textscale			0.135
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			backcolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				PREQUEL_TEXT
+			group				eratext
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_PREQUEL_TEXT2
+			rect				251.5 346 100 24
+			font				5
+			textscale			0.075
+			textalign			ITEM_ALIGN_CENTER
+			textaligny			1
+			textalignx			-1
+			textstyle			3
+			backcolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				ORIGINAL_TITLE
+			group				eratitle
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_ORIGINAL_TITLE
+			rect				251.5 146 100 24
+			font				5
+			textscale			0.135
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			backcolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				ORIGINAL_TEXT
+			group				eratext
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_ORIGINAL_TEXT2
+			rect				251.5 346 100 24
+			font				5
+			textscale			0.075
+			textalign			ITEM_ALIGN_CENTER
+			textaligny			1
+			textalignx			-1
+			textstyle			3
+			backcolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				SEQUEL_TITLE
+			group				eratitle
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_SEQUEL_TITLE
+			rect				251.5 146 100 24
+			font				5
+			textscale			0.135
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			backcolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				SEQUEL_TEXT
+			group				eratext
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_SEQUEL_TEXT2
+			rect				251.5 346 100 24
+			font				5
+			textscale			0.075
+			textalign			ITEM_ALIGN_CENTER
+			textaligny			1
+			textalignx			0
+			textstyle			3
+			backcolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				LEGENDS_TITLE
+			group				eratitle
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_LEGENDS_TITLE
+			rect				251.5 146 100 24
+			font				5
+			textscale			0.135
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			backcolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				LEGENDS_TEXT
+			group				eratext
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_LEGENDS_TEXT
+			rect				251.5 346 100 24
+			font				5
+			textscale			0.075
+			textalign			ITEM_ALIGN_CENTER
+			textaligny			1
+			textalignx			-1
+			textstyle			3
+			backcolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	ERA SELECT BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				Prequelbutton
+			group				era
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				49 125 127 260
+			background			"gfx/menus/ingame/characternpcspawn/prequelselectbk2"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				transition		background_MDMenuPanelGoldTop	30 133 163.5 30.25 25 93 174.5 30.25 10 15
+				transition		PREQUEL_TITLE	113.5 146 100 24 113.5 101 100 24 10 15
+
+				transition		background_MDMenuPanelGoldBottom	30 346 163.5 30.25 25 386 174.5 30.25 10 15
+				transition		PREQUEL_TEXT	113.5 346 100 24 113.5 396 100 24 10 15
+				
+				transition2		Prequelbutton	46.5 120 132 270 10 15
+				setitembackground	Prequelbutton	"gfx/menus/ingame/characternpcspawn/prequelselectbkgold2"
+			}
+			mouseExit
+			{
+				transition		background_MDMenuPanelGoldTop	25 93 174.5 30.25 30 133 163.5 30.25 10 15
+				transition		PREQUEL_TITLE	113.5 101 100 24 113.5 146 100 24 10 15
+
+				transition		background_MDMenuPanelGoldBottom	25 386 174.5 30.25 30 346 163.5 30.25 10 15
+				transition		PREQUEL_TEXT	113.5 396 100 24 113.5 346 100 24 10 15
+
+				transition2		Prequelbutton	49 125 127 260 10 15
+				setitembackground	Prequelbutton	"gfx/menus/ingame/characternpcspawn/prequelselectbk2"
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"  
+				close			all ; 
+				open			ingamespawnprequel1Menu 
+			}
+		}
+
+		itemDef 
+		{
+			name				Originalbutton
+			group				era
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				187 125 127 260
+			background			"gfx/menus/ingame/characternpcspawn/Originalselectbk2"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				transition		background_MDMenuPanelGoldTop2	168 133 163.5 30.25 163 93 174.5 30.25 10 15
+				transition		ORIGINAL_TITLE	251.5 146 100 24 251.5 101 100 24 10 15
+
+				transition		background_MDMenuPanelGoldBottom2	168 346 163.5 30.25 163 386 174.5 30.25 10 15
+				transition		ORIGINAL_TEXT	251.5 346 100 24 251.5 396 100 24 10 15
+				
+				transition2		Originalbutton	184.5 120 132 270 10 15
+				setitembackground	Originalbutton	"gfx/menus/ingame/characternpcspawn/originalselectbkgold2"
+			}
+			mouseExit
+			{
+				transition		background_MDMenuPanelGoldTop2	163 93 174.5 30.25 168 133 163.5 30.25 10 15
+				transition		ORIGINAL_TITLE	251.5 101 100 24 251.5 146 100 24 10 15
+
+				transition		background_MDMenuPanelGoldBottom2	163 386 174.5 30.25 168 346 163.5 30.25 10 15
+				transition		ORIGINAL_TEXT	251.5 396 100 24 251.5 346 100 24 10 15
+
+				transition2		Originalbutton	187 125 127 260 10 15
+				setitembackground	Originalbutton	"gfx/menus/ingame/characternpcspawn/originalselectbk2"
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"  
+				close			all ; 
+				open			ingamespawnoriginalMenu 
+			}
+		}
+
+		itemDef 
+		{
+			name				sequelbutton
+			group				era
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				325 125 127 260
+			background			"gfx/menus/ingame/characternpcspawn/sequelselectbk2"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				transition		background_MDMenuPanelGoldTop	306 133 163.5 30.25 301 93 174.5 30.25 10 15
+				transition		SEQUEL_TITLE	389.5 146 100 24 389.5 101 100 24 10 15
+
+				transition		background_MDMenuPanelGoldBottom	306 346 163.5 30.25 301 386 174.5 30.25 10 15
+				transition		SEQUEL_TEXT	389.5 346 100 24 389.5 396 100 24 10 15
+				
+				transition2		sequelbutton	322.5 120 132 270 10 15
+				setitembackground	sequelbutton	"gfx/menus/ingame/characternpcspawn/sequelselectbkgold2"
+			}
+			mouseExit
+			{
+				transition		background_MDMenuPanelGoldTop	301 93 174.5 30.25 306 133 163.5 30.25 10 15
+				transition		SEQUEL_TITLE	389.5 101 100 24 389.5 146 100 24 10 15
+
+				transition		background_MDMenuPanelGoldBottom	301 386 174.5 30.25 306 346 163.5 30.25 10 15
+				transition		SEQUEL_TEXT	389.5 396 100 24 389.5 346 100 24 10 15
+
+				transition2		sequelbutton	325 125 127 260 10 15
+				setitembackground	sequelbutton	"gfx/menus/ingame/characternpcspawn/sequelselectbk2"
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"  
+				close			all ; 
+				open			ingamespawnsequelMenu 
+			}
+		}
+
+		itemDef 
+		{
+			name				legendsbutton
+			group				era
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				463 125 127 260
+			background			"gfx/menus/ingame/characternpcspawn/legendsselectbk2"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				transition		background_MDMenuPanelGoldTop2	444 133 163.5 30.25 439 93 174.5 30.25 10 15
+				transition		LEGENDS_TITLE	527.5 146 100 24 527.5 101 100 24 10 15
+
+				transition		background_MDMenuPanelGoldBottom2	444 346 163.5 30.25 439 386 174.5 30.25 10 15
+				transition		LEGENDS_TEXT	527.5 346 100 24 527.5 396 100 24 10 15
+				
+				transition2		legendsbutton	460.5 120 132 270 10 15
+				setitembackground	legendsbutton	"gfx/menus/ingame/characternpcspawn/legendsselectbkgold2"
+			}
+			mouseExit
+			{
+				transition		background_MDMenuPanelGoldTop2	439 93 174.5 30.25 444 133 163.5 30.25 10 15
+				transition		LEGENDS_TITLE	527.5 101 100 24 527.5 146 100 24 10 15
+
+				transition		background_MDMenuPanelGoldBottom2	439 386 174.5 30.25 444 346 163.5 30.25 10 15
+				transition		LEGENDS_TEXT	527.5 396 100 24 527.5 346 100 24 10 15
+
+				transition2		legendsbutton	463 125 127 260 10 15
+				setitembackground	legendsbutton	"gfx/menus/ingame/characternpcspawn/legendsselectbk2"
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav"  
+				close			all ; 
+				open			ingamespawnlegends1Menu 
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingameMainMenu 
+			}
+		}
+
+		// Player Dark Side Faction
+        itemDef
+		{
+			name				dark
+			group				pause1
+			type				ITEM_TYPE_BUTTON
+			rect				170 458 101 24 
+			text				@MD_MENU_MAIN_SOLO
+			descText			@MD_MENU_MAIN_SOLO_DESC
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 216 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 216 468 0 0 263 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 216 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 263 465 22 12 216 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action
+			{
+			    exec			"helpusobi 1"
+				exec			"playerteam free"
+				exec			"echo ^3JOINED ^3SOLO ^3TEAM"
+			}
+		}
+
+		// Big button "NPC COMMANDS"
+		itemDef 
+		{
+			name				charactermenu
+			group				pause
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				270 458 101 24 
+			text				@MD_MENU_MAIN_NPC
+			descText			@MD_MENU_MAIN_NPC_DESC
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 316 468 0 0 270 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 316 468 0 0 363 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 270 465 22 12 316 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 363 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				open			ingamespawncommandsmenu
+			}
+		}
+
+		// Player Light Side Faction
+        itemDef
+		{
+			name				light
+			group				pause
+			type				ITEM_TYPE_BUTTON
+			text				@MD_MENU_MAIN_NEUTRAL
+			descText			@MD_MENU_MAIN_NEUTRAL_DESC
+			rect				370 458 101 24 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		4background_MDIngameMenuPanelGolddivider1 416 468 0 0 370 465 22 12 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 416 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		4background_MDIngameMenuPanelGolddivider1 370 465 22 12 416 468 0 0 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 463 465 22 12 416 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action
+			{
+				exec			"helpusobi 1"
+				exec			"playerteam neutral"
+				exec			"echo ^4JOINED ^4NEUTRAL ^4TEAM"
+			}
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MENUS_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+
+	}
+}

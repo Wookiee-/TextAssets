@@ -1,0 +1,1113 @@
+//----------------------------------------------------------------------------------------------
+//
+//	OBJECTS MENU
+//
+//----------------------------------------------------------------------------------------------
+{
+	menuDef
+	{
+		name					"ingamespawnobjectsMenu"
+		fullScreen				1									// MENU_TRUE
+		rect					0 0 640 480							// Size and position of the menu
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					440
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1
+		visible					0								// Visible on open
+
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				10						// how often fade happens in milliseconds
+		fadeAmount				0.1					// amount to adjust alpha per cycle
+
+		onOpen
+		{
+			setfocus			resume ;
+		}
+
+		onESC
+		{
+			play				"sound/interface/esc.wav" 
+			close				all
+			open				ingamecharacter
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/characternpcspawn/background_ot"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		//Arrows In Right Corner
+
+		itemDef 
+		{
+			name				forward_glow
+			group				arrowsglow
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/forward_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				back_glow
+			group				arrowsglow
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/back_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//------------------------
+		//  Objects
+		//------------------------	
+
+		itemDef 
+		{
+			name				toss_heater
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				38 110 85 85
+			background			"gfx/menus/charactericons/toss_heater_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_HEATER
+
+			mouseEnter 
+			{ 
+				show			toss_heater_glow
+				setitemrect		toss_heater_glow	38 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_heater_glow
+			}	 
+ 	  
+			action 
+			{  
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_heater toss_heater"
+				exec			"vstr npc_spawn_recent"
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_bunk
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				134 110 85 85
+			background			"gfx/menus/charactericons/toss_bunk_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_BED
+
+			mouseEnter 
+			{ 
+				show			toss_bunk_glow
+				setitemrect		toss_bunk_glow	134 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_bunk_glow
+			}	 
+ 	  
+			action 
+			{  
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_bunk toss_bunk"
+				exec			"vstr npc_spawn_recent"
+			}
+		}	
+
+		itemDef 
+		{
+			name				toss_table
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				230 110 85 85
+			background			"gfx/menus/charactericons/toss_table_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_TABLE
+
+			mouseEnter 
+			{ 
+				show			toss_table_glow
+				setitemrect		toss_table_glow	230 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_table_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_table toss_table"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_barrel
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				326 110 85 85
+			background			"gfx/menus/charactericons/toss_barrel_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_BARREL
+
+			mouseEnter 
+			{ 
+				show			toss_barrel_glow
+				setitemrect		toss_barrel_glow	326 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_barrel_glow
+			}	 
+ 	  
+			action 
+			{  
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_barrel toss_barrel"
+				exec			"vstr npc_spawn_recent"
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_cargo_big
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				422 110 85 85
+			background			"gfx/menus/charactericons/toss_cargo_big_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_CARGO_BIG
+
+			mouseEnter 
+			{ 
+				show			toss_cargo_big_glow
+				setitemrect		toss_cargo_big_glow	422 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_cargo_big_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_cargo_big toss_cargo_big"
+				exec			"vstr npc_spawn_recent" 	
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_cargo_sm
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				518 110 85 85
+			background			"gfx/menus/charactericons/toss_cargo_sm_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_CARGO_SMALL
+
+			mouseEnter 
+			{ 
+				show			toss_cargo_sm_glow
+				setitemrect		toss_cargo_sm_glow	518 110 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_cargo_sm_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_cargo_sm toss_cargo_sm"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_core
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				38 206 85 85
+			background			"gfx/menus/charactericons/toss_core_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_CORE
+
+			mouseEnter 
+			{ 
+				show			toss_core_glow
+				setitemrect		toss_core_glow	38 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_core_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_core toss_core"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_emod
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				134 206 85 85
+			background			"gfx/menus/charactericons/toss_emod_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_EMOD
+
+			mouseEnter 
+			{ 
+				show			toss_emod_glow
+				setitemrect		toss_emod_glow	134 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_emod_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_emod toss_emod"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_crate01
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				230 206 85 85
+			background			"gfx/menus/charactericons/toss_crate01_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_CRATE01
+
+			mouseEnter 
+			{ 
+				show			toss_crate01_glow
+				setitemrect		toss_crate01_glow	230 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_crate01_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_crate01 toss_crate01"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_crate02
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				326 206 85 85
+			background			"gfx/menus/charactericons/toss_crate02_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_CRATE02
+
+			mouseEnter 
+			{ 
+				show			toss_crate02_glow
+				setitemrect		toss_crate02_glow	326 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_crate02_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_crate02 toss_crate02"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_crate03
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				422 206 85 85
+			background			"gfx/menus/charactericons/toss_crate03_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_CRATE03
+
+			mouseEnter 
+			{ 
+				show			toss_crate03_glow
+				setitemrect		toss_crate03_glow	422 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_crate03_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_crate03 toss_crate03"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+		
+		itemDef 
+		{
+			name				toss_crate04
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				518 206 85 85
+			background			"gfx/menus/charactericons/toss_crate04_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_CRATE04
+
+			mouseEnter 
+			{ 
+				show			toss_crate04_glow
+				setitemrect		toss_crate04_glow	518 206 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_crate04_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_crate04 toss_crate04"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_pillarbase
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				182 302 85 85
+			background			"gfx/menus/charactericons/toss_pillarbase_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_PILLARBASE
+
+			mouseEnter 
+			{ 
+				show			toss_pillarbase_glow
+				setitemrect		toss_pillarbase_glow	182 302 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_pillarbase_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_pillarbase toss_pillarbase"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		itemDef 
+		{
+			name				toss_statue
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				278 302 85 85
+			background			"gfx/menus/charactericons/toss_statue_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_STATUE
+
+			mouseEnter 
+			{ 
+				show			toss_statue_glow
+				setitemrect		toss_statue_glow	278 302 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_statue_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_statue01 toss_statue01"
+				exec			"vstr npc_spawn_recent"
+
+			}
+		}
+
+		
+		itemDef 
+		{
+			name				toss_cache
+			group				objects
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			rect				374 302 85 85
+			background			"gfx/menus/charactericons/toss_cache_icon"
+			forecolor			1 1 1 0.8
+			visible				1
+			descText			@MD_MENU_MAIN_TOSS_STORAGEUNIT
+
+			mouseEnter 
+			{ 
+				show			toss_cache_glow
+				setitemrect		toss_cache_glow	374 302 85 85
+			}
+
+			mouseExit 
+			{ 
+				hide			toss_cache_glow
+			}	 
+ 	  
+			action 
+			{ 
+				close			all ; 
+				exec			"helpusobi 1"
+				exec			"set npc_spawn_recent npc spawn toss_cache toss_cache"
+				exec			"vstr npc_spawn_recent"
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//   Glow Icons
+		//
+		//----------------------------------------------------------------------------------------------		
+
+		itemDef 
+		{
+			name				toss_heater_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_heater_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_bunk_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_bunk_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_barrel_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_barrel_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_cache_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_cache_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_cargo_big_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_cargo_big_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_cargo_sm_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_cargo_sm_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_core_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_core_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_crate01_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_crate01_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_crate02_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_crate02_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_crate03_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_crate03_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_crate04_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_crate04_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_emod_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_emod_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_pillarbase_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_pillarbase_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_statue_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_statue_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				toss_table_glow
+			group				glowicons
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 0 0
+			background			"gfx/menus/charactericons/toss_table_icon_glow"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+  			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingamecharacter
+			}
+		}
+
+		// Big button "VEHICLES"
+		itemDef 
+		{
+			name				objects
+			group				pause
+			text				@MD_MENU_MAIN_VEHICLES
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				170 458 101 24
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 216 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 216 468 0 0 263 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 216 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 263 465 22 12 216 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}  			
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;  
+				close			all ; 
+				open			ingamespawnvehiclesMenu 
+			}
+		}
+
+		// Big button "JKA"
+		itemDef 
+		{
+			name				npcspawnmenu
+			group				pause
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				270 458 101 24 
+			text				@MD_MENU_MAIN_JKA
+			descText			@MD_MENU_MAIN_JKA_DESC
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 316 468 0 0 270 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 316 468 0 0 363 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 270 465 22 12 316 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 363 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			ingamespcharacterMenu
+			}
+		}
+
+		// Big button "OBJECTS"
+		itemDef 
+		{
+			name				objects
+			group				pause
+			text				@MD_MENU_MAIN_OBJECTS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				370 458 101 24 
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		4background_MDIngameMenuPanelGolddivider1 416 468 0 0 370 465 22 12 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 416 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		4background_MDIngameMenuPanelGolddivider1 370 465 22 12 416 468 0 0 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 463 465 22 12 416 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}			
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;  
+				close			all ; 
+				open			ingamespawnobjectsMenu 
+			}
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MD_MENU_MAIN_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+	}
+}

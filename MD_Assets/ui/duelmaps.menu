@@ -1,0 +1,307 @@
+//-----------------------------------------------------------------------
+//	DUEL MAPS MENU
+//
+//	Called only from main menu. Has the transition of fields from main menu 
+//	to new game menu
+//
+//-----------------------------------------------------------------------
+{
+						   
+	menuDef 
+	{
+		name					"duelmapsMenu"
+		fullScreen				1						// MENU_TRUE				
+		rect					0 0 640 480					// Size and position of the menu
+		visible					1						// Visible on open
+		focusColor				1 1 1 1						// Focus color for text and items
+		descX					320
+		descY					420
+		descScale				0.9
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1	
+
+		fadeClamp				1.0					// sets the fadeup alpha
+		fadeCycle				25					// how often fade happens in milliseconds
+		fadeAmount				0.1				// amount to adjust alpha per cycle	
+
+
+		onOpen
+		{ 
+			hide				background_MDMenuPanelGoldBottom
+			uiScript			md_updateduelmap
+		}
+									
+		onESC 
+		{ 
+			play				"sound/interface/esc.wav"
+			close				all ;
+			open				mdnewgameMenu
+		}
+
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}	
+
+		itemDef 
+		{
+			name				background_mainvideo
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/mdmainmenuvideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Main background
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/loadmenubk"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				5 51 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				1 166 352 261
+			background			"gfx/menus/main/settingspanel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Panels
+
+		itemDef 
+		{
+			name				descpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				318 347.5 341 56
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle2"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				playpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				318 403 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				328 401.5 320 30.75
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//   Map List
+		//
+		//----------------------------------------------------------------------------------------------		
+
+		// Duel maps list feeder
+		itemDef 
+		{
+			name				duelmapslist
+			group				loadscreen
+			rect				18 180 315 232
+			type				ITEM_TYPE_LISTBOX
+			style				WINDOW_STYLE_FILLED
+			elementwidth		120
+			elementheight		16
+			font				5
+			textaligny			8 
+			textscale			0.16
+			bordercolor			0 0 .8 0
+			forecolor			.7 .7 .7 1
+			
+			backcolor			0 0 .5 0
+			outlinecolor		1 .682 0 0
+			elementtype			LISTBOX_TEXT
+			feeder				87 // Duel maps
+			notselectable
+			visible				1
+			columns				1 	2 55 315		//#of col., x loc. of 1st column, 2 number doesn't seem to do anything, third is width of column
+			
+			doubleclick
+			{
+				uiScript		md_playduelmap
+			}
+
+			action 
+			{
+				play			sound/interface/sub_select
+				uiScript		md_updateduelmap
+			}
+		}	
+
+		// Duel map level shot preview
+		itemDef 
+		{
+			name				duelmaplevelshot
+			group				loadscreen
+			style				WINDOW_STYLE_EMPTY	
+			ownerdraw			257					//UI_DUELMAPS_SELECTION
+			forecolor			1 1 1 1
+			rect				368 165 238 179
+			border				1
+			bordercolor			0 0 .8 0
+			visible				1
+  	    	decoration 
+		}
+
+		itemDef 
+		{
+			name				duelmaplevelshotborder
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				329 135 320 240
+			background			"gfx/menus/main/loadpanelbox"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Duel map description
+		itemDef 
+		{
+			name				duelmapdesc
+			group				actionbutton
+			text				" "
+			type				ITEM_TYPE_TEXTSCROLL
+			style				WINDOW_STYLE_EMPTY
+			rect				373 353 250 48
+			font				5
+			textscale			0.1
+			textalignx			0
+			textaligny			0
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			lineHeight			10
+			autowrapped
+			decoration
+		}
+
+		// Play selected duel map button
+		itemDef 
+		{
+			name				playduelmapbutton
+			group				actionbutton
+			text				@MD_MENU_MAIN_DM_TRAVEL_TO_LOCATION
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				369 404 240 24
+			font				5
+			textscale			0.19
+			textalignx			119
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	328.2 401.4 320 30.75
+				show			background_MDMenuPanelGoldBottom
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				play			sound/interface/button1.wav ;
+				hide			background_MDMenuPanelGoldBottom
+				uiScript		md_playduelmap
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------		
+
+		itemDef 
+		{
+			name				backbutton
+			group				fade_buttons
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				255 433 130 40 
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			65
+			textaligny			8
+			forecolor			1 1 1 0.9
+			visible				1
+		
+			action 
+			{ 
+				play			"sound/interface/esc.wav"
+				close			all ; 
+				open			mdnewgameMenu
+			}
+		}
+
+	}
+}

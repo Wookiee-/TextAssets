@@ -1,0 +1,2106 @@
+//----------------------------------------------------------------------------------------------
+//
+//	CHARACTER ERA MENU
+//
+//----------------------------------------------------------------------------------------------
+{
+	menuDef
+	{
+		name					"ingamecharacter"
+		fullScreen				1									// MENU_TRUE
+		rect					0 0 640 480							// Size and position of the menu
+		focusColor				1 1 1 1				// Focus color for text and items
+		descX					320
+		descY					442
+		descScale				0.7
+		descColor				1 1 1 0.9
+		descAlignment			ITEM_ALIGN_CENTER	
+		descTextStyle			1
+		visible					0								// Visible on open
+
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				10						// how often fade happens in milliseconds
+		fadeAmount				0.1					// amount to adjust alpha per cycle
+
+		onOpen
+		{
+			setfocus			resume ;
+			uiScript			"md_char_init"
+			uiScript			"characterchanged"
+			uiScript			"md_char"
+		}
+
+		onESC
+		{
+			play				"sound/interface/esc.wav" 
+			close				all
+			open				ingameMainMenu
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	MENU BACKGROUND
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/character/background"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		// Character model
+		itemDef
+		{
+			name				character
+			group				models
+			type 				ITEM_TYPE_MODEL
+			rect				250 0 390 480
+			model_g2anim		"BOTH_MENUIDLE1"
+			asset_model			"ui_char_model"
+			//asset_model		"models/players/jedi_hm/model.glm" //"ui_char_model"
+			//model_g2skin		"models/players/jedi_hm/|head_b1|torso_f1|lower_a1"
+			model_angle			180
+			//mins maxs format is apparently z x y (hmmm... y x z?)
+			model_g2mins		-30 -23 0
+			model_g2maxs		20 7 44
+			//model_rotation		50
+			model_fovx			32
+			model_fovy			32
+			cvar				"ui_char_model_angle"
+			isCharacter			1
+			isSaber				1
+	//		isSaber2			1
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				character_rotate
+			descText			@MD_MENU_MAIN_CHARACTER_ROTATE
+			group				models
+			type 				ITEM_TYPE_SLIDER_ROTATE
+			rect				400 0 240 340
+			cvar				ui_char_model_angle
+			isCharacter			1
+			visible				1			
+		}
+
+		itemDef 
+		{
+			name				background
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/character/background_overlay"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_smoke
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/character/smoke"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				era_panel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/ingame/character/era_panel"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		/*
+		itemDef 
+		{
+			name				background_logo
+			group				logo
+			style				WINDOW_STYLE_SHADER
+			rect				236 -3 171 58
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+		*/
+
+		itemDef 
+		{
+			name				selectCharacterPanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				387 342 246 22
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			forecolor			1 1 1 0.3
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				spawnNPCPanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				387 362 246 22
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			forecolor			1 1 1 0.3
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				teamPanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				387 382 246 22
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			forecolor			1 1 1 0.3
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				healthPanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				387 402 246 22
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			forecolor			1 1 1 0.3
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				381 397 262 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				backgroundpanel
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.3 640 30
+			background			"gfx/menus/ingame/ingamemenupanel"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGold
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				0 453.8 640 30
+			background			"gfx/menus/ingame/ingamemenupanelgold"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				2background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				3background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				4background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider1
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerright"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				5background_MDIngameMenuPanelGolddivider2
+			group				background_MDIngameMenuPanelGolddivider
+			style				WINDOW_STYLE_FILLED
+			rect				170 462 24 14
+			background			"gfx/menus/ingame/ingamemenupanelgolddividerleft"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop3
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				183.25 414 273 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	ERA SELECT BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+	
+		itemDef
+		{
+			name				CHARACTER_TITLE
+			group				title
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_CHARACTER_MENU
+			rect				30 37 100 26
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_LEFT
+			textalignx			0
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				OLD_REPUBLIC_TITLE
+			group				faction_titles
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_OLD_REPUBLIC
+			rect				16 92 66 12
+			font				5
+			textscale			0.067
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			33
+			textaligny			0
+			textstyle			3
+			forecolor			1 0.78 0.388 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				OLD_REPUBLIC_ICON
+			group				faction_icons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				36 68 26 26
+			background			"gfx/menus/ingame/character/OR_icon"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				0
+  			
+			mouseEnter
+			{
+				setitembackground	OLD_REPUBLIC_ICON	"gfx/menus/ingame/character/OR_icon_glow"
+				setitemcolor		OLD_REPUBLIC_TITLE 	forecolor 1 0.78 0.388 1
+			}
+			mouseExit
+			{
+				setitembackground	OLD_REPUBLIC_ICON	"gfx/menus/ingame/character/OR_icon"
+				setitemcolor		OLD_REPUBLIC_TITLE 	forecolor 1 1 1 0.9
+			}
+			action 
+			{ 
+				play				"sound/interface/button1.wav"  
+				show				faction_icons
+				hide				OLD_REPUBLIC_ICON
+				setitembackground	OLD_REPUBLIC_ICON	"gfx/menus/ingame/character/OR_icon"
+				show				SELECTED_FACTION_ICON
+				setitemrect			SELECTED_FACTION_ICON	36 68 26 26
+				setitembackground	SELECTED_FACTION_ICON	"gfx/menus/ingame/character/OR_icon_glow"
+				setitemcolor		faction_titles			forecolor 1 1 1 0.9
+				setitemcolor		OLD_REPUBLIC_TITLE 		forecolor 1 0.78 0.388 1
+				uiScript			ERA_OLD_REPUBLIC
+				uiScript			"characterchanged"
+				uiScript			"md_char"
+			}
+		}
+
+		itemDef
+		{
+			name				SITH_EMPIRE_TITLE
+			group				faction_titles
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_SITH_EMPIRE
+			rect				59 92 66 12
+			font				5
+			textscale			0.067
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			33
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				SITH_EMPIRE_ICON
+			group				faction_icons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				79 68 26 26
+			background			"gfx/menus/ingame/character/SE_icon"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				setitembackground	SITH_EMPIRE_ICON	"gfx/menus/ingame/character/SE_icon_glow"
+				setitemcolor		SITH_EMPIRE_TITLE 	forecolor 1 0.78 0.388 1
+			}
+			mouseExit
+			{
+				setitembackground	SITH_EMPIRE_ICON	"gfx/menus/ingame/character/SE_icon"
+				setitemcolor		SITH_EMPIRE_TITLE 	forecolor 1 1 1 0.9
+			}
+			action 
+			{ 
+				play				"sound/interface/button1.wav"  
+				show				faction_icons
+				hide				SITH_EMPIRE_ICON
+				setitembackground	SITH_EMPIRE_ICON	"gfx/menus/ingame/character/SE_icon"
+				show				SELECTED_FACTION_ICON
+				setitemrect			SELECTED_FACTION_ICON	79 68 26 26
+				setitembackground	SELECTED_FACTION_ICON	"gfx/menus/ingame/character/SE_icon_glow"
+				setitemcolor		faction_titles			forecolor 1 1 1 0.9
+				setitemcolor		SITH_EMPIRE_TITLE 		forecolor 1 0.78 0.388 1
+				uiScript			ERA_SITH_EMPIRE
+				uiScript			"characterchanged"
+				uiScript			"md_char"
+			}
+		}
+
+		itemDef
+		{
+			name				GALACTIC_REPUBLIC_TITLE
+			group				faction_titles
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_GALACTIC_REPUBLIC
+			rect				102 92 66 12
+			font				5
+			textscale			0.067
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			33
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				GALACTIC_REPUBLIC_ICON
+			group				faction_icons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				122 68 26 26
+			background			"gfx/menus/ingame/character/CW_icon"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				setitembackground	GALACTIC_REPUBLIC_ICON		"gfx/menus/ingame/character/CW_icon_glow"
+				setitemcolor		GALACTIC_REPUBLIC_TITLE 	forecolor 1 0.78 0.388 1
+			}
+			mouseExit
+			{
+				setitembackground	GALACTIC_REPUBLIC_ICON		"gfx/menus/ingame/character/CW_icon"
+				setitemcolor		GALACTIC_REPUBLIC_TITLE 	forecolor 1 1 1 0.9
+			}
+			action 
+			{ 
+				play				"sound/interface/button1.wav"  
+				show				faction_icons
+				hide				GALACTIC_REPUBLIC_ICON
+				setitembackground	GALACTIC_REPUBLIC_ICON		"gfx/menus/ingame/character/CW_icon"
+				show				SELECTED_FACTION_ICON
+				setitemrect			SELECTED_FACTION_ICON		122 68 26 26
+				setitembackground	SELECTED_FACTION_ICON		"gfx/menus/ingame/character/CW_icon_glow"
+				setitemcolor		faction_titles				forecolor 1 1 1 0.9
+				setitemcolor		GALACTIC_REPUBLIC_TITLE 	forecolor 1 0.78 0.388 1
+				uiScript			ERA_REPUBLIC
+				uiScript			"characterchanged"
+				uiScript			"md_char"
+			}
+		}
+
+		itemDef
+		{
+			name				SEPARATIST_ALLIANCE_TITLE
+			group				faction_titles
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_SEPARATIST_ALLIANCE
+			rect				145 92 66 12
+			font				5
+			textscale			0.067
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			33
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				SEPARATIST_ALLIANCE_ICON
+			group				faction_icons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				165 68 26 26
+			background			"gfx/menus/ingame/character/SA_icon"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				setitembackground	SEPARATIST_ALLIANCE_ICON	"gfx/menus/ingame/character/SA_icon_glow"
+				setitemcolor		SEPARATIST_ALLIANCE_TITLE 	forecolor 1 0.78 0.388 1
+			}
+			mouseExit
+			{
+				setitembackground	SEPARATIST_ALLIANCE_ICON	"gfx/menus/ingame/character/SA_icon"
+				setitemcolor		SEPARATIST_ALLIANCE_TITLE 	forecolor 1 1 1 0.9
+			}
+			action 
+			{ 
+				play				"sound/interface/button1.wav"  
+				show				faction_icons
+				hide				SEPARATIST_ALLIANCE_ICON
+				setitembackground	SEPARATIST_ALLIANCE_ICON	"gfx/menus/ingame/character/SA_icon"
+				show				SELECTED_FACTION_ICON
+				setitemrect			SELECTED_FACTION_ICON		165 68 26 26
+				setitembackground	SELECTED_FACTION_ICON		"gfx/menus/ingame/character/SA_icon_glow"
+				setitemcolor		faction_titles				forecolor 1 1 1 0.9
+				setitemcolor		SEPARATIST_ALLIANCE_TITLE 	forecolor 1 0.78 0.388 1
+				uiScript			ERA_SEPARATIST
+				uiScript			"characterchanged"
+				uiScript			"md_char"
+			}
+		}
+
+		itemDef
+		{
+			name				REBEL_ALLIANCE_TITLE
+			group				faction_titles
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_REBEL_ALLIANCE
+			rect				188 92 66 12
+			font				5
+			textscale			0.067
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			33
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				REBEL_ALLIANCE_ICON
+			group				faction_icons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				208 68 26 26
+			background			"gfx/menus/ingame/character/OT_icon"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				setitembackground	REBEL_ALLIANCE_ICON		"gfx/menus/ingame/character/OT_icon_glow"
+				setitemcolor		REBEL_ALLIANCE_TITLE 	forecolor 1 0.78 0.388 1
+			}
+			mouseExit
+			{
+				setitembackground	REBEL_ALLIANCE_ICON		"gfx/menus/ingame/character/OT_icon"
+				setitemcolor		REBEL_ALLIANCE_TITLE 	forecolor 1 1 1 0.9
+			}
+			action 
+			{ 
+				play				"sound/interface/button1.wav"  
+				show				faction_icons
+				hide				REBEL_ALLIANCE_ICON
+				setitembackground	REBEL_ALLIANCE_ICON		"gfx/menus/ingame/character/OT_icon"
+				show				SELECTED_FACTION_ICON
+				setitemrect			SELECTED_FACTION_ICON	208 68 26 26
+				setitembackground	SELECTED_FACTION_ICON	"gfx/menus/ingame/character/OT_icon_glow"
+				setitemcolor		faction_titles			forecolor 1 1 1 0.9
+				setitemcolor		REBEL_ALLIANCE_TITLE 	forecolor 1 0.78 0.388 1
+				uiScript			ERA_REBELS
+				uiScript			"characterchanged"
+				uiScript			"md_char"
+			}
+		}
+
+		itemDef
+		{
+			name				GALACTIC_EMPIRE_TITLE
+			group				faction_titles
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_GALACTIC_EMPIRE
+			rect				231 92 66 12
+			font				5
+			textscale			0.067
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			33
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				GALACTIC_EMPIRE_ICON
+			group				faction_icons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				251 68 26 26
+			background			"gfx/menus/ingame/character/RE_icon"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				setitembackground	GALACTIC_EMPIRE_ICON	"gfx/menus/ingame/character/RE_icon_glow"
+				setitemcolor		GALACTIC_EMPIRE_TITLE 	forecolor 1 0.78 0.388 1
+			}
+			mouseExit
+			{
+				setitembackground	GALACTIC_EMPIRE_ICON	"gfx/menus/ingame/character/RE_icon"
+				setitemcolor		GALACTIC_EMPIRE_TITLE 	forecolor 1 1 1 0.9
+			}
+			action 
+			{ 
+				play				"sound/interface/button1.wav"  
+				show				faction_icons
+				hide				GALACTIC_EMPIRE_ICON
+				setitembackground	GALACTIC_EMPIRE_ICON	"gfx/menus/ingame/character/RE_icon"
+				show				SELECTED_FACTION_ICON
+				setitemrect			SELECTED_FACTION_ICON	251 68 26 26
+				setitembackground	SELECTED_FACTION_ICON	"gfx/menus/ingame/character/RE_icon_glow"
+				setitemcolor		faction_titles			forecolor 1 1 1 0.9
+				setitemcolor		GALACTIC_EMPIRE_TITLE 	forecolor 1 0.78 0.388 1
+				uiScript			ERA_EMPIRE
+				uiScript			"characterchanged"
+				uiScript			"md_char"
+			}
+		}
+
+		itemDef
+		{
+			name				RESISTANCE_TITLE
+			group				faction_titles
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_RESISTANCE
+			rect				274 92 66 12
+			font				5
+			textscale			0.067
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			33
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				RESISTANCE_ICON
+			group				faction_icons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				294 68 26 26
+			background			"gfx/menus/ingame/character/NR_icon"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				setitembackground	RESISTANCE_ICON		"gfx/menus/ingame/character/NR_icon_glow"
+				setitemcolor		RESISTANCE_TITLE 	forecolor 1 0.78 0.388 1
+			}
+			mouseExit
+			{
+				setitembackground	RESISTANCE_ICON		"gfx/menus/ingame/character/NR_icon"
+				setitemcolor		RESISTANCE_TITLE 	forecolor 1 1 1 0.9
+			}
+			action 
+			{ 
+				play				"sound/interface/button1.wav"  
+				show				faction_icons
+				hide				RESISTANCE_ICON
+				setitembackground	RESISTANCE_ICON			"gfx/menus/ingame/character/NR_icon"
+				show				SELECTED_FACTION_ICON
+				setitemrect			SELECTED_FACTION_ICON	294 68 26 26
+				setitembackground	SELECTED_FACTION_ICON	"gfx/menus/ingame/character/NR_icon_glow"
+				setitemcolor		faction_titles			forecolor 1 1 1 0.9
+				setitemcolor		RESISTANCE_TITLE 		forecolor 1 0.78 0.388 1
+				uiScript			ERA_RESISTANCE
+				uiScript			"characterchanged"
+				uiScript			"md_char"
+			}
+		}
+
+		itemDef
+		{
+			name				FIRST_ORDER_TITLE
+			group				faction_titles
+			type				ITEM_TYPE_TEXT
+			text				@MD_MENU_MAIN_FIRST_ORDER
+			rect				317 92 66 12
+			font				5
+			textscale			0.067
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			33
+			textaligny			0
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				FIRST_ORDER_ICON
+			group				faction_icons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				337 68 26 26
+			background			"gfx/menus/ingame/character/FO_icon"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				setitembackground	FIRST_ORDER_ICON	"gfx/menus/ingame/character/FO_icon_glow"
+				setitemcolor		FIRST_ORDER_TITLE 	forecolor 1 0.78 0.388 1
+			}
+			mouseExit
+			{
+				setitembackground	FIRST_ORDER_ICON	"gfx/menus/ingame/character/FO_icon"
+				setitemcolor		FIRST_ORDER_TITLE 	forecolor 1 1 1 0.9
+			}
+			action 
+			{ 
+				play				"sound/interface/button1.wav"  
+				show				faction_icons
+				hide				FIRST_ORDER_ICON
+				setitembackground	FIRST_ORDER_ICON		"gfx/menus/ingame/character/FO_icon"
+				show				SELECTED_FACTION_ICON
+				setitemrect			SELECTED_FACTION_ICON	337 68 26 26
+				setitembackground	SELECTED_FACTION_ICON	"gfx/menus/ingame/character/FO_icon_glow"
+				setitemcolor		faction_titles			forecolor 1 1 1 0.9
+				setitemcolor		FIRST_ORDER_TITLE 		forecolor 1 0.78 0.388 1
+				uiScript			ERA_FIRST_ORDER
+				uiScript			"characterchanged"
+				uiScript			"md_char"
+			}
+		}
+
+		itemDef 
+		{
+			name				SELECTED_FACTION_ICON
+			group				faction_icons
+			style				WINDOW_STYLE_FILLED
+			rect				36 68 26 26
+			background			"gfx/menus/ingame/character/OR_icon_glow"
+			forecolor			1 1 1 1
+			backcolor			1 1 1 1
+			visible				1
+  			decoration
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	CHARACTER FEEDERS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name				modellist
+			rect				20 107 380 162
+			type				ITEM_TYPE_LISTBOX
+			//style				WINDOW_STYLE_LISTBOX_RGB1
+			elementwidth		51
+			elementheight		80
+			elementtype			1	//LISTBOX_IMAGE
+			feeder				85 //FEEDER_MD_MODELS
+			border				0
+			bordersize			0
+			bordercolor			0 0 0 0
+			forecolor			1 1 1 1
+			visible				1
+			textscale			0.7
+			//horizontalscroll
+
+			action
+			{
+				play			"sound/interface/button1"
+				uiScript		"characterchanged"
+				uiScript		"md_char"
+			}
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+				
+			}
+		}
+
+		itemDef
+		{
+			name				variantlist
+			rect				20 342 359 98
+			type				ITEM_TYPE_LISTBOX
+			//style				WINDOW_STYLE_LISTBOX_RGB1
+			elementwidth		51
+			elementheight		80
+			elementtype			1	//LISTBOX_IMAGE
+			feeder				86 //FEEDER_MD_VARIANTS
+			border				0
+			bordersize			0
+			bordercolor			0 0 0 0
+			forecolor			1 1 1 1
+			visible				1
+			textscale			0.7
+			horizontalscroll
+			action
+			{
+				play			"sound/interface/button1"
+				uiScript		"characterchanged"
+				uiScript		"md_char"
+			}
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+				
+			}
+		}
+
+		itemDef 
+		{
+			name				fadebutton
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				421 343 174 79
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+
+			mouseEnter
+			{
+				setitemcolor 	selectbutton	forecolor 1 1 1 0.9
+				setitemcolor 	selectCharacterPanel	forecolor 1 1 1 1
+
+				setitemcolor 	spawnbutton	forecolor 1 1 1 0.9
+				setitemcolor 	spawnNPCPanel	forecolor 1 1 1 1
+
+				setitemcolor 	teamButton	forecolor 1 1 1 0.9
+				setitemcolor 	teamPanel	forecolor 1 1 1 1
+
+				setitemcolor 	healthButton	forecolor 1 1 1 0.9
+				setitemcolor 	healthPanel	forecolor 1 1 1 1
+			}
+			mouseExit
+			{
+				setitemcolor 	selectbutton	forecolor 1 1 1 0.3
+				setitemcolor 	selectCharacterPanel	forecolor 1 1 1 0.3
+
+				setitemcolor 	spawnbutton	forecolor 1 1 1 0.3
+				setitemcolor 	spawnNPCPanel	forecolor 1 1 1 0.3
+
+				setitemcolor 	teamButton	forecolor 1 1 1 0.3
+				setitemcolor 	teamPanel	forecolor 1 1 1 0.3
+
+				setitemcolor 	healthButton	forecolor 1 1 1 0.3
+				setitemcolor 	healthPanel	forecolor 1 1 1 0.3
+
+				setfocus			character_rotate
+			}
+			action 
+			{ 
+			}
+		}
+
+
+		// SELECT AND SPAWN BUTTONS
+
+		itemDef
+		{
+			name				selectbutton
+			group				none
+			text				@MD_MENU_MAIN_SELECT_CHARACTER
+			descText			@MD_MENU_MAIN_SELECT_CHARACTER_DESC
+			type				ITEM_TYPE_BUTTON
+	//		style				WINDOW_STYLE_EMPTY
+			rect				421 343 174 19
+			font				5
+			textscale			0.15
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			88
+			textaligny			1
+			textstyle			3
+			forecolor			1 1 1 0.3
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	394 341 231 24.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action
+			{
+				play		"sound/interface/button1"
+				uiScript	"md_player"
+				close		all 
+			}
+		}
+
+
+		itemDef
+		{
+			name				spawnbutton
+			group				none
+			text				@MD_MENU_MAIN_SPAWN_CHARACTER
+			descText			@MD_MENU_MAIN_SPAWN_CHARACTER_DESC
+			type				ITEM_TYPE_BUTTON
+	//		style				WINDOW_STYLE_EMPTY
+			rect				421 363 174 19
+			font				5
+			textscale			0.15
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			88
+			textaligny			1
+			textstyle			3
+			forecolor			1 1 1 0.3
+			visible				1
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	394 361 231 24.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action
+			{
+				play		"sound/interface/button1"
+				uiScript	"md_npc"
+				close		all 
+			}
+		}
+
+		itemDef
+		{
+			name				teambutton
+			group				none
+			text				@MD_MENU_MAIN_TEAM
+			descText			@MD_MENU_MAIN_CHARACTER_TEAM_DESC
+			type				ITEM_TYPE_MULTI
+	//		style				WINDOW_STYLE_EMPTY
+			rect				421 383 174 19
+			font				5
+			textscale			0.15
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			63
+			textaligny			1
+			textstyle			3
+			forecolor			1 1 1 0.3
+			visible				1
+
+			cvar 				"ui_char_team_select"
+			cvarFloatList 
+			{ 
+				@MD_MENU_MAIN_DEFAULT_CAPS		0
+				@MD_MENU_MAIN_LIGHT_SIDE		1
+				@MD_MENU_MAIN_DARK_SIDE			2
+				@MD_MENU_MAIN_SOLO				3
+				@MD_MENU_MAIN_NEUTRAL			4
+			}
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	394 381 231 24.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action
+			{
+				play		"sound/interface/button1"
+			}
+		}
+
+		itemDef
+		{
+			name				healthbutton
+			group				none
+			text				@MD_MENU_MAIN_CHARACTER_HEALTH
+			descText			@MD_MENU_MAIN_CHARACTER_HEALTH_DESC
+			type				ITEM_TYPE_MULTI
+	//		style				WINDOW_STYLE_EMPTY
+			rect				421 403 174 19
+			font				5
+			textscale			0.15
+			textalign			ITEM_ALIGN_CENTER
+			textalignx			63
+			textaligny			1
+			textstyle			3
+			forecolor			1 1 1 0.3
+			visible				1
+
+			cvar 				"ui_char_health_select"
+			cvarFloatList 
+			{ 
+				@MD_MENU_MAIN_DEFAULT_CAPS	0
+				"10 HP"				10
+				"25 HP"				25
+				"50 HP"				50
+				"75 HP"				75
+				"100 HP"			100
+				"150 HP"			150
+				"200 HP"			200
+				"250 HP"			250
+				"300 HP"			300
+				"500 HP"			500
+				"750 HP"			750
+				"1000 HP"			1000
+			}
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	394 401 231 24.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action
+			{
+				play		"sound/interface/button1"
+			}
+		}
+
+		itemDef 
+		{
+			name				muteIcon
+			group				none
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			descText			@MD_MENU_MAIN_SELECT_CHARACTER_MUTE_DESC
+			rect				600 345 16 16
+			background			"gfx/menus/muteIcon"
+			forecolor			1 1 1 0.2
+			visible				1
+
+			cvartest			"ui_char_mute_voice_line"
+			showcvar			{ "1" }
+
+			mouseEnter 
+			{ 
+				setitemcolor 	muteIcon	forecolor 1 1 1 0.9
+				setitemcolor 	unmuteIcon	forecolor 1 1 1 0.9
+			}
+			mouseExit 
+			{ 
+				setitemcolor 	muteIcon	forecolor 1 1 1 0.2
+				setitemcolor 	unmuteIcon	forecolor 1 1 1 0.2
+			}	 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_char_mute_voice_line	0 ;
+				setfocus		unmuteIcon
+			}
+		}
+
+		itemDef 
+		{
+			name				unmuteIcon
+			group				none
+			style				WINDOW_STYLE_SHADER
+			type				ITEM_TYPE_BUTTON
+			descText			@MD_MENU_MAIN_SELECT_CHARACTER_MUTE_DESC
+			rect				600 345 16 16
+			background			"gfx/menus/unmuteIcon"
+			forecolor			1 1 1 0.2
+			visible				1
+
+			cvartest			"ui_char_mute_voice_line"
+			showcvar			{ "0" }
+
+			mouseEnter 
+			{ 
+				setitemcolor 	muteIcon	forecolor 1 1 1 0.9
+				setitemcolor 	unmuteIcon	forecolor 1 1 1 0.9
+			}
+			mouseExit 
+			{ 
+				setitemcolor 	muteIcon	forecolor 1 1 1 0.2
+				setitemcolor 	unmuteIcon	forecolor 1 1 1 0.2
+			}	 
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				setcvar			ui_char_mute_voice_line	1 ;
+				setfocus		muteIcon
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	CHARACTER INFO AND STATS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name				char_name
+			type				ITEM_TYPE_TEXT //ITEM_TYPE_EDITFIELD //ITEM_TYPE_TEXT
+			//style				WINDOW_STYLE_TEXT_RGB1
+			text				" " //"None"
+			//cvar				ui_md_name
+			rect				30 271 295 52
+			font				5
+			textscale			0.2
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				char_title
+			type				ITEM_TYPE_TEXT //ITEM_TYPE_EDITFIELD //ITEM_TYPE_TEXT
+			//style				WINDOW_STYLE_TEXT_RGB1
+			text				" " //"None"
+			//cvar				ui_md_title
+			rect				30 293 295 26
+			font				5
+			textscale			0.1
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef
+		{
+			name				char_desc
+			group				none
+			type				ITEM_TYPE_TEXTSCROLL
+			text				@MENUS_CHOOSE_THE_MODEL_FOR
+			rect				25 306 370 36
+			font				5
+			textscale			0.1
+			textalign			ITEM_ALIGN_LEFT
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			lineHeight			9
+			autowrapped
+		}
+
+/*
+
+		// Weapons
+
+		itemDef 
+		{
+			name				WEAPON1_ICON
+			group				weaponIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				25 345 26 26
+			background			"gfx/hud/w_icon_lightsaber"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		// Force powers
+
+		itemDef 
+		{
+			name				DEADLY_SIGHT_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				1703 345 26 26
+			background			"gfx/mp/f_icon_dk_deadlysight"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				DEADLY_SIGHT_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				1703 345 26 26
+			background			"gfx/mp/f_icon_dk_deadlysight"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				DESTRUCTION_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				1703 345 26 26
+			background			"gfx/mp/f_icon_dk_destruction"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				DRAIN_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				1703 345 26 26
+			background			"gfx/mp/f_icon_dk_drain"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				FEAR_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				1703 345 26 26
+			background			"gfx/mp/f_icon_dk_fear"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				GRIP_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				1703 345 26 26
+			background			"gfx/mp/f_icon_dk_grip"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				LIGHTNING_STRIKE_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				1703 345 26 26
+			background			"gfx/mp/f_icon_dk_lightning_strike"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				RAGE_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				1703 345 26 26
+			background			"gfx/mp/f_icon_dk_rage"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				LEVITATION_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				46 345 26 26
+			background			"gfx/mp/f_icon_levitation"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				ABSORB_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				72 345 26 26
+			background			"gfx/mp/f_icon_lt_absorb"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				BLAST_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				98 345 26 26
+			background			"gfx/mp/f_icon_lt_blast"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				GRASP_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				124 345 26 26
+			background			"gfx/mp/f_icon_lt_grasp"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				HEAL_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				150 345 26 26
+			background			"gfx/mp/f_icon_lt_heal"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				PROJECTION_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				176 345 26 26
+			background			"gfx/mp/f_icon_lt_projection"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				PROTECT_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				202 345 26 26
+			background			"gfx/mp/f_icon_lt_protect"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				STASIS_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				228 345 26 26
+			background			"gfx/mp/f_icon_lt_stasis"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				TELEPATHY_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				254 345 26 26
+			background			"gfx/mp/f_icon_lt_telepathy"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				PULL_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				280 345 26 26
+			background			"gfx/mp/f_icon_pull"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				PUSH_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				306 345 26 26
+			background			"gfx/mp/f_icon_push"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				REPULSE_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				332 345 26 26
+			background			"gfx/mp/f_icon_repulse"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				SIGHT_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				358 345 26 26
+			background			"gfx/mp/f_icon_sight"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				SPEED_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				384 345 26 26
+			background			"gfx/mp/f_icon_speed"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				SABER_ATTACK_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				410 345 26 26
+			background			"gfx/mp/f_icon_saber_attack"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				SABER_DEFEND_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				436 345 26 26
+			background			"gfx/mp/f_icon_saber_defend"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				SABER_THROW_ICON
+			group				forceIcons
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				462 345 26 26
+			background			"gfx/mp/f_icon_saber_throw"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef 
+		{
+			name				HEALTH_VALUE_ICON
+			group				healthAndForceValues
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				488 345 26 26
+			background			"gfx/mp/f_icon_lt_heal"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef
+		{
+			name				HEALTH_VALUE
+			group				healthAndForceValues
+			type				ITEM_TYPE_TEXT
+			text				100
+			rect				514 345 26 26
+			font				5
+			textscale			0.1
+			textalign			ITEM_ALIGN_LEFT
+			textaligny			7
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				FORCE_VALUE_ICON
+			group				healthAndForceValues
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_SHADER
+			rect				540 345 26 26
+			background			"gfx/mp/f_icon_push"
+			forecolor			1 1 1 1
+			visible				1
+  			
+			mouseEnter
+			{
+				
+			}
+			mouseExit
+			{
+
+			}
+		}
+
+		itemDef
+		{
+			name				FORCE_VALUE
+			group				healthAndForceValues
+			type				ITEM_TYPE_TEXT
+			text				100
+			rect				566 345 26 26
+			font				5
+			textscale			0.1
+			textalign			ITEM_ALIGN_LEFT
+			textaligny			7
+			textstyle			3
+			forecolor			1 1 1 0.9
+			visible				1
+			decoration
+		}
+
+*/
+
+		//----------------------------------------------------------------------------------------------
+		//
+		//	OTHER MAIN MENU BUTTONS
+		//
+		//----------------------------------------------------------------------------------------------
+
+		// Big button "BACK"
+		itemDef 
+		{
+			name				backbutton
+			group				back
+			text				@MD_MENU_MAIN_BACK
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				70 458 101 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible				1
+  			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		background_MDIngameMenuPanelGolddivider1 116 468 0 0 70 465 22 12 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 116 468 0 0 163 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		background_MDIngameMenuPanelGolddivider1 70 465 22 12 116 468 0 0 10 15
+					transition		background_MDIngameMenuPanelGolddivider2 163 465 22 12 116 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/esc.wav"  
+				close			all ; 
+				open			ingameMainMenu 
+			}
+		}
+
+		// Big button "VEHICLES"
+		itemDef 
+		{
+			name				objects
+			group				pause
+			text				@MD_MENU_MAIN_VEHICLES
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				170 458 101 24
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		2background_MDIngameMenuPanelGolddivider1 216 468 0 0 170 465 22 12 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 216 468 0 0 263 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		2background_MDIngameMenuPanelGolddivider1 170 465 22 12 216 468 0 0 10 15
+					transition		2background_MDIngameMenuPanelGolddivider2 263 465 22 12 216 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}  			
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;  
+				close			all ; 
+				open			ingamespawnvehiclesMenu 
+			}
+		}
+
+		// Big button "JKA"
+		itemDef 
+		{
+			name				npcspawnmenu
+			group				pause
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				270 458 101 24 
+			text				@MD_MENU_MAIN_JKA
+			descText			@MD_MENU_MAIN_JKA_DESC
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+	  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		3background_MDIngameMenuPanelGolddivider1 316 468 0 0 270 465 22 12 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 316 468 0 0 363 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		3background_MDIngameMenuPanelGolddivider1 270 465 22 12 316 468 0 0 10 15
+					transition		3background_MDIngameMenuPanelGolddivider2 363 465 22 12 316 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				close			all ; 
+				open			ingamespcharacterMenu
+			}
+		}
+
+		// Big button "OBJECTS"
+		itemDef 
+		{
+			name				objects
+			group				pause
+			text				@MD_MENU_MAIN_OBJECTS
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_EMPTY
+			rect				370 458 101 24 
+			font				5
+			textscale			0.19
+			textaligny			0
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			forecolor			1 1 1 0.9
+			visible				1
+			
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		4background_MDIngameMenuPanelGolddivider1 416 468 0 0 370 465 22 12 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 416 468 0 0 463 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		4background_MDIngameMenuPanelGolddivider1 370 465 22 12 416 468 0 0 10 15
+					transition		4background_MDIngameMenuPanelGolddivider2 463 465 22 12 416 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}			
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ;  
+				close			all ; 
+				open			ingamespawnobjectsMenu 
+			}
+		}
+
+		// RESUME button in the lower right corner
+		itemDef 
+		{
+			name				resume
+			group				resume
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				470 458 101 24
+			text				@MD_MENU_MAIN_RESUME
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			50
+			textaligny			0
+			forecolor			1 1 1 0.9
+			visible			1
+  	  
+			mouseEnter
+			{
+					show			background_MDIngameMenuPanelGold
+
+					transition		5background_MDIngameMenuPanelGolddivider1 516 468 0 0 470 465 22 12 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 516 468 0 0 563 465 22 12 10 15
+			}
+			mouseExit
+			{
+					transition		5background_MDIngameMenuPanelGolddivider1 470 465 22 12 516 468 0 0 10 15
+					transition		5background_MDIngameMenuPanelGolddivider2 563 465 22 12 516 468 0 0 10 15
+
+					hide			background_MDIngameMenuPanelGold
+			}
+			action 
+			{ 
+				play			"sound/interface/button1.wav" ; 
+				uiScript		closeingame					
+			}
+		}
+
+	}
+}

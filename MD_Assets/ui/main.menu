@@ -1,0 +1,668 @@
+//----------------------------------------------------------------------------------------------
+//
+// MAIN MENU - called when game is first started
+//
+//----------------------------------------------------------------------------------------------
+{
+	assetGlobalDef 
+	{
+		smallFont					"aurabesh" 	18	
+		mediumFont				"ergoec" 	18
+		bigFont					"anewhope" 	20
+		smallFont					"arialnb" 	14	
+		bigFont					"albertus_bold"	20
+
+		cursor					"cursor"	
+		itemFocusSound				"sound/interface/menuroam.wav"
+		itemFocusForce				"fffx/interface/menuroam"
+
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				0.5					// how often fade happens in milliseconds
+		fadeAmount				0.01					// amount to adjust alpha per cycle
+		precacheSound
+		{
+			"sound/interface/choose_color.wav"
+			"sound/interface/choose_head.wav"
+			"sound/interface/choose_torso.wav"
+			"sound/interface/choose_saber.wav"
+			"sound/interface/choose_hilt.wav"
+			"sound/interface/choose_blade.wav"
+			"sound/interface/transition.wav" 
+			"sound/interface/esc.wav"
+			"sound/interface/sub_select.wav"
+			"sound/interface/button1.wav"
+			"sound/interface/buttonjka.wav"
+			"sound/interface/menuroam.wav"
+			"sound/interface/menuroamjka.wav"
+			"sound/interface/menuquit.wav"
+		}
+		focuscolor					0 0 1 1
+		shadowColor				0.1 0.1 0.1 0.0				// shadow color
+  	}
+
+	menuDef 
+	{
+		name					"mainMenu"
+		fullScreen					1		
+		rect					0 0 640 480	
+		visible					1
+		focusColor					1 1 1 1
+		descX					320
+		descY					426
+		descScale					1
+		descColor					1 .682 0 .8
+		descAlignment				ITEM_ALIGN_CENTER	
+
+		fadeClamp				1.0						// sets the fadeup alpha
+		fadeCycle				25						// how often fade happens in milliseconds
+		fadeAmount				0.05					// amount to adjust alpha per cycle
+
+		onOpen 
+		{
+			exec				"helpUsObi 1"
+			exec				"soundstop"
+			exec				"music music/mainMenu/main/CTCMusic"
+			fadeout				continuemenu
+			fadeout				background_logo
+			fadeout				mainmenu
+			hide				background_blackcovermiddle
+            exec                "seta  com_outcast 0"
+			exec				"set ui_episode_credits rote"
+			exec				"set ui_mission_credits_music extras"
+			exec				"set cl_noprint 0"
+		}							
+		onESC 
+		{ 
+			play				"sound/interface/menuroam.wav" ; 
+			play				"sound/interface/menuquit.mp3"
+            exec                            "seta  com_outcast 0" 
+			close				mainMenu ; 
+			open				quitMenu ;
+		}
+
+//----------------------------------------------------------------------------------------------
+//
+//	MENU BACKGROUND
+//
+//----------------------------------------------------------------------------------------------
+
+		itemDef //Stop white flash when video loads
+		{
+			name				background_black
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_CTCvideo
+			group				continuemenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/CTCVideo"
+			backcolor			1 1 1 1
+			visible				1
+			decoration
+		}
+
+	// Main Menu
+
+		itemDef 
+		{
+			name				background_mainvideo
+			group				mainmenuvideo
+			style				WINDOW_STYLE_SHADER
+			rect				0 0 640 480
+			background			"gfx/menus/mdmainmenuvideo"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef //Cover split in the video during fade
+		{
+			name				background_blackcovermiddle
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				240 0 160 480
+			background			"gfx/menus/main/black"
+			forecolor			1 1 1 0.7
+			visible				0
+			decoration
+		}
+
+		itemDef
+		{
+			name				background_blackfade
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			background			"gfx/menus/main/black"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_mainmenubk
+			group				mainmenu
+			style				WINDOW_STYLE_FILLED
+			rect				641 0 640 480
+			background			"gfx/menus/main/mainmenubk"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+	// Continue menu
+		
+		itemDef 
+		{
+			name				background_EnterPanel
+			group				ctctab
+			style				WINDOW_STYLE_FILLED
+			rect				641 0 342 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelTop"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_logo
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				641 51 341.5 115.5
+			background			"gfx/menus/main/MDLogo"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		// Menu panels
+		
+		itemDef 
+		{
+			name				newpanel
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				641 185 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelTop"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				loadpanel
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				641 212 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				settingspanel
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				641 240 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelMiddle"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				exitpanel
+			group				mainmenu
+			style				WINDOW_STYLE_SHADER
+			rect				641 267.5 341 28
+			background			"gfx/menus/main/buttons/MDMenuPanelBottom"
+			backcolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldTop
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 203 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldTop"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldMiddle
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 230 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldMiddle"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+		itemDef 
+		{
+			name				background_MDMenuPanelGoldBottom
+			group				mainpanelgold
+			style				WINDOW_STYLE_SHADER
+			rect				160.7 285 320 30.25
+			background			"gfx/menus/main/buttons/MDMenuPanelGoldBottom"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+
+//----------------------------------------------------------------------------------------------
+//	CONTINUE MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name				fadeinbutton
+			group				none
+			style				WINDOW_STYLE_FILLED
+			rect				0 0 640 480
+			forecolor			1 1 1 0
+			visible				1
+			decoration
+
+			mouseEnter
+			{
+				setitemrect		continuemenu	0 0 640 480
+				setitemrect		ctctab	150.5 322 342 30.25
+				setitemrect		background_logo	151 51 341.5 115.5
+				fadein			continuemenu
+				fadein			ctctab
+				fadein			background_logo
+				hide			fadeinbutton
+			}
+			mouseExit
+			{
+			}
+			action 
+			{ 
+			}
+		}
+		
+		itemDef 
+		{
+			name				clickToContinueButton
+			group				continuemenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				641 0 640 480
+			text				"Click To Continue"
+			font				5
+			textscale			0.19
+			textaligny			326
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			320
+			backcolor			1 1 1 0.9
+			visible				0
+			cvartest			g_update7firststartup
+			showcvar	
+			{
+				"0"
+			}	
+
+			action 
+			{ 
+				exec			"soundstop"
+				exec			"menumusic" ;
+				hide			continuemenu
+				hide			ctctab
+				hide			background_CTCvideo
+				show			background_mainvideo
+				setitemrect		background_mainmenubk 0 0 640 480
+				setitemrect		newpanel 151 185 341 28
+				setitemrect		loadpanel 151 212 341 28
+				setitemrect		settingspanel 151 240 341 28
+				setitemrect		exitpanel 151 267.5 341 28
+				setitemrect		newgamebutton 201 186 240 24
+				setitemrect		loadbutton 201 213 240 24
+				setitemrect		setupbutton 201 241 240 24
+				setitemrect		exitgamebutton 201 268 240 24
+				fadein			mainmenu
+				fadeout			background_blackfade
+				show			background_blackcovermiddle
+			}
+		}
+
+		itemDef 
+		{
+			name				clickToContinueButtonFirstStartup
+			group				continuemenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				641 0 640 480
+			text				"Click To Continue"
+			font				5
+			textscale			0.19
+			textaligny			326
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			320
+			backcolor			1 1 1 0.9
+			visible				0
+			cvartest			g_update7firststartup
+			showcvar	
+			{
+				"1"
+			}	
+
+			action 
+			{ 
+				play			"sound/interface/button1.wav" 
+				close			all ; 
+
+				// Default character
+				exec			"seta ui_char_model jedi_hm"
+				exec			"seta g_char_model jedi_hm"
+				exec			"seta g_char_skin_head head_a1"
+				exec			"seta g_char_skin_legs lower_a1"
+				exec			"seta g_char_skin_torso torso_a1"
+				exec			"seta g_char_color_blue 255"
+				exec			"seta g_char_color_green 255"
+				exec			"seta g_char_color_red 255"
+				exec			"seta snd jaden_male"
+				exec			"seta sex m"
+				uiScript 		"updatecharcvars"
+
+				// Default lightsaber
+				setcvar				ui_saber_type	"single"
+				uiScript  			"saber_type"
+				setcvar				ui_saber		"single_1"
+				setcvar				ui_saber2		""
+				setcvar				ui_saber_color "yellow"
+				uiScript  			"saber_hilt"
+				uiScript  			"saber_color"
+				uiScript  			"saber2_hilt"
+				uiScript  			"saber2_color"
+				uiScript 			"updatesabercvars"
+				uiScript 			"updatefightingstyle"
+				uiScript  			"updatefightingstylechoices"
+				setcvar				"saberStyleDescriptions" "1"
+
+				// Gameplay settings
+				exec			"seta cl_run 0"
+				exec			"seta g_SerenityJediEngineMode 0"
+				exec			"seta g_sabermustreturn 1"
+				exec			"seta g_overpoweredsaberthrow 1"
+				exec			"seta g_corpseRemovalTime 10"
+				exec			"seta g_noignitetwirl 1"
+				exec			"seta cg_ignitionSpeed 1"
+				exec			"seta cg_ignitionSpeedstaff 1"
+				exec			"seta cg_footsteps 3"
+				exec			"seta d_slowmodeath 2"
+				exec			"seta g_allowattackordermarker 0"
+				exec 			"seta cg_outcastpusheffect 1"
+				exec			"seta g_sabermorerealistic 1"
+				exec			"seta g_saberLockRandomNess 1"
+				exec			"seta g_saberbounceonwalls 0"
+				exec			"seta g_allowgunnerbash 0"
+				exec			"seta cg_g2marks 1"
+
+				// Graphics settings
+				exec			"seta r_drawfog 1"
+				exec			"seta cg_shadows 1"
+				exec			"seta r_fastsky 0"
+				exec			"seta r_volumetricFog 0"
+				exec			"seta g_SerenityJediEngineHudMode 5"
+				exec			"seta cg_drawradar 0"
+				exec			"seta cg_fovaspectadjust 1"
+				exec			"seta cg_rollSounds 2"
+				exec			"seta cg_jumpSounds 1"
+				exec			"seta r_dynamic_amd_fix 0"
+				exec			"seta s_UseOpenAL 0"
+				exec			"seta s_khz 44"
+				uiScript		update s_khz
+
+				// Rend2
+				exec			"seta r_hdr 1"
+				exec			"seta r_floatLightmap 1"
+				exec			"seta r_ssao 1"
+				exec			"seta r_tonemap 1"
+				exec			"seta r_deluxemapping 1"
+				exec			"seta r_deluxeSpecular 1"
+				exec			"seta r_cubemapping 1"
+				exec			"seta r_cubemappingBounces 2"
+				exec			"seta r_parallaxmapping 1"
+				exec			"seta r_genNormalMaps 1"
+				exec			"seta r_smaa 0"
+				exec			"seta r_smaa_quality 3"
+				exec			"seta r_volumetricFog 0"
+				exec			"seta r_dlightmode 2"
+				exec			"seta r_dynamicGlowBloom 0.2"
+				exec			"seta r_autoexposure 1"
+				exec			"seta r_cameraexposure 0.2"
+				exec			"seta r_forcesun 1"
+
+				open			welcomeMenu ;
+			}
+		}
+
+//----------------------------------------------------------------------------------------------
+//	MAIN MENU BUTTONS
+//----------------------------------------------------------------------------------------------
+
+		// Big button "NEW GAME"
+		itemDef 
+		{
+			name				newgamebutton
+			group				mainmenu
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				641 186 240 24
+			text				"NEW GAME"
+			font				5
+			textscale			0.19
+			textaligny			2
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			backcolor			1 1 1 0
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldTop	161.7 183.7 320 30.25
+				show			background_MDMenuPanelGoldTop
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldTop
+			}
+
+			action 
+			{ 
+				fadeout			continuemenu
+				play			"sound/interface/button1.wav" ; 
+				show			fadeinbutton
+				close			all ;
+				open			mdnewgameMenu
+			}
+		}
+
+		// Big button "LOAD GAME"
+		itemDef 
+		{
+			name				loadbutton
+			group				mainmenu
+			text				"LOAD GAME"
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				641 213 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			backcolor			1 1 1 0
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	160.7 211 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+
+			action 
+			{ 
+				fadeout			continuemenu
+				play			"sound/interface/button1.wav" 
+				show			fadeinbutton
+				close			all ;
+				open			loadgameMenu
+			}
+		}
+
+		// Big button "SETTINGS"
+		itemDef 
+		{
+			name				setupbutton
+			group				mainmenu
+			text				"SETTINGS"
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				641 241 240 24
+			textaligny			2
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			backcolor			1 1 1 0
+			visible				0
+
+			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldMiddle	160.7 238.8 320 30.25
+				show			background_MDMenuPanelGoldMiddle
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldMiddle
+			}
+			action 
+			{ 
+				fadeout			continuemenu
+				play			"sound/interface/button1.wav" 
+				show			fadeinbutton
+				close			all ; 
+				open			setupMenu 
+			}
+		}
+
+		// Big button "EXIT"
+		itemDef 
+		{
+			name				exitgamebutton
+			group				mainmenu
+			text				"EXIT"
+			style				WINDOW_STYLE_EMPTY
+			type				ITEM_TYPE_BUTTON
+			rect				641 268 240 24
+			font				5
+			textscale			0.19
+			textalign			ITEM_ALIGN_CENTER
+			textstyle			3
+			textalignx			119
+			textaligny			2
+			backcolor			1 1 1 0
+			visible				0
+ 
+ 			mouseEnter
+			{
+				setitemrect		background_MDMenuPanelGoldBottom	160.8 266 320 30.25
+				show			background_MDMenuPanelGoldBottom
+			}
+
+			mouseExit
+			{
+				hide			background_MDMenuPanelGoldBottom
+			}
+			action 
+			{ 
+				fadeout			continuemenu
+				play			"sound/interface/menuquit.mp3" 
+				show			fadeinbutton
+				close			all ; 
+				open			quitMenu 
+			}
+		}
+
+		// Big button "CREDITS"
+		itemDef 
+		{
+			name				creditsbutton
+			group				background_blackcovermiddle
+			background			"gfx/menus/main/mdicon"					
+			type				ITEM_TYPE_BUTTON
+			style				WINDOW_STYLE_FILLED
+			rect				310 455 18 18
+			backcolor			1 1 1 0.5
+			visible				0
+ 
+ 			mouseEnter
+			{
+				setitemcolor	creditsbutton backcolor 1 1 1 0.8
+			}
+
+			mouseExit
+			{
+				setitemcolor	creditsbutton backcolor 1 1 1 0.5
+			}
+			action 
+			{ 
+				fadeout			continuemenu
+				show			background_CTCvideo
+				hide			background_mainvideo
+				setitemrect		background_mainmenubk 641 0 640 480
+				setitemrect		newgamebutton 641 186 240 24
+				setitemrect		loadbutton 641 213 240 24
+				setitemrect		setupbutton 641 241 240 24
+				setitemrect		exitgamebutton 641 268 240 24
+				fadeout			mainmenu
+				setitemcolor		background_blackfade backcolor	1 1 1 1
+				hide			background_blackcovermiddle
+
+				exec			"soundstop"
+				exec			"music music/musicMenu/VictoryCelebration"
+				play			"sound/interface/button1.wav" 
+				setitemcolor	creditsbutton backcolor 1 1 1 0.5
+				close			all ; 
+				open			creditsmenu 
+			}
+		}
+
+	}
+}
