@@ -1,0 +1,31 @@
+KylePlayer
+{
+	fullName	"Katarn, Kyle"
+	playerModel	player
+	class		CLASS_PLAYER
+	dismemberProbArms	1
+	dismemberProbHands	20
+	dismemberProbLegs	1
+	dismemberProbWaist	1
+}
+
+player1
+{
+	playerModel player
+	saberStyle		2
+}
+
+player2
+{
+	playerModel player
+	saberStyle		1
+	saberStyle		2
+}
+
+player3
+{
+	playerModel player
+	saberStyle		1
+	saberStyle		2
+	saberStyle		3
+}

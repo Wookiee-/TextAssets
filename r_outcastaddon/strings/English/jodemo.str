@@ -1,0 +1,25 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           14KJO001
+LANG_ENGLISH        "What the...?"
+
+REFERENCE           25JAO001A
+LANG_ENGLISH        "If we get out of this alive, remind me never to do that again."
+
+REFERENCE           DETECTED1
+LANG_ENGLISH        "Uh-oh..."
+
+REFERENCE           IO_GIVEUP
+LANG_ENGLISH        "Give up, rebel!"
+
+REFERENCE           03KJO014
+LANG_ENGLISH        "Be ready for a quick pickup. I’ve got a feeling things are about to get pretty nasty around here."
+
+REFERENCE           03JAO005A
+LANG_ENGLISH        "Give me a shout when you find out what’s going on."
+
+REFERENCE           03KJO008
+LANG_ENGLISH        "Will do."
+
+ENDMARKER

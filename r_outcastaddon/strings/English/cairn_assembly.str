@@ -1,0 +1,40 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           17KJO001
+LANG_ENGLISH        "Those look like some kind of assault ships. And they seem to be packing them for a little trip."
+
+REFERENCE           17KJO002
+LANG_ENGLISH        "There's got to be some way out of here."
+
+REFERENCE           17KJO003
+LANG_ENGLISH        "Not very subtle. But it seems to have gotten the job done."
+
+REFERENCE           17IW2002
+LANG_ENGLISH        "I can't move."
+
+REFERENCE           17IW2003
+LANG_ENGLISH        "Everything's electrified!"
+
+REFERENCE           17IW2004
+LANG_ENGLISH        "Someone get to a power terminal."
+
+REFERENCE           17KJO004
+LANG_ENGLISH        "Better be careful where I step here."
+
+REFERENCE           17KJO005
+LANG_ENGLISH        "The exit's blocked by the current."
+
+REFERENCE           17IO1002
+LANG_ENGLISH        "TK664, what is your status?"
+
+REFERENCE           17IO1003
+LANG_ENGLISH        "TK664! Report!"
+
+REFERENCE           17GAF001
+LANG_ENGLISH        "He's caused enough trouble already. Hunt him down and eliminate him, or your master will hear of my disappointment."
+
+REFERENCE           17IO1004
+LANG_ENGLISH        "Continue with your work. This intrusion will not delay our agenda."
+
+ENDMARKER

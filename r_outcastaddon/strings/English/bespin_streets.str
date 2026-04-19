@@ -1,0 +1,52 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           13BE1001
+LANG_ENGLISH        "You must be Katarn. Lando sent us to help. We've got teams trying to take back this sector of the city, but's it's no small task. The place is swarming with Reelo's thugs. Our men will help you wherever they can. Good luck!"
+
+REFERENCE           13KJO002
+LANG_ENGLISH        "Thanks! You too."
+
+REFERENCE           13BE2001
+LANG_ENGLISH        "I'll stay here and see if I can keep them off your back."
+
+REFERENCE           13ST2001
+LANG_ENGLISH        "Let's go. We're pulling out."
+
+REFERENCE           13RO2001
+LANG_ENGLISH        "( What about us? )"
+
+REFERENCE           13ST2002
+LANG_ENGLISH        "You're on your own."
+
+REFERENCE           13KJO001
+LANG_ENGLISH        "Droid access panel. And my little friend is scrap. Guess I won't be getting in here."
+
+REFERENCE           13BE1002
+LANG_ENGLISH        "Don't shoot! We're on your side."
+
+REFERENCE           13BE1003
+LANG_ENGLISH        "We're with you, Commander! Lead the way!"
+
+REFERENCE           13BE2002
+LANG_ENGLISH        "What are you doing?"
+
+REFERENCE           13BE2003
+LANG_ENGLISH        "He's a traitor. Blast him!"
+
+REFERENCE           13BE2004
+LANG_ENGLISH        "This area seems secure, sir. Follow us."
+
+REFERENCE           13KJO003
+LANG_ENGLISH        "Stormtroopers?!"
+
+REFERENCE           13KJO004
+LANG_ENGLISH        "Imperials?!"
+
+REFERENCE           13KJO005
+LANG_ENGLISH        "The Remnant is here?!"
+
+REFERENCE           13KJO006
+LANG_ENGLISH        "What's the Remnant doing here?!"
+
+ENDMARKER

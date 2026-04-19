@@ -1,0 +1,37 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           04IO1001
+LANG_ENGLISH        "Don't shoot!"
+
+REFERENCE           04IO1002
+LANG_ENGLISH        "Hold your fire!"
+
+REFERENCE           04KJO001
+LANG_ENGLISH        "Get up! You're going to help me release some prisoners."
+
+REFERENCE           04IO1003
+LANG_ENGLISH        "You won't get away with this, rebel scum."
+
+REFERENCE           04KJO002
+LANG_ENGLISH        "I think I already have."
+
+REFERENCE           04KJO003
+LANG_ENGLISH        "Alright, move!"
+
+REFERENCE           04KJO004
+LANG_ENGLISH        "Get going."
+
+REFERENCE           04KJO005
+LANG_ENGLISH        "Let's move!"
+
+REFERENCE           04IO1004
+LANG_ENGLISH        "Enough of this charade!"
+
+REFERENCE           04KJO006
+LANG_ENGLISH        "I thought I'd seen the last of these things."
+
+REFERENCE           04PR2001
+LANG_ENGLISH        "Thanks for getting us out of there, Commander! Doesn't look like we're out of this yet, though.  Thought we were home free, but the main doors are locked. We found some weapons in here, but got pinned down in the docking bay. Only the Base Commander has clearance to access the door controls. If you can locate him and ""persuade"" him to open the doors, we might have a chance. We'll hold them off as long as we can. But you better hurry!"
+
+ENDMARKER

@@ -1,0 +1,88 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           15IO2001
+LANG_ENGLISH        "Automated transport one-dash-one-three-eighth on final approach to Cairn installation.  Cortosis removal unit please stand by to board transport ship."
+
+REFERENCE           15SO2001
+LANG_ENGLISH        "Affirmative sir.  Cortosis removal team standing by."
+
+REFERENCE           15KJO001
+LANG_ENGLISH        "Hmmm.  This may require some stealth."
+
+REFERENCE           15LUK001
+LANG_ENGLISH        "Kyle!"
+
+REFERENCE           15KJO002
+LANG_ENGLISH        "Skywalker!  What are you doing here?"
+
+REFERENCE           15LUK002
+LANG_ENGLISH        "Lando told me where you were going."
+
+REFERENCE           15KJO003
+LANG_ENGLISH        "Then why aren't you at the Valley of the Jedi?"
+
+REFERENCE           15LUK003
+LANG_ENGLISH        "I went to the Valley right after you left Yavin-4, Kyle.  Desann--"
+
+REFERENCE           15KJO004
+LANG_ENGLISH        "Followed me, I know.  Does this mean we have a new Emperor on our hands?  "
+
+REFERENCE           15LUK004
+LANG_ENGLISH        "It may be worse than that.  Remember those experiments on Kejim, with the Artusian crystals?   With the Valley of the Jedi's power coursing through those crystals, Desann has succeeded in infusing his troops with the power of the Force!"
+
+REFERENCE           15KJO005
+LANG_ENGLISH        "Aw, sithspit... I think I ran into one of them on Bespin.  Are they still in the Valley?"
+
+REFERENCE           15LUK005
+LANG_ENGLISH        "Not anymore.  I managed to scatter Desann and his Reborn troops, and Rogue Squadron chased away their ships.  For now the Valley's effectively sealed off, but we have no idea how many troops Desann managed to empower before we got there.  It could be dozens...but it could be thousands."
+
+REFERENCE           15KJO007
+LANG_ENGLISH        "And all of them will have Force powers...?"
+
+REFERENCE           15LUK006
+LANG_ENGLISH        "Yes, but we've got an advantage due to our training and...discipline."
+
+REFERENCE           15KJO008
+LANG_ENGLISH        "And what?"
+
+REFERENCE           15LUK007
+LANG_ENGLISH        "Look out!"
+
+REFERENCE           15LUK008
+LANG_ENGLISH        "Something's changed in you.  You seem less...angry."
+
+REFERENCE           15KJO009
+LANG_ENGLISH        "Maybe.  There's a chance Jan may still be alive on the Doomgiver."
+
+REFERENCE           15LUK009
+LANG_ENGLISH        "Sometimes even a small hope is enough to defeat the Dark Side, Kyle."
+
+REFERENCE           15KJO010
+LANG_ENGLISH        "Listen, Skywalker, there's even more to this than you think.  Desann's working with a Remnant scientist named Galak Fyyar.  They're smuggling something called "Cortosis" here from Bespin."
+
+REFERENCE           15LUK010
+LANG_ENGLISH        "Damn.  That's not good."
+
+REFERENCE           15KJO011
+LANG_ENGLISH        "Why?"
+
+REFERENCE           15LUK011
+LANG_ENGLISH        "Well, Cortosis is a rare mineral that resists lightsabers."
+
+REFERENCE           15KJO012
+LANG_ENGLISH        "Great."
+
+REFERENCE           15LUK012
+LANG_ENGLISH        "I'll try and find out what they're doing with the Cortosis; you find the Doomgiver.  If you run into Desann, don't try to take him on alone; now that he's been through the Valley of the Jedi, he'll be more powerful than ever."
+
+REFERENCE           15KJO013
+LANG_ENGLISH        "Don't worry; I'm not totally crazy."
+
+REFERENCE           15LUK013
+LANG_ENGLISH        "May the Force be With You, Kyle."
+
+REFERENCE           15KJO014
+LANG_ENGLISH        "Yeah, you too, Luke"
+
+ENDMARKER

@@ -1,0 +1,79 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           03KJO007
+LANG_ENGLISH        "All right, I'm clear."
+
+REFERENCE           03JAO005
+LANG_ENGLISH        "Good, the colony should be a few clicks out.  I'll scout things out from the air, while you head into the mine.  Give me a shout when you find out what's going on."
+
+REFERENCE           03KJO008
+LANG_ENGLISH        "Will do."
+
+REFERENCE           03JAO006
+LANG_ENGLISH        "Watch yourself, Kyle."
+
+REFERENCE           03KJO010
+LANG_ENGLISH        "What's this...? Looks like the Remnant have created a slave labor camp."
+
+REFERENCE           03KJO011
+LANG_ENGLISH        "And they're using the colonists!!!"
+
+REFERENCE           03KJO012
+LANG_ENGLISH        "Mon Mothma was right, Jan.  Remnant troops are crawling all over this place, and they've taken prisoners."
+
+REFERENCE           03JAO007
+LANG_ENGLISH        "Well, that should bring the Republic running.  I'll alert the fleet and pick you up."
+
+REFERENCE           03KJO013
+LANG_ENGLISH        "Go ahead and call in the reinforcements, but I've got a mine to blow up and prisoners to rescue."
+
+REFERENCE           03JAO008
+LANG_ENGLISH        "Are you trying to justify your fee?"
+
+REFERENCE           03KJO014
+LANG_ENGLISH        "Be ready for a quick pickup; I've got a feeling that things are about to get pretty nasty around here."
+
+REFERENCE           03JAO009
+LANG_ENGLISH        "Who needs the Valley of the Jedi when you're already gifted with such amazing intuitive powers?"
+
+REFERENCE           03KJO015
+LANG_ENGLISH        "Just be ready to pick me up."
+
+REFERENCE           03JAO010
+LANG_ENGLISH        "As you wish, oh Jedi Master."
+
+REFERENCE           03KJO016
+LANG_ENGLISH        "Isn't it a little crazy to be doing this during one of Artus's famous meteor storms?"
+
+REFERENCE           03KJO017
+LANG_ENGLISH        "This meteor storm gives us great cover. Everything's closed up. They'll never see us coming."
+
+REFERENCE           03JAO011
+LANG_ENGLISH        "Yeah, We should be so lucky."
+
+REFERENCE           03JAO013
+LANG_ENGLISH        "The remnant usually has pretty tight security. Make sure you search any officers for key cards."
+
+REFERENCE           03KJO018
+LANG_ENGLISH        "Thanks for the reminder."
+
+REFERENCE           03KJO022
+LANG_ENGLISH        "Jan, this place is about to fall apart. If I don't find a way out, you'll have to get help."
+
+REFERENCE           03JAO014
+LANG_ENGLISH        "Just get out of there, Kyle!"
+
+REFERENCE           03IO1001
+LANG_ENGLISH        "Get security!"
+
+REFERENCE           03KJO019
+LANG_ENGLISH        "Looks like the tram station, but no tram car. Wonder where this leads?"
+
+REFERENCE           03KJO020
+LANG_ENGLISH        "What was that?"
+
+REFERENCE           03KJO021
+LANG_ENGLISH        "I have a bad feeling about this."
+
+ENDMARKER

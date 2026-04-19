@@ -1,0 +1,172 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           10LAC001
+LANG_ENGLISH        "Kyle Katarn?"
+
+REFERENCE           10KJO001
+LANG_ENGLISH        "Lando?  What are you doing here?"
+
+REFERENCE           10LAC002
+LANG_ENGLISH        "What does it look like I'm doing?  I'm sitting in a cell.  What about you?"
+
+REFERENCE           10KJO002
+LANG_ENGLISH        "I'm looking for Reelo Baruk."
+
+REFERENCE           10LAC003
+LANG_ENGLISH        "You too?  What's the Republic want with him?"
+
+REFERENCE           10KJO003
+LANG_ENGLISH        "A ship of his was involved in an...incident...on Artus Prime.  Remnant stuff."
+
+REFERENCE           10LAC004
+LANG_ENGLISH        "The Remnant?  Blast!  Now it's starting to make sense..."
+
+REFERENCE           10KJO004
+LANG_ENGLISH        "What?"
+
+REFERENCE           10LAC005
+LANG_ENGLISH        "Over the past few weeks, a mineral smuggling ring has infiltrated the Cloud City on Bespin.  Real slick group, too: they commandeered half of our loading platforms and Carbonite Chambers before we knew what hit us.  No one knows who's behind it, but it's become obvious that Reelo's garbage haulers are handling the transports.  I came down here to find Reelo, and persuade him to hand over the names of his employers."
+
+REFERENCE           10KJO005
+LANG_ENGLISH        "'Persuade'?"
+
+REFERENCE           10LAC006
+LANG_ENGLISH        "Hey, I can be a charming guy when I want to.  After a few bar fights and card games, I hadn't gotten any closer to Reelo, but I had begun to hear about a Remnant bigwig named 'Desann'... then I was captured."
+
+REFERENCE           10KJO006
+LANG_ENGLISH        "Desann?"
+
+REFERENCE           10LAC007
+LANG_ENGLISH        "You know him?"
+
+REFERENCE           10KJO007
+LANG_ENGLISH        "He's a Dark Jedi.  He and the Remnant have been performing sick experiments on New Republic citizens...among other things."
+
+REFERENCE           10LAC008
+LANG_ENGLISH        "Like I said, the Remnant connection makes sense.  These smugglers are much more organized than the kind of scum we usually get on Bespin; they've gotta be Imperials."
+
+REFERENCE           10KJO008
+LANG_ENGLISH        "Want me to get you out of here?"
+
+REFERENCE           10LAC009A
+LANG_ENGLISH        "If it's not too much trouble.  You'll need the password to get into Reelo's command center and open the cells."
+
+REFERENCE           10KJO009
+LANG_ENGLISH        "I'll be right back."
+
+REFERENCE           10LAC010
+LANG_ENGLISH        "I'm not going anywhere."
+
+REFERENCE           10KJO028
+LANG_ENGLISH        "Any idea what that might be?"
+
+REFERENCE           10LAC016
+LANG_ENGLISH        "Yeah. It's Ruby Bliels"
+
+REFERENCE           10KJO031
+LANG_ENGLISH        "I could go for one of those"
+
+REFERENCE           10LAC021
+LANG_ENGLISH        "Yeah, me too"
+
+REFERENCE           10REE001
+LANG_ENGLISH        "Looking for something?"
+
+REFERENCE           10KJO010
+LANG_ENGLISH        "Not anymore.  You're Reelo Baruk?"
+
+REFERENCE           10REE002
+LANG_ENGLISH        "In the flesh.  But who are you?"
+
+REFERENCE           10KJO011
+LANG_ENGLISH        "Does it matter?"
+
+REFERENCE           10REE003
+LANG_ENGLISH        "Not really.  Any last words?"
+
+REFERENCE           10KJO012
+LANG_ENGLISH        "What's a respectable gangster like you doing mixed up with a Remnant slime like Desann?"
+
+REFERENCE           10REE004
+LANG_ENGLISH        "Making money, of course.  Yah-hah-hah-haaaaa!"
+
+REFERENCE           10LAC011
+LANG_ENGLISH        "What went on up there?"
+
+REFERENCE           10KJO013
+LANG_ENGLISH        "I ran into Reelo."
+
+REFERENCE           10LAC012
+LANG_ENGLISH        "Did he tell you anything about the smuggling ring?"
+
+REFERENCE           10KJO014
+LANG_ENGLISH        "We didn't talk much."
+
+REFERENCE           10LAC013
+LANG_ENGLISH        "I see.  Listen, we'd better get out of here.  My ship's hidden nearby.  What about yours?"
+
+REFERENCE           10KJO015
+LANG_ENGLISH        "Reelo's thugs have probably already stripped it for parts by now."
+
+REFERENCE           10LAC014
+LANG_ENGLISH        "What about Jan?"
+
+REFERENCE           10KJO016
+LANG_ENGLISH        "Jan's...not with me on this one."
+
+REFERENCE           10LAC015
+LANG_ENGLISH        "You two've had another one of your fights, haven't you?  Well, c'mon, let's go.  You can buy her some flowers on Bespin."
+
+REFERENCE           10KJO017
+LANG_ENGLISH        "Pfew. What's that smell?"
+
+REFERENCE           10KJO018
+LANG_ENGLISH        "Reelo sure has a lot of heavy firepower to guard a bunch of 'trash'."
+
+REFERENCE           10KJO019
+LANG_ENGLISH        "Surveillance cameras. Reelo doesn't want to miss a thing."
+
+REFERENCE           10KJO020
+LANG_ENGLISH        "Where's Reelo? How could a Rodian that big just disappear?"
+
+REFERENCE           10KJO021
+LANG_ENGLISH        "I can't leave without Lando."
+
+REFERENCE           10KJO022
+LANG_ENGLISH        "Reelo"
+
+REFERENCE           10KJO023
+LANG_ENGLISH        "Garbage"
+
+REFERENCE           10KJO024
+LANG_ENGLISH        "Desann"
+
+REFERENCE           10KJO025
+LANG_ENGLISH        "I don't know"
+
+REFERENCE           10KJO026
+LANG_ENGLISH        "Wookie feet"
+
+REFERENCE           10KJO027
+LANG_ENGLISH        "Ruby Bliels"
+
+REFERENCE           10LAC018
+LANG_ENGLISH        "I thought you were going to get me out of here?"
+
+REFERENCE           10LAC019
+LANG_ENGLISH        "Whatever you tried didn't work. I'm still stuck in here."
+
+REFERENCE           10LAC020
+LANG_ENGLISH        "Come on, Kyle. Get me out of here!"
+
+REFERENCE           EYE_ASK
+LANG_ENGLISH        "What's the password?"
+
+REFERENCE           EYE_FAIL
+LANG_ENGLISH        "Wrong!"
+
+REFERENCE           EYE_PASS
+LANG_ENGLISH        "Correct."
+
+ENDMARKER

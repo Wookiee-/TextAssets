@@ -1,0 +1,82 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           25DES001
+LANG_ENGLISH        "Welcome, Kyle Katarn... Welcome to the future."
+
+REFERENCE           25KJO006
+LANG_ENGLISH        "Your future's looking pretty grim, Desann."
+
+REFERENCE           25DES002
+LANG_ENGLISH        "On the contrary.  Thanks to you, the weakling Jedi who scorned me will soon be erased from history, replaced by a new race of warriors.  Strong warriors.  Warriors who know that the Force is not a shield to protect the useless, but is in reality a weapon to empower the worthy!"
+
+REFERENCE           25KJO007
+LANG_ENGLISH        "None of that's going to happen, Desann. Most of your Shadow Troopers are being mopped up by real Jedi; ones who've been trained to use the Force. The rest blew up with your ship."
+
+REFERENCE           25DES003
+LANG_ENGLISH        "What a pathetic ruse."
+
+REFERENCE           25DES004
+LANG_ENGLISH        "Desann to Fyyar...  Admiral?   Admiral!  Admiral Fyyar, I order you to come in at once!"
+
+REFERENCE           25DES005
+LANG_ENGLISH        "I was wrong about you, Katarn.  Your failure as a Jedi hasn't weakened you; it's only made you stronger.  Come, join me.  You know in your heart that you'll never truly be one of them."
+
+REFERENCE           25KJO008
+LANG_ENGLISH        "Maybe.  Maybe not.  But I know I won't be alone.  How about you, Desann?  Even now, after all this pain, it's not too late...come, join US."
+
+REFERENCE           25DES006
+LANG_ENGLISH        "You...weak...fool!"
+
+REFERENCE           25LUK001
+LANG_ENGLISH        "Kyle, Jan."
+
+REFERENCE           25KJO009
+LANG_ENGLISH        "Someday you're going to have to teach me how to do that."
+
+REFERENCE           25JAO005
+LANG_ENGLISH        "Thanks for taking care of the Raven's Claw."
+
+REFERENCE           25LUK003
+LANG_ENGLISH        "It was the least I could do for the pair of mercenaries who helped save the Jedi Academy.  I know you've probably heard this before, but the New Republic is forever in your debt."
+
+REFERENCE           25KJO010
+LANG_ENGLISH        "You should have known it would take a failed Jedi to take out another failed Jedi."
+
+REFERENCE           25LUK004
+LANG_ENGLISH        "Kyle...you were never a failure."
+
+REFERENCE           25KJO011
+LANG_ENGLISH        "Luke, I-"
+
+REFERENCE           25LUK005
+LANG_ENGLISH        "I know.  I'll be happy to hold on to your lightsaber for safekeeping"
+
+REFERENCE           25KJO012
+LANG_ENGLISH        "No.  I think I'll keep it."
+
+REFERENCE           25JAO006
+LANG_ENGLISH        "Hah!  I knew it!  Lando owes me five credits!"
+
+REFERENCE           25LUK006
+LANG_ENGLISH        "Are you sure this is what you want, Kyle?"
+
+REFERENCE           25KJO013
+LANG_ENGLISH        "Look, I'm not saying I'm ready to join the Academy or anything like that.  I mean, before I do ANYTHING, I figure that Jan and I have earned a long vacation on the beaches of Spira.  And after that...well..."
+
+REFERENCE           25LUK007
+LANG_ENGLISH        "After that, we'll see."
+
+REFERENCE           25KJO014
+LANG_ENGLISH        "Yeah."
+
+REFERENCE           25LUK008
+LANG_ENGLISH        "Take your time, Kyle.  We'll still be here when you're ready."
+
+REFERENCE           25KJO015
+LANG_ENGLISH        "Thanks. And May the Force Be With You, Luke. "
+
+REFERENCE           25JAO007
+LANG_ENGLISH        "Now he owes me twenty."
+
+ENDMARKER

@@ -1,0 +1,57 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           16ST3001
+LANG_ENGLISH        "Must be another power failure."
+
+REFERENCE           16ST1001
+LANG_ENGLISH        "Hold your positions."
+
+REFERENCE           16ST3002
+LANG_ENGLISH        "Systems will be back on line."
+
+REFERENCE           16KJO001
+LANG_ENGLISH        "The weak minded are easily influenced by the Force."
+
+REFERENCE           16KJO002
+LANG_ENGLISH        "There're too many of them. I'll never get through this using firepower."
+
+REFERENCE           16KJO003
+LANG_ENGLISH        "I better think of a way to get through without being noticed."
+
+REFERENCE           16KJO004A
+LANG_ENGLISH        "I need to distract these guys"
+
+REFERENCE           16KJO004B
+LANG_ENGLISH        "I need to distract this guy."
+
+REFERENCE           16KJO005
+LANG_ENGLISH        "I think a distraction is in order. "
+
+REFERENCE           16KJO006
+LANG_ENGLISH        "Stealth may be a wiser choice here. "
+
+REFERENCE           16KJO007
+LANG_ENGLISH        "I better try not to attract too much attention."
+
+REFERENCE           16KJO008
+LANG_ENGLISH        "What was I thinking? I should have used the Force!"
+
+REFERENCE           16KJO009
+LANG_ENGLISH        "There were too many. I never should have tried to shoot my way through."
+
+REFERENCE           16KJO010
+LANG_ENGLISH        "This is an alarm control. I Don't want anyone turning this on."
+
+REFERENCE           16KJO011
+LANG_ENGLISH        "There's an alarm control.  Don't want anyone getting near that."
+
+REFERENCE           03KJO002
+LANG_ENGLISH        "Spast!"
+
+REFERENCE           20KJO001
+LANG_ENGLISH        "That's Luke! And Desann!"
+
+REFERENCE           20KJO002
+LANG_ENGLISH        "What the?! We're moving!"
+ENDMARKER

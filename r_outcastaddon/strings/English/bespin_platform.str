@@ -1,0 +1,109 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           14KJO001
+LANG_ENGLISH        "What the...?"
+
+REFERENCE           14KJO002
+LANG_ENGLISH        "Lando!"
+
+REFERENCE           12TAA001
+LANG_ENGLISH        "Ah, the prodigal Jedi.  Have you come seeking vengeance?  That's not very Jedi-like."
+
+REFERENCE           12KJO010
+LANG_ENGLISH        "Where's your Master, apprentice?"
+
+REFERENCE           12TAA002
+LANG_ENGLISH        "Desann sends his regards, but is far too busy in the Valley of the Jedi to personally dispose of his pawns."
+
+REFERENCE           12KJO011
+LANG_ENGLISH        "What?!"
+
+REFERENCE           12TAA003
+LANG_ENGLISH        "You still don't know, do you?  Desann followed you to the Valley of the Jedi.  Even now, hundreds of Desann's loyal followers are drinking deeply from the Valley's power, becoming Reborn in the glory of the Force.  And we owe it all to you."
+
+REFERENCE           12KJO012
+LANG_ENGLISH        "Then...you killed Jan..."
+
+REFERENCE           12TAA004
+LANG_ENGLISH        "That's right.  We killed your woman to make you angry; angry enough to cast aside your promises and rashly seek out the power of the Valley.  Just think of it: her death and your failure will be celebrated for eons to come as the events that brought about the Era of Desann.  Congratulations."
+
+REFERENCE           12KJO013
+LANG_ENGLISH        "Stop...talking!"
+
+REFERENCE           12TAA005
+LANG_ENGLISH        "D-d-don't!  M-m-mercy!"
+
+REFERENCE           12KJO014
+LANG_ENGLISH        "The kind of mercy you showed Jan?"
+
+REFERENCE           12TAA006
+LANG_ENGLISH        "She lives!  I can tell you where she is!"
+
+REFERENCE           12KJO015
+LANG_ENGLISH        "Liar!  I saw her die!"
+
+REFERENCE           12TAA007
+LANG_ENGLISH        "Th-think!  What did you really see?  What did you really hear?  Do you believe we'd risk killing one of the only two people who knew the location of the Valley of the Jedi?"
+
+REFERENCE           12KJO016
+LANG_ENGLISH        "Where is she?"
+
+REFERENCE           12TAA008
+LANG_ENGLISH        "That...(cough)... hauler...will take you to our base in the Lenico Belt.  That's where Galak's ship, the Doomgiver, is docked; it's also where he's keeping your woman for further interrogations."
+
+REFERENCE           12KJO017
+LANG_ENGLISH        "Why should I believe you?"
+
+REFERENCE           12TAA009
+LANG_ENGLISH        "Because...I'm not brave  enough...to die."
+
+REFERENCE           12KJO018
+LANG_ENGLISH        "Ahhh...Get out of my sight."
+
+REFERENCE           12TAA010
+LANG_ENGLISH        "What?"
+
+REFERENCE           12KJO019
+LANG_ENGLISH        "You heard me.  Go, and pray that I find your Master before he finds you."
+
+REFERENCE           12KJO020
+LANG_ENGLISH        "Thanks for the help, Lando, but I thought you were going to be working with the security forces."
+
+REFERENCE           12KJO021
+LANG_ENGLISH        "Thanks for the help Lando"
+
+REFERENCE           12LAC010
+LANG_ENGLISH        "I was, but I got a better idea.  What are you doing in that hauler?"
+
+REFERENCE           12LAC011
+LANG_ENGLISH        "Thanks for helping me clear these gangsters out of Bespin.  What are you doing in that hauler?"
+
+REFERENCE           12KJO022
+LANG_ENGLISH        "I'm heading for the Lenico Belt."
+
+REFERENCE           12LAC012
+LANG_ENGLISH        "Lenico?  What's Desann doing in that deserted wastespace of asteroids?"
+
+REFERENCE           12KJO023
+LANG_ENGLISH        "I don't know, but I'm going to find out.  Jan may be there."
+
+REFERENCE           12LAC013
+LANG_ENGLISH        "Jan's alive?"
+
+REFERENCE           12KJO024
+LANG_ENGLISH        "Maybe.  I don't know.  Listen, you've got to find Skywalker, and tell him that the Valley of the Jedi's been invaded."
+
+REFERENCE           12LAC014
+LANG_ENGLISH        "What?  What's the Valley got to do with all this?"
+
+REFERENCE           12KJO025
+LANG_ENGLISH        "Just tell him!"
+
+REFERENCE           12LAC015
+LANG_ENGLISH        "Okay.  I don't understand half of it, but okay.  May the Force be with you, Kyle."
+
+REFERENCE           12KJO026
+LANG_ENGLISH        "We'll see..."
+
+ENDMARKER

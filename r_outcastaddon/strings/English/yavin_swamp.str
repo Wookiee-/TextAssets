@@ -1,0 +1,25 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           25KJO003
+LANG_ENGLISH        "Arrrrrgh!"
+
+REFERENCE           25JAO001
+LANG_ENGLISH        "If we get out of this alive, remind me never to do that again."
+
+REFERENCE           25KJO004
+LANG_ENGLISH        "I'm going after Desann.  He's probably heading for the heart of the Academy.  You coming?"
+
+REFERENCE           25JAO002
+LANG_ENGLISH        "I think I'd be more useful in the air.  I'll go to the hangar and join the New Republic troops."
+
+REFERENCE           25KJO005
+LANG_ENGLISH        "Okay.  Try to avoid anyone with a lightsaber."
+
+REFERENCE           25JAO003
+LANG_ENGLISH        "Good advice...Jedi."
+
+REFERENCE           25JAO004
+LANG_ENGLISH        "Go."
+
+ENDMARKER

@@ -1,0 +1,154 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           02KJO004
+LANG_ENGLISH        "Jan?  I've found an exit."
+
+REFERENCE           02JAO003
+LANG_ENGLISH        "Good.  Grab some of those crystals and get yourself out of there.  This place is giving me the creeps."
+
+REFERENCE           02GAF001
+LANG_ENGLISH        "Lord Desann, this is Admiral Fyyar."
+
+REFERENCE           02DES001
+LANG_ENGLISH        "Ah, Admiral Fyyar.  How go our experiments?"
+
+REFERENCE           02GAF002
+LANG_ENGLISH        "As of this moment, they're not going at all.  The testing facility on Kejim has been neutralized by a pair of New Republic mercenaries, and they've taken some of the crystals."
+
+REFERENCE           02DES002
+LANG_ENGLISH        "Mercenaries? Who?"
+
+REFERENCE           02GAF003
+LANG_ENGLISH        "Judging by their ship and the conversations our cameras picked up, I believe it was the pilot Jan Ors, and her mercenary partner, Kyle Katarn."
+
+REFERENCE           02DES003
+LANG_ENGLISH        "Katarn, eh?  Hmm.  This "setback" could prove to be the answer to all our problems."
+
+REFERENCE           02KJO001
+LANG_ENGLISH        "Looks like another level here, Jan. I'm going to check it out."
+
+REFERENCE           02JAO001
+LANG_ENGLISH        "Want me to come down there?"
+
+REFERENCE           02KJO002
+LANG_ENGLISH        "No, stay with the ship. I'll call you if I run into trouble."
+
+REFERENCE           02JAO002
+LANG_ENGLISH        "Be careful, Kyle."
+
+REFERENCE           02KJO003
+LANG_ENGLISH        "Hey...it's me!"
+
+REFERENCE           02IO2001
+LANG_ENGLISH        "Fire!"
+
+REFERENCE           02KJO005
+LANG_ENGLISH        "Looks pretty cold in there."
+
+REFERENCE           02KJO006
+LANG_ENGLISH        "Geez, it's freezing in here!"
+
+REFERENCE           02ST1001
+LANG_ENGLISH        "Here he comes!"
+
+REFERENCE           02ST1002
+LANG_ENGLISH        "Get clear!"
+
+REFERENCE           02ST1003
+LANG_ENGLISH        "Watch the mines!"
+
+REFERENCE           02ST1004
+LANG_ENGLISH        "Run!"
+
+REFERENCE           02KJO007
+LANG_ENGLISH        "It's locked."
+
+REFERENCE           02KJO008
+LANG_ENGLISH        "It's sealed."
+
+REFERENCE           02KJO009
+LANG_ENGLISH        "I'll have to find another way to open this."
+
+REFERENCE           02KJO010
+LANG_ENGLISH        "I'll never get this open."
+
+REFERENCE           02KJO011
+LANG_ENGLISH        "Let's see what this little guy can do."
+
+REFERENCE           02KJO012
+LANG_ENGLISH        "This should be interesting."
+
+REFERENCE           02KJO013
+LANG_ENGLISH        "No way I can survive in there."
+
+REFERENCE           02KJO014
+LANG_ENGLISH        "Maybe if I can shut off the power to that thing."
+
+REFERENCE           02KJO015
+LANG_ENGLISH        "It's powered down"
+
+REFERENCE           02KJO016
+LANG_ENGLISH        "It's off line."
+
+REFERENCE           02KJO017
+LANG_ENGLISH        "I need to power this up first."
+
+REFERENCE           02KJO018
+LANG_ENGLISH        "Jan, I found a way out. Meet you up top."
+
+REFERENCE           03MOM001
+LANG_ENGLISH        "... I'm afraid we haven't been able to decode any more of that transmission."
+
+REFERENCE           03KJO001
+LANG_ENGLISH        "Good.  If I've put the Valley of the Jedi behind me, so can the rest of the galaxy."
+
+REFERENCE           03JAO001
+LANG_ENGLISH        "So, what were the Remnant doing in that lab?"
+
+REFERENCE           03MOM002
+LANG_ENGLISH        "Our scientists believe that they were trying to artificially infuse the powers of the Force into living subjects.  Those crystals you're holding are very much like those found in a Jedi's lightsaber."
+
+REFERENCE           03KJO002
+LANG_ENGLISH        "Spast!"
+
+REFERENCE           03JAO002
+LANG_ENGLISH        "But that's impossible, isn't it?  You can't just give people the Force with a machine, right?"
+
+REFERENCE           03MOM003
+LANG_ENGLISH        "Everything we know about the Force tells us that such devices are nothing but the fevered dreams of fools and madmen, Jan.  But try telling that to those poor beings you found in that laboratory."
+
+REFERENCE           03KJO003
+LANG_ENGLISH        "Who were they?"
+
+REFERENCE           03MOM004
+LANG_ENGLISH        "Colonists from Artus Prime, a remote mining world on the far reaches of the New Republic's influence."
+
+REFERENCE           03KJO004
+LANG_ENGLISH        "Let me guess: crystal mining?"
+
+REFERENCE           03MOM005
+LANG_ENGLISH        "Yes. We lost contact with them shortly before receiving the transmission from Kejim. Now we fear that the colony has been captured by the Remnant."
+
+REFERENCE           03JAO003
+LANG_ENGLISH        "Or worse."
+
+REFERENCE           03MOM006
+LANG_ENGLISH        "Indeed.  Without knowing the full extent of the Remnant's plans, or the colonists' plight, the New Republic is uneasy about sending in a full liberation force, so--"
+
+REFERENCE           03KJO005
+LANG_ENGLISH        "So you'd like us to sneak in, assess the situation, and call in the fleet if necessary?"
+
+REFERENCE           03MOM007
+LANG_ENGLISH        "Yes."
+
+REFERENCE           03KJO006
+LANG_ENGLISH        "You know I don't like messing with this Force business anymore."
+
+REFERENCE           03MOM008
+LANG_ENGLISH        "We'll double your usual fee."
+
+REFERENCE           03JAO004
+LANG_ENGLISH        "We'll take it."
+
+ENDMARKER

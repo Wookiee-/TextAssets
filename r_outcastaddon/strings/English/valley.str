@@ -1,0 +1,46 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           05MOK001
+LANG_ENGLISH        "What are you doing, Kyle?"
+
+REFERENCE           05KJO013
+LANG_ENGLISH        "Don't try to talk me out of this, father.  I need the power of the Valley of the Jedi, and I need it now."
+
+REFERENCE           05MOK002
+LANG_ENGLISH        "Do you believe that this stream of power will ease your pain?  Or that you can safely wield the Force with anger in your heart?"
+
+REFERENCE           05KJO014
+LANG_ENGLISH        "Jan is dead; my anger is all I have left.  Anger and revenge."
+
+REFERENCE           05MOK003
+LANG_ENGLISH        "Is that how she would want to be remembered, with acts of anger and revenge?"
+
+REFERENCE           05KJO015
+LANG_ENGLISH        "...No..."
+
+REFERENCE           05MOK004
+LANG_ENGLISH        "Then remember her as she was, and may the Force Be With You..."
+
+REFERENCE           05KJO017
+LANG_ENGLISH        "It hasn't been so far."
+
+REFERENCE           05MOK005
+LANG_ENGLISH        "Are you all right?"
+
+REFERENCE           05KJO018
+LANG_ENGLISH        "I'd...forgotten...what it was like..."
+
+REFERENCE           05MOK006
+LANG_ENGLISH        "It will become familiar to you again in time.  What will you do now?"
+
+REFERENCE           05KJO019
+LANG_ENGLISH        "Find Desann.  But first, I need to get something I left behind."
+
+REFERENCE           05TAA003
+LANG_ENGLISH        "Your plan worked, Master Desann."
+
+REFERENCE           05DES008
+LANG_ENGLISH        "Yes, Tavion, the death of Katarn's woman has driven him mad, and delivered the Valley of the Jedi into our hands.  Contact Admiral Fyyar, and prepare the troops!"
+
+ENDMARKER

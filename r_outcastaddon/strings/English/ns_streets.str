@@ -1,0 +1,142 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           09KJO001
+LANG_ENGLISH        "Bartender?"
+
+REFERENCE           09KJO002
+LANG_ENGLISH        "BARTENDER!?"
+
+REFERENCE           09BAR001
+LANG_ENGLISH        "Ah, Jedis!  I had no ideas!  What can I do for you, honored Jedis?"
+
+REFERENCE           09KJO003
+LANG_ENGLISH        "I'm no Jedi.  I'm just a guy with a lightsaber and a few questions."
+
+REFERENCE           09BAR002
+LANG_ENGLISH        "Of course.  Many peoples have them."
+
+REFERENCE           09KJO004
+LANG_ENGLISH        "Lightsabers?"
+
+REFERENCE           09BAR003
+LANG_ENGLISH        "Questions.  Having drinks?"
+
+REFERENCE           09KJO005
+LANG_ENGLISH        "Corellian ale...in a clean glass."
+
+REFERENCE           09BAR004
+LANG_ENGLISH        "Of course, sirs."
+
+REFERENCE           09BAR005
+LANG_ENGLISH        "Now, you seek informations?"
+
+REFERENCE           09KJO006
+LANG_ENGLISH        "What do you know about Reelo Baruk?"
+
+REFERENCE           09BAR006
+LANG_ENGLISH        "A respected waste disposal managers.  This very establishment contracts with him to remove our garbages."
+
+REFERENCE           09KJO007
+LANG_ENGLISH        "Where does he take your 'garbages?'"
+
+REFERENCE           09BAR007
+LANG_ENGLISH        "Who cares?  Out of sight, out of minds, says us."
+
+REFERENCE           09KJO008
+LANG_ENGLISH        "And it's all strictly legit, right?"
+
+REFERENCE           09BAR008
+LANG_ENGLISH        "As legitimate as anything on Nar Shaddaa, Mr. "Just-A-Guy"."
+
+REFERENCE           09KJO009
+LANG_ENGLISH        "Do you know where I can find Baruk?"
+
+REFERENCE           09BAR009
+LANG_ENGLISH        "Trulies?"
+
+REFERENCE           09KJO010
+LANG_ENGLISH        "Trulies."
+
+REFERENCE           09BAR010
+LANG_ENGLISH        "Wait here.  I get him for you."
+
+REFERENCE           09KJO011
+LANG_ENGLISH        "Never trust a bartender with bad grammar."
+
+REFERENCE           09KJO013
+LANG_ENGLISH        "All right, enough fooling around.  Where's Reelo?"
+
+REFERENCE           09BAR011
+LANG_ENGLISH        "Please, noble Jedis!  Not in the faces!  Reelo's offices on higher levels.  Follow the garbage collectors!"
+
+REFERENCE           09BAR012
+LANG_ENGLISH        "Questions. Hows abouts a Ruby Bliels?"
+
+REFERENCE           09RO1001
+LANG_ENGLISH        "( Hand over your weapons. )"
+
+REFERENCE           09KJO014
+LANG_ENGLISH        "Sure, no problem."
+
+REFERENCE           09RO2001
+LANG_ENGLISH        "( You'll get them back when you leave. )"
+
+REFERENCE           09KJO015
+LANG_ENGLISH        "I better not."
+
+REFERENCE           09KJO016
+LANG_ENGLISH        "I don't want to start any trouble... yet."
+
+REFERENCE           09GR2001
+LANG_ENGLISH        "( Working boys allowed only. )"
+
+REFERENCE           09GR2002
+LANG_ENGLISH        "( You're not allowed backstage. )"
+
+REFERENCE           09KJO017
+LANG_ENGLISH        "Hi!"
+
+REFERENCE           09KJO018
+LANG_ENGLISH        "How's it going?"
+
+REFERENCE           09KJO019
+LANG_ENGLISH        "What's going on?"
+
+REFERENCE           09KJO020
+LANG_ENGLISH        "Can I join you?"
+
+REFERENCE           09KJO021
+LANG_ENGLISH        "Sorry."
+
+REFERENCE           09KJO022
+LANG_ENGLISH        "Thanks."
+
+REFERENCE           09KJO023
+LANG_ENGLISH        "Ok."
+
+REFERENCE           09TR2001
+LANG_ENGLISH        "( There will be no bargain here, fool. )"
+
+REFERENCE           09TR2002
+LANG_ENGLISH        "( Burp off! )"
+
+REFERENCE           09TR2003
+LANG_ENGLISH        "( You bother me! )"
+
+REFERENCE           09TR2004
+LANG_ENGLISH        "( What are you doing here? )"
+
+REFERENCE           09TR2005
+LANG_ENGLISH        "( You're in trouble now! )"
+
+REFERENCE           09KJO024
+LANG_ENGLISH        "I must not be doing this right."
+
+REFERENCE           09KJO025
+LANG_ENGLISH        "Those look like garbage haulers to me. They must end up at Reelo's."
+
+REFERENCE           09KJO027
+LANG_ENGLISH        "There must be an override to change the route."
+
+ENDMARKER

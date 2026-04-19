@@ -1,0 +1,193 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           11LAC001
+LANG_ENGLISH        "All right, say good-bye to this wretched hive of scum and villainy, and hello to Cloud City."
+
+REFERENCE           11KJO001
+LANG_ENGLISH        "Need any help?"
+
+REFERENCE           11LAC002
+LANG_ENGLISH        "Just sit back and get some rest.  I'll work out a plan to get Desann and his Remnant friends out of my city."
+
+REFERENCE           11KJO002
+LANG_ENGLISH        "How's it look?"
+
+REFERENCE           11LAC006
+LANG_ENGLISH        "Hold on, I'm looking."
+
+REFERENCE           11LAC012
+LANG_ENGLISH        "Hey buddy! That gun's got me pinned down. Think you can take care of it?"
+
+REFERENCE           11KJO004
+LANG_ENGLISH        "I'll see what I can do."
+
+REFERENCE           11LAC013
+LANG_ENGLISH        "Thanks Kyle! I should be ok now"
+
+REFERENCE           11KJO005
+LANG_ENGLISH        "Any time."
+
+REFERENCE           11LAC018
+LANG_ENGLISH        "Kyle, we've got a problem."
+
+REFERENCE           11KJO007
+LANG_ENGLISH        "So, what's new?"
+
+REFERENCE           11LAC019
+LANG_ENGLISH        "There's no fuel coming through the lines. They must have the valve closed at the main tanks. See if you can get out there and open the right valve. They use a code system so make sure you get the right one. And you'll still need to find the controls for the roof sections. They have to be around here somewhere. I'll get everything ready to go here. Good luck!"
+
+REFERENCE           11LAC020
+LANG_ENGLISH        "There's no fuel coming in. They must have closed it at the main tanks. See if you can find the right valve. They use a code system so make sure you get the right one."
+
+REFERENCE           11LAC021
+LANG_ENGLISH        "You'll still need to find the controls for the roof sections. They have to be around here somewhere."
+
+REFERENCE           11LAC022
+LANG_ENGLISH        "I'll get everything ready to go here. Good luck!"
+
+REFERENCE           11LAC032
+LANG_ENGLISH        "We're out of here!"
+
+REFERENCE           11KJO008
+LANG_ENGLISH        "That doesn't sound good."
+
+REFERENCE           11LAC033
+LANG_ENGLISH        "I don't believe it! It's not my fault!"
+
+REFERENCE           11KJO009
+LANG_ENGLISH        "Uh-oh. We've got company."
+
+REFERENCE           11KJO010
+LANG_ENGLISH        "Uh-oh"
+
+REFERENCE           11LAC003
+LANG_ENGLISH        "We gotta get to the ship."
+
+REFERENCE           11LAC004
+LANG_ENGLISH        "I think it's this way."
+
+REFERENCE           11LAC005
+LANG_ENGLISH        "Ahhh. There's my baby. Hope they took good care of her. Give me a minute to check things out."
+
+REFERENCE           11LAC007
+LANG_ENGLISH        "Well, it doesn't look like we can just fly her out of here. She's held in place by magnetic moorings and they've got one tough tractor beam online. I can deal with those here, but that doesn't solve the bigger problem. The entrance to the pad is closed and I don't think they're going to just open it for us if we ask politely. You'll have to find the flight control center and open the door to the starpad.  Better get going, I would guess we can expect some company pretty soon. Good luck, Kyle! "
+
+REFERENCE           11LAC008
+LANG_ENGLISH        "Well, the bad news is that she's locked down.  The good news is that I can disable the magnetic moorings and a tractor beam from here.  The OTHER bad news is the pad roof; it's closed and I don't think they're going to just open it for us if we ask politely. You'll have to find the flight control center and get access into the starpad where the manual overrides are. Better get going, Kyle! "
+
+REFERENCE           11LAC009
+LANG_ENGLISH        "What are you waiting for?"
+
+REFERENCE           11LAC010
+LANG_ENGLISH        "Better get moving, Kyle."
+
+REFERENCE           11LAC011
+LANG_ENGLISH        "Kyle. I cut the power to the moorings and I think they'll be in for a surprise if they try to use that tractor beam. But there are some safeties I need to remove manually. I'll let you know when I get there."
+
+REFERENCE           11KJO003
+LANG_ENGLISH        "Good luck."
+
+REFERENCE           11LAC014
+LANG_ENGLISH        "Good work, Kyle. Looks like we have access to the starpad now. I'll start prepping the ship. Meet you inside."
+
+REFERENCE           11LAC015
+LANG_ENGLISH        "Hey buddy. Glad you made it. Unfortunately they didn't bother to refuel her. This should just take a few minutes. Then we're out of here."
+
+REFERENCE           11KJO006
+LANG_ENGLISH        "We've got company!"
+
+REFERENCE           11LAC016
+LANG_ENGLISH        "Get to the ship!"
+
+REFERENCE           11LAC017
+LANG_ENGLISH        "Hold them off while I try to start her up."
+
+REFERENCE           11LAC023
+LANG_ENGLISH        "Ok, the fuel's coming in! We just need that roof open yet."
+
+REFERENCE           11LAC024
+LANG_ENGLISH        "Ok, the fuel's coming in! Now we just need to get that roof open."
+
+REFERENCE           11LAC025
+LANG_ENGLISH        "That's one. You'll need to open the other section."
+
+REFERENCE           11LAC026
+LANG_ENGLISH        "That's one. You'll need to open the other section as well."
+
+REFERENCE           11LAC027
+LANG_ENGLISH        "Nice work! The roof is open!"
+
+REFERENCE           11LAC028
+LANG_ENGLISH        "We still need that fuel!"
+
+REFERENCE           11LAC029
+LANG_ENGLISH        "That roof isn't going to open itself."
+
+REFERENCE           11LAC030
+LANG_ENGLISH        "Good work Kyle! We're set to go. Get back to the ship and lets get out of here!"
+
+REFERENCE           11REE001
+LANG_ENGLISH        "Going somewhere, gentlemen?"
+
+REFERENCE           11LAC035
+LANG_ENGLISH        "Get on the gun and hold them off. I'll have this fixed in a jiffy."
+
+REFERENCE           11LAC036
+LANG_ENGLISH        "What are you doing? They're going to blow us to pieces!"
+
+REFERENCE           11LAC037
+LANG_ENGLISH        "I never thought you'd just give up like this."
+
+REFERENCE           11LAC038
+LANG_ENGLISH        "Ok. I hope this works."
+
+REFERENCE           11LAC039
+LANG_ENGLISH        "Ok. This better work."
+
+REFERENCE           11LAC040
+LANG_ENGLISH        "Yeeehaa!"
+
+REFERENCE           11LAC034
+LANG_ENGLISH        "You'd better get on the gun and hold them off, I'll have this fixed in a jiffy."
+
+REFERENCE           12LAC001
+LANG_ENGLISH        "Kyle?  Wake up."
+
+REFERENCE           12KJO001
+LANG_ENGLISH        "Urf...no...Jan!"
+
+REFERENCE           12LAC002
+LANG_ENGLISH        "Kyle!  Are you okay?"
+
+REFERENCE           12KJO002
+LANG_ENGLISH        "I'll be fine."
+
+REFERENCE           12LAC003
+LANG_ENGLISH        "Good.  While you were sleeping I hailed the New Republic base on Sullust.  They haven't shown much interest in our little smuggling problem in the past, but now that they know Remnant forces are behind it, they're eager to pitch in.  A strike team should be arriving on Bespin within a few hours-"
+
+REFERENCE           12KJO003
+LANG_ENGLISH        "No!"
+
+REFERENCE           12LAC004
+LANG_ENGLISH        "I thought you'd be happy to-"
+
+REFERENCE           12KJO004
+LANG_ENGLISH        "They'll tip off Desann!"
+
+REFERENCE           12LAC005
+LANG_ENGLISH        "Then we'll catch him later.  Getting Desann isn't as important as clearing the city-"
+
+REFERENCE           12KJO005
+LANG_ENGLISH        "Jan's dead, Lando.  Desann and his minion killed her."
+
+REFERENCE           12LAC006
+LANG_ENGLISH        "...Grife, I'm sorry, Kyle...  Okay,....okay... here's what we'll do.  I'll drop you off on the lower levels.  They've probably been overrun by Remnant troops, so watch out.  Chances are that Desann's operating from one of the loading bays above level ten, but you'll never get in without the proper access codes.  Try to find Carbonite Chamber #17.  I've hidden an old R5 unit there with codes to every loading bay in the city."
+
+REFERENCE           12KJO006
+LANG_ENGLISH        "You always did plan for the worst..."
+
+REFERENCE           12LAC007
+LANG_ENGLISH        "Ever since that run-in with Vader.  Anyway, I'll head up top and gather some old friends from the security force.  We'll work our way down towards your position. If we're lucky, we can trap Desann before the New Republic arrives."
+
+ENDMARKER

@@ -1,0 +1,64 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           21GAF001
+LANG_ENGLISH        "Ah, Captain Katarn.  What a pleasure it is to finally meet you face-to-face.  "
+
+REFERENCE           21KJO019
+LANG_ENGLISH        "The pleasure's all yours, I'm sure."
+
+REFERENCE           21GAF002
+LANG_ENGLISH        "The Ors woman thinks quite highly of you, did you know that?  She must have whimpered your name on at least seventeen different occasions over the last few days."
+
+REFERENCE           21KJO020
+LANG_ENGLISH        "Is that supposed to make me angry?  I'm past that, Galak."
+
+REFERENCE           21GAF003
+LANG_ENGLISH        "Oh, really.  Then what if I tell you that, even as we speak, Desann is descending on the Jedi Academy with thousands of his Force-enhanced, lightsaber-resistant warriors, eliminating the scourge of the Jedi for ALL TIME!"
+
+REFERENCE           21KJO021
+LANG_ENGLISH        "I'd say you're insane."
+
+REFERENCE           21GAF004
+LANG_ENGLISH        "Insane?  Then what about this?"
+
+REFERENCE           21IO2001
+LANG_ENGLISH        "Strike Force 1 to Doomgiver: Eastward assault on Academy grounds proceeding as planned..."
+
+REFERENCE           21IO1002
+LANG_ENGLISH        "Strike Force 2 to Doomgiver: Establishing beachhead outside main entrance..."
+
+REFERENCE           21SO1001
+LANG_ENGLISH        "Strike Force 3 to Doomgiver: Reborn troops advancing on northern perimeter..."
+
+REFERENCE           21GAF005
+LANG_ENGLISH        "Within hours, Desann will have eradicated those annoying Jedi, clearing the way for my ascent as the leader of the New Empire!  I, Galak Fyyar the First, the genius who conceived of the Shadow Armor, will rule the galaxy with a Cortosis fist!  Worlds will tremble, stars will shudder -"
+
+REFERENCE           21KJO022
+LANG_ENGLISH        "Your shields will fall."
+
+REFERENCE           21GAF006
+LANG_ENGLISH        "Raaaaaar!"
+
+REFERENCE           21WEA007
+LANG_ENGLISH        "Kyle, this is Rogue Leader.  We're about to make our final run, so you'd better get yourself out of there, NOW!"
+
+REFERENCE           21KJO023
+LANG_ENGLISH        "I was just thinking the same thing."
+
+REFERENCE           21JAO012
+LANG_ENGLISH        "C'mon, this place is falling apart!"
+
+REFERENCE           21KJO024
+LANG_ENGLISH        "Couldn't happen to a nicer ship, either."
+
+REFERENCE           23KJO001
+LANG_ENGLISH        "I smell fuel."
+
+REFERENCE           23KJO002
+LANG_ENGLISH        "This is it! The shield generator. Hang in there Rogues, things are about to get easier."
+
+REFERENCE           23KJO007
+LANG_ENGLISH        "C'mon ship.... hold together a little longer"
+
+ENDMARKER

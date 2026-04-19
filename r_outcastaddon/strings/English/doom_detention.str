@@ -1,0 +1,115 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           21KJO007
+LANG_ENGLISH        "Jan!"
+
+REFERENCE           21JAO001
+LANG_ENGLISH        "Well, you certainly took your sweet time..."
+
+REFERENCE           21JAO003
+LANG_ENGLISH        "H-hey!  It's okay.  I'm happy to see you, too..."
+
+REFERENCE           21KJO008
+LANG_ENGLISH        "I, I thought you were dead!"
+
+REFERENCE           21JAO004
+LANG_ENGLISH        "Dead?  No.  In pain, yes.  Desann and his thugs must've burned out a half-dozen interrogation Droids trying to get me to crack."
+
+REFERENCE           21KJO009
+LANG_ENGLISH        "They wanted to know about the Valley of the Jedi, right?"
+
+REFERENCE           21JAO005
+LANG_ENGLISH        "For the first few hours.  Then they just dropped the subject, and started asking me about the layout of the Jedi Academy."
+
+REFERENCE           21KJO010
+LANG_ENGLISH        "The Jedi Academy?"
+
+REFERENCE           21JAO006
+LANG_ENGLISH        "Yeah.  Desann seemed obsessed with it."
+
+REFERENCE           21KJO011
+LANG_ENGLISH        "Oh no."
+
+REFERENCE           21JAO007
+LANG_ENGLISH        "What?"
+
+REFERENCE           21IO1001
+LANG_ENGLISH        "All crew members prepare to drop out of hyperspace."
+
+REFERENCE           21KJO012
+LANG_ENGLISH        "Quick, grab something!"
+
+REFERENCE           21KJO013
+LANG_ENGLISH        "I've got a bad feeling about this."
+
+REFERENCE           21KJO014
+LANG_ENGLISH        "I think I know where we're going."
+
+REFERENCE           21WEA006
+LANG_ENGLISH        "Rogue Leader, the Remnant ship has returned to normal space, and is nearing its apparent target...Yavin-4?"
+
+REFERENCE           21JAO008
+LANG_ENGLISH        "Kyle, what's going on?"
+
+REFERENCE           21KJO015
+LANG_ENGLISH        "I think Desann's invading the Jedi Academy!  We've got to destroy the Doomgiver's shields before he can deploy his troops!"
+
+REFERENCE           21JAO009
+LANG_ENGLISH        "I think I know where it is.  Let's go!"
+
+REFERENCE           21JAO010
+LANG_ENGLISH        "I'm pretty sure the shield generators are through there."
+
+REFERENCE           21KJO016
+LANG_ENGLISH        "I know.  You get an escape pod ready and wait for me.  This shouldn't take long."
+
+REFERENCE           21KJO017
+LANG_ENGLISH        "I'm on it."
+
+REFERENCE           21JAO011
+LANG_ENGLISH        "Don't do something stupid like die on me."
+
+REFERENCE           21KJO018
+LANG_ENGLISH        "And put you through the same misery I've been through?  Not on your life."
+
+REFERENCE           22IW2001
+LANG_ENGLISH        "He shut the bay doors!"
+
+REFERENCE           22IW1001
+LANG_ENGLISH        "Get them open, quick!"
+
+REFERENCE           22JAO003
+LANG_ENGLISH        "I'll make sure the way is clear to the escape pods. You take care of those shields!"
+
+REFERENCE           22KJO014
+LANG_ENGLISH        "This shouldn't take too long. I'll see you soon."
+
+REFERENCE           22KJO001
+LANG_ENGLISH        "Someone could do some damage if a gun like this got into the wrong hands. Heh heh."
+
+REFERENCE           22KJO006
+LANG_ENGLISH        "Force wall. Without it, the vaccuum would suck everything out of here. Hmmm."
+
+REFERENCE           22KJO007
+LANG_ENGLISH        "It's locked. There must be another way in."
+
+REFERENCE           22KJO008
+LANG_ENGLISH        "Lets see 'em fly through that!"
+
+REFERENCE           22KJO011
+LANG_ENGLISH        "Another one? What can I shoot with this?"
+
+REFERENCE           22KJO012
+LANG_ENGLISH        "I can't just walk out into the vaccuum of space."
+
+REFERENCE           22KJO013
+LANG_ENGLISH        "I don't suppose he'll open the doors for me if I just ask nicely."
+
+REFERENCE           22JAO001
+LANG_ENGLISH        "Dual switches. We're going to have to work together to get out of here."
+
+REFERENCE           22JAO002
+LANG_ENGLISH        "Hold the switch down, Kyle!"
+
+ENDMARKER

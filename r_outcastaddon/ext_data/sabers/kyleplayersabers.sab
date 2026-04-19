@@ -1,0 +1,53 @@
+kyleplayer
+{
+	name		"Katarn"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber/saber_w.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberLength	40
+	saberColor	blue
+	saberStyleLearned medium
+  saberStyleForbidden fast
+  saberStyleForbidden strong
+  saberStyleForbidden tavion
+  saberStyleForbidden desann
+  saberStyleForbidden staff
+}
+
+kyleplayermf
+{
+	name		"Katarn"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber/saber_w.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberLength	40
+	saberColor	blue
+	saberStyleLearned medium
+  saberStyleLearned fast
+  saberStyleForbidden strong
+  saberStyleForbidden tavion
+  saberStyleForbidden desann
+  saberStyleForbidden staff
+}
+
+kyleplayermfs
+{
+	name		"Katarn"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber/saber_w.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberLength	40
+	saberColor	blue
+	saberStyleLearned medium
+  saberStyleLearned fast
+  saberStyleLearned strong
+  saberStyleForbidden tavion
+  saberStyleForbidden desann
+  saberStyleForbidden staff
+}

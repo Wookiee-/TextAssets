@@ -1,0 +1,106 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           05KJO002
+LANG_ENGLISH        "I'm all done here, Jan.  How about a lift?"
+
+REFERENCE           05JAO001
+LANG_ENGLISH        "Great.  New Republic Troops are on their way to mop up this mess.  I'll meet you on the far side of the courtyard."
+
+REFERENCE           05JAO002
+LANG_ENGLISH        "Kyle, I've got some trouble here...hey!"
+
+REFERENCE           05KJO003
+LANG_ENGLISH        "Jan?
+
+REFERENCE           05JAO003
+LANG_ENGLISH        "Kyle, get over here!"
+
+REFERENCE           05KJO004
+LANG_ENGLISH        "What's wrong?!"
+
+REFERENCE           05KJO005
+LANG_ENGLISH        "Jan!!!"
+
+REFERENCE           05TAA001
+LANG_ENGLISH        "A prisoner for you, Master Desann!"
+
+REFERENCE           05DES001
+LANG_ENGLISH        "Well done, Tavion.  Secure her in the cargo hold, and prepare her for processing."
+
+REFERENCE           05TAA002
+LANG_ENGLISH        "At once, Master."
+
+REFERENCE           05JAO004
+LANG_ENGLISH        "Blast them, Kyle! "
+
+REFERENCE           05DES002
+LANG_ENGLISH        "Kyle?  Kyle Katarn?  You're the legendary hero who destroyed Jerec at the Valley of the Jedi? You look like nothing more than a Bantha herder."
+
+REFERENCE           05KJO006
+LANG_ENGLISH        "Well, you look like an overgrown Kowakian monkey-lizard, so I guess looks don't count for much.  Hand her over."
+
+REFERENCE           05DES003
+LANG_ENGLISH        "You desire this woman?  Come, take her."
+
+REFERENCE           05KJO007
+LANG_ENGLISH        "Aww, sithspit..."
+
+REFERENCE           05DES004
+LANG_ENGLISH        "Enough of this charade."
+
+REFERENCE           05DES005
+LANG_ENGLISH        "You're pathetic, Katarn.  As a Jedi, you might have proven a worthy adversary.  But without the power of the Force, you're not worth the effort it would take to strike you down.  Perhaps your woman will prove to be of heartier stock...she certainly couldn't be any weaker than these colonists..."
+
+REFERENCE           05KJO008
+LANG_ENGLISH        "Don't you touch her..."
+
+REFERENCE           05DES006
+LANG_ENGLISH        "On second thought, kill her."
+
+REFERENCE           05DES007
+LANG_ENGLISH        "On second thought Tavion, kill her."
+
+REFERENCE           05JAO005
+LANG_ENGLISH        "Kyle!"   
+
+REFERENCE           05KJO009
+LANG_ENGLISH        "Jaaaaaaaaan!"
+
+REFERENCE           05KJO012
+LANG_ENGLISH        "You want a worthy adversary? I'll give you a worthy adversary."
+
+REFERENCE           05JAO006
+LANG_ENGLISH        "Kyle, the evac ships are standing by. Just keep those prisoners alive!"
+
+REFERENCE           05JAO007
+LANG_ENGLISH        "Kyle, the perimeter defenses are too strong. You have to do something about those Ion cannons"
+
+REFERENCE           05KJO024
+LANG_ENGLISH        "I'll see what I can do."
+
+REFERENCE           05KJO025
+LANG_ENGLISH        "I'm on it."
+
+REFERENCE           05KJO027
+LANG_ENGLISH        "Ok, it's all clear"
+
+REFERENCE           05RS1002
+LANG_ENGLISH        "Thanks Commander! We're on our way down for the prisoners."
+
+REFERENCE           05KJO026
+LANG_ENGLISH        "My blasters are too weak against an AT-ST. I'll need something stronger."
+
+REFERENCE           05PR1001
+LANG_ENGLISH        "Thanks Commander! We'll wait here for the evac."
+
+REFERENCE           05JAO008
+LANG_ENGLISH        "Kyle, I can't land yet. The Ion cannons are still active. You need to destroy them."
+
+REFERENCE           05JAO009
+LANG_ENGLISH        "Good work, Kyle! I'll set down in that small canyon. See you soon."
+
+REFERENCE           05RS1001
+LANG_ENGLISH        "Evac leader to Commander Katarn. I'm still a little nervous about landing with those AT-STs active. A clean shot from one of those could cause us some real trouble. Any chance you can help us out?"
+
+ENDMARKER

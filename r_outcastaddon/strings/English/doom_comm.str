@@ -1,0 +1,106 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           15LUK014
+LANG_ENGLISH        "Kyle!  Are you there?"
+
+REFERENCE           15KJO015
+LANG_ENGLISH        "Yeah.  I thought you said not to fight Desann alone."
+
+REFERENCE           15LUK015
+LANG_ENGLISH        "I didn't have a choice; I never even felt him coming.  He's escaped onto a ship."
+
+REFERENCE           15KJO016
+LANG_ENGLISH        "I know. I'm on it."
+
+REFERENCE           15LUK016
+LANG_ENGLISH        "We need to destroy the ship before Desann and his army reaches its target...whatever it is.  Try to find the ship's communication center, and use its sensor array to contact Rogue Squadron.  I'll keep trying..."
+
+REFERENCE           15KJO017
+LANG_ENGLISH        "Luke?"
+
+REFERENCE           15LUK017
+LANG_ENGLISH        "...Force...you."
+
+REFERENCE           21KJO001
+LANG_ENGLISH        "Now, where would I put a communications center on a tub like this?"
+
+REFERENCE           21WEA001
+LANG_ENGLISH        "...Leader...Katarn...Rogue Leader to Kyle Katarn..."
+
+REFERENCE           21KJO002
+LANG_ENGLISH        "Rogue Leader, this is Kyle Katarn."
+
+REFERENCE           21WEA002
+LANG_ENGLISH        "Katarn, good to hear your voice.  We've locked onto your signal, and are in pursuit.  That's one whaladon of a ship you've hooked, Kyle."
+
+REFERENCE           21KJO003
+LANG_ENGLISH        "Can you bring her down?"
+
+REFERENCE           21WEA003
+LANG_ENGLISH        "Maybe, but I'd feel a lot better about our chances if somebody on the inside were working to disable the ship's shield array."
+
+REFERENCE           21KJO004
+LANG_ENGLISH        "I'll see what I can about those shields, but I've got some unfinished business here."
+
+REFERENCE           21WEA004
+LANG_ENGLISH        "Understood.  Once you get the shields down, make sure you get out of there in a hurry, because there's not going to be much left of this ship once we're done with her."
+
+REFERENCE           21KJO005
+LANG_ENGLISH        "Don't waste any time on my account."
+
+REFERENCE           21WEA005
+LANG_ENGLISH        "Good luck, Kyle.  Rogue Leader out."
+
+REFERENCE           21KJO006
+LANG_ENGLISH        "Got it!  And on the way to the shields too!"
+
+REFERENCE           21ST1001
+LANG_ENGLISH        "Hey! What's that droid doing?"
+
+REFERENCE           21ST2001
+LANG_ENGLISH        "It must be malfunctioning."
+
+REFERENCE           21ST1002
+LANG_ENGLISH        "Shut it down."
+
+REFERENCE           21ST2002
+LANG_ENGLISH        "How am I supposed to do that?"
+
+REFERENCE           21ST1003
+LANG_ENGLISH        "Just shoot it. We have more."
+
+REFERENCE           21KJO025
+LANG_ENGLISH        "Droid access panels. Where's an R5 when you need it?"
+
+REFERENCE           21KJO026
+LANG_ENGLISH        "These are droid control consoles."
+
+REFERENCE           21KJO027
+LANG_ENGLISH        "Ok, let's see how good I am as an R5."
+
+REFERENCE           21KJO028
+LANG_ENGLISH        "Looks like they use a tram system to get around. This must be one big ship."
+
+REFERENCE           21KJO029
+LANG_ENGLISH        "Communications array control. I'm in the right place. Now I just need to set up a link to reach Rogue Squadron."
+
+REFERENCE           21KJO030
+LANG_ENGLISH        "I may need to get right into the array and set things manually. I wonder if that's safe?"
+
+REFERENCE           21KJO031
+LANG_ENGLISH        "The whole thing's set up like some kind of code."
+
+REFERENCE           21KJO033
+LANG_ENGLISH        "That should do it. C'mon Rogues! I hope you're listnening."
+
+REFERENCE           15KJO012
+LANG_ENGLISH        "Great."
+
+REFERENCE           22PRO001
+LANG_ENGLISH        "R5 unit. Transmit your clearance code."
+
+REFERENCE           22PRO002
+LANG_ENGLISH        "This R5 unit is under unauthorized control."
+
+ENDMARKER

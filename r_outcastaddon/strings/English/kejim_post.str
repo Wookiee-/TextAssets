@@ -1,0 +1,337 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           01JAO001
+LANG_ENGLISH        "Preparing for final approach. Whatever's causing those transmissions, it's not showing up on any of the sensors.  This Imperial outpost looks as abandoned as reported."
+
+REFERENCE           01KJO001
+LANG_ENGLISH        "It's as dead as the rest of Kejim.  Mon Mothma must be getting paranoid.  She never used to send pros like us out on blue milk runs like this."
+
+REFERENCE           01MOM001
+LANG_ENGLISH        "Kyle, Jan.  Greetings."
+
+REFERENCE           01JAO002
+LANG_ENGLISH        "Mon Mothma.  Kyle was just talking about you."
+
+REFERENCE           01MOM002
+LANG_ENGLISH        "No doubt.  I bring troubling information about your mission on Kejim."
+
+REFERENCE           01KJO002
+LANG_ENGLISH        "I hate it when you say "troubling.""
+
+REFERENCE           01MOM003
+LANG_ENGLISH        "We've managed to decode a small fraction of the transmission we intercepted earlier, and, well, listen for yourselves..."
+
+REFERENCE           01IO1001
+LANG_ENGLISH        "Admiral Fyyar: in.............. Shadow ..............................................................................................................................., we may have to .................. Valley of the Jedi ............. Reborn ........."
+
+REFERENCE           01JAO003
+LANG_ENGLISH        "The Valley of the Jedi?"
+
+REFERENCE           01KJO003
+LANG_ENGLISH        "Reborn?"
+
+REFERENCE           01MOM004
+LANG_ENGLISH        "We believe this transmission was intended for Galak Fyyar, the suspected leader of the Remnant forces in that sector.  It's probably nothing more than a couple of soldiers telling tales around the glowlamp, but as you are the only survivors of the Valley of the Jedi incident, I thought it only fair to warn you that this mission may be more dangerous than we originally anticipated.  Your objectives, however, remain the same: Find out what you can, clear out any Remnant forces you encounter, and may the Force be With You."
+
+REFERENCE           01JAO004
+LANG_ENGLISH        "So much for the blue milk run."
+
+REFERENCE           01KJO012
+LANG_ENGLISH        "Did that do it?"
+
+REFERENCE           01JAO023
+LANG_ENGLISH        "No, but you managed to get everyone's attention."
+
+REFERENCE           01KJO018
+LANG_ENGLISH        "Jan, I'm going to need your help. There's an access terminal here but it's encoded."
+
+REFERENCE           01JAO039
+LANG_ENGLISH        "I'm on my way."
+
+REFERENCE           01JAO040
+LANG_ENGLISH        "Kyle! I'm pinned down. Get back here and give me a hand."
+
+REFERENCE           01KJO019
+LANG_ENGLISH        "Hang on, Jan!"
+
+REFERENCE           01IO2001
+LANG_ENGLISH        "Please proceed with your transmission, Admiral Fyyar."
+
+REFERENCE           01GAF001
+LANG_ENGLISH        "Convey my dissatisfaction with Commander Stavan on his performance. Inform him that he has been removed from command and will be reassigned. That is all."
+
+REFERENCE           01IO2002
+LANG_ENGLISH        "We'll send the message immediately."
+
+REFERENCE           01JAO066
+LANG_ENGLISH        "Let's go, Kyle!"
+
+REFERENCE           01KJO027
+LANG_ENGLISH        "Not yet!"
+
+REFERENCE           01KJO029
+LANG_ENGLISH        "Jan, prep the ship for takeoff. I just want to check out one last area."
+
+REFERENCE           01JAO067
+LANG_ENGLISH        "Great!"
+
+REFERENCE           01JAO068
+LANG_ENGLISH        "Nice work!"
+
+REFERENCE           01JAO069
+LANG_ENGLISH        "Meet you at the ship."
+
+REFERENCE           01JAO005
+LANG_ENGLISH        "Blasters aren't going to do much good against that."
+
+REFERENCE           01JAO006
+LANG_ENGLISH        "The door is locked."
+
+REFERENCE           01JAO007
+LANG_ENGLISH        "Shhh"
+
+REFERENCE           01JAO008
+LANG_ENGLISH        "I think I saw someone."
+
+REFERENCE           01JAO009
+LANG_ENGLISH        "What's that?"
+
+REFERENCE           01JAO010
+LANG_ENGLISH        "Better keep it down."
+
+REFERENCE           01JAO011
+LANG_ENGLISH        "Maybe we can get in without being noticed."
+
+REFERENCE           01JAO012
+LANG_ENGLISH        "Kyle!"
+
+REFERENCE           01JAO013
+LANG_ENGLISH        "Help me!"
+
+REFERENCE           01JAO014
+LANG_ENGLISH        "I could use some help!"
+
+REFERENCE           01JAO015
+LANG_ENGLISH        "What are you waiting for?"
+
+REFERENCE           01JAO016
+LANG_ENGLISH        "I hate to rush you Kyle, but we do have a mission to perform here."
+
+REFERENCE           01JAO017
+LANG_ENGLISH        "What are you doing?"
+
+REFERENCE           01JAO018
+LANG_ENGLISH        "Whose side are you on?"
+
+REFERENCE           01JAO019
+LANG_ENGLISH        "You traitor!"
+
+REFERENCE           01JAO020
+LANG_ENGLISH        "Troopers!"
+
+REFERENCE           01JAO021
+LANG_ENGLISH        "We've got company."
+
+REFERENCE           01JAO022
+LANG_ENGLISH        "Look out!"
+
+REFERENCE           01KJO005
+LANG_ENGLISH        "The blasters are offline. I need to get them powered up."
+
+REFERENCE           01KJO006
+LANG_ENGLISH        "Jan!"
+
+REFERENCE           01KJO007
+LANG_ENGLISH        "Look out!"
+
+REFERENCE           01KJO008
+LANG_ENGLISH        "Over there!"
+
+REFERENCE           01KJO009
+LANG_ENGLISH        "Behind you!"
+
+REFERENCE           01KJO010
+LANG_ENGLISH        "Stay here, Jan."
+
+REFERENCE           01KJO011
+LANG_ENGLISH        "I'll see if I can find a way to get the door open."
+
+REFERENCE           01PRO001
+LANG_ENGLISH        "Perimeter defenses online."
+
+REFERENCE           01JAO024
+LANG_ENGLISH        "Very subtle, Kyle."
+
+REFERENCE           01JAO025
+LANG_ENGLISH        "Well, that's one way to do it."
+
+REFERENCE           01JAO026
+LANG_ENGLISH        "You did it!"
+
+REFERENCE           01IO1002
+LANG_ENGLISH        "Keep an eye out for those Rebels."
+
+REFERENCE           01JAO027
+LANG_ENGLISH        "Ok, I'll wait here. Don't take all day."
+
+REFERENCE           01KJO013
+LANG_ENGLISH        "Wait here, Jan."
+
+REFERENCE           01KJO014
+LANG_ENGLISH        "Cover our back."
+
+REFERENCE           01JAO028
+LANG_ENGLISH        "Now this looks interesting."
+
+REFERENCE           01JAO029
+LANG_ENGLISH        "I think this is a primary control console."
+
+REFERENCE           01JAO030
+LANG_ENGLISH        "I think I'll hang out here a while and see what kind of trouble I can cause."
+
+REFERENCE           01JAO031
+LANG_ENGLISH        "I need some time here to see what I can dig up."
+
+REFERENCE           01JAO032
+LANG_ENGLISH        "How's it going?"
+
+REFERENCE           01JAO033
+LANG_ENGLISH        "Are you ok?"
+
+REFERENCE           01KJO015
+LANG_ENGLISH        "Great"
+
+REFERENCE           01KJO016
+LANG_ENGLISH        "Fine."
+
+REFERENCE           01KJO017
+LANG_ENGLISH        "I'm ok."
+
+REFERENCE           01JAO034
+LANG_ENGLISH        "Kyle. The schematics show that the base is divided into 3 sections."
+
+REFERENCE           01SO2001A
+LANG_ENGLISH        "Open the door!"
+
+REFERENCE           01SO1001
+LANG_ENGLISH        "Get reinforcements!"
+
+REFERENCE           01JAO035
+LANG_ENGLISH        "I'm getting some good stuff, Kyle."
+
+REFERENCE           01JAO036
+LANG_ENGLISH        "I'm busy, Kyle."
+
+REFERENCE           01JAO037
+LANG_ENGLISH        "I'm going to keep at this and see what I can find out."
+
+REFERENCE           01JAO038
+LANG_ENGLISH        "I'll join you later, Kyle."
+
+REFERENCE           01JAO041
+LANG_ENGLISH        "Kyle! Where are you? I can't hold out much longer."
+
+REFERENCE           01JAO042
+LANG_ENGLISH        "Hurry up, Kyle!"
+
+REFERENCE           01JAO043
+LANG_ENGLISH        "Took you long enough!"
+
+REFERENCE           01JAO044
+LANG_ENGLISH        "Thanks, Kyle!"
+
+REFERENCE           01JAO045
+LANG_ENGLISH        "Now, to break that code. Lead the way."
+
+REFERENCE           01JAO046
+LANG_ENGLISH        "Got it!"
+
+REFERENCE           01JAO047
+LANG_ENGLISH        "Piece of cake."
+
+REFERENCE           01JAO048
+LANG_ENGLISH        "That should get you where you need to go."
+
+REFERENCE           01JAO049
+LANG_ENGLISH        "What would you do without me?"
+
+REFERENCE           01JAO050
+LANG_ENGLISH        "Nice shooting, Kyle."
+
+REFERENCE           01JAO051
+LANG_ENGLISH        "Are we good, or what?"
+
+REFERENCE           01JAO052
+LANG_ENGLISH        "That was close!"
+
+REFERENCE           01JAO053
+LANG_ENGLISH        "Hey! Where are you going?"
+
+REFERENCE           01JAO054
+LANG_ENGLISH        "This way Kyle."
+
+REFERENCE           01JAO055
+LANG_ENGLISH        "Aren't you going with me?"
+
+REFERENCE           01JAO056
+LANG_ENGLISH        "What? Am I supposed to do this alone?"
+
+REFERENCE           01JAO057
+LANG_ENGLISH        "That's the wrong way!"
+
+REFERENCE           01JAO058
+LANG_ENGLISH        "Kyle, are you ok?"
+
+REFERENCE           01JAO059A
+LANG_ENGLISH        "What was that?"
+
+REFERENCE           01JAO059B
+LANG_ENGLISH        "What would you do without me?"
+
+REFERENCE           01JAO059C
+LANG_ENGLISH        "Nice shooting, Kyle."
+
+REFERENCE           01KJO020
+LANG_ENGLISH        "Just taking care of business."
+
+REFERENCE           01KJO021
+LANG_ENGLISH        "Just another day at work, Jan."
+
+REFERENCE           01KJO022
+LANG_ENGLISH        "No problem."
+
+REFERENCE           01ST1001
+LANG_ENGLISH        "Wait, don't shoot!"
+
+REFERENCE           01ST2001
+LANG_ENGLISH        "Watch your fire! Those are fuel valves."
+
+REFERENCE           01KJO023
+LANG_ENGLISH        "Each of these terminals are securely locked."
+
+REFERENCE           01KJO024
+LANG_ENGLISH        "Looks like an Imperial code."
+
+REFERENCE           01KJO025
+LANG_ENGLISH        "I found another code."
+
+REFERENCE           01KJO026
+LANG_ENGLISH        "I found the last code!"
+
+REFERENCE           01JAO063
+LANG_ENGLISH        "Hurry up, Kyle!"
+
+REFERENCE           01JAO064
+LANG_ENGLISH        "What's taking so long?"
+
+REFERENCE           01JAO065
+LANG_ENGLISH        "We're going to have company!"
+
+REFERENCE           01KJO028
+LANG_ENGLISH        "I'm working on it."
+
+REFERENCE           01KJO030
+LANG_ENGLISH        "All right! Now let's see what's so important."
+
+ENDMARKER

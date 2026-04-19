@@ -1,0 +1,73 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           06LUK018
+LANG_ENGLISH        "You've retrieved your lightsaber.  Very good"
+
+REFERENCE           06KJO014
+LANG_ENGLISH        "I'm ready. What did you find out about Desann?"
+
+REFERENCE           06LUK020
+LANG_ENGLISH        "Not much.  With the help of your ship's logs and the Republic's databases, we've tracked the registry of Desann's ship to a Rodian named Reelo Baruk."
+
+REFERENCE           06KJO015
+LANG_ENGLISH        "Reelo Baruk?"
+
+REFERENCE           06LUK021
+LANG_ENGLISH        "You know him?"
+
+REFERENCE           06KJO016
+LANG_ENGLISH        "Not personally.  He claims to be an honest garbage hauler, but he's really one of the most powerful criminal kingpins in all of Nar Shaddaa.  Even the Hutts won't touch him."
+
+REFERENCE           06LUK022
+LANG_ENGLISH        "Sounds like a solid lead."
+
+REFERENCE           06KJO017
+LANG_ENGLISH        "It'll do."
+
+REFERENCE           06LUK023
+LANG_ENGLISH        "Kyle?"
+
+REFERENCE           06KJO018
+LANG_ENGLISH        "Yeah?"
+
+REFERENCE           06LUK024
+LANG_ENGLISH        "I just wanted to say how impressed I was with your performance in the trial.  Considering how long it's been since you used the Force, I almost expected you to fail outright..."
+
+REFERENCE           06KJO019
+LANG_ENGLISH        "Well...um..."
+
+REFERENCE           06LUK025
+LANG_ENGLISH        "You've been to the Valley of the Jedi."
+
+REFERENCE           06KJO020
+LANG_ENGLISH        "Yes."
+
+REFERENCE           06LUK026
+LANG_ENGLISH        "Kyle..."
+
+REFERENCE           06KJO021
+LANG_ENGLISH        "I know what I'm doing, Skywalker.  If I'm going to defeat Desann, I'll need the full power of the Force, and I can't afford to spend years of my life re-training myself here!"
+
+REFERENCE           06LUK027
+LANG_ENGLISH        "Kyle, I realize you're in pain, but you must learn to anticipate the consequences of your actions.  You and Jan swore an oath to protect the Valley of the Jedi, and now that Jan's dead, you're the only person who knows where it is.  If you should fall to the Dark Side, you could use the Valley's power for unspeakably evil purposes."
+
+REFERENCE           06KJO022
+LANG_ENGLISH        "Are you saying I can't be trusted?"
+
+REFERENCE           06LUK028
+LANG_ENGLISH        "I'm saying that I want you to let go of your anger before it destroys you."
+
+REFERENCE           06KJO023
+LANG_ENGLISH        "I don't know if I can do that...but I will give you the coordinates to the Valley of the Jedi...just to be safe."
+
+REFERENCE           06LUK029
+LANG_ENGLISH        "Well, that's a start, I suppose.  Take one of the Academy's vessels to Nar Shaddaa, it'll be less conspicuous.  Don't worry; I'll take care of the Raven's Claw until you return."
+
+REFERENCE           06KJO024
+LANG_ENGLISH        "You're not coming along?"
+
+REFERENCE           06LUK030
+LANG_ENGLISH        "I'm afraid not.  I have pressing business of my own to attend to.  Good luck, Kyle.  I hope you find what you're looking for.  May the Force be With You."
+
+ENDMARKER

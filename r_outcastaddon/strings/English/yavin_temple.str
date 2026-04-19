@@ -1,0 +1,84 @@
+VERSION             "1"
+CONFIG              "W:\bin\striped.cfg"
+
+REFERENCE           06PRO002
+LANG_ENGLISH        "Welcome to the Jedi Academy, sir.  Master Skywalker is waiting upstairs for you."
+
+REFERENCE           06KJO001
+LANG_ENGLISH        "Uh...thanks. I think I can find the way."
+
+REFERENCE           06PRO003
+LANG_ENGLISH        "Welcome to the Jedi Academy, sir. Master Skywalker is upstairs."
+
+REFERENCE           06KJO026
+LANG_ENGLISH        "Uh...thanks. I think I can find the way."
+
+REFERENCE           06LUK035
+LANG_ENGLISH        "Kyle.  I've been expecting you."
+
+REFERENCE           06KJO002
+LANG_ENGLISH        "Skywalker."
+
+REFERENCE           06LUK002
+LANG_ENGLISH        "You've come for your lightsaber?"
+
+REFERENCE           06KJO003
+LANG_ENGLISH        "Yeah."
+
+REFERENCE           06LUK003
+LANG_ENGLISH        "After all these years?"
+
+REFERENCE           06KJO004
+LANG_ENGLISH        "My...Jan's been killed...by a Jedi.  Goes by the name of --"
+
+REFERENCE           06LUK004
+LANG_ENGLISH        "Desann."
+
+REFERENCE           06KJO005
+LANG_ENGLISH        "You know?"
+
+REFERENCE           06LUK007
+LANG_ENGLISH        "I sensed a disturbance in the Force. I'll tell you about Desann while your trial is being prepared..."
+
+REFERENCE           06KJO006
+LANG_ENGLISH        "Trial?"
+
+REFERENCE           06LUK008
+LANG_ENGLISH        "A minor test to determine your fitness to wield a lightsaber again.  Even in your relatively unpracticed state, you shouldn't find it too difficult."
+
+REFERENCE           06KJO007
+LANG_ENGLISH        "Why can't you Jedi ever do things the simple way?"
+
+REFERENCE           06LUK009
+LANG_ENGLISH        "If the ways of the Jedi were easy, there'd be millions of us, instead of dozens.  Take Desann, for example.  He was born on a planet unused to the wonders of the Force, where his seemingly magical abilities caused him to be feared and shunned by those around him.  His childhood was one of loneliness and despair until a visiting trader discovered him, recognized the Force within him, and brought him to the Jedi Academy."
+
+REFERENCE           06KJO008
+LANG_ENGLISH        "So he was a student?"
+
+REFERENCE           06LUK010
+LANG_ENGLISH        "Yes.  For the first time in his life, Desann was at peace.  He'd found beings who liked him for who he was; beings who encouraged him to develop his talents.  Over time, however, things changed."
+
+REFERENCE           06KJO009
+LANG_ENGLISH        "How?"
+
+REFERENCE           06LUK011
+LANG_ENGLISH        "He became cold.  Severe.   He belittled his fellow students for what he perceived to be their weaknesses, and argued, sometimes violently, with his teachers.  During a training session, he struck down and killed a fellow student in cold blood. Desann said he was too "weak" to be a Jedi.  He fled before we could...counsel him - and he has not been heard from since."
+
+REFERENCE           06KJO010
+LANG_ENGLISH        "Until now."
+
+REFERENCE           06LUK012
+LANG_ENGLISH        "Yes..."
+
+REFERENCE           06LUK013
+LANG_ENGLISH        "Kyle, I'm sorry about Jan."
+
+REFERENCE           06KJO011
+LANG_ENGLISH        "Yeah...well... just give me my lightsaber, and I'll be out of your way."
+
+REFERENCE           06LUK016
+LANG_ENGLISH        "As you wish, your lightsaber is somewhere in the ruined temple to the South. To find it, you'll need to utilize your primary Force skills.  During your test, I'll see if I can find some information on Desann's whereabouts.  Good luck."
+
+
+
+ENDMARKER
