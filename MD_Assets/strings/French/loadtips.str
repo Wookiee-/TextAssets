@@ -1,0 +1,80 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           ""
+
+REFERENCE           TIP1
+LANG_ENGLISH        "You can change the visual style of the lightsaber blade across all movies in the commands menu."
+
+REFERENCE           TIP2
+LANG_ENGLISH        "When playing as Starkiller or Anakin, jump and use force push to unleash a force repulse around you."
+
+REFERENCE           TIP3
+LANG_ENGLISH        "You can customize the MD combat system in the settings menu, such as swing speeds and slow-motion."
+
+REFERENCE           TIP4
+LANG_ENGLISH        "In MD/MDA mode, drain your opponent’s force/block points by perfect blocking to make them vulnerable."
+
+REFERENCE           TIP5
+LANG_ENGLISH        "Holding the USE key in MD/MDA mode can be used to perform a dash and force opponents into saber locks."
+
+REFERENCE           TIP6
+LANG_ENGLISH        "Found a bug or have any suggestions? Join our Discord server to share them and get news about the mod."
+
+REFERENCE           TIP7
+LANG_ENGLISH        "In MD/MDA mode, crouching or meditating will multiply the force/block points regeneration rate by 2."
+
+REFERENCE           TIP8
+LANG_ENGLISH        "Explore the controls menu to bind keys to perform actions such as surrender and manual blocking."
+
+REFERENCE           TIP9
+LANG_ENGLISH        "There are 3 combat systems, JKA mode, MD mode and MDA mode. These can be enabled in the settings menu."
+
+REFERENCE           TIP10
+LANG_ENGLISH        "In MDA mode, spamming attacks and blocks will reduce stamina and block points, making you vulnerable."
+
+REFERENCE           TIP11
+LANG_ENGLISH        "In MDA mode, low stamina will make attacks weaker, blocking less effective and shooting less accurate."
+
+REFERENCE           TIP12
+LANG_ENGLISH        "You can customize the camera settings in the camera menu, including first-person and disable hud."
+
+REFERENCE           TIP13
+LANG_ENGLISH        "You can view previews, gameplay and tutorials on the mod from our Movie Duels YouTube channel."
+
+REFERENCE           TIP14
+LANG_ENGLISH        "In MD/MDA mode, you can block lightning attacks with melee equipped by holding the manual block key."
+
+REFERENCE           TIP15
+LANG_ENGLISH        "Unsure on how to perform a specific attack/animation? Press TAB and explore the MOVES section."
+
+REFERENCE           TIP16
+LANG_ENGLISH        "Command friendly NPCs to attack (if it is safe) by looking at an enemy NPC and pressing the USE key."
+
+REFERENCE           TIP17
+LANG_ENGLISH        "Holding the manual block key when running will make your character sprint for a short while."
+
+REFERENCE           TIP18
+LANG_ENGLISH        "You can activate ledge grab in the settings menu to allow your character to grab onto nearby ledges."
+
+REFERENCE           TIP19
+LANG_ENGLISH        "Activating force sense when using a blaster will give 100% accuracy and no weapon overheating."
+
+REFERENCE           TIP20
+LANG_ENGLISH        "Setup quick keys in the controls menu to quickly access menus and execute various actions."
+
+ENDMARKER
+
+
+
+

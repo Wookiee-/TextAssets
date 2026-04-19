@@ -1,0 +1,143 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "W:\bin\stringed.cfg"
+FILENOTES           ""
+
+REFERENCE           T1_SOUR
+LANG_ENGLISH        "We've been receiving a number of reports that the Disciples of Ragnos have been trying to hire mercenaries and smugglers to haul some cargo.  If we can contact one of these mercenary groups, maybe we can find out the cult's base of operations.  One of the smuggling rings that we know about is based at Mos Eisley.  Go there and see what you can find out."
+LANG_FRENCH         "Nous avons reçu un certain nombre de rapports affirmant que les Disciples de Ragnos essayaient d’embaucher des mercenaires et des contrebandiers pour transporter une cargaison. Si nous parvenons à contacter l’un de ces groupes de mercenaires, nous pourrons peut-être trouver la base du culte. On sait que l'un d'entre eux se trouve à Mos Eisley. Allez-y et menez votre enquête."
+
+REFERENCE           T1_SURPRISE
+LANG_ENGLISH        "A moisture farmer on Tatooine recently overheard a group of smugglers talking about a Sith cult in a local bar and had his R5 droid record the conversation.  Unfortunately, he became afraid and sold the droid to some Jawas before leaving Tatooine.  We need to get a hold of that droid before the Jawas wipe its memory.  You are to locate the Jawas, purchase the droid, and return to the Academy."
+LANG_FRENCH         "Un fermier de Tatooine a récemment entendu un groupe de contrebandiers parler d’un culte sith dans un bar local. Il a fait enregistrer la conversation par son droïde R5. Malheureusement, il a pris peur et a vendu le droïde à des Jawas avant de quitter Tatooine. Il faut que nous mettions la main sur ce droïde avant que les Jawas n'effacent sa mémoire. Vous devez localiser ces Jawas, racheter le droïde et revenir à l'Académie."
+
+REFERENCE           T1_FATAL
+LANG_ENGLISH        "Officials from the planet Bakura have requested our assistance.  An unknown party has taken control of a power station up in the mountains.  They sent a team to investigate, but they haven't reported in.  Their concerns are two-fold:  they want to stop whoever has taken over the station, and more importantly ensure that the station itself remains undamaged.  The station is built over a dormant volcano, and if the facility is destroyed, the volcano could destroy a heavily populated city.  The Bakurans' need someone to infiltrate the facility and thwart the group's plan."
+LANG_FRENCH         "Les autorités de la planète Bakura nous ont demandé de l’aide. Un groupe inconnu a pris le contrôle d’une centrale électrique dans les montagnes. Ils ont envoyé une équipe pour mener l’enquête mais ils ne sont toujours pas revenus. Ils ont deux objectifs en tête : arrêter ceux qui ont pris la centrale et, le plus important, s'assurer que la station reste bien intacte. La centrale est bâtie sur un volcan éteint et si le bâtiment est détruit, le volcan pourrait dévaster une ville très peuplée. Les Bakurans ont besoin de quelqu'un pour infiltrer la station et déjouer les plans du groupe."
+
+REFERENCE           T1_DANGER
+LANG_ENGLISH        "The Academy has received a distress call from a merchant ship that crashed on the planet Blenjeel.  They were pulled out of hyperspace when they crossed paths with an Interdictor cruiser.  The Imperials, apparently not wanting their presence known, fired on the merchant ship.  The merchants managed to make it to the planet surface and call for help.  As far as we know, the planet is uninhabited."
+LANG_FRENCH         "L’Académie a reçu un appel de détresse provenant d’un vaisseau marchand qui s’est écrasé sur Blenjeel. Ils ont été tractés hors de l’hyperespace et ont rencontré un croiseur Interdictor. Les Impériaux, qui apparemment ne veulent pas que l’on découvre leur présence, ont tiré sur le vaisseau marchand. Les marchands ont pu atteindre la surface de la planète pour appeler à l’aide. Tout ce qu’on sait, c’est que la planète n’est pas habitée."
+
+REFERENCE           T1_RAIL
+LANG_ENGLISH        "The city of Coronet on Corellia has had numerous reports of activity by the Disciples of Ragnos.  However, it's not clear if it's really the Sith cult or if the locals are just being paranoid after hearing about it on the Holonet.  Go to Coronet and determine the truth."
+LANG_FRENCH         "La ville de Coronet, sur Corellia, a reçu de nombreux rapports sur les activités des Disciples de Ragnos. Cependant, on ne sait toujours pas s'il s'agit vraiment du culte sith ou si ce sont les habitants qui écoutent trop l'Holonet. Allez à Coronet et menez l'enquête."
+
+REFERENCE           T2_TRIP
+LANG_ENGLISH        "A spaceport worker on the planet Zonju V may have information pertaining to the Cult's connection with the Imperial Remnant.  The worker is hiding at an abandoned outpost three kilometers outside of Zoronhed.  Meet up with the worker and find out what he knows."
+LANG_FRENCH         "Un ouvrier du spatioport de la planète Zonju V pourrait avoir des informations concernant le lien entre le culte et les Impériaux. L’ouvrier se cache dans un avant-poste abandonné trois kilomètres à l’extérieur de Zoronhed. Retrouvez-le et tirez-lui les vers du nez."
+
+REFERENCE           T2_DPRED
+LANG_ENGLISH        "New Republic Intelligence has intercepted transmissions coming from the planet Dosuun.  They believe that suspected cult members sent the transmissions from a base on the planet.  Since there are no Republic fleets in this area of the Outer Rim, they have asked us to investigate."
+LANG_FRENCH         "Les services de renseignements de la Nouvelle République ont intercepté des transmissions provenant de la planète Dosuun. Ils pensent que des membres présumés du Culte les ont envoyées depuis une base sur cette planète. Etant donné qu’il n’y a plus de flotte républicaine dans cette zone de la Bordure extérieure, ils nous demandent de mener l’enquête."
+
+REFERENCE           T2_RANCOR
+LANG_ENGLISH        "We have received word from a mining guild on Nar Kreeta that a number of elders are held captive by the local Hutt crimelord.  These elders went to negotiate a treaty with the Hutt, but never returned.  The crimelord claims no one ever came to see him."
+LANG_FRENCH         "Une guilde minière sur Nar Kreeta nous a annoncé qu’un certain nombre de personnes âgées sont prisonnières du criminel hutt local. Ces personnes étaient venues négocier un traité avec le Hutt et ne sont jamais rentrées. Le criminel, lui, affirme que personne n’est jamais venu le voir."
+
+REFERENCE           T2_ROGUE
+LANG_ENGLISH        "We have received anonymous information that a large number of assassin droids have flooded the black market recently.  These droids have been banned for a number of years and no public companies produce them.  Lannik Racto, a small-time crimelord on Coruscant, is suspected to be manufacturing these new droids.  Capture Racto so that we may determine where his factory is."
+LANG_FRENCH         "Nous savons de source anonyme qu'un grand nombre de droïdes assassins sont apparus sur le marché noir ces derniers temps. Ces droïdes sont interdits depuis plusieurs années et aucune entreprise publique n'en construit à présent. Lannik Racto, un petit criminel de Coruscant est soupçonné d’être responsable de l'apparition de ces nouveaux droïdes. Capturez Racto pour que l'on trouve où il les fabrique."
+
+REFERENCE           T2_WEDGE
+LANG_ENGLISH        "New Republic Intelligence has recently discovered the existence of an Imperial tibanna gas platform on the planet Kril'dor.  If the Republic can take control of the platform, it would deal a severe blow to the Imperial Remnant.  General Wedge Antilles of Rogue Squadron has come up with a bold plan in which he and a single ground troop could capture the entire facility.  General Antilles believes that only a Jedi could accomplish the ground portion of the mission."
+LANG_FRENCH         "Les services de renseignements de la Nouvelle République ont récemment découvert l’existence d’une plateforme impériale de gaz Tibanna sur la planète Kril’dor. Si la République peut prendre le contrôle de la plateforme, cela déstabilisera la puissance impériale. Le général Antilles de l’escadron Rogue propose un plan qui ne manque pas d’audace : envahir toute la plateforme, à l'aide d'une seule troupe terrestre. Le général Antilles pense que seul un Jedi pourrait diriger les opérations terrestres."
+
+REFERENCE           T3_BYSS
+LANG_ENGLISH        "Since Rosh never completed his mission at Byss, we still need to determine if Tavion managed to siphon Force energy from the remains of the planet.  The Emperor spent a lot of time there, so it would be a huge source of power.  If it has been taken, we'll have an idea of just how powerful Tavion is."
+LANG_FRENCH         "Comme Rosh n’a jamais terminé sa mission sur Byss, nous ne savons toujours pas si Tavion a réussi à puiser l’énergie de la Force des restes de la planète. L’Empereur y a passé beaucoup de temps et ce serait donc une grande source de pouvoir. S'il s'avère que Tavion a réussi, nous aurons alors une idée de sa puissance actuelle."
+
+REFERENCE           T3_RIFT
+LANG_ENGLISH        "We've received word from the Chandrilans that some cultists have broken into an ancient tomb that is supposedly the burial site of a Jedi Knight.  Hurry there and stop them from siphoning that Force power."
+LANG_FRENCH         "Des Chandrilans nous ont informés que des membres du culte avaient profané la tombe supposée d'un Chevalier Jedi. Dépêchez-vous de vous y rendre et empêchez-les de récupérer le pouvoir de cette Force."
+
+REFERENCE           T3_STAMP
+LANG_ENGLISH        "We got word from a freighter captain that there are members of the cult at the spaceport on Taanab.  Head over there and find out what they are doing there."
+LANG_FRENCH         "Un capitaine de cargo nous a dit que des membres du culte se trouvaient dans le spatioport de Taanab. Allez-y et trouvez ce qu’ils y font."
+
+REFERENCE           T3_HEVIL
+LANG_ENGLISH        "Our resident Jedi scholar Tionne recently learned of the planet Yalara from our Jedi Holocron.  The planet was once home to a peaceful, yet primitive species that was not ready to be integrated into galactic society.  For this reason, the Jedi Master Broden Kel Verdox harnessed the power of the planet to create a cloaking device, hiding the entire planet from discovery.  But now, someone else has discovered Yalara.  Go to Yalara and find out if anyone has been there.  If the cloaking device is in danger of being stolen, it would be better to destroy it rather than have it fall into the wrong hands."
+LANG_FRENCH         "Notre maître de conférence Tionne a récemment obtenu des renseignements sur la planète Yalara grâce à notre holocron Jedi. La planète abritait autrefois des formes de vie paisibles mais primitives, incapables de s’intégrer à la société galactique. C’est pourquoi le Maître Jedi Broden Kel Verdox s’est servi du pouvoir de cette planète pour créer un dispositif de camouflage la cachant aux yeux de tous. Mais l’existence de cette planète a malgré tout été découverte. Allez à Yalara et cherchez à savoir si d'autres y sont déjà venus. Si le système de camouflage menace d’être volé, détruisez-le plutôt que de le laisser tomber entre de mauvaises mains. "
+
+REFERENCE           T3_BOUNTY
+LANG_ENGLISH        "Information has surfaced about a large stockpile of old weapons hidden in the wastes of Ord Mantell.  Destroy the stockpiles so they don't fall into the wrong hands.  Records from the time of the Rebellion indicate there should be seven caches hidden in the ruined city."
+LANG_FRENCH         "Nous avons appris que des réserves importantes de vieilles armes étaient cachées dans les ruines d'Ord Mantell. Détruisez ces réserves afin qu’elles ne tombent pas entre de mauvaises mains. Selon les archives de la Rébellion, il devrait y avoir sept caches dans les ruines de la ville."
+
+REFERENCE           NONE
+LANG_ENGLISH        " "
+LANG_FRENCH         " "
+
+REFERENCE           YAVIN2
+LANG_ENGLISH        "Report to the training grounds with Rosh to begin Force power training with Kyle Katarn."
+LANG_FRENCH         "Rendez-vous sur le terrain d'entraînement avec Rosh pour démarrer l'entraînement aux pouvoirs de la Force avec Kyle Katarn."
+
+REFERENCE           ACADEMY2
+LANG_ENGLISH        "Master Skywalker has summoned all available Jedi back to the Academy."
+LANG_FRENCH         "Maître Skywalker a demandé à tous les Jedi disponibles de rentrer à l'Académie."
+
+REFERENCE           HOTH2
+LANG_ENGLISH        "Investigate the site of Luke's vision of Obi-Wan in the wastelands of Hoth to determine if the cult of Ragnos has been there."
+LANG_FRENCH         "Examinez le site où Luke a vu Obi-Wan, sur les terres désolées de Hoth, afin de déterminer si le culte de Ragnos est passé par là."
+
+REFERENCE           HOTH3
+LANG_ENGLISH        "Discover what the Imperial Remnant troops are doing in Echo Base."
+LANG_FRENCH         "Découvrez ce que les troupes impériales font sur la base Echo."
+
+REFERENCE           ACADEMY3
+LANG_ENGLISH        "Return to the Academy and report to Luke what you have found on Hoth."
+LANG_FRENCH         "Retournez à l'Académie et rapportez à Luke ce que vous avez découvert sur Hoth."
+
+REFERENCE           ACADEMY4
+LANG_ENGLISH        "Master Skywalker has summoned all available Jedi to the Academy to relay some important information about the Disciples of Ragnos."
+LANG_FRENCH         "Maître Skywalker a demandé à tous les Jedi disponibles de rentrer à l'Académie afin de leur communiquer d'importantes informations concernant les Disciples de Ragnos."
+
+REFERENCE           VJUN1
+LANG_ENGLISH        "Master Skywalker has dispatched the Jedi to locations of heavy Force activity in the hopes of catching up with the Disciples of Ragnos.  Travel with Master Kyle Katarn to Darth Vader's castle on Vjun to stop the cult from draining its Force energy."
+LANG_FRENCH         "Maître Skywalker a envoyé les Jedi sur les lieux où la Force est puissante dans l'espoir de rattraper les Disciples de Ragnos. Avec Maître Kyle Katarn, rendez-vous au château de Vador sur Vjun pour empêcher le culte de drainer l'énergie de la Force de ce site."
+
+REFERENCE           VJUN2
+LANG_ENGLISH        "Make your way through the underworks of Bast Castle and find an entry into the castle itself."
+LANG_FRENCH         "Trouvez le chemin menant aux soubassements du château de Bast, puis trouvez une entrée."
+
+REFERENCE           VJUN3
+LANG_ENGLISH        "Enter Vader's castle and stop the cult from draining its Force energy.  Try to meet back up with Kyle."
+LANG_FRENCH         "Entrez dans le château de Vador et empêchez le culte de drainer son énergie de la Force. Puis tentez de retrouver Kyle."
+
+REFERENCE           ACADEMY5
+LANG_ENGLISH        "Return to the Academy and report to Luke what you have found on Vjun."
+LANG_FRENCH         "Retournez à l'Académie et rapportez à Luke ce que vous avez découvert sur Vjun."
+
+REFERENCE           ACADEMY6
+LANG_ENGLISH        "Master Skywalker has summoned all Jedi back to the Academy.  He has formulated a plan to stop the Disciples of Ragnos."
+LANG_FRENCH         "Maître Skywalker a demandé à tous les Jedi disponibles de rentrer à l'Académie. Il a un plan pour arrêter les Disciples de Ragnos."
+
+REFERENCE           TASPIR1
+LANG_ENGLISH        "Gain entrance into the cult facility on Taspir III to search for Rosh Penin."
+LANG_FRENCH         "Trouvez l'entrée du bâtiment du culte sur Taspir III afin de retrouver Rosh Penin."
+
+REFERENCE           TASPIR2
+LANG_ENGLISH        "Look for Kyle and Rosh in the cult facility."
+LANG_FRENCH         "Recherchez Kyle et Rosh dans le bâtiment du culte."
+
+REFERENCE           KOR1
+LANG_ENGLISH        "Travel to Korriban, burial place of Marka Ragnos to confront Tavion."
+LANG_FRENCH         "Rendez-vous sur Korriban, où repose Marka Ragnos, afin de combattre Tavion."
+
+REFERENCE           KOR2
+LANG_ENGLISH        "Enter  the Tomb of Ragnos to confront Tavion.\n\n"
+LANG_FRENCH         "Entrez dans la tombe de Ragnos pour combattre Tavion.\n\n"
+
+
+ENDMARKER
+
+
