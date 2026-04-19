@@ -1,0 +1,99 @@
+repeatDelay				300
+
+Particle
+{
+	spawnFlags			cheapOrgCalc absoluteAccel rgbComponentInterpolation
+
+	count				3 4
+
+	life				400 700
+
+	delay				5 10
+
+	wind				1 100
+
+	rotation			1
+
+	rotationDelta		20
+
+	velocity			0 0 70 0 0 50
+
+	acceleration		0 0 -6
+
+	rgb
+	{
+		start			1 1 0 0.9961 0.7098 0.1137
+		end				1 1 1 1 0 0
+		parm			50 60
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			80 90
+		flags			linear
+	}
+
+	size
+	{
+		start			14
+		end				4
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire2
+		gfx/effects/fire3
+		gfx/effects/fire4
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				2 4
+
+	life				500 1200
+
+	delay				20 0
+
+	origin				0 0 20
+
+	wind				1 100
+
+	rotation			180 -180
+
+	velocity			0 0 25 0 0 30
+
+	acceleration		0 0 27 0 0 30
+
+	rgb
+	{
+		start			0 0 0
+		end				0 0 0 0.502 0.502 0.502
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.6
+		end				0.1
+		flags			linear
+	}
+
+	size
+	{
+		start			11
+		end				20
+		flags			random linear
+	}
+
+	shaders
+	[
+		gfx/effects/alpha_smoke
+	]
+}

@@ -1,0 +1,34 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+atst
+{
+	playerModel	atst
+	weapon		WP_ATST_MAIN
+	weapon		WP_ATST_SIDE
+	headYawRangeLeft		80
+	headYawRangeRight		80
+	headPitchRangeUp		30
+	headPitchRangeDown		30
+	torsoYawRangeLeft		0
+	torsoYawRangeRight		0
+	torsoPitchRangeUp		0
+	torsoPitchRangeDown		0
+	health		200
+	reactions	5
+	aim		5
+	move		5
+	aggression	5
+	evasion		5
+	intelligence	5
+	playerTeam	TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	height		272	
+	width		80
+	class		CLASS_ATST
+	yawSpeed	60
+	runSpeed	150
+	walkSpeed	150
+	hFOV		120
+	vfov		45
+	snd		atst
+}

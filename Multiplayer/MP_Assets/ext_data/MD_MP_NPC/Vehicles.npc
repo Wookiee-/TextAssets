@@ -1,0 +1,347 @@
+                               //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+a-wing
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		150
+	height		92
+}
+
+b-wing
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		230
+	height		128
+}
+
+ATST_vehicle
+{
+	weapon		WP_BOWCASTER
+	weapon		WP_ROCKET_LAUNCHER
+	weapon		WP_EMPLACED_GUN
+	playerModel	atst
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	class		CLASS_VEHICLE
+	height		272	
+	width		80
+	health		3000
+}
+
+eopie
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	customSkin	default
+	snd		tauntaun
+}
+
+eopie_wild
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	customSkin	default
+	snd		tauntaun
+}
+
+LambdaShuttle
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			250
+	height			248
+}
+
+
+Rancor_vehicle
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	snd			rancor
+	height		128
+	crouchheight 	128
+	width		60
+}
+
+sithspeeder
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+snowspeeder
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			130
+	height		60
+}
+
+stap
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop_black
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop_blue
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop_gold
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop_green
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop_purple
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop_red
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop_silver
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Swoop_cin
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+swoop_mp
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+swoop_mp2
+{
+	weapon		WP_BLASTER
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			24
+	height			32
+}
+
+Tauntaun
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	snd		tauntaun
+}
+
+tie-advanced
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		173
+	height	        209
+}
+
+tie-defender
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		135
+	height	        200
+}   
+
+
+tie-bomber
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		200
+	height		256
+}
+
+tie-bomber2
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		200
+	height		256
+}
+
+tie-fighter
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		140
+	height	300
+}
+
+tie-interceptor
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		135
+	height	        200
+}
+
+wampa_vehicle
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	snd			wampa
+	height		100
+	crouchheight 	80
+	width			30
+}
+
+WildTauntaun
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	customSkin	wild
+	snd		tauntaun
+}
+
+X-Wing
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width			230
+	height		128
+}
+
+y-wing
+{
+	weapon		WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		235
+	height		119
+}
+
+
+YT-1300
+{
+	weapon	WP_NONE
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		565
+	height	323
+}
+
+Z-95
+{
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_NEUTRAL
+	class		CLASS_VEHICLE
+	width		230
+	height		128
+}
+
+
+
+
+
+
+

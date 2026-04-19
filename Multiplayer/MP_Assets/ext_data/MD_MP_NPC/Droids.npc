@@ -1,0 +1,133 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+assassin_droid
+{
+	playerModel        assassin_droid
+	weapon		   WP_BLASTER
+	health		   50
+	headPitchRangeDown 30
+	rank		   captain
+	reactions	   5
+	aim		   5
+	move		   5
+	aggression	   5
+	evasion		   5
+	intelligence	   5
+	playerTeam	   TEAM_ENEMY
+	enemyTeam	   TEAM_PLAYER
+	class		   CLASS_ASSASSIN_DROID
+	height		   64
+	crouchheight       48
+	snd		   SBD
+	sndcombat	   SBD
+	sndextra	   SBD
+	yawspeed	   70
+	walkSpeed	   55
+	runSpeed	   200
+	dismemberProbHead  100
+	dismemberProbArms  100
+	dismemberProbLegs  100
+	dismemberProbHands 0
+	dismemberProbWaist 100
+}
+
+SBD
+{
+	playerModel	      SBD
+	hfov		      160
+	vfov		      160
+	scale		      135
+	height		      78
+	crouchheight          42
+	width		      18
+	crouchheight	      50
+	health		      200
+	weapon		      WP_BRYAR_OLD
+	altFire		      1
+	rank		      captain
+	aggression	      5
+	aim		      5
+	evasion		      5
+	intelligence	      5
+	move		      5
+	reactions	      5
+	playerTeam	      TEAM_ENEMY
+	enemyTeam	      TEAM_PLAYER
+	class		      CLASS_SBD
+	earshot		      2048
+	visrange	      4096
+	walkSpeed	      55
+	runSpeed	      150
+	snd		      SBD
+	sndcombat	      SBD
+	sndextra	      SBD
+	sndjedi		      SBD
+}
+
+battledroid
+{
+	playerModel		battledroid
+	weapon		        WP_BLASTER
+	altFire		        1
+	rank			captain
+	aggression		5
+	aim			5
+	evasion		        5
+	intelligence	        5
+	move			5
+	reactions		5
+	playerTeam		TEAM_ENEMY
+	enemyTeam		TEAM_PLAYER
+	class			CLASS_BATTLEDROID
+	earshot		        2048
+	visrange		4096
+	health		        50
+	walkSpeed		55
+	runSpeed		200
+	snd			battledroid
+	sndcombat		battledroid
+	sndextra		battledroid
+	sndjedi		        battledroid
+}
+
+droideka
+{
+	playerModel	      droideka2
+	weapon		      WP_BLASTER
+	playerTeam	      TEAM_FREE
+	enemyTeam	      TEAM_FREE
+	class		      CLASS_VEHICLE
+	height		      64
+	width		      32
+	health		      500
+}
+
+
+droideka2
+{
+	playerModel		droideka2
+	height			75
+	width			30
+	weapon			WP_BLASTER
+	altFire			1
+	FP_PROTECT		3
+	rank			captain
+	aim			5
+	evasion			5
+	intelligence		5
+	move			5
+	reactions		5
+	playerTeam		TEAM_ENEMY
+	enemyTeam		TEAM_PLAYER
+	class			CLASS_DROIDEKA
+	health			150
+	walkSpeed		200
+	earshot		        2048
+	visrange	        4096
+	vigilance	        1
+	snd			droideka
+	sndcombat		droideka
+	sndextra		droideka
+	sndjedi			droideka
+}
+

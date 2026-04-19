@@ -1,0 +1,29 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+rocks
+{
+	playerModel	rocks
+	weapon		WP_NONE
+	scale 		100
+	health		100
+	snd		jawa
+	sndcombat	jawa
+	reactions	   5
+	aim		   5
+	move		   5
+	aggression	   5
+	evasion	           5
+	intelligence       5
+	rank		   captain
+	playerTeam	TEAM_NEUTRAL
+	enemyTeam	TEAM_FREE
+	class		CLASS_KYLE
+	yawspeed	90
+	walkSpeed	55
+	runSpeed	150
+	dismemberProbHead	0
+	dismemberProbArms	0
+	dismemberProbLegs	0
+	dismemberProbHands	0
+	dismemberProbWaist	0
+}

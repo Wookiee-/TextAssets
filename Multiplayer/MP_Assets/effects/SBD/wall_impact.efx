@@ -1,0 +1,313 @@
+repeatDelay				100
+
+Tail
+{
+	flags				usePhysics
+
+	count				4 6
+
+	life				500 900
+
+	bounce				0.25 0.4
+
+	velocity			120 -80 -80 250 80 80
+
+	gravity				-350 -450
+
+	size
+	{
+		start			0.3 0.4
+	}
+
+	length
+	{
+		start			4 10
+		end				0.1 1
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/misc/spark
+	]
+}
+
+
+Decal
+{
+	name				wallmark
+
+	life				700 800
+
+	size
+	{
+		start			6.5 8.5
+	}
+
+	shaders
+	[
+		gfx/damage/burnmark1
+	]
+}
+
+Sound
+{
+	name				WallhitSounds
+
+	sounds
+	[
+		sound/weapons/explosions/cargoexplode.wav
+		sound/weapons/shots/hit_wall1.wav
+		sound/weapons/shots/hit_wall2.wav
+	]
+}
+
+Light
+{
+	name				Flash
+
+	life				600 650
+
+	rgb
+	{
+		start			0.7686 0.4431 0
+		end				0.1569 0.04314 0
+		flags			linear
+	}
+
+	size
+	{
+		start			300 350
+		end				0
+		flags			linear
+	}
+}
+
+Tail
+{
+	flags				usePhysics
+
+	count				4 6
+
+	life				500 900
+
+	bounce				0.25 0.4
+
+	velocity			120 -80 -80 250 80 80
+
+	gravity				-350 -450
+
+	size
+	{
+		start			0.3 0.4
+	}
+
+	length
+	{
+		start			4 10
+		end				0.1 1
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/misc/spark3
+	]
+}
+
+
+Tail
+{
+	name				Copy of sparks
+
+	flags				usePhysics
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				3 2
+
+	life				500
+
+	bounce				0.25 0.4
+
+	velocity			100 -76 -90 169 110 114
+
+	acceleration		9 9 5 4 3 4
+
+	gravity				-250 -550
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+	}
+
+	size
+	{
+		start			0.3 0.45
+	}
+
+	length
+	{
+		start			8 5
+		end				0.6 0.8
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/misc/spark4
+	]
+}
+
+FxRunner
+{
+	name				detailsmokesmall
+
+	count				1 0
+
+	playfx
+	[
+		smoke/detailsmoke2
+	]
+}
+
+OrientedParticle
+{
+	name				emberflat
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				2 9
+
+	life				1900 1700
+
+	delay				300 250
+
+	rotation			4
+
+	rgb
+	{
+		start			1 0.502 0
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear nonlinear
+	}
+
+	size
+	{
+		start			4 3
+		end				5 4
+		flags			linear nonlinear
+	}
+
+	shaders
+	[
+		gfx/effects/embers
+	]
+}
+
+
+Particle
+{
+	name				Ashes
+
+	flags				expensivePhysics useBBox usePhysics
+
+	spawnFlags			affectedByWind
+
+	count				15 25
+
+	life				2000 7000
+
+	bounce				0.25 0.4
+
+	min					-0.5 -0.5 -0.5
+
+	max					0.5 0.5 0.5
+
+	origin				1 0 0
+
+	velocity			120 -70 -70 270 70 70
+
+	gravity				-100 -300
+
+	rgb
+	{
+		start			0.9843 0.4863 0.2745
+		end				1 0.4 0 0.8078 0.02353 0.02353
+		flags			linear
+	}
+
+	size
+	{
+		start			0.5 0.7
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whiteglow
+	]
+}
+
+FxRunner
+{
+	name				fire
+
+	count				1 0
+
+	playfx
+	[
+		env/small_fire
+	]
+}
+
+Emitter
+{
+	name				chunkies
+
+	flags				expensivePhysics useModel usePhysics
+
+	count				10 15
+
+	life				1e+004 1.9e+004
+
+	bounce				0.2 0.3
+
+	origin				1 -2 -2 2 2 2
+
+	angle				0 0 0 360 360 0
+
+	angleDelta			-20 -20 0 20 20 0
+
+	velocity			0 -100 -100 260 100 100
+
+	gravity				-400 -600
+
+	size
+	{
+		start			0.1 0.2
+	}
+
+	models
+	[
+		models/chunks/metal/metal1_1.md3
+		models/chunks/metal/metal1_2.md3
+		models/chunks/metal/metal1_3.md3
+		models/chunks/metal/metal1_4.md3
+	]
+}
+
+FxRunner
+{
+	name				detailsmokelast
+
+	playfx
+	[
+		smoke/detailsmoke3
+	]
+}

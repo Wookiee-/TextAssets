@@ -1,0 +1,10 @@
+sound
+{
+	sounds
+	[
+		sound/weapons/SBDarm/fire.wav
+		sound/weapons/SBDarm/fire3.mp3
+		sound/weapons/SBDarm/fire2.wav
+		sound/weapons/SBDarm/fire4.mp3
+	]
+}

@@ -1,0 +1,196 @@
+repeatDelay				200
+
+Particle
+{
+	name				Fire
+
+	count				15 18
+
+	life				500 700
+
+	delay				0 600
+
+	cullrange			1600
+
+	origin				-8 -15 -15 8 15 15
+
+	rotation			-180 180
+
+	rotationDelta		-13 13
+
+	velocity			-5 -3 -3 5 3 3
+
+	gravity				1 8
+
+	rgb
+	{
+		start			1 1 1 0.9961 0.8706 0.7804
+		end				0.7216 0.3451 0.003922
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			2 3
+		end				12 16
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/flames/flames1
+		gfx/flames/flames2
+
+		gfx/flames/flames3
+
+		gfx/flames/flames4
+		gfx/flames/flames5
+		gfx/flames/flames6
+
+		gfx/flames/flames7
+
+		gfx/flames/flames8
+
+	]
+}
+
+Particle
+{
+	name				Smoke
+
+	flags				expensivePhysics useBBox usePhysics useAlpha
+
+	spawnFlags			affectedByWind
+
+	count				18 20
+
+	life				3000 4000
+
+	delay				0 600
+
+	cullrange			3000
+
+	bounce				0.1
+
+	min					-1 -1 -1
+
+	max					1 1 1
+
+	origin				-8 -15 -15 8 15 15
+
+	wind				1 20
+
+	rotation			-180 180
+
+	rotationDelta		-18 18
+
+	velocity			5 -8 -9 10 7 6
+
+	gravity				-2 14
+
+	rgb
+	{
+		start			1 0.7882 0.549 0.9843 0.6745 0.5255
+		end				0.2 0.2 0.2431 0.2039 0.2039 0.2549
+		parm			10 15
+		flags			linear clamp
+	}
+
+	alpha
+	{
+		start			0.6 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3 5
+		end				20 40
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/misc/steam
+		gfx/misc/steam2
+		gfx/misc/steam3
+	]
+}
+
+Particle
+{
+	name				Ashes
+
+	flags				expensivePhysics useBBox usePhysics useAlpha
+
+	spawnFlags			rgbComponentInterpolation affectedByWind
+
+	count				8 13
+
+	life				4.8e+004 5.2e+004
+
+	delay				0 600
+
+	cullrange			800
+
+	bounce				0.1
+
+	min					-10 -10 -10
+
+	max					10 10 10
+
+	origin				-8 -15 -15 8 15 15
+
+	wind				1 20
+
+	rotation			-180 180
+
+	rotationDelta		-3 4
+
+	velocity			2 -4 -4 6 3 3
+
+	gravity				-12 -14
+
+	rgb
+	{
+		start			0.8275 0.5882 0.3451 0.8196 0.4824 0.3373
+		end				0.2 0.2 0.2431 0.2039 0.2039 0.2549
+		parm			0.4 0.5
+		flags			linear clamp
+	}
+
+	alpha
+	{
+		start			0
+		end				0.4 0.8
+		parm			4 5
+		flags			clamp
+	}
+
+	size
+	{
+		start			15 30
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/alpha_smoke
+		gfx/effects/alpha_smoke2
+		gfx/effects/snowpuff1
+		gfx/misc/spark_group
+		gfx/misc/fxflare
+                gfx/effects/whiteGlow
+		gfx/misc/spark_group
+		gfx/misc/fxflare
+                gfx/effects/whiteGlow
+	]
+}

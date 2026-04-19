@@ -1,0 +1,26 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+interrogator
+{
+	playermodel	 interrogator
+	weapon	         WP_MELEE
+	health 	         100
+	reactions	 5
+	aim		 5
+	move		 5
+	aggression	 5
+	evasion	         5
+	intelligence     5
+	playerTeam	 TEAM_ENEMY
+	enemyTeam	 TEAM_PLAYER
+	class		 CLASS_INTERROGATOR
+	yawSpeed	 120
+	runSpeed	 150
+	walkSpeed	 50
+	height	         24
+	rank		 captain
+	width		 12
+	hFOV		 120
+	vfov		 45
+	snd		 interrogator
+}

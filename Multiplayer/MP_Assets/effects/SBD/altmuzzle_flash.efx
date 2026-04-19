@@ -1,0 +1,7 @@
+sound
+{
+	sounds
+	[
+		sound/weapons/SBDarm/cannon_fire.mp3
+	]
+}

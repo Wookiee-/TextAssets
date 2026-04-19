@@ -1,0 +1,23 @@
+repeatDelay				114
+
+Particle
+{
+	name				Flare Core
+
+	life				100
+
+	alpha
+	{
+		start			0.6 0.8
+	}
+
+	size
+	{
+		start			20
+	}
+
+	shaders
+	[
+		gfx/effects/sabers/Flare02
+	]
+}

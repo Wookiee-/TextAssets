@@ -1,0 +1,26 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+sentry
+{
+	playermodel	      sentry
+	weapon		      WP_NONE
+	health 		      10
+	rank		      captain
+	reactions	      5
+	aim		      5
+	move		      5
+	aggression	      5
+	evasion		      5
+	intelligence	      5
+	playerTeam	       TEAM_ENEMY
+	enemyTeam	       TEAM_PLAYER
+	class		       CLASS_SENTRY
+	yawSpeed	       120
+	runSpeed	       400
+	walkSpeed	       250
+	height		       48
+	width		       24
+	hFOV		       120
+	vfov		       160
+	snd		       sentry
+}

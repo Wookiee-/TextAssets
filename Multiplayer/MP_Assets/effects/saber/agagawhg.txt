@@ -1,0 +1,14 @@
+
+FxRunner
+{
+	count				1 2
+
+	delay				0 100
+
+	origin				0 -20 0
+
+	playfx
+	[
+		volumetric/smoke
+	]
+}

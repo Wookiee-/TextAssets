@@ -1,0 +1,132 @@
+
+Particle
+{
+	name				Embers
+
+	count				8 12
+
+	life				800 600
+
+	intensity			0.3 0.5
+
+	velocity			40 -20 10 70 20 50
+
+	gravity				-100 -300
+
+	rgb
+	{
+		start			1 0.02353 0 1 1 0
+		end				1 0.4 0 0.9725 0.451 0.06275
+		flags			linear
+	}
+
+	size
+	{
+		start			0.3 1
+		end				0
+		parm			80 90
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		gfx/effects/whiteGlow
+	]
+}
+
+Particle
+{
+	name				Flare
+
+	count				2
+
+	life				200
+
+	origin				1 0 0
+
+	rgb
+	{
+		start			0.9569 0.4824 0.1686 0.9922 0.6902 0.6588
+	}
+
+	alpha
+	{
+		start			0.8 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			8 12
+		end				8
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/misc/colflare
+	]
+}
+
+Light
+{
+	name				flash
+}
+
+Particle
+{
+	name				Smoke
+
+	flags				useAlpha
+
+	count				4 5
+
+	life				800 1200
+
+	origin				2 -3 -3 2 3 3
+
+	rotation			180 0
+
+	rotationDelta		25 0
+
+	velocity			15 -12 -12 30 12 12
+
+	gravity				32 50
+
+	alpha
+	{
+		end				0
+		parm			60 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			7 8
+		end				15 20
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/misc/black_smoke
+	]
+}
+
+Sound
+{
+	name				Sound
+
+	sounds
+	[
+		sound/weapons/saber/saberhit.mp3
+		sound/weapons/saber/saberhit1.mp3
+		sound/weapons/saber/saberhit2.mp3
+		sound/weapons/saber/saberhit3.mp3
+		sound/weapons/saber/saberhit4.mp3
+		sound/weapons/saber/saberhit5.mp3
+		sound/weapons/saber/saberhit6.mp3
+		sound/weapons/saber/saberhit7.mp3
+	]
+}

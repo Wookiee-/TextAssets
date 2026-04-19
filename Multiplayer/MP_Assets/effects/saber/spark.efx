@@ -1,0 +1,98 @@
+// Directed spark effect
+
+// Mini-explosion made out of a couple of lines
+Line
+{
+	count 	2	4
+	life	100
+
+	origin2	6 -10 -10		12 10 10
+
+	width
+	{
+		start 	0.2 	0.5
+	}
+
+	alpha
+	{
+		start 	0.25 	1.0
+		end	0.0
+		flags	linear
+	}
+	
+	shader
+	[
+		gfx/misc/spark
+		gfx/misc/spark2
+	]
+}
+
+// Bits that fly up and bounce off of architecture
+Tail
+{
+	count	0 	1
+	life	700	900
+
+	bounce	0.25	0.4
+
+	vel	120 -80 -80	250 80 80
+	gravity	-350	-450
+
+	size
+	{
+		start	0.3	0.4
+	}
+
+	length
+	{
+		start	4.0	10.0
+		end	0.1	1.0
+		flags 	linear
+	}
+
+	shader
+	[
+		gfx/misc/spark
+	]
+}
+
+Particle
+{
+	life	900	1000
+
+	vel	8 -6 -6	10 6 6
+	gravity	6	12
+
+	size
+	{
+		start 	2.0	6.0
+		end	6.0	12.0
+		flags	linear
+	}
+
+	alpha
+	{
+		start	0.2	0.4
+		end 	0.0
+		flags	linear
+	}
+
+	shader
+	[
+		gfx/misc/steam
+	]
+}
+
+// Pick a random spark sound
+Sound
+{
+	sounds
+	[
+		sound/ambience/spark1.mp3
+		sound/ambience/spark2.mp3
+		sound/ambience/spark3.mp3
+		sound/ambience/spark4.mp3
+		sound/ambience/spark5.mp3
+		sound/ambience/spark6.mp3
+	]
+}

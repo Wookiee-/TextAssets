@@ -1,0 +1,9 @@
+
+FxRunner
+{
+	playfx
+	[
+		blaster/deflect
+	]
+}
+

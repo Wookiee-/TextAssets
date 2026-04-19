@@ -1,0 +1,35 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+probe
+{
+	playerModel             probe
+	weapon		        WP_BRYAR_PISTOL
+	health		        200
+	headYawRangeLeft        180
+	headYawRangeRight       180
+	headPitchRangeUp	0
+	headPitchRangeDown	0
+	torsoYawRangeLeft	0
+	torsoYawRangeRight	0
+	torsoPitchRangeUp	10
+	torsoPitchRangeDown	10
+	rank		        captain
+	reactions	        5
+	aim			5
+	move		        5
+	aggression	        5
+	evasion		        5
+	intelligence	        5
+	playerTeam	        TEAM_ENEMY
+	enemyTeam	        TEAM_PLAYER
+	class		        CLASS_PROBE
+	yawSpeed	        60
+	runSpeed	        150
+	walkSpeed	        50
+	height	                110
+	width		        24
+	hFOV		        120
+	vfov		        45
+	snd			probe
+	moveType	        "flyswim"
+}

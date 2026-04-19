@@ -1,0 +1,10 @@
+
+FxRunner
+{
+	playfx
+	[
+		blaster/flesh_impact
+		impacts/flesh_impact1
+		impacts/flesh_impact2
+	]
+}

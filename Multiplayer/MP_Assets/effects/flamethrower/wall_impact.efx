@@ -1,0 +1,11 @@
+repeatDelay				363
+
+FxRunner
+{
+	name				Wallvariants
+
+	playfx
+	[
+		flamethrower/flame_impact
+	]
+}

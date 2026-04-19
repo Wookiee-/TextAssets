@@ -1,0 +1,10 @@
+
+FxRunner
+{
+	playfx
+	[
+		blaster/droid_impact
+		impacts/droid_impact1
+		impacts/droid_impact2
+	]
+}

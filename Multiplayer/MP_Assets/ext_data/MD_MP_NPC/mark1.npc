@@ -1,0 +1,25 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+mark1
+{
+	playerModel	       mark1
+	weapon		       WP_BRYAR_PISTOL
+	reactions	       5
+	aim		       5
+	move		       5
+	aggression	       5
+	evasion		       5
+	intelligence	       5
+	height		       120
+	width		       36
+	playerTeam	       TEAM_ENEMY
+	enemyTeam	       TEAM_PLAYER
+	health		       10
+	class		       CLASS_MARK1
+	yawSpeed	       60
+	runSpeed	       150
+	walkSpeed	       70
+	hFOV		       120
+	vfov		       45
+	snd		       mark1
+}

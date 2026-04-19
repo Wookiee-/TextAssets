@@ -1,0 +1,25 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+protocol
+{
+	playerModel 	        protocol
+	weapon		        WP_NONE
+	reactions	        5
+	aim			5
+	move		        5
+	aggression	        5
+	evasion		        5
+	intelligence	        5
+	playerTeam	        TEAM_NEUTRAL
+	enemyTeam	        TEAM_NEUTRAL
+	class		        CLASS_PROTOCOL
+	snd			protocol
+	yawSpeed	        60
+	runSpeed	        150
+	walkSpeed	        50
+	height	                65
+	width		        12
+	hFOV		        120
+	vfov		        45
+	snd			protocol
+}

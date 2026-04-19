@@ -1,0 +1,294 @@
+
+
+staff_1
+{
+	name		         @MENUS_STAFF_HILT1
+	saberType	         SABER_STAFF
+	saberModel	         "models/weapons2/saber_dual_1/saber_dual_1.glm"
+	soundOn	                 "sound/weapons/saberold/saberon1.mp3"
+	soundLoop	         "sound/weapons/Sithsaber/saberhum2.wav"
+	soundOff	         "sound/weapons/saber/saberoff2.mp3"
+	saberColor	         random
+	numBlades	         2
+	saberLength	         32
+	saberStyle	         staff
+	singleBladeStyle	 medium
+	throwable		 1
+	singleBladeThrowable	 1
+	twoHanded		 1
+	brokenSaber1	         brokenstaff
+	brokenSaber2	         brokenstaff
+	notInMP  	         0
+}
+
+staff_2
+{
+	name		         @MENUS_STAFF_HILT2
+	saberType	         SABER_STAFF_UNSTABLE
+	saberModel	         "models/weapons2/saber_dual_2/saber_dual_2.glm"
+	soundOn	                 "sound/weapons/saberold/saberon1.mp3"
+	soundLoop	         "sound/weapons/Sithsaber/saberhum4.wav"
+	soundOff	         "sound/weapons/saber/lukesaberoff.mp3"
+	saberColor	         random
+	numBlades	         2
+	saberLength	         32
+	saberStyle	         staff
+	singleBladeStyle	 medium
+	throwable		 1
+	singleBladeThrowable	 1
+	twoHanded		 1
+	brokenSaber1	         brokenstaff
+	brokenSaber2	         brokenstaff
+	notInMP  	         0
+}
+
+staff_3
+{
+	name		         @MENUS_STAFF_HILT3
+	saberType	         SABER_STAFF_THIN
+	saberModel	         "models/weapons2/saber_dual_3/saber_dual_3.glm"
+	soundOn	                 "sound/weapons/Sithsaber/saberon1.mp3"
+	soundLoop	         "sound/weapons/Sithsaber/saberhum2.wav"
+	soundOff	         "sound/weapons/Sithsaber/saberoff3.mp3"
+	saberColor	         random
+	numBlades	         2
+	saberLength	         32
+	saberStyle	         staff
+	singleBladeStyle	 medium
+	throwable		 1
+	singleBladeThrowable	 1
+	twoHanded		 1
+	brokenSaber1	         brokenstaff
+	brokenSaber2	         brokenstaff
+	notInMP  	         0
+}
+
+staff_4
+{
+	name		         @MENUS_STAFF_HILT4
+	saberType	         SABER_STAFF
+	saberModel	         "models/weapons2/saber_dual_4/saber_dual_4.glm"
+	soundOn	                 "sound/weapons/saber/saberon2.wav"
+	soundLoop	         "sound/weapons/saber/saberhum4.mp3"
+	soundOff	         "sound/weapons/saber/lukesaberoff.mp3"
+	saberColor	         random
+	numBlades	         2
+	saberLength	         32
+	saberStyle	         staff
+	singleBladeStyle	 medium
+	throwable		 1
+	singleBladeThrowable	 1
+	twoHanded		 1
+	brokenSaber1	         brokenstaff
+	brokenSaber2	         brokenstaff
+	notInMP  	         0
+}
+
+staff_5
+{
+	name		         @MENUS_STAFF_HILT5
+	saberType	         SABER_STAFF
+	saberModel	         "models/weapons2/saber_dual_5/saber_dual_5.glm"
+	soundOn	                 "sound/weapons/saber/saberon1.mp3"
+	soundLoop	         "sound/weapons/saber/saberhum3.wav"
+	soundOff	         "sound/weapons/saber/lukesaberoff.mp3"
+	saberColor	         random
+	numBlades	         2
+	saberLength	         32
+	saberStyle	         staff
+	singleBladeStyle	 medium
+	throwable		 1
+	singleBladeThrowable	 1
+	twoHanded		 1
+	brokenSaber1	         brokenstaff
+	brokenSaber2	         brokenstaff
+	notInMP  	         0
+}
+
+saber_1
+{
+	name		@MENUS_SINGLE_HILT1
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_1/saber_1.glm"
+	soundOn	        "sound/weapons/saber/saberon6.mp3"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff6.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+saber_2
+{
+	name		@MENUS_SINGLE_HILT2
+	saberType	SABER_PALP
+	saberModel	"models/weapons2/saber_2/saber_2.glm"
+	soundOn	        "sound/weapons/saberold/saberon4.mp3"
+	soundLoop	"sound/weapons/saberold/saberhum3.wav"
+	soundOff	"sound/weapons/saberold/saberoff4.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+saber_3
+{
+	name		@MENUS_SINGLE_HILT3
+	saberType	SABER_THIN
+	saberModel	"models/weapons2/saber_3/saber_3.glm"
+	soundOn	        "sound/weapons/Sithsaber/saberon1.mp3"
+	soundLoop	"sound/weapons/Sithsaber/saberhum2.wav"
+	soundOff	"sound/weapons/Sithsaber/saberoff3.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+saber_4
+{
+	name		@MENUS_SINGLE_HILT4
+	saberType	SABER_REY
+	saberModel	"models/weapons2/saber_4/saber_4.glm"
+	soundOn	        "sound/weapons/saberold/saberon.mp3"
+	soundLoop	"sound/weapons/Sithsaber/saberhum2.wav"
+	soundOff	"sound/weapons/saber/saberoff2.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+saber_5
+{
+	name		@MENUS_SINGLE_HILT5
+	saberType	SABER_UNSTABLE
+	saberModel	"models/weapons2/saber_5/saber_5.glm"
+	soundOn   	"sound/weapons/Sithsaber/saberon3.mp3"
+	soundLoop	"sound/weapons/Sithsaber/saberhum2.wav"
+	soundOff	"sound/weapons/Sithsaber/saberoff3.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+saber_6
+{
+	name		@MENUS_SINGLE_HILT6
+	saberType	SABER_ANAKIN
+	saberModel	"models/weapons2/saber_6/saber_6.glm"
+	soundOn   	"sound/weapons/saber/saberon2.wav"
+	soundLoop	"sound/weapons/Sithsaber/saberhum3.wav"
+	soundOff	"sound/weapons/saber/lukesaberoff.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+saber_7
+{
+	name		@MENUS_SINGLE_HILT7
+	saberType	SABER_SFX
+	saberModel	"models/weapons2/saber_7/saber_7.glm"
+	soundOn   	"sound/weapons/saber/saberon5.mp3"
+	soundLoop	"sound/weapons/Sithsaber/saberhum2.wav"
+	soundOff	"sound/weapons/saber/lukesaberoff.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+saber_8
+{
+	name		@MENUS_SINGLE_HILT8
+	saberType	SABER_OBIWAN
+	saberModel	"models/weapons2/saber_8/saber_8.glm"
+	soundOn	        "sound/weapons/saberold/saberon2.wav"
+	soundLoop	"sound/weapons/saberold/saberhum2.wav"
+	soundOff	"sound/weapons/saberold/saberoff2.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+saber_9
+{
+	name		@MENUS_SINGLE_HILT9
+	saberType	SABER_DOOKU
+	saberModel	"models/weapons2/saber_9/saber_9.glm"
+	soundOn	        "sound/weapons/saber/lukesaberon.mp3"
+	soundLoop	"sound/weapons/saber/saberhum3.wav"
+	soundOff	"sound/weapons/saber/lukesaberoff.mp3"
+	saberLength	40
+	saberColor	random
+	notInMP  	0
+}
+
+sith_sword_mp
+{
+	name		"Sword of the Sith"
+	saberType	SABER_SITH_SWORD
+	saberModel	"models/weapons2/sith_scepter/sith_sword_w.glm"
+	soundOn		"sound/weapons/sword/draw1.mp3"
+	soundLoop	"sound/weapons/baton/idle.wav"
+	soundOff	"sound/weapons/sword/draw1.mp3"
+	swingSound1	"sound/weapons/sword/swing1.mp3"
+	swingSound2	"sound/weapons/sword/swing2.mp3"
+	swingSound3	"sound/weapons/sword/swing3.mp3"	
+	hitSound1	"sound/weapons/sword/stab1.wav"
+	hitSound2	"sound/weapons/sword/stab2.wav"
+	hitSound3	"sound/weapons/sword/stab3.wav"
+	blockSound1	"sound/weapons/sword/block1.mp3"
+	blockSound2	"sound/weapons/sword/block2.mp3"
+	blockSound3	"sound/weapons/sword/block3.mp3"	
+	bounceSound1	"sound/weapons/sword/block_low1.wav"
+	bounceSound2	"sound/weapons/sword/block_low2.mp3"
+	bounceSound3	"sound/weapons/sword/block_low3.mp3"
+	saberLength	44
+        bounceonwalls   1
+	notInMP  	0
+}
+
+tskn
+{
+	name		"Gaderffii"
+	saberType	SABER_STAFF
+	saberModel	"models/weapons2/tuskn/tuskn_w.glm"
+	kataMove		LS_JUMPATTACK_STAFF_LEFT
+        lungeAtkMove            LS_SPINATTACK
+	numBlades	2
+	saberLength	20
+	saberRadius	0.5
+	saberColor	red
+        saberStyle  staff
+	noManualDeactivate	1
+	singleBladeStyle	medium
+	singleBladeThrowable	0
+	noDlight	1
+	noBlade	        1
+	noIdleEffect	1
+	noWallMarks	1
+	bounceOnWalls	0
+	trailStyle	1
+	lockable		1
+	throwable		0
+	damageScale		0.8
+	onInWater		1
+	notInMP	1
+	flourishAnim            BOTH_TUSKENTAUNT1
+        gloatAnim               BOTH_VICTORY_FAST
+        hitSound1		"sound/weapons/tusken_staff/stickhit1.mp3"
+	hitSound2		"sound/weapons/tusken_staff/stickhit2.mp3"
+	hitSound3		"sound/weapons/tusken_staff/stickhit3.mp3"
+	blockSound1		"sound/weapons/tusken_staff/stickhit2.mp3"
+	blockSound2		"sound/weapons/tusken_staff/stickhit3.mp3"
+	blockSound3		"sound/weapons/tusken_staff/stickhit4.mp3"
+	bounceSound1		"sound/weapons/tusken_staff/stickhit1.mp3"
+	bounceSound2		"sound/weapons/tusken_staff/stickhit2.mp3"
+	bounceSound3		"sound/weapons/tusken_staff/stickhit3.mp3"
+	swingSound1		"sound/weapons/tusken_staff/swing1.mp3"
+	swingSound2		"sound/weapons/tusken_staff/swing2.mp3"
+	swingSound3		"sound/weapons/tusken_staff/swing3.mp3"
+	soundLoop		"sound/null.wav"
+	soundOff		"sound/null.wav"
+    soundOn			"sound/null.wav"
+	notInMP  	0
+}

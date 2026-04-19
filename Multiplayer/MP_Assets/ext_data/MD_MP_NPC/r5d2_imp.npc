@@ -1,0 +1,34 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+r5d2_imp
+{
+	playermodel		  r5d2
+	//customSkin	          imp
+	weapon		          WP_NONE
+	headYawRangeLeft	  180
+	headYawRangeRight	  180
+	headPitchRangeUp	  0
+	headPitchRangeDown        0
+	torsoYawRangeLeft	  0
+	torsoYawRangeRight        0
+	torsoPitchRangeUp	  10
+	torsoPitchRangeDown       10
+	rank		          commander
+	reactions	          5
+	aim			  5
+	move		          5
+	aggression	          5
+	evasion		          5
+	intelligence	          5
+	playerTeam	          TEAM_NEUTRAL
+	enemyTeam	          TEAM_NEUTRAL
+	class			  CLASS_R2D2
+	yawSpeed		  120
+	runSpeed		  150
+	walkSpeed		  60
+	height		          40
+	width			  12
+	hFOV			  120
+	vfov			  45
+	snd			  r5d2
+}

@@ -1,0 +1,49 @@
+                                //SERENITY NPC FILE//
+                              //JaceSolaris@ NPC FILE//
+gonk
+{
+	playerModel	    gonk
+	weapon	            WP_NONE
+	reactions	    5
+	aim		    5
+	move		    5
+	aggression	    5
+	evasion	            5
+	intelligence        5
+	playerTeam	    TEAM_NEUTRAL
+	enemyTeam	    TEAM_NEUTRAL
+	class		    CLASS_GONK
+	yawSpeed	    60
+	runSpeed	    40
+	walkSpeed	    30
+	height	            32
+	width		    12
+	hFOV		    120
+	vfov		    45
+	snd		    gonk
+}
+
+gonk2
+{
+	playerModel	   gonk
+	weapon	            WP_NONE
+	reactions	    5
+	aim		    5
+	move		    5
+	aggression	    5
+	evasion	            5
+	intelligence        5
+	playerTeam	    TEAM_NEUTRAL
+	enemyTeam	    TEAM_NEUTRAL
+	class		    CLASS_GONK
+	yawSpeed	    60
+	runSpeed	    40
+	walkSpeed	    30
+	height	            32
+	width		    12
+	hFOV		    120
+	vfov		    45
+	snd		    gonk
+}
+
+
