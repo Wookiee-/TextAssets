@@ -1,0 +1,109 @@
+// Minimal MovieDuels Pazaak menu (adapted for MovieDuels UI grammar)
+menuDef
+{
+    name "md_pazaak"
+    fullscreen 0
+
+    // When opened, optionally run a small init script
+    onOpen
+    {
+        exec "pzk onesc"
+    }
+
+    itemDef
+    {
+        name "pzk_start_ai"
+        type ITEM_TYPE_BUTTON
+        text "Start Pazaak (AI)"
+        rect 160 120 220 40
+        action
+        {
+            exec "pzk start"
+        }
+    }
+
+    itemDef
+    {
+        name "pzk_stop"
+        type ITEM_TYPE_BUTTON
+        text "Stop Pazaak"
+        rect 160 180 220 40
+        action
+        {
+            exec "pzk stop"
+        }
+    }
+
+    itemDef
+    {
+        name "pzk_draw"
+        type ITEM_TYPE_BUTTON
+        text "Draw"
+        rect 160 240 100 32
+        action
+        {
+            exec "pzk draw"
+        }
+    }
+
+    itemDef
+    {
+        name "pzk_stand"
+        type ITEM_TYPE_BUTTON
+        text "Stand"
+        rect 280 240 100 32
+        action
+        {
+            exec "pzk stand"
+        }
+    }
+
+    itemDef
+    {
+        name "pzk_use0"
+        type ITEM_TYPE_BUTTON
+        text "Use Card 0"
+        rect 120 300 120 28
+        action
+        {
+            exec "pzk usecard 0"
+        }
+    }
+
+    itemDef
+    {
+        name "pzk_use1"
+        type ITEM_TYPE_BUTTON
+        text "Use Card 1"
+        rect 260 300 120 28
+        action
+        {
+            exec "pzk usecard 1"
+        }
+    }
+
+    itemDef
+    {
+        name "pzk_use2"
+        type ITEM_TYPE_BUTTON
+        text "Use Card 2"
+        rect 120 340 120 28
+        action
+        {
+            exec "pzk usecard 2"
+        }
+    }
+
+    itemDef
+    {
+        name "pzk_use3"
+        type ITEM_TYPE_BUTTON
+        text "Use Card 3"
+        rect 260 340 120 28
+        action
+        {
+            exec "pzk usecard 3"
+        }
+    }
+
+}

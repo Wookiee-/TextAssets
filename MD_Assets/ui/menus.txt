@@ -135,4 +135,7 @@
 	loadMenu { "ui/vid_warning.menu"					}
 	loadMenu { "ui/videodriver.menu"					}
 
+//Pazaak
+	//loadMenu { "ui/jkg_pazaak.menu" 			}
+
 }

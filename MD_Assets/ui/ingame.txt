@@ -54,4 +54,6 @@
 	loadMenu { "ui/vid_warning.menu"					}
 	loadMenu { "ui/videodriver.menu"					}
 
+	//loadMenu { "ui/jkg_pazaak.menu" 				}
+
 }
